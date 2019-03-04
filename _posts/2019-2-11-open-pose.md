@@ -9,7 +9,6 @@ read_time: true
 header :
     image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
 comments : true
-youtubeId: ZreEaLSgQcc
 ---
 
 "OpenPose represents the first real-time multi-person system to jointly detect human body, hand, facial, and foot keypoints (in total 135 keypoints) on single images."
@@ -153,6 +152,6 @@ The ```--display 0 --render_pose 0``` allows the algorithm to run without the vi
 
 It's time to check the final output of our work !
 
-{% include youtubePlayer.html id=page.youtubeId %}
+{% include video id="ZreEaLSgQcc" provider="youtube" %}
 
 > **Conclusion** : I hope you enjoyed this quick tutorial on OpenPose for macOS. I am looking forward to making a more developped article on the field of pose recognition !
