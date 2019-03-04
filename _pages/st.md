@@ -2,6 +2,10 @@
 layout: single
 permalink: /st/
 author_profile: true
+header :
+    image: "https://maelfabien.github.io/images/wolf.jpg"
+toc: true
+toc_sticky: true
 ---
 
 A series of articles dedicated to statistics.
