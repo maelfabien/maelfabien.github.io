@@ -3,7 +3,7 @@ title: "About me"
 excerpt: ""
 author_profile: true
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    image: "https://maelfabien.github.io/images/wolf.jpg"
 redirect_from: 
     - /about/
     - /about.html
