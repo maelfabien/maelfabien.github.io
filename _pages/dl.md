@@ -3,7 +3,7 @@ layout: single
 permalink: /dl/
 author_profile: true
 header :
-    image: "https://maelfabien.github.io/images/dl_head.jpg"
+    image: "https://maelfabien.github.io/images/dl_head.png"
 toc: true
 toc_sticky: true
 ---

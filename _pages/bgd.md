@@ -3,7 +3,7 @@ layout: single
 permalink: /bgd/
 author_profile: true
 header :
-    image: "https://maelfabien.github.io/images/bgd_head.jpg"
+    image: "https://maelfabien.github.io/images/bgd_head.png"
 toc: true
 toc_sticky: true
 ---

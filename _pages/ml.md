@@ -3,7 +3,7 @@ layout: single
 permalink: /ml/
 author_profile: true
 header :
-    image: "https://maelfabien.github.io/images/ml_head.jpg"
+    image: "https://maelfabien.github.io/images/ml_head.png"
 toc: true
 toc_sticky: true
 ---

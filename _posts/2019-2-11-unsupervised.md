@@ -32,4 +32,4 @@ We'll cover :
 
 Click on the image below to load the PDF summary : 
 
-<a href="https://github.com/maelfabien/Machine-Learning-Tutorials/blob/master/Images/unsupervised.pdf">![image](https://maelfabien.github.io/myblog/images/unsup.png){:height="30%" width="30%"}</a>
+<a href="https://github.com/maelfabien/Machine-Learning-Tutorials/blob/master/Images/unsupervised.pdf">![image](https://maelfabien.github.io/images/unsup.png){:height="30%" width="30%"}</a>

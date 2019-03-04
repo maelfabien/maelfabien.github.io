@@ -15,13 +15,13 @@ toc: true
 toc_sticky: true
 ---
 
-![image](https://maelfabien.github.io/myblog/images/els.png)
+![image](https://maelfabien.github.io/images/els.png)
 
 # I. Kibana Dev Tools
 
 Head to the Dev Tools section in Kibana.
 
-![image](https://maelfabien.github.io/myblog/images/el_2.png)
+![image](https://maelfabien.github.io/images/el_2.png)
 
 Elasticsearch stores documents in JSON format.
 
@@ -84,7 +84,7 @@ POST /inspections/_doc
 
 Then, click on the green button to send the request. You should have something like this :
 
-![image](https://maelfabien.github.io/myblog/images/el_3.png)
+![image](https://maelfabien.github.io/images/el_3.png)
 
 At a given REST endpoint, there are several actions we can make :
 - POST : to create a new index. Allows to specify the index, here `inspections`, and a type of documents under the index, here `_doc`. Every time we run this command, we add a new index. Elasticsearch will automatically create and add a new `id`. It forces uniqueness for that document.
@@ -120,7 +120,7 @@ PUT /inspections/_doc/12345
 
 Here, 12345 would be the unique ID. If you run this command several times, the number of documents does not change, but the version of the document is incremented.
 
-![image](https://maelfabien.github.io/myblog/images/el_4.png)
+![image](https://maelfabien.github.io/images/el_4.png)
 
 - DELETE : to delete the index we created above, for example ```DELETE /inspections```
 
@@ -148,7 +148,7 @@ PUT /inspections/_doc/_bulk
 ```
 If everything worked well, you should have the following return :
 
-![image](https://maelfabien.github.io/myblog/images/el_5.png)
+![image](https://maelfabien.github.io/images/el_5.png)
 
 ## 3. Search/get a document
 
@@ -171,7 +171,7 @@ GET /inspections/_doc/_search
 
 And it returns the restaurant "Soup Paradise", which is exactly what we wanted :
 
-![image](https://maelfabien.github.io/myblog/images/el_6.png)
+![image](https://maelfabien.github.io/images/el_6.png)
 
 This is the strucure of a basic search query in Elasticsearch. You might have noticed the field  `"max_score" : 0.6931472`. This is basically a relevance score computed automatically by Elasticsearch. The most relevant documents are displayed first.
 
@@ -543,7 +543,7 @@ GET /inspections/_analyze
 }
 ```
 
-![image](https://maelfabien.github.io/myblog/images/el_7.png)
+![image](https://maelfabien.github.io/images/el_7.png)
 
 Standard tokenizer will remove the `@` within the email address and cut the text at each whitespace. We can force to take only white spaces into account :
 
