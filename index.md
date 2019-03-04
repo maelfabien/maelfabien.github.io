@@ -2,6 +2,7 @@
 title: "About me"
 excerpt: ""
 author_profile: true
+layout : single
 header :
     image: "https://maelfabien.github.io/images/wolf.jpg"
 redirect_from: 

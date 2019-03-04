@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "fr-FR"
-title                    : "Data Science and Big Data"
+title                    : "Maël Fabien"
 title_separator          : "-"
 name                     : "Maël Fabien"
 description              : ""
