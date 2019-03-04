@@ -1,14 +1,18 @@
 ---
 published: true
-title: Random Design Matrix
+title: Linear Regression
 collection: st
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [statistics]
+excerpt : "Random Design Matrix"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 
 In the previous article, a hidden hypothesis was actually set without being explictly defined : $$ X $$ should be deterministic. Indeed, we should be able to have a full control on how $$ X $$ is measured. This is what we call a fixed design matrix. Let me quickly introduce an extension of what has been covered so far.

@@ -1,14 +1,18 @@
 ---
 published: true
-title: Recommended Resources
+title: Key Resources
 collection: st
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [statistics]
+excerpt : "Books, papers and talks"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 
 This article is a simple list of useful resources I have found and used to make this series of articles. 

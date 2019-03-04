@@ -4,9 +4,26 @@ permalink: /st/
 author_profile: true
 ---
 
-Cette section reprend divers projets et études que je mène en machine learning.
-## Tensorflow
+A series of articles dedicated to statistics.
 
-[De zéro à Tensorflow - Théorie et démarrage](https://alexpeterbec.github.io/definitions/tensorflow/tensors/tensorflow-theorie/)
+## Linear Model
 
-## 1. Deep Learning, Réseaux de neurones
+[Key Resources](https://maelfabien.github.io/statistics/resources/)
+
+[Linear Regression in 1 Dimension](https://maelfabien.github.io/statistics/linreg/)
+
+[Multidimensional Linear Regression](https://maelfabien.github.io/statistics/linreg2/)
+
+[Random Design Matrix](https://maelfabien.github.io/statistics/rnddesign/)
+
+[Normal Regression Model](https://maelfabien.github.io/statistics/normal/)
+
+[Pseudo Least Squares](https://maelfabien.github.io/statistics/pseudols/)
+
+[Transformations of Linear Models](https://maelfabien.github.io/statistics/Special/)
+
+[Categorical and boolean variables](https://maelfabien.github.io/statistics/Boolean/)
+
+## Statistical Hypothesis testing
+
+[Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/)

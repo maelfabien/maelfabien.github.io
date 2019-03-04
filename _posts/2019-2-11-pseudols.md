@@ -1,14 +1,18 @@
 ---
 published: true
-title: Pseudo Least Squares
+title: Linear Regression
 collection: st
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [statistics]
+excerpt : "Pseudo Least Squares"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 
 Do you remember when we defined the Gram matrix as $$ X^TX $$ ? To define the OLS estimator, we defined the Gram matrix as invertible. In other words, $$ Ker(X) = {0} $$ . But what happens when it is not the case ? 
