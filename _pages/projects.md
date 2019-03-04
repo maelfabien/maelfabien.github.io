@@ -49,4 +49,10 @@ In this [challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge) ,
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Forest-Cover-Type-Challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge)</span>
 
-## Project Articles
+## Hackathons
+
+[Predicting the Song of the year (1/3) ](https://maelfabien.github.io/Hack-1/)
+
+[Install Zeppelin Locally](https://maelfabien.github.io/Hack-2/)
+
+[Install Zeppelin Locally](https://maelfabien.github.io/Hack-3/)
