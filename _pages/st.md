@@ -1,15 +1,12 @@
 ---
-layout: archive
-title: "Statistics"
-permalink: /st/
+layout: single
+permalink: /stg/
 author_profile: true
-classes: wide
-header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
 ---
 
-{% include base_path %}
+Cette section reprend divers projets et études que je mène en machine learning.
+## Tensorflow
 
-{% for post in site.st reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+[De zéro à Tensorflow - Théorie et démarrage](https://alexpeterbec.github.io/definitions/tensorflow/tensors/tensorflow-theorie/)
+
+## 1. Deep Learning, Réseaux de neurones
