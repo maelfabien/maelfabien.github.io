@@ -50,9 +50,3 @@ In this [challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge) ,
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Forest-Cover-Type-Challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge)</span>
 
 ## Project Articles
-
-{% include base_path %}
-
-{% for post in site.projects reversed %}
-  {% include archive-single.html %}
-{% endfor %}
