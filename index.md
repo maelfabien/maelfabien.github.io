@@ -1,20 +1,27 @@
 ---
-title: "A propos"
+title: "About me"
 excerpt: ""
 author_profile: true
-layout: single
 header :
-    image: "assets/images/contents/main-cover.jpg"
+    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+redirect_from: 
+    - /about/
+    - /about.html
 ---
 
-Bonjour et bienvenue,
+Welcome to my personal blog. 
 
-Actuellement en MS Big Data à Telecom ParisTech, je rassemble ici chaque semaine les sujets et projets sur lesquels je travaille, et également quelques supports didactiques dans le cadre de mes interventions dans les formations [Vivadata](https://vivadata.org){:target="_blank"}.
+My name is Maël Fabien. I am a 22 years old graduate actuary and data scientist in the making. I currently live in Paris, and study Big Data at Telecom ParisTech. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), a data science bootcamp in Paris. I'm uploading here some content that I'm writing on my free time. I'm trying to upload one article per week. 
 
-Je m'interesse particulièrements aux sujets data engineering et data science, que je regroupe dans ces catégories :
-- [Data Engineering](https://alexpeterbec.github.io/engnr/) : Cloud, Containers, Bases de données
-- [Machine Learning](https://alexpeterbec.github.io/ml/) : Algorithmes, Réseaux de neurones
-- [Statistiques](https://alexpeterbec.github.io/st/) : d'après mes lectures
-- [Challenges Kaggle](https://alexpeterbec.github.io/kaggle/) : en cours
+You will find here content related to my fields of interest :
+- Statistics
+- Machine Learning
+- Deep Learning
+- Big Data
 
-A la recherche de nouveaux challenges dès le mois de Juillet 2019, n'hésitez pas à m'ajouter sur linkedin ou me contacter par mail. [Ici  mon CV](https://alexpeterbec.github.io/assets/images/CV-Alexandre-Bec.pdf){:target="_blank"}.
+I'm also uploading some tutorials on specific topics (such as Face Detection). 
+
+If you would like to get to know more about me, feel free to check out my [resume](https://maelfabien.github.io/myblog//cv/).
+
+Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any question / remark. I'm currently looking for a data science internship and I'd like to start a Ph.D. next year (2020). 
+
