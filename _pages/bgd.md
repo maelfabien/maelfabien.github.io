@@ -2,6 +2,10 @@
 layout: single
 permalink: /bgd/
 author_profile: true
+header :
+    image: "https://maelfabien.github.io/images/bgd_head.jpg"
+toc: true
+toc_sticky: true
 ---
 
 A series of articles dedicated to machine learning.

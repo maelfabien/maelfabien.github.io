@@ -2,6 +2,10 @@
 layout: single
 permalink: /ml/
 author_profile: true
+header :
+    image: "https://maelfabien.github.io/images/ml_head.jpg"
+toc: true
+toc_sticky: true
 ---
 
 A series of articles dedicated to machine learning.
