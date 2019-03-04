@@ -4,11 +4,15 @@ title: How to use OpenPose on macOS ?
 collection: tuto
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [tutorials]
+excerpt : "Tutorials"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 
 "OpenPose represents the first real-time multi-person system to jointly detect human body, hand, facial, and foot keypoints (in total 135 keypoints) on single images."

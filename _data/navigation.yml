@@ -7,7 +7,7 @@ main:
     url: /ml/
     
   - title: "Big Data"
-    url: /bigdata/
+    url: /bgd/
     
   - title: "Deep Learning"
     url: /dl/
