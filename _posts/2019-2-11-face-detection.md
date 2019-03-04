@@ -3,7 +3,6 @@ published: true
 title: A full guide to face detection
 collection: tuto
 layout: single
-youtubeId: bOflpJ2J7nQ
 author_profile: false
 classes: wide
 read_time: true
@@ -388,10 +387,9 @@ cv2.destroyAllWindows()
 
 ## 6. Results
 
-I've made a quick YouTube illustration of the face detection algorithm. 
+I've made a quick YouTube illustration of the face detection algorithm : 
 
-{% include youtubePlayer.html id=page.youtubeId %}
-
+{% include video id="bOflpJ2J7nQ" provider="youtube" %}
  
 # II. Histogram of Oriented Gradients (HOG) in Dlib
 
