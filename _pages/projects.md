@@ -51,8 +51,8 @@ See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Forest
 
 ## Hackathons
 
-[Predicting the Song of the year (1/3) ](https://maelfabien.github.io/Hack-1/)
+[Predicting the Song of the year (1/3)](https://maelfabien.github.io/Hack-1/)
 
-[Install Zeppelin Locally](https://maelfabien.github.io/Hack-2/)
+[Predicting the Song of the year (2/3)](https://maelfabien.github.io/Hack-2/)
 
-[Install Zeppelin Locally](https://maelfabien.github.io/Hack-3/)
+[Predicting the Song of the year (3/3)](https://maelfabien.github.io/Hack-3/)

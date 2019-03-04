@@ -6,6 +6,6 @@ author_profile: true
 
 A series of tutorials I have realized on different subjects.
 
-[A full guide to face detection](https://maelfabien.github.io/machinelearning/face-detection/)
+[A full guide to face detection](https://maelfabien.github.io/tutorials/face-detection/)
 
-[How to use OpenPose on macOS ?](https://maelfabien.github.io/machinelearning/open-pose/)
+[How to use OpenPose on macOS ?](https://maelfabien.github.io/tutorials/open-pose/)
