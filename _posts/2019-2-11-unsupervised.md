@@ -1,14 +1,18 @@
 ---
 published: true
-title: Cheatsheet for unsupervised algorithms
-collection: ml
+title: Unsupervised Learning Cheat Sheet
+collection: st
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [machinelearning]
+excerpt : "Machine Learning Basics"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 
 Let's move on to unsupervised part ! This cheatsheet covers the key concepts, illustrations, otpimisaton program and limitations for the most common types of algorithms. Don't hesitate to drop a comment !

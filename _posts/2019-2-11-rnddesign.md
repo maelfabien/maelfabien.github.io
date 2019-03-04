@@ -1,12 +1,12 @@
 ---
 published: true
-title: Linear Regression
+title: Random Design Matrix
 collection: st
 layout: single
 author_profile: false
 read_time: true
 categories: [statistics]
-excerpt : "Random Design Matrix"
+excerpt : "Linear Model"
 header :
     overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
     teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
@@ -19,6 +19,10 @@ In the previous article, a hidden hypothesis was actually set without being expl
 
 {% highlight python %}
 {% endhighlight %}
+
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 ## Random Design
 

@@ -1,14 +1,18 @@
 ---
 published: true
-title: Cheatsheet for supervised algorithms
-collection: ml
+title: Supervised Learning Cheat Sheet
+collection: st
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [machinelearning]
+excerpt : "Machine Learning Basics"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 
 I'm presenting here a summary I've written of the key concepts, illustrations, otpimisaton program and limitations for the most common types of algorithms. Don't hesitate to drop a comment !

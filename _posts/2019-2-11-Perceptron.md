@@ -4,16 +4,24 @@ title: The Rosenblatt Perceptron
 collection: dl
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [deeplearning]
+excerpt : "Deep Neural Networks"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
 In this series of articles, I am going to focus on the basis of Deep Learning, and progressively move toward recent research papers and more advanced techniques. As I am particularly interested in computer vision, I will explore some examples applied to object detection or emotion recognition for example.
 
 {% highlight python %}
 {% endhighlight %}
+
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
 ## Definition
 
