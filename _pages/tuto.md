@@ -5,7 +5,7 @@ permalink: /tuto/
 author_profile: true
 classes: wide
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    image: "https://maelfabien.github.io/images/wolf.jpg"
 ---
 
 {% include base_path %}
