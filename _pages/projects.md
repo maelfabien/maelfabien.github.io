@@ -5,7 +5,7 @@ permalink: /projects/
 author_profile: true
 classes: wide
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 ---
 
 

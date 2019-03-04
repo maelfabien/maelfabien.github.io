@@ -8,8 +8,8 @@ read_time: true
 categories: [deeplearning]
 excerpt : "Deep Neural Networks"
 header :
-    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
-    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 toc_sticky: true

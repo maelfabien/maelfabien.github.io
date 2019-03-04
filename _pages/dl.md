@@ -8,7 +8,7 @@ toc: true
 toc_sticky: true
 ---
 
-A series of articles dedicated to deep neural networks.
+A series of articles dedicated to deep learning.
 
 ## Deep Neural Networks
 

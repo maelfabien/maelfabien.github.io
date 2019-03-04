@@ -7,7 +7,7 @@ author_profile: false
 classes: wide
 read_time: true
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    image: "https://maelfabien.github.io/myblog/assets/images/wolf.jpg"
 comments : true
 ---
 

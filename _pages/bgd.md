@@ -8,7 +8,7 @@ toc: true
 toc_sticky: true
 ---
 
-A series of articles dedicated to machine learning.
+A series of articles dedicated to Big Data analytics.
 
 ## Amazon Web Services
 

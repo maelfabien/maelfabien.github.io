@@ -20,3 +20,6 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  - title: "Search"
+    url: /search/

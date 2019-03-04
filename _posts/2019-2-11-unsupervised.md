@@ -8,8 +8,8 @@ read_time: true
 categories: [machinelearning]
 excerpt : "Machine Learning Basics"
 header :
-    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
-    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 toc_sticky: true
@@ -32,4 +32,4 @@ We'll cover :
 
 Click on the image below to load the PDF summary : 
 
-<a href="https://github.com/maelfabien/Machine-Learning-Tutorials/blob/master/Images/unsupervised.pdf">![image](https://maelfabien.github.io/images/unsup.png){:height="30%" width="30%"}</a>
+<a href="https://github.com/maelfabien/Machine-Learning-Tutorials/blob/master/Images/unsupervised.pdf">![image](https://maelfabien.github.io/assets/images/unsup.png){:height="30%" width="30%"}</a>

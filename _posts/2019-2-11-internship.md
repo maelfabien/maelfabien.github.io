@@ -35,13 +35,13 @@ Among my 56 applications, I've had 2 offers, and kept 1 of them.
 ## Graphical Analysis
 
 Let's first of all take a look at how I performed through the rounds of application :
-![image](https://maelfabien.github.io/images/apply_1.png)
+![image](https://maelfabien.github.io/assets/images/apply_1.png)
 
 I've received quite a lot 
 
 
 
-![image](https://maelfabien.github.io/images/img1.jpg)
+![image](https://maelfabien.github.io/assets/images/img1.jpg)
 
 
 > **Conclusion** : I hope you enjoyed this quick tutorial on OpenPose for macOS. I am looking forward to making a more developped article on the field of pose recognition !

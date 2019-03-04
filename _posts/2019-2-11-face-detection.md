@@ -8,8 +8,8 @@ read_time: true
 categories: [tutorials]
 excerpt : "Tutorials"
 header :
-    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
-    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 toc_sticky: true
@@ -87,7 +87,7 @@ There are some common features that we find on most common human faces :
 
 The characteristics are called Haar Features. The feature extraction process will look like this :
 
-![image](https://maelfabien.github.io/images/haar.png)
+![image](https://maelfabien.github.io/assets/images/haar.png)
 
 In this example, the first feature measures the difference in intensity between the region of the eyes and a region across the upper cheeks. The feature value is simply computed by summing the pixels in the black area and substracting the pixels in the white area. 
 
@@ -97,14 +97,14 @@ Then, we apply this rectangle as a convolutional kernel, over our whole image. I
 - once the good region has been identified by a rectangle, it is useless to run the window over a completely different region of the image. This can be achieved by Adaboost.
 - compute the rectangle features using the integral image principle, which is way faster. We'll cover this in the next section.
 
-![image](https://maelfabien.github.io/images/haar_selection.png)
+![image](https://maelfabien.github.io/assets/images/haar_selection.png)
 
 There are several types of rectangles that can be applied for Haar Features extraction. According to the original paper :
 - the two-rectangle feature is the difference between the sum of the pixels within two rectangular regions, used mainly for detecting edges (a,b)
 - the three-rectangle feature computes the sum within two outside rectangles subtracted from the sum in a center rectangle, used mainly for detecting lines (c,d)
 - the four-rectangle feature computes the difference between diagonal pairs of rectangle (e)
 
-![image](https://maelfabien.github.io/images/haar_rectangles.png)
+![image](https://maelfabien.github.io/assets/images/haar_rectangles.png)
 
 Now that the features have been selected, we apply them on the set of training images using Adaboost classification, that combines a set of weak classifiers to create an accurate ensemble model. With 200 features (instead of 160'000 initially), an accuracy of 95% is acheived. The authors of the paper have selected 6'000 features. 
 
@@ -136,11 +136,11 @@ Therefore, the sum of pixels in region D can simply be computed as : $$ 4 + 1 - 
 
 And over a single pass, we have computed the value inside a rectangle using only 4 array references.
 
-![image](https://maelfabien.github.io/images/haar_region.png)
+![image](https://maelfabien.github.io/assets/images/haar_region.png)
 
 One should simply be aware that rectangles are quite simple features in practice, but sufficient for face detection. Steerable filters tend to be more flexible when it comes to  complex problems. 
 
-![image](https://maelfabien.github.io/images/steerable.png)
+![image](https://maelfabien.github.io/assets/images/steerable.png)
 
 ### c. Learning the classification function with Adaboost
 
@@ -163,7 +163,7 @@ A series of classifiers are applied to every sub-window. These classifiers are s
 
 Any negative result at some point leads to a rejection of the sub-window as potentially containing a face. The initial classifier eliminates most negative examples at a low computational cost, and the following classifiers eliminate additional negative examples but require more computational effort. 
 
-![image](https://maelfabien.github.io/images/cascade.png)
+![image](https://maelfabien.github.io/assets/images/cascade.png)
 
 The classifiers are trained using Adaboost and adjusting the threshold to minimize the false rate. When training such model, the variables are the following :
 - the number of classifier stages
@@ -207,7 +207,7 @@ plt.imshow(gray, cmap='gray')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/images/test_face.png)
+![image](https://maelfabien.github.io/assets/images/test_face.png)
 
 Then, we detect the face and we add a rectangle around it :
 
@@ -240,7 +240,7 @@ plt.imshow(gray, cmap='gray')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/images/test_face_output.png)
+![image](https://maelfabien.github.io/assets/images/test_face_output.png)
 
 Face detection works well on our test image. Let's move on to real time now !
 
@@ -406,7 +406,7 @@ The idea behind HOG is to extract features into a vector, and feed it into a cla
 The features extracted are the distribution (histograms) of directions of gradients (oriented gradients) of the image. Gradients are typically large around edges and corners and allow us to detect those regions.
 
 In the original paper, the process was implemented for human body detection, and the detection chain was the following :
-![image](https://maelfabien.github.io/images/dlib_chain.png)
+![image](https://maelfabien.github.io/assets/images/dlib_chain.png)
 
 ### a. Preprocessing
 
@@ -416,7 +416,7 @@ First of all, the input images must but of the same size (crop and rescale image
 
 The first step is to compute the horizontal and vertical gradients of the image, by applying the following kernels :
 
-![image](https://maelfabien.github.io/images/gradient-kernels.jpg)
+![image](https://maelfabien.github.io/assets/images/gradient-kernels.jpg)
 
 The gradient of an image typically removes non-essential information. 
 
@@ -437,7 +437,7 @@ plt.figure(figsize=(12,8))
 plt.imshow(mag)
 plt.show()
 ```
-![image](https://maelfabien.github.io/images/grad.png)
+![image](https://maelfabien.github.io/assets/images/grad.png)
 
 We have not pre-processed the image before though.
 
@@ -455,15 +455,15 @@ When we build the HOG, there are 3 subcases :
 - the angle is smaller than 160° and not halways between 2 classes. In such case, the angle will be added in the right category of the HOG
 - the angle is smaller than 160° and exactly between 2 classes. In such case, we consider an equal contribution to the 2 nearest classes and split the magnitue in 2
 
-![image](https://maelfabien.github.io/images/hog_1.png)
+![image](https://maelfabien.github.io/assets/images/hog_1.png)
 
 - the angle is larger than 160°. In such case, we consider that the pixel contributed proportionally to 160° and to 0°.
 
-![image](https://maelfabien.github.io/images/hog_2.png)
+![image](https://maelfabien.github.io/assets/images/hog_2.png)
 
 The HOG looks like this for each 8x8 cell :
 
-![image](https://maelfabien.github.io/images/hog.png)
+![image](https://maelfabien.github.io/assets/images/hog.png)
 
 ### d. Block normalization
 
@@ -491,7 +491,7 @@ plt.imshow(gray, cmap='gray')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/images/face_hog.png)
+![image](https://maelfabien.github.io/assets/images/face_hog.png)
 
 ## 3. Real time face detection
 
@@ -533,7 +533,7 @@ Convolutional Neural Network (CNN) are feed-forward neural network that are most
 
 In previous approaches, a great part of the work was to select the filters in order to create the features in order to extract as much information from the image as possible. With the rise of deep learning and greater computation capacities, this work can now be automated. The name of the CNNs comes from the fact that we convolve the initial image input with a set of filters. The parameter to choose remains the number of filters to apply, and the dimension of the filters. The dimension of the filter is called the stride length. Typical values for the stride lie between 2 and 5. 
 
-![image](https://maelfabien.github.io/images/CNN.png)
+![image](https://maelfabien.github.io/assets/images/CNN.png)
 
 The output of the CNN in this specific case is a binary classification, that takes value 1 if there is a face, 0 otherwise.
 
@@ -567,7 +567,7 @@ plt.imshow(gray, cmap='gray')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/images/face_dlib.png)
+![image](https://maelfabien.github.io/assets/images/face_dlib.png)
 
 ## 3. Real time face detection
 

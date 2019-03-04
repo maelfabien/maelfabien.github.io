@@ -41,7 +41,7 @@ OpenPose works under Ubuntu (14, 16), Windows (8, 10) and Mac OSX.
 
 So what are those keypoints ? Well, nothing's better than a visual illustration.
 
-![image](https://maelfabien.github.io/myblog/images/img1.jpg)
+![image](https://maelfabien.github.io/assets/images/img1.jpg)
 
 The requirements regarding your Mac are the following :
 - Around 8GB of free RAM memory
@@ -81,7 +81,7 @@ See [this issue](https://github.com/BVLC/caffe/issues/1761) for more details.
 **Step 5)**
 Open CMake GUI and select the OpenPose directory as project source directory, and a non-existing or empty sub-directory (e.g., build) where the Makefile files (Ubuntu) or Visual Studio solution (Windows) will be generated. If build does not exist, it will ask you whether to create it. Press Yes. 
 
-![image](https://maelfabien.github.io/myblog/images/img2.jpg)
+![image](https://maelfabien.github.io/assets/images/img2.jpg)
 
 **Step 6)**
 Make the following adjustments to the cmake config before pressing "Configure":
@@ -136,7 +136,7 @@ This section refers to the [Quick Start](https://github.com/CMU-Perceptual-Compu
 
 Great, this should work fine. Try to insert a new image in your media forder and run it on your own image or video.
 
-![image](https://maelfabien.github.io/myblog/images/img3.jpg)
+![image](https://maelfabien.github.io/assets/images/img3.jpg)
 
 How to save the output ?
 [Several options](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/demo_overview.md) to save the outputs exist. 

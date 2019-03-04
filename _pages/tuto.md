@@ -2,6 +2,8 @@
 layout: single
 permalink: /tuto/
 author_profile: true
+header :
+    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 ---
 
 A series of tutorials I have realized on different subjects.

@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-<span style="color:blue">[Download my resume](https://maelfabien.github.io/images/CV.pdf)</span>
+<span style="color:blue">[Download my resume](https://maelfabien.github.io/assets/images/CV.pdf)</span>
 
 Education
 ======
@@ -68,4 +68,4 @@ Associations
 * Head of Sponsorship for the Student Association of Actuarial Science
 * Student Member of the Equality Commission of HEC Lausanne
 
-<embed src="https://maelfabien.github.io/images/CV.pdf" type="application/pdf" width="600px" height="500px" />
+<embed src="https://maelfabien.github.io/assets/images/CV.pdf" type="application/pdf" width="600px" height="500px" />
