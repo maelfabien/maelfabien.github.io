@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "fr-FR"
-title                    : "Data Science & Engineering"
+title                    : "Data Science and Big Data"
 title_separator          : "-"
-name                     : "Alexandre Bec"
+name                     : "Maël Fabien"
 description              : ""
-url                      : https://alexpeterbec.github.io
+url                      : https://maelfabien.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # Default teaser image "assets/images/contents/main-cover.jpg"
@@ -31,7 +31,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "alexpeterbec" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "maelfabien-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -106,21 +106,21 @@ analytics:
 
 # Site Author
 author:
-  name             : "Alexandre Bec"
-  avatar           : "/assets/images/profile.jpg"
-  bio              : "Ingénieur, Data Scientist"
+  name             : "Maël Fabien"
+  avatar           : "/assets/images/profile.png"
+  bio              : "Data Scientist, Graduate Actuary"
   location         : "Paris"
   email            :
   links:
     - label: "Mail"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:alx.bec@gmail.com
+      url: mailto:mael.fabien@gmail.com
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/becalexandre/"
+      url: "https://www.linkedin.com/in/mael-fabien/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/alexpeterbec/"
+      url: "https://github.com/maelfabien/"
 
 # Site Footer
 footer:
