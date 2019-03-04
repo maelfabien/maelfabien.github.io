@@ -1,15 +1,19 @@
 ---
 published: true
 title: TPU survival guide on Google Colaboratory 
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "Google Cloud Platform"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
 ![image](https://maelfabien.github.io/myblog/images/gc.png)
 

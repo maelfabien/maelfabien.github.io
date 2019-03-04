@@ -1,17 +1,21 @@
 ---
 published: true
 title: How to run a Zeppelin notebook locally ?
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "Amazon Web Services"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
-![image](https://maelfabien.github.io/myblog/images/zep.png)
+![image](https://maelfabien.github.io/images/zep.png)
 
 Zeppelin notebooks are web-based notebooks that enable data-driven, interactive data analytics and collaborative documents with SQL, Scala, Spark and much more. Zeppelin also offers built-in visualizations and allows multiple users when configured on a cluster. In this article, I am going to go throught the basic steps that allow you to configure Zeppelin the easy way, locally.
 
@@ -63,10 +67,10 @@ Your Zeppelin Notebook should be accessible from the following link :
 ``` http://localhost:8080/ ```
 
 At that point, you should see this :
-![image](https://maelfabien.github.io/myblog/images/notebook.png)
+![image](https://maelfabien.github.io/images/notebook.png)
 
 Click on "Create new note", leave the Spark interpreter as the default one.
-![image](https://maelfabien.github.io/myblog/images/note.png)
+![image](https://maelfabien.github.io/images/note.png)
 
 
 ## Test your Zeppelin configuration

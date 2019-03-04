@@ -22,7 +22,7 @@ A series of articles dedicated to statistics.
 
 [Transformations of Linear Models](https://maelfabien.github.io/statistics/Special/)
 
-[Categorical and boolean variables](https://maelfabien.github.io/statistics/Boolean/)
+[Boolean and categorical variables](https://maelfabien.github.io/statistics/Boolean/)
 
 ## Statistical Hypothesis testing
 

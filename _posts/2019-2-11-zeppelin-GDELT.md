@@ -1,21 +1,25 @@
 ---
 published: true
 title: Big (Open)  Data , the GDELT Project
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "GDelt Project"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
 The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world. With new files uploaded every 15 minutes, GDELT data bases contain more than 700 Gb of zipped data for the single year 2018.
 
 <span style="color:blue">[https://www.gdeltproject.org/](https://www.gdeltproject.org/)</span>
 
-![image](https://maelfabien.github.io/myblog/images/header.png)
+![image](https://maelfabien.github.io/images/header.png)
 
 ## The project
 
@@ -38,17 +42,17 @@ The following links describe the data in the GDELT table :
 - Description of the Graph of Events GKG : <span style="color:blue">[http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf)</span>
 
 The tables are the following :
-![image](https://maelfabien.github.io/myblog/images/data.png)
+![image](https://maelfabien.github.io/images/data.png)
 
 A event is defined as an action that an actor (Actor1) takes on another actor (Actor2). A mention is an article or any source that talks about an event. The GKG database reflects the events that took place in the world, ordered by theme, type of event and location.
 
 The conceptual model of the data is the following : 
-![image](https://maelfabien.github.io/myblog/images/concept.png)
+![image](https://maelfabien.github.io/images/concept.png)
 
 ## Architecture
 
 The architecture we have chosen is the following : 
-![image](https://maelfabien.github.io/myblog/images/archi.png)
+![image](https://maelfabien.github.io/images/archi.png)
 
 Our architecture is composed by one cluster EMR (1 master and 5 slaves) and one cluster EC2 (8 instances).
 

@@ -1,15 +1,19 @@
 ---
 published: true
 title: Move Scala Dataframes to Cassandra
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "GDelt Project"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
 ![image](https://maelfabien.github.io/myblog/images/scala_cassandra.png)
 

@@ -1,17 +1,21 @@
 ---
 published: true
 title: Install Apache Cassandra on an AWS EC2 Cluster
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "Amazon Web Services"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
-![image](https://maelfabien.github.io/myblog/images/ec2_cass.png)
+![image](https://maelfabien.github.io/images/ec2_cass.png)
 
 The Apache Cassandra database is the right choice when you need scalability and high availability without compromising performance. Linear scalability and proven fault-tolerance on commodity hardware or cloud infrastructure make it the perfect platform for mission-critical data. We'll see how to configure Cassandra on an AWS EC2 cluster and create a resilient architecture that is big-data ready.
 
@@ -58,7 +62,7 @@ Once you're back on the terminal, execute the following line :  ``` source ~/.ba
 
 a. From <span style="color:blue">[Apache Cassandra's website](http://www.apache.org/dyn/closer.lua/cassandra/3.11.3/apache-cassandra-3.11.3-bin.tar.gz)</span>, copy the download link (version of January 2019) :
 
-![image](https://maelfabien.github.io/myblog/images/Cassandra_Website.png)
+![image](https://maelfabien.github.io/images/Cassandra_Website.png)
 
 b. Install Apache-Cassandra on your instances
 
@@ -70,7 +74,7 @@ Them, execute :
 If a new version of Cassandra has been released, make sure to replace the link above by the latest version.
 
 You should see something similar :
-![image](https://maelfabien.github.io/myblog/images/Cassandra_Wget.png)
+![image](https://maelfabien.github.io/images/Cassandra_Wget.png)
 
 c. The files are compressed. The next step is to uncompress them and extract the software :
 
@@ -82,7 +86,7 @@ Then, remove the .tar.gz file :
 ```
 rm apache-cassandra-3.11.3-bin.tar.gz
 ```
-![image](https://maelfabien.github.io/myblog/images/Cassandra_Extract.png)
+![image](https://maelfabien.github.io/images/Cassandra_Extract.png)
 
 d. Replicate the steps above on each slave
 
@@ -112,7 +116,7 @@ Change the following fields :
 
 Save and quit. Here's a quick example :
 
-![image](https://maelfabien.github.io/myblog/images/Cassandra_yaml.png)
+![image](https://maelfabien.github.io/images/Cassandra_yaml.png)
 
 Repeat those steps on the 5 Slave nodes.
 
@@ -120,7 +124,7 @@ b. Modify the ``` cassandra-rackdc.properties ``` file :
 
 We will consider the simplest framework here : we won't specify any rack name or data center name. Just comment the two lines that are not commented :
 
-![image](https://maelfabien.github.io/myblog/images/Cassandra_rack.png)
+![image](https://maelfabien.github.io/images/Cassandra_rack.png)
 
 The configuration is now ready !
 
@@ -143,7 +147,7 @@ There is a command to directly describe the connections of your cluster :
 ./nodetool describecluster
 ```
 
-![image](https://maelfabien.github.io/myblog/images/Cassandra_Final.png)
+![image](https://maelfabien.github.io/images/Cassandra_Final.png)
 
 Your Slave nodes with Apache-Cassandra are now configured ! 
 

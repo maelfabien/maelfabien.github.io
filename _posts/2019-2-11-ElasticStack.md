@@ -1,23 +1,27 @@
 ---
 published: true
 title: Introduction to the ElasticStack
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "Elastic Search, Logstash, Kibana"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
-![image](https://maelfabien.github.io/myblog/images/els.png)
+![image](https://maelfabien.github.io/images/els.png)
 
 You may have already heard of Elasticsearch and Kibana. Elasticsearch is an open source distributed, RESTful search and analytics engine capable of solving a growing number of use cases. Elasticsearch has been downloaded over 250 millions times and has an active community of more than 100'000 members.
 
 # I. The Elastic Stack
 
-![image](https://maelfabien.github.io/myblog/images/elastic_stack.png)
+![image](https://maelfabien.github.io/images/elastic_stack.png)
 
 Kibana is used to visualize data, and Elasticsearch is used to store, search and analyze the data. 
 

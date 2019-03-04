@@ -1,17 +1,21 @@
 ---
 published: true
 title: How to run a Zeppelin notebook on AWS EMR ?
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "Amazon Web Services"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
---- 
+toc: true
+toc_sticky: true
+---
 
-![image](https://maelfabien.github.io/myblog/images/zep_emr.png)
+![image](https://maelfabien.github.io/images/zep_emr.png)
 
 We have already seen how to run a Zeppelin notebook locally. Most of the time, your notebook will include dependencies (such as AWS connectors to download data from your S3 bucket), and in such case, you might want to use an EMR. Amazon EMR provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances.
 
@@ -28,19 +32,19 @@ The first step is to create a key pair. "Amazon uses public–key cryptography t
 
 Log into your AWS Console and click on EC2 (or click here) : <span style="color:blue">[https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:sort=keyName](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:sort=keyName)</span>
 
-![image](https://maelfabien.github.io/myblog/images/EMR0.png){:height="35%" width="35%"}
+![image](https://maelfabien.github.io/images/EMR0.png){:height="35%" width="35%"}
 
 Scroll down the side menu to Network and Security and click on Key Pairs :
 
-![image](https://maelfabien.github.io/myblog/images/key.png){:height="30%" width="30%"}
+![image](https://maelfabien.github.io/images/key.png){:height="30%" width="30%"}
 
 Then, create a key pair and give it a name :
 
-![image](https://maelfabien.github.io/myblog/images/key2.png){:height="45%" width="45%"}
+![image](https://maelfabien.github.io/images/key2.png){:height="45%" width="45%"}
 
 The keypair .pem file will automatically be dowloaded. Make sure to save the file !
 
-![image](https://maelfabien.github.io/myblog/images/key3.png){:height="30%" width="30%"}
+![image](https://maelfabien.github.io/images/key3.png){:height="30%" width="30%"}
 
 ### 2. Create New Group
 
@@ -48,15 +52,15 @@ An IAM group is a collection of IAM users. Groups let you specify permissions fo
 
 Your first step here will be to connect to your IAM section from the AWS console :
 
-![image](https://maelfabien.github.io/myblog/images/iam1.png){:height="35%" width="35%"}
+![image](https://maelfabien.github.io/images/iam1.png){:height="35%" width="35%"}
 
 Then, click on Groups, "Create New Group" and add a name :
 
-![image](https://maelfabien.github.io/myblog/images/iam2.png){:height="60%" width="60%"}
+![image](https://maelfabien.github.io/images/iam2.png){:height="60%" width="60%"}
 
 Select a policy to attach. Here, the AdministratorAccess.
 
-![image](https://maelfabien.github.io/myblog/images/iam3.png){:height="90%" width="90%"}
+![image](https://maelfabien.github.io/images/iam3.png){:height="90%" width="90%"}
 
 Review the information and confirm the group creation.
 
@@ -64,17 +68,17 @@ Review the information and confirm the group creation.
 
 From the IAM menu, click now on "User" and add a new user. Give it a name, and allow programmatic access.
 
-![image](https://maelfabien.github.io/myblog/images/iam4.png)
+![image](https://maelfabien.github.io/images/iam4.png)
 
 Add your newly created user to the group you created previously :
 
-![image](https://maelfabien.github.io/myblog/images/iam5.png)
+![image](https://maelfabien.github.io/images/iam5.png)
 
 You can eventually add tags at the next step. Confirm the user creation. 
 
 ! Make sure to save the CSV file. This is your only chance to download this file. The file contains the private and public key for your user. Those credentials will be useful when you'll interact in Spark-Scala with AWS services (e.g S3 bucket).
 
-![image](https://maelfabien.github.io/myblog/images/iam6.png)
+![image](https://maelfabien.github.io/images/iam6.png)
 
 The user we created has admin rights. It will be useful in our case, but for security reasons, it is not advised to work with admin accounts. 
 
@@ -84,19 +88,19 @@ Then, log in to your AWS management console : <span style="color:blue">[https://
 
 In the Analytics section, click on EMR :
 
-![image](https://maelfabien.github.io/myblog/images/EMR1.png){:height="35%" width="35%"}
+![image](https://maelfabien.github.io/images/EMR1.png){:height="35%" width="35%"}
 
 Click on "Create Cluster" :
 
-![image](https://maelfabien.github.io/myblog/images/EMR2.png){:height="35%" width="35%"}
+![image](https://maelfabien.github.io/images/EMR2.png){:height="35%" width="35%"}
 
 Make sure to select the configuration that includes Spark :
 
-![image](https://maelfabien.github.io/myblog/images/EMR3.png){:height="70%" width="70%"}
+![image](https://maelfabien.github.io/images/EMR3.png){:height="70%" width="70%"}
 
 And select your key pair :
 
-![image](https://maelfabien.github.io/myblog/images/key4.png){:height="70%" width="70%"}
+![image](https://maelfabien.github.io/images/key4.png){:height="70%" width="70%"}
 
 Wait a few minutes for your instance to start. 
 
@@ -105,19 +109,19 @@ At that point, the instance we created does not allow for SSH connection. The ne
 ### 5. Allow SSH connection
 
 In the "Security and access" section, click on the link attached to Security groups for Master.
-![image](https://maelfabien.github.io/myblog/images/ssh1.png){:height="70%" width="70%"}
+![image](https://maelfabien.github.io/images/ssh1.png){:height="70%" width="70%"}
 
 Then select the group "Master group for Elastic MapReduce" and edit inbound rule :
-![image](https://maelfabien.github.io/myblog/images/ssh2.png){:height="70%" width="70%"}
+![image](https://maelfabien.github.io/images/ssh2.png){:height="70%" width="70%"}
 
 Then add a rule, and allow SSH from anywhere :
-![image](https://maelfabien.github.io/myblog/images/ssh3.png){:height="70%" width="70%"}
+![image](https://maelfabien.github.io/images/ssh3.png){:height="70%" width="70%"}
 
 If you get an error, add the sources separately. First a security rule with source ``` 0.0.0.0/0 ``` , and then another one with ``` ::/0 ```.
 
 Once the SSH connection has been allowed, we will be able to redirect the different services to our local ports when establishing the SSH connection. The different services pre-configured on your EMR instance can be accessed through the following ports :
 
-![image](https://maelfabien.github.io/myblog/images/ssh4.png){:height="50%" width="50%"}
+![image](https://maelfabien.github.io/images/ssh4.png){:height="50%" width="50%"}
 
 ## 6. Connect to your EMR instance
 
@@ -163,4 +167,4 @@ Thanks to the redirection we previously established, you should be able to simpl
 
 The port 8891 was chosen quite randomly, since 8890 was already used by Jupyter Notebook on my computer.
 
-![image](https://maelfabien.github.io/myblog/images/zeppelin.png){:height="70%" width="70%"}
+![image](https://maelfabien.github.io/images/zeppelin.png){:height="70%" width="70%"}

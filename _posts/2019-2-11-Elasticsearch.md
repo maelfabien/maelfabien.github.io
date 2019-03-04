@@ -1,17 +1,19 @@
 ---
 published: true
 title: Install and run Elasticsearch + Kibana locally
-collection: bigdata
+collection: bgd
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [bigdata]
+excerpt : "Elastic Search, Logstash, Kibana"
 header :
-    image: "https://maelfabien.github.io/myblog/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/images/wolf.jpg"
 comments : true
 toc: true
 toc_sticky: true
---- 
+---
 
 ![image](https://maelfabien.github.io/myblog/images/els.png)
 
