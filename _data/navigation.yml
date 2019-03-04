@@ -1,22 +1,23 @@
-# main links links
+# main links
 main:
-  - title: "Statistics"
+  - title: "Statistiques"
     url: /st/
-
+  - title: "Engineering"
+    url: /engnr/
   - title: "Machine Learning"
     url: /ml/
-    
-  - title: "Big Data"
-    url: /bigdata/
-    
-  - title: "Deep Learning"
-    url: /dl/
-
-  - title: "Tutorials"
-    url: /tuto/
-    
-  - title: "Projects"
-    url: /projects/
-    
+  - title: "Kaggle"
+    url: /kaggle/
+  - title: "Biblio"
+    url: /resources/
   - title: "CV"
-    url: /cv/
+    url: https://alexpeterbec.github.io/assets/images/CV-Alexandre-Bec.pdf
+
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
