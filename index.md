@@ -22,7 +22,7 @@ You will find here content related to my fields of interest :
 
 I'm also uploading some tutorials on specific topics (such as Face Detection). 
 
-If you would like to get to know more about me, feel free to check out my [resume](https://maelfabien.github.io/myblog//cv/).
+If you would like to get to know more about me, feel free to check out my [resume](https://maelfabien.github.io/cv/).
 
 Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any question / remark. I'm currently looking for a data science internship and I'd like to start a Ph.D. next year (2020). 
 
