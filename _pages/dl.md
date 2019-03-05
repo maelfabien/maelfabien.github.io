@@ -10,7 +10,7 @@ toc_sticky: true
 
 A series of articles dedicated to deep learning.
 
-## Deep Neural Networks
+## Theory of Deep Neural Networks
 
 [The Rosenblatt's Perceptron](https://maelfabien.github.io/deeplearning/Perceptron/)
 
