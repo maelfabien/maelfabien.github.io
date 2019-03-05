@@ -1,7 +1,7 @@
 ---
 published: true
 title: A guide to Inception Model in Keras
-collection: st
+collection: dl
 layout: single
 author_profile: false
 read_time: true
