@@ -15,13 +15,13 @@ toc: true
 toc_sticky: true
 ---
 
-![image](https://maelfabien.github.io/images/els.png)
+![image](https://maelfabien.github.io/assets/images/els.png)
 
 You may have already heard of Elasticsearch and Kibana. Elasticsearch is an open source distributed, RESTful search and analytics engine capable of solving a growing number of use cases. Elasticsearch has been downloaded over 250 millions times and has an active community of more than 100'000 members.
 
 # I. The Elastic Stack
 
-![image](https://maelfabien.github.io/images/elastic_stack.png)
+![image](https://maelfabien.github.io/assets/images/elastic_stack.png)
 
 Kibana is used to visualize data, and Elasticsearch is used to store, search and analyze the data. 
 

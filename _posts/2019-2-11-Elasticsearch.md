@@ -15,7 +15,7 @@ toc: true
 toc_sticky: true
 ---
 
-![image](https://maelfabien.github.io/images/els.png)
+![image](https://maelfabien.github.io/assets/images/els.png)
 
 Previously, we covered the Elastic Cloud. This is a fully managed solution that may not fit all the needs. How can you run Elasticsearch locally ? How can you launch Kibana ? And how do you use Dev Tools ? We'll answer those questions here.
 
@@ -77,6 +77,6 @@ log   [17:49:10.844] [info][listening] Server running at http://localhost:5601
 
 Now, head to the following link in your browser : <span style="color:blue">[http://localhost:5601](http://localhost:5601)</span>.
 
-![image](https://maelfabien.github.io/images/el_1.png)
+![image](https://maelfabien.github.io/assets/images/el_1.png)
 
 We now have both Kibana and Elasticsearch running !

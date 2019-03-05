@@ -32,11 +32,11 @@ $$ H_T(x) = 1/T \sum_t {h_t(x)} $$
 
 This process can be illustrated the following way. Let's consider 3 classifiers which produce a classification result and can be either right or wrong. If we plot the results of the 3 classifiers, there are regions in which the classifiers will be wrong. These regions are represented in red. 
 
-![image](https://maelfabien.github.io/images/bagging_true.png)
+![image](https://maelfabien.github.io/assets/images/bagging_true.png)
 
 This example works perfectly, since when one classifier is wrong, the two others are correct. By voting classifier, you achieve a great accuracy ! But as you might guess, there's also cases in which Bagging does not work properly, when all classifiers are mistaken in the same region.
 
-![image](https://maelfabien.github.io/images/bagging_false.png)
+![image](https://maelfabien.github.io/assets/images/bagging_false.png)
 
 For this reason, the intuition behind the discovery of Boosting was the following :
 - instead of training parallel models, one needs to train models sequentially
@@ -56,7 +56,7 @@ Instead of training the models in **parallel**, we can train them **sequentially
 
 Boosting trains a series a low performing algorithms, called weak learners, by adjusting the error metric over time. Weak learners are algorithms whose error rate is slightly under 50% as illustrated below :
 
-![image](https://maelfabien.github.io/images/weak_classifier.png){:height="60%" width="60%"}
+![image](https://maelfabien.github.io/assets/images/weak_classifier.png){:height="60%" width="60%"}
 
 ### Weighted errors
 
@@ -64,19 +64,19 @@ How could we implement such classifier ? By weighting errors throughout the iter
 
 Let's consider data points on a 2D plot. Some of them will be well classified, others won't. Usually, the weight attributed to each error when computing the error rate is $$ \frac {1} {n} $$ where n is the number of data points to classify.
 
-![image](https://maelfabien.github.io/images/unweighted_errors.png)
+![image](https://maelfabien.github.io/assets/images/unweighted_errors.png)
 
 Now if we apply some weight to the errors :
 
-![image](https://maelfabien.github.io/images/weighted_errors.png)
+![image](https://maelfabien.github.io/assets/images/weighted_errors.png)
 
 You might now notice that we give more weight to the data points that are not well classified. Here's an illustration of the weighting process :
 
-![image](https://maelfabien.github.io/images/example.png)
+![image](https://maelfabien.github.io/assets/images/example.png)
 
 In the end, we want to build a strong classifier that may look like this :
 
-![image](https://maelfabien.github.io/images/combined.png)
+![image](https://maelfabien.github.io/assets/images/combined.png)
 
 ### Tree stumps
 
@@ -86,11 +86,11 @@ The answer lies in the definition of so-called tree stumps ! Tree stumps defines
 
 There are a lot of combinations possible for a tree stump. Let's see how many combinations we face in our simple example ? Let's take a minute to count them.
 
-![image](https://maelfabien.github.io/images/stumps.png){:height="80%" width="80%"}
+![image](https://maelfabien.github.io/assets/images/stumps.png){:height="80%" width="80%"}
 
 Well, the answer is... 12 ! It might seem surprising, but it's rather easy to understand.
 
-![image](https://maelfabien.github.io/images/stumps_12.png){:height="80%" width="80%"}
+![image](https://maelfabien.github.io/assets/images/stumps_12.png){:height="80%" width="80%"}
 
 There are 12 possible "test" we could make. The "2" on the side of each separating line simply represents the fact that all points on one side could be points that belong to class 0, or to class 1. Therefore, there's 2 tests embedded in it.
 
@@ -100,7 +100,7 @@ At each iteration $$ t $$, we will choose $$ h_t $$ the weak classifier that spl
 
 As stated above, the best split is found by identifying at each iteration $$ t $$, the best weak classifier $$ h_t $$, generally a decision tree with 1 node and 2 leaves (a stump). Suppose that we are trying a predict whether someone who wants to borrow money will be a good payer or not :
 
-![image](https://maelfabien.github.io/images/split.png)
+![image](https://maelfabien.github.io/assets/images/split.png)
 
 In this case, the best split at time $$ t $$ is to stump on the Payment history. In this case, the best split at time tt is to stump on the Payment history, since the weighted error resulting of this split is minimal.
 
@@ -110,13 +110,13 @@ Simply note that decision tree classifiers like these ones can in practice be de
 
 The next logical step is to combine the classifiers into a Sign classifier and depending on which side of the frontier a point will stand, it will be classified as 0 or 1. It can be achieved this way :
 
-![image](https://maelfabien.github.io/images/classifier.png)
+![image](https://maelfabien.github.io/assets/images/classifier.png)
 
 Do you see any way to potentially improve the classifier ?
 
 By adding weights $$ \alpha^t $$ on each classifier !
 
-![image](https://maelfabien.github.io/images/classifier_full.png)
+![image](https://maelfabien.github.io/assets/images/classifier_full.png)
 
 
 ### Wrapping it up
@@ -163,11 +163,11 @@ This is a very strong result, and it does not contradict the statement according
 
 And there's another trick : any classifier that tries to split 2 well classified data points will never be optimal. There's no need to even compute it.
 
-![image](https://maelfabien.github.io/images/optim_stump.png)
+![image](https://maelfabien.github.io/assets/images/optim_stump.png)
 
 AdaBoost has for a long time been considered as one of the few algorithms that does not overfit. But lately, it has been proven to overfit at some point, and one should be aware of it. AdaBoost is vastly used in face detection to assess whether there is a face in the video or not. AdaBoost can also be used as a regression algorithm.
 
-![image](https://maelfabien.github.io/images/face_detect.png)
+![image](https://maelfabien.github.io/assets/images/face_detect.png)
 
 ## Let's code !
 
@@ -202,7 +202,7 @@ $ X $ contains arrays of length 64 which are simply flattened 8x8 images. The ai
 ```
 plt.imshow(X[4].reshape(8,8))
 ```
-![image](https://maelfabien.github.io/images/4.png)
+![image](https://maelfabien.github.io/assets/images/4.png)
 
 If we stick to a Decision Tree Classifier of depth 1 (a stump), here's how to implement AdaBoost classifier :
 

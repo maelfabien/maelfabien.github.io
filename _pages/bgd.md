@@ -37,7 +37,9 @@ A series of articles dedicated to Big Data analytics.
 
 ## Google Cloud Platform
 
-[TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/CollabTPU/)
+[TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/)
+
+[Using Google Drive to save and load files in Colab](https://maelfabien.github.io/bigdata/ColabDrive/)
 
 ## Elastic Search, Logstash, Kibana
 
