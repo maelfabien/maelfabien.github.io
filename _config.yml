@@ -181,7 +181,27 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
+# Collections
+collections:
+  dl:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  ml:
+    output: true
+    permalink: /:collection/:path/
+  st:
+    output: true
+    permalink: /:collection/:path/
+  bigdata:
+    output: true
+    permalink: /:collection/:path/
+  tuto:
+    output: true
+    permalink: /:collection/:path/
+    
 # Conversion
 markdown: kramdown
 highlighter: rouge
