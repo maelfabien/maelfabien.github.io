@@ -391,9 +391,7 @@ cv2.destroyAllWindows()
 
 ## 6. Results
 
-I've made a quick YouTube illustration of the face detection algorithm : 
-
-{% include video id="bOflpJ2J7nQ" provider="youtube" %}
+I've made a quick [YouTube](https://www.youtube.com/watch?v=bOflpJ2J7nQ) illustration of the face detection algorithm.
  
 # II. Histogram of Oriented Gradients (HOG) in Dlib
 
