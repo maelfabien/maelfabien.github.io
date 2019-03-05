@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Posts by Collection"
+title: "Latest articles"
 author_profile: true
 ---
 
