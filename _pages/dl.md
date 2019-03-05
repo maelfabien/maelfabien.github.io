@@ -20,3 +20,4 @@ A series of articles dedicated to deep learning.
 
 [Convolutional Neural Networks](https://maelfabien.github.io/deeplearning/cnn/)
 
+[A guide to Inception Architectures in Keras](https://maelfabien.github.io/deeplearning/inception/)
