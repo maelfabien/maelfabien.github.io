@@ -11,13 +11,13 @@ redirect_from:
 intro: 
     - excerpt: 'Some of my latest articles in statistics, machine learning, deep learning or big data analytics. `type="center"`'
 feature_row:
-    - image_path: /assets/images/stats_head.jpg
+    - image_path: "https://maelfabien.github.io/assets/images/stats_head.jpg"
     alt: "Linear Regression"
     title: "Linear Regression"
     url: "https://maelfabien.github.io/statistics/linreg/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-    - image_path: /assets/images/ml_head.png
+    - image_path: "https://maelfabien.github.io/assets/images/ml_head.png"
     alt: "AdaBoost"
     title: "AdaBoost"
     url: "https://maelfabien.github.io/machinelearning/adaboost/"
@@ -30,7 +30,7 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row2:
-    - image_path: /assets/images/bgd_head.png
+    - image_path: "https://maelfabien.github.io/assets/images/bgd_head.png"
     alt: "placeholder image 2"
     title: "Placeholder Image Left Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
