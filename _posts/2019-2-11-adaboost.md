@@ -1,16 +1,19 @@
 ---
 published: true
 title: Adaptative Boosting (AdaBoost)
-collection: ml
+collection: st
 layout: single
 author_profile: false
-classes: wide
 read_time: true
+categories: [machinelearning]
+excerpt : "Supervised Learning Algorithms"
 header :
-    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
+toc: true
+toc_sticky: true
 ---
-
 Boosting techniques have recently been rising in Kaggle competitions and other predictive analysis tasks. You may have heard of them under the names of XGBoost or LGBM. In this tutorial, we'll go through Adaboost, one of the first boosting techniques discovered. 
 
 This article can also be found on <a href="https://towardsdatascience.com/boosting-and-adaboost-clearly-explained-856e21152d3e">Towards Data Science</a>.

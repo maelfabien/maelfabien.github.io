@@ -37,7 +37,7 @@ A series of articles dedicated to Big Data analytics.
 
 ## Google Cloud Platform
 
-[TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/zeppelin-GDELT/)
+[TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/CollabTPU/)
 
 ## Elastic Search, Logstash, Kibana
 
