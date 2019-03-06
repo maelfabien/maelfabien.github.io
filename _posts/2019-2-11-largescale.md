@@ -257,7 +257,7 @@ The distributions are the following :
 - $$ b $$ follows a uniform distribution : $$ b \sim U[0, 2 \pi] $$
 - $$ w $$ follows $$ P (w) $$ the scaled fourier transform of  $$ K(\Delta) $$
 
-If the Kernel is Gaussian, $$ P $$ is Gaussian itself : $$ P \sim N(0, 2 \gamma) $$ . If the Kernel is Laplacian, P is Cauchy.
+If the Kernel is Gaussian, $$ P $$ is Gaussian itself : $$ P \sim N(0, 2 \gamma) $$, where the default value of $$ \gamma $$ is $$ \frac {1} {p} $$ , $$ p $$ being the number of features . If the Kernel is Laplacian, $$ P $$ is a Cauchy distribution.
 
 ## Pseudo-Code
 
@@ -273,11 +273,98 @@ $$ c $$ is present in the fraction to create a mean.
 
 In other words, to speed up the whole training process and get results that tend to be similar to RBF kernel, we pre-process the data and apply a linear SVM on top. It can be show that this approximation will converge to the RBF Kernel. 
 
-Moreover, the kernel approximation error uniformly decreases in $$ O( \sqrt { \frac {1} {c}) $$
+Moreover, the kernel approximation error uniformly decreases in $$ O( \sqrt { \frac {1} {c} } ) $$.
+
+## In Python 
+
+Let's define the `random_features` function that will return the modified training data according to the pseudo-code above :
+
+```python
+def random_features(X_train, X_test, gamma, c=300, seed=42):
+    rng = np.random.RandomState(seed)
+    n_samples, n_features = X_train.shape
+
+    W = np.random.normal(0, np.sqrt(2*gamma), (n_features, c))
+    b = np.random.uniform(0, 2*pi, (1,c))
+
+    X_new_train = np.sqrt(2/n_features) * np.cos(np.dot(X_train, W) + b)
+    X_new_test = np.sqrt(2/n_features) * np.cos(np.dot(X_test, W) + b)
+
+    return X_new_train, X_new_test
+```
+
+As defined above, the default value of $$ \gamma $$ is $$ \frac {1} {p} $$ :
+
+```python
+n_samples, n_features = X_train.shape
+gamma = 1. / n_features
+```
+
+Then, modify the input data using the random kernel feature :
+
+```python
+Z_train, Z_test = random_features(X_train, X_test, gamma, c=800)
+```
+
+We'll now assess the efficiency of this technique :
+
+```python
+t0 = time()
+clf = LinearSVC(dual=False)
+clf.fit(Z_train, y_train)
+print("done in %0.3fs" % (time() - t0))
+```
+`done in 39.525s`
+
+```python
+t1 = time()
+accuracy = clf.score(Z_test, y_test)
+print("done in %0.3fs" % (time() - t1))
+print("classification accuracy: %0.3f" % accuracy)
+```
+`done in 0.089s`
+`classification accuracy: 0.881`
+
+The classification is very close to the one achieved by RBF. However, the computation time has been divided by 10 overall.
+
+# IV. Nyström Approximation
+
+The essence of the Nyström approximation is to offer an approximation of the Gram matrix involved in the computation by spectral decomposition.
+
+Let $$ G ∈ R^{n \times n} $$ be a Gram matrix such that $$ G_{i,j} = K(X_i, X_j) $$ . When $$ n $$ gets large, we want to approximate $$ G $$ with a lower rank matrix. 
+
+## Spectral decomposition
+
+Recall that the spectral decomposition is defined as : $$ G = U Λ U^T $$ where :
+- $$ U = [u_1, ... , u_n]^T ∈ R^{n \times n} $$ a set of eigenvectors
+- $$ Λ = diag( \lambda_1, ..., \lambda_n) $$ a set of eigenvalues
+
+The best rank-k approximation $$ G_k $$ of $$ G $$ is given by $$ G_k = U_k Λ_k {U_k}^T $$ where :
+- $$ U_k  ∈ R^{n \times k} $$
+- $$ Λ = diag( \lambda_1, ..., \lambda_k) $$
+
+We only keep the $$ k^{th} $$ largest eigenvalues.
+
+## Limitations and motivation
+
+However, in our case, this is useless. We need to construct $$ G $$ in $$ O(n^2) $$ time and compute its $$ k^{th} $$ best rank approximation in $$ O(n^2) $$ to $$ O(n^3) $$ depending on the value of $$ k $$. 
+
+Our goal is therefore to find a good approximation $$ \hat {G_k} $$ of $$ G_k $$ in $$ O(n) $$ time.
+
+For this reason, we introduce the Nyström approximation :
+
+$$ \hat{G_k} = C W^+ C^T $$ where :
+- $$ C ∈ R^{n \times c} $$
+- $$ W ∈ R^{c \times c} $$
+- $$ W^+ $$ the Moore-Penrose (pseudo) inverse
+
+![image](https://maelfabien.github.io/assets/images/schema_nystrom.png)
 
 
 
+## Principle
 
+If we don't apply
 
-> **Conclusion** : I hope that this article introduced clearly the concept of AdaBoost and that it does now seem clear to you. Don't hesitate to drop a comment if you have any question.
+> **Conclusion** : I hope that that this article on large scale kernel methods was useful to you at some point. Don't hesitate to drop a comment if you have any question.
 
