@@ -263,12 +263,7 @@ If the Kernel is Gaussian, $$ P $$ is Gaussian itself : $$ P \sim N(0, 2 \gamma)
 
 1. Set the number of random kernel features to $$ c $$
 2. Draw $$ w_1, ..., w_c \sim P(w) $$ and $$ b_1, ..., b_c \sim U [0, 2 \pi] $$
-3. Map training points $$ x_1, ..., x_n ∈ R^p $$ to their random kernel features $$ \hat{\phi} (X_1), ...,  \hat{\phi} (X_n) ∈ R^c $$ where :
-
-$$ \hat{\phi} (X_i) = \sqrt{ \frac {2} {c} } cos ( {w_i}^T X + b_j), j ∈ [1, ... , c] $$
-
-$$ c $$ is present in the fraction to create a mean.
-
+3. Map training points $$ x_1, ..., x_n ∈ R^p $$ to their random kernel features $$ \hat{\phi} (X_1), ...,  \hat{\phi} (X_n) ∈ R^c $$ where $$ \hat{\phi} (X_i) = \sqrt{ \frac {2} {c} } cos ( {w_i}^T X + b_j), j ∈ [1, ... , c] $$. $$ c $$ is present in the fraction to create a mean.
 4. Train a linear model (such as Linear SVM) on transformed data $$ \hat{\phi} (X_1), ...,  \hat{\phi} (X_n) ∈ R^c $$
 
 In other words, to speed up the whole training process and get results that tend to be similar to RBF kernel, we pre-process the data and apply a linear SVM on top. It can be show that this approximation will converge to the RBF Kernel. 
@@ -360,11 +355,160 @@ $$ \hat{G_k} = C W^+ C^T $$ where :
 
 ![image](https://maelfabien.github.io/assets/images/schema_nystrom.png)
 
+This decomposition might seem a bit weird, since we sample the columns and the rows of the Gram matrix. First of all, it can only be applied to Gram matrices, not to any kind of matrix. Suppose that we take a look at a matrix of distances between different cities. Would you need all the distances between all the cities to provide a pretty accurate estimate of the distance between 2 cities ? Well, there's definitely some pieces of information that have a little importance and bring few additional precision. This is exactly what we're doing here on the Gram matrix.
 
+## Pseudo-code
 
-## Principle
+1. Sample a set $$ I $$ of $$ c $$ indices uniformly in $$ {1,...,n} $$
+2. Compute $$ c ∈ R^{n \times c} $$ with $$ c_{ij} = K(X_i, X_j), i ∈ {1,...,n}, j ∈ I $$
+3. Form a matrix $$ W ∈ R^{c \times c} $$ with $$ W_{ij} = K(X_i, X_j), i, j ∈ I $$
+4. Compute $$ W_k ∈ R^{c \times c} $$ the best rank-k approximation of $$ W $$
+5. Compute the final rank-k matrix of G : $$ \hat{G_k} = C {W_k}^+ C^T ∈ R^{n \times n} $$
 
-If we don't apply
+The complexity is $$ O(c^3 + nck) $$ . The convergence of this approximation has also been demonstrated.
+
+## In Python
+
+Define the function corresponding to the Nyström approximation :
+```python
+def nystrom(X_train, X_test, gamma, c=500, k=200, seed=44):
+
+    rng = np.random.RandomState(seed)
+    n_samples = X_train.shape[0]
+    idx = rng.choice(n_samples, c)
+
+    X_train_idx = X_train[idx, :]
+    W = rbf_kernel(X_train_idx, X_train_idx, gamma=gamma)
+
+    u, s, vt = linalg.svd(W, full_matrices=False)
+    u = u[:,:k]
+    s = s[:k]
+    vt = vt[:k, :]
+
+    M = np.dot(u, np.diag(1/np.sqrt(s)))
+
+    C_train = rbf_kernel(X_train, X_train_idx, gamma=gamma)
+    C_test = rbf_kernel(X_test, X_train_idx, gamma=gamma)
+
+    X_new_train = np.dot(C_train, M)
+    X_new_test = np.dot(C_test, M)
+
+    return X_new_train, X_new_test
+```
+
+Modify the input data :
+
+```python
+Z_train, Z_test = nystrom(X_train, X_test, gamma, c=500, k=300, seed=44)
+```
+
+Fit the model :
+
+```python
+t0 = time()
+clf = LinearSVC(dual=False)
+clf.fit(Z_train, y_train)
+print("done in %0.3fs" % (time() - t0))
+```
+`done in 15.260s`
+
+And compute the accuracy :
+
+```python
+t1 = time()
+accuracy = clf.score(Z_test, y_test)
+print("done in %0.3fs" % (time() - t1))
+print("classification accuracy: %0.3f" % accuracy)
+```
+`done in 0.021s`
+`classification accuracy: 0.886`
+
+The results are overall better than Linear SVC and random kernel features, and the computation time is way smaller.
+
+# V. Performance overview
+
+In this section, we'll compare the performances of the different versions of the classifier in terms of accuracy and computation time :
+
+```python
+ranks = np.arange(20, 600, 50)
+n_ranks = len(ranks)
+
+timing_rkf = np.zeros(n_ranks)
+timing_nystrom = np.zeros(n_ranks)
+timing_linear = np.zeros(n_ranks)
+timing_rbf = np.zeros(n_ranks)
+
+accuracy_nystrom = np.zeros(n_ranks)
+accuracy_rkf = np.zeros(n_ranks)
+accuracy_linear = np.zeros(n_ranks)
+accuracy_rbf = np.zeros(n_ranks)
+
+print("Training SVMs for various values of c...")
+
+for i, c in enumerate(ranks):
+
+    print(i, c)
+
+    ## Nystorm
+    Z_ny_train, Z_ny_test = nystrom(X_train, X_test, gamma, c=c, k=300, seed=44)
+
+    t0 = time()
+    clf = LinearSVC(dual=False)
+    clf.fit(Z_ny_train, y_train)
+    accuracy_nystrom[i] = clf.score(Z_ny_test, y_test)
+    timing_nystrom[i] = time() - t0
+
+    ## Random Kernel Feature
+    Z_rkf_train, Z_rkf_test = random_features(X_train, X_test, gamma, c=c, seed=44)
+    t0 = time()
+    clf = LinearSVC(dual=False)
+    clf.fit(Z_rkf_train, y_train)
+    accuracy_rkf[i] = clf.score(Z_rkf_test, y_test)
+    timing_rkf[i] = time() - t0
+
+    ## Linear
+    t0 = time()
+    clf = LinearSVC(dual=False)
+    clf.fit(X_train, y_train)
+    accuracy_linear[i] = clf.score(X_test, y_test)
+    timing_linear[i] = time() - t0
+
+    ## RBF
+    t0 = time()
+    clf = SVC(kernel='rbf')
+    clf.fit(X_train, y_train)
+    accuracy_rbf[i] = clf.score(X_test, y_test)
+    timing_rbf[i] = time() - t0
+```
+
+If we plot the time and the accuracy depending on the number of features included, we obtain :
+
+```python
+f, axes = plt.subplots(ncols=1, nrows=2, figsize=(10,6))
+ax1, ax2 = axes.ravel()
+
+ax1.plot(ranks-10, timing_nystrom, '-', label='Nystrom')
+ax1.plot(ranks, timing_rkf, '-', label='RKF')
+ax1.plot(ranks, timing_linear * np.ones(n_ranks), '-', label='LinearSVC')
+ax1.plot(ranks, timing_kernel * np.ones(n_ranks), '-', label='RBF')
+
+ax1.set_xlabel('Number of features')
+ax1.set_ylabel('Time')
+ax1.legend(loc='lower right')
+
+ax2.plot(ranks-10, accuracy_nystrom, '-', label='Nystrom')
+ax2.plot(ranks, accuracy_rkf, '-', label='RKF')
+ax2.plot(ranks, accuracy_linear * np.ones(n_ranks), '-', label='LinearSVC')
+ax2.plot(ranks, accuracy_kernel * np.ones(n_ranks), '-', label='RBF')
+ax2.set_xlabel('Number of features')
+ax2.set_ylabel('Accuracy')
+ax2.legend(loc='lower right')
+plt.tight_layout()
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/perf_kernel.png)
+
+We observe clearly the convergence in terms of accuracy of random kernel features and Nyström methods. The computation time is also smaller up to a certain number of fertures.
 
 > **Conclusion** : I hope that that this article on large scale kernel methods was useful to you at some point. Don't hesitate to drop a comment if you have any question.
-

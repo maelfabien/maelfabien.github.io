@@ -25,3 +25,5 @@ A series of articles dedicated to machine learning.
 [Linear Discriminant Analysis](https://maelfabien.github.io/machinelearning/LDA/)
 
 [Adaptative Boosting (AdaBoost)](https://maelfabien.github.io/machinelearning/adaboost/)
+
+[Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/)
