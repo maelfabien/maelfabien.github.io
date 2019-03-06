@@ -75,3 +75,52 @@ $$ \sum_i {\alpha}_i  y_i = 0, i = 1 ... n $$
 
 The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i K({X_i}^T X_i )) $$
 
+## Types of kernels
+
+What types of kernels can be used ?
+
+- Linear kernel : $$ K(X,X') = X^T X' $$
+- Polynomial kernel : $$ K(X,X') = (X^T X' + c)^d $$
+- Gaussian RBF kernel : $$ K(X,X') = exp( - \gamma { { \mid \mid X - X' \mid \mid}_2 }^2 ) $$
+- Laplace RBF kernel : $$ K(X,X') = exp( - \gamma { \mid \mid X - X' \mid \mid}_1 ) $$
+
+Kernels allow non-linear variants for many linear machine learning algorithms :
+- SVM
+- Ridge Regression
+- PCA
+- K-Means
+- and others ...
+
+# II. Limits of Kernel methods
+
+Kernel methods rely on Gram Matrix : $$ G ∈ R^{n \times n} $$
+
+The Gram martix has the following form :
+
+$$ \begin{pmatrix} K(X_1, X_1) & K(X_1, X_2) & .. & K(X_1, X_n) \\ ... & ... & ... & ... \\ K(X_n, X_1) & K(X_n, X_2) & .. & K(X_n, X_n) \end{pmatrix} $$
+
+The complexity of the kernel evaluation in the training is $$ O(n^2) $$.
+
+The complexity of the prediction is $$ O(n) $$. 
+
+Overall, this becomes infeasible for large $$ n $$.
+
+# III. Random Kernel features
+
+If we don't apply the Kernel SVM, the problem can be expressed the following way :
+
+$$ min_{w,b} \frac {1} {2} { { \mid \mid w \mid \mid }_2 }^2 + C \sum_i [ y_i (W^T \phi(X) + b)]_+ $$
+
+where $$ [a]_+ = max(0, 1-a) $$ is the hingle loss function.
+
+Usually, $$ \phi(X) $$ is unknown and potentially infinite-dimensional, and implies $$ O(n^2) $$ or $$ O(n^3) $$ complexity.
+
+The ***idea*** of Randon Kernel Features is to find a finite dimensional feature map $$ \hat{ \phi } (X)  ∈ R^c $$ such that :
+
+$$ K(X, X') ≈ < \hat{\phi}(X), \hat{\phi}(X') > $$
+
+We should be able to solve the primal form to get $$ w $$ and $$ b $$.
+
+
+> **Conclusion** : I hope that this article introduced clearly the concept of AdaBoost and that it does now seem clear to you. Don't hesitate to drop a comment if you have any question.
+
