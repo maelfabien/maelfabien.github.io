@@ -24,7 +24,7 @@ Two major algorithms allow to easily scale Kernel methods :
 We'll recall what Kernel methods are, and cover both methods.
 
 <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 # I. Recall on Kernel Methods
@@ -91,3 +91,40 @@ Kernels allow non-linear variants for many linear machine learning algorithms :
 - K-Means
 - ...
 
+# II. Limits of Kernel methods
+
+Kernel methods rely on Gram Matrix : $$ G ∈ R^{n \times n} $$
+
+The Gram martix has the following form :
+
+$$
+\begin{pmatrix} 
+K(X_1, X_1) & K(X_1, X_2) & .. & K(X_1, X_n) \\
+... & ... & ... & ... \\
+K(X_n, X_1) & K(X_n, X_2) & .. & K(X_n, X_n)
+\end{pmatrix}
+$$
+
+The complexity of the kernel evaluation in the training is $$ O(n^2) $$.
+
+The complexity of the prediction is $$ O(n) $$. 
+
+Overall, this becomes infeasible for large $$ n $$.
+
+# III. Random Kernel features
+
+If we don't apply the Kernel SVM, the problem can be expressed the following way :
+
+$$ min_{w,b} \frac {1} {2} { { \mid \mid w \mid \mid }_2 }^2 + C \sum_i [ y_i (W^T] $$
+
+
+
+
+
+> **Conclusion** : I hope that this article introduced clearly the concept of AdaBoost and that it does now seem clear to you. Don't hesitate to drop a comment if you have any question.
+
+*References* :
+- <a href="https://www.courgisera.org/lecture/ml-classification/learning-boosted-decision-stumps-with-adaboost-bx5YA">Coursera 1</a>. 
+- <a href="https://ru.coursera.org/lecture/ml-classification/learning-boosted-decision-stumps-with-adaboost-bx5YA">Coursera 2</a>. 
+- <a href="https://www.youtube.com/watch?v=UHBmv7qCey4">MIT Course</a>
+- <a href="https://juegosrev.com/nl/wolf-howling-at-the-moon-wallpapers.html">Header Image</a>. 
