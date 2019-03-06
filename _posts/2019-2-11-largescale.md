@@ -35,7 +35,7 @@ We'll consider a binary classification framework. Suppose we have training obser
 
 We can define the non-linearly separable SVM framework as follows :
 
-$$ min_{w ∈ R^p, b ∈ R, \epsilon ∈ R^n} \frac {1} {2} { {\mid \mid w \mid \mid }_2 }^2 + C \sum_i {\epsilon}_i $$
+Insert Eq 3.
 
 subject to :
 
