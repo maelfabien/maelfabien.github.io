@@ -24,14 +24,14 @@ Two major algorithms allow to easily scale Kernel methods :
 We'll recall what Kernel methods are, and cover both methods.
 
 <script type="text/javascript" async
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 # I. Recall on Kernel Methods
 
 ## SVM Classifier
 
-We'll consider a binary classification framework. Suppose we have training observations $$ X_1, ..., X_n \subset R^p $$, and training labels $$ y_1, ..., y_n ∈ {-1,1} $$ .
+We'll consider a binary classification framework. Suppose we have training observations $$ X_1, ..., X_n \subset R^p $$ , and training labels $$ y_1, ..., y_n ∈ {-1,1} $$ .
 
 We can define the non-linearly separable SVM framework as follows :
 
@@ -65,7 +65,9 @@ $$ K(X, X') = < \phi(X), \phi(X') > $$
 
 The Kernel SVM can be expressed as :
 
-$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j K ({X_i}^T X_j) $$
+
+Insert Eq.
+
 
 subject to :
 
@@ -97,13 +99,7 @@ Kernel methods rely on Gram Matrix : $$ G ∈ R^{n \times n} $$
 
 The Gram martix has the following form :
 
-$$
-\begin{pmatrix} 
-K(X_1, X_1) & K(X_1, X_2) & .. & K(X_1, X_n) \\
-... & ... & ... & ... \\
-K(X_n, X_1) & K(X_n, X_2) & .. & K(X_n, X_n)
-\end{pmatrix}
-$$
+$$ \begin{pmatrix} K(X_1, X_1) & K(X_1, X_2) & .. & K(X_1, X_n) \\ ... & ... & ... & ... \\ K(X_n, X_1) & K(X_n, X_2) & .. & K(X_n, X_n) \end{pmatrix} $$
 
 The complexity of the kernel evaluation in the training is $$ O(n^2) $$.
 
@@ -115,9 +111,12 @@ Overall, this becomes infeasible for large $$ n $$.
 
 If we don't apply the Kernel SVM, the problem can be expressed the following way :
 
-$$ min_{w,b} \frac {1} {2} { { \mid \mid w \mid \mid }_2 }^2 + C \sum_i [ y_i (W^T] $$
+Insert Eq 2.
 
 
+where $$ [a]_+ = max(0, 1-a) $$ is the hingle loss function.
+
+Usually, 
 
 
 
