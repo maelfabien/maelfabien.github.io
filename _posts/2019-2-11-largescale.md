@@ -61,6 +61,8 @@ A symmetric function $$ K : χ \times χ → R $$ is a kernel if there exists a 
 
 $$ K(X, X') = < \phi(X), \phi(X') > $$
 
+The Kernel trick can be visualized as a projection of an initial problem with a complex desision frontier into a feature space in which the decision frontier is way easier and faster to build.
+
 ![image](https://maelfabien.github.io/assets/images/kernel_trick.jpg)
 
 The Kernel SVM can be expressed as :
@@ -107,6 +109,8 @@ Overall, this becomes infeasible for large $$ n $$.
 
 # III. Random Kernel features
 
+## Principle
+
 If we don't apply the Kernel SVM, the problem can be expressed the following way :
 
 $$ min_{w,b} \frac {1} {2} { { \mid \mid w \mid \mid }_2 }^2 + C \sum_i [ y_i (W^T \phi(X) + b)]_+ $$
@@ -119,7 +123,28 @@ The ***idea*** of Randon Kernel Features is to find a finite dimensional feature
 
 $$ K(X, X') ≈ < \hat{\phi}(X), \hat{\phi}(X') > $$
 
-We should be able to solve the primal form to get $$ w $$ and $$ b $$.
+We should be able to solve the primal form to get $$ w $$ and $$ b $$, and use the approximated kernel in a binary classification : $$ f(x) = \sign (w^T \hat{ \phi } (X) + b) $$ .
+
+## Botchner's Thoerem
+
+A kernel is said to be shift-invariant if and only if for any $$ a ∈ R^p $$ and any $$ (x,x') ∈ R^p \times R^p $$ :
+
+$$ K (x-a, x'-a) = K (x, x') $$
+
+$$ K (x, x') = K (x-x') = K ( \Delta) $$
+
+> We'll consider shift-invariant kernels $$ K (x-x') = K ( \Delta) $$ (Gaussian RBF and Laplace RBF) in order to apply Bochner's theorem. This theorem states that a continuous shift-invariant kernel is positive definite if and only if $$ K ( \Delta) $$ is the Fourier transform of a non-negative probability measure. 
+
+It can be shown (the demonstration is skipped for this article) that :
+
+$$ K (x, x') = E_{w \sim P, b \sim U[0, 2 \pi]} [ \sqrt{2} cos (w^T x + b) \sqrt{2} cos (w^T x' + b)] $$
+
+The kernel is an infinite sum since we consider all values of $$ w $$ and $$ b $$. The kernel has therefore an infinite dimension. A usual technique to approximate such problem is the random sampling ! If we know the distributions of $$ w $$ and $$ b $$, by Monte-Carlo principle, we'll approach the result of the RBF Kernel !
+
+
+
+
+
 
 
 > **Conclusion** : I hope that this article introduced clearly the concept of AdaBoost and that it does now seem clear to you. Don't hesitate to drop a comment if you have any question.
