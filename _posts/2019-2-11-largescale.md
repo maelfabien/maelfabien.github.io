@@ -91,31 +91,6 @@ Kernels allow non-linear variants for many linear machine learning algorithms :
 - K-Means
 - ...
 
-# II. Limits of Kernel methods
-
-Kernel methods rely on Gram Matrix : $$ G ∈ R^{n \times n} $$
-
-The Gram martix has the following form :
-
-$$
-\begin{pmatrix} 
-K(X_1, X_1) & K(X_1, X_2) & .. & K(X_1, X_n) \\
-... & ... & ... & ... \\
-K(X_n, X_1) & K(X_n, X_2) & .. & K(X_n, X_n)
-\end{pmatrix}
-$$
-
-The complexity of the kernel evaluation in the training is $$ O(n^2) $$.
-
-The complexity of the prediction is $$ O(n) $$. 
-
-Overall, this becomes infeasible for large $$ n $$.
-
-# III. Random Kernel features
-
-If we don't apply the Kernel SVM, the problem can be expressed the following way :
-
-$$ min_{w,b} \frac {1} {2} {{\mid \mid w \mid \mid}_2}^2
 
 
 
