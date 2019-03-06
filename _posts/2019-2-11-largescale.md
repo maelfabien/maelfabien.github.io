@@ -55,3 +55,23 @@ $$ {\epsilon}_i , i = 1 ... n $$
 
 The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i {X_i}^T X_i ) $$
 
+## The kernel trick
+
+A symmetric function $$ K : χ \times χ → R $$ is a kernel if there exists a mapping function $$ \phi : χ → R $$ from the instance space $$ χ $$ to a Hilbert space $$ H $$ such that $$ K $$ can be written as an inner product in $$ H $$ :
+
+$$ K(X, X') = < \phi(X), \phi(X') > $$
+
+![image](https://maelfabien.github.io/assets/images/kernel_trick.jpg)
+
+The Kernel SVM can be expressed as :
+
+$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j K ({X_i}^T X_j) $$
+
+subject to :
+
+$$ 0 ≤ {\alpha}_i ≤ C, i = 1 ... n $$
+
+$$ \sum_i {\alpha}_i  y_i = 0, i = 1 ... n $$
+
+The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i K({X_i}^T X_i )) $$
+
