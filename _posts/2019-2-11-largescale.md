@@ -35,7 +35,7 @@ We'll consider a binary classification framework. Suppose we have training obser
 
 We can define the non-linearly separable SVM framework as follows :
 
-$$ min_{w ∈ R^p, b ∈ R, \epsilon ∈ R^n} \frac {1} {2} {{\mid \mid w \mid \mid }_2}^2 + C \sum_i {\epsilon}_i $$
+$$ min_{w ∈ R^p, b ∈ R, \epsilon ∈ R^n} \frac {1} {2} { {\mid \mid w \mid \mid }_2 }^2 + C \sum_i {\epsilon}_i $$
 
 subject to :
 
@@ -91,15 +91,3 @@ Kernels allow non-linear variants for many linear machine learning algorithms :
 - K-Means
 - ...
 
-
-
-
-
-
-> **Conclusion** : I hope that this article introduced clearly the concept of AdaBoost and that it does now seem clear to you. Don't hesitate to drop a comment if you have any question.
-
-*References* :
-- <a href="https://www.courgisera.org/lecture/ml-classification/learning-boosted-decision-stumps-with-adaboost-bx5YA">Coursera 1</a>. 
-- <a href="https://ru.coursera.org/lecture/ml-classification/learning-boosted-decision-stumps-with-adaboost-bx5YA">Coursera 2</a>. 
-- <a href="https://www.youtube.com/watch?v=UHBmv7qCey4">MIT Course</a>
-- <a href="https://juegosrev.com/nl/wolf-howling-at-the-moon-wallpapers.html">Header Image</a>. 
