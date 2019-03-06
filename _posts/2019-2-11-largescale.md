@@ -27,19 +27,40 @@ We'll recall what Kernel methods are, and cover both methods.
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-## Recall on Kernel Methods
+# I. Recall on Kernel Methods
+
+## SVM Classifier
 
 We'll consider a binary classification framework. Suppose we have training observations $$ X_1, ..., X_n \subset R^p $$, and training labels $$ y_1, ..., y_n ∈ {-1,1} $$ .
 
 We can define the SVM framework as follows :
 
-$$ min_{w ∈ R^p, b ∈ R, \epsilon ∈ R^n} \frac {1} {2} {\norm {w}_2}^2 + C \sum_i {\epsilon}_i
+$$ min_{w ∈ R^p, b ∈ R, \epsilon ∈ R^n} \frac {1} {2} {\norm {w}_2}^2 + C \sum_i {\epsilon}_i $$
 
 subject to :
 
-$$ y_i ( w^T X + b) ≥ 1 - {\epsilon_i} $$
+$$ y_i ( w^T X + b) ≥ 1 - {\epsilon_i}, i = 1 ... n$$
 
-$$ {\epsilon_i} ≥ 0 $$
+$$ {\epsilon_i} ≥ 0, i = 1 ... n $$
+
+We can rewrite this as a dual problem using a Lagrange formulation :
+
+$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j {X_i}^T X_j $$
+
+subject to :
+
+$$ 0 ≤ {\alpha}_i ≤ c, i = 1 ... n $$
+
+$$ {\epsilon}_i , i = 1 ... n $$
+
+The binary classifier $$ f(x) = sign( \sum_i {\alpha}_i y_i {X_i}^T X_i ) $$
+
+## The kernel trick
+
+A symmetric function $$ K : χ x χ → R $$ is a kernel if there exists a mapping function $$ \phi : χ → R $$ from the instance space $$ χ $$ to a Hilbert space $$ H $$ such that $$ K $$ can be written as an inner product in $$ H $$ :
+
+$$ K(X, X') = < \phi(X), \phi(X') > $$
+
 
 
 
