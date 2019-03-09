@@ -129,4 +129,6 @@ session.close()
 ```
 This heads an accuracy of around `80%` which can be largely improved by the next techniques we are going to cover.
 
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
+
 > **Conclusion** : Next step, we are going to explore the Multilayer Perceptron !

@@ -231,6 +231,6 @@ decoded = Dense(128, activation='relu')(decoded)
 decoded = Dense(shape_x * shape_y, activation='sigmoid')(decoded)
 ```
 
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 
-
-> **Conclusion** : Inception models remain expensive to train. Transfer learning brings part of the solution when it comes to adapting such algorithms to your specific task. 
+> **Conclusion** : I hope this quick introduction to autoencoder was clear. Don't hesitate to drop a comment if you have any question.

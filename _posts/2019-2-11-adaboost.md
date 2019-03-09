@@ -224,6 +224,7 @@ for depth in [1,2,10] :
 
 And the maximal score is reached for a depth of 10 in this simple example, with an accuracy of 95.8%.
 
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 
 > **Conclusion** : I hope that this article introduced clearly the concept of AdaBoost and that it does now seem clear to you. Don't hesitate to drop a comment if you have any question.
 

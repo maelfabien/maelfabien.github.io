@@ -141,4 +141,6 @@ And run it !
 history = model.fit(X_train, y_train, epochs=150, batch_size=64, validation_data=(X_test, y_test))
 ````
 
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
+
 > **Conclusion** : Inception models remain expensive to train. Transfer learning brings part of the solution when it comes to adapting such algorithms to your specific task. 

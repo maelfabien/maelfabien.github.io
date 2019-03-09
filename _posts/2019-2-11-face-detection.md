@@ -615,7 +615,7 @@ However, CNNs in Dlib tend to be the most accurate algorithm. HoG perform pretty
 
 I have personnaly used mainly HoG in my personal projects due to its speed for live face detection. 
 
-If you'd like to see the GitHub repository, it's right [here](https://github.com/maelfabien/Machine-Learning-Tutorials/tree/master/FaceDetection).
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 
 > **Conclusion** : I hope you enjoyed this quick tutorial on OpenCV for face detection. Don't hesitate to drop a comment if you have any question/remark.
 

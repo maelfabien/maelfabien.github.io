@@ -511,4 +511,6 @@ plt.show()
 
 We observe clearly the convergence in terms of accuracy of random kernel features and Nyström methods. The computation time is also smaller up to a certain number of fertures.
 
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
+
 > **Conclusion** : I hope that that this article on large scale kernel methods was useful to you at some point. Don't hesitate to drop a comment if you have any question.
