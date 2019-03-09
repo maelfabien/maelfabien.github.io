@@ -31,3 +31,7 @@ A series of articles dedicated to statistics.
 ## Statistical Hypothesis testing
 
 [Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/)
+
+## Matlab
+
+[Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/)
