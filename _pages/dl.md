@@ -23,3 +23,6 @@ A series of articles dedicated to deep learning.
 ## Architectures
 
 [A guide to Inception Architectures in Keras](https://maelfabien.github.io/deeplearning/inception/)
+
+[Create an Auto-Encoder using Keras functional API](https://maelfabien.github.io/deeplearning/autoencoder/)
+
