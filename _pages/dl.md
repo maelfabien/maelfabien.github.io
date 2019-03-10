@@ -31,3 +31,5 @@ A series of articles dedicated to deep learning.
 [Introduction to Computer Vision](https://maelfabien.github.io/computervision/cv_1/)
 
 [Image Formation and Filtering](https://maelfabien.github.io/computervision/cv_2/)
+
+[Advanced Filtering and Transformations](https://maelfabien.github.io/computervision/cv_3/)
