@@ -24,8 +24,8 @@ If you would like to get to know more about me, feel free to check out my [resum
 
 Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any question / remark. I'm currently looking for a data science internship and I'd like to start a Ph.D. next year (2020). 
 
-#
 
-Total Number of Visiters :
+
+*Total Number of Visiters :*
 
 ![image](https://maelfabien.github.io/assets/images/count.png){:height="20%" width="20%"}
