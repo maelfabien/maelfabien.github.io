@@ -34,7 +34,9 @@ A series of articles dedicated to deep learning.
 
 [Advanced Filtering and Transformations](https://maelfabien.github.io/computervision/cv_3/)
 
-[Images features, panorama](https://maelfabien.github.io/computervision/cv_4/)
+[Images Features, Panorama](https://maelfabien.github.io/computervision/cv_4/)
+
+[Images Alignment](https://maelfabien.github.io/computervision/cv_5/)
 
 ## Tensorflow 2.0
 
