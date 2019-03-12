@@ -39,3 +39,7 @@ A series of articles dedicated to statistics.
 ## Time Series
 
 Articles to come
+
+## Parameters Optimization
+
+Articles to come (Grid Search, Random Search, Bayesian Hyperopt...)
