@@ -34,7 +34,7 @@ A series of articles dedicated to deep learning.
 
 [Advanced Filtering and Transformations](https://maelfabien.github.io/computervision/cv_3/)
 
-[Images Features, Panorama](https://maelfabien.github.io/computervision/cv_4/)
+[Local features, Detection, Description and Matching](https://maelfabien.github.io/computervision/cv_4/)
 
 [Images Alignment](https://maelfabien.github.io/computervision/cv_5/)
 
