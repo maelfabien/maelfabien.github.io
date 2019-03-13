@@ -27,3 +27,7 @@ A series of articles dedicated to machine learning.
 [Adaptative Boosting (AdaBoost)](https://maelfabien.github.io/machinelearning/adaboost/)
 
 [Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/)
+
+## Graph Analysis and Graph Learning
+
+[Bayes Classifier](https://maelfabien.github.io/machinelearning/graph_1/)
