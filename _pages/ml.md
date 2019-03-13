@@ -30,4 +30,4 @@ A series of articles dedicated to machine learning.
 
 ## Graph Analysis and Graph Learning
 
-[Bayes Classifier](https://maelfabien.github.io/machinelearning/graph_1/)
+[Introduction to Graph Analysis](https://maelfabien.github.io/machinelearning/graph_1/)
