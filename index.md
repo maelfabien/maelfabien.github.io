@@ -26,6 +26,6 @@ Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any que
 
 
 
-*Total Number of Visiters :*
+*Total Number of Visitors :*
 
 ![image](https://maelfabien.github.io/assets/images/count.png){:height="20%" width="20%"}
