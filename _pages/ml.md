@@ -30,4 +30,6 @@ A series of articles dedicated to machine learning.
 
 ## Graph Analysis and Graph Learning
 
-[Introduction to Graph Analysis](https://maelfabien.github.io/machinelearning/graph_1/)
+[Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/)
+
+[Graph Analysis](https://maelfabien.github.io/machinelearning/graph_2/)
