@@ -6,7 +6,7 @@ main:
   - title: "Machine Learning"
     url: /ml/
     
-  - title: "Big Data"
+  - title: "Data Engineering"
     url: /bgd/
     
   - title: "Deep Learning"
