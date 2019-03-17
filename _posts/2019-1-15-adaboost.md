@@ -9,7 +9,7 @@ categories: [machinelearning]
 excerpt : "Supervised Learning Algorithms"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
-    teaser_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 toc_sticky: true
