@@ -32,6 +32,8 @@ A series of articles dedicated to statistics.
 
 [Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/)
 
+[Dealing with heteroscedasticity](https://maelfabien.github.io/statistics/hetero/)
+
 ## Matlab
 
 [Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/)
