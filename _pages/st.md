@@ -28,11 +28,14 @@ A series of articles dedicated to statistics.
 
 [Boolean and categorical variables](https://maelfabien.github.io/statistics/Boolean/)
 
+[Dealing with heteroscedasticity](https://maelfabien.github.io/statistics/hetero/)
+
+[Generalized Least Squares](https://maelfabien.github.io/statistics/GLS/)
+
 ## Statistical Hypothesis testing
 
 [Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/)
 
-[Dealing with heteroscedasticity](https://maelfabien.github.io/statistics/hetero/)
 
 ## Matlab
 
@@ -41,7 +44,3 @@ A series of articles dedicated to statistics.
 ## Time Series
 
 Articles to come
-
-## Parameters Optimization
-
-Articles to come (Grid Search, Random Search, Bayesian Hyperopt...)
