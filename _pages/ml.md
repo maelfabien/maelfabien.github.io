@@ -34,6 +34,8 @@ A series of articles dedicated to machine learning.
 
 [Graph Analysis, Erdos-Rényi, Barabasi-Albert](https://maelfabien.github.io/machinelearning/graph_2/)
 
+[Clustering Coefficient, Centrality and Community](https://maelfabien.github.io/machinelearning/graph_3/)
+
 ## Parameters Optimization
 
 Articles to come (Grid Search, Random Search, Bayesian Hyperopt...)
