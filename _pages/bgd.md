@@ -12,6 +12,12 @@ A series of articles dedicated to Big Data analytics.
 
 ## Amazon Web Services
 
+### Cloud Practitioner Certification
+
+[Install Zeppelin Locally](https://maelfabien.github.io/bigdata/cloud_concept/)
+
+### AWS, Cassandra and Spark Project
+
 [Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/)
 
 [Run a Zeppelin Notebook in AWS EMR](https://maelfabien.github.io/bigdata/zeppelin_emr/)
