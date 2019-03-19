@@ -77,7 +77,12 @@ Articles to come
 
 ## Neo4J
 
-Articles to come
+[Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4j/)
+
+[Running queries with Cypher](https://maelfabien.github.io/bigdata/Neo4j_cy/)
+
+[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4j_gt/)
+
 
 ## Docker 
 
