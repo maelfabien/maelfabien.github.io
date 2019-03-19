@@ -26,18 +26,6 @@ A series of articles dedicated to deep learning.
 
 [Create an Auto-Encoder using Keras functional API](https://maelfabien.github.io/deeplearning/autoencoder/)
 
-## Computer Vision
-
-[Introduction to Computer Vision](https://maelfabien.github.io/computervision/cv_1/)
-
-[Image Formation and Filtering](https://maelfabien.github.io/computervision/cv_2/)
-
-[Advanced Filtering and Transformations](https://maelfabien.github.io/computervision/cv_3/)
-
-[Local features, Detection, Description and Matching](https://maelfabien.github.io/computervision/cv_4/)
-
-[Images Alignment](https://maelfabien.github.io/computervision/cv_5/)
-
 ## Tensorflow 2.0
 
 Articles to come
