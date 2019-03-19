@@ -10,6 +10,12 @@ toc_sticky: true
 
 A series of articles dedicated to Big Data analytics.
 
+## Parallel and Distributed Computing
+
+[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components)
+
+Articles to come on Map-Reduce, GPUs...
+
 ## Amazon Web Services
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/)
