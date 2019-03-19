@@ -3,7 +3,7 @@ layout: single
 permalink: /tuto/
 author_profile: true
 header :
-    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    image: "https://maelfabien.github.io/assets/images/viz.jpg"
 ---
 
 A series of tutorials and Computer Vision articles I have realized on different topics.
