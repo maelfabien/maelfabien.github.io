@@ -26,7 +26,6 @@ A series of articles dedicated to Big Data analytics.
 
 [Install Apache Spark on EC2 instances](https://maelfabien.github.io/bigdata/Spark/)
 
-
 ## GDelt Project
 
 [Big (Open)  Data , the GDELT Project](https://maelfabien.github.io/bigdata/zeppelin-GDELT/)
@@ -51,6 +50,18 @@ A series of articles dedicated to Big Data analytics.
 
 [Working with Dev Tools in Elasticsearch](https://maelfabien.github.io/bigdata/DevTools/)
 
+## Neo4J
+
+[Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/)
+
+[Graph Analysis, Erdos-Rényi, Barabasi-Albert](https://maelfabien.github.io/machinelearning/graph_2/)
+
+[Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/)
+
+[Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4J/)
+
+[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/)
+
 ## DataBricks
 
 Articles to come
@@ -74,13 +85,6 @@ Articles to come
 ## Redis
 
 Articles to come
-
-## Neo4J
-
-[Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4J/)
-
-[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/)
-
 
 ## Docker 
 
