@@ -12,33 +12,7 @@ A series of articles dedicated to Big Data analytics.
 
 ## Amazon Web Services
 
-### Cloud Practitioner Certification
-
-[Install Zeppelin Locally](https://maelfabien.github.io/bigdata/cloud_concept/)
-
-### AWS, Cassandra and Spark Project
-
-[Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/)
-
-[Run a Zeppelin Notebook in AWS EMR](https://maelfabien.github.io/bigdata/zeppelin_emr/)
-
-[Working with Amazon S3 Buckets](https://maelfabien.github.io/bigdata/storage/)
-
-[Launch and access an AWS EC2 Cluster](https://maelfabien.github.io/bigdata/EC2/)
-
-[Install Apache Cassandra on an AWS EC2 Cluster](https://maelfabien.github.io/bigdata/EC2_Cassandra/)
-
-[Install Zookeeper on EC2 instances](https://maelfabien.github.io/bigdata/ZK/)
-
-[Install Apache Spark on EC2 instances](https://maelfabien.github.io/bigdata/Spark/)
-
-## GDelt Project
-
-[Big (Open)  Data , the GDELT Project](https://maelfabien.github.io/bigdata/zeppelin-GDELT/)
-
-[Build an ETL in Scala for GDELT Data](https://maelfabien.github.io/bigdata/Scala/)
-
-[Move Scala Dataframes to Cassandra](https://maelfabien.github.io/bigdata/Scala_Cassandra/)
+[Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/)
 
 ## Google Cloud Platform
 
@@ -67,6 +41,28 @@ A series of articles dedicated to Big Data analytics.
 [Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4J/)
 
 [A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/)
+
+## Build a NoSQL Project from scratch
+
+[Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/)
+
+[Run a Zeppelin Notebook in AWS EMR](https://maelfabien.github.io/bigdata/zeppelin_emr/)
+
+[Working with Amazon S3 Buckets](https://maelfabien.github.io/bigdata/storage/)
+
+[Launch and access an AWS EC2 Cluster](https://maelfabien.github.io/bigdata/EC2/)
+
+[Install Apache Cassandra on an AWS EC2 Cluster](https://maelfabien.github.io/bigdata/EC2_Cassandra/)
+
+[Install Zookeeper on EC2 instances](https://maelfabien.github.io/bigdata/ZK/)
+
+[Install Apache Spark on EC2 instances](https://maelfabien.github.io/bigdata/Spark/)
+
+[Big (Open)  Data , the GDELT Project](https://maelfabien.github.io/bigdata/zeppelin-GDELT/)
+
+[Build an ETL in Scala for GDELT Data](https://maelfabien.github.io/bigdata/Scala/)
+
+[Move Scala Dataframes to Cassandra](https://maelfabien.github.io/bigdata/Scala_Cassandra/)
 
 ## DataBricks
 
