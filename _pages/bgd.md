@@ -20,6 +20,8 @@ Articles to come on Map-Reduce, GPUs...
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/)
 
+[Core Services](https://maelfabien.github.io/bigdata/core_services/)
+
 ## Google Cloud Platform
 
 [TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/)

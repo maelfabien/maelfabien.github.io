@@ -1,0 +1,198 @@
+---
+published: true
+title: A guide to Xception Model in Keras
+collection: dl
+layout: single
+author_profile: false
+read_time: true
+categories: [deeplearning]
+excerpt : "Deep Neural Networks"
+header :
+    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
+comments : true
+toc: true
+toc_sticky: true
+---
+
+Inception is a deep convolutional neural network architecture that Deep Learning with Depthwise Separable Convolutions. It was developped by Google researchers. Google presented an interpretation of Inception modules in convolutional neural networks as being an intermediate step in-between regular convolution and the depthwise separable convolution operation (a depthwise convolution followed by a pointwise convolution).
+
+The original paper can be found [here](http://openaccess.thecvf.com/content_cvpr_2017/papers/Chollet_Xception_Deep_Learning_CVPR_2017_paper.pdf).
+
+{% highlight python %}
+{% endhighlight %}
+
+## What does Xception look like ?
+
+The Xception architecture: the data first goes through the entry flow, then through the middle flow which is repeated eight times, and finally through the exit flow. Note that all Convolution and SeparableConvolution layers are followed by batch normalization.
+
+![image](https://maelfabien.github.io/assets/images/xception.png)
+
+Xception architecture has overperformed VGG-16, ResNet and Inception V3 in most classical classification challenges. 
+
+## In Keras 
+
+Let's import the required packages :
+
+```python
+import tensorflow as tf
+import tensorflow.keras
+
+from tensorflow.keras import models, layers
+from tensorflow.keras.models import Model, model_from_json, Sequential
+
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
+from tensorflow.keras.callbacks import TensorBoard
+from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D, SeparableConv2D, UpSampling2D, BatchNormalization, Input, GlobalAveragePooling2D
+
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras.optimizers import SGD, RMSprop
+from tensorflow.keras.utils import to_categorical
+from keras.utils.vis_utils import plot_model
+
+```
+
+
+Import our data. I'm working on the Facial Emotion Recognition 2013 challenge from Kaggle. The `path` links to my local storage folder :
+
+``` python
+X_train = np.load(path + "X_train.npy")
+X_test = np.load(path + "X_test.npy")
+y_train = np.load(path + "y_train.npy")
+y_test = np.load(path + "y_test.npy")
+````
+
+Now, let's build the Entry Flow !
+
+```python
+def entry_flow(inputs) :
+
+    x = Conv2D(32, 3, strides = 2, padding='same')(inputs)
+    x = BatchNormalization()(x)
+    x = Activation('relu')(x)
+
+    x = Conv2D(64,3,padding='same')(x)
+    x = BatchNormalization()(x)
+    x = Activation('relu')(x)
+
+    previous_block_activation = x
+
+    for size in [128, 256, 728] :
+
+        x = Activation('relu')(x)
+        x = SeparableConv2D(size, 3, padding='same')(x)
+        x = BatchNormalization()(x)
+
+        x = Activation('relu')(x)
+        x = SeparableConv2D(size, 3, padding='same')(x)
+        x = BatchNormalization()(x)
+
+        x = MaxPooling2D(3, strides=2, padding='same')(x)
+
+        residual = Conv2D(size, 1, strides=2, padding='same')(previous_block_activation)
+
+        x = tensorflow.keras.layers.Add()([x, residual])
+        previous_block_activation = x
+
+    return x
+```
+
+Add the Middle Flow :
+
+```python
+def middle_flow(x, num_blocks=8) :
+
+    previous_block_activation = x
+
+    for _ in range(num_blocks) :
+
+        x = Activation('relu')(x)
+        x = SeparableConv2D(728, 3, padding='same')(x)
+        x = BatchNormalization()(x)
+
+        x = Activation('relu')(x)
+        x = SeparableConv2D(728, 3, padding='same')(x)
+        x = BatchNormalization()(x)
+
+        x = Activation('relu')(x)
+        x = SeparableConv2D(728, 3, padding='same')(x)
+        x = BatchNormalization()(x)
+
+        x = tensorflow.keras.layers.Add()([x, previous_block_activation])
+        previous_block_activation = x
+
+    return x
+```
+
+And finally the Exit Flow :
+
+```python
+def exit_flow(x) :
+
+    previous_block_activation = x
+
+    x = Activation('relu')(x)
+    x = SeparableConv2D(728, 3, padding='same')(x)
+    x = BatchNormalization()(x)
+
+    x = Activation('relu')(x)
+    x = SeparableConv2D(1024, 3, padding='same')(x) 
+    x = BatchNormalization()(x)
+
+    x = MaxPooling2D(3, strides=2, padding='same')(x)
+
+    residual = Conv2D(1024, 1, strides=2, padding='same')(previous_block_activation)
+    x = tensorflow.keras.layers.Add()([x, residual])
+
+    x = Activation('relu')(x)
+    x = SeparableConv2D(728, 3, padding='same')(x)
+    x = BatchNormalization()(x)
+
+    x = Activation('relu')(x)
+    x = SeparableConv2D(1024, 3, padding='same')(x)
+    x = BatchNormalization()(x)
+
+    x = GlobalAveragePooling2D()(x)
+    x = Dense(1, activation='linear')(x)
+
+    return x
+```
+
+
+
+This quite simple architecture leads to 17'590'553 trainable parameters.
+
+We can build the model :
+
+```python
+inputs = Input(shape=(shape_x, shape_y, 1))
+outputs = exit_flow(middle_flow(entry_flow(inputs)))
+xception = Model(inputs, outputs)
+```
+
+If you would like to visualize the model architecture, use `plot_model` :
+
+```python
+plot_model(xception, to_file='model.png', show_shapes=True, show_layer_names=True)
+```
+
+![image](https://maelfabien.github.io/assets/images/model.png)
+
+We are finally ready to compile the model.
+
+```python
+xception.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+batch_size = 128
+epochs = 150
+```
+
+And run it !
+
+```python
+history = xception.fit(X_train, y_train, epochs=150, batch_size=64, validation_data=(X_test, y_test))
+````
+
+The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
+
+> **Conclusion** : Xception models remain expensive to train, but are pretty good improvements compared to Inception. Transfer learning brings part of the solution when it comes to adapting such algorithms to your specific task. 
