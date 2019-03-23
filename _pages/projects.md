@@ -57,6 +57,13 @@ In this [challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge) ,
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Forest-Cover-Type-Challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge)</span>
 
+### Cyber Security (Splunk)
+
+I used Splunk in a Cyber Security Project. The aim of the project was to identify the source of a data leakage within the company. We went through the logs, identified suspect IP addresses, found the source of the attack (a corrupted PDF), estimated the volume of data stolen, and proposed immediate actions. We detailed the Diamond Model, the Cyber Kill Chain, and developped general perspectives for the Cyber Threat Intelligence of the company.
+
+<embed src="https://maelfabien.github.io/assets/images/Cyber.pdf" type="application/pdf" width="600px" height="500px" />
+
+
 ## Hackathons
 
 [Predicting the Song of the year (1/3)](https://maelfabien.github.io/Hack-1/)
