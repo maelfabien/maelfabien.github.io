@@ -15,7 +15,7 @@ toc: true
 toc_sticky: true
 ---
 
-Inception is a deep convolutional neural network architecture that Deep Learning with Depthwise Separable Convolutions. It was developped by Google researchers. Google presented an interpretation of Inception modules in convolutional neural networks as being an intermediate step in-between regular convolution and the depthwise separable convolution operation (a depthwise convolution followed by a pointwise convolution).
+Xception is a deep convolutional neural network architecture that involves Depthwise Separable Convolutions. It was developped by Google researchers. Google presented an interpretation of Inception modules in convolutional neural networks as being an intermediate step in-between regular convolution and the depthwise separable convolution operation (a depthwise convolution followed by a pointwise convolution). In this light, a depthwise separable convolution can be understood as an Inception module with a maximally large number of towers. This observation leads them to propose a novel deep convolutional neural network architecture inspired by Inception, where Inception modules have been replaced with depthwise separable convolutions. 
 
 The original paper can be found [here](http://openaccess.thecvf.com/content_cvpr_2017/papers/Chollet_Xception_Deep_Learning_CVPR_2017_paper.pdf).
 
@@ -24,7 +24,7 @@ The original paper can be found [here](http://openaccess.thecvf.com/content_cvpr
 
 ## What does Xception look like ?
 
-The Xception architecture: the data first goes through the entry flow, then through the middle flow which is repeated eight times, and finally through the exit flow. Note that all Convolution and SeparableConvolution layers are followed by batch normalization.
+The data first goes through the entry flow, then through the middle flow which is repeated eight times, and finally through the exit flow. Note that all Convolution and SeparableConvolution layers are followed by batch normalization.
 
 ![image](https://maelfabien.github.io/assets/images/xception.png)
 

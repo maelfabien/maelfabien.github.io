@@ -15,7 +15,7 @@ toc: true
 toc_sticky: true
 ---
 
-You might think that an article on the key computer components is quite useless on a data science blog. However, it is essential to understand what the computer you use daily is made of, at a very high level, in order to understand the essence of Distributed Computing, Cloud Computing, GPUs, TPUs and other technologies.
+It is essential to understand what the computer we use daily is made of, at a very high level, in order to understand the essence of Distributed Computing, Cloud Computing, GPUs, TPUs and other technologies.
 
 # I. Computer components
 
