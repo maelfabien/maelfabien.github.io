@@ -36,11 +36,12 @@ A series of articles dedicated to statistics.
 
 [Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/)
 
+## Time Series
+
+[Introduction to Time Series](https://maelfabien.github.io/statistics/TimeSeries1/)
+
+[Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/)
 
 ## Matlab
 
 [Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/)
-
-## Time Series
-
-Articles to come
