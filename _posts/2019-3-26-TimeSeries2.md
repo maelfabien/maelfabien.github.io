@@ -107,12 +107,14 @@ The partial autocorrelation function (PACF) gives the partial correlation of a s
 ![image](https://maelfabien.github.io/assets/images/ts_19.png)
 
 How can we test if a time series is stationary ?
-
+- look at the plots (as above)
+- look at summary statistics and box plots as in the previous article. A simple trick is to cut the data set in 2, look at mean and variance for each split, and plot the distribution of values for both splits.
+- perform statistical tests, using the Augmented Dickey-Fuller test
 
 
 ## 3. Ergodicity
 
-**Ergodicity** is the process by which we forget the initial conditions. This is reached when auto-correlation of order $$ k $$ tends to $$ 0 $$ as $$ k $$ tends to $$ infinity $$.
+**Ergodicity** is the process by which we forget the initial conditions. This is reached when auto-correlation of order $$ k $$ tends to $$ 0 $$ as $$ k $$ tends to $$ \infty $$.
 
 According to the ergodicity theorem, when a time series is strictly stationary and erdogic, and $$ E(Y_T) < \infty $$ when $$ T → \infty $$, then $$ \frac {1} {n} \sum_i y_t → E(Y_T) $$ 
 

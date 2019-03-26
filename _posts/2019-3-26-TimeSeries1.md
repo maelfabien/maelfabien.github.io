@@ -22,6 +22,14 @@ toc_sticky: true
 {% highlight matlab %}
 {% endhighlight %}
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4222938078467520",
+        enable_page_level_ads: true
+    });
+</script>
+
 # I. What is a time series ?
 
 Time series are series of data collected with the same unit over several successive periods. 
