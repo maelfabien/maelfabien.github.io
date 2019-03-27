@@ -46,6 +46,8 @@ Articles to come on Map-Reduce, GPUs...
 
 [Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/)
 
+[Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/)
+
 [Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4J/)
 
 [A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/)

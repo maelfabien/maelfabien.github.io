@@ -36,6 +36,8 @@ A series of articles dedicated to machine learning.
 
 [Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/)
 
+[Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/)
+
 ## Parameters Optimization
 
 Articles to come (Grid Search, Random Search, Bayesian Hyperopt...)
