@@ -15,7 +15,7 @@ toc: true
 toc_sticky: true
 ---
 
-We have so far covered only the most basic framework of linear regressions. In this quick article, we'll introduce some extensions od the linear regression model.
+We have so far covered only the most basic framework of linear regressions. In this quick article, we'll introduce some extensions of the linear regression model.
 
 <script type="text/javascript" async
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
