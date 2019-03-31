@@ -28,6 +28,15 @@ A series of articles dedicated to machine learning.
 
 [Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/) : Kernel methods offer a great way to solve complex problems. However, it gets computationally hard to implement them at scale. This is being solved by Large Scale Kernel methods.
 
+## Natural Language Processing
+
+[Text Preprocessing](https://maelfabien.github.io/machinelearning/NLP_1/) : Preprocessing in Natural Language Processing (NLP) is the process by which we try to "standardize" the text we want to analyze.
+
+[Text Embedding with Bag-Of-Words and TF-IDF](https://maelfabien.github.io/machinelearning/NLP_2/) : In order to analyze text and run algorithms on it, we need to embed the text. The notion of embedding simply means that we'll conver the input text into a set of numerical vectors that can be used into algorithms. In this article, we'll cover BOW and TF-IDF, two simple techniques for embedding.
+
+[Text Embedding with Word2Vec](https://maelfabien.github.io/machinelearning/NLP_3/) : A deeper dive into the state of the art embedding technique : Word2Vec.
+
+
 ## Graph Analysis and Graph Learning
 
 [Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
