@@ -36,6 +36,9 @@ A series of articles dedicated to machine learning.
 
 [Text Embedding with Word2Vec](https://maelfabien.github.io/machinelearning/NLP_3/) : A deeper dive into the state of the art embedding technique : Word2Vec.
 
+## Hidden Markov Models and Markov Chains
+
+[Markov Chains](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
 
 ## Graph Analysis and Graph Learning
 
