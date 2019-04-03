@@ -22,7 +22,7 @@ A series of articles dedicated to machine learning.
 
 [Bayes Classifier](https://maelfabien.github.io/machinelearning/bayes/) : At the core of any algorithm, the Bayes Classifier is considered as one of the first algorithm to master.
 
-[Linear Discriminant Analysis](https://maelfabien.github.io/machinelearning/LDA/) : In this article, we'll cover the intuition behind LDA, when it should be used, and the maths behind it.
+[Linear Discriminant Analysis (LDA) and QDA](https://maelfabien.github.io/machinelearning/LDA/) : In this article, we'll cover the intuition behind LDA, when it should be used, and the maths behind it. We'll also quick cover the Quadratic version of LDA.
 
 [Adaptative Boosting (AdaBoost)](https://maelfabien.github.io/machinelearning/adaboost/) : A clear approach of boosting algorithms and adaptative boosting with illustrations. When should we use boosting ? What are the foundations of the algorithm ?
 
