@@ -38,7 +38,9 @@ A series of articles dedicated to machine learning.
 
 ## Hidden Markov Models and Markov Chains
 
-[Markov Chains](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
+[Markov Chains and Applications in Python](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
+
+[Hidden Markov Models](https://maelfabien.github.io/machinelearning/HMM_2/) : In this article, we'll go through the theory in a visual way and explore HMMs for a simple NLP task.
 
 ## Graph Analysis and Graph Learning
 
