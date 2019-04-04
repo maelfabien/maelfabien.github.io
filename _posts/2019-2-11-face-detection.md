@@ -122,7 +122,7 @@ Suppose we want to determine the rectangle features at a given pixel with coordi
 
 $$ ii(x,y) = \sum_{x'≤x, y'≤y} i(x', y') $$
 
-where $$ i(x,y) $$ is the integral image and $$ i(x,y) $$ is the original image.
+where $$ ii(x,y) $$ is the integral image and $$ i(x,y) $$ is the original image.
 
 When you compute the whole integral image, there is a form a recurrence which requires only one pass over the original image. Indeed, we can define the following pair of recurrences :
 
@@ -133,7 +133,7 @@ $$ ii(x,y) = ii (x-1,y) + s(x,y) $$
 where $$ s(x,y) $$ is the cumulative row sum and and $$ s(x-1) = 0, ii(-1,y) = 0 $$. 
 
 How can that be useful ? Well, consider a region D for which we would like to estimate the sum of the pixels. We have defined 3 other regions : A, B and C. 
-- The value of the integral image at point 1 is the sum of the pixels in rectangle A. 
+- The value of the integral image at point 1 is the sum of the pixels in rectangle A
 - The value at point 2 is A + B
 - The value at point 3 is A + C
 - The value at point 4 is A + B + C + D.
@@ -154,7 +154,7 @@ Given a set of labeled training images (positive or negative), Adaboost is used 
 - select a small set of features
 - and train the classifier
 
-Since most features among the 160'000 are supposed to be quite irrelevant, the weak learning algorithm around which we build a boosting model is designed to select the single rectangle feature which splits best negative and postiive examples. 
+Since most features among the 160'000 are supposed to be quite irrelevant, the weak learning algorithm around which we build a boosting model is designed to select the single rectangle feature which splits best negative and positive examples. 
 
 ### d. Cascading Classifier
 
@@ -252,7 +252,7 @@ Face detection works well on our test image. Let's move on to real time now !
 
 ## 4. Real time face detection
 
-Let's move on to the Python implementation of the live facial detection. The first step is to launch the camera, and capture the video. Then, we'll transform the image to a gray scale image. This is used to reduce the dimension of the input image. Indeep, instead of 3 points per pixel describing Red, Green, Blue, we apply a simple linear transformation :
+Let's move on to the Python implementation of the live facial detection. The first step is to launch the camera, and capture the video. Then, we'll transform the image to a gray scale image. This is used to reduce the dimension of the input image. Indeed, instead of 3 points per pixel describing Red, Green, Blue, we apply a simple linear transformation :
 
 $$ Y_{gray} = 0.2126R +0.7152G +0.0722B $$
 
@@ -320,7 +320,7 @@ Then, count the total number of faces, and display the overall image :
 And implement an exit option when we want to stop the camera by pressing ```q``` :
 ```python
     if cv2.waitKey(1) & 0xFF == ord('q'):
-    break
+        break
 ```
 
 Finally, when everything is done, release the capture and destroy all windows. There are some troubles killing windows on Mac which might require killing Python from the Activity Manager later on.
@@ -388,7 +388,7 @@ while True:
     cv2.imshow('Video', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
-    break
+        break
 
 # When everything is done, release the capture
 video_capture.release()
@@ -456,8 +456,8 @@ The code above gave us 2 information :
 - and magnitude of the gradient
 
 When we build the HOG, there are 3 subcases :
-- the angle is smaller than 160° and not halways between 2 classes. In such case, the angle will be added in the right category of the HOG
-- the angle is smaller than 160° and exactly between 2 classes. In such case, we consider an equal contribution to the 2 nearest classes and split the magnitue in 2
+- the angle is smaller than 160° and not halfway between 2 classes. In such case, the angle will be added in the right category of the HOG
+- the angle is smaller than 160° and exactly between 2 classes. In such case, we consider an equal contribution to the 2 nearest classes and split the magnitude in 2
 
 ![image](https://maelfabien.github.io/assets/images/hog_1.png)
 
@@ -499,7 +499,7 @@ plt.show()
 
 ## 3. Real time face detection
 
-As previously, the algorithm is pretty easy to implement. We are also implementing a lighter version by detection only the face. Dlib makes it really easy to detect facial keypoints too, but it's another topic.
+As previously, the algorithm is pretty easy to implement. We are also implementing a lighter version by detecting only the face. Dlib makes it really easy to detect facial keypoints too, but it's another topic.
 
 ```python
 video_capture = cv2.VideoCapture(0)
@@ -619,7 +619,7 @@ In terms of speed, HoG seems to be the fastest algorithm, followed by Haar Casca
 
 However, CNNs in Dlib tend to be the most accurate algorithm. HoG perform pretty well but have some issues identifying small faces. HaarCascade Classifiers perform around as good as HoG overall. 
 
-I have personnaly used mainly HoG in my personal projects due to its speed for live face detection. 
+I have personally used mainly HoG in my personal projects due to its speed for live face detection. 
 
 The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 
