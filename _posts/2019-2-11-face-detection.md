@@ -22,6 +22,10 @@ In this tutorial, we'll see how to create and launch a face detection algorithm 
 {% highlight python %}
 {% endhighlight %}
 
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 We'll cover face detection using :
 - Haar Cascade Classifiers using OpenCV
 - Histogram of Oriented Gradients using Dlib
@@ -91,11 +95,11 @@ The characteristics are called Haar Features. The feature extraction process wil
 
 ![image](https://maelfabien.github.io/assets/images/haar.png)
 
-In this example, the first feature measures the difference in intensity between the region of the eyes and a region across the upper cheeks. The feature value is simply computed by summing the pixels in the black area and substracting the pixels in the white area. 
+In this example, the first feature measures the difference in intensity between the region of the eyes and a region across the upper cheeks. The feature value is simply computed by summing the pixels in the black area and subtracting the pixels in the white area. 
 
 $$ Rectangle Feature = \sum (pixels_{black area}) - \sum (pixels_{white area}) $$ 
 
-Then, we apply this rectangle as a convolutional kernel, over our whole image. In order to be exhaustive, we should apply all possible dimensions and positions of each kernel. A simple 24*24 images would typically result in over 160'000 features, each made of a sum/substraction of pixels values. It would computationally be impossible for live face detection. So, how do we speed up this process ?
+Then, we apply this rectangle as a convolutional kernel, over our whole image. In order to be exhaustive, we should apply all possible dimensions and positions of each kernel. A simple 24*24 images would typically result in over 160'000 features, each made of a sum/subtraction of pixels values. It would computationally be impossible for live face detection. So, how do we speed up this process ?
 - once the good region has been identified by a rectangle, it is useless to run the window over a completely different region of the image. This can be achieved by Adaboost.
 - compute the rectangle features using the integral image principle, which is way faster. We'll cover this in the next section.
 
@@ -114,11 +118,11 @@ Now that the features have been selected, we apply them on the set of training i
 
 Computing the rectangle features in a convolutional kernel style can be long, very long. For this reason, the authors, Viola and Jones, proposed an intermediate representation for the image : the integral image. The role of the integral image is to allow any rectangular sum to be computed simply, using only four values. We'll see how it works !
 
-Suppose we want to determine the rectangle features at a given pixel with coordinates $ (x,y) $. Then, the integral image of the pixel in the sum of the pixels above and to the left of the given pixel. 
+Suppose we want to determine the rectangle features at a given pixel with coordinates $$ (x,y) $$. Then, the integral image of the pixel in the sum of the pixels above and to the left of the given pixel. 
 
 $$ ii(x,y) = \sum_{x'≤x, y'≤y} i(x', y') $$
 
-where $$ ii(x,y) $$ is the integral image and $$ i(x,y) $$ is the original image.
+where $$ i(x,y) $$ is the integral image and $$ i(x,y) $$ is the original image.
 
 When you compute the whole integral image, there is a form a recurrence which requires only one pass over the original image. Indeed, we can define the following pair of recurrences :
 
