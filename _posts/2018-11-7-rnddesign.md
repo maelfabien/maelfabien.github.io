@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 In the previous article, a hidden hypothesis was actually set without being explictly defined : $$ X $$ should be deterministic. Indeed, we should be able to have a full control on how $$ X $$ is measured. This is what we call a fixed design matrix. Let me quickly introduce an extension of what has been covered so far.

@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 In this series of articles, I am going to focus on the basis of Deep Learning, and progressively move toward recent research papers and more advanced techniques. As I am particularly interested in computer vision, I will explore some examples applied to object detection or emotion recognition for example.
 

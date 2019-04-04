@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 Autoencoder is a type a neural network widely used for unsupervised dimension reduction. So, how does it work ? What can it be used for ? And how do we implement it in Python ?

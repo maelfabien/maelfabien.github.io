@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 It is essential to understand what the computer we use daily is made of, at a very high level, in order to understand the essence of Distributed Computing, Cloud Computing, GPUs, TPUs and other technologies.

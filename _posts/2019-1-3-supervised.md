@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 I'm presenting here a summary I've written of the key concepts, illustrations, otpimisaton program and limitations for the most common types of algorithms. Don't hesitate to drop a comment !

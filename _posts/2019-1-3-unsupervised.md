@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 Let's move on to unsupervised part ! This cheatsheet covers the key concepts, illustrations, otpimisaton program and limitations for the most common types of algorithms. Don't hesitate to drop a comment !

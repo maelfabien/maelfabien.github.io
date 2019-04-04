@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 Up to now, we mostly considered cases in which the variables were continuous (temperature for example). But the variety of data you might deal with might include categorical or boolean variables !

@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 Boosting techniques have recently been rising in Kaggle competitions and other predictive analysis tasks. You may have heard of them under the names of XGBoost or LGBM. In this tutorial, we'll go through Adaboost, one of the first boosting techniques discovered. 
 

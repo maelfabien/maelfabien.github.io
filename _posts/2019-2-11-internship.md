@@ -10,6 +10,8 @@ header :
     image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 youtubeId: ZreEaLSgQcc
+sidebar:
+    nav: sidebar-sample
 ---
 
 End of 2018, I started to look for an end of study internship in data science. After a first Master in Actuarial Science in Switzerland and an additional year of specialized Master in Big Data in France, I chose to apply to positions outside Europe mostly in order to get a real international experience.

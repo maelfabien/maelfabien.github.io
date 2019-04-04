@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 In this tutorial, we'll see how to create and launch a face detection algorithm in Python using OpenCV. We'll also add some features to detect eyes and mouth on multiple faces at the same time. This article will go through the most basic implementations of face detection including Cascade Classifiers, HOG windows and Deep Learning.

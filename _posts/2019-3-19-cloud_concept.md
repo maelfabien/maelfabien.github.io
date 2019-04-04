@@ -13,6 +13,8 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 In this series of articles, I'll present to you the main concepts of Cloud Computing as presented by AWS on their online certification : "Cloud Practitioner".

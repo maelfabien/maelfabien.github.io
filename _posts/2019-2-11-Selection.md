@@ -9,6 +9,8 @@ read_time: true
 header :
     image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
+sidebar:
+    nav: sidebar-sample
 ---
 
 So far, we have covered the most common case of linear regression, and we explored several special cases. An intrinseque hypothesis we did, what that $$ p << n $$, meaning that the dimension of our design matrix is much smaller than the number of observations. 

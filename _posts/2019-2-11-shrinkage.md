@@ -9,6 +9,8 @@ read_time: true
 header :
     image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
+sidebar:
+    nav: sidebar-sample
 ---
 
 Do you remember when we defined the Gram matrix as $$ X^TX $$ ? To define the OLS estimator, we defined the Gram matrix as invertible. In other words, $$ Ker(X) = {0} $$ . But what happens when it is not the case ? 
