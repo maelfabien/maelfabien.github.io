@@ -23,3 +23,21 @@ main:
 
   - title: "Search"
     url: /search/
+
+sidebar-sample:
+  - title: "Data Science"
+    children:
+      - title: "Statistics"
+        url: /st/
+      - title: "Machine Learning"
+        url: /ml/
+      - title: "Deep Learning"
+        url: /dl/
+      - title: "Computer Vision"
+        url: /tuto/
+  - title: "Data Engineering"
+    url: /bdg/
+  - title: "Projects"
+    url: /projects/
+  - title: "CV"
+    url: /cv/
