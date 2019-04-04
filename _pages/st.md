@@ -40,7 +40,7 @@ A series of articles dedicated to statistics.
 
 [Introduction to Time Series](https://maelfabien.github.io/statistics/TimeSeries1/) : A first approach to exploring a time series in Python with open data.
 
-[Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover those concepts and illustrate the in Python !
+[Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover those concepts and illustrate them in Python !
 
 ## Matlab
 
