@@ -635,3 +635,10 @@ Sources :
 - [DetectMultiScale](https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html)
 - [Viola-Jones](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework)
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4222938078467520",
+        enable_page_level_ads: true
+    });
+</script>
