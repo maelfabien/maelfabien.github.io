@@ -25,8 +25,6 @@ main:
     url: /search/
 
 sidebar-sample:
-  - title: "Content : "
-    image : https://maelfabien.github.io/assets/images/mf_logo.png
   - title: "Data Science"
     children:
       - title: "Statistics"
