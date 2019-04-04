@@ -8,8 +8,6 @@ header :
 redirect_from: 
     - /about/
     - /about.html
-sidebar:
-    nav: sidebar-sample
 ---
 
 My name is Maël Fabien. I am a 22 years old graduate actuary and data scientist in the making. I currently live in Paris, and study Big Data at Telecom ParisTech. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI bootcamp in Paris. I'm uploading here some content that I'm writing on my free time. I'm trying to upload one article per week. 
