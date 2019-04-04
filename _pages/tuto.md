@@ -1,9 +1,13 @@
 ---
 layout: single
 permalink: /tuto/
-author_profile: true
+author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/viz.jpg"
+toc: true
+toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 A series of tutorials and Computer Vision articles I have realized on different topics.

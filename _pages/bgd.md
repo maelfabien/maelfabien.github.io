@@ -1,11 +1,13 @@
 ---
 layout: single
 permalink: /bgd/
-author_profile: true
+author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/bgd_head.png"
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 A series of articles dedicated to Big Data analytics.
@@ -18,7 +20,7 @@ Articles to come on Map-Reduce, GPUs...
 
 ## Amazon Web Services
 
-[Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/)
+[Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ?
 
 [Core Services](https://maelfabien.github.io/bigdata/core_services/)
 

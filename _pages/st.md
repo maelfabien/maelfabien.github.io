@@ -1,11 +1,13 @@
 ---
 layout: single
 permalink: /st/
-author_profile: true
+author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/stats_head.jpg"
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 A series of articles dedicated to statistics.

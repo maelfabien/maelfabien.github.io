@@ -1,11 +1,13 @@
 ---
 layout: single
 permalink: /ml/
-author_profile: true
+author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/ml_head.png"
 toc: true
 toc_sticky: true
+sidebar:
+    nav: sidebar-sample
 ---
 
 A series of articles dedicated to machine learning.
