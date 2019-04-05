@@ -13,11 +13,9 @@ redirect_from:
 My name is Maël Fabien. I am a 22 years old graduate actuary and data scientist in the making. I currently live in Paris, and study Big Data at Telecom ParisTech. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI bootcamp in Paris. I'm uploading here some content that I'm writing on my free time. I'm trying to upload one article per week. 
 
 You will find here content related to my fields of interest :
-- [Statistics](https://maelfabien.github.io/st/)
-- [Machine Learning](https://maelfabien.github.io/ml/)
+- [Statistics and Machine Learning](https://maelfabien.github.io/ml/)
 - [Deep Learning](https://maelfabien.github.io/dl/)
-- [Big Data](https://maelfabien.github.io/bgd/)
-- [Computer Vision](https://maelfabien.github.io/tuto/)
+- [Data Engineering](https://maelfabien.github.io/bgd/)
 - [Projects](https://maelfabien.github.io/projects/)
 
 If you would like to get to know more about me, feel free to check out my [resume](https://maelfabien.github.io/cv/).
