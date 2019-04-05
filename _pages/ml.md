@@ -10,7 +10,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-A series of articles dedicated to machine learning.
+A series of articles dedicated to machine learning and statistics.
 
 ## Machine Learning Basics
 
@@ -19,6 +19,28 @@ A series of articles dedicated to machine learning.
 [Supervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/supervised/) : A cheat sheet that recaps the main supervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
+
+[Key Resources](https://maelfabien.github.io/statistics/resources/) : Some important resources to to understand the basics of statistics.
+
+[Linear Regression in 1 Dimension](https://maelfabien.github.io/statistics/linreg/) : The simplest framework, in which we try to predict a value from a single variable. We'll cover the maths the OLS, and applications in Python.
+
+[Multidimensional Linear Regression](https://maelfabien.github.io/statistics/linreg2/) : What if we now add several variables to our model ? What does it imply ?
+
+[Random Design Matrix](https://maelfabien.github.io/statistics/rnddesign/) : Most of the time, the OLS frameword cannot be achieved. What happens when we can't be sure that the values we observe are fully deterministic ? In this article, we'll cover a simple extension.
+
+[Normal Regression Model](https://maelfabien.github.io/statistics/normal/) : We'll add a normality hypothesis for the residuals.
+
+[Pseudo Least Squares](https://maelfabien.github.io/statistics/pseudols/) : If the solution of OLS is not unique and we have too many features compared to the number of observations, we cannot invert the Gram Matrix.
+
+[Transformations of Linear Models](https://maelfabien.github.io/statistics/Special/) : In this quick article, we’ll introduce some extensions / transformations of the linear regression model for further flexibility.
+
+[Boolean and categorical variables](https://maelfabien.github.io/statistics/Boolean/) : The features we collect are not always continuous. How do we handle boolean or categorical data in linear regression framework ?
+
+[Dealing with heteroscedasticity](https://maelfabien.github.io/statistics/hetero/) : So far, we made the hypothesis that the variablity was equal across the range of values of the features. What happens when it's not the case ?
+
+[Generalized Least Squares](https://maelfabien.github.io/statistics/GLS/) : Introduction to a more general regression framework.
+
+[Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/) : How do we assess if a parameter is significant or not ? We'll cover statistical tests, hypothesis and joint tests.
 
 ## Supervised Learning Algorithms
 
@@ -38,6 +60,23 @@ A series of articles dedicated to machine learning.
 
 [Text Embedding with Word2Vec](https://maelfabien.github.io/machinelearning/NLP_3/) : A deeper dive into the state of the art embedding technique : Word2Vec.
 
+## Computer Vision
+
+[Introduction to Computer Vision](https://maelfabien.github.io/computervision/cv_1/) : What is Computer Vision ? What are the main concepts ? When should it be used ?
+
+[Image Formation and Filtering](https://maelfabien.github.io/computervision/cv_2/) : How are images formed ? Filters can be applied on the image to extract information. What filters can we use ?
+
+[Advanced Filtering and Transformations](https://maelfabien.github.io/computervision/cv_3/) : In this article, we'll cover advanced filtering and image transformation techniques.
+
+[Local features, Detection, Description and Matching](https://maelfabien.github.io/computervision/cv_4/) : Local features are used for object tracking for example. We'll see how to implement them, and cover othe topics.
+
+[Images Alignment](https://maelfabien.github.io/computervision/cv_5/) : When you take a panorama, the image needs to be aligned. How is it done ?
+
+[A full guide to face detection](https://maelfabien.github.io/tutorials/face-detection/) : Face Detection using Cascade Classifier, Histogram of Oriented Gradients and Convolutional Neural Networks.
+
+[How to use OpenPose on macOS ?](https://maelfabien.github.io/tutorials/open-pose/) : OpenPose is a C++ / Python library for Pose Estimation. Let's see how to use it in macOS !
+
+
 ## Hidden Markov Models and Markov Chains
 
 [Markov Chains and Applications in Python](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
@@ -53,6 +92,16 @@ A series of articles dedicated to machine learning.
 [Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/) : We'll now explore the main graph algorithms and several use cases in a visual way with direct examples in Python. 
 
 [Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
+
+## Time Series
+
+[Introduction to Time Series](https://maelfabien.github.io/statistics/TimeSeries1/) : A first approach to exploring a time series in Python with open data.
+
+[Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover those concepts and illustrate them in Python !
+
+## Matlab
+
+[Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/) : Matlab remains a widely used language for statistics. In this article, we cover the main statistical topics in Matlab.
 
 ## Parameters Optimization
 

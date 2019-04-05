@@ -1,7 +1,5 @@
 # main links links
 main:
-  - title: "Statistics"
-    url: /st/
 
   - title: "Machine Learning"
     url: /ml/
@@ -12,9 +10,6 @@ main:
   - title: "Deep Learning"
     url: /dl/
 
-  - title: "Computer Vision"
-    url: /tuto/
-    
   - title: "Projects"
     url: /projects/
     
@@ -27,14 +22,10 @@ main:
 sidebar-sample:
   - title: "Data Science"
     children:
-      - title: "Statistics"
-        url: /st/
       - title: "Machine Learning"
         url: /ml/
       - title: "Deep Learning"
         url: /dl/
-      - title: "Computer Vision"
-        url: /tuto/
   - title: "Data Engineering"
     url: /bgd/
   - title: "Projects"
