@@ -302,4 +302,46 @@ There are several ways to handle missing values. A pretty common ways to do this
 df = df.fillna(method='ffill')
 ```
 
+We can also fill backward starting from the next value, using `bfill`.
+
+### Rolling Mean
+
+The rolling mean of a time series produces a smoother version than the original series. How is this achieved ?
+
+Over a given window, for example here, a window of 7 days, we take the average of all the days within the window.
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(df.loc['2017-11':'2017-12']['Consumption'])
+plt.axvline('2017-11-09', color = 'red')
+plt.axvline('2017-11-16', color = 'red')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/ts_20.png)
+
+This overall allows a much smoother series :
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(df['Consumption'], label="Consumption")
+plt.plot(df['Consumption'].rolling('90D').mean(), label="Rolling Mean")
+plt.legend()
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/ts_21.png)
+
+Instead of defining an average over given number of observations within a window, we can take the mean of all the observations up to the given point. This is called expaning !
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(df['Consumption'], label="Consumption")
+plt.plot(df['Consumption'].expanding().mean(), label="Rolling Mean")
+plt.legend()
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/ts_22.png)
+
 > **Conclusion** : We have now covered the basics of time series exploration. In the next articles, we'll cover trends, seasonality, stationarity, ergodicity and many other concepts.

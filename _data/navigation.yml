@@ -3,12 +3,12 @@ main:
 
   - title: "Machine Learning"
     url: /ml/
+        
+  - title: "Deep Learning"
+    url: /dl/
     
   - title: "Data Engineering"
     url: /bgd/
-    
-  - title: "Deep Learning"
-    url: /dl/
 
   - title: "Projects"
     url: /projects/
