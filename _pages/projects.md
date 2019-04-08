@@ -14,9 +14,9 @@ The GDELT Project monitors the world's broadcast, print, and web news from nearl
 
 In a group project, we worked on a resilient No-SQL (Cassandra) database architecture on EC2 instances. The pipeline for the data processing was developped in Spark-Scala. The visualization implied Zeppelin Notebooks.
 
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/gdelt](https://github.com/maelfabien/gdelt)</span>
-
 ![image](https://maelfabien.github.io/assets/images/archi.png)
+
+See GitHub page : <span style="color:blue">[https://github.com/maelfabien/gdelt](https://github.com/maelfabien/gdelt)</span>
 
 # Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
 
@@ -24,25 +24,25 @@ In this project, I am exploring state of the art models in multimodal sentiment 
 
 I am currently working on a Tensorflow.js implementation of this project. Don't hesite to Star the project if you like it.
 
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Mutlimodal-Sentiment-Analysis](https://github.com/maelfabien/Mutlimodal-Sentiment-Analysis)</span>
-
 <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="600px" height="500px" />
+
+See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Mutlimodal-Sentiment-Analysis](https://github.com/maelfabien/Mutlimodal-Sentiment-Analysis)</span>
 
 # A Deep Learning Approach to Face Classification
 
 In this challenge, our aim was to develop face classification algorithms using Deep Learning Architectures. I have explored hand-made CNNs, Inception, XCeption, VGG16, DenseNet or ResNet networks for binary classification purposes.
 
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge](https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge)</span>
-
 <embed src="https://maelfabien.github.io/assets/images/DataChallenge.pdf" type="application/pdf" width="600px" height="500px" />
+
+See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge](https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge)</span>
 
 # Multi-Regression : Estimating a position from a received signal strength for IoT sensors
 
 Smart devices such as IoT sensors use low energy consuming networks such as the ones provided by Sigfox or Lora. But without using GPS networks, it becomes harder to estimate the position of the sensor. The aim of this study is to provide a geolocation estimation using Received Signal Strength Indicator in the context of IoT. The aim is to allow a geolocation of lowconsumption connected devices using the Sigfox network. State of the art modelsare able to be precise to the nearest kilometer in urban areas, and around tenkilometers in less populated areas.
 
-See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Received-Signal-Strength-Geo-Location](https://github.com/maelfabien/Received-Signal-Strength-Geo-Location)</span>
-
 <embed src="https://maelfabien.github.io/assets/images/RSSI.pdf" type="application/pdf" width="600px" height="500px" />
+
+See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Received-Signal-Strength-Geo-Location](https://github.com/maelfabien/Received-Signal-Strength-Geo-Location)</span>
 
 # NLP : Analyzing GitHub Pull Requests
 
@@ -52,9 +52,9 @@ In this project, I have been looking at comments of developers on GitHub pull re
 - predict if a merge will occur after the comment (Bag Of Words, TF-IDF)
 - predict the time before the merge
 
-See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Analyze-Github-Pull-Requests](https://github.com/maelfabien/Analyze-Github-Pull-Requests)</span>
-
 <embed src="https://maelfabien.github.io/assets/images/NLP.pdf" type="application/pdf" width="600px" height="500px" />
+
+See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Analyze-Github-Pull-Requests](https://github.com/maelfabien/Analyze-Github-Pull-Requests)</span>
 
 # Classification : Predicting the predominant kind of tree (Kaggle)
 
