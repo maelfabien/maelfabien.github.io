@@ -18,7 +18,7 @@ A series of articles dedicated to deep learning.
 
 [Multilayer Perceptron (MLP)](https://maelfabien.github.io/deeplearning/mlp/) : The MLP, or Artificial Neural Network, is a widely used algorithm in Deep Learning. What is it ? How do they learn ?
 
-[Regularization Technique](https://maelfabien.github.io/deeplearning/regu/) : Your DL model overfits ? One of these techniques should help !
+[Prevent Overfitting of Neural Netorks](https://maelfabien.github.io/deeplearning/regu/) : Your  model overfits ? One of these techniques should help ! We'll cover class imbalance, data augmentation, regularization, early stopping, reducing learning rate...
 
 [Convolutional Neural Networks (CNN)](https://maelfabien.github.io/deeplearning/cnn/) : CNNs changed the field of Computer Vision. How do CNNs work ? What can they be used for ?
 
