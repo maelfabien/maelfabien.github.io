@@ -90,7 +90,7 @@ Here is an illustration of the Pointwise Convolution :
 
 Alright, this whole thing looks fancy, but did we really reduce the number of operations ? Yes we did, by a factor proportional to $$ \frac {1} {N} $$ (this can be quite easily shown).
 
-## In Keras 
+# II. In Keras 
 
 Let's import the required packages :
 
