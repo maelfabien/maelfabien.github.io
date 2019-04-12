@@ -90,6 +90,14 @@ Here is an illustration of the Pointwise Convolution :
 
 Alright, this whole thing looks fancy, but did we really reduce the number of operations ? Yes we did, by a factor proportional to $$ \frac {1} {N} $$ (this can be quite easily shown).
 
+#### Implementation of the XCeption
+
+XCeption offers an architecture that is made of Depthwise Separable Convolution blocks + Maxpooling, all linked with shortcuts as in ResNet implementations.
+
+The specificity of XCeption is that the Depthwise Convolution is not followed by a Pointwise Convolution, but the order is reversed, as in this example :
+
+![image](https://maelfabien.github.io/assets/images/XCeption3.png)
+
 # II. In Keras 
 
 Let's import the required packages :
