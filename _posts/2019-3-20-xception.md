@@ -1,6 +1,6 @@
 ---
 published: true
-title: A guide to Xception Model in Keras
+title: XCeption Model and Depthwise Separable Convolutions
 collection: dl
 layout: single
 author_profile: false
@@ -24,13 +24,71 @@ The original paper can be found [here](http://openaccess.thecvf.com/content_cvpr
 {% highlight python %}
 {% endhighlight %}
 
-## What does Xception look like ?
+# I. What is an XCeption network ?
+
+## What does it look like ?
 
 The data first goes through the entry flow, then through the middle flow which is repeated eight times, and finally through the exit flow. Note that all Convolution and SeparableConvolution layers are followed by batch normalization.
 
 ![image](https://maelfabien.github.io/assets/images/xception.png)
 
 Xception architecture has overperformed VGG-16, ResNet and Inception V3 in most classical classification challenges. 
+
+## How does XCeption work ?
+
+XCeption is an efficient architecture that relies on two main points :
+- Depthwise Separable Convolution
+- Shortcuts between Convolution blocks as in ResNet
+
+### Depthwise Separable Convolution
+
+Depthwise Separable Convolutions are alternatives to classical convolutions that are supposed to be much more efficient in terms of computation time.
+
+#### The limits of convolutions
+
+First of all, let's take a look at convolutions. Convolution is a really expensive operation. Let's illustrate this :
+
+![image](https://maelfabien.github.io/assets/images/conv_1.png)
+
+The input image has a certain number of channels `C`, say 3 for a color image. It also has a certain dimension `A`, say `100 * 100`. We apply on it a convolution filter of size `d*d`, say `3*3`. Here is the convolution process illustrated :
+
+![image](https://maelfabien.github.io/assets/images/Conv.gif)
+
+Now, how many operations does that make ?
+
+Well, for 1 Kernel, that is :
+
+$$ K^2 \times d^2 \times C $$
+
+Where `K` is the resulting dimension after convolution, which depends on the padding applied (e.g padding "same" would mean `A = K`).
+
+Therefore, for N Kernels (depth of the convolution) :
+
+$$ K^2 \times d^2 \times C \times N $$
+
+To overcome the cost of such operations, depthwise separable convolutions have been introduced. They are themselves divided into 2 main steps :
+- Depthwise Convolution
+- Pointwise Convolution
+
+#### The Deptheise Convolution
+
+Deptheise Convolution is a first step in which instead of applying a convolution of size $$ d \times d \times C $$, we apply a convolution of size $$ d \times d \times 1 $$. In other words, we don't make the convolution computation over all the channels, but only 1 by 1.
+
+Here is an illustration of the Depthwise convolution process :
+
+![image](https://maelfabien.github.io/assets/images/XCeption.gif)
+
+This creates a first volume that has a size $$ K \times K \times C $$, and not $$  K \times K \times N $$ as before. Indeed, so far, we only made the convolution operation for 1 kernel /filter of the convolution, not for $$ N $$ of them. This leads us to our second step.
+
+#### Pointwise Convolution
+
+Pointwise convolution operates a classical convolution, with size $$ 1 \times 1 \times N $$ over the $$ K \times K \times C $$ volume. This allows to create a volume of shape $$  K \times K \times N $$, as previously. 
+
+Here is an illustration of the Pointwise Convolution :
+
+![image](https://maelfabien.github.io/assets/images/XCeption2.gif)
+
+Alright, this whole thing looks fancy, but did we really reduce the number of operations ? Yes we did, by a factor proportional to $$ \frac {1} {N} $$ (this can be quite easily shown).
 
 ## In Keras 
 
@@ -160,9 +218,7 @@ def exit_flow(x) :
     return x
 ```
 
-
-
-This quite simple architecture leads to 17'590'553 trainable parameters.
+This architecture leads to a limited number of trainable parameters compared to an equivalent depth in classical convolutions.
 
 We can build the model :
 
