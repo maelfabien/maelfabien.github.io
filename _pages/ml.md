@@ -22,6 +22,8 @@ A series of articles dedicated to machine learning and statistics.
 
 [Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/) : How do we assess if a parameter is significant or not ? We'll cover statistical tests, hypothesis and joint tests.
 
+[The Logistic Regression](https://maelfabien.github.io/statistics/linreg3/) : The Logistic Regression brings a way to operate binary classification using underlying linear models. We'll cover the basics of LR, the parameters to use and examples in Python.
+
 ## Time Series
 
 [Introduction to Time Series](https://maelfabien.github.io/statistics/TimeSeries1/) : A first approach to exploring a time series in Python with open data.
