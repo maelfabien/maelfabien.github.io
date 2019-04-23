@@ -24,6 +24,10 @@ The original paper can be found [here](http://openaccess.thecvf.com/content_cvpr
 {% highlight python %}
 {% endhighlight %}
 
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # I. What is an XCeption network ?
 
 ## What does it look like ?
@@ -70,9 +74,9 @@ To overcome the cost of such operations, depthwise separable convolutions have b
 - Depthwise Convolution
 - Pointwise Convolution
 
-#### The Deptheise Convolution
+#### The Depthwise Convolution
 
-Deptheise Convolution is a first step in which instead of applying a convolution of size $$ d \times d \times C $$, we apply a convolution of size $$ d \times d \times 1 $$. In other words, we don't make the convolution computation over all the channels, but only 1 by 1.
+Depthwise Convolution is a first step in which instead of applying a convolution of size $$ d \times d \times C $$, we apply a convolution of size $$ d \times d \times 1 $$. In other words, we don't make the convolution computation over all the channels, but only 1 by 1.
 
 Here is an illustration of the Depthwise convolution process :
 
