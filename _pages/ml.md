@@ -30,21 +30,10 @@ A series of articles dedicated to machine learning and statistics.
 
 [Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover those concepts and illustrate them in Python !
 
-## Hidden Markov Models and Markov Chains
+## Data Visualization
 
-[Markov Chains and Applications in Python](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
+[Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
 
-[Hidden Markov Models](https://maelfabien.github.io/machinelearning/HMM_2/) : In this article, we'll go through the theory in a visual way and explore HMMs for a simple NLP task.
-
-## Graph Analysis and Graph Learning
-
-[Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
-
-[Graph Analysis, Erdos-Rényi, Barabasi-Albert](https://maelfabien.github.io/machinelearning/graph_2/) : In this article, we cover the two main types of graphs, and describe a first approach to graph analysis. 
-
-[Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/) : We'll now explore the main graph algorithms and several use cases in a visual way with direct examples in Python. 
-
-[Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
 
 ## Supervised Learning Algorithms
 
@@ -65,6 +54,22 @@ A series of articles dedicated to machine learning and statistics.
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
 Articles to come
+
+## Hidden Markov Models and Markov Chains
+
+[Markov Chains and Applications in Python](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
+
+[Hidden Markov Models](https://maelfabien.github.io/machinelearning/HMM_2/) : In this article, we'll go through the theory in a visual way and explore HMMs for a simple NLP task.
+
+## Graph Analysis and Graph Learning
+
+[Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
+
+[Graph Analysis, Erdos-Rényi, Barabasi-Albert](https://maelfabien.github.io/machinelearning/graph_2/) : In this article, we cover the two main types of graphs, and describe a first approach to graph analysis. 
+
+[Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/) : We'll now explore the main graph algorithms and several use cases in a visual way with direct examples in Python. 
+
+[Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
 
 ## Natural Language Processing
 
