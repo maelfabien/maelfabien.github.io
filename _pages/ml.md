@@ -32,6 +32,8 @@ A series of articles dedicated to machine learning and statistics.
 
 ## Data Visualization
 
+[Introduction to Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
+
 [Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
 
 
