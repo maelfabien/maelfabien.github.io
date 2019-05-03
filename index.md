@@ -18,12 +18,16 @@ You will find here content related to my fields of interest :
 - [Data Engineering](https://maelfabien.github.io/bgd/)
 - [Projects](https://maelfabien.github.io/projects/)
 
-All codes and exercises of this website are hosted on GitHub in a dedicated repository :
+My GitHub account can be found here :
 
-<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="800" data-height="" data-theme="medium"></div>
+<div class="github-card" data-github="maelfabien" data-width="400" data-height="" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 If you would like to get to know more about me, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf).
 
 Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any question / remark. I'm currently looking for a data science internship and I'd like to start a Ph.D. next year (2020). 
 
+All codes and exercises of this website are hosted on GitHub in a dedicated repository :
+
+<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="400" data-height="" data-theme="medium"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
