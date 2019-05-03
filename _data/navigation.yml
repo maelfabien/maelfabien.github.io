@@ -14,7 +14,7 @@ main:
     url: /projects/
     
   - title: "CV"
-    url: /cv/
+    url: https://maelfabien.github.io/assets/files/CV_2019_MF.pdf
 
   - title: "Search"
     url: /search/
