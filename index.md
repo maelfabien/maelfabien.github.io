@@ -24,5 +24,5 @@ Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any que
 
 All codes and exercises of this website are hosted on GitHub in a dedicated repository :
 
-<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="medium"></div>
+<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
