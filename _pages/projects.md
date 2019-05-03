@@ -44,6 +44,17 @@ Smart devices such as IoT sensors use low energy consuming networks such as the 
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Received-Signal-Strength-Geo-Location](https://github.com/maelfabien/Received-Signal-Strength-Geo-Location)</span>
 
+# Econometrics
+
+An econometrics project in which I covered :
+- linear regression
+- statistical testing (t-test, F-test, Chow, ANOVA)
+- time series analysis
+
+<embed src="https://maelfabien.github.io/assets/images/Econometrics.pdf" type="application/pdf" width="600px" height="500px" />
+
+See GitHub page: <span style="color:blue">[https://github.com/maelfabien/MSc-Data-Science/tree/master/SES722/Projet](https://github.com/maelfabien/MSc-Data-Science/tree/master/SES722/Projet)</span>
+
 # NLP : Analyzing GitHub Pull Requests
 
 In this project, I have been looking at comments of developers on GitHub pull requests in order to :
