@@ -20,7 +20,7 @@ You will find here content related to my fields of interest :
 
 My GitHub account can be found here :
 
-<div class="github-card" data-github="maelfabien" data-width="100%" data-height="150" data-theme="default"></div>
+<div class="github-card" data-github="maelfabien" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 If you would like to get to know more about me, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf).
@@ -30,4 +30,3 @@ Don't hesitate to [contact me](mailto:mael.fabien@gmail.com) if you have any que
 All codes and exercises of this website are hosted on GitHub in a dedicated repository :
 
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="medium"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
