@@ -12,7 +12,7 @@ sidebar:
 
 A series of articles dedicated to deep learning. All codes and exercises of this section are hosted on GitHub in a dedicated repository :
 
-<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="400" data-height="" data-theme="medium"></div>
+<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="medium"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 ## Theory of Deep Neural Networks
