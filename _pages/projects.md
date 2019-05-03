@@ -26,7 +26,7 @@ I am currently working on a Tensorflow.js implementation of this project. Don't 
 
 <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="600px" height="500px" />
 
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Mutlimodal-Sentiment-Analysis](https://github.com/maelfabien/Mutlimodal-Sentiment-Analysis)</span>
+See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Multimodal-Emotion-Recognition](https://github.com/maelfabien/Multimodal-Emotion-Recognition)</span>
 
 # A Deep Learning Approach to Face Classification
 
