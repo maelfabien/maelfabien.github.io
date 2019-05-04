@@ -34,27 +34,27 @@ Gradient Boosting can be compared to AdaBoost, but has a few differences :
 
 # Gradient Boosting steps
 
-Let's consider a simple scenario in which we have several features, $ x_1, x_2, x_3, x_4 $ and try to predict $ y $. 
+Let's consider a simple scenario in which we have several features, $$ x_1, x_2, x_3, x_4 $$ and try to predict $$ y $$. 
 
 ![image](https://maelfabien.github.io/assets/images/tab_1.png)
 
 **Step 1** : Make a first guess
 
-The initial guess of the Gradient Boosting algorithm is to *predict the average value of the target $ y $*. For example, if our features are the age $ x_1 $ and the height $ x_2 $ of a person... and we want to predict the weight of the person.
+The initial guess of the Gradient Boosting algorithm is to *predict the average value of the target $$ y $$*. For example, if our features are the age $$ x_1 $$ and the height $$ x_2 $$ of a person... and we want to predict the weight of the person.
 
 ![image](https://maelfabien.github.io/assets/images/tab_2.png)
 
 **Step 2** : Compute the pseudo-residuals
 
-For the variable $ x_1 $, we compute the difference between the observations and the prediction we made. This is called the pseudo-residuals.
+For the variable $$ x_1 $$, we compute the difference between the observations and the prediction we made. This is called the pseudo-residuals.
 
 ![image](https://maelfabien.github.io/assets/images/tab_3.png)
 
-We compute the pseudo-residuals with respect to the first feature  $ x_1 $.
+We compute the pseudo-residuals with respect to the first feature  $$ x_1 $$.
 
 **Step 3** : Predict the pseudo-residuals
 
-Then, we will be using the features $ x_1, x_2,x_3, x_4 $ to predict the pseudo-residuals column.
+Then, we will be using the features $$ x_1, x_2,x_3, x_4 $$ to predict the pseudo-residuals column.
 
 ![image](https://maelfabien.github.io/assets/images/tab_4.png)
 
@@ -66,9 +66,9 @@ We can now predict the pseudo-residuals using a tree, that typically has 8 to 32
 
 In order to make a prediction, we say that the average is 13.39. Then, we take our observation, run in through the tree, get the value of the leaf, and add it to 13.39. 
 
-If we stop here, we will most probably overfit. Gradient Boost applies a learning rate $ lr $ to scale the contribution from a new tree, by applying a factor between 0 and 1.
+If we stop here, we will most probably overfit. Gradient Boost applies a learning rate $$ lr $$ to scale the contribution from a new tree, by applying a factor between 0 and 1.
 
-$ y_{pred} = \bar{y_{train}} + lr \times res_{pred} $
+$$ y_{pred} = \bar{y_{train}} + lr \times res_{pred} $$
 
 The idea behind the learning rate is to make a small step towards the right direction. This allows an overall lower variance.
 
@@ -85,11 +85,11 @@ Now, we :
 - build a third tree
 - ...
 
-Let's just cover how to compute the prediction. We are still using the features $ x_1, x_2, x_3, x_4 $ to predict the new residuals Pseudo_Res_2. 
+Let's just cover how to compute the prediction. We are still using the features $$ x_1, x_2, x_3, x_4 $$ to predict the new residuals Pseudo_Res_2. 
 
 We build a tree to estimate those residuals. Once we have this tree (with a limited number of leaves), we are ready to make the new prediction :
 
-$ y_{pred} = \bar{y_{train}} + lr \times res_{pred_1} + lr \times res_{pred_2} $
+$$ y_{pred} = \bar{y_{train}} + lr \times res_{pred_1} + lr \times res_{pred_2} $$
 
 The prediction is equal to :
 - the average value initially computed
@@ -102,21 +102,21 @@ Notice how we always apply the same Learning Rate. We are now ready to compute t
 
 # Full Pseudo-code
 
-The algorithm can be then described as the following, on a dataset $(x,y)$ with $x$ the features and $y$ the targets, with a differentiable loss function $\cal{L}$:
+The algorithm can be then described as the following, on a dataset $$ (x,y) $$ with $$ x $$ the features and $$ y $$ the targets, with a differentiable loss function $$ \cal{L} $$:
 
-$ \cal{L} = \frac {1} {2} (Obs - Pred)^2 $, called the Squared Residuals. Notice that since the function is differentiable, we have :
+$$ \cal{L} = \frac {1} {2} (Obs - Pred)^2 $$, called the Squared Residuals. Notice that since the function is differentiable, we have :
 
-$ \frac { \delta } {\delta Pred} \cal{L} = - 1 \times (Obs - Pred) $
+$$ \frac { \delta } {\delta Pred} \cal{L} = - 1 \times (Obs - Pred) $$
 
-**Step 1** : Initialize the model with a constant value : $F_0(x) = argmin_{\gamma} \sum_i \cal{L}(y_i, \gamma) $. We simply want to minimize the sum of the squared residuals (SSR) by choosing the best prediction $ \gamma $.
+**Step 1** : Initialize the model with a constant value : $$ F_0(x) = argmin_{\gamma} \sum_i \cal{L}(y_i, \gamma) $$. We simply want to minimize the sum of the squared residuals (SSR) by choosing the best prediction $$ \gamma $$.
 
-If we derive the optimal value for  $ \gamma $ :
+If we derive the optimal value for  $$ \gamma $$ :
 
-$ \frac { \delta } {\delta \gamma } \sum_i \cal{L}(y_i, \gamma) = -(y_1 - \gamma) + -(y_2 - \gamma) + -(y_3 - \gamma) + ... = 0 $
+$$ \frac { \delta } {\delta \gamma } \sum_i \cal{L}(y_i, \gamma) = -(y_1 - \gamma) + -(y_2 - \gamma) + -(y_3 - \gamma) + ... = 0 $$
 
-$ \sum_i y_i - n * \gamma = 0 $
+$$ \sum_i y_i - n * \gamma = 0 $$
 
-$ \gamma = \frac{ \sum_i y_i }{n} = \bar{y} $
+$$ \gamma = \frac{ \sum_i y_i }{n} = \bar{y} $$
 
 This is simply the average of the observations. This justifies our previous constant initialization. In other words, we created a leaf that predicts all samples will weight the average of the samples.
 
@@ -124,26 +124,22 @@ This is simply the average of the observations. This justifies our previous cons
 
 - a) Compute the pseudo-residuals for every sample :
 
-$ r_{im} = - \frac {\delta \cal{L} (y_i, F(x_i)) } {\delta F(x_i)} = - ( - 1 \times (Obs - F_{m-1}(x)) ) = (Obs - F_{m-1}(x)) = (Obs - Pred) $
+$$ r_{im} = - \frac {\delta \cal{L} (y_i, F(x_i)) } {\delta F(x_i)} = - ( - 1 \times (Obs - F_{m-1}(x)) ) = (Obs - F_{m-1}(x)) = (Obs - Pred) $$
 
 This derivative is called the Gradient. The Gradient Boost is named after this.
 
-- b) Fit a regression tree to the $ r_{im} $ values and create terminal regions $ R_{jm} $ for j = 1, ... , $ J_m $, i.e create the leaves of the tree. At that point, we still need to compute the output value of each leaf.
+- b) Fit a regression tree to the $$ r_{im} $$ values and create terminal regions $$ R_{jm} $$ for j = 1, ... , $$ J_m $$, i.e create the leaves of the tree. At that point, we still need to compute the output value of each leaf.
 
-- c) For each leaf j = 1... $ J_m $, compute the output value that minimized the SSR : $ \gamma_{jm} = argmin_{\gamma} \sum_{x_i \in R_{ij}} \cal{L}(y_i, F_{m-1} + \gamma) $. In other words, we will simply predict the output of all the samples stored in a certain leaf.
+- c) For each leaf j = 1... $$ J_m $$, compute the output value that minimized the SSR : $$ \gamma_{jm} = argmin_{\gamma} \sum_{x_i \in R_{ij}} \cal{L}(y_i, F_{m-1} + \gamma) $$. In other words, we will simply predict the output of all the samples stored in a certain leaf.
 
-- d) Make a new prediction for each sample by updating, accoridng to a learning rate $ lr \in (0,1) $ :
-$ F_m(x) = F_{m-1}(x) + lr \times \sum_j \gamma_{jm} I(x \in R_{jm} ) $. We compute the new value by summing the previous prediction and all the predictions $ \gamma $ into which our sample falls.
+- d) Make a new prediction for each sample by updating, accoridng to a learning rate $$ lr \in (0,1) $$ :
+$$ F_m(x) = F_{m-1}(x) + lr \times \sum_j \gamma_{jm} I(x \in R_{jm} ) $$. We compute the new value by summing the previous prediction and all the predictions $ \gamma $ into which our sample falls.
 
 # Implement a high-level Gradient Boosting in Python
 
 Since the pseudo-code detailed above might be a bit tricky to understand, I've tried to summarize a high level idea of Gradient Boosting, and we'll be implementing it in Python.
 
-The algorithm can be then described as the following, on a dataset $(x,y)$ with $x$ the features and $y$ the targets, with a differentiable loss function $\cal{L}$:
-
-$$ \cal{L} = \frac {1} {2} (Obs - Pred)^2 $$, called the Squared Residuals. 
-
-**Step 1** : Initialize the model with a constant value : $ \gamma = \frac{ \sum_i y_i }{n} = \bar{y} $
+**Step 1** : Initialize the model with a constant value : $$ \gamma = \frac{ \sum_i y_i }{n} = \bar{y} $$
 
 This is simply the average of the observations. 
 
@@ -151,13 +147,13 @@ This is simply the average of the observations.
 
 - a) Compute the pseudo-residuals for every sample, i.e the true value - the predicted value :
 
-$ r_{im}  = (Obs - Pred) $
+$$ r_{im}  = (Obs - Pred) $$
 
-- b) Fit a regression tree on the residuals, and predict the residuals $ r_t $
+- b) Fit a regression tree on the residuals, and predict the residuals $$ r_t $$
 
 - c) Update the prediction : 
 
-$ Pred_t(x) = Pred_{t-1}(x) + lr \times r_t $
+$$ Pred_t(x) = Pred_{t-1}(x) + lr \times r_t $$
 
 ## Data generation
 
