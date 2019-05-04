@@ -133,7 +133,7 @@ This derivative is called the Gradient. The Gradient Boost is named after this.
 - c) For each leaf j = 1... $$ J_m $$, compute the output value that minimized the SSR : $$ \gamma_{jm} = argmin_{\gamma} \sum_{x_i \in R_{ij}} \cal{L}(y_i, F_{m-1} + \gamma) $$. In other words, we will simply predict the output of all the samples stored in a certain leaf.
 
 - d) Make a new prediction for each sample by updating, accoridng to a learning rate $$ lr \in (0,1) $$ :
-$$ F_m(x) = F_{m-1}(x) + lr \times \sum_j \gamma_{jm} I(x \in R_{jm} ) $$. We compute the new value by summing the previous prediction and all the predictions $ \gamma $ into which our sample falls.
+$$ F_m(x) = F_{m-1}(x) + lr \times \sum_j \gamma_{jm} I(x \in R_{jm} ) $$. We compute the new value by summing the previous prediction and all the predictions $$ \gamma $$ into which our sample falls.
 
 # Implement a high-level Gradient Boosting in Python
 
