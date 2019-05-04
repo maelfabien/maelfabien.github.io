@@ -54,6 +54,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Gradient Boosting (Regression)](https://maelfabien.github.io/machinelearning/GradientBoost/) : In this article, we'll cover the basics of gradient boosting regression, and implement a high level version in Python.
 
+[Gradient Boosting (Classification)](https://maelfabien.github.io/machinelearning/GradientBoostC/) : In this article, we'll cover the basics of gradient boosting classification as an extension of the Regression.
+
 [Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/) : Kernel methods offer a great way to solve complex problems. However, it gets computationally hard to implement them at scale. This is being solved by Large Scale Kernel methods.
 
 ## Unsupervised Learning Algorithms 
