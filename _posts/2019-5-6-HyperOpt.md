@@ -21,6 +21,10 @@ Bayesian Hyperpameter Optimization is a model-based hyperparameter optimization.
 
 What are the main advantages and limitations of model-based techniques ? How can we implement it in Python ?
 
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Bayesian Hyperparameter Optimization
 
 ## Sequential model-based optimization (SMBO)
@@ -76,17 +80,25 @@ $$ {\hat{\sigma}}^2 = \frac {1} { \mid B \mid - 1 } \sum_{r \in B} ( r(x) - \ha
 
 By their structure, Random Forests allow the use of conditional variables, which is a nice feature.
 
-### Gaussian Process (GP)
+### Tree Parzen Estimators (TPE)
 
+TPE does not define a predictive distribution. Instead,  it creates two hierarchical processes, $ l(x) $ and $ g(x) $ acting as generative models for all domain variables. These processes model the domain variables when the objective function is below and above a specified quantile $ y^* $.
 
+$$ p(x \mid y, D) = l(x) $ if $ y < y^* $, else $ g(x) $$
+
+Gaussian processes and random forests, in contrast, model the objective function as dependent on the entire joint variable configuration.
+
+Parzen estimators are organized in a tree structure, preserving any specified conditional dependence and resulting in a fit per variable for each process $ l(x), g(x) $. With these two distributions, one can optimize a closed form term proportional to expected improvement
+
+TPE naturally supports domains with specified conditional variables. 
+
+## Acquisition function
 
 How do we pick point to know where we should evaluate next ?
 - Pick points that yield, on the approximated curve, a low value. 
 - Pick points in areas we have less explored.
 
 There is an exploration / exploitation trade-off to make. This tradeoff is taken into account in an *acquisition function*.
-
-## Acquisition function
 
 The acquisition function is defined as :
 
