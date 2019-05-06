@@ -35,7 +35,7 @@ $$ x^* = argmin_x f(x) $$
 
 where $ f $ is an expensive function. 
 
-Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $ x $. Hyperparameter gradients might also not be available. 
+Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $$ x $$. Hyperparameter gradients might also not be available. 
 
 Suppose that we know all the parameters distribution. We can represent for every hyperparameter, a distribution of the loss according to its value.
 
@@ -54,7 +54,7 @@ We try to approximate the underlying function using only the samples we have. Th
 
 ### Gaussian Process (GP)
 
-We suppose that the function $ f $ has a mean $ \mu $ and a covariance $ K $, and is a realization of a Gaussian Process. The Gaussian Process is a tool used to infer the value of a function. Predictions follow a normal distribution. Therefore :
+We suppose that the function $$ f $$ has a mean $$ \mu $$ and a covariance $$ K $$, and is a realization of a Gaussian Process. The Gaussian Process is a tool used to infer the value of a function. Predictions follow a normal distribution. Therefore :
 
 $$ p(y \mid x, D) = N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $$
 
@@ -70,9 +70,9 @@ From that new point, we add it to the samples, and re-build the Gaussian Process
 
 Another choice for the probabilistic regression model is an ensemble of regression trees. This is used by Sequential Model-based Algorithm Configuration library (SMAC).
 
-We still suppose that $ N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $ is Gaussian.
+We still suppose that $$ N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $$ is Gaussian.
 
-We choose the parameters $hat{\mu}, \hat{\sigma} $ as the empirical mean and variance of the regression values.
+We choose the parameters $$ hat{\mu}, \hat{\sigma} $$ as the empirical mean and variance of the regression values.
 
 $$ \hat{\mu} = \frac {1} { \mid B \mid } \sum_{r \in B} r(x) $$
 
@@ -82,13 +82,13 @@ By their structure, Random Forests allow the use of conditional variables, which
 
 ### Tree Parzen Estimators (TPE)
 
-TPE does not define a predictive distribution. Instead,  it creates two hierarchical processes, $ l(x) $ and $ g(x) $ acting as generative models for all domain variables. These processes model the domain variables when the objective function is below and above a specified quantile $ y^* $.
+TPE does not define a predictive distribution. Instead,  it creates two hierarchical processes, $$ l(x) $$ and $$ g(x) $$ acting as generative models for all domain variables. These processes model the domain variables when the objective function is below and above a specified quantile $$ y^* $$.
 
-$$ p(x \mid y, D) = l(x) $ if $ y < y^* $, else $ g(x) $$
+$$ p(x \mid y, D) = l(x) $$ if $$ y < y^* $$, else $$ g(x) $$
 
 Gaussian processes and random forests, in contrast, model the objective function as dependent on the entire joint variable configuration.
 
-Parzen estimators are organized in a tree structure, preserving any specified conditional dependence and resulting in a fit per variable for each process $ l(x), g(x) $. With these two distributions, one can optimize a closed form term proportional to expected improvement
+Parzen estimators are organized in a tree structure, preserving any specified conditional dependence and resulting in a fit per variable for each process $$ l(x), g(x) $$. With these two distributions, one can optimize a closed form term proportional to expected improvement
 
 TPE naturally supports domains with specified conditional variables. 
 
@@ -106,11 +106,11 @@ $$ A(x) = \sigma(x) ( \gamma(x) \Phi( \gamma(x)) + N (\gamma(x))) $$
 
 where :
 
-- $ \gamma(x) = \frac { f(x^c) - \mu(x)} {\sigma(x)} $
-- $ f(x^c) $ the current guessed arg min, $ \mu(x) $ the guessed value of the function at `x`, and $ \sigma(x) $ the standard deviation of output at `x`.
-- $ \Phi(x) $ and $ N(x) $ are the CDF and the PDF of a standard normal
+- $$ \gamma(x) = \frac { f(x^c) - \mu(x)} {\sigma(x)} $$
+- $$ f(x^c) $$ the current guessed arg min, $ \mu(x) $ the guessed value of the function at `x`, and $$ \sigma(x) $$ the standard deviation of output at `x`.
+- $$ \Phi(x) $$ and $$ N(x) $$ are the CDF and the PDF of a standard normal
 
-We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $ f(x) $ at that point, and so on...
+We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
 
 ![image](https://maelfabien.github.io/assets/images/ho4.png)
 
@@ -122,7 +122,7 @@ This is the essence of SMBO !
 
 ## Initialization sampling
 
-In practice, we do not systematically pick random values of $ x $ as an initialization. We can use :
+In practice, we do not systematically pick random values of $$ x $$ as an initialization. We can use :
 - random sampling
 - quasi-random sampling
 - Latin hypercube sampling
@@ -130,9 +130,11 @@ In practice, we do not systematically pick random values of $ x $ as an initiali
 
 # Advantages of Bayesian Hyperparameter Optimization
 
-Bayesian optimization techniques can be effective in practice even if the underlying function $ f $ being optimized is stochastic, non-convex, or even non-continuous. 
+Bayesian optimization techniques can be effective in practice even if the underlying function $$ f $$ being optimized is stochastic, non-convex, or even non-continuous. 
 
+Bayesian optimization is effective, but it will not solve all our tuning problems. As the search progresses, the algorithm switches from exploration — trying new hyperparameter values — to exploitation — using hyperparameter values that resulted in the lowest objective function loss.
 
+If the algorithm finds a local minimum of the objective function, it might concentrate on hyperparameter values around the local minimum rather than trying different values located far away in the domain space. Random search does not suffer from this issue because it does not concentrate on any values!
 
 # Implementation in Python
 
