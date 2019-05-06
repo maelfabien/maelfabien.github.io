@@ -58,6 +58,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/) : Kernel methods offer a great way to solve complex problems. However, it gets computationally hard to implement them at scale. This is being solved by Large Scale Kernel methods.
 
+[AutoML with h2o](https://maelfabien.github.io/machinelearning/largescale/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
+
 ## Unsupervised Learning Algorithms 
 
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
