@@ -33,7 +33,7 @@ In an optimization problem regarding model's hyperparameters, the aim is to iden
 
 $$ x^* = argmin_x f(x) $$
 
-where $ f $ is an expensive function. 
+where $$ f $$ is an expensive function. 
 
 Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $$ x $$. Hyperparameter gradients might also not be available. 
 
@@ -107,7 +107,7 @@ $$ A(x) = \sigma(x) ( \gamma(x) \Phi( \gamma(x)) + N (\gamma(x))) $$
 where :
 
 - $$ \gamma(x) = \frac { f(x^c) - \mu(x)} {\sigma(x)} $$
-- $$ f(x^c) $$ the current guessed arg min, $ \mu(x) $ the guessed value of the function at `x`, and $$ \sigma(x) $$ the standard deviation of output at `x`.
+- $$ f(x^c) $$ the current guessed arg min, $$ \mu(x) $$ the guessed value of the function at `x`, and $$ \sigma(x) $$ the standard deviation of output at `x`.
 - $$ \Phi(x) $$ and $$ N(x) $$ are the CDF and the PDF of a standard normal
 
 We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
