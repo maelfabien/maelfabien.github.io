@@ -35,15 +35,17 @@ $$ x^* = argmin_x f(x) $$
 
 where $$ f $$ is an expensive function. 
 
-Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $$ x $$. Hyperparameter gradients might also not be available. 
-
-Suppose that we know all the parameters distribution. We can represent for every hyperparameter, a distribution of the loss according to its value.
+Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $$ x $$. Hyperparameter gradients might also not be available. Suppose that we know all the parameters distribution. We can represent for every hyperparameter, a distribution of the loss according to its value.
 
 ![image](https://maelfabien.github.io/assets/images/ho1.png)
 
 Since the curve is not known, a naive approach would be the pick a few values of `x` and try to observe the corresponding values `f(x)`. We would then pick the value of `x` that gave the smallest value.
 
 ![image](https://maelfabien.github.io/assets/images/ho2.png)
+
+We can pick values randomly, but other common methods are :
+- quasi-random sampling
+- Latin hypercube sampling
 
 ## Probabilistic Regression Models 
 
@@ -114,19 +116,13 @@ We then compute the acquisiton score of each point, pick the point that has the 
 
 ![image](https://maelfabien.github.io/assets/images/ho4.png)
 
+In this example, we would move to the extreme value on the right, at $$ x = 1 $$.
+
 The process can be illustrated the following way :
 
 ![image](https://maelfabien.github.io/assets/images/bo.gif)
 
-This is the essence of SMBO !
-
-## Initialization sampling
-
-In practice, we do not systematically pick random values of $$ x $$ as an initialization. We can use :
-- random sampling
-- quasi-random sampling
-- Latin hypercube sampling
-
+This is the essence of bayesian hyperparameter optimization !
 
 # Advantages of Bayesian Hyperparameter Optimization
 
@@ -144,15 +140,143 @@ Several softwares implement Gaussian Hyperparameter Optimization.
 
 We'll be using HyperOpt in this example.
 
+## The Data
 
+We'll use the Credit Card Fraud detection, a famous Kaggle dataset that can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 
+The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
 
+It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
+```python
+### General
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+```
 
+```python
+df = pd.read_csv('creditcard.csv')
+df.head()
+```
 
+![image](https://maelfabien.github.io/assets/images/auto3.png)
 
+If you explore the data, you'll notice that only 0.17% of the transactions are fraudulant. We'll use the F1-Score metric, a harmonic mean between the precision and the recall.
 
-> **Conclusion** : I hope this article on AutoML was interesting. It's a really hot topic, and I do expect large improvements to be made over the next years in this field. 
+To understand the nature of the fraudulant transactions, simply plot the following graph :
+
+```python
+plt.figure(figsize=(12,8))
+plt.scatter(df[df.Class == 0].Time, df[df.Class == 0].Amount, c='green', alpha=0.4, label="Not Fraud")
+plt.scatter(df[df.Class == 1].Time, df[df.Class == 1].Amount, c='red', label="Fraud")
+plt.title("Amount of the transaction over time")
+plt.legend()
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/auto4.png)
+
+Fraudulant transactions have a limited amount. We can guess that these transactions must remain "unseen" and not attracting too much attention.
+
+## HyperOpt
+
+Import the HyperOpt packages and functions :
+
+```python
+### HyperOpt Parameter Tuning
+from hyperopt import tpe
+from hyperopt import STATUS_OK
+from hyperopt import Trials
+from hyperopt import hp
+from hyperopt import fmin
+```
+
+In this example, we will try to optimize a simple Logistic Regression. Define the maximum number of evaluations and the maximum number of evaluations :
+
+```python
+N_FOLDS = 10
+MAX_EVALS = 50
+```
+
+We start by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross validation F1 Score, and therefore minimize 1 - this score.
+
+```python
+def objective(params, n_folds = N_FOLDS):
+    """Objective function for Logistic Regression Hyperparameter Tuning"""
+
+    # Perform n_fold cross validation with hyperparameters
+    # Use early stopping and evalute based on ROC AUC
+
+    clf = LogisticRegression(**params,random_state=0,verbose =0)
+    scores = cross_val_score(clf, X, y, cv=5, scoring='f1_macro')
+
+    # Extract the best score
+    best_score = max(scores)
+
+    # Loss must be minimized
+    loss = 1 - best_score
+
+    # Dictionary with information for evaluation
+    return {'loss': loss, 'params': params, 'status': STATUS_OK}
+```
+
+Then, we define the space, i.e the range of all parameters we want to tune :
+
+```python
+space = {
+    'class_weight': hp.choice('class_weight', [None, class_weight]),
+    'warm_start' : hp.choice('warm_start', [True, False]),
+    'fit_intercept' : hp.choice('fit_intercept', [True, False]),
+    'tol' : hp.uniform('tol', 0.00001, 0.0001),
+    'C' : hp.uniform('C', 0.05, 3),
+    'solver' : hp.choice('solver', ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']),
+    'max_iter' : hp.choice('max_iter', range(5,1000))
+}
+```
+
+We are now ready to run the optimization :
+
+```python
+# Algorithm
+tpe_algorithm = tpe.suggest
+
+# Trials object to track progress
+bayes_trials = Trials()
+
+# Optimize
+best = fmin(fn = objective, space = space, algo = tpe.suggest, max_evals = MAX_EVALS, trials = bayes_trials)
+```
+
+You'll see the progress in a similar way : 
+
+`2%|▏         | 1/50 [00:31<25:57, 31.78s/it, best loss: 0.4574993225009176]`
+
+The variable `best` contains the model with the best parameters. Now, we simply copy those parameters, define a model :
+
+```python
+# Optimal model
+clf = LogisticRegression(
+    C= 2.959250240545696, 
+    fit_intercept= True,
+    max_iter= 245,
+    solver= 'newton-cg',
+    tol= 2.335533830757049e-05,
+    warm_start= True)
+```
+
+And fit-predict this model :
+
+```python
+# Fit-Predict
+clf.fit(X_train, y_train)
+y_pred =clf.predict(X_test)
+f1_score(y_pred, y_test)
+```
+
+`0.7356321839080459`
+
+> **Conclusion** : I hope this article on Bayesian Hyperparameter Optimization was clear. Don't hesitate to drop a comment if you have a question/remark.
 
 Sources :
 - [https://www.quora.com/How-does-Bayesian-optimization-work](https://www.quora.com/How-does-Bayesian-optimization-work)
