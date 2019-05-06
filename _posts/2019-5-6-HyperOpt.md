@@ -281,6 +281,6 @@ f1_score(y_pred, y_test)
 Sources :
 - [https://www.quora.com/How-does-Bayesian-optimization-work](https://www.quora.com/How-does-Bayesian-optimization-work)
 - [https://github.com/fmfn/BayesianOptimization](https://github.com/fmfn/BayesianOptimization)
-- [https://static.sigopt.com/773979031a2d61595b9bda23bb81a192341f11a4/pdf/SigOpt_Bayesian_Optimization_Primer.pdf](https://static.sigopt.com/773979031a2d61595b9bda23bb81a192341f11a4/pdf/SigOpt_Bayesian_Optimization_Primer.pdf)
+- [https://static.sigopt.com/](https://static.sigopt.com/773979031a2d61595b9bda23bb81a192341f11a4/pdf/SigOpt_Bayesian_Optimization_Primer.pdf)
 
 
