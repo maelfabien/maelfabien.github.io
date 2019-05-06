@@ -112,7 +112,7 @@ Articles to come
 
 [GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
 
-[Bayesian Hyper-parameter Optimisation (HyperOpt)](https://maelfabien.github.io/machinelearning/HyperOpt/) : Bayesian Hyper-parameter Optimization is a great alternative to GridSearch and RandomizedSearch. How does it work ? How do you implement it in Python ?
+[Bayesian Hyperparameter Optimisation (HyperOpt)](https://maelfabien.github.io/machinelearning/HyperOpt/) : Bayesian Hyperparameter Optimization is a great alternative to GridSearch and RandomizedSearch. How does it work ? How do you implement it in Python ?
 
 [AutoML with h2o](https://maelfabien.github.io/machinelearning/largescale/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
 

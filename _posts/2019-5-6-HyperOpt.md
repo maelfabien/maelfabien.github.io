@@ -1,12 +1,12 @@
 ---
 published: true
-title: AutoML with h2o
+title: Bayesian Hyperparameter Optimization
 collection: st
 layout: single
 author_profile: false
 read_time: true
 categories: [machinelearning]
-excerpt : "Supervised Learning Algorithms"
+excerpt : "Parameters and Model Optimization"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
@@ -17,202 +17,132 @@ sidebar:
     nav: sidebar-sample
 ---
 
-The interest in AutoML is rising over time. This graph shows the trends in Google for the AutoML search term.
+Bayesian Hyperpameter Optimization is a model-based hyperparameter optimization. On the other hand, GridSearch or RandomizedSearch do not depend on any underlying model. 
 
-![image](https://maelfabien.github.io/assets/images/auto1.png)
+What are the main advantages and limitations of model-based techniques ? How can we implement it in Python ?
 
-AutoML algorithms are reaching really good rankings in data science competitions (see [this article](https://towardsdatascience.com/achieving-a-top-5-position-in-an-ml-competition-with-automl-89a5a6fb8060))
+# Bayesian Hyperparameter Optimization
 
-But *what is* AutoML ? How does it work ? And mainly, how can you implement an AutoML in Python ?
+## Sequential model-based optimization (SMBO)
 
-# What is AutoML ?
+In an optimization problem regarding model's hyperparameters, the aim is to identify :
 
-AutoML is a framework whose role is to optimize the machine learning workflow, which includes automatic training and tuning of many models within a user-specified time-limit.
+$$ x^* = argmin_x f(x) $$
 
-The idea is to fasten the work of the Data Scientist when it comes to model selection and parameter tuning. On the other hand, the user simply inputs the training data, eventually some validation data, and a time limit.
+where $ f $ is an expensive function. 
 
-AutoML will automatically try several models, choose the best performing models, tune the parameters of the *leader* models, try to stack them...
+Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $ x $. Hyperparameter gradients might also not be available. 
 
-AutoML outputs a leaderboard of algorithms, and you can select the best performing algorithm given several criteria that are measured (MSE, RMSE, logloss, Auc...).
+Suppose that we know all the parameters distribution. We can represent for every hyperparameter, a distribution of the loss according to its value.
 
-# Why and when should you use AutoML ?
+![image](https://maelfabien.github.io/assets/images/ho1.png)
 
-Building models and tuning the hyperparameters is a long process for any data scientist. The search space for the optimal parameters is enormous, and this is only for 1 chosen model.
+Since the curve is not known, a naive approach would be the pick a few values of `x` and try to observe the corresponding values `f(x)`. We would then pick the value of `x` that gave the smallest value.
 
-AutoML can be highly parallelized, so bear in mind that a couple of GPUs will definitely help.
+![image](https://maelfabien.github.io/assets/images/ho2.png)
 
-AutoML can be used to :
-- Assess the feature importance
-- Try a lot of models and parameters as a first guess
+## Probabilistic Regression Models 
 
-Once a model and a set of parameters have been identified, you have 2 options :
-- either the model is good enough, and satisfies your criteria
-- or you can use the selected set of model + parameters as a starting point for a GridSearch or Bayesian HyperOpt
+We try to approximate the underlying function using only the samples we have. This can essentially be done in 3 ways :
+- using Gaussian Process (GP)
+- using Random Forests
+- using Tree Parzen Estimators (TPE)
 
-# How does AutoML work ?
+### Gaussian Process (GP)
 
-AutoML **does not** use a GIANT double for-loop to test every model and every parameters. It's much smarter than that. It actually uses Reinforcement Learning.
+We suppose that the function $ f $ has a mean $ \mu $ and a covariance $ K $, and is a realization of a Gaussian Process. The Gaussian Process is a tool used to infer the value of a function. Predictions follow a normal distribution. Therefore :
 
-A controller neural net can propose a “child” model architecture, which can then be trained and evaluated for quality on a particular task. That feedback is then used to inform the controller how to improve its proposals for the next round. 
+$$ p(y \mid x, D) = N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $$
 
-Eventually the controller learns to assign high probability to areas of architecture space that achieve better accuracy on a held-out validation dataset, and low probability to areas of architecture space that score poorly.
+We use that set of predictions and pick new points where we should evaluate next. We can plot a Gaussian Process between 4 samples this way :
 
-![image](https://maelfabien.github.io/assets/images/auto2.png)
+![image](https://maelfabien.github.io/assets/images/ho3.png)
 
-To make the controller a little more complex, it uses anchor points, and set-selection attention to form skip connections. 
+The green areas represent confidence intervals.
 
-At that point, you might think that AutoML frameworks are horribly long to run. In AutoML, each gradient update to the controller parameters θ corresponds to training one child network to convergence. 
+From that new point, we add it to the samples, and re-build the Gaussian Process with that new information... We keep doing this until we reach the maximal number of iterations, or the limit time for example. 
 
-You're right, training a single child network can take hours. For this reason, according to Google's Blog, AutoML uses distributed training and asynchronous parameter updates in order to speed up the learning process of the controller. It uses a parameter-server scheme where we have a parameter server of S shards, that store the shared parameters for K controller replicas. Each controller replica samples m different child architectures that are trained in parallel. The controller then collects gradients according to the results of that minibatch of m architectures at convergence and sends them to the parameter server in order to update the weights across all controller replicas.
+### Random Forests
 
-# Example in Python
+Another choice for the probabilistic regression model is an ensemble of regression trees. This is used by Sequential Model-based Algorithm Configuration library (SMAC).
 
-Several companies are currently AutoML pipelines. Among them, Google and h2o. In this example, we'll use h2o's solution. I suggest you run this in Google Colab using GPU's, but you can also run it locally.
+We still suppose that $ N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $ is Gaussian.
 
-Start off by importing the necessary packages :
+We choose the parameters $hat{\mu}, \hat{\sigma} $ as the empirical mean and variance of the regression values.
 
-```python
-!pip install requests
-!pip install tabulate
-!pip install "colorama>=0.3.8"
-!pip install future
-!pip install -f http://h2o-release.s3.amazonaws.com/h2o/latest_stable_Py.html h2o
-```
+$$ \hat{\mu} = \frac {1} { \mid B \mid } \sum_{r \in B} r(x) $$
 
+$$ {\hat{\sigma}}^2 = \frac {1} { \mid B \mid - 1 } \sum_{r \in B} ( r(x) - \hat{\mu} )^2 $$
 
-## The Data
+By their structure, Random Forests allow the use of conditional variables, which is a nice feature.
 
-We'll use the Credit Card Fraud detection, a famous Kaggle dataset that can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+### Gaussian Process (GP)
 
-The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
 
-It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
-```python
-### General
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-```
+How do we pick point to know where we should evaluate next ?
+- Pick points that yield, on the approximated curve, a low value. 
+- Pick points in areas we have less explored.
 
-```python
-df = pd.read_csv('creditcard.csv')
-df.head()
-```
+There is an exploration / exploitation trade-off to make. This tradeoff is taken into account in an *acquisition function*.
 
-![image](https://maelfabien.github.io/assets/images/auto3.png)
+## Acquisition function
 
-If you explore the data, you'll notice that only 0.17% of the transactions are fraudulant. We'll use the F1-Score metric, a harmonic mean between the precision and the recall.
+The acquisition function is defined as :
 
-To understand the nature of the fraudulant transactions, simply plot the following graph :
+$$ A(x) = \sigma(x) ( \gamma(x) \Phi( \gamma(x)) + N (\gamma(x))) $$
 
-```python
-plt.figure(figsize=(12,8))
-plt.scatter(df[df.Class == 0].Time, df[df.Class == 0].Amount, c='green', alpha=0.4, label="Not Fraud")
-plt.scatter(df[df.Class == 1].Time, df[df.Class == 1].Amount, c='red', label="Fraud")
-plt.title("Amount of the transaction over time")
-plt.legend()
-plt.show()
-```
+where :
 
-![image](https://maelfabien.github.io/assets/images/auto4.png)
+- $ \gamma(x) = \frac { f(x^c) - \mu(x)} {\sigma(x)} $
+- $ f(x^c) $ the current guessed arg min, $ \mu(x) $ the guessed value of the function at `x`, and $ \sigma(x) $ the standard deviation of output at `x`.
+- $ \Phi(x) $ and $ N(x) $ are the CDF and the PDF of a standard normal
 
-Fraudulant transactions have a limited amount. We can guess that these transactions must remain "unseen" and not attracting too much attention.
+We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $ f(x) $ at that point, and so on...
 
-## h2o AutoML
+![image](https://maelfabien.github.io/assets/images/ho4.png)
 
-Now, let's import h2o AutoML :
+The process can be illustrated the following way :
 
-```python
-### h2o AutoML
-import h2o
-from h2o.estimators.gbm import H2OGradientBoostingEstimator
-from h2o.automl import H2OAutoML
-```
+![image](https://maelfabien.github.io/assets/images/bo.gif)
 
-The, initialize the h2o session :
+This is the essence of SMBO !
 
-```python
-# Initialize
-h2o.init()
-```
+## Initialization sampling
 
-If you're running this locally, you should see something like this :
+In practice, we do not systematically pick random values of $ x $ as an initialization. We can use :
+- random sampling
+- quasi-random sampling
+- Latin hypercube sampling
 
-![image](https://maelfabien.github.io/assets/images/auto5.png)
 
-If you follow the local link to the instance, you can access the h2o Flow :
+# Advantages of Bayesian Hyperparameter Optimization
 
-![image](https://maelfabien.github.io/assets/images/auto6.png)
+Bayesian optimization techniques can be effective in practice even if the underlying function $ f $ being optimized is stochastic, non-convex, or even non-continuous. 
 
-I'll further explore Flow in another article, but the aim of Flow is to do the same thing with a visual interface. In h2o, you need to import the dataset as a h2o object, and use built-in functions to split the dataframe :
 
-```python
-# Load the data
-df = h2o.import_file("/Users/maelfabien/Desktop/LocalDB/CreditCard/creditcard.csv")
 
-d = df.split_frame(ratios = [0.8], seed = 1234)
-df_train = d[0] # using 80% for training
-df_test = d[1] #rest 20% for testing
-```
+# Implementation in Python
 
-We then define a list of the columns we'll use as predictors :
+Several softwares implement Gaussian Hyperparameter Optimization.
 
-```
-# Predictor columns
-predictors = list(df.columns) 
-predictors.remove('Time')
-predictors.remove('Class')
-```
+![image](https://maelfabien.github.io/assets/images/ho5.png)
 
-As you might have guessed, we're facing a binary classification problem here. The default case is regression in AutoML. To "cast" a column type to integer, use this :
+We'll be using HyperOpt in this example.
 
-```
-# Cast binary
-df_train['Class'] = df_train['Class'].asfactor()
-```
 
-We are now ready to define the model and train it. We specify the maximal number of models to test, and the overall maximal runtime in seconds.
 
-```
-aml = H2OAutoML(max_models = 50, seed = 1, max_runtime_secs=21000)
-aml.train(x = predictors, y = 'Class', training_frame = df_train, validation_frame = df_test)
-```
 
-By default, the maximal runtime is 1 hour. Your model will be training for 21'000 seconds now (I left it to train overnight). Now, let's display all the models that have been tested and their performance :
 
-```python
-print(aml.leaderboard)
-```
 
-![image](https://maelfabien.github.io/assets/images/auto7.png)
 
-To display only the best model, use `print(aml.leader)`.
 
-We can now make a prediction using the leader model, and assess it's performance on the test set using the F1-Score. We simply need to transform the h2o objects back to pandas dataframes to compute the scores.
-
-```
-preds = aml.leader.predict(df_test)
-f1_score(preds['predict'].as_data_frame(), df_test['Class'].as_data_frame())
-```
-
-Which heads on my side `0.8393782383419689`. Since I ran this notebook locally, I would expect a 6 hours runtime on GPUs to totally outperfom this. We can then save the best model :
-
-```python
-h2o.save_model(aml.leader, path = "./model_credit_card")
-```
-
-Once your work is over, shut down the session : 
-
-```python
-h2o.shutdown()
-```
-
-In this simple example, h2o outperformed the tuning I manually did.
 
 > **Conclusion** : I hope this article on AutoML was interesting. It's a really hot topic, and I do expect large improvements to be made over the next years in this field. 
 
 Sources :
-- https://medium.com/@gangele397/how-does-automl-works-b0f9e45fbb24
-- https://ai.googleblog.com/2017/05/using-machine-learning-to-explore.html?m=1
-- http://eric.univ-lyon2.fr/~ricco/tanagra/fichiers/fr_Tanagra_Package_H2O_Python.pdf
+- [https://www.quora.com/How-does-Bayesian-optimization-work](https://www.quora.com/How-does-Bayesian-optimization-work)
+- [https://github.com/fmfn/BayesianOptimization](https://github.com/fmfn/BayesianOptimization)
+- [https://static.sigopt.com/773979031a2d61595b9bda23bb81a192341f11a4/pdf/SigOpt_Bayesian_Optimization_Primer.pdf](https://static.sigopt.com/773979031a2d61595b9bda23bb81a192341f11a4/pdf/SigOpt_Bayesian_Optimization_Primer.pdf)
+
+
