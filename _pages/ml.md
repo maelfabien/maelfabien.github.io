@@ -15,7 +15,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-## Statistics
+
+![image](https://maelfabien.github.io/assets/images/stats_head.png)
 
 [Key Resources](https://maelfabien.github.io/statistics/resources/) : Some important resources to to understand the basics of statistics.
 
@@ -114,7 +115,7 @@ Articles to come
 
 [Bayesian Hyperparameter Optimisation (HyperOpt)](https://maelfabien.github.io/machinelearning/HyperOpt/) : Bayesian Hyperparameter Optimization is a great alternative to GridSearch and RandomizedSearch. How does it work ? How do you implement it in Python ?
 
-[AutoML with h2o](https://maelfabien.github.io/machinelearning/largescale/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
+[AutoML with h2o](https://maelfabien.github.io/machinelearning/AutoML/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
 
 ## Metrics in Machine Learning
 
