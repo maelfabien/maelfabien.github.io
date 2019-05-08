@@ -12,25 +12,31 @@ sidebar:
 
 A series of articles dedicated to Big Data analytics.
 
-## Parallel and Distributed Computing
+![image](https://maelfabien.github.io/assets/images/cc_head.png)
 
 [Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components)
 
 Articles to come on Map-Reduce, GPUs...
 
-## Amazon Web Services
+<br>
+
+![image](https://maelfabien.github.io/assets/images/aws_head.png)
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ?
 
 [Core Services](https://maelfabien.github.io/bigdata/core_services/) : What are the core services of AWS and other Cloud providers ?
 
-## Google Cloud Platform
+<br>
+
+![image](https://maelfabien.github.io/assets/images/gcp_head.png)
 
 [TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/) : TPUs are changing the way we are training Neural Networks. Developped by Google, TPUs have a different way to perform matrix operations and are optimized for certain tasks. We'll cover the basics of TPU computation, and how to use them in Colab.
 
 [Using Google Drive to save and load files in Colab](https://maelfabien.github.io/bigdata/ColabDrive/) : Google Colab offers CPUs, GPUs and TPUs for free. It's a great tool for any project, but you need to have your files uploaded on Google Drive. We'll see how to interact with Google Drive from Colab.
 
-## Elastic Search, Logstash, Kibana
+<br>
+
+![image](https://maelfabien.github.io/assets/images/elk_head.png)
 
 [Introduction to the Elastic Stack](https://maelfabien.github.io/bigdata/ElasticStack/) : What is the Elastic Stack ? What are the main products and features of ELK ?
 
@@ -40,7 +46,9 @@ Articles to come on Map-Reduce, GPUs...
 
 [Working with Dev Tools in Elasticsearch](https://maelfabien.github.io/bigdata/DevTools/) : DevTools is the default interpreter to interact with your data in Elasticsearch. We'll cover the basic queries and data manipulations.
 
-## Neo4J
+<br>
+
+![image](https://maelfabien.github.io/assets/images/neo_head.png)
 
 [Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) :  What is a graph ? Where are graphs being used ? What are the components of a graph ?
 
@@ -54,7 +62,9 @@ Articles to come on Map-Reduce, GPUs...
 
 [A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/) : I had the pleasure to attend the Neo4J Graph Tour 2019. 
 
-## Build a NoSQL Project from scratch
+<br>
+
+![image](https://maelfabien.github.io/assets/images/nosql_head.png)
 
 [Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/) : How to easily install Zeppelin on your local computer ? 
 
@@ -76,8 +86,6 @@ Articles to come on Map-Reduce, GPUs...
 
 [Move Scala Dataframes to Cassandra](https://maelfabien.github.io/bigdata/Scala_Cassandra/) : Once the data has been processed, how can you move it to Cassandra ?
 
-## Articles to come
+<br>
 
-DataBrocks, Hadoop, Spark, Cassandra, Kafka, Redis, Docker...
-
-
+Articles to come : DataBrocks, Hadoop, Spark, Cassandra, Kafka, Redis, Docker...

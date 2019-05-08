@@ -28,6 +28,8 @@ I am currently working on a Tensorflow.js implementation of this project. Don't 
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Multimodal-Emotion-Recognition](https://github.com/maelfabien/Multimodal-Emotion-Recognition)</span>
 
+<br>
+
 # A Deep Learning Approach to Face Classification
 
 In this challenge, our aim was to develop face classification algorithms using Deep Learning Architectures. I have explored hand-made CNNs, Inception, XCeption, VGG16, DenseNet or ResNet networks for binary classification purposes.
@@ -36,6 +38,8 @@ In this challenge, our aim was to develop face classification algorithms using D
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge](https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge)</span>
 
+<br>
+
 # Multi-Regression : Estimating a position from a received signal strength for IoT sensors
 
 Smart devices such as IoT sensors use low energy consuming networks such as the ones provided by Sigfox or Lora. But without using GPS networks, it becomes harder to estimate the position of the sensor. The aim of this study is to provide a geolocation estimation using Received Signal Strength Indicator in the context of IoT. The aim is to allow a geolocation of lowconsumption connected devices using the Sigfox network. State of the art modelsare able to be precise to the nearest kilometer in urban areas, and around tenkilometers in less populated areas.
@@ -43,6 +47,8 @@ Smart devices such as IoT sensors use low energy consuming networks such as the 
 <embed src="https://maelfabien.github.io/assets/images/RSSI.pdf" type="application/pdf" width="600px" height="500px" />
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Received-Signal-Strength-Geo-Location](https://github.com/maelfabien/Received-Signal-Strength-Geo-Location)</span>
+
+<br>
 
 # Econometrics
 
@@ -54,6 +60,8 @@ An econometrics project in which I covered :
 <embed src="https://maelfabien.github.io/assets/images/Econometrics.pdf" type="application/pdf" width="600px" height="500px" />
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/MSc-Data-Science/tree/master/SES722/Projet](https://github.com/maelfabien/MSc-Data-Science/tree/master/SES722/Projet)</span>
+
+<br>
 
 # NLP : Analyzing GitHub Pull Requests
 
@@ -67,17 +75,23 @@ In this project, I have been looking at comments of developers on GitHub pull re
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Analyze-Github-Pull-Requests](https://github.com/maelfabien/Analyze-Github-Pull-Requests)</span>
 
+<br>
+
 # Classification : Predicting the predominant kind of tree (Kaggle)
 
 In this [challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge) , I am trying to predict the forest cover type (the predominant kind of tree cover) from strictly cartographic variables (as opposed to remotely sensed data) . 
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Forest-Cover-Type-Challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge)</span>
 
+<br>
+
 # Cyber Security (Splunk)
 
 I used Splunk in a Cyber Security Project. The aim of the project was to identify the source of a data leakage within the company. We went through the logs, identified suspect IP addresses, found the source of the attack (a corrupted PDF), estimated the volume of data stolen, and proposed immediate actions. We detailed the Diamond Model, the Cyber Kill Chain, and developped general perspectives for the Cyber Threat Intelligence of the company.
 
 <embed src="https://maelfabien.github.io/assets/images/Cyber.pdf" type="application/pdf" width="600px" height="500px" />
+
+<br>
 
 # Hackathons
 
