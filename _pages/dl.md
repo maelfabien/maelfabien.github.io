@@ -27,7 +27,7 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 <br>
 
-## Architectures
+![image](https://maelfabien.github.io/assets/images/arc_head.png)
 
 [A guide to Inception Architectures in Keras](https://maelfabien.github.io/deeplearning/inception/) : Inception is a deep convolutional neural network architecture that was introduced for the first time in 2014. It won the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC14). 
 
