@@ -13,3 +13,6 @@ In this section, I'm sharing all Medium articles I have written, as well as any 
 <div id="medium-widget"></div>
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@mael.fabien","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>
+
+
+<script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-map" id="1e66d657_1557312748"></div>
