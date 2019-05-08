@@ -110,7 +110,7 @@ author:
   avatar           : "/assets/images/profile.png"
   bio              : "Data Scientist, Graduate Actuary"
   location         : "Paris"
-  email            : "mael.fabien@gmail.com"
+  email            : 
   links:
     - label: "Mail"
       icon: "fas fa-fw fa-envelope-square"
