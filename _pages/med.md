@@ -15,4 +15,4 @@ In this section, I'm sharing all Medium articles I have written, as well as any 
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@mael.fabien","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>
 
 
-<script src="https://www.powr.io/powr.js?platform=html"></script><div class="powr-map" id="1e66d657_1557312748"></div>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VWuZwynxjcC3zpH3tX6cceM2D3367RfL" width="640" height="480"></iframe>
