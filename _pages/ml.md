@@ -4,8 +4,6 @@ permalink: /ml/
 author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/ml_head.png"
-toc: true
-toc_sticky: true
 sidebar:
     nav: sidebar-sample
 ---
@@ -28,20 +26,21 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [The Logistic Regression](https://maelfabien.github.io/statistics/linreg3/) : The Logistic Regression brings a way to operate binary classification using underlying linear models. We'll cover the basics of LR, the parameters to use and examples in Python.
 
-## Time Series
+
+![image](https://maelfabien.github.io/assets/images/ts_head.png)
 
 [Introduction to Time Series](https://maelfabien.github.io/statistics/TimeSeries1/) : A first approach to exploring a time series in Python with open data.
 
 [Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover those concepts and illustrate them in Python !
 
-## Data Visualization
+![image](https://maelfabien.github.io/assets/images/dv_head.png)
 
 [Introduction to Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
 
 [Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
 
 
-## Supervised Learning Algorithms
+![image](https://maelfabien.github.io/assets/images/sup_head.png)
 
 [Supervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/supervised/) : A cheat sheet that recaps the main supervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
@@ -59,19 +58,20 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/) : Kernel methods offer a great way to solve complex problems. However, it gets computationally hard to implement them at scale. This is being solved by Large Scale Kernel methods.
 
-## Unsupervised Learning Algorithms 
+
+![image](https://maelfabien.github.io/assets/images/unsup_head.png)
 
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
-Articles to come
 
-## Hidden Markov Models and Markov Chains
+![image](https://maelfabien.github.io/assets/images/mc_head.png)
 
 [Markov Chains and Applications in Python](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
 
 [Hidden Markov Models](https://maelfabien.github.io/machinelearning/HMM_2/) : In this article, we'll go through the theory in a visual way and explore HMMs for a simple NLP task.
 
-## Graph Analysis and Graph Learning
+
+![image](https://maelfabien.github.io/assets/images/graph_head.png)
 
 [Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
 
@@ -105,10 +105,6 @@ Articles to come
 
 [How to use OpenPose on macOS ?](https://maelfabien.github.io/tutorials/open-pose/) : OpenPose is a C++ / Python library for Pose Estimation. Let's see how to use it in macOS !
 
-## Matlab
-
-[Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/) : Matlab remains a widely used language for statistics. In this article, we cover the main statistical topics in Matlab.
-
 ## Parameters and Model Optimization
 
 [GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
@@ -117,7 +113,6 @@ Articles to come
 
 [AutoML with h2o](https://maelfabien.github.io/machinelearning/AutoML/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
 
-## Metrics in Machine Learning
+## Matlab
 
-Articles to come (Imbalanced Data, ...)
-
+[Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/) : Matlab remains a widely used language for statistics. In this article, we cover the main statistical topics in Matlab.
