@@ -18,6 +18,8 @@ In a group project, we worked on a resilient No-SQL (Cassandra) database archite
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/gdelt](https://github.com/maelfabien/gdelt)</span>
 
+<br>
+
 # Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
 
 In this project, I am exploring state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs and develop an ensemble model that gathers the information from all these sources and displays it in a clear and interpretable way.

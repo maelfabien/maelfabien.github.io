@@ -4,25 +4,15 @@ permalink: /bgd/
 author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/bgd_head.png"
-toc: true
-toc_sticky: true
 sidebar:
     nav: sidebar-sample
 ---
 
 A series of articles dedicated to Big Data analytics.
 
-![image](https://maelfabien.github.io/assets/images/cc_head.png)
-
-[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components)
-
-Articles to come on Map-Reduce, GPUs...
-
-<br>
-
 ![image](https://maelfabien.github.io/assets/images/aws_head.png)
 
-[Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ?
+[Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ? This article is part of the AWS Cloud Practioner certification.
 
 [Core Services](https://maelfabien.github.io/bigdata/core_services/) : What are the core services of AWS and other Cloud providers ?
 
@@ -85,6 +75,14 @@ Articles to come on Map-Reduce, GPUs...
 [Build an ETL in Scala for GDELT Data](https://maelfabien.github.io/bigdata/Scala/) : How can you process such a large amount of data using Scala and S3 ?
 
 [Move Scala Dataframes to Cassandra](https://maelfabien.github.io/bigdata/Scala_Cassandra/) : Once the data has been processed, how can you move it to Cassandra ?
+
+<br>
+
+![image](https://maelfabien.github.io/assets/images/cc_head.png)
+
+[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
+
+Articles to come on Map-Reduce, GPUs...
 
 <br>
 

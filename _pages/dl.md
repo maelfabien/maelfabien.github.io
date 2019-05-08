@@ -4,8 +4,6 @@ permalink: /dl/
 author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/dl_head.png"
-toc: true
-toc_sticky: true
 sidebar:
     nav: sidebar-sample
 ---
