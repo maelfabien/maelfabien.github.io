@@ -28,7 +28,3 @@ All codes and exercises of this website are hosted on GitHub in a dedicated repo
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles I have written.
-
-<div id="medium-widget"></div>
-<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-<script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@mael.fabien","postsPerLine":2,"limit":10,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>

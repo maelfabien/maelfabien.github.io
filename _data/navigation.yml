@@ -1,6 +1,9 @@
 # main links links
 main:
 
+  - title: "Publications"
+    url: /med/
+
   - title: "Machine Learning"
     url: /ml/
         
