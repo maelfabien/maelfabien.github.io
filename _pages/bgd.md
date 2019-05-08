@@ -8,7 +8,10 @@ sidebar:
     nav: sidebar-sample
 ---
 
-A series of articles dedicated to Big Data analytics.
+A series of articles dedicated to Big Data analytics. All codes and exercises of my blog are hosted on GitHub in a dedicated repository :
+
+<div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 ![image](https://maelfabien.github.io/assets/images/aws_head.png)
 
