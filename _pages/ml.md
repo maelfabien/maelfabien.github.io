@@ -26,6 +26,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [The Logistic Regression](https://maelfabien.github.io/statistics/linreg3/) : The Logistic Regression brings a way to operate binary classification using underlying linear models. We'll cover the basics of LR, the parameters to use and examples in Python.
 
+</br>
 
 ![image](https://maelfabien.github.io/assets/images/ts_head.png)
 
