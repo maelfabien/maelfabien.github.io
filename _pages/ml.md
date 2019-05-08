@@ -34,12 +34,15 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover those concepts and illustrate them in Python !
 
+<br>
+
 ![image](https://maelfabien.github.io/assets/images/dv_head.png)
 
 [Introduction to Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
 
 [Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
 
+<br>
 
 ![image](https://maelfabien.github.io/assets/images/sup_head.png)
 
@@ -59,11 +62,13 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Large Scale Kernel Methods](https://maelfabien.github.io/machinelearning/largescale/) : Kernel methods offer a great way to solve complex problems. However, it gets computationally hard to implement them at scale. This is being solved by Large Scale Kernel methods.
 
+<br>
 
 ![image](https://maelfabien.github.io/assets/images/unsup_head.png)
 
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
+<br>
 
 ![image](https://maelfabien.github.io/assets/images/mc_head.png)
 
@@ -82,7 +87,9 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
 
-## Natural Language Processing
+<br>
+
+![image](https://maelfabien.github.io/assets/images/nlp_head.png)
 
 [Text Preprocessing](https://maelfabien.github.io/machinelearning/NLP_1/) : Preprocessing in Natural Language Processing (NLP) is the process by which we try to "standardize" the text we want to analyze.
 
@@ -90,7 +97,9 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Text Embedding with Word2Vec](https://maelfabien.github.io/machinelearning/NLP_3/) : A deeper dive into the state of the art embedding technique : Word2Vec.
 
-## Computer Vision
+<br>
+
+![image](https://maelfabien.github.io/assets/images/cv_head.png)
 
 [Introduction to Computer Vision](https://maelfabien.github.io/computervision/cv_1/) : What is Computer Vision ? What are the main concepts ? When should it be used ?
 
@@ -106,7 +115,9 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [How to use OpenPose on macOS ?](https://maelfabien.github.io/tutorials/open-pose/) : OpenPose is a C++ / Python library for Pose Estimation. Let's see how to use it in macOS !
 
-## Parameters and Model Optimization
+<br>
+
+![image](https://maelfabien.github.io/assets/images/opt_head.png)
 
 [GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
 
@@ -114,6 +125,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [AutoML with h2o](https://maelfabien.github.io/machinelearning/AutoML/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
 
-## Matlab
+<br>
+
+![image](https://maelfabien.github.io/assets/images/matlab_head.png)
 
 [Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/) : Matlab remains a widely used language for statistics. In this article, we cover the main statistical topics in Matlab.
