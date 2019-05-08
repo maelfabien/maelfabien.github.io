@@ -8,7 +8,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-In this section, I'm sharing all Medium articles I have written. 
+In this section, I'm sharing all Medium articles I have written, as well as any other article that I publish outside of this blog :  
 
 <div id="medium-widget"></div>
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
