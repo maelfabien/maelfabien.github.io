@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "fr-FR"
-title                    : 
+title                    : "Maël Fabien"
 title_separator          : "-"
 name                     : "Maël Fabien"
-description              : ""
+description              : "Data Science Blog"
 url                      : https://maelfabien.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -110,7 +110,7 @@ author:
   avatar           : "/assets/images/profile.png"
   bio              : "Data Scientist, Graduate Actuary"
   location         : "Paris"
-  email            :
+  email            : "mael.fabien@gmail.com"
   links:
     - label: "Mail"
       icon: "fas fa-fw fa-envelope-square"
@@ -133,16 +133,13 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/maelfabien/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/mael-fabien/"
 
 
 # Reading Files
