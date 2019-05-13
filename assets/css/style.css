@@ -91,7 +91,7 @@ button:checked {
 
 #return {
   position: fixed;
-  bottom: 10px;
+  top: 10px;
   float: left;
   right: 77.25%;
   left: 18.5%;
@@ -99,7 +99,7 @@ button:checked {
   width: 100%;
   font-size: 12px;
   border-color: rgba(85, 85, 85, 0.2);
-  background-color: rgb(100,100,100);
+  background-color: white;
   padding: .5px;
   border-radius: 4px;
 
