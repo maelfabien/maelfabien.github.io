@@ -1,0 +1,91 @@
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 180px;					
+    height: 30px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+.circles{
+  color:pink;
+}
+
+body {
+    text-align:center;
+    background-color:black;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family:'Raleway', sans-serif;
+    color:white;
+}
+
+p {
+    font-family:'Raleway', sans-serif;
+    color:white;
+}
+
+.yaxis text{
+    font-family:'Raleway', sans-serif;
+    fill: white;
+}
+
+.xaxis text{
+    font-family:'Raleway', sans-serif;
+    fill: white;
+}
+/*
+.xaxis line{
+    stroke: white;
+}
+
+.yaxis line{
+    stroke: white;
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 50px;
+    margin: 0;
+}
+
+li {
+    display: block;
+    position: relative;
+    padding: 20px 0px;
+}
+
+h2 {
+    margin: 10px 0;
+    font-weight: 900;
+}
+
+
+button {
+  background-color: #e7e7e7; 
+  color: black;
+  border: none;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+button:checked {
+  background: red; 
+}
+
