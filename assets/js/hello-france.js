@@ -9,7 +9,7 @@ function upt_cht(var_bin='True') {
       //Get and draw data
       init();
 
-      d3.tsv("data/france.tsv")
+      d3.tsv("/assets/files/france.tsv")
         .row( (d, i) => {
           return {
             postalCode: +d["Postal Code"],

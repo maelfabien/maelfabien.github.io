@@ -5,6 +5,7 @@ div.tooltip {
     height: 30px;					
     padding: 2px;				
     font: 12px sans-serif;		
+    background-color:black;
     background: lightsteelblue;	
     border: 0px;		
     border-radius: 8px;			
