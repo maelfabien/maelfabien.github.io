@@ -20,6 +20,18 @@ See GitHub page : <span style="color:blue">[https://github.com/maelfabien/gdelt]
 
 <br>
 
+# D3.js Interactive Map of France
+
+In this project, I created an interactive map with a few main features :
+- display the map of France (population and density)
+- change the color of the map with a simple button
+- display a tooltip with the name of the city and the postal code
+- zoom on the map and update the axis accordingly
+
+![image](https://maelfabien.github.io/assets/images/map_d3.png)
+
+The tool can be accessed [here](https://maelfabien.github.io/viz), and the code [here](https://github.com/maelfabien/maelfabien.github.io/blob/master/assets/js/hello-france.js).
+
 # Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
 
 In this project, I am exploring state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs and develop an ensemble model that gathers the information from all these sources and displays it in a clear and interpretable way.
