@@ -42,6 +42,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
 
+[A D3 tool to visualize French population](https://maelfabien.github.io/viz) : This tool demonstrates basic features of D3.js, including a nice color map, tooltips and zoom.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/sup_head.png)
