@@ -32,6 +32,8 @@ In this project, I created an interactive map with a few main features :
 
 The tool can be accessed [here](https://maelfabien.github.io/viz), and the code [here](https://github.com/maelfabien/maelfabien.github.io/blob/master/assets/js/hello-france.js).
 
+<br>
+
 # Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
 
 In this project, I am exploring state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs and develop an ensemble model that gathers the information from all these sources and displays it in a clear and interpretable way.
