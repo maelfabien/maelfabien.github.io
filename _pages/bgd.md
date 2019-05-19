@@ -89,6 +89,8 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 [MapReduce](https://maelfabien.github.io/bigdata/MapReduce) : MapReduce is a programming paradigm that allows to process a large amount of data by initially splitting the data into blocks, sending the blocks to different clusters to perform operations, and aggregating the results.
 
+[HDFS](https://maelfabien.github.io/bigdata/HDFS) : HDFS stands for Hadoop Distributed File System. It is a sub-project of Hadoop. HDFS lets you connect nodes contained within clusters over which data files are distributed, overall being fault-tolerant.
+
 
 
 <br>
