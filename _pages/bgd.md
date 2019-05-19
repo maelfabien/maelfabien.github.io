@@ -87,4 +87,8 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 [Introduction to Hadoop](https://maelfabien.github.io/bigdata/hadoop) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
 
+[MapReduce](https://maelfabien.github.io/bigdata/MapReduce) : MapReduce is a programming paradigm that allows to process a large amount of data by initially splitting the data into blocks, sending the blocks to different clusters to perform operations, and aggregating the results.
+
+
+
 <br>
