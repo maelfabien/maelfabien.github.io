@@ -85,8 +85,6 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 [Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
 
-Articles to come on Map-Reduce, GPUs...
+[Introduction to Hadoop](https://maelfabien.github.io/bigdata/comp_components) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
 
 <br>
-
-Articles to come : DataBrocks, Hadoop, Spark, Cassandra, Kafka, Redis, Docker...
