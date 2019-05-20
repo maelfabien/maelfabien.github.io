@@ -1,4 +1,5 @@
 ---
+title: Deep Learning
 layout: single
 permalink: /dl/
 author_profile: false

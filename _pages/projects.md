@@ -20,6 +20,20 @@ See GitHub page : <span style="color:blue">[https://github.com/maelfabien/gdelt]
 
 <br>
 
+# Wikipedia Web App
+
+According to ReadWriteWeb, all articles in the English version of Wikipedia lead to the article "Philosophy". If you click on the first link of each article, you will come across the Philosophy article after a while.
+
+In order to verify this assertion, I developped a small WebApp with 2 simple options :
+- A manual Wikipedia Link explorer that requests Wikipedia's API
+- An automatic exploration that systematically chooses the first link among results
+
+![image](https://maelfabien.github.io/assets/images/Wiki.png)
+
+See GitHub page : <span style="color:blue">[https://github.com/maelfabien/WebApp](https://github.com/maelfabien/WebApp)</span>
+
+<br>
+
 # D3.js Interactive Map of France
 
 In this project, I created an interactive map with a few main features :
@@ -31,28 +45,6 @@ In this project, I created an interactive map with a few main features :
 ![image](https://maelfabien.github.io/assets/images/map_d3.png)
 
 The tool can be accessed [here](https://maelfabien.github.io/viz), and the code [here](https://github.com/maelfabien/maelfabien.github.io/blob/master/assets/js/hello-france.js).
-
-<br>
-
-# Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
-
-In this project, I am exploring state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs and develop an ensemble model that gathers the information from all these sources and displays it in a clear and interpretable way.
-
-I am currently working on a Tensorflow.js implementation of this project. Don't hesite to Star the project if you like it.
-
-<embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="600px" height="500px" />
-
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Multimodal-Emotion-Recognition](https://github.com/maelfabien/Multimodal-Emotion-Recognition)</span>
-
-<br>
-
-# A Deep Learning Approach to Face Classification
-
-In this challenge, our aim was to develop face classification algorithms using Deep Learning Architectures. I have explored hand-made CNNs, Inception, XCeption, VGG16, DenseNet or ResNet networks for binary classification purposes.
-
-<embed src="https://maelfabien.github.io/assets/images/DataChallenge.pdf" type="application/pdf" width="600px" height="500px" />
-
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge](https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge)</span>
 
 <br>
 

@@ -1,4 +1,5 @@
 ---
+title: Machine Learning
 layout: single
 permalink: /ml/
 author_profile: false
