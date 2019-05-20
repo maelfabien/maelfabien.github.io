@@ -6,7 +6,7 @@ redirect_from:
   - /resume
 ---
 
-<span style="color:blue">[Download my resume](https://maelfabien.github.io/assets/images/CV.pdf)</span>
+<span style="color:blue">[Download my resume](https://maelfabien.github.io/assets/images/CV_MF.pdf)</span>
 
 Education
 ======
