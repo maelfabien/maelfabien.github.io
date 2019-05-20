@@ -13,7 +13,29 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
+![image](https://maelfabien.github.io/assets/images/hadoop_head.png)
+
+[Introduction to Hadoop](https://maelfabien.github.io/bigdata/hadoop) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
+
+[MapReduce](https://maelfabien.github.io/bigdata/MapReduce) : MapReduce is a programming paradigm that allows to process a large amount of data by initially splitting the data into blocks, sending the blocks to different clusters to perform operations, and aggregating the results.
+
+[HDFS](https://maelfabien.github.io/bigdata/HDFS) : HDFS stands for Hadoop Distributed File System. It is a sub-project of Hadoop. HDFS lets you connect nodes contained within clusters over which data files are distributed, overall being fault-tolerant.
+
+[VM's in Virtual Box](https://maelfabien.github.io/bigdata/VM) : Hadoop runs only on GNU/Linux platforms. Therefore, if you have another OS, you need to install Virtual Box. Virtual Box is a software that lets you create and run Virtual Machines.
+
+[Hadoop with the HortonWorks Sandbox (1/4)](https://maelfabien.github.io/bigdata/HortonWorks) : The Sandbox by Hortonworks is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP).
+
+[Load and move files to HDFS (2/4)](https://maelfabien.github.io/bigdata/HDFS_2) : In this article, we'll see how to download the input text file for our WordCount job, and put the file into HDFS. 
+
+[Launch a Map Reduce Job (3/4)](https://maelfabien.github.io/bigdata/MRJob) : In this article, we'll get to the core of the exercise : launch a MapReduce WordCount job.
+
+[MapReduce Jobs in Python (4/4)](https://maelfabien.github.io/bigdata/MRJobP) : Using Hadoop Streaming, we can submit MapReduce Jobs in Python.
+
+<br>
+
 ![image](https://maelfabien.github.io/assets/images/aws_head.png)
+
+[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ? This article is part of the AWS Cloud Practioner certification.
 
@@ -78,27 +100,5 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 [Build an ETL in Scala for GDELT Data](https://maelfabien.github.io/bigdata/Scala/) : How can you process such a large amount of data using Scala and S3 ?
 
 [Move Scala Dataframes to Cassandra](https://maelfabien.github.io/bigdata/Scala_Cassandra/) : Once the data has been processed, how can you move it to Cassandra ?
-
-<br>
-
-![image](https://maelfabien.github.io/assets/images/cc_head.png)
-
-[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
-
-[Introduction to Hadoop](https://maelfabien.github.io/bigdata/hadoop) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
-
-[MapReduce](https://maelfabien.github.io/bigdata/MapReduce) : MapReduce is a programming paradigm that allows to process a large amount of data by initially splitting the data into blocks, sending the blocks to different clusters to perform operations, and aggregating the results.
-
-[HDFS](https://maelfabien.github.io/bigdata/HDFS) : HDFS stands for Hadoop Distributed File System. It is a sub-project of Hadoop. HDFS lets you connect nodes contained within clusters over which data files are distributed, overall being fault-tolerant.
-
-[VM's in Virtual Box](https://maelfabien.github.io/bigdata/VM) : Hadoop runs only on GNU/Linux platforms. Therefore, if you have another OS, you need to install Virtual Box. Virtual Box is a software that lets you create and run Virtual Machines.
-
-[Hadoop with the HortonWorks Sandbox (1/4)](https://maelfabien.github.io/bigdata/HortonWorks) : The Sandbox by Hortonworks is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP).
-
-[ Load and move files to HDFS (2/4)](https://maelfabien.github.io/bigdata/HDFS_2) : In this article, we'll see how to download the input text file for our WordCount job, and put the file into HDFS. 
-
-[ Launch a Map Reduce Job (3/4)](https://maelfabien.github.io/bigdata/MRJob) : In this article, we'll get to the core of the exercise : launch a MapReduce WordCount job.
-
-
 
 <br>
