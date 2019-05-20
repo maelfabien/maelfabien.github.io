@@ -91,6 +91,6 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 [HDFS](https://maelfabien.github.io/bigdata/HDFS) : HDFS stands for Hadoop Distributed File System. It is a sub-project of Hadoop. HDFS lets you connect nodes contained within clusters over which data files are distributed, overall being fault-tolerant.
 
-
+[VM's in Virtual Box](https://maelfabien.github.io/bigdata/VM) : Hadoop runs only on GNU/Linux platforms. Therefore, if you have another OS, you need to install Virtual Box. Virtual Box is a software that lets you create and run Virtual Machines.
 
 <br>
