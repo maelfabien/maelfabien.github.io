@@ -1,6 +1,6 @@
 ---
 published: true
-title: Hadoop with the HortonWorks Sandbox (1/3)
+title: Hadoop with the HortonWorks Sandbox (1/4)
 collection: bgd
 layout: single
 author_profile: false
@@ -16,6 +16,8 @@ toc_sticky: true
 sidebar:
     nav: sidebar-sample
 ---
+
+In the next 4 articles, we'll launch Hadoop MapReduce jobs (WordCount on a large file) using the HortonWorks Sandbox.
 
 ## Getting started with the VM
 
@@ -85,7 +87,6 @@ Then, after loading, the page should look like this :
 
 ![image](https://maelfabien.github.io/assets/images/Hadoop/35.png)
 
-
-
+You are now connected to the Sandbox and you can access the HDFS file system. We'll dive deeper into this in the next articles.
 
 > Conclusion : I hope this tutorial was clear and helful. I'd be happy to answer any question you might have in the comments section.

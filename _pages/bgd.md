@@ -93,10 +93,11 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 [VM's in Virtual Box](https://maelfabien.github.io/bigdata/VM) : Hadoop runs only on GNU/Linux platforms. Therefore, if you have another OS, you need to install Virtual Box. Virtual Box is a software that lets you create and run Virtual Machines.
 
-[Hadoop with the HortonWorks Sandbox (1/3)](https://maelfabien.github.io/bigdata/HortonWorks) : The Sandbox by Hortonworks is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP).
+[Hadoop with the HortonWorks Sandbox (1/4)](https://maelfabien.github.io/bigdata/HortonWorks) : The Sandbox by Hortonworks is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP).
 
+[ Load and move files to HDFS (2/4)](https://maelfabien.github.io/bigdata/HDFS_2) : In this article, we'll see how to download the input text file for our WordCount job, and put the file into HDFS. 
 
-
+[ Launch a Map Reduce Job (3/4)](https://maelfabien.github.io/bigdata/MRJob) : In this article, we'll get to the core of the exercise : launch a MapReduce WordCount job.
 
 
 
