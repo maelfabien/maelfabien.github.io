@@ -16,6 +16,10 @@ In a group project, we worked on a resilient No-SQL (Cassandra) database archite
 
 ![image](https://maelfabien.github.io/assets/images/archi.png)
 
+
+<div class="github-card" data-github="maelfabien/gdelt" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/gdelt](https://github.com/maelfabien/gdelt)</span>
 
 <br>
@@ -29,6 +33,9 @@ In order to verify this assertion, I developped a small WebApp with 2 simple opt
 - An automatic exploration that systematically chooses the first link among results
 
 ![image](https://maelfabien.github.io/assets/images/Wiki.png)
+
+<div class="github-card" data-github="maelfabien/WebApp" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/WebApp](https://github.com/maelfabien/WebApp)</span>
 
@@ -56,6 +63,10 @@ Smart devices such as IoT sensors use low energy consuming networks such as the 
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Received-Signal-Strength-Geo-Location](https://github.com/maelfabien/Received-Signal-Strength-Geo-Location)</span>
 
+<div class="github-card" data-github="maelfabien/Received-Signal-Strength-Geo-Location" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+
 <br>
 
 # Econometrics
@@ -68,6 +79,9 @@ An econometrics project in which I covered :
 <embed src="https://maelfabien.github.io/assets/images/Econometrics.pdf" type="application/pdf" width="600px" height="500px" />
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/MSc-Data-Science/tree/master/SES722/Projet](https://github.com/maelfabien/MSc-Data-Science/tree/master/SES722/Projet)</span>
+
+<div class="github-card" data-github="maelfabien/MSc-Data-Science/tree/master/SES722/Projet" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br>
 
@@ -83,6 +97,9 @@ In this project, I have been looking at comments of developers on GitHub pull re
 
 See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Analyze-Github-Pull-Requests](https://github.com/maelfabien/Analyze-Github-Pull-Requests)</span>
 
+<div class="github-card" data-github="maelfabien/Analyze-Github-Pull-Requests" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
 <br>
 
 # Classification : Predicting the predominant kind of tree (Kaggle)
@@ -90,6 +107,9 @@ See GitHub page: <span style="color:blue">[https://github.com/maelfabien/Analyze
 In this [challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge) , I am trying to predict the forest cover type (the predominant kind of tree cover) from strictly cartographic variables (as opposed to remotely sensed data) . 
 
 See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Forest-Cover-Type-Challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge)</span>
+
+<div class="github-card" data-github="maelfabien/Forest-Cover-Type-Challenge" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br>
 
