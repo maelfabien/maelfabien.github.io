@@ -96,4 +96,27 @@ As a recap, there are 3 types of nodes on a Hadoop Cluster :
 - **Master** node : Hosts all servers and administration of the MapReduce algorithm.
 - **Worker** nodes : Store the data and the different computations. If we face a higher demand, we simply dynamically add workers.
 
+### Other operations
+
+We presented a toy example using WordCount. We could also try to build Map, Combine and Reduce functions for other tasks :
+
+#### Find Minimum (or maximum) : 
+
+- Map : Identity function `f(x) = (x, 1)`
+- Combine : Take smallest key among each chunk (We could drop duplicates using the value associated to each key)
+- Reduce : Return smallest key
+
+#### Find the mean : 
+
+- Map : Identity function `f(x) = (x, 1)`
+- Combine : Take the sum of key and sum of values : `f( (a,b), (c,d) ) = (a+c, b+d)`
+- Reduce : Return the sum of keys / sum of values
+
+#### Find the median : 
+
+We make the assumption that there is a limited number of different numbers :
+- Map : Identity function within a list `f(x) = [(x, 1)]`
+- Combine : Take the sum of key and sum of values : `f( [(x, 1)], [(x, 1)], [(y, 1)] ) = [(x, 2), (y, 1)]`
+- Reduce : Sort and return the median
+
 > Conclusion : I hope this high level overview was clear and helful. I'd be happy to answer any question you might have in the comments section.

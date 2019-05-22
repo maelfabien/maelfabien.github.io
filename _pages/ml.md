@@ -39,9 +39,11 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 ![image](https://maelfabien.github.io/assets/images/dv_head.png)
 
-[Introduction to Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
+[Key Concepts of Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
 
 [Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
+
+[Introduction to D3.js](https://maelfabien.github.io/machinelearning/D3/) : D3 is a powerful JavaScript library that allows you to create graphs for web apps. In this introduction, we'll cover the main concepts of D3.
 
 [A D3 tool to visualize French population](https://maelfabien.github.io/viz) : This tool demonstrates basic features of D3.js, including a nice color map, tooltips and zoom.
 
