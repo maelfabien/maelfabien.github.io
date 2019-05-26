@@ -18,7 +18,8 @@ I am currently working on a Tensorflow.js implementation of this project. Don't 
 
 <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="600px" height="500px" />
 
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Multimodal-Emotion-Recognition](https://github.com/maelfabien/Multimodal-Emotion-Recognition)</span>
+<div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br>
 
@@ -28,7 +29,8 @@ In this challenge, our aim was to develop face classification algorithms using D
 
 <embed src="https://maelfabien.github.io/assets/images/DataChallenge.pdf" type="application/pdf" width="600px" height="500px" />
 
-See GitHub page : <span style="color:blue">[https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge](https://github.com/maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge)</span>
+<div class="github-card" data-github="maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br>
 

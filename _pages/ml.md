@@ -136,3 +136,11 @@ A series of articles dedicated to machine learning and statistics. All codes and
 ![image](https://maelfabien.github.io/assets/images/matlab_head.png)
 
 [Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/) : Matlab remains a widely used language for statistics. In this article, we cover the main statistical topics in Matlab.
+
+<br>
+
+## Advanced ML topics
+
+[Introduction to Online learning](https://maelfabien.github.io/machinelearning/Online/) : Online learning is a way to process data by streaming rather than by batch. This allows much faster and simpler implementations.
+
+
