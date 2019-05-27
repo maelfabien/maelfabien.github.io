@@ -32,6 +32,8 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 [MapReduce Jobs in Python (4/4)](https://maelfabien.github.io/bigdata/MRJobP) : Using Hadoop Streaming, we can submit MapReduce Jobs in Python.
 
+[ Execute MapReduce Job in Python locally](https://maelfabien.github.io/bigdata/MRH) : In this short article, we'll see how to execute MapReduce Jobs using Hadoop streaming locally.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/spark_head.png)
@@ -44,6 +46,8 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 ![image](https://maelfabien.github.io/assets/images/aws_head.png)
 
 [Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
+
+[useful Bash commands](https://maelfabien.github.io/bigdata/Terminal) : A quick recap of useful Bash commands to interact with your Terminal.
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ? This article is part of the AWS Cloud Practioner certification.
 
