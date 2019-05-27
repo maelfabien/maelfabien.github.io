@@ -18,8 +18,10 @@ I'll start by introducing really general articles :
 
 [Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
 
-[useful Bash commands](https://maelfabien.github.io/bigdata/Terminal) : A quick recap of useful Bash commands to interact with your Terminal.
-g
+[Useful Bash commands](https://maelfabien.github.io/bigdata/Terminal) : A quick recap of useful Bash commands to interact with your Terminal.
+
+<br>
+
 ![image](https://maelfabien.github.io/assets/images/hadoop_head.png)
 
 [Introduction to Hadoop](https://maelfabien.github.io/bigdata/hadoop) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
