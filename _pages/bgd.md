@@ -36,7 +36,7 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 ![image](https://maelfabien.github.io/assets/images/spark_head.png)
 
-[Introduction to Spark](https://maelfabien.github.io/bigdata/spark) : Apache Spark is a unified analytics engine for large-scale data processing. It is overall much faster than Hadoop MapReduce, and widely used in the industry.
+[Introduction to Spark](https://maelfabien.github.io/bigdata/spark1) : Apache Spark is a unified analytics engine for large-scale data processing. It is overall much faster than Hadoop MapReduce, and widely used in the industry.
 
 
 <br>
