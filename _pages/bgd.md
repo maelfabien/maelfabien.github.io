@@ -34,6 +34,13 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 
 <br>
 
+![image](https://maelfabien.github.io/assets/images/spark_head.png)
+
+[Introduction to Spark](https://maelfabien.github.io/bigdata/spark) : Apache Spark is a unified analytics engine for large-scale data processing. It is overall much faster than Hadoop MapReduce, and widely used in the industry.
+
+
+<br>
+
 ![image](https://maelfabien.github.io/assets/images/aws_head.png)
 
 [Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
