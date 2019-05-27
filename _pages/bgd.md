@@ -48,6 +48,10 @@ I'll start by introducing really general articles :
 
 [Introduction to Spark](https://maelfabien.github.io/bigdata/spark1) : Apache Spark is a unified analytics engine for large-scale data processing. It is overall much faster than Hadoop MapReduce, and widely used in the industry.
 
+[Install Spark-Scala and PySpark](https://maelfabien.github.io/bigdata/spark2) : In this quick tutorial, we'll cover installation techniques for the 2 most popular APIs of Spark.
+
+[Discover Spark-Scala](https://maelfabien.github.io/bigdata/spark3) : A deep dive into Spark-Scala, with an introduction to Scala programming, and an illustration of the main concepts.
+
 
 <br>
 
