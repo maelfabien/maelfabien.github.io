@@ -14,6 +14,12 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
+I'll start by introducing really general articles :
+
+[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
+
+[useful Bash commands](https://maelfabien.github.io/bigdata/Terminal) : A quick recap of useful Bash commands to interact with your Terminal.
+g
 ![image](https://maelfabien.github.io/assets/images/hadoop_head.png)
 
 [Introduction to Hadoop](https://maelfabien.github.io/bigdata/hadoop) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
@@ -44,10 +50,6 @@ A series of articles dedicated to Big Data analytics. All codes and exercises of
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/aws_head.png)
-
-[Understanding Computer Components](https://maelfabien.github.io/bigdata/comp_components) : In order to fully understand the cloud concepts, I wrote a quick article on the main components of computers.
-
-[useful Bash commands](https://maelfabien.github.io/bigdata/Terminal) : A quick recap of useful Bash commands to interact with your Terminal.
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ? This article is part of the AWS Cloud Practioner certification.
 
