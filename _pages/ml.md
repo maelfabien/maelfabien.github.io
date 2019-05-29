@@ -15,7 +15,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 
-![image](https://maelfabien.github.io/assets/images/stats_head.png)
+![image](/assets/images/stats_head.png)
 
 [Key Resources](https://maelfabien.github.io/statistics/resources/) : Some important resources to to understand the basics of statistics.
 
