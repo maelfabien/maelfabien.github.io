@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Maël Fabien"
-  avatar           : "/assets/images/profile.png"
+  avatar           : "/assets/images/profile.jpg"
   bio              : "Data Scientist, Graduate Actuary"
   location         : "Paris"
   email            : 
