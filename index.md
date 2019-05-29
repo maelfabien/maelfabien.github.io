@@ -4,7 +4,7 @@ excerpt: ""
 author_profile: true
 layout : single
 header :
-    image: "https://maelfabien.github.io/assets/images/home_head.jpg"
+    image: "https://maelfabien.github.io/assets/images/home_head.png"
 redirect_from: 
     - /about/
     - /about.html
