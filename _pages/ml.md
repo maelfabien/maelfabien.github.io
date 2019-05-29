@@ -15,7 +15,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 
-![image](/assets/images/stats_head.png)
+![image](/assets/images/stats_head.jpg)
 
 [Key Resources](https://maelfabien.github.io/statistics/resources/) : Some important resources to to understand the basics of statistics.
 
@@ -29,7 +29,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/ts_head.png)
+![image](https://maelfabien.github.io/assets/images/ts_head.jpg)
 
 [Introduction to Time Series](https://maelfabien.github.io/statistics/TimeSeries1/) : A first approach to exploring a time series in Python with open data.
 
@@ -37,7 +37,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/dv_head.png)
+![image](https://maelfabien.github.io/assets/images/dv_head.jpg)
 
 [Key Concepts of Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
 
@@ -49,7 +49,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/sup_head.png)
+![image](https://maelfabien.github.io/assets/images/sup_head.jpg)
 
 [Supervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/supervised/) : A cheat sheet that recaps the main supervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
@@ -69,13 +69,13 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/unsup_head.png)
+![image](https://maelfabien.github.io/assets/images/unsup_head.jpg)
 
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/mc_head.png)
+![image](https://maelfabien.github.io/assets/images/mc_head.jpg)
 
 [Markov Chains and Applications in Python](https://maelfabien.github.io/machinelearning/HMM_1/) : Markov Chains are the basic building block for Hidden Markov Models, widely used in image processing or in NLP.
 
@@ -83,7 +83,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/graph_head.png)
+![image](https://maelfabien.github.io/assets/images/graph_head.jpg)
 
 [Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
 
@@ -95,7 +95,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/nlp_head.png)
+![image](https://maelfabien.github.io/assets/images/nlp_head.jpg)
 
 [Text Preprocessing](https://maelfabien.github.io/machinelearning/NLP_1/) : Preprocessing in Natural Language Processing (NLP) is the process by which we try to "standardize" the text we want to analyze.
 
@@ -105,7 +105,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/cv_head.png)
+![image](https://maelfabien.github.io/assets/images/cv_head.jpg)
 
 [Introduction to Computer Vision](https://maelfabien.github.io/computervision/cv_1/) : What is Computer Vision ? What are the main concepts ? When should it be used ?
 
@@ -123,7 +123,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/opt_head.png)
+![image](https://maelfabien.github.io/assets/images/opt_head.jpg)
 
 [GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
 
@@ -133,13 +133,13 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/matlab_head.png)
+![image](https://maelfabien.github.io/assets/images/matlab_head.jpg)
 
 [Statistics in Matlab](https://maelfabien.github.io/statistics/matlab/) : Matlab remains a widely used language for statistics. In this article, we cover the main statistical topics in Matlab.
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/on_head.png)
+![image](https://maelfabien.github.io/assets/images/on_head.jpg)
 
 [Introduction to Online learning](https://maelfabien.github.io/machinelearning/Online/) : Online learning is a way to process data by streaming rather than by batch. This allows much faster and simpler implementations.
 

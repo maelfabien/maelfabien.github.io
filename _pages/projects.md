@@ -14,7 +14,7 @@ The GDELT Project monitors the world's broadcast, print, and web news from nearl
 
 In a group project, we worked on a resilient No-SQL (Cassandra) database architecture on EC2 instances. The pipeline for the data processing was developped in Spark-Scala. The visualization implied Zeppelin Notebooks.
 
-![image](https://maelfabien.github.io/assets/images/archi.png)
+![image](https://maelfabien.github.io/assets/images/archi.jpg)
 
 <div class="github-card" data-github="maelfabien/gdelt" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
@@ -29,7 +29,7 @@ In order to verify this assertion, I developped a small WebApp with 2 simple opt
 - A manual Wikipedia Link explorer that requests Wikipedia's API
 - An automatic exploration that systematically chooses the first link among results
 
-![image](https://maelfabien.github.io/assets/images/Wiki.png)
+![image](https://maelfabien.github.io/assets/images/Wiki.jpg)
 
 <div class="github-card" data-github="maelfabien/WebApp" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
@@ -44,7 +44,7 @@ In this project, I created an interactive map with a few main features :
 - display a tooltip with the name of the city and the postal code
 - zoom on the map and update the axis accordingly
 
-![image](https://maelfabien.github.io/assets/images/map_d3.png)
+![image](https://maelfabien.github.io/assets/images/map_d3.jpg)
 
 The tool can be accessed [here](https://maelfabien.github.io/viz), and the code [here](https://github.com/maelfabien/maelfabien.github.io/blob/master/assets/js/hello-france.js).
 

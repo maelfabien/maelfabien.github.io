@@ -22,7 +22,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/hadoop_head.png)
+![image](https://maelfabien.github.io/assets/images/hadoop_head.jpg)
 
 [Introduction to Hadoop](https://maelfabien.github.io/bigdata/hadoop) : In this article, we'll cover the basics of Hadoop, a quick history, and an overview of the main features of Hadoop.
 
@@ -44,7 +44,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/spark_head.png)
+![image](https://maelfabien.github.io/assets/images/spark_head.jpg)
 
 [Introduction to Spark](https://maelfabien.github.io/bigdata/spark1) : Apache Spark is a unified analytics engine for large-scale data processing. It is overall much faster than Hadoop MapReduce, and widely used in the industry.
 
@@ -55,7 +55,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/aws_head.png)
+![image](https://maelfabien.github.io/assets/images/aws_head.jpg)
 
 [Cloud Concepts](https://maelfabien.github.io/bigdata/cloud_concept/) : What is Cloud Computing ? What are the main concepts behind it ? This article is part of the AWS Cloud Practioner certification.
 
@@ -63,7 +63,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/gcp_head.png)
+![image](https://maelfabien.github.io/assets/images/gcp_head.jpg)
 
 [TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/) : TPUs are changing the way we are training Neural Networks. Developped by Google, TPUs have a different way to perform matrix operations and are optimized for certain tasks. We'll cover the basics of TPU computation, and how to use them in Colab.
 
@@ -71,7 +71,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/elk_head.png)
+![image](https://maelfabien.github.io/assets/images/elk_head.jpg)
 
 [Introduction to the Elastic Stack](https://maelfabien.github.io/bigdata/ElasticStack/) : What is the Elastic Stack ? What are the main products and features of ELK ?
 
@@ -83,7 +83,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/neo_head.png)
+![image](https://maelfabien.github.io/assets/images/neo_head.jpg)
 
 [Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) :  What is a graph ? Where are graphs being used ? What are the components of a graph ?
 
@@ -99,7 +99,7 @@ I'll start by introducing really general articles :
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/nosql_head.png)
+![image](https://maelfabien.github.io/assets/images/nosql_head.jpg)
 
 [Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/) : How to easily install Zeppelin on your local computer ? 
 

@@ -14,7 +14,7 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-![image](https://maelfabien.github.io/assets/images/tdl_head.png)
+![image](https://maelfabien.github.io/assets/images/tdl_head.jpg)
 
 [The Rosenblatt's Perceptron](https://maelfabien.github.io/deeplearning/Perceptron/) : An introduction to the basic building block of deep learning.
 
@@ -26,7 +26,7 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 <br>
 
-![image](https://maelfabien.github.io/assets/images/arc_head.png)
+![image](https://maelfabien.github.io/assets/images/arc_head.jpg)
 
 [A guide to Inception Architectures in Keras](https://maelfabien.github.io/deeplearning/inception/) : Inception is a deep convolutional neural network architecture that was introduced for the first time in 2014. It won the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC14). 
 
