@@ -34,7 +34,7 @@ The original paper can be found [here](http://openaccess.thecvf.com/content_cvpr
 
 The data first goes through the entry flow, then through the middle flow which is repeated eight times, and finally through the exit flow. Note that all Convolution and SeparableConvolution layers are followed by batch normalization.
 
-![image](https://maelfabien.github.io/assets/images/xception.png)
+![image](https://maelfabien.github.io/assets/images/xception.jpg)
 
 Xception architecture has overperformed VGG-16, ResNet and Inception V3 in most classical classification challenges. 
 
@@ -52,7 +52,7 @@ Depthwise Separable Convolutions are alternatives to classical convolutions that
 
 First of all, let's take a look at convolutions. Convolution is a really expensive operation. Let's illustrate this :
 
-![image](https://maelfabien.github.io/assets/images/conv_1.png)
+![image](https://maelfabien.github.io/assets/images/conv_1.jpg)
 
 The input image has a certain number of channels `C`, say 3 for a color image. It also has a certain dimension `A`, say `100 * 100`. We apply on it a convolution filter of size `d*d`, say `3*3`. Here is the convolution process illustrated :
 
@@ -100,7 +100,7 @@ XCeption offers an architecture that is made of Depthwise Separable Convolution 
 
 The specificity of XCeption is that the Depthwise Convolution is not followed by a Pointwise Convolution, but the order is reversed, as in this example :
 
-![image](https://maelfabien.github.io/assets/images/XCeption3.png)
+![image](https://maelfabien.github.io/assets/images/XCeption3.jpg)
 
 # II. In Keras 
 
@@ -246,7 +246,7 @@ If you would like to visualize the model architecture, use `plot_model` :
 plot_model(xception, to_file='model.png', show_shapes=True, show_layer_names=True)
 ```
 
-![image](https://maelfabien.github.io/assets/images/model.png)
+![image](https://maelfabien.github.io/assets/images/model.jpg)
 
 We are finally ready to compile the model.
 

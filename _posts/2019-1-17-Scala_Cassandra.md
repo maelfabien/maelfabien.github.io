@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-![image](https://maelfabien.github.io/assets/images/scala_cassandra.png)
+![image](https://maelfabien.github.io/assets/images/scala_cassandra.jpg)
 
 In order to store the data we downloaded previously, it is now essential to prepare them and split them into different sub-tables. This will allow us to create smaller data sets, and move those sets to Cassandra.
 
@@ -103,6 +103,6 @@ Since we prepared the data in order to fit the queries, our queries are really s
 
 The results will be displayed directly in Zeppelin :
 
-![image](https://maelfabien.github.io/assets/images/q1_2.png)
+![image](https://maelfabien.github.io/assets/images/q1_2.jpg)
 
 > **Conclusion** : This project is now over ! We have loaded several GB of zipped files in S3, built a resilient architecture using AWS, Cassandra and ZooKeeper, and finally manipulated and transfered the data to make fast, simple queries on large data sets.

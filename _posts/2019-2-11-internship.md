@@ -37,7 +37,7 @@ Among my 56 applications, I've had 2 offers, and kept 1 of them.
 ## Graphical Analysis
 
 Let's first of all take a look at how I performed through the rounds of application :
-![image](https://maelfabien.github.io/assets/images/apply_1.png)
+![image](https://maelfabien.github.io/assets/images/apply_1.jpg)
 
 I've received quite a lot 
 

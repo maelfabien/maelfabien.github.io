@@ -25,7 +25,7 @@ In the previous article, we covered the Gradient Boosting Regression. In this ar
 
 Let's consider a simple scenario in which we have several features, $$ x_1, x_2, x_3, x_4 $$ and try to predict $$ y $$, a binary output. 
 
-![image](https://maelfabien.github.io/assets/images/tab_8.png)
+![image](https://maelfabien.github.io/assets/images/tab_8.jpg)
 
 # Gradient Boosting Classification steps
 
@@ -47,13 +47,13 @@ For the variable $$ x_1 $$, we compute the difference between the observations a
 
 We have now predicted a value for every sample, the same value for all of them actually. The next step is to compute the residuals :
 
-![image](https://maelfabien.github.io/assets/images/tab_9.png)
+![image](https://maelfabien.github.io/assets/images/tab_9.jpg)
 
 **Step 3** : Predict the pseudo-residuals
 
 As previously, we use the features 1 to 3 to predict the residuals. Suppose that we build the classification tree to predict the output value of the tree :
 
-![image](https://maelfabien.github.io/assets/images/tab_10.png)
+![image](https://maelfabien.github.io/assets/images/tab_10.jpg)
 
 In that case, we cannot use the output of a leaf (or the average output if we have more observations) as the predicted value, since we applied a transformation initially.
 
@@ -63,7 +63,7 @@ $$ \gamma_{i+1} = \frac { \sum_i Residuals_i } { \sum(\gamma_i \times (1-\gamma
 
 For example, take a case in which we have 1 more observation that falls into a leaf :
 
-![image](https://maelfabien.github.io/assets/images/tab_11.png)
+![image](https://maelfabien.github.io/assets/images/tab_11.jpg)
 
 In that case, the output value of the branch that contains 0.25 and -0.75 is :
 

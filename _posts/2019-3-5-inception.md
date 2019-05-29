@@ -30,7 +30,7 @@ Inception architecture can be used in computer vision tasks that imply convoluti
 
 In Convolutional Neural Networks (CNNs), a large part of the work is to choose the right layer to apply, among the most common options (1x1 filter, 3x3 filter, 5x5 filter or maxpooling). All we need is to find the optimal local construction and to repeat it spatially. 
 
-![image](https://maelfabien.github.io/assets/images/inception.png)
+![image](https://maelfabien.github.io/assets/images/inception.jpg)
 
 As these “Inception modules” are stacked on top of each other, their output correlation statistics are bound to vary: as features of higher abstraction are captured by higher layers, their spatial concentration is expected to decrease suggesting that the ratio of 3×3 and 5×5 convolutions should increase as we move to higher layers.
 
@@ -42,7 +42,7 @@ The most famous Inception-based algorithm is GoogLeNet, which corresponds to the
 
 The architecture they went for was the following :
 
-![image](https://maelfabien.github.io/assets/images/lenet.png)
+![image](https://maelfabien.github.io/assets/images/lenet.jpg)
 
 ## In Keras 
 
@@ -126,7 +126,7 @@ If you would like to visualize the model architecture, use `plot_model` :
 plot_model(model, to_file='model.png', show_shapes=True, show_layer_names=True)
 ```
 
-![image](https://maelfabien.github.io/assets/images/inception_mod.png)
+![image](https://maelfabien.github.io/assets/images/inception_mod.jpg)
 
 We are finally ready to compile the model.
 

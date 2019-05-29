@@ -37,11 +37,11 @@ where $$ f $$ is an expensive function.
 
 Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $$ x $$. Hyperparameter gradients might also not be available. Suppose that we know all the parameters distribution. We can represent for every hyperparameter, a distribution of the loss according to its value.
 
-![image](https://maelfabien.github.io/assets/images/ho1.png)
+![image](https://maelfabien.github.io/assets/images/ho1.jpg)
 
 Since the curve is not known, a naive approach would be the pick a few values of `x` and try to observe the corresponding values `f(x)`. We would then pick the value of `x` that gave the smallest value.
 
-![image](https://maelfabien.github.io/assets/images/ho2.png)
+![image](https://maelfabien.github.io/assets/images/ho2.jpg)
 
 We can pick values randomly, but other common methods are :
 - quasi-random sampling
@@ -62,7 +62,7 @@ $$ p(y \mid x, D) = N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $$
 
 We use that set of predictions and pick new points where we should evaluate next. We can plot a Gaussian Process between 4 samples this way :
 
-![image](https://maelfabien.github.io/assets/images/ho3.png)
+![image](https://maelfabien.github.io/assets/images/ho3.jpg)
 
 The green areas represent confidence intervals.
 
@@ -114,7 +114,7 @@ where :
 
 We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
 
-![image](https://maelfabien.github.io/assets/images/ho4.png)
+![image](https://maelfabien.github.io/assets/images/ho4.jpg)
 
 In this example, we would move to the extreme value on the right, at $$ x = 1 $$.
 
@@ -136,7 +136,7 @@ If the algorithm finds a local minimum of the objective function, it might conce
 
 Several softwares implement Gaussian Hyperparameter Optimization.
 
-![image](https://maelfabien.github.io/assets/images/ho5.png)
+![image](https://maelfabien.github.io/assets/images/ho5.jpg)
 
 We'll be using HyperOpt in this example.
 
@@ -160,7 +160,7 @@ df = pd.read_csv('creditcard.csv')
 df.head()
 ```
 
-![image](https://maelfabien.github.io/assets/images/auto3.png)
+![image](https://maelfabien.github.io/assets/images/auto3.jpg)
 
 If you explore the data, you'll notice that only 0.17% of the transactions are fraudulant. We'll use the F1-Score metric, a harmonic mean between the precision and the recall.
 
@@ -175,7 +175,7 @@ plt.legend()
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/auto4.png)
+![image](https://maelfabien.github.io/assets/images/auto4.jpg)
 
 Fraudulant transactions have a limited amount. We can guess that these transactions must remain "unseen" and not attracting too much attention.
 

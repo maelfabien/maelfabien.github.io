@@ -38,7 +38,7 @@ Therefore, all we need to do is to keep the encoding part of the model, and we h
 
 We can summarize the network architecture as follows :
 
-![image](https://maelfabien.github.io/assets/images/autoencoder_structure.png)
+![image](https://maelfabien.github.io/assets/images/autoencoder_structure.jpg)
 
 With an image dataaet, the layers that are usually used are the following :
 - convolution layers
@@ -69,7 +69,7 @@ Contractive autoencoder adds a regularization in the objective function so that 
 5. Variational autoencoder (VAE)
 Variational autoencoders (VAEs) don't learn to morph the data in and out of a compressed representation of itself. Instead, they learn the parameters of the probability distribution that the data came from. These types of autoencoders have much in common with latent factor analysis.
 
-![image](https://maelfabien.github.io/assets/images/vae.png)
+![image](https://maelfabien.github.io/assets/images/vae.jpg)
 
 ## Create an autoencoder in Python
 
@@ -136,7 +136,7 @@ autoencoder.compile(optimizer='adadelta', loss='mean_squared_error')
 autoencoder.summary()
 ```
 
-![image](https://maelfabien.github.io/assets/images/auto.png)
+![image](https://maelfabien.github.io/assets/images/auto.jpg)
 
 Using the hidden layers, we send the input image into a much lowe dimension :
 
@@ -212,7 +212,7 @@ for i in range(n):
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/enc_dec.png)
+![image](https://maelfabien.github.io/assets/images/enc_dec.jpg)
 
 The first row is the input image. The middle row is the encoded image. The output row is the decoded image.
 

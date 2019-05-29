@@ -62,7 +62,7 @@ df = pd.read_csv('opsd_germany_daily.csv', index_col=0)
 df.head(10)
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_2.png)
+![image](https://maelfabien.github.io/assets/images/ts_2.jpg)
 
 Then, make sure to transform the dates into `datetime` format in pandas :
 
@@ -96,7 +96,7 @@ fig = sm.graphics.tsa.plot_acf(df['Consumption'], lags=400, ax=axes[0])
 fig = sm.graphics.tsa.plot_pacf(df['Consumption'], lags=400, ax=axes[1])
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_18.png)
+![image](https://maelfabien.github.io/assets/images/ts_18.jpg)
 
 We observe a clear trend. The value od consumption at time $$ t $$ is negatively correlated with the values 180 days ago, and positively correlated with the values 360 days ago.
 
@@ -126,7 +126,7 @@ Why would we want to remove the auto-correlation ?
 
 **Stationarity** of a time series is a desired property, reached when the joint distribution of $$ y_s, y_{s+1}, y_{s+2}... $$ does not depend on $$ s $$. In other words, the future and the present should be quite similar. Stationary time series do therefore not have underlying trends or seasonal effect. 
 
-![image](https://maelfabien.github.io/assets/images/ts_19.png)
+![image](https://maelfabien.github.io/assets/images/ts_19.jpg)
 
 What kind of events makes a series non-stationary ?
 - a trend, i.e increasing sales over time

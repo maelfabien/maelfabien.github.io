@@ -32,7 +32,7 @@ A perceptron is a single layer Neural Network. A perceptron can simply be seen a
 The perceptron was first introduced in 1957 by Franck Rosenblatt. Since then, it has been the core of Deep Learning.
 
 
-![image](https://maelfabien.github.io/assets/images/perceptron.png)
+![image](https://maelfabien.github.io/assets/images/perceptron.jpg)
 
 We have a set of inputs $$ X_i $$, to which we apply :
 - weights $$ w_i $$ to form a weight sum,
@@ -46,7 +46,7 @@ Then, a given observation can be either well classified, or in the wrong class. 
 
 A pseudo code corresponding to our problem is :
 
-![image](https://maelfabien.github.io/assets/images/pseudo.png)
+![image](https://maelfabien.github.io/assets/images/pseudo.jpg)
 
 
 In the most basic framework, we consider essentially a linear classification rule than can be represented as :
@@ -65,7 +65,7 @@ $$ \hat{L}_n(g) = \frac{1}{n} \sum 1(-(\alpha + \beta^tx)y > 0)  $$
 However, due to the form of the $$ sign $$ function, we cannot apply a gradient descent to identify the minimum. 
 
 
-![image](https://maelfabien.github.io/assets/images/Signum_function.svg.png){:height="50%" width="50%"}
+![image](https://maelfabien.github.io/assets/images/Signum_function.svg.jpg){:height="50%" width="50%"}
 
 However, due to the form of the \(sign\) function, we cannot apply a gradient descent to identify the minimum. We need to apply a stochastic gradient descent. The perceptron "learns" how to adapt the weights using back propagation. The weights and bias are firstly set randomly, and we compute an error rate. Then, we proceed to a back propagation to adjust the parameters that we did not correctly identify, and we start all over again for a given number of epoch.
 

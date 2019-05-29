@@ -62,7 +62,7 @@ df = pd.read_csv('opsd_germany_daily.csv', index_col=0)
 df.head(10)
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_2.png)
+![image](https://maelfabien.github.io/assets/images/ts_2.jpg)
 
 Then, make sure to transform the dates into `datetime` format in pandas :
 

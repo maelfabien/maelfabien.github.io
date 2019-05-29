@@ -29,7 +29,7 @@ What we'll describe here scales really easily to large amount of data.
 
 In the first step, we consider a set of machines which together form a cluster. We need to define which machine/node will become a Master, and which ones will become Workers.
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/5.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/5.jpg)
 
 The role of the Master is to :
 - split the input data on different machines
@@ -39,13 +39,13 @@ The role of the Master is to :
 
 ## Step 2 : Split the input data
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/4.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/4.jpg)
 
 The input data is splitted into blocks of 64Mb. A 1Ko text file might use a whole 64Mb data node inside a cluster, so it is preferable to have rather big files. Optimisation tools are provided by Hadoop.
 
 ## Step 3 : Map
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/6.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/6.jpg)
 
 In the Map, the Master returns for each split :
 - the node name to which the split should be sent
@@ -53,25 +53,25 @@ In the Map, the Master returns for each split :
 
 ## Step 4 : Shuffle
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/7.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/7.jpg)
 
 In the Shuffle step, the Map Reduce algorithm groups the words by similarity (group a dictionary by key). It is called Shuffle, because the initial splits are no longer used.
 
 ## Step 5 : Reduce
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/8.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/8.jpg)
 
 In the Reduce step, we simply compute the sum of all values for a given key. This is simply the sum of all the 1's of the key. Remember that this step is still parallelized, so the Master still handles how the different key-value attributes are stored and computed accross the different machines.
 
 ## Step 6 : Sorting
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/9.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/9.jpg)
 
 The last step is to sort by (first) value, then by key, and return the final list as a `.txt` file.
 
 ## The Big Picture
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/10.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/10.jpg)
 
 # Replication factor and cluster types
 
@@ -87,7 +87,7 @@ How do we handle failure ?
 
 By default, every data bloc is replicated 3 times, so distributed 3 times on different DataNodes, and each NameNode is replicated 2 to 3 times. 
 
-![image](https://maelfabien.github.io/assets/images/Hadoop/11.png)
+![image](https://maelfabien.github.io/assets/images/Hadoop/11.jpg)
 
 ## Cluster types
 

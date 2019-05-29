@@ -21,7 +21,7 @@ The GDELT Project monitors the world's broadcast, print, and web news from nearl
 
 <span style="color:blue">[https://www.gdeltproject.org/](https://www.gdeltproject.org/)</span>
 
-![image](https://maelfabien.github.io/assets/images/header.png)
+![image](https://maelfabien.github.io/assets/images/header.jpg)
 
 ## The project
 
@@ -44,17 +44,17 @@ The following links describe the data in the GDELT table :
 - Description of the Graph of Events GKG : <span style="color:blue">[http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf)</span>
 
 The tables are the following :
-![image](https://maelfabien.github.io/assets/images/data.png)
+![image](https://maelfabien.github.io/assets/images/data.jpg)
 
 A event is defined as an action that an actor (Actor1) takes on another actor (Actor2). A mention is an article or any source that talks about an event. The GKG database reflects the events that took place in the world, ordered by theme, type of event and location.
 
 The conceptual model of the data is the following : 
-![image](https://maelfabien.github.io/assets/images/concept.png)
+![image](https://maelfabien.github.io/assets/images/concept.jpg)
 
 ## Architecture
 
 The architecture we have chosen is the following : 
-![image](https://maelfabien.github.io/assets/images/archi.png)
+![image](https://maelfabien.github.io/assets/images/archi.jpg)
 
 Our architecture is composed by one cluster EMR (1 master and 5 slaves) and one cluster EC2 (8 instances).
 

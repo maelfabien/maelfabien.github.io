@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-![image](https://maelfabien.github.io/assets/images/gc.png)
+![image](https://maelfabien.github.io/assets/images/gc.jpg)
 
 Google now offers TPUs on Google Colaboratory. In this article, we'll see what is a TPU, what TPU brings compared to CPU or GPU, and cover an example of how to train a model on TPU and how to make a prediction.
 
@@ -41,7 +41,7 @@ TPU use a technique called *quantization* to reduce execution time. Quantization
 
 The process of quantization is illustrated as follows on Google's blog :
 
-![image](https://maelfabien.github.io/assets/images/quanti.png)
+![image](https://maelfabien.github.io/assets/images/quanti.jpg)
 
 Memory usage drops when using quantization. For example, Google states that when applied to Inception image recognition challenge, memory usage gets compressed from 91MB to 23 MB. 
 
@@ -71,7 +71,7 @@ Here's an example of some high-levels instructions specifically designed for neu
 
 Google has created a compiler and software stack that translates API calls from TensorFlow graphs inti TPU instructions following this schema :
 
-![image](https://maelfabien.github.io/assets/images/tpu_stack.png)
+![image](https://maelfabien.github.io/assets/images/tpu_stack.jpg)
 
 ## Parallel processing on MXU
 
@@ -81,7 +81,7 @@ Extensions of instructions set sur as SSE and AVX allow matrix opreations throug
 
 In TPU, Google designed the MXUas a matrix processor that processes hudreds of thousands of operations in a single clock cycle.
 
-![image](https://maelfabien.github.io/assets/images/scalar.png)
+![image](https://maelfabien.github.io/assets/images/scalar.jpg)
 
 ## Systolic array
 
@@ -104,14 +104,14 @@ That being said, we can now move on to the practical part of this tutorial. Let'
 
 First of all, connect to Google Colab : <span style="color:blue">[https://colab.research.google.com/](https://colab.research.google.com/)</span> and create a new notebook in Python 3. 
 
-![image](https://maelfabien.github.io/assets/images/collab1.png)
+![image](https://maelfabien.github.io/assets/images/collab1.jpg)
 
 The first step is to modify the hardware of your notebook :
 
-![image](https://maelfabien.github.io/assets/images/runtime.png)
+![image](https://maelfabien.github.io/assets/images/runtime.jpg)
 
 Switch the hardware accelerator to TPU :
-![image](https://maelfabien.github.io/assets/images/tpu.png)
+![image](https://maelfabien.github.io/assets/images/tpu.jpg)
 
 Now, we'll test if the TPU is well configured on the notebook :
 ```python
@@ -195,7 +195,7 @@ model.add(Dense(1, activation='sigmoid'))
 model.summary()
 ```
 
-![image](https://maelfabien.github.io/assets/images/lstm.png)
+![image](https://maelfabien.github.io/assets/images/lstm.jpg)
 
 Then, compile the model :
 ```python

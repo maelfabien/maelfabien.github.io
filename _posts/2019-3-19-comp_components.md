@@ -27,7 +27,7 @@ The motherboard is the main circuit board of your computer and is also known a
 
 Each motherboard has a collection of chips and controllers known as the chipset. When new motherboards are developed, they often use new chipsets. The good news is that these boards are typically more efficient and faster than their predecessors. The bad news is that older components often do not work with new chipsets.
 
-![image](https://maelfabien.github.io/assets/images/comp_1.png)
+![image](https://maelfabien.github.io/assets/images/comp_1.jpg)
 
 ## Central Processing Unit
 
@@ -35,13 +35,13 @@ The CPU is the primary component of a computer that processes instructions. It
 
 The CPU contains at least one processor, which is the actual chip inside the CPU that performs calculations. For many years, most CPUs only had one processor, but now it is common for a single CPU to have at least two processors or "processing cores." A CPU with two processing cores is called a dual-core CPU and models with four cores are called quad-core CPUs. High-end CPUs may have six (hexa-core) or even eight (octo-core) processors. A computer may also have more than one CPU, which each have multiple cores. For example, a server with two hexa-core CPUs has a total of 12 processors.
 
-![image](https://maelfabien.github.io/assets/images/comp_2.png)
+![image](https://maelfabien.github.io/assets/images/comp_2.jpg)
 
 ## Graphical Processing Unit
 
 A GPU is a processor designed to handle graphics operations. This includes both 2D and 3D calculations, though GPUs primarily excel at rendering 3D graphics.
 
-![image](https://maelfabien.github.io/assets/images/comp_3.png)
+![image](https://maelfabien.github.io/assets/images/comp_3.jpg)
 
 ***History***
 Early PCs did not include GPUs, which meant the CPU had to handle all standard calculations and graphics operations. As software demands increased and graphics became more important (especially in video games), a need arose for a separate processor to render graphics. On August 31, 1999, NVIDIA introduced the first commercially available GPU for a desktop computer, called the GeForce 256. It could process 10 million polygons per second, allowing it to offload a significant amount of graphics processing from the CPU.
@@ -57,7 +57,7 @@ While GPUs excel at rendering graphics, the raw power of a GPU can also be used 
 
 Cache memory, or CPU cache, is a type of memory that services the CPU. It is faster than main memory, physically located closer to the processor, and allows the CPU to execute instructions and read and write data at a higher speed. Instructions and data are transferred from main memory to the cache in blocks to enhance performance. Cache memory is typically static RAM (SRAM) and is identiﬁed by level. Level 1 (L1) cache is built directly into the CPU chip. Level 2 cache (L2) feeds the L1 cache. L2 can be built into the CPU chip, reside on a separate chip, or be a separate bank of chips on the system board. If L2 is built into the CPU, then a level 3 cache (L3) may also be present on the system board.
 
-![image](https://maelfabien.github.io/assets/images/comp_4.png)
+![image](https://maelfabien.github.io/assets/images/comp_4.jpg)
 
 ## RAM
 
@@ -65,7 +65,7 @@ Stands for "Random Access Memory». RAM is made up of small memory chips that fo
 
 Every time you open a program, it gets loaded from the hard drive into the RAM. This is because reading data from the RAM is much faster than reading data from the hard drive. Running programs from the RAM of the computer allows them to function without any lag time. The more RAM your computer has, the more data can be loaded from the hard drive into the RAM, which can effectively speed up your computer. In fact, adding RAM can be more beneficial to your computer's performance than upgrading the CPU.
 
-![image](https://maelfabien.github.io/assets/images/comp_5.png)
+![image](https://maelfabien.github.io/assets/images/comp_5.jpg)
 
 ## Hard Disk Drive (HDD)
 
@@ -73,7 +73,7 @@ The data is stored on a stack of disks that are mounted inside a solid encasemen
 
 The term "hard drive" is actually short for "hard disk drive." The term "hard disk" refers to the actual disks inside the drive. However, all three of these terms are usually seen as referring to the same thing -- the place where your data is stored.
 
-![image](https://maelfabien.github.io/assets/images/comp_6.png)
+![image](https://maelfabien.github.io/assets/images/comp_6.jpg)
 
 ## Solid State Drive (SSD)
 
@@ -83,6 +83,6 @@ While SSDs serve the same function as hard drives, their internal components are
 
 SSDs have several other advantages over hard drives as well. For example, the read performance of a hard drive declines when data gets fragmented, or split up into multiple locations on the disk. The read performance of an SSD does not diminish based on where data is stored on the drive. Therefore defragmenting an SSD is not necessary. Since SSDs do not store data magnetically, they are not susceptible to data loss due to strong magnetic fields in close proximity to the drive. Additionally, since SSDs have no moving parts, there is far less chance of a mechanical breakdown. SSDs are also lighter, quieter, and use less power than hard drives. This is why SSDs have become a popular choice for laptop computers.
 
-![image](https://maelfabien.github.io/assets/images/comp_7.png)
+![image](https://maelfabien.github.io/assets/images/comp_7.jpg)
 
 > Conclusion : I hope this high level overview was clear and helful. I'd be happy to answer any question you might have in the comments section.

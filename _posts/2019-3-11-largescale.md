@@ -355,7 +355,7 @@ $$ \hat{G_k} = C W^+ C^T $$ where :
 - $$ W ∈ R^{c \times c} $$
 - $$ W^+ $$ the Moore-Penrose (pseudo) inverse
 
-![image](https://maelfabien.github.io/assets/images/schema_nystrom.png)
+![image](https://maelfabien.github.io/assets/images/schema_nystrom.jpg)
 
 This decomposition might seem a bit weird, since we sample the columns and the rows of the Gram matrix. First of all, it can only be applied to Gram matrices, not to any kind of matrix. Suppose that we take a look at a matrix of distances between different cities. Would you need all the distances between all the cities to provide a pretty accurate estimate of the distance between 2 cities ? Well, there's definitely some pieces of information that have a little importance and bring few additional precision. This is exactly what we're doing here on the Gram matrix.
 
@@ -509,7 +509,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/perf_kernel.png)
+![image](https://maelfabien.github.io/assets/images/perf_kernel.jpg)
 
 We observe clearly the convergence in terms of accuracy of random kernel features and Nyström methods. The computation time is also smaller up to a certain number of fertures.
 

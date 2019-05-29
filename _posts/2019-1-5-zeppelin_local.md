@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-![image](https://maelfabien.github.io/assets/images/zep.png)
+![image](https://maelfabien.github.io/assets/images/zep.jpg)
 
 Zeppelin notebooks are web-based notebooks that enable data-driven, interactive data analytics and collaborative documents with SQL, Scala, Spark and much more. Zeppelin also offers built-in visualizations and allows multiple users when configured on a cluster. In this article, I am going to go throught the basic steps that allow you to configure Zeppelin the easy way, locally.
 
@@ -69,10 +69,10 @@ Your Zeppelin Notebook should be accessible from the following link :
 ``` http://localhost:8080/ ```
 
 At that point, you should see this :
-![image](https://maelfabien.github.io/assets/images/notebook.png)
+![image](https://maelfabien.github.io/assets/images/notebook.jpg)
 
 Click on "Create new note", leave the Spark interpreter as the default one.
-![image](https://maelfabien.github.io/assets/images/note.png)
+![image](https://maelfabien.github.io/assets/images/note.jpg)
 
 
 ## Test your Zeppelin configuration

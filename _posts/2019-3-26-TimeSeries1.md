@@ -34,7 +34,7 @@ Examples of time series include :
 - consumption of a certain good per month
 - ...
 
-![image](https://maelfabien.github.io/assets/images/ts_1.png)
+![image](https://maelfabien.github.io/assets/images/ts_1.jpg)
 
 Tme series are used for :
 - forecasting
@@ -97,7 +97,7 @@ df = pd.read_csv('opsd_germany_daily.csv', index_col=0)
 df.head(10)
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_2.png)
+![image](https://maelfabien.github.io/assets/images/ts_2.jpg)
 
 Then, make sure to transform the dates into `datetime` format in pandas :
 
@@ -120,7 +120,7 @@ plt.xlabel("Electricity consumption in GWh")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_3.png)
+![image](https://maelfabien.github.io/assets/images/ts_3.jpg)
 
 ```python
 # Distribution of the wind power production
@@ -131,7 +131,7 @@ plt.xlabel("Wind power production in GWh")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_4.png)
+![image](https://maelfabien.github.io/assets/images/ts_4.jpg)
 
 ```python
 # Distribution of the solar power production
@@ -142,7 +142,7 @@ plt.xlabel("Solar power production in GWh")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_5.png)
+![image](https://maelfabien.github.io/assets/images/ts_5.jpg)
 
 ## 3. Time Series
 
@@ -155,7 +155,7 @@ plt.plot(df['Wind+Solar'], linewidth = 0.5)
 plt.title("Consumption vs. Production")
 plt.show()
 ```
-![image](https://maelfabien.github.io/assets/images/ts_17.png)
+![image](https://maelfabien.github.io/assets/images/ts_17.jpg)
 
 Let's now take a look at the consumption over time :
 
@@ -166,7 +166,7 @@ plt.title("Consumption over time")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_6.png)
+![image](https://maelfabien.github.io/assets/images/ts_6.jpg)
 
 ```python
 plt.figure(figsize=(12,8))
@@ -175,7 +175,7 @@ plt.title("Consumption over time")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_9.png)
+![image](https://maelfabien.github.io/assets/images/ts_9.jpg)
 
 ```
 plt.figure(figsize=(12,8))
@@ -184,7 +184,7 @@ plt.title("Wind production over time")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_7.png)
+![image](https://maelfabien.github.io/assets/images/ts_7.jpg)
 
 ```python
 plt.figure(figsize=(12,8))
@@ -193,7 +193,7 @@ plt.title("Solar production over time")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_8.png)
+![image](https://maelfabien.github.io/assets/images/ts_8.jpg)
 
 We observe large seasonal trends over time. 
 - The solar production is much smaller during winter times. 
@@ -214,7 +214,7 @@ plt.title("Electricity Consumption in 2017")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_10.png)
+![image](https://maelfabien.github.io/assets/images/ts_10.jpg)
 
 ```python
 plt.figure(figsize=(12,8))
@@ -223,7 +223,7 @@ plt.title("Wind Production in 2017")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_11.png)
+![image](https://maelfabien.github.io/assets/images/ts_11.jpg)
 
 ```python
 plt.figure(figsize=(12,8))
@@ -232,7 +232,7 @@ plt.title("Solar Production in 2017")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_12.png)
+![image](https://maelfabien.github.io/assets/images/ts_12.jpg)
 
 We observe better the seasonality for consumption and production.
 
@@ -250,7 +250,7 @@ plt.axvline("2017-12-24", c='r')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_13.png)
+![image](https://maelfabien.github.io/assets/images/ts_13.jpg)
 
 There seems to be a larger consumption and Tuesday, Wednesday and Thrusday. The consumption is much lower on weekends.
 
@@ -274,7 +274,7 @@ sns.boxplot(data=df, x='year', y='Consumption')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_14.png)
+![image](https://maelfabien.github.io/assets/images/ts_14.jpg)
 
 ```python
 plt.figure(figsize=(12,8))
@@ -282,7 +282,7 @@ sns.boxplot(data=df, x='month', y='Consumption')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_15.png)
+![image](https://maelfabien.github.io/assets/images/ts_15.jpg)
 
 ```python
 plt.figure(figsize=(12,8))
@@ -290,7 +290,7 @@ sns.boxplot(data=df, x='day', y='Consumption')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_16.png)
+![image](https://maelfabien.github.io/assets/images/ts_16.jpg)
 
 There is a significant effect of the day of the week over the consumption. The month also has a large effect.
 
@@ -318,7 +318,7 @@ plt.axvline('2017-11-16', color = 'red')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_20.png)
+![image](https://maelfabien.github.io/assets/images/ts_20.jpg)
 
 This overall allows a much smoother series :
 
@@ -330,7 +330,7 @@ plt.legend()
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_21.png)
+![image](https://maelfabien.github.io/assets/images/ts_21.jpg)
 
 Instead of defining an average over given number of observations within a window, we can take the mean of all the observations up to the given point. This is called expaning !
 
@@ -342,6 +342,6 @@ plt.legend()
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/ts_22.png)
+![image](https://maelfabien.github.io/assets/images/ts_22.jpg)
 
 > **Conclusion** : We have now covered the basics of time series exploration. In the next articles, we'll cover trends, seasonality, stationarity, ergodicity and many other concepts.

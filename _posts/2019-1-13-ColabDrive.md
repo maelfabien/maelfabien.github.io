@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-![image](https://maelfabien.github.io/assets/images/gc.png)
+![image](https://maelfabien.github.io/assets/images/gc.jpg)
 
 In this quick tutorial, we'll see how to use Google Drive as a file storage system when working in Google Colab.
 
@@ -30,24 +30,24 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-![image](https://maelfabien.github.io/assets/images/gd_init.png)
+![image](https://maelfabien.github.io/assets/images/gd_init.jpg)
 
 Once you run the cell, a link is provided, similar to :
 ```Go to this URL in a browser: https://accounts.google.com/o/oauth2/auth?client_id=XXX```
 
-![image](https://maelfabien.github.io/assets/images/gd_connect.png)
+![image](https://maelfabien.github.io/assets/images/gd_connect.jpg)
 
 Open the URL. You should now see a page asking for an access to the content of your Drive. Allow access.
 
-![image](https://maelfabien.github.io/assets/images/gd_allow.png)
+![image](https://maelfabien.github.io/assets/images/gd_allow.jpg)
 
 Now, simply copy the code given.
 
-![image](https://maelfabien.github.io/assets/images/gd_copy.png)
+![image](https://maelfabien.github.io/assets/images/gd_copy.jpg)
 
 Paste it in your notebook :
 
-![image](https://maelfabien.github.io/assets/images/gd_valid.png)
+![image](https://maelfabien.github.io/assets/images/gd_valid.jpg)
 
 ## Check the content of your drive
 

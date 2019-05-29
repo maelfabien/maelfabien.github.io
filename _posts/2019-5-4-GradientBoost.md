@@ -36,19 +36,19 @@ Gradient Boosting can be compared to AdaBoost, but has a few differences :
 
 Let's consider a simple scenario in which we have several features, $$ x_1, x_2, x_3, x_4 $$ and try to predict $$ y $$. 
 
-![image](https://maelfabien.github.io/assets/images/tab_1.png)
+![image](https://maelfabien.github.io/assets/images/tab_1.jpg)
 
 **Step 1** : Make a first guess
 
 The initial guess of the Gradient Boosting algorithm is to *predict the average value of the target $$ y $$*. For example, if our features are the age $$ x_1 $$ and the height $$ x_2 $$ of a person... and we want to predict the weight of the person.
 
-![image](https://maelfabien.github.io/assets/images/tab_2.png)
+![image](https://maelfabien.github.io/assets/images/tab_2.jpg)
 
 **Step 2** : Compute the pseudo-residuals
 
 For the variable $$ x_1 $$, we compute the difference between the observations and the prediction we made. This is called the pseudo-residuals.
 
-![image](https://maelfabien.github.io/assets/images/tab_3.png)
+![image](https://maelfabien.github.io/assets/images/tab_3.jpg)
 
 We compute the pseudo-residuals with respect to the first feature  $$ x_1 $$.
 
@@ -56,11 +56,11 @@ We compute the pseudo-residuals with respect to the first feature  $$ x_1 $$.
 
 Then, we will be using the features $$ x_1, x_2,x_3, x_4 $$ to predict the pseudo-residuals column.
 
-![image](https://maelfabien.github.io/assets/images/tab_4.png)
+![image](https://maelfabien.github.io/assets/images/tab_4.jpg)
 
 We can now predict the pseudo-residuals using a tree, that typically has 8 to 32 leaves (so larger than a stump). By restricting the number of leaves of the tree we build, we obtain less leaves than residuals. Therefore, the outcome of a given branch of the tree is the average of the columns that lead to this leaf, as in a regression tree.
 
-![image](https://maelfabien.github.io/assets/images/tab_5.png)
+![image](https://maelfabien.github.io/assets/images/tab_5.jpg)
 
 **Step 4** : Make a prediction and compute the residuals
 
@@ -72,7 +72,7 @@ $$ y_{pred} = \bar{y_{train}} + lr \times res_{pred} $$
 
 The idea behind the learning rate is to make a small step towards the right direction. This allows an overall lower variance.
 
-![image](https://maelfabien.github.io/assets/images/tab_7.png)
+![image](https://maelfabien.github.io/assets/images/tab_7.jpg)
 
 Notice how all the residuals got smaller now.
 
@@ -181,7 +181,7 @@ plt.scatter(x,y)
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/tab_12.png)
+![image](https://maelfabien.github.io/assets/images/tab_12.jpg)
 
 ## Fit a simple decision tree
 
@@ -200,7 +200,7 @@ plt.scatter(x,y)
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/tab_13.png)
+![image](https://maelfabien.github.io/assets/images/tab_13.jpg)
 
 This is the starting point for our estimation. Now, we need to go further and make our model more complex by implementing gradient boosting.
 
@@ -251,7 +251,7 @@ for i in range(101):
 
 ```
 
-![image](https://maelfabien.github.io/assets/images/fit_gbc.png)
+![image](https://maelfabien.github.io/assets/images/fit_gbc.jpg)
 
 By increasing the learning rate, we tend to overfit. However, if the learning rate is too low, it takes a large number of iterations to even approach the underlying structure of the data.
 
