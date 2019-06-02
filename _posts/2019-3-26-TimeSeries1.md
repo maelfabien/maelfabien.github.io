@@ -254,7 +254,7 @@ plt.show()
 
 There seems to be a larger consumption and Tuesday, Wednesday and Thrusday. The consumption is much lower on weekends.
 
-There is no point is anlyzing trends of production weekly since there is no correlation between the day of the week and the sun/wind. We do not have access to hourly consumption data, so we can't dive deeper into this analysis.
+There is no point is analyzing trends of production weekly since there is no correlation between the day of the week and the sun/wind. We do not have access to hourly consumption data, so we can't dive deeper into this analysis.
 
 ## 5. Box plots
 

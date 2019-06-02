@@ -56,6 +56,8 @@ Smart devices such as IoT sensors use low energy consuming networks such as the 
 
 <embed src="https://maelfabien.github.io/assets/images/RSSI.pdf" type="application/pdf" width="600px" height="500px" />
 
+<br>
+
 <div class="github-card" data-github="maelfabien/Received-Signal-Strength-Geo-Location" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
@@ -71,6 +73,8 @@ An econometrics project in which I covered :
 
 <embed src="https://maelfabien.github.io/assets/images/Econometrics.pdf" type="application/pdf" width="600px" height="500px" />
 
+<br>
+
 <div class="github-card" data-github="maelfabien/MSc-Data-Science/tree/master/SES722/Projet" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
@@ -85,6 +89,8 @@ In this project, I have been looking at comments of developers on GitHub pull re
 - predict the time before the merge
 
 <embed src="https://maelfabien.github.io/assets/images/NLP.pdf" type="application/pdf" width="600px" height="500px" />
+
+<br>
 
 <div class="github-card" data-github="maelfabien/Analyze-Github-Pull-Requests" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
