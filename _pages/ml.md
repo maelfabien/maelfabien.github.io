@@ -49,6 +49,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [A D3 tool to visualize French population](https://maelfabien.github.io/viz) : This tool demonstrates basic features of D3.js, including a nice color map, tooltips and zoom.
 
+[An Altair Web Tool](https://maelfabien.github.io/tsne) : To visualize a T-SNE Embedding of the road characteristics in France, and their related accident profile. This could be used to enhance road rehabilitation works and reduce the number of accidents occuring yearly in France.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/sup_head.jpg)
