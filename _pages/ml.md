@@ -101,6 +101,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 ![image](https://maelfabien.github.io/assets/images/nlp_head.jpg)
 
+[Introduction to Natural Language Processing](https://maelfabien.github.io/machinelearning/NLP_0/) : What is NLP ? What is it used for ?
+
 [Text Preprocessing](https://maelfabien.github.io/machinelearning/NLP_1/) : Preprocessing in Natural Language Processing (NLP) is the process by which we try to "standardize" the text we want to analyze.
 
 [Text Embedding with Bag-Of-Words and TF-IDF](https://maelfabien.github.io/machinelearning/NLP_2/) : In order to analyze text and run algorithms on it, we need to embed the text. The notion of embedding simply means that we'll conver the input text into a set of numerical vectors that can be used into algorithms. In this article, we'll cover BOW and TF-IDF, two simple techniques for embedding.
