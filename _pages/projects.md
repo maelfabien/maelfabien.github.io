@@ -21,6 +21,17 @@ In a group project, we worked on a resilient No-SQL (Cassandra) database archite
 
 <br>
 
+# Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
+
+In this research project in partnership with the French Employment Agency, we explored state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs, and predict emotions / psychological traits associated to each modality. We developped a Flask web app that gathers all this information, and presents a visualization of the performance of the person.
+
+![image](https://maelfabien.github.io/assets/images/webapp.jpg)
+
+<div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+<br>
+
 # Wikipedia Web App
 
 According to ReadWriteWeb, all articles in the English version of Wikipedia lead to the article "Philosophy". If you click on the first link of each article, you will come across the Philosophy article after a while.
@@ -49,6 +60,17 @@ In this project, I created an interactive map with a few main features :
 The tool can be accessed [here](https://maelfabien.github.io/viz), and the code [here](https://github.com/maelfabien/maelfabien.github.io/blob/master/assets/js/hello-france.js).
 
 <br>
+
+# Altair Interactive Graph 
+
+I developped a small interactive tool that allows to visualize the embedded features of a road (width, slope...), and the associated accident rate, using T-SNE embedding. 
+
+![image](https://maelfabien.github.io/assets/images/tsne.jpg)
+
+The tool can be accessed [here](https://maelfabien.github.io/tsne).
+
+<br>
+
 
 # Multi-Regression : Estimating a position from a received signal strength for IoT sensors
 

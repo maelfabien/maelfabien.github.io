@@ -12,9 +12,8 @@ In this section, I'm sharing all papers and Medium articles I have written, as w
 
 # Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
 
-In this project, I am exploring state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs and develop an ensemble model that gathers the information from all these sources and displays it in a clear and interpretable way.
+In this research project in partnership with the French Employment Agency, we explored state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs, and predict emotions / psychological traits associated to each modality. We developped a Flask web app that gathers all this information, and presents a visualization of the performance of the person.
 
-I am currently working on a Tensorflow.js implementation of this project. Don't hesite to Star the project if you like it.
 
 <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="600px" height="500px" />
 
