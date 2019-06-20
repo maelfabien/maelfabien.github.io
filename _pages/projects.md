@@ -32,6 +32,21 @@ In this research project in partnership with the French Employment Agency, we ex
 
 <br>
 
+# DataVisualization
+
+Every year, around 560 billion kilometers are being travelled by car in France. This is 1.5 million times more than the distance between earth and the moon. As a direct consequence, yearly, more than 3’500 die yearly on the French roads.
+
+In this data visualization project, my group and I analyze the road traffic accidents from the French national database between 2005 and 2017, with 3 interesting designs that bring hidden insights to the users.
+
+The tool can also be accessed online, right here : [https://infoviz.onrender.com/](https://infoviz.onrender.com/).
+
+![image](https://maelfabien.github.io/assets/images/dash_viz.png)
+
+<div class="github-card" data-github="maelfabien/DataVisualization" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+<br>
+
 # Wikipedia Web App
 
 According to ReadWriteWeb, all articles in the English version of Wikipedia lead to the article "Philosophy". If you click on the first link of each article, you will come across the Philosophy article after a while.
