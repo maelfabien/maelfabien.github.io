@@ -40,7 +40,7 @@ In this data visualization project, my group and I analyze the road traffic acci
 
 The tool can also be accessed online, right here : [https://infoviz.onrender.com/](https://infoviz.onrender.com/).
 
-![image](https://maelfabien.github.io/assets/images/dash_viz.png)
+![image](https://maelfabien.github.io/assets/images/data_viz.png)
 
 <div class="github-card" data-github="maelfabien/DataVisualization" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
