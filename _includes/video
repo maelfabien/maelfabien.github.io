@@ -9,5 +9,9 @@
   <iframe src="https://www.youtube-nocookie.com/embed/{{ video_id }}" frameborder="0" allowfullscreen></iframe>
 {% elsif video_provider == "google-drive" %}
   <iframe src="https://drive.google.com/file/d/{{ video_id }}/preview" frameborder="0" allowfullscreen></iframe>
+{% elsif video_provider == "own" %}
+  	<video width="100%" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline">
+    	<source src={{ video_id }} type="video/mp4">
+	</video>
 {% endif %}
 </div>
