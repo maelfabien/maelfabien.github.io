@@ -10,151 +10,62 @@ sidebar:
     nav: sidebar-sample
 ---
 
-The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes ...in the entire world. With new files uploaded every 15 minutes, GDELT data bases contain more than 500 Gb of zipped data for the single year 2018.
+# The beginning
 
-In a group project, we worked on a resilient No-SQL (Cassandra) database architecture on EC2 instances. The pipeline for the data processing was developped in Spark-Scala. The visualization implied Zeppelin Notebooks.
+I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at HEC Lausanne at that time. I've always wanted to create something fom scratch. I decided to apply to the entrepreneurial contest Start Lausanne with a friend, and present the following idea :
 
-![image](https://maelfabien.github.io/assets/images/archi.jpg)
+![image](https://maelfabien.github.io/assets/images/wanago.png)
 
-<div class="github-card" data-github="maelfabien/gdelt" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+" **A specialized kickstarter to fund vans and motorhomes.**  Wanago is the first van acquisition and conversion crowdfunding platform. Should someone wish to buy a van, but does not have enough money to acquire his dream model, he can simply create a project on www.wanago.fr.
 
-<br>
+He indicates his desired model, the amount he lacks to buy it and the dates at which he won’t be using it the first year after his potential purchase. On the other side of the platform, many different contributors select this project. They get to choose one of the available dates and commit to paying the corresponding amount.
 
-# Deep Learning : Multimodal Sentiment Analysis (Text, Sound, Video)
+Thanks to the money pledged by all contributors, the project holder can acquire his vehicle. On the other hand, the contributor gets to enjoy low tariffs and a vehicle in good condition. We offer an insurance contract proposed by our partner MAIF for every reservation made. If the target amount is not reached, no contributor will be debited."
 
-In this research project in partnership with the French Employment Agency, we explored state of the art models in multimodal sentiment analysis. We have chosen to explore textual, sound and video inputs, and predict emotions / psychological traits associated to each modality. We developped a Flask web app that gathers all this information, and presents a visualization of the performance of the person.
+We made partnerships with several companies, including PSA (Peugeot-Citroen), MAIF Insurance, Westfalia or StyleVan, a large dealership network in France.
 
-![image](https://maelfabien.github.io/assets/images/webapp.jpg)
+![image](https://maelfabien.github.io/assets/images/partners.png)
 
-<div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+# The contest
 
-<br>
+The outcome of the contest was rather positive. We earned the Jury Prize as well as 5'000 Swiss Francs to start our business. If you'd like to download our old brochure, just click [here](https://maelfabien.github.io/assets/images/press.pdf). 
 
-# DataVisualization
+![image](https://maelfabien.github.io/assets/images/wanago.jpg)
 
-Every year, around 560 billion kilometers are being travelled by car in France. This is 1.5 million times more than the distance between earth and the moon. As a direct consequence, yearly, more than 3’500 die yearly on the French roads.
+The project has been stopped after 2 years, once we reached the end of our studies (and I decided to move on to data science). Although the interest in the solution was rising, the revenue stream would not have allowed us to be dedicated full time to the project.
 
-In this data visualization project, my group and I analyze the road traffic accidents from the French national database between 2005 and 2017, with 3 interesting designs that bring hidden insights to the users.
+The contest has been a good accelerator for us, and taught us the fundamentals of entrepreneurship (pitch, business model, business plan, important legal notions...). The money raised was also a good way to kick the development of our solution. If also allowed us to have 
 
-The tool can also be accessed online, right here : [https://infoviz.onrender.com/](https://infoviz.onrender.com/).
+# The customers
 
-![image](https://maelfabien.github.io/assets/images/data_viz.png)
+We financed several vehicles during this adventure, and received pictures of owners who were more than happy of their new acquisition : 
 
-<div class="github-card" data-github="maelfabien/DataVisualization" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+![image](https://maelfabien.github.io/assets/images/acq.jpg)
 
-<br>
+But also pictures of customers who rented the van and made incredible road trips at half the price of a normal rental :
 
-# Wikipedia Web App
+![image](https://maelfabien.github.io/assets/images/cust.png)
 
-According to ReadWriteWeb, all articles in the English version of Wikipedia lead to the article "Philosophy". If you click on the first link of each article, you will come across the Philosophy article after a while.
+# The platform
 
-In order to verify this assertion, I developped a small WebApp with 2 simple options :
-- A manual Wikipedia Link explorer that requests Wikipedia's API
-- An automatic exploration that systematically chooses the first link among results
+The platform looked like this :
 
-![image](https://maelfabien.github.io/assets/images/Wiki.jpg)
+![image](https://maelfabien.github.io/assets/images/platform.png)
 
-<div class="github-card" data-github="maelfabien/WebApp" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+A web developer joined the team to develop the website. I also became quite interested in web development at that time at took the opportunity to learn basic HTML, CSS and JS, and directly apply it to the website.
 
-<br>
+The website is not online anymore, but if by any chance you are interested in buying a platform (2 sides, rent and buy), with dashboards for the users, progress of the funding of each project... just contact me on my [email](mailto:mael.fabien@gmail.com).
+ 
+ # The experience
+ 
+ This first entrepreneurial experience was an incredible life accelerator. I went from the status of student to entrepreneur at the age of 19 while finishing my Bachelor. It came with a huge number of responsibilities, and I had to overcome many issues, some of them regarding my age or the credibility of a 19 years old student-entrepreneur.
+ 
+I took this opportunity to do web development, marketing, design, to write NDAs or understand the legal details of such or such structure, to meet customers on expositions, make partnerships with large companies... and to manage a team of up to 5 collaborators.
 
-# D3.js Interactive Map of France
+In April 2019, I came back to Lausanne to talk about my experience at the 2019 Start Lausanne contest.
 
-In this project, I created an interactive map with a few main features :
-- display the map of France (population and density)
-- change the color of the map with a simple button
-- display a tooltip with the name of the city and the postal code
-- zoom on the map and update the axis accordingly
+![image](https://maelfabien.github.io/assets/images/speak.jpg)
 
-![image](https://maelfabien.github.io/assets/images/map_d3.jpg)
-
-The tool can be accessed [here](https://maelfabien.github.io/viz), and the code [here](https://github.com/maelfabien/maelfabien.github.io/blob/master/assets/js/hello-france.js).
-
-<br>
-
-# Altair Interactive Graph 
-
-I developped a small interactive tool that allows to visualize the embedded features of a road (width, slope...), and the associated accident rate, using T-SNE embedding. 
-
-![image](https://maelfabien.github.io/assets/images/tsne.jpg)
-
-The tool can be accessed [here](https://maelfabien.github.io/tsne).
-
-<br>
-
-
-# Multi-Regression : Estimating a position from a received signal strength for IoT sensors
-
-Smart devices such as IoT sensors use low energy consuming networks such as the ones provided by Sigfox or Lora. But without using GPS networks, it becomes harder to estimate the position of the sensor. The aim of this study is to provide a geolocation estimation using Received Signal Strength Indicator in the context of IoT. The aim is to allow a geolocation of lowconsumption connected devices using the Sigfox network. State of the art modelsare able to be precise to the nearest kilometer in urban areas, and around tenkilometers in less populated areas.
-
-<embed src="https://maelfabien.github.io/assets/images/RSSI.pdf" type="application/pdf" width="600px" height="500px" />
-
-<br>
-
-<div class="github-card" data-github="maelfabien/Received-Signal-Strength-Geo-Location" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-
-<br>
-
-# Econometrics
-
-An econometrics project in which I covered :
-- linear regression
-- statistical testing (t-test, F-test, Chow, ANOVA)
-- time series analysis
-
-<embed src="https://maelfabien.github.io/assets/images/Econometrics.pdf" type="application/pdf" width="600px" height="500px" />
-
-<br>
-
-<div class="github-card" data-github="maelfabien/MSc-Data-Science/tree/master/SES722/Projet" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<br>
-
-# NLP : Analyzing GitHub Pull Requests
-
-In this project, I have been looking at comments of developers on GitHub pull requests in order to :
-- determine the main topics (LSA Topic Modelling)
-- identify clusters of words (KMeans)
-- predict if a merge will occur after the comment (Bag Of Words, TF-IDF)
-- predict the time before the merge
-
-<embed src="https://maelfabien.github.io/assets/images/NLP.pdf" type="application/pdf" width="600px" height="500px" />
-
-<br>
-
-<div class="github-card" data-github="maelfabien/Analyze-Github-Pull-Requests" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<br>
-
-# Classification : Predicting the predominant kind of tree (Kaggle)
-
-In this [challenge](https://github.com/maelfabien/Forest-Cover-Type-Challenge) , I am trying to predict the forest cover type (the predominant kind of tree cover) from strictly cartographic variables (as opposed to remotely sensed data) . 
-
-<div class="github-card" data-github="maelfabien/Forest-Cover-Type-Challenge" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<br>
-
-# Cyber Security (Splunk)
-
-I used Splunk in a Cyber Security Project. The aim of the project was to identify the source of a data leakage within the company. We went through the logs, identified suspect IP addresses, found the source of the attack (a corrupted PDF), estimated the volume of data stolen, and proposed immediate actions. We detailed the Diamond Model, the Cyber Kill Chain, and developped general perspectives for the Cyber Threat Intelligence of the company.
-
-<embed src="https://maelfabien.github.io/assets/images/Cyber.pdf" type="application/pdf" width="600px" height="500px" />
-
-<br>
-
-# Hackathons
-
-[Predicting the Song of the year (1/3)](https://maelfabien.github.io/Hack-1/)
-
-[Predicting the Song of the year (2/3)](https://maelfabien.github.io/Hack-2/)
-
-[Predicting the Song of the year (3/3)](https://maelfabien.github.io/Hack-3/)
+ # Next ?
+ 
+After this first exeprience, I have kept thinking about potential solutions, or developing some projects, but not as a main activity. I think at some point, I'll get back to entrepreneurship in order to mix my passions for entrepreneurship and data science. 
