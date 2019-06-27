@@ -5,7 +5,7 @@ author_profile: true
 layout : single
 header :
 	video :
-		id : https://maelfabien.github.io/assets/images/header.mp4
+		id : "https://maelfabien.github.io/assets/images/header.mp4"
 		provider : own
 redirect_from: 
     - /about/
