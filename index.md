@@ -1,8 +1,7 @@
+---
 <video width="100%" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline">
         <source src="https://maelfabien.github.io/assets/images/header.mp4" type="video/mp4">
 </video>
-
----
 title: "About me"
 excerpt: ""
 author_profile: true
