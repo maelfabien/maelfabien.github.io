@@ -2,7 +2,7 @@
 title: "Who am I?"
 excerpt: ""
 author_profile: true
-layout : single
+layout : single_index
 redirect_from: 
     - /about/
     - /about.html
@@ -10,7 +10,7 @@ redirect_from:
 
 My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and just finished a Specialized Master in Data Science (Telecom Paris).
 
-I write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI bootcamp in Paris. 
+I started this blog in September 2018. Since then, I have published many articles, and I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI bootcamp in Paris. 
 
 I currently am a data sciensist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I'd like to start a PhD in Machine learning related topics (continual learning, private AI, semi-supervised learning...) in 2020. 
 
