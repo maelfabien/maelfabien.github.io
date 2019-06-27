@@ -1,11 +1,10 @@
 ---
 layout: archive
-title: Entrepreneurship
 permalink: /ent/
 author_profile: false
 classes: wide
 header :
-    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    image: "https://maelfabien.github.io/assets/images/ent_head.png"
 sidebar:
     nav: sidebar-sample
 ---
