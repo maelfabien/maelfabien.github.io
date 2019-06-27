@@ -1,6 +1,7 @@
 ---
 layout: archive
 permalink: /ent/
+title: The beginning
 author_profile: false
 classes: wide
 header :
@@ -8,8 +9,6 @@ header :
 sidebar:
     nav: sidebar-sample
 ---
-
-# The beginning
 
 I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at HEC Lausanne at that time. I've always wanted to create something fom scratch. I decided to apply to the entrepreneurial contest Start Lausanne with a friend, and present the following idea :
 
