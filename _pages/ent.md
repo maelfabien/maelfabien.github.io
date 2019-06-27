@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: Entrepreneurship
-permalink: /projects/
+permalink: /ent/
 author_profile: false
 classes: wide
 header :
