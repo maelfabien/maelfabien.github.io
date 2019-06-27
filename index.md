@@ -1,12 +1,12 @@
-<video width="100%" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline">
-        <source src="https://maelfabien.github.io/assets/images/header.mp4" type="video/mp4">
-</video>
-
 ---
 title: "About me"
 excerpt: ""
 author_profile: true
 layout : single
+header :
+	video :
+		id : https://maelfabien.github.io/assets/images/header.mp4
+		provider : own
 redirect_from: 
     - /about/
     - /about.html
