@@ -4,7 +4,7 @@ excerpt: ""
 author_profile: true
 layout : single
 header :
-    video: "https://maelfabien.github.io/assets/images/head.mp4"
+    video: "https://maelfabien.github.io/assets/images/header.mp4"
 redirect_from: 
     - /about/
     - /about.html
@@ -13,7 +13,7 @@ redirect_from:
 My name is Maël Fabien. I am a 22 years old graduate actuary and data scientist in the making. I currently live in Paris, and study Big Data at Telecom ParisTech. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI bootcamp in Paris. I'm uploading here some content that I'm writing on my free time. I'm trying to upload one article per week. 
 
 <video width="300" height="150" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline">
-    <source src="https://maelfabien.github.io/assets/images/head.mp4" type="video/mp4">
+    <source src="https://maelfabien.github.io/assets/images/header.mp4" type="video/mp4">
 </video>
 
 You will find here content related to my fields of interest :
