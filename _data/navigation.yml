@@ -13,6 +13,9 @@ main:
   - title: "Data Engineering"
     url: /bgd/
 
+  - title: "Entrepreneurship"
+    url: /ent/
+
   - title: "Projects"
     url: /projects/
     
@@ -31,6 +34,7 @@ sidebar-sample:
         url: /dl/
   - title: "Data Engineering"
     url: /bgd/
+  - title: "Entrepreneurship"
   - title: "Projects"
     url: /projects/
   - title: "CV"
