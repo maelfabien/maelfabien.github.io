@@ -1,5 +1,4 @@
 ---
-layout: archive
 permalink: /paper/
 title: Paper Summary
 author_profile: false
@@ -57,6 +56,8 @@ header :
 </head>
 
 <body>
+
+I read a lot of papers to stay up to date on the latest trends in ML and DL. I've noticed that quite often, the papers might be too long
 
   <div class="row">
 
