@@ -1,11 +1,11 @@
 ---
 layout: paper
 permalink: /paper/
-title: Paper Summary
+title: Papers, Explained
 author_profile: false
 classes: wide
 header :
-    image: "https://maelfabien.github.io/assets/images/ent_head.png"
+    image: "https://maelfabien.github.io/assets/images/pap_head.png"
 ---
 
 <head>
@@ -59,7 +59,9 @@ header :
 
 <body>
 
-I read a lot of papers to stay up to date on the latest trends in ML and DL. I've noticed that quite often, the papers might be too long
+I read a lot of papers to stay up to date on the latest trends in ML and DL. I've noticed that quite often, the papers might be too long or too complex for the needs of the industry and other practical applications. In this section, I'm picking some papers, and trying to explain them by also providing some code, explanations (to the extent of my understanding), and eventually some implementations.
+
+I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning which have some potential practical implementations.
 
 <div class="row">
 
@@ -71,7 +73,7 @@ I read a lot of papers to stay up to date on the latest trends in ML and DL. I'v
 
 <div class="column_home" id="left-col" align="center">
   <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
-    <p> Explanation </p>
+    <p> Comment </p>
   </div>
 </div>
 
