@@ -63,14 +63,14 @@ I read a lot of papers to stay up to date on the latest trends in ML and DL. I'v
   <div class="row">
 
   <div class="column_home" id="left-col" align="center">
-    <div style="text-align:justify; align-content:center; display:inline-block;">
+    <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
       <p> Paper </p>
       <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" />
     </div>
   </div>
 
   <div class="column_home" id="left-col" align="center">
-    <div style=" text-align:justify; align-content:center; display:inline-block;">
+    <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
       <p> Explanation </p>
     </div>
   </div>
