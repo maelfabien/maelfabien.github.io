@@ -59,9 +59,22 @@ header :
 
 <body>
 
+
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 I read a lot of papers to stay up to date on the latest trends in ML and DL. I've noticed that quite often, the papers might be too long or too complex for the needs of the industry and other practical applications. 
 
+<br>
+
 > “We have enough papers. Stop publishing, and start transforming people’s lives with technology!” — Andrew Ng from his speech “AI is the new electricity”
+
+<br>
+
+$$ f(w) = \sum_t 1(y_t \langle w^*, x_t \rangle ≥ 0) $$
+
+<br>
 
 In this section, I'm picking some papers, and trying to explain them by also providing some code, explanations (to the extent of my understanding), and eventually some implementations.
 
@@ -69,7 +82,6 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 
 <br>
 <br>
-
 <img src="https://maelfabien.github.io/assets/images/expl.png" width="100%"/>
 
 <br>
@@ -78,13 +90,13 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <div class="row">
 
   <div class="column_home" id="left-col" align="center">
-    <div style="text-align:justify; align-content:center; display:inline-block;">
-    <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" />
+    <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
+    <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="150px" />
     </div>
   </div>
 
   <div class="column_home" id="left-col" align="center">
-    <div style="text-align:justify; align-content:center; display:inline-block;">
+    <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
       <p> Hello </p>
     </div>
   </div>
