@@ -116,7 +116,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <div class="row">
 
   <div class="column_home" id="left-col" align="center">
-    <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
     <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="138px" />
     </div>
   </div>
