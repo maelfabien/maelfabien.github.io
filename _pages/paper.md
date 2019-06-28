@@ -112,8 +112,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <br>
 
 <h2 align="center"> Multimodal Emotion Recognition </h2>
-
-<code>print("Hello")</code>
+<i align="center"> De Bradké, Reynal, Lederman, Fabien </i>
 
 <div class="row">
 
@@ -126,6 +125,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
   <div class="column_home" id="left-col" align="center">
     <div style="text-align:justify; align-content:center; display:inline-block;">
       <p> Hello </p>
+      <code>print("Hello")</code>
     </div>
   </div>
 
