@@ -67,13 +67,13 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 
 <div class="column_home" id="left-col" align="center">
   <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
-    <p> Paper </p>
+    <img src="https://maelfabien.github.io/assets/images/papers.png" width="100%"/>
   </div>
 </div>
 
 <div class="column_home" id="left-col" align="center">
   <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
-    <p> Comment </p>
+    <img src="https://maelfabien.github.io/assets/images/explained.png" width="100%"/>
   </div>
 </div>
 
@@ -83,18 +83,18 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <div class="row">
 
   <div class="column_home" id="left-col" align="center">
-    <div style="width:100% height:200px; text-align:justify; align-content:center; display:inline-block;">
+    <div style="width:9% height:200px; text-align:justify; align-content:center; display:inline-block;">
     <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="300px"/>
     </div>
   </div>
 
   <div class="column_home" id="left-col" align="center">
-    <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
+    <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
       <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="200px" />
     </div>
   </div>
 
-  </div>
+</div>
 
 
 </body>
