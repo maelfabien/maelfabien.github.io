@@ -69,15 +69,18 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 
 <img src="https://maelfabien.github.io/assets/images/expl.png" width="100%"/>
 
+<br>
+<br>
+
 <div class="row">
 
-  <div class="column_home" id="left-col" align="center" style="width:45%">
+  <div class="column_home" id="left-col" align="center">
     <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
     <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="150px" />
     </div>
   </div>
 
-  <div class="column_home" id="left-col" align="center" style="width:45%">
+  <div class="column_home" id="left-col" align="center">
     <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
       <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" heigght="150px" />
     </div>
