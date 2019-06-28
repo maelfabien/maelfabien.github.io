@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default2
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
