@@ -113,9 +113,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 
 <h2 align="center"> Multimodal Emotion Recognition </h2>
 
-```python
-print("Hello")
-```
+<code>print("Hello")</code>
 
 <div class="row">
 
