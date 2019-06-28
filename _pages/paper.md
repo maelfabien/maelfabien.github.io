@@ -77,6 +77,11 @@ header :
   box-sizing: border-box;
 }
 
+i {
+  font-size: 0.4em;
+}
+
+
 #right-col {
   align-content:center;
   text-align: center;
@@ -111,7 +116,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <br>
 <br>
 
-<h2 align="center"> Multimodal Emotion Recognition <p><i align="center" stlye="font-size:0.3em"> De Bradké, Reynal, Lederman, Fabien </i></p> </h2>
+<h2 align="center"> Multimodal Emotion Recognition <p><i> De Bradké, Reynal, Lederman, Fabien </i></p> </h2>
 
 <div class="row">
 
