@@ -111,11 +111,17 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <br>
 <br>
 
+<h2 align="center"> Multimodal Emotion Recognition </h2>
+
+```python
+print("Hello")
+```
+
 <div class="row">
 
   <div class="column_home" id="left-col" align="center">
     <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
-    <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="150px" />
+    <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="140px" />
     </div>
   </div>
 
