@@ -63,6 +63,7 @@ header :
   <div class="column_home" id="left-col" align="center">
     <div style="width:70%; text-align:justify; align-content:center; display:inline-block;">
       <p> Paper </p>
+      <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" />
     </div>
   </div>
 
