@@ -10,6 +10,34 @@ header :
 
 <head>
 <style>
+
+  @import "compass/css3";
+
+  /* Some vars */
+  $background-color: hsl(50, 5, 97);
+  $black: hsl(200, 40, 10);
+  $white: $background-color;
+  $base-font-size: 2.4em;
+  $base-line-height: 1.5em;
+
+  .ludwig {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid lighten($black, 40%);
+  font-family: 'Roboto', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 100;
+  &:before, &:after {
+      content: '\201C';
+      font-family: 'Sanchez';
+      color: lighten($black, 40%);
+   }
+   &:after {
+      content: '\201D';
+   }
+  }
+
   .column {
   align-content:center;
   float: left;
@@ -67,13 +95,13 @@ header :
 I read a lot of papers to stay up to date on the latest trends in ML and DL. I've noticed that quite often, the papers might be too long or too complex for the needs of the industry and other practical applications. 
 
 <br>
-
-> “We have enough papers. Stop publishing, and start transforming people’s lives with technology!” — Andrew Ng from his speech “AI is the new electricity”
-
 <br>
 
-$$ f(w) = \sum_t 1(y_t \langle w^*, x_t \rangle ≥ 0) $$
+<blockquote class="ludwig">
+“We have enough papers. Stop publishing, and start transforming people’s lives with technology!” — Andrew Ng from his speech “AI is the new electricity”
+</blockquote>
 
+<br>
 <br>
 
 In this section, I'm picking some papers, and trying to explain them by also providing some code, explanations (to the extent of my understanding), and eventually some implementations.
