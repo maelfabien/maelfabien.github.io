@@ -67,6 +67,9 @@ In this section, I'm picking some papers, and trying to explain them by also pro
 
 I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning which have some potential practical implementations.
 
+<br>
+<br>
+
 <img src="https://maelfabien.github.io/assets/images/expl.png" width="100%"/>
 
 <br>
@@ -75,14 +78,14 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
 <div class="row">
 
   <div class="column_home" id="left-col" align="center">
-    <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
+    <div style="text-align:justify; align-content:center; display:inline-block;">
     <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="150px" />
     </div>
   </div>
 
   <div class="column_home" id="left-col" align="center">
-    <div style="width:95%; text-align:justify; align-content:center; display:inline-block;">
-      <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" heigght="150px" />
+    <div style="text-align:justify; align-content:center; display:inline-block;">
+      <p> Hello </p>
     </div>
   </div>
 
