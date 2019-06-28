@@ -61,18 +61,34 @@ header :
 
 I read a lot of papers to stay up to date on the latest trends in ML and DL. I've noticed that quite often, the papers might be too long
 
-  <div class="row">
+<div class="row">
+
+<div class="column_home" id="left-col" align="center">
+  <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
+    <p> Paper </p>
+  </div>
+</div>
+
+<div class="column_home" id="left-col" align="center">
+  <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
+    <p> Explanation </p>
+  </div>
+</div>
+
+</div>
+
+
+<div class="row">
 
   <div class="column_home" id="left-col" align="center">
-    <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
-      <p> Paper </p>
-      <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" />
+    <div style="width:100% height:200px; text-align:justify; align-content:center; display:inline-block;">
+    <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="300px"/>
     </div>
   </div>
 
   <div class="column_home" id="left-col" align="center">
     <div style="width:100%; text-align:justify; align-content:center; display:inline-block;">
-      <p> Explanation </p>
+      <embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="100%" height="200px" />
     </div>
   </div>
 
