@@ -8,7 +8,53 @@ header :
     image: "https://maelfabien.github.io/assets/images/ent_head.png"
 ---
 
-<link rel="stylesheet" type="text/css" href="/static/CSS/style_2.css">
+<head>
+<style>
+  .column {
+  align-content:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.column_home {
+  align-content:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+
+.center_text {
+  align-content:center;
+  width: 50%;
+  vertical-align: middle;
+  text-align:justify;
+  text-align-last: center;
+}
+
+#left-col {
+  align-content:center;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#right-col {
+  align-content:center;
+  text-align: center;
+}
+</style>
+</head>
 
 <body>
 
