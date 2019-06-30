@@ -13,6 +13,7 @@ header :
 comments : true
 toc: true
 toc_sticky: true
+search: false
 sidebar:
     nav: sidebar-sample
 ---
@@ -155,28 +156,20 @@ catalog = catalog[catalog['FORM'] == 'painting']
 We can apply several functions to extract the width and the height :
 
 ```python
-
 def height_extract(tech) :
     try :
         return re.findall('\d+', tech.split(" x ")[0])[0]
     except :
         return None
 
-def height_extract(tech) :
+def width_extract(tech) :
     try :
         return re.findall('\d+', tech.split(" x ")[1])[0]
     except :
         return None
         
-def tech_extract(tech) :
-    try :
-        return tech.split(",")[0]
-    except :
-        return None
-        
-catalog['TECH'] = catalog['TECHNIQUE'].apply(lambda x : height_extract(x))
 catalog['HEIGHT'] = catalog['TECHNIQUE'].apply(lambda x : height_extract(x))
-catalog['WIDTH'] = catalog['TECHNIQUE'].apply(lambda x : height_extract(x))
+catalog['WIDTH'] = catalog['TECHNIQUE'].apply(lambda x : width_extract(x))
 ```
 
 ## Width and height
@@ -227,6 +220,7 @@ catalog['AUTHOR'].value_counts()
 ```
 
 We'll need a good number of training samples of each label for the algorithms we'll apply after. For this reason, we'll drop all authors whom for we have less than 200 observations. This is a major limitation in our simple model, but it will allow a better class balance later on.
+
 
 ```python
 counts = catalog['AUTHOR'].value_counts()
@@ -282,11 +276,11 @@ print(np.mean(cv))
 ```
 
 ```
-[0.83056478 0.83592018 0.90189521 0.9027933  0.74971942]
-0.8441785760310498
+[0.79623477 0.81818182 0.86399108 0.87150838 0.70594837]
+0.8111728850092941
 ```
 
-The mean accuracy during our cross validation reaches 84.6% with our simple random forest model. We can also look at the confusion matrix.
+The mean accuracy during our cross validation reaches 83.7% with our simple random forest model. We can also look at the confusion matrix.
 
 ```python
 y_pred = cross_val_predict(rf, X, y, cv=5)
@@ -298,6 +292,8 @@ plt.title("Confusion Matrix")
 plt.show()
 ```
 
+![image](https://maelfabien.github.io/assets/images/expl_1.png)
+
 It's quite easy to notice how we tend to make more mistakes for the latest authors. These painters are also those whom fo we have the least observations. 
 
 # More feature engineering
@@ -306,8 +302,7 @@ It's quite easy to notice how we tend to make more mistakes for the latest autho
 
 Alright, we are now ready to move on and add other variables by doing a better feature engineering. By looking at the TECHNIQUE variable, you can notice that we don't use the type of painting information so far. Indeed, we only extracted  the width and the height from this field.
 
-The technique is systematically specified before the first comma. We'll split the string on the first comma if there is one, and return the first part of the string.
-
+The technique is systematically specified before the first comma. We'll split the string on the first comma if there is one and only select the first word (oil, tempera, wood...).
 
 ```python
 def process_tech(tech) :
@@ -347,6 +342,7 @@ df['FORM'] = le.fit_transform(df['FORM'])
 df['TYPE'] = le.fit_transform(df['TYPE'])
 df['SCHOOL'] = le.fit_transform(df['SCHOOL'])
 df['LOCATION'] = le.fit_transform(df['LOCATION'])
+df['TECH'] = le.fit_transform(df['TECH'])
 
 y = df['AUTHOR']
 X = df.drop(['AUTHOR'], axis=1)
@@ -361,6 +357,11 @@ print(cv)
 print(np.mean(cv))
 ```
 
+```
+[0.83277962 0.83037694 0.88963211 0.88938547 0.7620651 ]
+0.8408478481785021
+```
+
 And print the confusion matrix :
 
 ```
@@ -373,6 +374,148 @@ plt.title("Confusion Matrix")
 plt.show()
 ```
 
+![image](https://maelfabien.github.io/assets/images/expl_2.png)
+
 We have gained a significant accuracy by improving the feature engineering !
 
 ## Process the title
+
+Can the processing of the title bring additional accuracy ? It might be interesting to :
+- embed the title using a pre-trained model
+- reduce the dimension of the embedding using a Principal Component Analysis (PCA)
+- use the new dimensions as new features to predict the name of the painter
+
+To start, download pre-trained models from Spacy from your terminal :
+
+`python -m spacy download en_core_web_md`
+
+We'll be using a pre-trained Word2Vec model. Then, define an embedding function :
+
+```python
+def embed_txt(titles) :
+    list_mean = []
+
+    # For each title
+    for title in titles :
+    
+        # Tokenize the title
+        tokens = word_tokenize(title)
+        all_embedding = []
+        arr = np.empty((300,))
+
+        # Compute the embedding of each word
+        for token in tokens :
+            arr = np.append(arr, np.array(nlp(token).vector), axis=0)     
+        
+        # Compute the average embedding of the title
+        arr = arr.reshape(300, -1)
+        arr = np.nan_to_num(arr)
+        mean = np.mean(arr, axis = 1)
+        list_mean.append(mean)
+
+    return list_mean
+```
+
+We then apply our function to the list of titles :
+
+```python
+embedding = np.array(embed_txt(list(catalog['TITLE'])))
+```
+
+We will now reduce the dimension (300 currently) of the embedding to use it as features in our prediction. The Principal Component Analysis (PCA) is sensitive to scaling. It requires a scaling of the embedding values :
+
+```python
+scaler = MinMaxScaler(feature_range=[0, 1])
+data_rescaled = scaler.fit_transform(embedding)
+```
+
+We can apply the PCA on the rescaled data, and see what percentage of the variance we are able to explain :
+
+```
+pca = PCA().fit(data_rescaled)
+#Plotting the Cumulative Summation of the Explained Variance
+plt.figure(figsize=(12,8))
+plt.plot(np.cumsum(pca.explained_variance_ratio_))
+plt.xlabel('Number of Components')
+plt.ylabel('Variance (%)')
+plt.title('Explained Variance')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl_3.png)
+
+This is a tricky situation. Adding more and more dimensions seems to smoothly improve the percentage of the variance explained. This might happen if the embeddings are too similar, since the Word2Vec model has been trained on a corpus that is far from the vocabulary we are using here. 
+
+To confirm this thought, we can try to plot on a scatterplot the embeddings reduced to 2 dimensions by PCA.
+
+```python
+pca = PCA(2).fit_transform(data_rescaled)
+plt.figure(figsize=(12,8))
+plt.scatter(pca[:,0], pca[:,1], s=0.3)
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl_4.png)
+
+There seems to be no real clustering effect, although a K-Means algorithm could probably detach 3-4 clusters.
+
+```python
+kmeans = KMeans(n_clusters=4, random_state=0).fit(pca)
+plt.figure(figsize=(12,8))
+plt.scatter(pca[:,0], pca[:,1], c=kmeans.labels_, s=0.4)
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl_5.png)
+
+We might expect the new features derived from the embedding not to improve the overall accuracy. 
+
+```python
+catalog_2 = pd.concat([catalog.reset_index(), pd.DataFrame(pca)], axis=1).drop(['index'], axis=1)
+df = catalog_2.copy()
+df = df.drop(['TITLE', 'URL'], axis=1)
+
+le = preprocessing.LabelEncoder()
+
+df['AUTHOR'] = le.fit_transform(df['AUTHOR'])
+df['TECHNIQUE'] = le.fit_transform(df['TECHNIQUE'])
+df['FORM'] = le.fit_transform(df['FORM'])
+df['TYPE'] = le.fit_transform(df['TYPE'])
+df['SCHOOL'] = le.fit_transform(df['SCHOOL'])
+df['LOCATION'] = le.fit_transform(df['LOCATION'])
+
+y = df['AUTHOR']
+X = df.drop(['AUTHOR'], axis=1)
+
+cv = cross_val_score(rf, X, y, cv=5)
+print(cv)  
+print(np.mean(cv))
+```
+
+```
+[0.82840237 0.84752475 0.8757515  0.85110664 0.75708502]
+0.8319740564854229
+```
+
+This is indeed the case. Then, should we include the title variable ? A nice feature of the random forest is to be able to apply a feature importance. By checking the feature importance, we notice how many node splits depend on values encountered on a given feature.
+
+```python
+rf.fit(X,y)
+importances = rf.feature_importances_
+
+std = np.std([tree.feature_importances_ for tree in rf.estimators_],
+axis=0)
+indices = np.argsort(importances)
+
+plt.figure(figsize=(12,8))
+plt.title("Feature importances")
+plt.barh(X.columns.astype(str), importances[indices],
+color="r", xerr=std[indices], align="center")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl_6.png)
+
+There is a large importance of the 2 features extracted by the PCA on the embedding. Including them at that point might not be a good idea. We might need to fine-tune the Word2Vec embedding for our use case. A similar approach with a PCA on a Tf-Idf has been tested and brought similar results.
+
+> This highlights a major limitation in the dataset itself. This open source library focuses on european art between the 3rd and the 19th century, and includes a lot of religious work. Therefore, the titles, the pictures and some characteristics are quite similar accross artists. Pre-trained models require fine-tuning, and feature engineering needs to be done wisely. We overall improved the accuracy of the classifier by up to 3% with a good feature engineering.
