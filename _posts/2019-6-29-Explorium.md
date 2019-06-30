@@ -6,7 +6,7 @@ layout: single
 author_profile: false
 read_time: true
 categories: [machinelearning]
-excerpt : "Advanced Machine Learning"
+excerpt : "Better features, better data"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser : "https://maelfabien.github.io/assets/images/wolf.jpg"
