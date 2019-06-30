@@ -22,24 +22,24 @@ sidebar:
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-In this article, we'll by using data from the Web Gallery of Art, a virtual museum and searchable database of European fine arts from the 3rd to 19th centuries. The gallery can be accessed  [here](https://www.wga.hu/index1.html).
+In this article, we will be using data from the Web Gallery of Art, a virtual museum and searchable database of European fine arts from the $$ 3^{rd} $$ to $$ 19^{th} $$ centuries. The gallery can be accessed  [here](https://www.wga.hu/index1.html).
 
-We will create an algorithm to predict the name of the painter based on a set of features of the painting, by including gradually more and more features, improving the feature engineering, and eventually including pictures.
+We will create an algorithm to predict the name of the painter based on an intial set of features of the painting, and then gradually including more and more, thus improving the feature engineering, and including pictures.
 
-Through this article, we'll illustrate :
-- The importance of a good feature engineering
-- The importance of data enrichment
-- And the impact this can have on the accuracy of our prediction.
+Through this article, we will illustrate:
+- The importance of good feature engineering;
+- The importance of data enrichment; and
+- The impact this can have on accuracy 
 
 Ready ? Let's get started !
 
 # The data
 
 To download the data, you can either :
-- click [this link](https://www.wga.hu/database/download/data_xls.zip) to download the XLS file directly
-- or from the website, go to Database tab, and click on the last link : "You can download the catalogue for studying or searching off-line". Select the Excel format of 5.2 Mb. 
+- click on [this link](https://www.wga.hu/database/download/data_xls.zip) to download the XLS file directly
+-  go to Database tab in the website, and click on the last link : *You can download the catalogue for studying or searching off-line*. Select the Excel format of 5.2 Mb. 
 
-We start off by importing several packages we'll be using later on :
+Start off by importing several packages to be used later:
 
 ```python
 ### Manipulating and plotting data ###
@@ -77,7 +77,7 @@ import warnings
 warnings.filterwarnings("ignore")
 ```
 
-The architecture of our folders should be the following :
+The architecture of our folders should be the following:
 
 ```
 - Notebook.ipynb
@@ -85,7 +85,9 @@ The architecture of our folders should be the following :
 - catalog.xlsx
 ```
 
-Images is an empty folder we'll be using later on. We can import the file `catalog.xlsx` :
+*Images* is an empty folder to be used later.
+
+Import the file `catalog.xlsx` :
 
 ```python
 catalog = pd.read_excel('catalog.xlsx', header=0)
@@ -95,17 +97,17 @@ catalog.head()
 ![image](https://maelfabien.github.io/assets/images/expl_0.png)
 
 We directly notice that we need to process the data, to make it exploitable. The available columns are :
-- The author, which we'll by trying to predict
-- The date of birth and death of the author. We'll drop this column since it is directly linked to the author
+- The author, which we will try to predict
+- The date of birth and death of the author. We will drop this column since it is directly linked to the author
 - The title of the painting
 - The date of the painting, if available
-- The technique used (Oil on copper, oil on canvas, Wood...) as well as the size of the painting
+- The technique used (Oil on copper, oil on canvas, wood, etc) as well as the size of the painting
 - The current location of the painting
 - The URL of the image on the website
-- The form (painting, ceramics, sculpture...). We'll only focus on paintings in our case.
-- The type of painting (mythological, genre, portrait, landscape...)
-- The school, i.e the dominant painting style
-- The timeframe in which experts estimate the painting has been realized
+- The form (painting, ceramics, sculpture, etc). We will only focus on paintings in our case.
+- The type of painting (mythological, genre, portrait, landscape, etc.)
+- The school, i.e. the dominant painting style
+- The timeframe in which experts estimate that the painting was painted
 
 # Feature engineering
 
@@ -113,14 +115,13 @@ Since the dataset itself is not made for running a ML algorithm, but meant to be
 
 ## Date
 
-By exploring the data, we notice some missing values for the date. When the date is approximative, it is denoted by :
+By exploring the data, we notice missing values for the date. When the date is approximative, it is denoted by :
 - 1590s
-- or c.1596
+- or c.1590
 
-Moreover, the missing values are denoted by an hyphen. For all these reasons, using a regex to extract the date seems to be appropriate.
+Moreover, the missing values are denoted by a hyphen. For all these reasons, using a regex to extract the date seems to be appropriate.
 
 ```python
-
 def date_extract(date) :
     try :
         return re.findall('\d+', date)[0]
@@ -131,7 +132,7 @@ catalog['DATE'] = catalog['DATE'].astype(str)
 catalog['DATE'] = catalog['DATE'].apply(lambda x : date_extract(x))
 ```
 
-The time frame is quite redundant with the date. Including both would imply adding multi-colinearity in the data. 
+The time frame is redundant if the date is known. Including both variables would imply adding multi-colinearity in the data. 
 
 ```python
 catalog = catalog.drop(['TIMEFRAME'], axis=1)
@@ -139,14 +140,14 @@ catalog = catalog.drop(['TIMEFRAME'], axis=1)
 
 ## Technique
 
-The "Technique" is an interesting feature. It is a string that takes the following form :
+The "Technique" is an interesting feature. It is a string that takes the following form:
 
 `Oil on copper, 56 x 47 cm`
 
-We can extract several elements from this features :
-- the type of painting (oil on copper)
-- the height
-- the width
+We can extract several elements from this feature:
+- The type of painting (oil on copper)
+- The height
+- The width
 
 We will only focus on paintings, and drop observations that are sculplures or architecture for example.
 
@@ -154,7 +155,7 @@ We will only focus on paintings, and drop observations that are sculplures or ar
 catalog = catalog[catalog['FORM'] == 'painting']
 ```
 
-We can apply several functions to extract the width and the height :
+We can apply several functions to extract the width and height:
 
 ```python
 def height_extract(tech) :
@@ -175,7 +176,7 @@ catalog['WIDTH'] = catalog['TECHNIQUE'].apply(lambda x : width_extract(x))
 
 ## Width and height
 
-In some cases, the "Technique" feature does not contain the width nor the height. We might want to fill the missing values. It's not a great idea to fill it with 0's. To minimize the error, we'll set the missing values to the average of each feature.
+In some cases, the "Technique" feature does not contain the width nor the height. We might want to fill the missing values. It's not a good idea to fill it with 0's. To minimize the error, we'll set the missing values to the average of each feature.
 
 ```python
 catalog['HEIGHT'] = catalog['HEIGHT'].fillna(0).astype(int)
@@ -202,25 +203,25 @@ catalog['WIDTH'] = catalog['WIDTH'].apply(lambda x : treat_width(x))
 
 ## Missing values and useless columns
 
-As stated above, we won't exploit the birth and death of the author, since it's an information that depends on the author.
+As stated above, we won't exploit the birth nor death of the author, since it's an information that depends on the author.
 
 ```python
 catalog = catalog.drop(['BORN-DIED'], axis=1)
 ```
 
-At that point, we can confidently drop any row that has missing values, since the processing is almost over.
+At this point we can confidently drop any row that has missing values since the processing is almost over.
 
 ```
 catalog = catalog.dropna()
 ```
 
-There are many authors in the database, indeed 3584 overall. To check this, simply run a values count on the author's feature.
+There are many authors in the database (> 3500). To check this, simply run a values count on the author's feature.
 
 ```python
 catalog['AUTHOR'].value_counts()
 ```
 
-We'll need a good number of training samples of each label for the algorithms we'll apply after. For this reason, we'll drop all authors whom for we have less than 200 observations. This is a major limitation in our simple model, but it will allow a better class balance later on.
+We will need a good number of training samples for each label for the algorithm to be applied. For this reason, all authors with less than 200 observations should be dropped. This is a major limitation in our simple model, but will give a better class balance later on.
 
 
 ```python
@@ -250,11 +251,9 @@ BRUEGEL, Pieter the Elder         205
 
 # A first model
 
-The aim of this exercise is to illustrate the need for a good feature engineering and additional data. We won't spend too much time on the optimization of the model itself. We'll be using a random forest classifier.
+The aim of this exercise is to illustrate the need for a good feature engineering and additional data. We won't spend too much time on the optimization of the model itself and we will use a random forest classifier. A label encoding needs to be applied to transform the labels into numeric values that can be understood by our model.
 
-We need to apply a label encoding to transform the labels into numeric values that can be understood by our model.
-
-We'll evaluate the accuracy of a model by the average of the cross validation with 5 folds.
+The accuracy of a model will be evaluated by the average of the cross validation with 5 folds.
 
 ```python
 df = catalog.copy()
@@ -297,15 +296,15 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl_1.png)
 
-It's quite easy to notice how we tend to make more mistakes for the latest authors. These painters are also those whom fo we have the least observations. 
+It's easy to understand that mistakes are made more frequently with latest authors, given that we have fewer observations for these.
 
 # More feature engineering
 
 ## Technique
 
-Alright, we are now ready to move on and add other variables by improving the feature engineering. By looking at the "Technique" feature, you can notice that we have not used the "type of painting" variable yet. Indeed, we only extracted the width and the height from this field.
+Alright, we are now ready to move on and add other variables by improving the feature engineering. Looking at the "Technique" feature, you will notice that we have not used the "type of painting" variable yet. Indeed, only the width and height have been extracted from this field.
 
-The technique is systematically specified before the first comma. We'll split the string on the first comma if there is one and only select the first word (oil, tempera, wood...).
+The technique is systematically specified before the first comma. We will split the string on the first comma, if there is one, and then select the first word (oil, tempera, wood...).
 
 ```python
 def process_tech(tech) :
@@ -320,7 +319,7 @@ catalog['TECHNIQUE'] = catalog['TECHNIQUE'].apply(lambda x: process_tech(x))
 
 ## Location
 
-So far, we have not exploited the location field either. The location describes where the painting is being kept. We'll simply extract the name of the city from this field. Indeed, extracting the name of the museum would lead to an overfitting as the collections of each museum are limited, and we only have at that point around 4'500 training samples.
+So far we have not exploited the location field either. The location describes where the painting is being kept. We only extract the name of the city from this field as extracting the name of the museum would lead to an overfitting. The collections of each museum are limited, and we only have at this point around 4'500 training samples.
 
 ```python
 def process_loc(loc) :
@@ -384,15 +383,15 @@ We have gained a significant accuracy by improving the feature engineering !
 ## Process the title
 
 Can the processing of the title bring additional accuracy ? It might be interesting to :
-- embed the title using a pre-trained model
-- reduce the dimension of the embedding using a Principal Component Analysis (PCA)
-- use the new dimensions as new features to predict the name of the painter
+- Embed the title using a pre-trained model
+- Reduce the dimension of the embedding using a Principal Component Analysis (PCA)
+- Use the new dimensions as new features to predict the name of the painter
 
 To start, download pre-trained models from Spacy from your terminal :
 
 `python -m spacy download en_core_web_md`
 
-We'll be using a pre-trained Word2Vec model. We define an embedding function :
+We will be using a pre-trained Word2Vec model and begin by defining the embedding function:
 
 ```python
 def embed_txt(titles) :
@@ -425,14 +424,14 @@ We then apply our function to the list of titles :
 embedding = np.array(embed_txt(list(catalog['TITLE'])))
 ```
 
-We will now reduce the dimension (300 currently) of the embedding to use it as features in our prediction. The Principal Component Analysis (PCA) is sensitive to scaling. It requires a scaling of the embedding values :
+We will now reduce the dimension (300 currently) of the embedding to use it as features in our prediction. The Principal Component Analysis (PCA) is sensitive to scaling, and requires a scaling of the embedding values :
 
 ```python
 scaler = MinMaxScaler(feature_range=[0, 1])
 data_rescaled = scaler.fit_transform(embedding)
 ```
 
-We can apply the PCA on the rescaled data, and see what percentage of the variance we are able to explain :
+We can apply the PCA on the rescaled data and see what percentage of the variance we are able to explain :
 
 ```
 pca = PCA().fit(data_rescaled)
@@ -447,7 +446,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl_3.png)
 
-This is a tricky situation. Adding more and more dimensions seems to smoothly improve the percentage of the variance explained, up to 200 features. This might happen if the embeddings are too similar, since the Word2Vec model has been trained on a corpus that is far from the vocabulary we are using here, and that "Scenes from the Life of Christ" and "Christ Blessing the Children" for example will tend to have similar average embeddings.
+This is a tricky situation. Adding more dimensions seems to smoothly improve the percentage of the explained variance, up to 200 features. This might happen if the embeddings are too similar since the Word2Vec model has been trained on a corpus that uses a more general vocabulary, e.g. "Scenes from the Life of Christ" and "Christ Blessing the Children" will tend to have similar average embeddings.
 
 To confirm this thought, we can try to plot on a scatterplot the embeddings reduced to 2 dimensions by PCA.
 
@@ -500,7 +499,7 @@ print(np.mean(cv))
 0.8319740564854229
 ```
 
-This is indeed the case. Then, should we include the title variable ? A nice feature of the random forest is to be able to apply a feature importance. By checking the feature importance, we notice how many node splits depend on values encountered on a given feature.
+This is indeed the case. Then, should we include the title variable ? A cool feature of the random forest is to be able to apply a feature importance. By checking the feature importance, we notice how many node splits depend on values encountered on a given feature.
 
 ```python
 rf.fit(X,y)
@@ -519,17 +518,17 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl_6.png)
 
-There is a large importance of the 2 features extracted by the PCA on the embedding. Including them at that point might not be a good idea. We might need to fine-tune the Word2Vec embedding for our use case. A similar approach with a PCA on a Tf-Idf has been tested and brought similar results.
+The 2 features extracted by the PCA on the embedding are the most important. Including them at that point might not be a good idea as we would need to fine-tune the Word2Vec embedding for our use case. A similar approach with a PCA on a Tf-Idf has been tested and has given similar results.
 
-> This highlights a major limitation in the dataset itself. This open source library focuses on european art between the 3rd and the 19th century, and includes mostly religious art. Therefore, the titles, the pictures and some characteristics are quite similar accross artists. Pre-trained models require fine-tuning, and feature engineering needs to be done wisely. 
+> This highlights a major limitation in the dataset itself. This open source catolog focuses on European art between the $$ 3^{rd} $$ and the $$ 19^{th} $$ century, and maily includes religious art. Therefore, the titles, the pictures and certain characteristics are quite similar across artists. Pre-trained models require fine-tuning, and feature engineering needs to be done wisely. 
 
 # Exploiting the images
 
-The URL column contains a link to download the images. By clicking on a link, we end up on the webpage of the painting.
+The URL column contains a link to download the images. By clicking on a link, we access the webpage of the painting.
 
 ![image](https://maelfabien.github.io/assets/images/expl_8.png)
 
-If you click on the image, you can notice how the URL changes. We now have a direct access to the image :
+If you click on the image, you can notice how the URL changes. We now have direct access to the image :
 
 ![image](https://maelfabien.github.io/assets/images/expl_7.png)
 
@@ -539,7 +538,7 @@ In this example, the URL just went from :
 To : 
 `https://www.wga.hu/art/a/angelico/00/10fieso1.jpg`
 
-All we need to do is then to process the URLs so that they fit the second template.
+All we need to do is process the URLs so they fit the second template.
 
 ```python
 def process_url(url):
@@ -552,7 +551,7 @@ def process_url(url):
 catalog['URL'] = catalog['URL'].apply(lambda x : process_url(x))
 ```
 
-We are now ready to download all the images. First of all, create, if not done before, an empty folder called `images`. Then, the following script will be fetching images from the website directly :
+We are now ready to download all the images. First, create an empty folder called `images` and enter the following script to fetch images from the website directly:
 
 ```python
 data = urllib.request.urlretrieve
@@ -567,16 +566,16 @@ for line in catalog['URL'] :
     i+=1
 ```
 
-Depending on your WiFi and on the server response time, it might takes several minutes/hours to download the 4488 images. It might be a good idea to add a `time.sleep(1)` within the for loop to avoid errors. At that point, we face quite a big issue. Every image has a different size, and a large resolution. We need to scale down the images, and to add margins to the images in order to make them all look like squares.
+Depending on your WiFi and server response time, it might takes several minutes/hours to download the 4488 images. It might be a good idea to add a `time.sleep(1)` within the *for* loop to avoid errors. At this point, we are faced with the problem where each image has a different size and resolution. We need to scale down the images, and add margins in order to make them all look square.
 
-To further reduce the dimension, we'll only use the greyscale version of the images :
+To further reduce the dimension we only use the greyscale version of the images :
 
 ```python
 def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.2989, 0.5870, 0.1140])
 ```
 
-And run this script to reduce the dimensions of the images to $$ 100 \times 100 $$ and add margins if needed. We are using OpenCV's resize function in the loop :
+Run this script to reduce the dimensions of the images to $$ 100 \times 100 $$ and add margins if needed. We are using OpenCV's resize function in the loop :
 
 ```python
 img = []
@@ -612,9 +611,9 @@ img = np.array(img)
 img = img.reshape(-1, 100*100)
 ```
 
-The images have been reduced to a dimension of $$ 100 \times 100 $$. However, that's still 10'000 features to potentially include in the original dataset, and including a value pixel by pixel wouldn't make much sense. PCA finds the eigenvectors of a covariance matrix with the highest eigenvalues. Then, the eigenvectors are used to project the data into a smaller dimension. PCA is comminly used for feature extraction.
+The images have been reduced to a dimension of $$ 100 \times 100 $$, but that's still 10'000 features to potentially include in the original dataset, and including a value pixel by pixel won't make much sense. PCA finds the eigenvectors of a covariance matrix with the highest eigenvalues. The eigenvectors are then used to project the data into a smaller dimension. PCA is commonly used for feature extraction.
 
-A lot of techniques of computer vision could be applied here, but we'll simply apply a PCA on the image itself.
+Many techniques of computer vision could be applied here but we will simply apply a PCA on the image itself.
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -623,7 +622,7 @@ pca = PCA(n_components=1)
 pca_result = pca.fit_transform(images_scaled)
 ```
 
-The number of components to extract has been tested empirically, and 1 component turned out to bring additional accuracy :
+The number of components to extract has been tested empirically, and 1 component gave additional accuracy :
 
 ```python
 catalog_4 = pd.concat([catalog.reset_index(), pd.DataFrame(pca_result)], axis=1).drop(['index'], axis=1)
@@ -653,11 +652,11 @@ print(np.mean(cv))
 0.844164839215148
 ```
 
-We gained half a percent of accuracy by adding the PCA of the image as a feature.
+Half a percentage of accuracy is gained by adding the PCA of the image as a feature.
 
-# Summary
+# Conclusion
 
-In summary, we have seen through this article how a good feature engineering and external data sources can improve the accuracy of a given model.
+We can summarize by saying that this article shows how a good feature engineering and external data sources can improve the accuracy of a given model.
 
 | Model | Description | Accuracy |
 |---|---|---|
@@ -666,4 +665,4 @@ In summary, we have seen through this article how a good feature engineering and
 | 3 |  Add embedding of the title | 0.83197 |
 | 4 |  Add PCA of the images | 0.84416 |
 
-> We improved the accuracy by up to 3.3%. There still is room for better models, deep learning pipelines, computer vision techniques or fine-tuned embedding techniques.
+> We improved the accuracy by up to 3.3%. There still is room for better models, deep learning pipelines, computer vision techniques and fine-tuned embedding techniques.
