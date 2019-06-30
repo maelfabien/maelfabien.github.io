@@ -63,6 +63,7 @@ import glob
 import cv2
 import matplotlib.image as mpimg
 import urllib.request
+from sklearn.preprocessing import StandardScaler
 
 ### Modeling libraries performance ###
 from sklearn import preprocessing
@@ -518,4 +519,149 @@ plt.show()
 
 There is a large importance of the 2 features extracted by the PCA on the embedding. Including them at that point might not be a good idea. We might need to fine-tune the Word2Vec embedding for our use case. A similar approach with a PCA on a Tf-Idf has been tested and brought similar results.
 
-> This highlights a major limitation in the dataset itself. This open source library focuses on european art between the 3rd and the 19th century, and includes a lot of religious work. Therefore, the titles, the pictures and some characteristics are quite similar accross artists. Pre-trained models require fine-tuning, and feature engineering needs to be done wisely. We overall improved the accuracy of the classifier by up to 3% with a good feature engineering.
+> This highlights a major limitation in the dataset itself. This open source library focuses on european art between the 3rd and the 19th century, and includes a lot of religious work. Therefore, the titles, the pictures and some characteristics are quite similar accross artists. Pre-trained models require fine-tuning, and feature engineering needs to be done wisely. 
+
+# Exploiting the images
+
+The URL column contains  a link to download the images. By clicking on a link, we end up on the webpage of the painting.
+
+![image](https://maelfabien.github.io/assets/images/expl_8.png)
+
+If you click on the image, you can notice how the URL changes. We now have a direct access to the image :
+
+![image](https://maelfabien.github.io/assets/images/expl_7.png)
+
+The URL just went from :
+`https://www.wga.hu/html/a/angelico/00/10fieso1.html`
+
+To : 
+`https://www.wga.hu/art/a/angelico/00/10fieso1.jpg`
+
+All we need to do is then to process the URLs so that they fit the second template.
+
+```python
+def process_url(url):
+    start = url.split("/html/")[0]
+    end = url.split("/html/")[1]
+    end_2 = end.split(".html")[0]
+    final_url = start + "/art/" + end_2 + ".jpg"
+    return final_url
+    
+catalog['URL'] = catalog['URL'].apply(lambda x : process_url(x))
+```
+
+We are now ready to download all the images. First of all, create, if not done before, an empty folder called `images`. Then, the following script will be fetching images from the website directly :
+
+```python
+data = urllib.request.urlretrieve
+
+filename = "images"
+i = 0
+
+for line in catalog['URL'] :
+    urllib.request.urlretrieve(line, filename + "/img_" + str(i) + ".png")
+    if i % 10 == 0 :
+        print(i)
+    i+=1
+```
+
+Depending on your network and on the server response time, it might takes several minutes/hours to download the 4488 images. At that point, we face quite a big issue. Every image has a different size, and a large resolution. We need to scale down the images, and to add margins to the images in order to make them all look like squares.
+
+To further reduce the dimension, we'll only use the greyscale version of the images :
+
+```python
+def rgb2gray(rgb):
+    return np.dot(rgb[...,:3], [0.2989, 0.5870, 0.1140])
+```
+
+And run this script to reduce the dimensions of the images to $$ 100 \times 100 $$ and add margins if needed :
+
+```python
+img = []
+i = 0
+desired_size = 100
+
+for filename in glob.glob('images/*.png'):
+
+    im = cv2.imread(filename)
+    old_size = im.shape[:2]
+
+    ratio = float(desired_size)/max(old_size)
+    new_size = tuple([int(x*ratio) for x in old_size])
+
+    im = cv2.resize(im, (new_size[1], new_size[0]))
+
+    delta_w = desired_size - new_size[1]
+    delta_h = desired_size - new_size[0]
+    top, bottom = delta_h//2, delta_h-(delta_h//2)
+    left, right = delta_w//2, delta_w-(delta_w//2)
+
+    color = [0, 0, 0]
+    new_img = rgb2gray(cv2.copyMakeBorder(im, top, bottom, left, right, cv2.BORDER_CONSTANT, value=color))
+    img.append(new_img)
+
+    i += 1
+    if i % 100 == 0 :
+        print(i)
+        plt.imshow(new_img)
+        plt.show()
+        
+img = np.array(img)
+img = img.reshape(-1, 100*100)
+```
+
+The images have been reduced to a dimension of $$ 100 \times 100 $$. However, that's still 10'000 features to potentially include in the original dataset, and including a value pixel by pixel wouldn't PCA finds the eigenvectors of a covariance matrix with the highest eigenvalues and then uses those to project the data into a new subspace of equal or less dimensions. It is comminly used for feature extraction.
+
+A lot of techniques of computer vision could be applied here, but we'll simply apply a PCA on the image itself.
+
+```python
+from sklearn.preprocessing import StandardScaler
+images_scaled = StandardScaler().fit_transform(img)
+pca = PCA(n_components=1)
+pca_result = pca.fit_transform(images_scaled)
+```
+
+The number of components to extract has been tested empirically, and 1 component turned out to bring additional accuracy :
+
+```python
+catalog_4 = pd.concat([catalog.reset_index(), pd.DataFrame(pca_result)], axis=1).drop(['index'], axis=1)
+
+df = catalog_4.copy()
+df = df.drop(['TITLE', 'URL'], axis=1)
+
+le = preprocessing.LabelEncoder()
+
+df['AUTHOR'] = le.fit_transform(df['AUTHOR'])
+df['TECHNIQUE'] = le.fit_transform(df['TECHNIQUE'])
+df['FORM'] = le.fit_transform(df['FORM'])
+df['TYPE'] = le.fit_transform(df['TYPE'])
+df['SCHOOL'] = le.fit_transform(df['SCHOOL'])
+df['LOCATION'] = le.fit_transform(df['LOCATION'])
+
+y = df['AUTHOR']
+X = df.drop(['AUTHOR'], axis=1)
+
+cv = cross_val_score(rf, X, y, cv=5)
+print(cv)  
+print(np.mean(cv))
+```
+
+```
+[0.84939092 0.82926829 0.89632107 0.88826816 0.75757576]
+0.844164839215148
+```
+
+We gained half a percent of accuracy by adding the PCA of the image as a feature.
+
+# Summary
+
+In summary, we have seen through this article how a good feature engineering and external data sources can improve the accuracy of a given model.
+
+| Model | Description | Accuracy |
+|---|---|---|
+| 1 |  Simple feature engineering | 0.81117 |
+| 2 |  Improved feature engineering | 0.84084 |
+| 3 |  Embedding of the title | 0.83197 |
+| 4 |  PCA of the images | 0.84416 |
+
+> We improved the accuracy by up to 3.3% using those simple tricks. There still is room for better models, deep learning pipelines, computer vision techniques or fine-tuned embedding techniques.
