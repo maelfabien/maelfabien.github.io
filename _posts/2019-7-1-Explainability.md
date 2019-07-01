@@ -110,6 +110,109 @@ Negative value for importance occurs when the feature is not important at all.
 
 # Partial dependence plots
 
+While feature importance shows what variables most affect predictions, partial dependence plots show how a feature affects predictions.
+
+Partial dependence plots can be interpreted similarly to coefficients in linear or logistic regression models, but can capture more complex patterns than simple coefficients.
+
+We can use partial dependence plots to answer questions like :
+- Controlling for all other house features, what impact do longitude and latitude have on home prices? To restate this, how would similarly sized houses be priced in different areas?
+- Are predicted health differences between two groups due to differences in their diets, or due to some other factor?
+
+## How does it work?
+
+Partial dependence plots are calculated after a model has been fit. How do we then disentangle the effects of several features?
+
+We start by selecting a single row. We will use the fitted model to predict our outcome of that row. But we repeatedly **alter the value** for **one variable** to make a series of predictions.
+
+For example, in the football example used above, we could predict the outcome if the team had the ball 40% of the time, but also 45, 50, 55, 60, ...
+
+We build the plot by:
+- representing on the horizontal axis the value change in the ball possession for example
+- and on the horizontal axis the change of the outcome
+
+We don't use only a single row, but many rows to do that. Therefore, we can represent a confidence interval and an average value, just like on this graph:
+
+![image](https://maelfabien.github.io/assets/images/perm3.jpg)
+
+The blue shaded area indicates the level of condifence.
+
+## Example
+
+Back to our FIFA Man of the Game example :
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
+
+data = pd.read_csv('../input/fifa-2018-match-statistics/FIFA 2018 Statistics.csv')
+
+y = (data['Man of the Match'] == "Yes")  # Convert from string "Yes"/"No" to binary
+feature_names = [i for i in data.columns if data[i].dtype in [np.int64]]
+X = data[feature_names]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+tree_model = DecisionTreeClassifier(random_state=0, max_depth=5, min_samples_split=5).fit(X_train, y_train)
+```
+
+Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. The PDP fot the number of goals scored is the following :
+
+```python
+from matplotlib import pyplot as plt
+from pdpbox import pdp, get_dataset, info_plots
+
+# Create the data that we will plot
+pdp_goals = pdp.pdp_isolate(model=tree_model, dataset=X_test, model_features=feature_names, feature='Goal Scored')
+
+# plot it
+pdp.pdp_plot(pdp_goals, 'Goal Scored')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/perm4.jpg)
+
+From this particular graph, we see that scoring a goal substantially increases your chances of winning "Man of The Match." But extra goals beyond that appear to have little impact on predictions.
+
+We can pick a more complex model and another feature to illustrate the changes :
+
+```python
+# Build Random Forest model
+rf_model = RandomForestClassifier(random_state=0).fit(X_train, y_train)
+
+pdp_dist = pdp.pdp_isolate(model=rf_model, dataset=X_test, model_features=feature_names, feature=feature_to_plot)
+
+pdp.pdp_plot(pdp_dist, feature_to_plot)
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/perm5.jpg)
+
+## 2D Partial Dependence Plots
+
+We can also plot interactions between features on a 2D graph.
+
+```python
+# Similar to previous PDP plot except we use pdp_interact instead of pdp_isolate and pdp_interact_plot instead of pdp_isolate_plot
+
+features_to_plot = ['Goal Scored', 'Distance Covered (Kms)']
+
+inter1  =  pdp.pdp_interact(model=tree_model, dataset=X_test, model_features=feature_names, features=features_to_plot)
+
+pdp.pdp_interact_plot(pdp_interact_out=inter1, feature_names=features_to_plot, plot_type='contour')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/perm6.jpg)
+
+In this example, each feature can only take a limited number of values. What happens if we have continuous variables ? The level frontiers bring value on the interaction between the 2 variables.
+
+![image](https://maelfabien.github.io/assets/images/perm7.jpg)
+
+# SHAP Values
 
 
-> **Conclusion** : That's it ! I hope this introduction to Online Learning was clear. Don't hesitate to drop a comment if you have any question.
+
+
+> **Conclusion** : That's it ! Don't hesitate to drop a comment if you have any question.
