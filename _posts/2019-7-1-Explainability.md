@@ -23,6 +23,12 @@ sidebar:
 
 In this series, I will summarize the course "Machine Learning Explaibnability" from Kaggle Learn. The full course is available [here](https://www.kaggle.com/learn/machine-learning-explainability).
 
+First of all, it is important to define the difference between machine learning explainability and interpretability. According to KDnuggets :
+- Interpretability is about the extent to which a cause and effect can be observed within a system. Or, to put it another way, it is the extent to which you are able to predict what is going to happen, given a change in input or algorithmic parameters.
+- Explainability, meanwhile, is the extent to which the internal mechanics of a machine or deep learning system can be explained in human terms. 
+
+Explainability and interpretability are key elements today if we want to deploy ML algorithms in healthcare, banking and other domains.
+
 # Use cases for model insights
 
 In this course, we will answer the following questions on model insights extraction :
@@ -212,7 +218,84 @@ In this example, each feature can only take a limited number of values. What hap
 
 # SHAP Values
 
+We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction?
 
+SHAP Values (an acronym from SHapley Additive exPlanations) break down a prediction to show the impact of each feature.
+
+This could be used for :
+- banking automatic decisiom making 
+- healthcare risk factor assessment for a single person
+
+In summary, we use SHAP values to explain individual predictions.
+
+## How does it work ?
+
+SHAP values interpret the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
+
+In our football example, we could wonder how much was a prediction driven by the fact that the team scored 3 goals, instead of some baseline number of goals?
+
+We can decompose a prediction with the following equation:
+
+`sum(SHAP values for all features) = pred_for_team - pred_for_baseline_values`
+
+The SHAP Value can be represented visually as follows :
+
+![image](https://maelfabien.github.io/assets/images/shap.png)
+
+The output value is 0.70. This is the prediction for the selected team. The base value is 0.4979. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from Goal Scored being 2. Though the ball possession value has a meaningful effect decreasing the prediction.
+
+If you subtract the length of the blue bars from the length of the pink bars, it equals the distance from the base value to the output.
+
+## Example
+
+We will use the [SHAP library](https://github.com/slundberg/shap). As previously, import our Football game example :
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+
+data = pd.read_csv('../input/fifa-2018-match-statistics/FIFA 2018 Statistics.csv')
+
+y = (data['Man of the Match'] == "Yes")  # Convert from string "Yes"/"No" to binary
+feature_names = [i for i in data.columns if data[i].dtype in [np.int64, np.int64]]
+X = data[feature_names]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+my_model = RandomForestClassifier(random_state=0).fit(X_train, y_train)
+```
+
+We will look at SHAP values for a single row of the dataset (we arbitrarily chose row 5).
+
+```python
+import shap  # package used to calculate Shap values
+
+row_to_show = 5
+data_for_prediction = X_test.iloc[row_to_show]  # use 1 row of data here. Could use multiple rows if desired
+data_for_prediction_array = data_for_prediction.values.reshape(1, -1)
+
+# Create object that can calculate shap values
+explainer = shap.TreeExplainer(my_model)
+
+# Calculate Shap values
+shap_values = explainer.shap_values(data_for_prediction)
+```
+
+The `shap_values` is a list with two arrays. It's cumbersome to review raw arrays, but the shap package has a nice way to visualize the results.
+
+```python
+shap.initjs()
+shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction)
+```
+
+![image](https://maelfabien.github.io/assets/images/shap_2.png)
+
+The output prediction is 0.7, which means that the team is 70% likely to have a player win the award.
+
+So far, we have used `shap.TreeExplainer(my_model)`. The package has other explainers for every type of model :
+- `shap.DeepExplainer` works with Deep Learning models.
+- `shap.KernelExplainer` works with all models, though it is slower than other Explainers and it offers an approximation rather than exact Shap values.
 
 
 > **Conclusion** : That's it ! Don't hesitate to drop a comment if you have any question.
