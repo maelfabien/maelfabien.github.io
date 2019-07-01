@@ -137,6 +137,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [AutoML with h2o](https://maelfabien.github.io/machinelearning/AutoML/) : The interest in AutoML is rising over time. AutoML algorithms are reaching really good rankings in data science competitions. But what is AutoML ? How does it work ? When to use it ? And how can you implement an AutoML pipeline in Python ?
 
+[Machine Learning Explainability](https://maelfabien.github.io/machinelearning/Explainability/) : In this series, I will summarize the course "Machine Learning Explaibnability" from Kaggle Learn. The full course is available [here](https://www.kaggle.com/learn/machine-learning-explainability). We'll cover permutation importance, partial dependence plots and SHAP Values.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/matlab_head.jpg)

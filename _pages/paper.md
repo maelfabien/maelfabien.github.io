@@ -127,7 +127,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
   </div>
 
   <div class="column_home" id="left-col" align="center">
-    <div style="text-align:justify; align-content:center; display:inline-block;">
+    <div style="text-align:justify; align-content:left; display:inline-block;">
       <p> Hello </p>
       <code>print("Hello")</code>
     </div>
