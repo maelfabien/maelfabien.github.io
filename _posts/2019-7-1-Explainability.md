@@ -23,13 +23,13 @@ sidebar:
 
 In this series, I will summarize the course "Machine Learning Explaibnability" from Kaggle Learn. The full course is available [here](https://www.kaggle.com/learn/machine-learning-explainability).
 
-First of all, it is important to define the difference between machine learning explainability and interpretability. According to KDnuggets :
+First of all, it is important to define the difference between machine learning explainability and interpretability. According to [KDnuggets](https://www.kdnuggets.com/2018/12/machine-learning-explainability-interpretability-ai.html) :
 - Interpretability is about the extent to which a cause and effect can be observed within a system. Or, to put it another way, it is the extent to which you are able to predict what is going to happen, given a change in input or algorithmic parameters.
 - Explainability, meanwhile, is the extent to which the internal mechanics of a machine or deep learning system can be explained in human terms. 
 
 Explainability and interpretability are key elements today if we want to deploy ML algorithms in healthcare, banking and other domains.
 
-# Use cases for model insights
+# I. Use cases for model insights
 
 In this course, we will answer the following questions on model insights extraction :
 - What features in the data did the model think are most important?
@@ -60,7 +60,7 @@ For many human decisions that cannot (yet?) be made automatically by an algorith
 
 Many people won't assume they can trust your model for important decisions without verifying some basic facts. Showing the right insights, even to people with few data science knowledge, is important.
 
-# Permutation importance
+# II. Permutation importance
 
 What features have the biggest impact on predictions? There are many ways to compute feature importance. We will focus on permutation importance, which is :
 - fast to compute
@@ -114,7 +114,7 @@ In our example, the most important feature was Goals scored. The first number in
 
 Negative value for importance occurs when the feature is not important at all.
 
-# Partial dependence plots
+# III. Partial dependence plots
 
 While feature importance shows what variables most affect predictions, partial dependence plots show how a feature affects predictions.
 
@@ -216,7 +216,7 @@ In this example, each feature can only take a limited number of values. What hap
 
 ![image](https://maelfabien.github.io/assets/images/perm7.jpg)
 
-# SHAP Values
+# IV. SHAP Values
 
 We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction?
 
@@ -248,25 +248,7 @@ If you subtract the length of the blue bars from the length of the pink bars, it
 
 ## Example
 
-We will use the [SHAP library](https://github.com/slundberg/shap). As previously, import our Football game example :
-
-```python
-import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-
-data = pd.read_csv('../input/fifa-2018-match-statistics/FIFA 2018 Statistics.csv')
-
-y = (data['Man of the Match'] == "Yes")  # Convert from string "Yes"/"No" to binary
-feature_names = [i for i in data.columns if data[i].dtype in [np.int64, np.int64]]
-X = data[feature_names]
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
-my_model = RandomForestClassifier(random_state=0).fit(X_train, y_train)
-```
-
-We will look at SHAP values for a single row of the dataset (we arbitrarily chose row 5).
+We will use the [SHAP library](https://github.com/slundberg/shap). As previously, we import the Football game example. We will look at SHAP values for a single row of the dataset (we arbitrarily chose row 5).
 
 ```python
 import shap  # package used to calculate Shap values
@@ -293,9 +275,107 @@ shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction
 
 The output prediction is 0.7, which means that the team is 70% likely to have a player win the award.
 
+If we take many explanations such as the one shown above, rotate them 90 degrees, and then stack them horizontally, we can see explanations for an entire dataset:
+
+```python
+# visualize the training set predictions
+shap.force_plot(explainer.expected_value, shap_values, X)
+```
+
+![image](https://maelfabien.github.io/assets/images/shap_7.png)
+
 So far, we have used `shap.TreeExplainer(my_model)`. The package has other explainers for every type of model :
 - `shap.DeepExplainer` works with Deep Learning models.
 - `shap.KernelExplainer` works with all models, though it is slower than other Explainers and it offers an approximation rather than exact Shap values.
 
+## Advanced uses of SHAP Values
 
-> **Conclusion** : That's it ! Don't hesitate to drop a comment if you have any question.
+### Summary plots
+
+Permutation importance creates simple numeric measures to see which features mattered to a model. But it doesn't tell you how each features matter. If a feature has medium permutation importance, that could mean it has :
+- a large effect for a few predictions, but no effect in general, or
+- a medium effect for all predictions.
+
+SHAP summary plots give us a birds-eye view of feature importance and what is driving it. 
+
+![image](https://maelfabien.github.io/assets/images/shap_3.png)
+
+Each dot has 3 characteristics :
+- Vertical location shows what feature it is depicting
+- Color shows whether the feature was high or low for that row of the dataset
+- Horizontal location shows whether the effect of that value caused a higher or lower prediction
+
+In this specific example, the model ignored `Red` and `Yellow & Red` features.High values of goal scored caused higher predictions, and low values caused low predictions.
+
+Summary plots can be built the following way :
+
+```python
+# Create object that can calculate shap values
+explainer = shap.TreeExplainer(my_model)
+
+# Calculate shap_values for all of X_test rather than a single row, to have more data for plot.
+shap_values = explainer.shap_values(X_test)
+
+# Make plot. Index of [1] is explained in text below.
+shap.summary_plot(shap_values[1], X_test)
+```
+
+Computing SHAP values can be slow on large datasets.
+
+### SHAP Dependence Contribution plots
+
+Partial Dependence Plots to show how a single feature impacts predictions. But they don't show the distribution of the effects for example. 
+
+![image](https://maelfabien.github.io/assets/images/shap_4.png)
+
+Each dot represents a row of data. The horizontal location is the actual value from the dataset, and the vertical location shows what having that value did to the prediction. The fact this slopes upward says that the more you possess the ball, the higher the model's prediction is for winning the Man of the Match award.
+
+The spread suggests that other features must interact with Ball Possession %. For the same ball possession, we encounter SHAP values that range from -0.05 to 0.07.
+
+![image](https://maelfabien.github.io/assets/images/shap_5.png)
+
+We can also notice outliers that stand out spatially as being far away from the upward trend.
+
+![image](https://maelfabien.github.io/assets/images/shap_6.png)
+
+We can find an interpretation for this : In general, having the ball increases a team's chance of having their player win the award. But if they only score one goal, that trend reverses and the award judges may penalize them for having the ball so much if they score that little.
+
+To implement Dependence Contribution plors, we can use the following code :
+
+
+```python
+# Create object that can calculate shap values
+explainer = shap.TreeExplainer(my_model)
+
+# calculate shap values. This is what we will plot.
+shap_values = explainer.shap_values(X)
+
+# make plot.
+shap.dependence_plot('Ball Possession %', shap_values[1], X, interaction_index="Goal Scored")
+```
+
+### Summary plots
+
+We can also just take the mean absolute value of the SHAP values for each feature to get a standard bar plot (produces stacked bars for multi-class outputs):
+
+```python
+shap.summary_plot(shap_values, X, plot_type="bar")
+```
+
+![image](https://maelfabien.github.io/assets/images/shap_8.png)
+
+### Interaction plots
+
+We can represent the interaction effect for two features and the effect on the SHAP Value they have. This can be done by plotting a dependence plot between of the interaction values. Let's take another random example in which we consider the interaction between the age and the white blood cells, and the effect this has on the SHAP interaction values :
+
+```
+shap.dependence_plot(
+("Age", "White blood cells"),
+shap_interaction_values, X.iloc[:2000,:],
+display_features=X_display.iloc[:2000,:]
+)
+```
+
+![image](https://maelfabien.github.io/assets/images/shap_9.png)
+
+> **Conclusion** : That's it for this introduction to Machine Learning Explainability ! Don't hesitate to drop a comment if you have any question.
