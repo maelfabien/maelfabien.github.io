@@ -55,7 +55,7 @@ As you might guess, grid search does not really scale well. There is a huge numb
 
 Grid search is implemented in scikit-learn under the name of GridSearchCV (for cross validation) :
 
-```
+```python
 from sklearn.model_selection import GridSearchCV
 
 param_grid = [
@@ -82,7 +82,8 @@ The main advantage is that we can try a broader range of values or hyperparamete
 ![image](https://maelfabien.github.io/assets/images/grid_2.png)
 
 The implementation in scikit-learn is also straight forward :
-```
+
+```python
 from sklearn.model_selection import RandomizedSearchCV
 
 param_grid = [
