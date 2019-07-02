@@ -1,6 +1,6 @@
 ---
 published: true
-title: The Rosenblatt Perceptron
+title: The Rosenblatt's Perceptron
 collection: dl
 layout: single
 author_profile: false
@@ -18,19 +18,53 @@ sidebar:
 ---
 In this series of articles, I am going to focus on the basis of Deep Learning, and progressively move toward recent research papers and more advanced techniques. As I am particularly interested in computer vision, I will explore some examples applied to object detection or emotion recognition for example.
 
-{% highlight python %}
-{% endhighlight %}
-
 <script type="text/javascript" async
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-## Definition
+# History of Deep Learning
 
-A perceptron is a single layer Neural Network. A perceptron can simply be seen as a set of inputs, that are weighted and to which we apply an activation function. This produces sort of a weighted sum of inputs, resulting in an output. This is typically used for binary classification problems. 
+[Favio Vázquez](https://medium.com/@faviovazquez) has created a great summary of the deep learning timeline :
 
-The perceptron was first introduced in 1957 by Franck Rosenblatt. Since then, it has been the core of Deep Learning.
+![image](https://maelfabien.github.io/assets/images/ros_1.png)
 
+Among the most important events on this timeline, I would highlight :
+- 1958 : the Rosenbaltt's Perceptron
+- 1974 : Backpropagation
+- 1985 : Boltzmann Machines
+- 1986 : MLP, RNN
+- 2012 : Dropout
+- 2014 : GANs
+
+# Why neurons ?
+
+Neuronal networks have been at the core of the development of Deep Learning these past years. But what is the link between a neuron biologically speaking and a deep learning algorithm ?
+
+Neural networks are a set of algorithms that have been developped immitate the humain brain in the way we identify patterns. In neurology, researchers study the way we process information. We have outstanding abilities to process information quickly and extract patterns. 
+
+Take a quick example : we are able to process information pre-attentively. Indeed, in less time than a eye blink (200ms), we can identify elements that pop out from an image. On the other hand, if the element does not pop out enough, we need to make a sequential search, which is much longer.
+
+![image](https://maelfabien.github.io/assets/images/preattentive.png)
+
+The information that we process in this example allows us to make a binary classification (major class vs the outlier we're trying to identify). To understand what's going on, I'll make a brief introduction (to the extent of my limited knowledge in this field) to the architecture of a neuron biologically speaking.
+
+![image](https://maelfabien.github.io/assets/images/neuron.png)
+
+
+# The McCulloch-Pitts Neuron
+
+The first computational model of a neuron was proposed by Warren MuCulloch and Walter Pitts in 1943. We'll cover this first simple model as an introduction to the Rosenblatt's Perceptron. 
+
+How does the McCulloch-Pitts neuron work ?
+
+
+
+
+# The Rosenblatt's Perceptron
+
+A perceptron is a single layer Neural Network. A perceptron can simply be seen as a set of inputs, that are weighted and to which we apply an activation function. This produces sort of a weighted sum of inputs, resulting in an output. This is typically used for classification problems, but can also be used for regression problems.
+
+The perceptron was first introduced in 1957 by Franck Rosenblatt. Since then, it has been the core of Deep Learning. We can represent schematically a perceptron as :
 
 ![image](https://maelfabien.github.io/assets/images/perceptron.jpg)
 
@@ -39,35 +73,39 @@ We have a set of inputs $$ X_i $$, to which we apply :
 - a bias term $$ b_i $$ that can also be introduced as an input,
 - and pass the overall function into an activation function.
 
+The inputs can be seen as neurons, and will be called the **input layer**. The **activation function** might take several forms and should "send" the weighted sum into a smaller set of possible values that allows us to classify the output. 
 
-The inputs can be seen as neurons, and will be called the input layer.The activation function might take several forms and should "send" the weighted sum into a smaller set of possible values that allows us to classify the output. One common activation function for a simple perceptron is a modified version of $$ sign $$ function, noted $$ h_w(x^i) $$, for which we assign the value 1 if the weighted sum is larger than some threshold, and 0 otherwise. This projects the weighted sum of inputs into a Heaviside function.
+For binary classification for example, we'll tend to use a sigmoid activation function. Using a sigmoid activation will assign the value of a neuron to either 0 if the output is smaller than 0.5, or 1 if the neuron is larger than 0.5. The sigmoid function is defined by : $$ f(x) = \frac {1} {1 + e^{-u}} $$
 
-Then, a given observation can be either well classified, or in the wrong class. As in most optimization problems, we want to minimize the cost, i.e the sum of the individual losses on each training observation.
+![image](https://maelfabien.github.io/assets/images/sigmoid.png)
+
+A given observation can be either well classified, or in the wrong class. As in most optimization problems, we want to minimize the cost, i.e the sum of the individual losses on each training observation.
+
+# A bit of maths
 
 A pseudo code corresponding to our problem is :
 
 ![image](https://maelfabien.github.io/assets/images/pseudo.jpg)
 
-
 In the most basic framework, we consider essentially a linear classification rule than can be represented as :
 
 $$ g(x) = sign({\alpha + \beta^tx}) $$
 
-
-where $$ {\alpha} $$ represents the bias term, and $$ {\beta} $$ the weights on each neuron.
+where :
+- the bias term is $$ {\alpha} $$
+- and the weights on each neuron is $$ {\beta} $$.
 
 In this framework, the empirical loss function to minimize when classifying is :
 
 $$ min_{(x, {\beta})}\hat{L}_n(g) $$
 
-$$ \hat{L}_n(g) = \frac{1}{n} \sum 1(-(\alpha + \beta^tx)y > 0)  $$
+$$ \hat{L}_n(g) = \frac{1}{n} \sum \one (-(\alpha + \beta^tx)y > 0)  $$
 
 However, due to the form of the $$ sign $$ function, we cannot apply a gradient descent to identify the minimum. 
 
+![image](https://maelfabien.github.io/assets/images/Signum_function.svg.jpg)
 
-![image](https://maelfabien.github.io/assets/images/Signum_function.svg.jpg){:height="50%" width="50%"}
-
-However, due to the form of the \(sign\) function, we cannot apply a gradient descent to identify the minimum. We need to apply a stochastic gradient descent. The perceptron "learns" how to adapt the weights using back propagation. The weights and bias are firstly set randomly, and we compute an error rate. Then, we proceed to a back propagation to adjust the parameters that we did not correctly identify, and we start all over again for a given number of epoch.
+We need to apply a stochastic gradient descent. The perceptron "learns" how to adapt the weights using back propagation. The weights and bias are firstly set randomly, and we compute an error rate. Then, we proceed to a back propagation to adjust the parameters that we did not correctly identify, and we start all over again for a given number of epoch.
 
 We will further detail the concepts of stochastic gradient descent and back propagation in the context of Multilayer Perceptron.
 
@@ -80,6 +118,8 @@ This produces a modified perceptron, which is called a logistic regression with 
 The perceptron has another major drawback. If the categories are linearly separable for example, it identifies a single separating hyper-plane without taking into account the notion of margin we would like to maximize. This problem is solved by the Support Vector Machine (SVM) algorithm.
 
 Finally, the perceptron classification rule is linear. This is due to the simple structure of the perceptron, and implies limitations when looking at complex problems such as emotion recognition.
+
+# Implementation in Tensorflow
 
 Using tensorflow famous data base MNIST as an example, a perceptron can be built the following way in Python. This simple application heads an accuracy of around 80 percents. This example is taken from the book : "Deep Learning for Computer Vision" by Dr. Stephen Moore, which I do encourage you to read.
 
