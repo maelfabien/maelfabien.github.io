@@ -36,7 +36,7 @@ Examples of time series include :
 
 ![image](https://maelfabien.github.io/assets/images/ts_1.jpg)
 
-Tme series are used for :
+Time series are used for :
 - forecasting
 - estimating causal effects
 - estimating correlation over time
@@ -188,7 +188,7 @@ plt.show()
 
 ```python
 plt.figure(figsize=(12,8))
-plt.plot(df['Date'], df['Solar'], linewidth = 0.5)
+plt.plot(df['Solar'], linewidth = 0.5)
 plt.title("Solar production over time")
 plt.show()
 ```
