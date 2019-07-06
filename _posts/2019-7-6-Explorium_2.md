@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: Interpretability and Explainability
 collection: explorium
 layout: single
@@ -186,7 +186,11 @@ We will explore several techniques of model explainability :
 - partial dependence plots
 - shapley values
 
-## 1. Permutation importance
+
+## 1. Individual Conditional Expectation (ICE)
+
+
+## 2. Permutation importance
 
 What features have the biggest impact on predictions? There are many ways to compute feature importance. We will focus on permutation importance, which is :
 - fast to compute
@@ -240,7 +244,7 @@ In our example, the most important feature was Goals scored. The first number in
 
 Negative value for importance occurs when the feature is not important at all.
 
-## 2. Partial dependence plots
+## 3. Partial dependence plots
 
 While feature importance shows what variables most affect predictions, partial dependence plots show how a feature affects predictions.
 
@@ -342,7 +346,7 @@ In this example, each feature can only take a limited number of values. What hap
 
 ![image](https://maelfabien.github.io/assets/images/perm7.jpg)
 
-## 3. Shapley Values
+## 4. Shapley Values
 
 We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction?
 
