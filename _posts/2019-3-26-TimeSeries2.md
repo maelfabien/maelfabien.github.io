@@ -149,7 +149,7 @@ $$ y_t = a_1 y_{t-1} + a_2 y_{t-2} + ... + a_p y_{t-p} + \epsilon_t $$
 
 We define the characteristic equation as :
 
-$$ m^p - m^{p-1}a_1 - m^{p-2}a_2 - ... - a_p = 0 $$. If $$ m = 1 $$ is a root to this equation, then the process is said to have a unit root. Equivalently, the process is said to be integrated of order 1 : $$ I(1) $$. If
+$$ m^p - m^{p-1}a_1 - m^{p-2}a_2 - ... - a_p = 0 $$. If $$ m = 1 $$ is a root to this equation, then the process is said to have a unit root. Equivalently, the process is said to be integrated of order 1 : $$ I(1) $$.
 
 In other words, there is a unit root if the previous values keep having a 1:1 impact on the current value. If we consider a simple autoregressive model AR(1) : $$ y_t = a_1 y_{t-1} + \epsilon_t $$, the process has a unit root when $$ a_1 = 1 $$.
 
@@ -183,7 +183,7 @@ We have $$ \theta = \rho -1 $$ and test $$ H_0 : \theta = 0 $$.
 
 ### Augmented Dickey-Fuller Test
 
-The Augmented Dickey-Fuller Test (ADF) is an augmented version of the Dickey-Fuller test in the sense that it can test for a more complex ste of time series models. For example, consider an ADF on an AR(p) process :
+The Augmented Dickey-Fuller Test (ADF) is an augmented version of the Dickey-Fuller test in the sense that it can test for a more complex set of time series models. For example, consider an ADF on an AR(p) process :
 
 $$ \Delta_t = \alpha + \theta y_{t-1} + \gamma_1 \Delta y_{t-1} + ... + \gamma_p \Delta y_{t-p} + \epsilon_t $$
 
