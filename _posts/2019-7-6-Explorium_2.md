@@ -51,7 +51,7 @@ For example, we can plot a linear regression between the GDP and the housing pri
 - $$ {\beta}_1 $$ is the coefficient associated with $$ X_i $$ . It describes the weight of $$ X_i $$ on the final output.
 - $$ {\epsilon}_i $$ is called the residual. It is a white noise term that explains the variability in real life datas. 
 
-![image](https://maelfabien.github.io/assets/images//assets/images/Graph2.jpg)
+![image](https://maelfabien.github.io/assets/images/Graph2.jpg)
 
 If we have a dataframe (`df`) with both the GDP and the housing price, we can build a simple model the following way :
 
@@ -83,7 +83,7 @@ $$ t_{\hat{\beta_j}} = \frac{\hat{\beta_j}}{SE(\hat{\beta_j})} $$
 - Linear regression is a basic model. It is rare to observe linear relationships in the data, and the linear regression is rarely performing well.
 - Moreover, when it comes to classification tasks, the linear regression is risky to apply, since an hyperplane is not a good way to send the output between 0 and 1. We usually prefer to apply the Logistic Regression.
 
-![image](https://maelfabien.github.io/assets/images//assets/images/log_1.png)
+![image](https://maelfabien.github.io/assets/images/log_1.png)
 
 ## 2. Logistic Regression
 
@@ -91,7 +91,7 @@ The logistic regression using the logistic function to send the output between 0
 
 $$ Sig(z) = \frac {1} {1 + e^{-z}} $$
 
-![image](https://maelfabien.github.io/assets/images//assets/images/log_2.png)
+![image](https://maelfabien.github.io/assets/images//log_2.png)
 
 In the logistic regression model, instead of a linear relation between the input and the output, the relation is the following :
 
