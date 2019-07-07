@@ -299,13 +299,35 @@ The relationship between the inputs and the output is given by :
 
 $$ \hat{y}=\hat{f}(x)=\sum_{m=1}^Mc_m{}I\{x\in{}R_m\} $$ where $$ R_m $$ denotes the subset $$ m $$. If an observation to predict falls into the subset $$ R_j $$, the predicted value is $$ c_j $$, the average value of all training instances that fell in this subset.
 
+To implement decision trees in Python, we can use scikit-learn :
+
+```python
+clf = DecisionTreeClassifier(max_depth=3)
+clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
+accuracy_score(y_pred, y_test)
+```
+
+`0.9210526315789473`
+
+
 ### Interpretability of CART algorithm
 
 By growing the depth of the tree, we add "AND" conditions. For a new instance, the feature 1 is larger than `a` **and** the feature 3 is smaller than `b` **and** the feature 2 equals `c`.
 
 CART algorithm offers a nice way to compute the importance of each feature in the model. We measure the importance of a Gini index by the extent to which the chosen citeria has been decreased when creating a new node on the given feature.
 
-The tree offers a natural interpretability, and can be represented visually.
+The tree offers a natural interpretability, and can be represented visually :
+
+```python
+export_graphviz(clf, out_file="tree.dot")
+with open("tree.dot") as f:
+dot_graph = f.read()
+
+graphviz.Source(dot_graph)
+```
+
+
 
 ### Limitations of CART algorithm
 
