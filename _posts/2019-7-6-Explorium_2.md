@@ -31,50 +31,137 @@ Fist of all, let's define the difference between machine learning explainability
     - Linear regression
     - Logistic regression
     - Decision trees
+    - ...
 - Explainability can be applied to any model, even models that are not interpretable. Explainability is the extent to which we can interpret the outcome and the internal mechanics of an algorithm. 
+
+In this article, we will be using the [UCI Machine learning repository Breast Cancer](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) data set. It is also available on [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/downloads/breast-cancer-wisconsin-data.zip/2). The data has 30 features, including the radius of the tumor, the texture, the perimiter... Our task will be to perform a binary classification of the tumor, that is either malignant (M) or benign (B). Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
+
+Start off by importing the packages :
+
+```python
+# Handle data and plot
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Interpretable models
+from sklearn.model_selection import train_test_split
+import sklearn.linear_model as lm
+
+# Explainability of models
+
+```
+
+Then, read the data and apply a simply numeric transformation of the label ("M" or "B").
+
+```python
+df = pd.read_csv('data.csv').drop(['id', 'Unnamed: 32'], axis=1)
+
+def to_category(diag):
+    if diag == "M" :
+        return 1
+    else :
+        return 0
+
+df['diagnosis'] = df['diagnosis'].apply(lambda x : to_category(x))
+df.head()
+```
+
+![image](https://maelfabien.github.io/assets/images/df_head.png)
+
+```python
+X = df.drop(['diagnosis'], axis=1)
+y = df['diagnosis']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+```
+
+It is a great exercise to work on interpretability and explainability of models in the healthcare sector, since performing such work would typically be required by authorities.
+
+In the next sections, we will cover the main interpretable models, their advantages, their limitations and examples. We will then explore explainability methods, as well as examples for each method.
 
 # I. Interpretable models
 
 ## 1. Linear Regression
 
-Linear regression is one of the the most basic models : $$ Y_i =  f(X_i) + {\epsilon} $$. This simple equation states the following :
+Linear regression is one of the most basic models and takes the following form.
+
+$$ Y_i = {\beta}_0 + {\beta}_1{X}_{1i} + {\beta}_2{X}_{2i} + {\beta}_3{X}_{3i} + ... + {\epsilon}_i $$. 
+
+This simple equation states the following :
 - suppose we have $$ n $$ observations of a dataset and we pick on $$ i^{th} $$
-- $$ Y_i $$ is the output of this observation, called the target
-- $$ X_i $$ is called a feature and is an independent variable we observe
-- $$ f $$ is the real model that states the link between the features and the output
-- $$ {\epsilon} $$ is the noise of the model. The data we observe usually do not stand on a straight line, because there are variations of the measure in real life. 
-
-For example, we can plot a linear regression between the GDP and the housing price. The model is the following : $$ Y_i = {\beta}_0 + {\beta}_1{X}_{i} + {\epsilon}_i $$, where $$ X $$ is the GDP and $$ Y $$ the housing price.
+- $$ Y_i $$ is the target, e.g. the diagnosis of the breast tissue
+- $$ {X}_{1i} $$ is the $$ i^{th} $$ observation of the first feature, e.g. the radius of the tumor
+- $$ {X}_{2i} $$ is the $$ i^{th} $$ observation of the second feature, e.g. the texture of the tumor
+- ...
 - $$ {\beta}_0 $$ is called the intercept, it is a constant term
-- $$ {\beta}_1 $$ is the coefficient associated with $$ X_i $$ . It describes the weight of $$ X_i $$ on the final output.
-- $$ {\epsilon}_i $$ is called the residual. It is a white noise term that explains the variability in real life datas. 
+- $$ {\beta}_1 $$ is the coefficient associated with $$ X_{1i} $$ . It describes the weight of $$ {X}_{1i} $$ on the final output.
+- ...
+- $$ {\epsilon} $$ is the noise of the model. The data we observe reraly stand on a straight line or on a hyperplane.
 
-![image](https://maelfabien.github.io/assets/images/Graph2.jpg)
-
-If we have a dataframe (`df`) with both the GDP and the housing price, we can build a simple model the following way :
+We can fit the linear regression using the `statsmodel` package :
 
 ```python
-import sklearn.linear_model as lm
-
-X = df[['gdp']]
-y = df['house']
-
-skl_linmod = lm.LinearRegression(fit_intercept = True).fit(X,y)
-beta1_sk = skl_linmod.coef_[0]
-beta0_sk = skl_linmod.intercept_
+model = sm.OLS(y_train, X_train).fit()
+model.summary()
 ```
 
-If we have more features observed (other than the GDP), we build a more complex model :  $$ \hat{Y}_i = \hat{\beta}_0 + \hat{\beta}_1{X}_{1i} + \hat{\beta}_2{X}_{2i} $$. The more general framework can be described by : $$ Y =  X {\beta}+ {\epsilon} $$ 
+![image](https://maelfabien.github.io/assets/images/stats.png)
+
+We have access to the coefficient, the standard error, the t-statistics and the p-value of every feature.
 
 ### Interpretability of Linear Regression
 
 - The coefficients of a linear regression are directly interpretable. At stated above, each coefficient describes the effect on the output of a change of 1 unit of a given input. 
 - The importance of a feature can be seen as the absolute value of the t-statistic value. The more variance the estimated weight has, the less important the feature is. The higher the estimated coefficient, the more important the feature is.
+- In a binary classification task, each coefficient can be seen as a percentage of contribution to a class or another.
 
 $$ t_{\hat{\beta_j}} = \frac{\hat{\beta_j}}{SE(\hat{\beta_j})} $$
-- The variance explained by the model can be explained by the $$ R^2 $$ coefficient
-- We can use confidence intervals and tests for coefficient values
+- The variance explained by the model can be explained by the $$ R^2 $$ coefficient :
+
+```python
+y_pred = model.predict(X_test)
+r2_score(y_test, y_pred) 
+```
+`0.6857028648161004`
+
+- We can use confidence intervals and tests for coefficient values : 
+
+```python
+model.conf_int()
+```
+
+|  | 0 | 1 |
+| radius_mean | -0.854929  | -0.071102 |
+| texture_mean | -0.007799 | 0.027502 |
+| perimeter_mean | -0.028758 | 0.083970 |
+| ...  |  ...  | ... |
+
 - We are guaranteed to find the best coefficients by OLS properties
+
+To illustrate the interpretability of the Linear Regression, we can plot the following graph. This work was inspired by the excellent work of [Zhiya Zuo](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/). Start by computing an error term equal to the difference between the parameter and the lower confidence interval bound, and build a single table with the coefficient, the error term and the name of the variable.
+
+```python
+err = model.params - model.conf_int()[0]
+coef_df = pd.DataFrame({'coef': model.params.values[1:], #drop the intercept
+    'err': err.values[1:], 
+    'varname': err.index.values[1:]
+})
+```
+
+Then, plot the graph :
+
+```python
+coef_df.plot(y='coef', x='varname', kind='bar', color='none', yerr='err', legend=False, figsize=(12,8))
+plt.scatter(x=np.arange(coef_df.shape[0]), s=100, y=coef_df['coef'], color='blue')
+plt.axhline(y=0, linestyle='--', color='black', linewidth=1)
+plt.title("Coefficient and Standard error")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/coef_lin.png)
+
+This graph displays for each feature, the coefficient value as well as the standard error around this coefficient.
 
 ### Limitations of Linear Regression
 
@@ -82,6 +169,48 @@ $$ t_{\hat{\beta_j}} = \frac{\hat{\beta_j}}{SE(\hat{\beta_j})} $$
 - Moreover, when it comes to classification tasks, the linear regression is risky to apply, since an hyperplane is not a good way to send the output between 0 and 1. We usually prefer to apply the Logistic Regression.
 
 ![image](https://maelfabien.github.io/assets/images/log_1.png)
+
+We can also illustrate this limitation by plotting the predictions sorted by value :
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(np.sort(y_pred))
+plt.axhline(0.5, c='r')
+plt.title("Predictions")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/pred.png)
+
+Setting the threshold to 0.5 seems indeed to be an arbitrary choice, since the output is not mapped between 0 and 1 systematically.
+
+We can show that modifying the threshold that we consider for classifying in one class or another has a large effect on the accuracy :
+
+```python
+def classify(pred, thr = 0.5) :
+    if pred < thr :
+        return 0
+    else :
+        return 1
+
+accuracy = []
+for thr in np.linspace(0,1,100): 
+    y_pred_class = y_pred.apply(lambda x: classify(x, thr)) 
+    accuracy.append(accuracy_score(y_pred_class, y_test))
+
+plt.figure(figsize=(12,8))
+plt.plot(accuracy)
+plt.title("Acccuracy depending on threshold")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_2.png)
+
+The maximum accuracy is reached for a threshold of 40.4% : 
+
+`np.linspace(0,1,100)[np.argmax(accuracy)]`
+
+For this threshold, the accuracy achieved is 0.9385. Although the linear regression remains interesting for interpretability purposes, it is not optimal to tune the threshold on the predictions. We tend to use logistic regression instead.
 
 ## 2. Logistic Regression
 
@@ -109,50 +238,43 @@ $$ = exp^{\beta_j (X_j + 1) - \beta_j X_j} = exp^{\beta_j} $$
 
 A change in $$ X_j $$ by one unit increases the log odds ratio by the value of the corresponding weight : $$ exp^{\beta_j} $$.
 
-The implementation is straight forward in Python using scikit-learn. We can for example use breast cancer data :
+The implementation is straight forward in Python using scikit-learn. 
 
 ```python
-# Imports
-from sklearn.datasets import load_breast_cancer
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-
-data = load_breast_cancer()
-```
-
-We then split the data into train and test :
-
-```python
-X_train, X_test, y_train, y_test = train_test_split(data['data'], data['target'], test_size = 0.25)
-```
-
-By default, L2-Regularization is implemented. Using L1-Regularization, we achieve :
-
-```
-lr = LogisticRegression(penalty='l1')
+lr = LogisticRegression()
 lr.fit(X_train, y_train)
-
 y_pred = lr.predict(X_test)
+y_proba = lr.predict_proba(X_test)
 print(accuracy_score(y_pred, y_test))
-print(f1_score(y_pred, y_test))
 ```
 
-```
-0.958041958041958
-0.9655172413793104
-```
-
-To print the coefficients, simply use :
-
-```python
-lr.coef_
-```
+`0.9473684210526315`
 
 ### Interpretability of Logistic Regression
 
 With the logistic regression, we can still apply test hypothesis, build confidence intervals and compute the explained variance. Many of the advantages of the linear regression remain.
+
+For example, to plot the value of the coefficients :
+
+```python
+plt.figure(figsize=(12,8))
+plt.barh(X.columns,lr.coef_[0])
+plt.title("Coefficient values")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_3.png)
+
+It is a model meant for binary classification, so the prediction probabilities are sent between 0 and 1.
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(np.sort(y_proba[:,0]))
+plt.axhline(0.5, c='r')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_4.png)
 
 ### Limitations of Logistic Regression
 
@@ -160,11 +282,9 @@ Just like linear regression, the model remains quite limited in terms of perform
 
 ## 3. Decision Trees
 
-Linear regression and logistic regression fail when features interact with each other.
+Linear regression and logistic regression fail when features interact with each other. The Classification And Regression Trees (CART) algorithm is the most simple and popular tree algorithm.
 
 ![image](https://maelfabien.github.io/assets/images/dt.png)
-
-The Classification And Regression Trees (CART) algorithm is the most simple and popular tree algorithm.
 
 To build the tree, we choose each time the feature that splits our data the best way possible. How do we measure the qualitiy of a split ? Let $ p_{i} $ be the fraction of items labeled with class i in the set :
 - Cross-entropy : $ H(p,q) = -\sum_{x \in {\mathcal{X}}} p(x) \log q(x) $ 
@@ -220,35 +340,19 @@ We will explore several techniques of model explainability :
 - partial dependence plots
 - shapley values
 
-## 1. Individual Conditional Expectation (ICE)
+## 1. Feature Importance
 
-How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). 
+What features have the biggest impact on predictions? There are many ways to compute feature importance. We will focus on **permutation importance**, which is fast to compute and widely used.
 
+Permutation importance is computed after a model has been fitted. It shows how randomly shuffling the rows of a single column of the validation data, leaving the target and all other columns in place affects the accuracy.
 
-
-
-
-## 2. Permutation importance
-
-What features have the biggest impact on predictions? There are many ways to compute feature importance. We will focus on permutation importance, which is :
-- fast to compute
-- widely used
-- consistent with the properties needed
-
-### How does it work?
-
-Permutation importance is computed after a model has been fitted. It answers the following question :
-If with randomly shuffle a single column of the validation data, leaving the target and all other columns in place, how would that affect the accuracy?
-
-For example, say we want to predict the height of a person at age 20 based on a set of features, including some less relevant ones (the number of socks owned at age 10):
+For example, say that as before, we try to predict if a breast tumor is malignant or benign. We will randomly shuffle, column by column, the rows of the texture, the perimeter, the area, the smoothness...
 
 ![image](https://maelfabien.github.io/assets/images/perm.jpg)
 
-Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. From the impact on the accuracy, we can determine the importance of a feature.
+Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. 
 
-### Example
-
-In this example, we will try to predict the "Man of the Game" of a football match based on a set of features of a player in a match.
+We will use a Random Forest Classifier for the classification task.
 
 ```python
 import numpy as np
@@ -281,6 +385,33 @@ eli5.show_weights(perm, feature_names = val_X.columns.tolist())
 In our example, the most important feature was Goals scored. The first number in each row shows how much model performance decreased with a random shuffling (in this case, using "accuracy" as the performance metric). We measure the randomness by repeating the process with multiple shuffles.
 
 Negative value for importance occurs when the feature is not important at all.
+
+## 2. Individual Conditional Expectation (ICE)
+
+How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). 
+
+To build ICE plots, simply use `pycebox`. Start off by installing the package : 
+
+```python
+pip install pycebox
+```
+
+```
+`X_train = pd.DataFrame(train_X_imp, columns=features)
+forty_ice_df = ice(data=X_train, column='Forty', predict=model.predict)
+```
+
+And build the plot :
+
+```
+ice_plot(forty_ice_df, c='dimgray', linewidth=0.3)
+plt.ylabel('Pred. AV %ile')
+plt.xlabel('Forty');
+```
+
+![image](https://maelfabien.github.io/assets/images/ice.png)
+
+Thanks to ICEs, we understand the impact of a feature on the probabilities of individual instances, and we easily understand trends. However, the ICE curves only display one feature at a time, and we cannot plot the joint importance of 2 features for example. Partial dependence plots appear to overcome this issue.
 
 ## 3. Partial dependence plots
 
@@ -545,3 +676,13 @@ display_features=X_display.iloc[:2000,:]
 ```
 
 ![image](https://maelfabien.github.io/assets/images/shap_9.png)
+
+## 5. Approximation models
+
+Approximation models (or global surrogate) is a simple and quite efficient trick. The idea is really simple : we train an interpretable model to approach the predictions of a black-box algorithm. 
+
+We keep the original data, and use as `y_train` the predictions made on a data sample by the black-box algorithm. We can use any interpretable model, and benefit from all the advantages of the model chosen.
+
+We might however loose accuracy compared to the black-box model, and we must pay attention to the way we sample data to train the black box algorithm.
+
+> We have covered in this article the motivation for interpretable and explainable machine learning, the main interpretable models and the most widely used methods for explainable machine learning models. The need for transparent models has been rising and there is a clear demand nowadays for such techniques.
