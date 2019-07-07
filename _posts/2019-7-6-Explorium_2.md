@@ -507,49 +507,34 @@ model=rf, X=X_train, features=features_to_plot, feature_names=features_to_plot
 
 ## 4. Shapley Values
 
+### Force plots
+
 We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction?
 
-SHAP Values (an acronym from SHapley Additive exPlanations) break down a prediction to show the impact of each feature.
-
-This could be used for :
-- banking automatic decisiom making 
-- healthcare risk factor assessment for a single person
-
-In summary, we use SHAP values to explain individual predictions.
-
-### How does it work ?
+SHAP Values (an acronym from SHapley Additive exPlanations) break down a prediction to show the impact of each feature. We use SHAP values to explain individual predictions.
 
 SHAP values interpret the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
 
-In our football example, we could wonder how much was a prediction driven by the fact that the team scored 3 goals, instead of some baseline number of goals?
+In the breast cancer example, we could wonder how much was a prediction driven by the fact that the radius was 17.1mm, instead of some baseline number?
 
 We can decompose a prediction with the following equation:
 
-`sum(SHAP values for all features) = pred_for_team - pred_for_baseline_values`
+`sum(SHAP values for all features) = pred_for_patient - pred_for_baseline_values`
 
-The SHAP Value can be represented visually as follows :
-
-![image](https://maelfabien.github.io/assets/images/shap.png)
-
-The output value is 0.70. This is the prediction for the selected team. The base value is 0.4979. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from Goal Scored being 2. Though the ball possession value has a meaningful effect decreasing the prediction.
-
-If you subtract the length of the blue bars from the length of the pink bars, it equals the distance from the base value to the output.
-
-### Example
-
-We will use the [SHAP library](https://github.com/slundberg/shap). As previously, we import the Football game example. We will look at SHAP values for a single row of the dataset (we arbitrarily chose row 5).
+We will use the [SHAP library](https://github.com/slundberg/shap). We will look at SHAP values for a single row of the dataset (we arbitrarily chose row 5). To install the `shap` package : 
 
 ```python
-import shap  # package used to calculate Shap values
+pip install shap
+```
 
-row_to_show = 5
-data_for_prediction = X_test.iloc[row_to_show]  # use 1 row of data here. Could use multiple rows if desired
+Then, compute the Shapley values for this row, using our random forest classifier fitted previously.
+
+```python
+row = 5
+data_for_prediction = X_test.iloc[row]  # use 1 row of data here. Could use multiple rows if desired
 data_for_prediction_array = data_for_prediction.values.reshape(1, -1)
 
-# Create object that can calculate shap values
-explainer = shap.TreeExplainer(my_model)
-
-# Calculate Shap values
+explainer = shap.TreeExplainer(rf)
 shap_values = explainer.shap_values(data_for_prediction)
 ```
 
@@ -560,9 +545,13 @@ shap.initjs()
 shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction)
 ```
 
-![image](https://maelfabien.github.io/assets/images/shap_2.png)
+![image](https://maelfabien.github.io/assets/images/pred_13.png)
 
-The output prediction is 0.7, which means that the team is 70% likely to have a player win the award.
+The output prediction is 0, which means the model classifies this observation as benign.
+
+The base value is 0.3633. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from `radius_worst`.
+
+If you subtract the length of the blue bars from the length of the pink bars, it equals the distance from the base value to the output.
 
 If we take many explanations such as the one shown above, rotate them 90 degrees, and then stack them horizontally, we can see explanations for an entire dataset:
 
@@ -576,8 +565,6 @@ shap.force_plot(explainer.expected_value, shap_values, X)
 So far, we have used `shap.TreeExplainer(my_model)`. The package has other explainers for every type of model :
 - `shap.DeepExplainer` works with Deep Learning models.
 - `shap.KernelExplainer` works with all models, though it is slower than other Explainers and it offers an approximation rather than exact Shap values.
-
-### Advanced uses of SHAP Values
 
 ### Summary plots
 
@@ -676,3 +663,9 @@ We keep the original data, and use as `y_train` the predictions made on a data s
 We might however loose accuracy compared to the black-box model, and we must pay attention to the way we sample data to train the black box algorithm.
 
 > We have covered in this article the motivation for interpretable and explainable machine learning, the main interpretable models and the most widely used methods for explainable machine learning models. The need for transparent models has been rising and there is a clear demand nowadays for such techniques.
+
+Sources and resources :
+- [Interpretable ML Book](https://christophm.github.io/interpretable-ml-book)
+- [Kaggle Learn](https://www.kaggle.com/learn/machine-learning-explainability)
+- [Savvas Tjortjoglou's blog](http://savvastjortjoglou.com/intrepretable-machine-learning-nfl-combine.html)
+- [Zhiya Zuo's blog](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/).
