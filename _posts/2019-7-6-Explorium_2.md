@@ -572,18 +572,7 @@ Permutation importance creates simple numeric measures to see which features mat
 - a large effect for a few predictions, but no effect in general, or
 - a medium effect for all predictions.
 
-SHAP summary plots give us a birds-eye view of feature importance and what is driving it. 
-
-![image](https://maelfabien.github.io/assets/images/shap_3.png)
-
-Each dot has 3 characteristics :
-- Vertical location shows what feature it is depicting
-- Color shows whether the feature was high or low for that row of the dataset
-- Horizontal location shows whether the effect of that value caused a higher or lower prediction
-
-In this specific example, the model ignored `Red` and `Yellow & Red` features.High values of goal scored caused higher predictions, and low values caused low predictions.
-
-Summary plots can be built the following way :
+SHAP summary plots give us a birds-eye view of feature importance and what is driving it. Summary plots can be built the following way :
 
 ```python
 # Create object that can calculate shap values
@@ -596,11 +585,27 @@ shap_values = explainer.shap_values(X_test)
 shap.summary_plot(shap_values[1], X_test)
 ```
 
-Computing SHAP values can be slow on large datasets.
+![image](https://maelfabien.github.io/assets/images/pred_14.png)
+
+Each dot has 3 characteristics :
+- Vertical location shows what feature it is depicting
+- Color shows whether the feature was high or low for that row of the dataset
+- Horizontal location shows whether the effect of that value caused a higher or lower prediction
+
+High values of worst radius caused higher output values, and low values caused lower output values. Large "worst radius" seems to be related to a higher rate of malignant tumor.
 
 ### SHAP Dependence Contribution plots
 
 Partial Dependence Plots to show how a single feature impacts predictions. But they don't show the distribution of the effects for example. 
+
+
+
+
+
+
+
+
+
 
 ![image](https://maelfabien.github.io/assets/images/shap_4.png)
 
@@ -616,8 +621,7 @@ We can also notice outliers that stand out spatially as being far away from the 
 
 We can find an interpretation for this : In general, having the ball increases a team's chance of having their player win the award. But if they only score one goal, that trend reverses and the award judges may penalize them for having the ball so much if they score that little.
 
-To implement Dependence Contribution plors, we can use the following code :
-
+To implement Dependence Contribution plots, we can use the following code :
 
 ```python
 # Create object that can calculate shap values

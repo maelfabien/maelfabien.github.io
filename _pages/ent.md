@@ -8,6 +8,7 @@ header :
     image: "https://maelfabien.github.io/assets/images/ent_head.png"
 sidebar:
     nav: sidebar-sample
+comments : true
 ---
 
 I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at HEC Lausanne at that time. I've always wanted to create something fom scratch. I decided to apply to the entrepreneurial contest Start Lausanne with a friend, and present the following idea :
