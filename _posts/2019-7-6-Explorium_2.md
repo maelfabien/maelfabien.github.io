@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Interpretability and Explainability
 collection: explorium
 layout: single
@@ -26,8 +26,6 @@ Machine Learning interpretability and explainability are becoming essential in s
 
 Christop Molnar has recently publshed an excellent book on this topic : [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/).
 
-# I. Interpretability vs. Explainability 
-
 Fist of all, let's define the difference between machine learning explainability and interpretability :
 - Interpretability is linked to the model. A model is said to be interpretable if its parameters are linked in a clear way to the impact of a feature on the outcome. In some sense, it is the extent to which we are able to predict what is going to happen, given a change in input. Among interpretable models, one can for example mention :
     - Linear regression
@@ -35,7 +33,7 @@ Fist of all, let's define the difference between machine learning explainability
     - Decision trees
 - Explainability can be applied to any model, even models that are not interpretable. Explainability is the extent to which we can interpret the outcome and the internal mechanics of an algorithm. 
 
-# II. Interpretable models
+# I. Interpretable models
 
 ## 1. Linear Regression
 
@@ -156,17 +154,52 @@ lr.coef_
 
 With the logistic regression, we can still apply test hypothesis, build confidence intervals and compute the explained variance. Many of the advantages of the linear regression remain.
 
-### Interpretability of Logistic Regression
+### Limitations of Logistic Regression
 
 Just like linear regression, the model remains quite limited in terms of performance, although a good regularization can offer decent performance. The coefficients are not as easily interpretable as for the linear regression. There is a tradeoff to make when choosing these kind of models, and they are often used in customer classification for car rental companies or in banking industry for example.
 
 ## 3. Decision Trees
 
-The logistic regression using the logis
+Linear regression and logistic regression fail when features interact with each other.
 
+![image](https://maelfabien.github.io/assets/images/dt.png)
 
+The Classification And Regression Trees (CART) algorithm is the most simple and popular tree algorithm.
 
-# III. Model explainability
+To build the tree, we choose each time the feature that splits our data the best way possible. How do we measure the qualitiy of a split ? Let $ p_{i} $ be the fraction of items labeled with class i in the set :
+- Cross-entropy : $ H(p,q) = -\sum_{x \in {\mathcal{X}}} p(x) \log q(x) $ 
+- Gini impurity : $ I_G = 1 - \sum_{i = 1...J} {p_i}^2 $
+- classification error
+
+Note that in order to grow a decision tree for numeric data, we usually order the data by value of each feature, compute the average between every successive pair of values, and compute the split quality measure (e.g Gini) using this average.
+
+We stop the development of the tree when splitting a node does not lower the impurity.
+
+The relationship between the inputs and the output is given by :
+
+$$ \hat{y}=\hat{f}(x)=\sum_{m=1}^Mc_m{}I\{x\in{}R_m\} $$ where $$ R_m $$ denotes the subset $$ m $$. If an observation to predict falls into the subset $$ R_j $$, the predicted value is $$ c_j $$, the average value of all training instances that fell in this subset.
+
+### Interpretability of CART algorithm
+
+By growing the depth of the tree, we add "AND" conditions. For a new instance, the feature 1 is larger than `a` **and** the feature 3 is smaller than `b` **and** the feature 2 equals `c`.
+
+CART algorithm offers a nice way to compute the importance of each feature in the model. We measure the importance of a Gini index by the extent to which the chosen citeria has been decreased when creating a new node on the given feature.
+
+The tree offers a natural interpretability, and can be represented visually.
+
+### Limitations of CART algorithm
+
+CART algorithms fails to represent linear relationships between the input and the output. It easily overfits and gets quite deep if we don't crontrol the model. For this reason, tree based ensemble models such as Random Forest have been developped.
+
+## 4. Other models
+
+There are other models that are by construction interpretable :
+- K-Nearest Neighbors (KNN)
+- Generalized Linear Models (GLMs)
+- Stochastic processses such as Poisson processes if you want to model arrival rates or goals in a football match
+- ...
+
+# II. Model explainability
 
 If we don't have to use interpretable models and need higher performance, we tend to use black box models such as XGBoost for example. It might however be needed, for various reasons, to provide an explaination of the outcome and the inner mechanics of the model. In such case, using model explainability techniques is the right choice. 
 
@@ -182,12 +215,17 @@ The main questions model explainability answers are :
 - how do you decompose the model outcome and the contribution of each feature ?
 
 We will explore several techniques of model explainability :
+- individual conditional expectation
 - permutation importance
 - partial dependence plots
 - shapley values
 
-
 ## 1. Individual Conditional Expectation (ICE)
+
+How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). 
+
+
+
 
 
 ## 2. Permutation importance
