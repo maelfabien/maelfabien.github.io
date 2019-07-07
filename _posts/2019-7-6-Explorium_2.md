@@ -22,6 +22,8 @@ sidebar:
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+In the previous blog post ["Complexity vs. Explainability"](https://www.explorium.ai/complexity-vs-explainability/), we highlighted the tradeoff between increasing the model's complexity and loosing explainability. In this article, we will continue our discussion and see how to make models interpretable and explainable.
+
 Machine Learning interpretability and explainability are becoming essential in solutions we build nowadays. In fields such as health care or banking, there exists legal restrictions that interpretability and explainability could help overcome. In solutions that support a human decision, it is essential to build a trust relationship and explain the outcome of an algorithm. The whole idea behind interpretable and explainable ML is to avoid the black box effect.
 
 Christop Molnar has recently publshed an excellent book on this topic : [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/).
@@ -286,9 +288,9 @@ Linear regression and logistic regression fail when features interact with each 
 
 ![image](https://maelfabien.github.io/assets/images/dt.png)
 
-To build the tree, we choose each time the feature that splits our data the best way possible. How do we measure the qualitiy of a split ? Let $ p_{i} $ be the fraction of items labeled with class i in the set :
-- Cross-entropy : $ H(p,q) = -\sum_{x \in {\mathcal{X}}} p(x) \log q(x) $ 
-- Gini impurity : $ I_G = 1 - \sum_{i = 1...J} {p_i}^2 $
+To build the tree, we choose each time the feature that splits our data the best way possible. How do we measure the qualitiy of a split ? Let $$ p_{i} $$ be the fraction of items labeled with class i in the set :
+- Cross-entropy : $$ H(p,q) = -\sum_{x \in {\mathcal{X}}} p(x) \log q(x) $$
+- Gini impurity : $$ I_G = 1 - \sum_{i = 1...J} {p_i}^2 $$
 - classification error
 
 Note that in order to grow a decision tree for numeric data, we usually order the data by value of each feature, compute the average between every successive pair of values, and compute the split quality measure (e.g Gini) using this average.
@@ -327,6 +329,7 @@ dot_graph = f.read()
 graphviz.Source(dot_graph)
 ```
 
+![image](https://maelfabien.github.io/assets/images/pred_5.png)
 
 
 ### Limitations of CART algorithm
@@ -372,170 +375,135 @@ For example, say that as before, we try to predict if a breast tumor is malignan
 
 ![image](https://maelfabien.github.io/assets/images/perm.jpg)
 
-Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. 
-
-We will use a Random Forest Classifier for the classification task.
+Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. We will use a Random Forest Classifier for the classification task.
 
 ```python
-import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-
-data = pd.read_csv('../input/fifa-2018-match-statistics/FIFA 2018 Statistics.csv')
-
-y = (data['Man of the Match'] == "Yes")  # Convert from string "Yes"/"No" to binary
-feature_names = [i for i in data.columns if data[i].dtype in [np.int64]]
-X = data[feature_names]
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
-my_model = RandomForestClassifier(random_state=0).fit(X_train, y_train)
+rf = RandomForestClassifier()
+rf.fit(X_train, y_train)
 ```
 
-We can then compute the Permutation Importance with [Eli5 library](https://eli5.readthedocs.io/en/latest/). Eli5 is a Python library which allows to visualize and debug various Machine Learning models using unified API. It has built-in support for several ML frameworks and provides a way to explain black-box models.
+We can compute the Permutation Importance with [Eli5 library](https://eli5.readthedocs.io/en/latest/). Eli5 is a Python library which allows to visualize and debug various Machine Learning models using unified API. It has built-in support for several ML frameworks and provides a way to explain black-box models.
+
+To install `eli5` :
+
+`pip install eli5`
+
+We can then compute the permutation importance :
 
 ```python
-import eli5
-from eli5.sklearn import PermutationImportance
-
 perm = PermutationImportance(my_model, random_state=1).fit(X_test, y_test)
 eli5.show_weights(perm, feature_names = val_X.columns.tolist())
 ```
 
-![image](https://maelfabien.github.io/assets/images/perm2.jpg)
+![image](https://maelfabien.github.io/assets/images/pred_6.png)
 
-In our example, the most important feature was Goals scored. The first number in each row shows how much model performance decreased with a random shuffling (in this case, using "accuracy" as the performance metric). We measure the randomness by repeating the process with multiple shuffles.
+In our example, the most important feature is `concave points_worst`. The first number in each row shows how much model performance decreased with a random shuffling (in this case, using "accuracy" as the performance metric). We measure the randomness by repeating the process with multiple shuffles.
 
 Negative value for importance occurs when the feature is not important at all.
 
 ## 2. Individual Conditional Expectation (ICE)
 
-How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). 
+How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). It can be used for regression tasks only. Since we face a classification task, we will re-use the linear regression model fitted above.
 
 To build ICE plots, simply use `pycebox`. Start off by installing the package : 
 
+`pip install pycebox`
+
 ```python
-pip install pycebox
+ice_radius = ice(data=X_train, column='radius_mean', predict=model.predict)
+ice_concave = ice(data=X_train, column='concave points_worst', predict=model.predict)
+ice_smooth = ice(data=X_train, column='smoothness_se', predict=model.predict)
 ```
 
-```
-`X_train = pd.DataFrame(train_X_imp, columns=features)
-forty_ice_df = ice(data=X_train, column='Forty', predict=model.predict)
-```
+And build the plots :
 
-And build the plot :
-
-```
-ice_plot(forty_ice_df, c='dimgray', linewidth=0.3)
-plt.ylabel('Pred. AV %ile')
-plt.xlabel('Forty');
+```python
+ice_plot(ice_concave, c='dimgray', linewidth=0.3)
+plt.ylabel('Prob. Malignant')
+plt.xlabel('Worst concave points');
 ```
 
-![image](https://maelfabien.github.io/assets/images/ice.png)
+![image](https://maelfabien.github.io/assets/images/pred_7.png)
 
-Thanks to ICEs, we understand the impact of a feature on the probabilities of individual instances, and we easily understand trends. However, the ICE curves only display one feature at a time, and we cannot plot the joint importance of 2 features for example. Partial dependence plots appear to overcome this issue.
+```python
+ice_plot(ice_radius, c='dimgray', linewidth=0.3)
+plt.ylabel('Prob. Malignant')
+plt.xlabel('Radius mean');
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_8.png)
+
+Logically, since our linear model involves a linear relation between the inputs and the output, the ICE plots are linear. However, if we use a Gradient Boosting Regressor to perform the same task, the linear relation does not hold anymore.
+
+```python
+gb = GradientBoostingRegressor()
+gb.fit(X_train, y_train)
+ice_concave = ice(data=X_train, column='concave points_worst', predict=gb.predict)
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_9.png)
+
+Thanks to ICEs, we understand the impact of a feature on the value of the outcome for each individual instance, and we easily understand trends. However, the ICE curves only display one feature at a time, and we cannot plot the joint importance of 2 features for example. Partial dependence plots appear to overcome this issue.
 
 ## 3. Partial dependence plots
 
-While feature importance shows what variables most affect predictions, partial dependence plots show how a feature affects predictions.
+### 1D Partial Dependence Plot
 
-Partial dependence plots can be interpreted similarly to coefficients in linear or logistic regression models, but can capture more complex patterns than simple coefficients.
+Just like ICEs, Partial Dependence Plots (PDP) show how a feature affects predictions. They are however more powerful since they can plot joint effects of 2 features on the output. 
 
-We can use partial dependence plots to answer questions like :
-- Controlling for all other house features, what impact do longitude and latitude have on home prices? To restate this, how would similarly sized houses be priced in different areas?
-- Are predicted health differences between two groups due to differences in their diets, or due to some other factor?
-
-### How does it work?
-
-Partial dependence plots are calculated after a model has been fit. How do we then disentangle the effects of several features?
+Partial dependence plots are calculated after a model has been fitted. How do we then split / disentangle the effects of several features?
 
 We start by selecting a single row. We will use the fitted model to predict our outcome of that row. But we repeatedly **alter the value** for **one variable** to make a series of predictions.
 
-For example, in the football example used above, we could predict the outcome if the team had the ball 40% of the time, but also 45, 50, 55, 60, ...
+For example, in the breast cancer example used above, we could predict the outcome if the radius is 10, 12, 14, 16...
 
 We build the plot by:
 - representing on the horizontal axis the value change in the ball possession for example
 - and on the horizontal axis the change of the outcome
 
-We don't use only a single row, but many rows to do that. Therefore, we can represent a confidence interval and an average value, just like on this graph:
+We don't use only a single row, but many rows to do that. Therefore, we can represent a confidence interval and an average value.
 
-![image](https://maelfabien.github.io/assets/images/perm3.jpg)
+The blue shaded area indicates the level of condifence. PDPs can be compared with ICEs for these kind of plots, but they show the average trend and confidence levels instead of individual lines.
 
-The blue shaded area indicates the level of condifence.
+Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. 
 
-### Example
-
-Back to our FIFA Man of the Game example :
+To install PDPbox : `pip install pdpbox`
 
 ```python
-import numpy as np
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
+pdp_rad = pdp.pdp_isolate(model=rf, dataset=X_test, model_features=X_test.columns, feature='radius_mean')
 
-data = pd.read_csv('../input/fifa-2018-match-statistics/FIFA 2018 Statistics.csv')
-
-y = (data['Man of the Match'] == "Yes")  # Convert from string "Yes"/"No" to binary
-feature_names = [i for i in data.columns if data[i].dtype in [np.int64]]
-X = data[feature_names]
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
-tree_model = DecisionTreeClassifier(random_state=0, max_depth=5, min_samples_split=5).fit(X_train, y_train)
-```
-
-Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. The PDP fot the number of goals scored is the following :
-
-```python
-from matplotlib import pyplot as plt
-from pdpbox import pdp, get_dataset, info_plots
-
-# Create the data that we will plot
-pdp_goals = pdp.pdp_isolate(model=tree_model, dataset=X_test, model_features=feature_names, feature='Goal Scored')
-
-# plot it
-pdp.pdp_plot(pdp_goals, 'Goal Scored')
+pdp.pdp_plot(pdp_rad, 'Radius Mean')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/perm4.jpg)
-
-From this particular graph, we see that scoring a goal substantially increases your chances of winning "Man of The Match." But extra goals beyond that appear to have little impact on predictions.
-
-We can pick a more complex model and another feature to illustrate the changes :
-
-```python
-# Build Random Forest model
-rf_model = RandomForestClassifier(random_state=0).fit(X_train, y_train)
-
-pdp_dist = pdp.pdp_isolate(model=rf_model, dataset=X_test, model_features=feature_names, feature=feature_to_plot)
-
-pdp.pdp_plot(pdp_dist, feature_to_plot)
-plt.show()
-```
-
-![image](https://maelfabien.github.io/assets/images/perm5.jpg)
+![image](https://maelfabien.github.io/assets/images/pred_10.png)
 
 ### 2D Partial Dependence Plots
 
 We can also plot interactions between features on a 2D graph.
 
 ```python
-# Similar to previous PDP plot except we use pdp_interact instead of pdp_isolate and pdp_interact_plot instead of pdp_isolate_plot
+features_to_plot = ['radius_mean', 'smoothness_se']
 
-features_to_plot = ['Goal Scored', 'Distance Covered (Kms)']
+inter1  =  pdp.pdp_interact(model=gb, dataset=X_test, model_features=X.columns, features=features_to_plot)
 
-inter1  =  pdp.pdp_interact(model=tree_model, dataset=X_test, model_features=feature_names, features=features_to_plot)
-
-pdp.pdp_interact_plot(pdp_interact_out=inter1, feature_names=features_to_plot, plot_type='contour')
+pdp.pdp_interact_plot(pdp_interact_out=inter1, feature_names=features_to_plot, plot_type='contour', x_quantile=True, plot_pdp=True)
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/perm6.jpg)
+![image](https://maelfabien.github.io/assets/images/pred_11.png)
 
-In this example, each feature can only take a limited number of values. What happens if we have continuous variables ? The level frontiers bring value on the interaction between the 2 variables.
+### Actual Prediction Plot
 
-![image](https://maelfabien.github.io/assets/images/perm7.jpg)
+Actual prediction plots show the medium value of actual predictions through different feature values for 2 predictions :
+
+```python
+fig, axes, summary_df = info_plots.actual_plot_interact(
+model=rf, X=X_train, features=features_to_plot, feature_names=features_to_plot
+)
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_12.png)
 
 ## 4. Shapley Values
 
