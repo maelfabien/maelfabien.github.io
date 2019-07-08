@@ -341,6 +341,7 @@ CART algorithms fails to represent linear relationships between the input and th
 There are other models that are by construction interpretable :
 - K-Nearest Neighbors (KNN)
 - Generalized Linear Models (GLMs)
+- Lasso and Ridge Regressions
 - Stochastic processses such as Poisson processes if you want to model arrival rates or goals in a football match
 - ...
 
@@ -458,12 +459,10 @@ We start by selecting a single row. We will use the fitted model to predict our 
 For example, in the breast cancer example used above, we could predict the outcome if the radius is 10, 12, 14, 16...
 
 We build the plot by:
-- representing on the horizontal axis the value change in the ball possession for example
+- representing on the horizontal axis the value change in the radius of the tumor for example
 - and on the horizontal axis the change of the outcome
 
-We don't use only a single row, but many rows to do that. Therefore, we can represent a confidence interval and an average value.
-
-The blue shaded area indicates the level of condifence. PDPs can be compared with ICEs for these kind of plots, but they show the average trend and confidence levels instead of individual lines.
+We don't use only a single row, but many rows to do that. Therefore, we can represent a confidence interval and an average value. The blue shaded area indicates the level of condifence. PDPs can be compared with ICEs for these kind of plots, but they show the average trend and confidence levels instead of individual lines.
 
 Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. 
 
@@ -493,6 +492,8 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/pred_11.png)
 
+This plot helps to identify regions in which the tumor is more likely to be benign (darker regions) rather than malignant (lighter regions) based on the interaction between the mean of the radios and the standard error of the smoothness. We can then create similar plots for all pairs of variables.
+
 ### Actual Prediction Plot
 
 Actual prediction plots show the medium value of actual predictions through different feature values for 2 predictions :
@@ -509,13 +510,11 @@ model=rf, X=X_train, features=features_to_plot, feature_names=features_to_plot
 
 ### Force plots
 
-We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction?
+We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction? Shapley Values break down a single prediction to show the impact of each feature.
 
-SHAP Values (an acronym from SHapley Additive exPlanations) break down a prediction to show the impact of each feature. We use SHAP values to explain individual predictions.
+SHAP (SHapley Additive exPlanations) values show the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
 
-SHAP values interpret the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
-
-In the breast cancer example, we could wonder how much was a prediction driven by the fact that the radius was 17.1mm, instead of some baseline number?
+In the breast cancer example, we could wonder how much was a prediction driven by the fact that the radius was 17.1mm, instead of some baseline number? That could help a doctor explain the predictions to a patient and understand how the inner mechanics of a model lead to the given outcome.
 
 We can decompose a prediction with the following equation:
 
@@ -553,112 +552,21 @@ The base value is 0.3633. Feature values causing increased predictions are in pi
 
 If you subtract the length of the blue bars from the length of the pink bars, it equals the distance from the base value to the output.
 
-If we take many explanations such as the one shown above, rotate them 90 degrees, and then stack them horizontally, we can see explanations for an entire dataset:
-
-```python
-# visualize the training set predictions
-shap.force_plot(explainer.expected_value, shap_values, X)
-```
-
 ![image](https://maelfabien.github.io/assets/images/shap_7.png)
 
-So far, we have used `shap.TreeExplainer(my_model)`. The package has other explainers for every type of model :
-- `shap.DeepExplainer` works with Deep Learning models.
-- `shap.KernelExplainer` works with all models, though it is slower than other Explainers and it offers an approximation rather than exact Shap values.
-
-### Summary plots
-
-Permutation importance creates simple numeric measures to see which features mattered to a model. But it doesn't tell you how each features matter. If a feature has medium permutation importance, that could mean it has :
-- a large effect for a few predictions, but no effect in general, or
-- a medium effect for all predictions.
-
-SHAP summary plots give us a birds-eye view of feature importance and what is driving it. Summary plots can be built the following way :
-
-```python
-# Create object that can calculate shap values
-explainer = shap.TreeExplainer(my_model)
-
-# Calculate shap_values for all of X_test rather than a single row, to have more data for plot.
-shap_values = explainer.shap_values(X_test)
-
-# Make plot. Index of [1] is explained in text below.
-shap.summary_plot(shap_values[1], X_test)
-```
-
-![image](https://maelfabien.github.io/assets/images/pred_14.png)
-
-Each dot has 3 characteristics :
-- Vertical location shows what feature it is depicting
-- Color shows whether the feature was high or low for that row of the dataset
-- Horizontal location shows whether the effect of that value caused a higher or lower prediction
-
-High values of worst radius caused higher output values, and low values caused lower output values. Large "worst radius" seems to be related to a higher rate of malignant tumor.
-
-### SHAP Dependence Contribution plots
-
-Partial Dependence Plots to show how a single feature impacts predictions. But they don't show the distribution of the effects for example. 
-
-
-
-
-
-
-
-
-
-
-![image](https://maelfabien.github.io/assets/images/shap_4.png)
-
-Each dot represents a row of data. The horizontal location is the actual value from the dataset, and the vertical location shows what having that value did to the prediction. The fact this slopes upward says that the more you possess the ball, the higher the model's prediction is for winning the Man of the Match award.
-
-The spread suggests that other features must interact with Ball Possession %. For the same ball possession, we encounter SHAP values that range from -0.05 to 0.07.
-
-![image](https://maelfabien.github.io/assets/images/shap_5.png)
-
-We can also notice outliers that stand out spatially as being far away from the upward trend.
-
-![image](https://maelfabien.github.io/assets/images/shap_6.png)
-
-We can find an interpretation for this : In general, having the ball increases a team's chance of having their player win the award. But if they only score one goal, that trend reverses and the award judges may penalize them for having the ball so much if they score that little.
-
-To implement Dependence Contribution plots, we can use the following code :
-
-```python
-# Create object that can calculate shap values
-explainer = shap.TreeExplainer(my_model)
-
-# calculate shap values. This is what we will plot.
-shap_values = explainer.shap_values(X)
-
-# make plot.
-shap.dependence_plot('Ball Possession %', shap_values[1], X, interaction_index="Goal Scored")
-```
+We explored so far Tree based models. `shap.DeepExplainer` works with Deep Learning models, and `shap.KernelExplainer` works with all models.
 
 ### Summary plots
 
 We can also just take the mean absolute value of the SHAP values for each feature to get a standard bar plot (produces stacked bars for multi-class outputs):
 
 ```python
-shap.summary_plot(shap_values, X, plot_type="bar")
+shap.summary_plot(shap_values, X_train, plot_type="bar")
 ```
 
-![image](https://maelfabien.github.io/assets/images/shap_8.png)
+![image](https://maelfabien.github.io/assets/images/pred_15.png)
 
-### Interaction plots
-
-We can represent the interaction effect for two features and the effect on the SHAP Value they have. This can be done by plotting a dependence plot between of the interaction values. Let's take another random example in which we consider the interaction between the age and the white blood cells, and the effect this has on the SHAP interaction values :
-
-```
-shap.dependence_plot(
-("Age", "White blood cells"),
-shap_interaction_values, X.iloc[:2000,:],
-display_features=X_display.iloc[:2000,:]
-)
-```
-
-![image](https://maelfabien.github.io/assets/images/shap_9.png)
-
-## 5. Approximation models
+## 5. Approximation (Surrogate) models
 
 Approximation models (or global surrogate) is a simple and quite efficient trick. The idea is really simple : we train an interpretable model to approach the predictions of a black-box algorithm. 
 
@@ -666,9 +574,50 @@ We keep the original data, and use as `y_train` the predictions made on a data s
 
 We might however loose accuracy compared to the black-box model, and we must pay attention to the way we sample data to train the black box algorithm.
 
-> We have covered in this article the motivation for interpretable and explainable machine learning, the main interpretable models and the most widely used methods for explainable machine learning models. The need for transparent models has been rising and there is a clear demand nowadays for such techniques.
+## 6. Local Interpretable Model-agnostic Explanations (LIME)
 
-Sources and resources :
+Instead of training an interpretable model to approximate a black box model, LIME focuses on training local explainable models to explain individual predictions. We want the explanation to reflect the behaviour of the model "around" the instance that we predict. This is called "local fidelity".
+
+LIME algorithms focus on explaining the prediction of a single instance. LIME uses an exponential smoothing kernel to define the notion of neighborhood of an instance of interest.
+
+We first select the instance we want to explain. By making small variations in the input data to the black-box model, we generate a new training set with these samples and their predicted labels. We then train an interpretable classifier on those new samples, and weight each sample according to how "close" it is to the instance we want to explain.
+
+Then, we benefit from the advantages of the interpretable model to explain each prediction.
+
+We can implement LIME algorithm in Python with LIME package :
+
+`pip install lime`
+
+Then, lime takes only numpy arrays as inputs :
+
+```python
+explainer = lime.lime_tabular.LimeTabularExplainer(np.array(X_train), feature_names=np.array(X_train.columns), class_names=np.array([0, 1]), discretize_continuous=True)
+```
+
+We have defined the explainer. We can now explain an instance :
+
+```python
+i = np.random.randint(0, np.array(X_test).shape[0])
+exp = explainer.explain_instance(np.array(X_test)[i], rf.predict_proba, num_features=5, top_labels=1)
+```
+
+We make the choice to use 5 features here, but we could use more. To display the explanation :
+
+```python
+exp.show_in_notebook(show_table = True, show_all= False)
+```
+
+![image](https://maelfabien.github.io/assets/images/pred_16.png)
+
+Since we had the `show_all` parameter set to false, only the features used in the explanation are displayed. The Feature - Value table is a summary of the instance we'd like to explain. The value column displays the original value for each feature.
+
+The prediction probabilities of the black box model are displayed on the left. 
+
+The prediction of the local surrogate model stands under the 0 or the 1. Here, the local surrogate and the black box model both lead to the same output. It might happen, but it's quite rare, that the local surrogate model and the black box one do not give the same output. In the middle graph, we observe the contribution of each feature in the local interpretable surrogate model, normalized to 1. This way, we know the extent to which a given variable lead to the prediction of the black-box model.
+
+> We have covered in this article the motivation for interpretable and explainable machine learning, the main interpretable models and the most widely used methods for explainable machine learning models. Machine learning explainability techniques are an opportunity to use more complex and less transparent models, that usually perform well, and maintain trust in the output of the model.g
+
+If you'd like to read more on this toppic, make sure to check these references :
 - [Interpretable ML Book](https://christophm.github.io/interpretable-ml-book)
 - [Kaggle Learn](https://www.kaggle.com/learn/machine-learning-explainability)
 - [Savvas Tjortjoglou's blog](http://savvastjortjoglou.com/intrepretable-machine-learning-nfl-combine.html)
