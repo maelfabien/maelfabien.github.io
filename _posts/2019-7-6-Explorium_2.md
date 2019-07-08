@@ -29,11 +29,7 @@ Machine Learning interpretability and explainability are becoming essential in s
 Christoph Molnar has recently published an excellent book on this topic : [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/).
 
 First of all, let's define the difference between machine learning explainability and interpretability :
-- **Interpretability** is linked to the model. A model is said to be interpretable if its parameters are linked in a clear way to the impact of a feature on the outcome. Among interpretable models, one can for example mention :
-    - Linear and logistic regression
-    - Lasso and Ridge regressions
-    - Decision trees
-    - ...
+- **Interpretability** is linked to the model. A model is said to be interpretable if we can interpret directly the impact of its parameters on the outcome. Among interpretable models, one can for example mention : Linear and logistic regression, Lasso and Ridge regressions, Decision trees, etc.
 - **Explainability** can be applied to any model, even models that are not interpretable. Explainability is the extent to which we can interpret the outcome and the internal mechanics of an algorithm. 
 
 In this article, we will be using the [UCI Machine learning repository Breast Cancer](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) data set. It is also available on [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/downloads/breast-cancer-wisconsin-data.zip/2). Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. There are 30 features, including the radius of the tumor, the texture, the perimeter... Our task will be to perform a binary classification of the tumor, that is either malignant (M) or benign (B). 
@@ -94,12 +90,12 @@ Linear regression is probably the most basic regression model and takes the foll
 $$ Y_i = {\beta}_0 + {\beta}_1{X}_{1i} + {\beta}_2{X}_{2i} + {\beta}_3{X}_{3i} + ... + {\epsilon}_i $$. 
 
 This simple equation states the following :
-- suppose we have $$ n $$ observations of a dataset and we pick the $$ i^{th} $$
-- $$ Y_i $$ is the target, e.g. the diagnosis of the breast tissue
-- $$ {X}_{1i} $$ is the $$ i^{th} $$ observation of the first feature, e.g. the radius of the tumor
-- $$ {X}_{2i} $$ is the $$ i^{th} $$ observation of the second feature, e.g. the texture of the tumor
+- suppose we have $$ n $$ observations of a dataset and we pick the $$ i^{th} $$.
+- $$ Y_i $$ is the target, e.g. the diagnosis of the breast tissue.
+- $$ {X}_{1i} $$ is the $$ i^{th} $$ observation of the first feature, e.g. the radius of the tumor.
+- $$ {X}_{2i} $$ is the $$ i^{th} $$ observation of the second feature, e.g. the texture of the tumor.
 - ...
-- $$ {\beta}_0 $$ is called the intercept, it is a constant term
+- $$ {\beta}_0 $$ is called the intercept, it is a constant term.
 - $$ {\beta}_1 $$ is the coefficient associated with $$ X_{1i} $$ . It describes the weight of $$ {X}_{1i} $$ on the final output.
 - ...
 - $$ {\epsilon} $$ is the noise of the model. The data we observe rarrly stand on a straight line or on a hyperplane.
@@ -113,12 +109,12 @@ model.summary()
 
 ![image](https://maelfabien.github.io/assets/images/stats.png)
 
-The `statsmodel` summary gives us access to the coefficient, the standard error, the t-statistics and the p-value of every feature.
+The `statsmodel` summary gives direct access to the coefficients, the standard errors, the t-statistics and the p-values for each feature.
 
 ### Interpretability of Linear Regression
 
 - The coefficients of a linear regression are directly interpretable. At stated above, each coefficient describes the effect on the output of a change of 1 unit of a given input. 
-- The importance of a feature can be seen as the absolute value of the t-statistic value. The more variance the estimated weight has, the less important the feature is. The higher the estimated coefficient, the more important the feature is.
+- The importance of a feature can be seen as the absolute value of the t-statistic value. A feature is important if its coefficient is high and the variance around this estimate is low. 
 
 $$ t_{\hat{\beta_j}} = \frac{\hat{\beta_j}}{SE(\hat{\beta_j})} $$
 
@@ -138,7 +134,7 @@ model.conf_int()
 
 - We are guaranteed to find the best coefficients by OLS properties
 
-To illustrate the interpretability of the Linear Regression, we can plot the coefficient's values and standard errors. This graph was inspired by the excellent work of [Zhiya Zuo](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/). Start by computing an error term equal to the difference between the parameter's value and the lower confidence interval bound, and build a single table with the coefficient, the error term and the name of the variable.
+To illustrate the interpretability of the Linear Regression, we can plot the coefficient's values and standard errors. This graph was inspired by the excellent work of [Zhiya Zuo](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/). Start by computing an error term equal to the difference between the parameter's value and the lower confidence interval bound for this parameter, and build a single table with the coefficient, the error term and the name of the variable.
 
 ```python
 err = model.params - model.conf_int()[0]
@@ -169,7 +165,7 @@ This graph displays for each feature, the coefficient value as well as the stand
 
 ![image](https://maelfabien.github.io/assets/images/log_1.png)
 
-We can also illustrate this limitation by plotting the predictions sorted by value :
+We can also illustrate the second limitation by plotting the predictions sorted by value :
 
 ```python
 plt.figure(figsize=(12,8))
@@ -213,9 +209,11 @@ For this threshold, the accuracy achieved is 0.9385. Although the linear regress
 
 ## 2. Logistic Regression
 
-The logistic regression using the logistic function to send the output between 0 and 1 for binary classification purposes. The function is defined as :
+The logistic regression using the logistic function to map the output between 0 and 1 for binary classification purposes. The function is defined as :
 
 $$ Sig(z) = \frac {1} {1 + e^{-z}} $$
+
+In this plot, we represent both a sigmoid function and the inputs we feed it :
 
 ![image](https://maelfabien.github.io/assets/images//log_2.png)
 
@@ -235,7 +233,7 @@ $$ \frac {odds_{X_{j+1}}} {odds} = \frac {exp^{\beta_0 + \beta_1 X_1 + ... + \
 
 $$ = exp^{\beta_j (X_j + 1) - \beta_j X_j} = exp^{\beta_j} $$
 
-A change in $$ X_j $$ by one unit increases the log odds ratio by the value of the corresponding weight : $$ exp^{\beta_j} $$. An increase in the log-odds ratio is proportional to classifying a bit more in class 1 rather than to class 0.
+A change in $$ X_j $$ by one unit increases the log odds ratio by $$ exp^{\beta_j} $$. In other words, an increase in the log-odds ratio is proportional to classifying a bit more in class 1 rather than to class 0, according to an exponential factor in $$ \beta_j $$.
 
 The implementation is straight forward in Python using scikit-learn. 
 
@@ -251,9 +249,7 @@ print(accuracy_score(y_pred, y_test))
 
 ### Interpretability of Logistic Regression
 
-With the logistic regression, we can still apply test hypothesis, build confidence intervals and compute the explained variance. Many of the advantages of the linear regression remain.
-
-For example, to plot the value of the coefficients :
+With the logistic regression, we keep most of the advantages of the linear regression. For example, we can plot the value of the coefficients :
 
 ```python
 plt.figure(figsize=(12,8))
@@ -281,22 +277,11 @@ Just like linear regression, the model remains quite limited in terms of perform
 
 ## 3. Decision Trees
 
-Linear regression and logistic regression fail when features interact with each other. The Classification And Regression Trees (CART) algorithm is the most simple and popular tree algorithm.
+Linear regression and logistic regression cannot model interactions between features. The Classification And Regression Trees (CART) algorithm is the most simple and popular tree algorithm, and models a simple interaction between features.
 
 ![image](https://maelfabien.github.io/assets/images/dt.png)
 
-To build the tree, we choose each time the feature that splits our data the best way possible. How do we measure the qualitiy of a split ? Let $$ p_{i} $$ be the fraction of items labeled with class i in the set :
-- Cross-entropy : $$ H(p,q) = -\sum_{x \in {\mathcal{X}}} p(x) \log q(x) $$
-- Gini impurity : $$ I_G = 1 - \sum_{i = 1...J} {p_i}^2 $$
-- classification error
-
-Note that in order to grow a decision tree for numeric data, we usually order the data by value of each feature, compute the average between every successive pair of values, and compute the split quality measure (e.g Gini) using this average.
-
-We stop the development of the tree when splitting a node does not lower the impurity.
-
-The relationship between the inputs and the output is given by :
-
-$$ \hat{y}=\hat{f}(x)=\sum_{m=1}^Mc_m{}I\{x\in{}R_m\} $$ where $$ R_m $$ denotes the subset $$ m $$. If an observation to predict falls into the subset $$ R_j $$, the predicted value is $$ c_j $$, the average value of all training instances that fell in this subset.
+To build the tree, we choose each time the feature that splits our data the best way possible. How do we measure the qualitiy of a split ? We apply criteria such as the cross-entropy or Gini impurity. We stop the development of the tree when splitting a node does not lower the impurity.
 
 To implement decision trees in Python, we can use scikit-learn :
 
@@ -328,7 +313,6 @@ graphviz.Source(dot_graph)
 
 ![image](https://maelfabien.github.io/assets/images/pred_5.png)
 
-
 ### Limitations of CART algorithm
 
 CART algorithms fails to represent linear relationships between the input and the output. It easily overfits and gets quite deep if we don't crontrol the model. For this reason, tree based ensemble models such as Random Forest have been developped.
@@ -346,7 +330,4 @@ There are other models that are by construction interpretable :
 
 If you'd like to read more on this topic, make sure to check these references :
 - [Interpretable ML Book](https://christophm.github.io/interpretable-ml-book)
-- [Kaggle Learn](https://www.kaggle.com/learn/machine-learning-explainability)
-- [Savvas Tjortjoglou's blog](http://savvastjortjoglou.com/intrepretable-machine-learning-nfl-combine.html)
 - [Zhiya Zuo's blog](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/).
-- [Lime's documentation](https://github.com/marcotcr/lime)
