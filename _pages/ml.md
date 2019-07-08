@@ -152,3 +152,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 [Introduction to Online learning](https://maelfabien.github.io/machinelearning/Online/) : Online learning is a way to process data by streaming rather than by batch. This allows much faster and simpler implementations.
 
 [Linear Classification](https://maelfabien.github.io/machinelearning/Online2/) : The perceptron has been initially developped as an Online algorithm rather than a batch algorithm. Let's dive into this first simple algorithm.
+
+
+![image](https://maelfabien.github.io/assets/images/th_head.png)
+
+Articles to come ...
