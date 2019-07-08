@@ -355,7 +355,7 @@ The prediction of the local surrogate model stands under the 0 or the 1. Here, t
 
 > Machine learning explainability techniques are an opportunity to use more complex and less transparent models, that usually perform well, and maintain trust in the output of the model. 
 
-If you'd like to read more on this toppic, make sure to check these references :
+If you'd like to read more on these topics, make sure to check these references :
 - [Interpretable ML Book](https://christophm.github.io/interpretable-ml-book)
 - [Kaggle Learn](https://www.kaggle.com/learn/machine-learning-explainability)
 - [Savvas Tjortjoglou's blog](http://savvastjortjoglou.com/intrepretable-machine-learning-nfl-combine.html)
