@@ -1,6 +1,6 @@
 ---
 published: true
-title: Interpretability and Explainability
+title: Interpretability and explainability
 collection: explorium
 layout: single
 author_profile: false
@@ -22,21 +22,22 @@ sidebar:
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-In the previous blog post ["Complexity vs. Explainability"](https://www.explorium.ai/complexity-vs-explainability/), we highlighted the tradeoff between increasing the model's complexity and loosing explainability. In this article, we will continue our discussion and see how to make models interpretable and explainable.
+In the previous blog post ["Complexity vs. explainability"](https://www.explorium.ai/complexity-vs-explainability/), we highlighted the tradeoff between increasing the model's complexity and loosing explainability. In this article, we will continue our discussion and cover the notions of interpretability and explainability in machine learning.
 
-Machine Learning interpretability and explainability are becoming essential in solutions we build nowadays. In fields such as health care or banking, there exists legal restrictions that interpretability and explainability could help overcome. In solutions that support a human decision, it is essential to build a trust relationship and explain the outcome of an algorithm. The whole idea behind interpretable and explainable ML is to avoid the black box effect.
+Machine Learning interpretability and explainability are becoming essential in solutions we build nowadays. In fields such as healthcare or banking, interpretability and explainability could for example help overcome some legal constraints. In solutions that support a human decision, it is essential to establish a trust relationship and explain the outcome of an algorithm. The whole idea behind interpretable and explainable ML is to avoid the black box effect.
 
-Christop Molnar has recently publshed an excellent book on this topic : [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/).
+Christop Molnar has recently published an excellent book on this topic : [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/).
 
 Fist of all, let's define the difference between machine learning explainability and interpretability :
-- Interpretability is linked to the model. A model is said to be interpretable if its parameters are linked in a clear way to the impact of a feature on the outcome. In some sense, it is the extent to which we are able to predict what is going to happen, given a change in input. Among interpretable models, one can for example mention :
+- **Interpretability** is linked to the model. A model is said to be interpretable if its parameters are linked in a clear way to the impact of a feature on the outcome. In some sense, it is the extent to which we are able to predict what is going to happen, given a change in input. Among interpretable models, one can for example mention :
     - Linear regression
     - Logistic regression
     - Decision trees
+    - Lasso and Ridge regressions
     - ...
-- Explainability can be applied to any model, even models that are not interpretable. Explainability is the extent to which we can interpret the outcome and the internal mechanics of an algorithm. 
+- **Explainability** can be applied to any model, even models that are not interpretable. explainability is the extent to which we can interpret the outcome and the internal mechanics of an algorithm. 
 
-In this article, we will be using the [UCI Machine learning repository Breast Cancer](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) data set. It is also available on [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/downloads/breast-cancer-wisconsin-data.zip/2). The data has 30 features, including the radius of the tumor, the texture, the perimiter... Our task will be to perform a binary classification of the tumor, that is either malignant (M) or benign (B). Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image.
+In this article, we will be using the [UCI Machine learning repository Breast Cancer](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) data set. It is also available on [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/downloads/breast-cancer-wisconsin-data.zip/2). Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. There is 30 features, including the radius of the tumor, the texture, the perimiter... Our task will be to perform a binary classification of the tumor, that is either malignant (M) or benign (B). 
 
 Start off by importing the packages :
 
@@ -49,10 +50,13 @@ import seaborn as sns
 
 # Interpretable models
 from sklearn.model_selection import train_test_split
-import sklearn.linear_model as lm
-
-# Explainability of models
-
+from sklearn.metrics import r2_score
+from sklearn.metrics import accuracy_score
+import statsmodels.api as sm
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import export_graphviz
+import graphviz
 ```
 
 Then, read the data and apply a simply numeric transformation of the label ("M" or "B").
@@ -78,7 +82,7 @@ y = df['diagnosis']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 ```
 
-It is a great exercise to work on interpretability and explainability of models in the healthcare sector, since performing such work would typically be required by authorities.
+It is a great exercise to work on interpretability and explainability of models in the healthcare sector, since performing such work could typically be required by authorities.
 
 In the next sections, we will cover the main interpretable models, their advantages, their limitations and examples. We will then explore explainability methods, as well as examples for each method.
 
@@ -86,12 +90,12 @@ In the next sections, we will cover the main interpretable models, their advanta
 
 ## 1. Linear Regression
 
-Linear regression is one of the most basic models and takes the following form.
+Linear regression is probably the most basic regression model and takes the following form:
 
 $$ Y_i = {\beta}_0 + {\beta}_1{X}_{1i} + {\beta}_2{X}_{2i} + {\beta}_3{X}_{3i} + ... + {\epsilon}_i $$. 
 
 This simple equation states the following :
-- suppose we have $$ n $$ observations of a dataset and we pick on $$ i^{th} $$
+- suppose we have $$ n $$ observations of a dataset and we pick the $$ i^{th} $$
 - $$ Y_i $$ is the target, e.g. the diagnosis of the breast tissue
 - $$ {X}_{1i} $$ is the $$ i^{th} $$ observation of the first feature, e.g. the radius of the tumor
 - $$ {X}_{2i} $$ is the $$ i^{th} $$ observation of the second feature, e.g. the texture of the tumor
@@ -110,23 +114,17 @@ model.summary()
 
 ![image](https://maelfabien.github.io/assets/images/stats.png)
 
-We have access to the coefficient, the standard error, the t-statistics and the p-value of every feature.
+The `statsmodel` summary gives us access to the coefficient, the standard error, the t-statistics and the p-value of every feature.
 
 ### Interpretability of Linear Regression
 
 - The coefficients of a linear regression are directly interpretable. At stated above, each coefficient describes the effect on the output of a change of 1 unit of a given input. 
 - The importance of a feature can be seen as the absolute value of the t-statistic value. The more variance the estimated weight has, the less important the feature is. The higher the estimated coefficient, the more important the feature is.
-- In a binary classification task, each coefficient can be seen as a percentage of contribution to a class or another.
 
 $$ t_{\hat{\beta_j}} = \frac{\hat{\beta_j}}{SE(\hat{\beta_j})} $$
-- The variance explained by the model can be explained by the $$ R^2 $$ coefficient :
 
-```python
-y_pred = model.predict(X_test)
-r2_score(y_test, y_pred) 
-```
-`0.6857028648161004`
-
+- In a binary classification task, each coefficient can be seen as a percentage of contribution to a class or another.
+- The variance explained by the model can be explained by the $$ R^2 $$ coefficient, displayed in the summary above.
 - We can use confidence intervals and tests for coefficient values : 
 
 ```python
@@ -141,7 +139,7 @@ model.conf_int()
 
 - We are guaranteed to find the best coefficients by OLS properties
 
-To illustrate the interpretability of the Linear Regression, we can plot the following graph. This work was inspired by the excellent work of [Zhiya Zuo](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/). Start by computing an error term equal to the difference between the parameter and the lower confidence interval bound, and build a single table with the coefficient, the error term and the name of the variable.
+To illustrate the interpretability of the Linear Regression, we can plot the coefficient's values and standard errors. This graph was inspired by the excellent work of [Zhiya Zuo](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/). Start by computing an error term equal to the difference between the parameter's value and the lower confidence interval bound, and build a single table with the coefficient, the error term and the name of the variable.
 
 ```python
 err = model.params - model.conf_int()[0]
@@ -163,12 +161,12 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/coef_lin.png)
 
-This graph displays for each feature, the coefficient value as well as the standard error around this coefficient.
+This graph displays for each feature, the coefficient value as well as the standard error around this coefficient. The `smoothness_se` seems to be one of the most important feature in this linear regression framework.
 
 ### Limitations of Linear Regression
 
 - Linear regression is a basic model. It is rare to observe linear relationships in the data, and the linear regression is rarely performing well.
-- Moreover, when it comes to classification tasks, the linear regression is risky to apply, since an hyperplane is not a good way to send the output between 0 and 1. We usually prefer to apply the Logistic Regression.
+- Moreover, when it comes to classification tasks, the linear regression is risky to apply, since a line or an hyperplane cannot constraint the output between 0 and 1. We prefer to apply the Logistic Regression in such case.
 
 ![image](https://maelfabien.github.io/assets/images/log_1.png)
 
@@ -184,7 +182,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/pred.png)
 
-Setting the threshold to 0.5 seems indeed to be an arbitrary choice, since the output is not mapped between 0 and 1 systematically.
+the output is not mapped between 0 and 1 systematically. Setting the threshold to 0.5 seems indeed to be an arbitrary choice.
 
 We can show that modifying the threshold that we consider for classifying in one class or another has a large effect on the accuracy :
 
@@ -238,7 +236,7 @@ $$ \frac {odds_{X_{j+1}}} {odds} = \frac {exp^{\beta_0 + \beta_1 X_1 + ... + \
 
 $$ = exp^{\beta_j (X_j + 1) - \beta_j X_j} = exp^{\beta_j} $$
 
-A change in $$ X_j $$ by one unit increases the log odds ratio by the value of the corresponding weight : $$ exp^{\beta_j} $$.
+A change in $$ X_j $$ by one unit increases the log odds ratio by the value of the corresponding weight : $$ exp^{\beta_j} $$. An increase in the log-odds ratio is proportional to classifying a bit more in class 1 rather than to class 0.
 
 The implementation is straight forward in Python using scikit-learn. 
 
@@ -267,7 +265,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/pred_3.png)
 
-It is a model meant for binary classification, so the prediction probabilities are sent between 0 and 1.
+An increase in the `concavity_worst` is more likely to lead to a malignant tumor, whereas an increase in te `radius_mean` is more likely to lead to a benign tumor. It is a model meant for binary classification, so the prediction probabilities are sent between 0 and 1.
 
 ```python
 plt.figure(figsize=(12,8))
@@ -349,7 +347,7 @@ There are other models that are by construction interpretable :
 
 If we don't have to use interpretable models and need higher performance, we tend to use black box models such as XGBoost for example. It might however be needed, for various reasons, to provide an explaination of the outcome and the inner mechanics of the model. In such case, using model explainability techniques is the right choice. 
 
-Explainability is useful for :
+explainability is useful for :
 - establishing trust in an outcome
 - debugging
 - legal restrictions
@@ -622,3 +620,4 @@ If you'd like to read more on this toppic, make sure to check these references :
 - [Kaggle Learn](https://www.kaggle.com/learn/machine-learning-explainability)
 - [Savvas Tjortjoglou's blog](http://savvastjortjoglou.com/intrepretable-machine-learning-nfl-combine.html)
 - [Zhiya Zuo's blog](https://zhiyzuo.github.io/Python-Plot-Regression-Coefficient/).
+- [Lime's documentation](https://github.com/marcotcr/lime)
