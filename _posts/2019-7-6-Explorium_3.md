@@ -22,7 +22,7 @@ sidebar:
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-In previous blog posts ["Complexity vs. explainability"](https://www.explorium.ai/complexity-vs-explainability/) and "Interpretability and explainability 1/2)", we highlighted the tradeoff between increasing the model's complexity and loosing explainability and the importance of interpretable models. In this article, we will finish the discussion and cover the notion of explainability in machine learning.
+In previous blog posts ["Complexity vs. explainability"](https://www.explorium.ai/complexity-vs-explainability/) and "Interpretability and explainability (1/2)", we highlighted the tradeoff between increasing the model's complexity and loosing explainability, and the importance of interpretable models. In this article, we will finish the discussion and cover the notion of explainability in machine learning.
 
 As previously, we will use the [UCI Machine learning repository Breast Cancer](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) data set. It is also available on [Kaggle](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data/downloads/breast-cancer-wisconsin-data.zip/2). Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image. There are 30 features, including the radius of the tumor, the texture, the perimeter... Our task will be to perform a binary classification of the tumor, that is either malignant (M) or benign (B). 
 
@@ -44,6 +44,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import export_graphviz
 import graphviz
+
+# Explainable models
+from sklearn.ensemble import GradientBoostingRegressor
+from sklearn.ensemble import RandomForestClassifier
 ```
 
 Then, read the data and apply a simply numeric transformation of the label ("M" or "B").
@@ -69,28 +73,28 @@ y = df['diagnosis']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 ```
 
-In the previous article, we covered ways to interpret models such as the Linear Regression, the Logistic Regression and Decision Trees.
-
 # Model explainability
 
-If we don't have to use interpretable models and need higher performance, we tend to use black box models such as XGBoost for example. It might however be needed, for various reasons, to provide an explanation of the outcome and the internal mechanics of the model. In such case, using model explainability techniques is the right choice. 
+If we are not constrained to interpretable models and need higher performance, we tend to use black box models such as XGBoost for example. For various reasons we might want to provide an explanation of the outcome and the internal mechanics of the model. In such case, using model explainability techniques is the right choice. 
 
-explainability is useful for :
+Explainability is useful for :
 - establishing trust in an outcome
+- overcoming legal restrictions
 - debugging
-- legal restrictions
 - ... 
 
 The main questions model explainability answers are :
 - what are the most important features ?
-- how do you decompose a single prediction and the contribution of each feature ?
-- how do you decompose the model outcome and the contribution of each feature ?
+- how can you explain a single prediction ?
+- how can you explain the whole model ?
 
 We will explore several techniques of model explainability :
-- individual conditional expectation
-- permutation importance
-- partial dependence plots
-- shapley values
+- Feature Importance
+- Individual Conditional Expectation (ICE)
+- Partial Dependence Plots (PDP)
+- Shapley Values (SHAP Values)
+- Appriximation (Surrogate) Models
+- Local Interpretable Model-agnostic Explanations (LIME)
 
 ## 1. Feature Importance
 
@@ -100,9 +104,9 @@ Permutation importance is computed after a model has been fitted. It shows how r
 
 For example, say that as before, we try to predict if a breast tumor is malignant or benign. We will randomly shuffle, column by column, the rows of the texture, the perimeter, the area, the smoothness...
 
-![image](https://maelfabien.github.io/assets/images/perm.jpg)
+![image](https://maelfabien.github.io/assets/images/pred_17.png)
 
-Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. We will use a Random Forest Classifier for the classification task.
+Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. Let's illustrate this concept with a Random Forest Classifier.
 
 ```python
 rf = RandomForestClassifier()
@@ -118,25 +122,28 @@ To install `eli5` :
 We can then compute the permutation importance :
 
 ```python
-perm = PermutationImportance(my_model, random_state=1).fit(X_test, y_test)
-eli5.show_weights(perm, feature_names = val_X.columns.tolist())
+import eli5
+from eli5.sklearn import PermutationImportance
+
+perm = PermutationImportance(rf, random_state=1).fit(X_test, y_test)
+eli5.show_weights(perm, feature_names = X_test.columns.tolist())
 ```
 
 ![image](https://maelfabien.github.io/assets/images/pred_6.png)
 
 In our example, the most important feature is `concave points_worst`. The first number in each row shows how much model performance decreased with a random shuffling (in this case, using "accuracy" as the performance metric). We measure the randomness by repeating the process with multiple shuffles.
 
-Negative value for importance occurs when the feature is not important at all.
-
 ## 2. Individual Conditional Expectation (ICE)
 
-How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). It can be used for regression tasks only. Since we face a classification task, we will re-use the linear regression model fitted above.
+How does the prediction change when 1 feature changes ? Individual Conditional Expectation, as its name suggests, is a plot that shows how a change in an individual feature changes the outcome of each individual prediction (one line per prediction). It can be used for regression tasks only. Since we face a classification task, we will re-use the linear regression model fitted above, and make our classification task look like a regression one.
 
 To build ICE plots, simply use `pycebox`. Start off by installing the package : 
 
 `pip install pycebox`
 
 ```python
+from pycebox.ice import ice, ice_plot
+
 ice_radius = ice(data=X_train, column='radius_mean', predict=model.predict)
 ice_concave = ice(data=X_train, column='concave points_worst', predict=model.predict)
 ice_smooth = ice(data=X_train, column='smoothness_se', predict=model.predict)
@@ -170,7 +177,7 @@ ice_concave = ice(data=X_train, column='concave points_worst', predict=gb.predic
 
 ![image](https://maelfabien.github.io/assets/images/pred_9.png)
 
-Thanks to ICEs, we understand the impact of a feature on the value of the outcome for each individual instance, and we easily understand trends. However, the ICE curves only display one feature at a time, and we cannot plot the joint importance of 2 features for example. Partial dependence plots appear to overcome this issue.
+Thanks to ICEs, we understand the impact of a feature on the value of the outcome for each individual instance, and we easily understand trends. However, the ICE curves only display one feature at a time, and we cannot plot the joint importance of 2 features for example. Partial dependence plots overcome this issue.
 
 ## 3. Partial dependence plots
 
@@ -178,23 +185,25 @@ Thanks to ICEs, we understand the impact of a feature on the value of the outcom
 
 Just like ICEs, Partial Dependence Plots (PDP) show how a feature affects predictions. They are however more powerful since they can plot joint effects of 2 features on the output. 
 
-Partial dependence plots are calculated after a model has been fitted. How do we then split / disentangle the effects of several features?
+Partial dependence plots are calculated after a model has been fitted. It tries to split the effect of every feature in the overall model's predictions.
 
-We start by selecting a single row. We will use the fitted model to predict our outcome of that row. But we repeatedly **alter the value** for **one variable** to make a series of predictions.
+We start by selecting a single row. We will use the fitted model to predict the prediction of that row. But we repeatedly **alter the value** for **one variable** to make a series of predictions.
 
-For example, in the breast cancer example used above, we could predict the outcome if the radius is 10, 12, 14, 16...
+For example, in the breast cancer example used above, we could predict the outcome for different values of the radius : 10, 12, 14, 16...
 
 We build the plot by:
-- representing on the horizontal axis the value change in the radius of the tumor for example
-- and on the horizontal axis the change of the outcome
+- representing on the x-axis the value change in the radius
+- and on the y-axis the change of the outcome
 
-We don't use only a single row, but many rows to do that. Therefore, we can represent a confidence interval and an average value. The blue shaded area indicates the level of confidence. PDPs can be compared with ICEs for these kind of plots, but they show the average trend and confidence levels instead of individual lines.
+We don't use only a single row, but many rows to do build this plot. The blue area corresponds to an empirical confidence interval. PDPs can be compared with ICEs for these kind of plots, but they show the average trend and confidence levels instead of individual lines. It makes trends easier to understand, although we loose the low-level vision for each prediction.
 
-Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. 
+We can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. 
 
 To install PDPbox : `pip install pdpbox`
 
 ```python
+from pdpbox import pdp, get_dataset, info_plots
+
 pdp_rad = pdp.pdp_isolate(model=rf, dataset=X_test, model_features=X_test.columns, feature='radius_mean')
 
 pdp.pdp_plot(pdp_rad, 'Radius Mean')
@@ -236,7 +245,7 @@ model=rf, X=X_train, features=features_to_plot, feature_names=features_to_plot
 
 ### Force plots
 
-We have seen so far techniques to extract general insights from a machine learning model. What if you want to break down how the model works for an individual prediction? Shapley Values break down a single prediction to show the impact of each feature.
+We have seen so far techniques to extract general insights from a machine learning model. Shapley values are used to break down a single prediction.
 
 SHAP (SHapley Additive exPlanations) values show the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
 
@@ -255,8 +264,10 @@ pip install shap
 Then, compute the Shapley values for this row, using our random forest classifier fitted previously.
 
 ```python
+import shap
+
 row = 5
-data_for_prediction = X_test.iloc[row]  # use 1 row of data here. Could use multiple rows if desired
+data_for_prediction = X_test.iloc[row]  # use 1 arbitrary row of data
 data_for_prediction_array = data_for_prediction.values.reshape(1, -1)
 
 explainer = shap.TreeExplainer(rf)
@@ -274,7 +285,7 @@ shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction
 
 The output prediction is 0, which means the model classifies this observation as benign.
 
-The base value is 0.3633. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from `radius_worst`.
+The base value is 0.3633. Feature values that push towards a malignant tumor causing are in pink, and the length of the region shows how much the feature contributes to this effect. Feature values decreasing the prediction and making our tumor benign are in blue. The biggest impact comes from `radius_worst`.
 
 If you subtract the length of the blue bars from the length of the pink bars, it equals the distance from the base value to the output.
 
@@ -282,7 +293,7 @@ We explored so far Tree based models. `shap.DeepExplainer` works with Deep Learn
 
 ### Summary plots
 
-We can also just take the mean absolute value of the SHAP values for each feature to get a standard bar plot (produces stacked bars for multi-class outputs):
+We can also just take the mean absolute value of the SHAP values for each feature to get a standard bar plot. It produces stacked bars for multi-class outputs:
 
 ```python
 shap.summary_plot(shap_values, X_train, plot_type="bar")
@@ -292,21 +303,21 @@ shap.summary_plot(shap_values, X_train, plot_type="bar")
 
 ## 5. Approximation (Surrogate) models
 
-Approximation models (or global surrogate) is a simple and quite efficient trick. The idea is really simple : we train an interpretable model to approach the predictions of a black-box algorithm. 
+Approximation models (or global surrogate) is a simple and quite efficient trick. The idea is really simple. We train an interpretable model to approach the predictions of a black-box algorithm. 
 
-We keep the original data, and use as `y_train` the predictions made on a data sample by the black-box algorithm. We can use any interpretable model, and benefit from all the advantages of the model chosen.
+We keep the original data, and use as targets the predictions made by the black-box algorithm. We can use any interpretable model, and benefit from all the advantages of the model chosen.
 
-We might however loose accuracy compared to the black-box model, and we must pay attention to the way we sample data to train the black box algorithm.
+We must however pay attention to the performance of the interpretable model, since it might perform poorly in some regions.
 
 ## 6. Local Interpretable Model-agnostic Explanations (LIME)
 
 Instead of training an interpretable model to approximate a black box model, LIME focuses on training local explainable models to explain individual predictions. We want the explanation to reflect the behavior of the model "around" the instance that we predict. This is called "local fidelity".
 
-LIME algorithms focus on explaining the prediction of a single instance. LIME uses an exponential smoothing kernel to define the notion of neighborhood of an instance of interest.
+LIME uses an exponential smoothing kernel to define the notion of neighborhood of an instance of interest.
 
 We first select the instance we want to explain. By making small variations in the input data to the black-box model, we generate a new training set with these samples and their predicted labels. We then train an interpretable classifier on those new samples, and weight each sample according to how "close" it is to the instance we want to explain.
 
-Then, we benefit from the advantages of the interpretable model to explain each prediction.
+We benefit from the advantages of the interpretable model to explain each prediction.
 
 We can implement LIME algorithm in Python with LIME package :
 
@@ -315,6 +326,9 @@ We can implement LIME algorithm in Python with LIME package :
 Then, lime takes only numpy arrays as inputs :
 
 ```python
+import lime
+import lime.lime_tabular
+
 explainer = lime.lime_tabular.LimeTabularExplainer(np.array(X_train), feature_names=np.array(X_train.columns), class_names=np.array([0, 1]), discretize_continuous=True)
 ```
 
@@ -337,9 +351,9 @@ Since we had the `show_all` parameter set to false, only the features used in th
 
 The prediction probabilities of the black box model are displayed on the left. 
 
-The prediction of the local surrogate model stands under the 0 or the 1. Here, the local surrogate and the black box model both lead to the same output. It might happen, but it's quite rare, that the local surrogate model and the black box one do not give the same output. In the middle graph, we observe the contribution of each feature in the local interpretable surrogate model, normalized to 1. This way, we know the extent to which a given variable lead to the prediction of the black-box model.
+The prediction of the local surrogate model stands under the 0 or the 1. Here, the local surrogate and the black box model both lead to the same output. It might happen, but it's quite rare, that the local surrogate model and the black box one do not give the same output. In the middle graph, we observe the contribution of each feature in the local interpretable surrogate model, normalized to 1. This way, we know the extent to which a given variable contributed to the prediction of the black-box model.
 
-> We have covered in this article the motivation for interpretable and explainable machine learning, the main interpretable models and the most widely used methods for explainable machine learning models. Machine learning explainability techniques are an opportunity to use more complex and less transparent models, that usually perform well, and maintain trust in the output of the model.g
+> Machine learning explainability techniques are an opportunity to use more complex and less transparent models, that usually perform well, and maintain trust in the output of the model. 
 
 If you'd like to read more on this toppic, make sure to check these references :
 - [Interpretable ML Book](https://christophm.github.io/interpretable-ml-book)
