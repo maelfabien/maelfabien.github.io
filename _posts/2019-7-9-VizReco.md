@@ -1,6 +1,6 @@
 ---
 published: true
-title: Visual Recommendation
+title: Automated Graphs with Visual Recommendation Systems
 collection: ml
 layout: single
 author_profile: false
@@ -110,4 +110,6 @@ Key messages :
 
 To measure the performance of the model, participants were recruited through Amazon Mechanical Turk. The outcomes are really encouraging, since VizML performs as well as Plotly's users on the chosen metric.
 
-![image](https://maelfabien.github.io/assets/images/res_viz.png)g
+![image](https://maelfabien.github.io/assets/images/res_viz.png)
+
+> *Conclusion* : This recent paper offers great perspectives in the field of Visual Recommendation. In the original paper, the authors also suggest a series of future research directions.
