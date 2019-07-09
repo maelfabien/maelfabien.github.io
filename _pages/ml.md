@@ -43,6 +43,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Key Concepts of Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ? 
 
+[Visual Recommendation](https://maelfabien.github.io/machinelearning/VizReco/) : Visualization is a great way to enrich data exploration and analysis. Visual Recommendation systems aim to suggest automatically visualizations of a dataset.
+
 [Tableau-like in Python with Altair](https://maelfabien.github.io/machinelearning/Altair/) : Altair is a great Python library to create dashboards and interactive graphs like in Tableau.
 
 [Introduction to D3.js](https://maelfabien.github.io/machinelearning/D3/) : D3 is a powerful JavaScript library that allows you to create graphs for web apps. In this introduction, we'll cover the main concepts of D3.
