@@ -33,6 +33,14 @@ In this challenge, our aim was to develop face classification algorithms using D
 
 <br>
 
+
+# Written for other blogs
+
+I also write articles for companies (if you think we could work together, feel free to reach out !) :
+
+[Who's the painter? - For explorium.ai](https://www.explorium.ai/blog/whos-the-painter/) : An illustration of how data enrichment and feature engineering can improve a model.
+
+
 # Medium Articles
 
 <div id="medium-widget"></div>
