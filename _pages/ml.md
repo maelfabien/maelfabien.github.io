@@ -87,6 +87,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Hidden Markov Models](https://maelfabien.github.io/machinelearning/HMM_2/) : In this article, we'll go through the theory in a visual way and explore HMMs for a simple NLP task.
 
+[Build a language recognition app from scratch](https://maelfabien.github.io/machinelearning/HMM_3/) : HMMs and Viterbi decoding algorithm can be used to recognize the language of a text. Let's implement this from scratch !
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/graph_head.jpg)
