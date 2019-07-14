@@ -40,6 +40,7 @@ I also write articles for companies (if you think we could work together, feel f
 
 [Who's the painter? - For explorium.ai](https://www.explorium.ai/blog/whos-the-painter/) : An illustration of how data enrichment and feature engineering can improve a model.
 
+<br>
 
 # Medium Articles
 
