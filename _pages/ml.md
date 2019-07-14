@@ -99,6 +99,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
 
+[Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/nlp_head.jpg)
