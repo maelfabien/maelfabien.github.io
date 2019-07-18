@@ -40,7 +40,10 @@ I also write articles for companies (if you think we could work together, feel f
 
 [Who's the painter? - For explorium.ai](https://www.explorium.ai/blog/whos-the-painter/) : An illustration of how data enrichment and feature engineering can improve a model.
 
+[Machine Learning Interpretability and Explainability (1/2) - For explorium.ai](https://www.explorium.ai/blog/whos-the-painter/) : An introduction to interpretable models with code and examples.
+
 [A guide to Face Detection - For digitalminds.io](https://www.digitalminds.io/blog/a_guide_to_face_detection_in_python) : An overview of the different techniques face Face Detection in Python (with code).
+
 
 <br>
 
