@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 permalink: /blog/
 author_profile: true
 title: "Articles"
@@ -20,5 +20,7 @@ layouts_gallery:
 
 {%- assign search_provider = site.search_provider | default: "lunr" -%}
 
+<div id="main" role="main">
 <input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
 <div id="results" class="results"></div>
+</div>
