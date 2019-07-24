@@ -15,21 +15,21 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% endif %}
-
-{% if page.url != "/" and site.breadcrumbs %}
-  {% unless paginator %}
-    {% include breadcrumbs.html %}
-  {% endunless %}
-{% endif %}
-
-{%- assign search_provider = site.search_provider | default: "lunr" -%}
-
-<div id="main" role="main">
-<input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
-<div id="results" class="results"></div>
-</div>
-
 {% include gallery id="layouts_gallery" class="full" layout="half" caption="Categories"%}
+
+{% capture written_label %}'None'{% endcapture %}
+
+{% for collection in site.collections %}
+    {% unless collection.output == false or collection.label == "posts" %}
+        {% capture label %}{{ collection.label }}{% endcapture %}
+        {% if label != written_label %}
+            <h2 id="{{ label | slugify }}" class="archive__subtitle">{{ label }}</h2>
+            {% capture written_label %}{{ label }}{% endcapture %}
+        {% endif %}
+    {% endunless %}
+    {% for post in collection.docs %}
+        {% unless collection.output == false or collection.label == "posts" %}
+            {% include archive-single.html %}
+        {% endunless %}
+    {% endfor %}
+{% endfor %}
