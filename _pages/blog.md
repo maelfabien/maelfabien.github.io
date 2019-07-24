@@ -1,11 +1,10 @@
 ---
 layout: archive
 permalink: /blog/
-author_profile: true
+author_profile: false
 title: "Topics"
 sidebar:
     nav: sidebar-sample
-classes: wide
 header :
     image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 layouts_gallery:
