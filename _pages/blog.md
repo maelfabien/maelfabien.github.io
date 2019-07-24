@@ -20,11 +20,6 @@ layouts_gallery:
   {% include sidebar.html %}
 
   <div class="archive">
-    {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 id="page-title" class="page__title">{{ page.title }}</h1>
-    {% endunless %}
-
-    {{ content }}
 
     {%- assign search_provider = site.search_provider | default: "lunr" -%}
     {%- case search_provider -%}
