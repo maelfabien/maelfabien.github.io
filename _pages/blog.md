@@ -3,6 +3,11 @@ layout: archive
 permalink: /blog/
 author_profile: true
 title: "Topics"
+sidebar:
+    nav: sidebar-sample
+classes: wide
+header :
+    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 layouts_gallery:
   - url: https://maelfabien.github.io/ml/
     image_path: /assets/images/ml_short.png
@@ -13,6 +18,8 @@ layouts_gallery:
   - url: https://maelfabien.github.io/ent/
     image_path: /assets/images/ent_short.png
 ---
+
+In the following section, you have a direct access to the articles I'm writing by category :
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
