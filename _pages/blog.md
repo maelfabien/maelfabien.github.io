@@ -15,6 +15,16 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
 {%- assign search_provider = site.search_provider | default: "lunr" -%}
 
 <div id="main" role="main">
