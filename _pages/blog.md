@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 permalink: /blog/
 author_profile: true
 title: "Articles"
@@ -15,12 +15,11 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
-{% include gallery id="layouts_gallery" class="full" layout="half" caption="Categories"%}
-
-
 {%- assign search_provider = site.search_provider | default: "lunr" -%}
 
 <div id="main" role="main">
 <input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
 <div id="results" class="results"></div>
 </div>
+
+{% include gallery id="layouts_gallery" class="full" layout="half" caption="Categories"%}
