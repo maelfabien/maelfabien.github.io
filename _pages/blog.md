@@ -15,7 +15,9 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
-{% include gallery id="layouts_gallery" class="full" layout="half" caption="Categories"%}
+{% include gallery id="layouts_gallery" class="full" layout="half"%}
+
+# All articles
 
 {% capture written_label %}'None'{% endcapture %}
 
