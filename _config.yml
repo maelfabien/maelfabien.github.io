@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "fr-FR"
+locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
 name                     : "Maël Fabien"
