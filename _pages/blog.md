@@ -13,4 +13,4 @@ layouts_gallery:
     image_path: /assets/images/de_short.png
 ---
 
-{% include gallery id="layouts_gallery" %}
+{% include gallery id="layouts_gallery" class="full" caption="Categories"%}
