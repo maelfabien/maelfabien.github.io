@@ -2,7 +2,7 @@
 title: "Who am I?"
 excerpt: ""
 author_profile: true
-layout : home
+layout : single_index
 redirect_from: 
     - /about/
     - /about.html
