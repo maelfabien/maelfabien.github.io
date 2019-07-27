@@ -18,7 +18,7 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
-I recently started a newsletter in which I gather the best articles I wrote on a topic, Github repositories, projects, papers and more ! If you want to stay in the loop, I'll try to send 1 to 2 emails per month :)
+I recently started a newsletter in which I gather some cool articles I wrote on a topic, interesting Github repositories, projects, papers and more ! If you want to stay in the loop, I'll try to send 1 to 2 emails per month :)
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -69,15 +69,15 @@ I recently started a newsletter in which I gather the best articles I wrote on a
 {% for i in (1..categories_max) reversed %}
   {% for category in site.categories %}
     {% if category[1].size == i %}
-      <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ category[0] }}</h2>
+      <!--<section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">-->
+      <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
           {% for post in category.last %}
             {% include archive-single.html type=page.entries_layout %}
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
+      <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      <!--</section>-->
     {% endif %}
   {% endfor %}
 {% endfor %}
