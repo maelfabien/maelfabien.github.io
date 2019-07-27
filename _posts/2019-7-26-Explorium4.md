@@ -12,6 +12,7 @@ header :
     teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
+search: false
 toc_sticky: true
 sidebar:
     nav: sidebar-sample
