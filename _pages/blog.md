@@ -69,14 +69,10 @@ I recently started a newsletter in which I gather some cool articles I wrote on 
 {% for i in (1..categories_max) reversed %}
   {% for category in site.categories %}
     {% if category[1].size == i %}
-      <!--<section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">-->
-      <h2 class="archive__subtitle">{{ category[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in category.last %}
-            {% include archive-single.html type=page.entries_layout %}
-          {% endfor %}
-        </div>
-      <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      <strong>{{ category[0] }}</strong> 
+        {% for post in category.last %}
+          {% include archive-single.html type=page.entries_layout %}
+        {% endfor %}
       <!--</section>-->
     {% endif %}
   {% endfor %}
