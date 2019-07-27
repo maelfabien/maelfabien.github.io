@@ -69,11 +69,10 @@ I recently started a newsletter in which I gather some cool articles I wrote on 
 {% for i in (1..categories_max) reversed %}
   {% for category in site.categories %}
     {% if category[1].size == i %}
-      <strong>{{ category[0] }}</strong> 
+      {{ category[0] }}
         {% for post in category.last %}
           {% include archive-single.html type=page.entries_layout %}
         {% endfor %}
-      <!--</section>-->
     {% endif %}
   {% endfor %}
 {% endfor %}
