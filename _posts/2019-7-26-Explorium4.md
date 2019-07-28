@@ -391,7 +391,7 @@ The following table summarizes the performance of the different approaches:
 
 We notice that the bayesian optimization outperforms the two other approaches, and can be longer eventually. We tested more combinations of the grid search, but identifying optimal parameters as precise as the ones in bayesian optimization would have required a lot more of combinations for the grid search and the randomized search. 
 
-The randomized search achieved results similar to grid search, in less than 25% of the time. The identification of the optimal set of hyperparameters is however not guaranteed. It is possible to specify a broader set of parameters to test in grid search and randomized search using `np.arange` function, but the underlying distribution remains discrete.
+The randomized search achieved results similar to grid search, in less than 25% of the computation time. The identification of the optimal set of hyperparameters is however not guaranteed. It is possible to specify a broader set of parameters to test in grid search and randomized search using `np.arange` function, but the underlying distribution remains discrete.
 
 In conclusion, using the Bayesian approach seems to be a good choice, since it can learn complex relations and interactions between the hyperparameters. There is however a risk that such approach focuses only on local minima, and controlling this with a randomize search at first might be a good idea.
 
