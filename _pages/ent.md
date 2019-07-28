@@ -91,3 +91,5 @@ In April 2019, I came back to Lausanne to talk about my entrepreneurial experien
 # Next ?
  
 After this first exeprience, I have kept thinking about potential solutions, or developing some projects, but not as a main activity. I think at some point, I'll get back to entrepreneurship in order to mix my passions for entrepreneurship and data science. 
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>

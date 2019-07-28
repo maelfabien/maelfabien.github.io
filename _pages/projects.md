@@ -177,3 +177,5 @@ I used Splunk in a Cyber Security Project. The aim of the project was to identif
 [Predicting the Song of the year (2/3)](https://maelfabien.github.io/Hack-2/)
 
 [Predicting the Song of the year (3/3)](https://maelfabien.github.io/Hack-3/)
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
