@@ -192,7 +192,7 @@ from hyperopt import hp
 from hyperopt import fmin
 ```
 
-In this example, we will try to optimize a simple Logistic Regression. Define the maximum number of evaluations and the maximum number of evaluations :
+In this example, we will try to optimize a simple Logistic Regression. Define the maximum number of evaluations and the maximum number of folds :
 
 ```python
 N_FOLDS = 10

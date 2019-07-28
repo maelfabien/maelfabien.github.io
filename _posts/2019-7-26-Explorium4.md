@@ -63,6 +63,34 @@ There are two ways to reduce the search space :
 
 Grid search and Randomized search are the two most popular methods for hyper-parameter optimization of any model. In both cases, the aim is to test a set of parameters whose range has been specified by the users, and observe the outcome in terms of performance of the model. However, the way the parameters are tested is quite different between Grid Search and Randomized Search.
 
+To illustrate the concepts presented below, we will use a Kaggle Credit Card Fraud Detection dataset. The main idea will be to compare the time, the number of combinations tested, the guarantees and the performance of each approach. 
+
+The dataset can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud). It contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+
+It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+```
+
+```python
+df = pd.read_csv('creditcard.csv')
+df.head()
+```
+
+![image](https://maelfabien.github.io/assets/images/auto3.jpg)
+
+We will use the F1-Score metric, a harmonic mean between the precision and the recall. We will suppose that a previous work on the model selection was made on the training set, and conducted to the choice of a Logistic Regression. Therefore, we need to use a validation set to select the right parameters of the logistic regression. 
+
+```python
+X_train, X_val, y_test, y_val = train_test_split(df.drop(['Class'], axis=1), df['Class'], test_size=0.2)
+```
+
+
+
 # Grid Search
 
 In grid search, we try every combination of the set of hyperparameters that the user specified. This means that we will test the following combinations for example :
@@ -79,19 +107,19 @@ In grid search, we try every combination of the set of hyperparameters that the 
 | .. | .. | .. |
 | Entropy | 50 | 5 |
 
-We can visually represent the grid search on 2 features as a sequential way to test, in order, all the combinations :
+We can visually represent the grid search on 2 features as a sequential way to test, in order, all the combinations:
 
 ![image](https://maelfabien.github.io/assets/images/expl4_1.png)
 
-In this simple example, the space explored can be represented as such :
+In this simple example, the space explored can be represented as such:
 
 ![image](https://maelfabien.github.io/assets/images/expl4_2.png)
 
-The limitations of grid search are pretty straightforward :
+The limitations of grid search are pretty straightforward:
 - Grid search does not really scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
 - We have no guarantee to explore the right space. 
 
-The user needs a good understanding of the underlying problem to select the right hyperparameters to test. In order to focus on the right regions of the hyperparameter space, the following technique might be useful :
+The user needs a good understanding of the underlying problem to select the right hyperparameters to test. In order to focus on the right regions of the hyperparameter space, the following technique might be useful:
 
 > Start with a first large-scale Grid Search, identify a region of interest in which the models perform well, and start a second Grid Search in this specific region.
 
@@ -99,23 +127,46 @@ The user needs a good understanding of the underlying problem to select the righ
 
 This approach can however be long to run and shoul be used if the model you are tuning does not have too much parameters, or if you don't have too much training data.
 
-Grid search is implemented in scikit-learn under the name of `GridSearchCV` (for cross validation) :
+Grid search is implemented in scikit-learn under the name of `GridSearchCV` (for cross validation):
 
 ```python
 from sklearn.model_selection import GridSearchCV
 
-param_grid = [
-    'n_estimators': [3, 10, 30], 
-    'max_features': [2, 4, 6, 8], 
-    'bootstrap' : [True, False]
-]
+param_grid = {
+    'penalty': ['l1', 'l2'],
+    'C': [0.8, 1, 1.2], 
+    'tol': [0.00005, 0.0001, 0.00015, 0.0002], 
+    'fit_intercept' : [True, False], 
+    'warm_start' : [True, False]
+}
 
-rf = RandomForestRegressor()
-
-grid_search = GridSearchCV(rf, param_grid, cv=5, scoring='mean_squared_error', return_train_score=True)
-
+lr = LogisticRegression()
+grid_search = GridSearchCV(lr, param_grid, cv=5, scoring='f1_macro', return_train_score=True)
 grid_search.fit(X_val, y_val)
 ````
+
+After approximately 4 minutes, the best model appears to be the following:
+
+```python
+estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+intercept_scaling=1, max_iter=100, multi_class='warn',
+n_jobs=None, penalty='l2', random_state=None, solver='warn',
+tol=0.0001, verbose=0, warm_start=False)
+```
+
+To access the results and the details of the GridSearch Cross Validation, simply use:
+
+```python
+grid_search.cv_results_ 
+```
+
+This gives access to the fitting time, the prediction time, the training score, the test score.... The average F1-Score on the test set of the Cross Validations can be computed by taking the mean of the test scores array:
+
+```python
+np.mean(grid_search.cv_results_['mean_test_score'])
+```
+
+We achieve an average F1-Score of approximately `0.837` in 4 minutes and 17 seconds.
 
 # Randomized Search
 
@@ -138,18 +189,29 @@ The implementation in Scikit-learn is also straight forward :
 ```python
 from sklearn.model_selection import RandomizedSearchCV
 
-param_grid = [
-    'n_estimators': [3, 10, 30], 
-    'max_features': [2, 4, 6, 8], 
-    'bootstrap' : [True, False]
-]
+param_grid = {
+'penalty': ['l1', 'l2'],
+'C': [0.8, 1, 1.2], 
+'tol': [0.00005, 0.0001, 0.00015, 0.0002], 
+'fit_intercept' : [True, False], 
+'warm_start' : [True, False]
+}
 
-rf = RandomForestRegressor()
-
-rnd_search = RandomizedSearchCV(rf, param_grid, cv=5, scoring='mean_squared_error', return_train_score=True)
-
+lr = LogisticRegression()
+rnd_search = RandomizedSearchCV(lr, param_grid, n_iter = 20, cv=5, scoring='f1_macro', return_train_score=True)
 rnd_search.fit(X_val, y_val)
 ````
+
+The optimal model identified is exactly the same:
+
+```python
+estimator=LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+intercept_scaling=1, max_iter=100, multi_class='warn',
+n_jobs=None, penalty='l2', random_state=None, solver='warn',
+tol=0.0001, verbose=0, warm_start=False)
+```
+
+The average F1-Score is quite similar, although there is a slight difference due to the Cross Validation split. We managed to successfully explore the combination of parameters in less than 53 seconds. In this example, the randomized search was successful, but it's not always the case.
 
 There is a tradeoff to make between the guarantee to identify the best combination of parameters and the computation time. As mentioned, a simple trick could be to start with a randomized search to reduce the parameters space, and then launch a grid search to select the optimal features within this space.
 
@@ -237,53 +299,17 @@ If the algorithm finds a local minimum of the objective function, it might conce
 
 ## Implementation in Python
 
-Several softwares implement Gaussian Hyperparameter Optimization.
+Several softwares and libraries implement Gaussian Hyperparameter Optimization and rely on different theoretical aspects of this HPO method.
 
 ![image](https://maelfabien.github.io/assets/images/ho5.jpg)
 
-We'll be using HyperOpt in this example. We'll use the Credit Card Fraud detection, a famous Kaggle dataset that can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud).
-
-The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
-
-It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
-
-```python
-### General
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-```
-
-```python
-df = pd.read_csv('creditcard.csv')
-df.head()
-```
-
-![image](https://maelfabien.github.io/assets/images/auto3.jpg)
-
-If you explore the data, you'll notice that only 0.17% of the transactions are fraudulant. We'll use the F1-Score metric, a harmonic mean between the precision and the recall.
-
-To understand the nature of the fraudulant transactions, simply plot the following graph :
-
-```python
-plt.figure(figsize=(12,8))
-plt.scatter(df[df.Class == 0].Time, df[df.Class == 0].Amount, c='green', alpha=0.4, label="Not Fraud")
-plt.scatter(df[df.Class == 1].Time, df[df.Class == 1].Amount, c='red', label="Fraud")
-plt.title("Amount of the transaction over time")
-plt.legend()
-plt.show()
-```
-
-![image](https://maelfabien.github.io/assets/images/auto4.jpg)
-
-Fraudulant transactions have a limited amount. We can guess that these transactions must remain "unseen" and not attracting too much attention.
+We will be using HyperOpt in this example, since it's one of the most famous HPO library in Python, that can also be used for Deep Learning.
 
 ## HyperOpt
 
 Import the HyperOpt packages and functions :
 
 ```python
-### HyperOpt Parameter Tuning
 from hyperopt import tpe
 from hyperopt import STATUS_OK
 from hyperopt import Trials
@@ -291,24 +317,22 @@ from hyperopt import hp
 from hyperopt import fmin
 ```
 
-In this example, we will try to optimize a simple Logistic Regression. Define the maximum number of evaluations and the maximum number of evaluations :
+In this example, we will try to optimize the Logistic Regression. Define the maximum number of evaluations and the maximum number of folds :
 
 ```python
 N_FOLDS = 10
 MAX_EVALS = 50
 ```
 
-We start by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross validation F1 Score, and therefore minimize 1 - this score.
+We start off by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross validation F1 Score, and therefore minimize `1 - CV(F1-Score)` :
 
 ```python
 def objective(params, n_folds = N_FOLDS):
     """Objective function for Logistic Regression Hyperparameter Tuning"""
 
     # Perform n_fold cross validation with hyperparameters
-    # Use early stopping and evalute based on ROC AUC
-
     clf = LogisticRegression(**params,random_state=0,verbose =0)
-    scores = cross_val_score(clf, X, y, cv=5, scoring='f1_macro')
+    scores = cross_val_score(clf, X_val, y_val, cv=5, scoring='f1_macro')
 
     # Extract the best score
     best_score = max(scores)
@@ -316,7 +340,7 @@ def objective(params, n_folds = N_FOLDS):
     # Loss must be minimized
     loss = 1 - best_score
 
-    # Dictionary with information for evaluation
+    # Return all relevant information
     return {'loss': loss, 'params': params, 'status': STATUS_OK}
 ```
 
@@ -324,58 +348,52 @@ Then, we define the space, i.e the range of all parameters we want to tune :
 
 ```python
 space = {
-    'class_weight': hp.choice('class_weight', [None, class_weight]),
     'warm_start' : hp.choice('warm_start', [True, False]),
     'fit_intercept' : hp.choice('fit_intercept', [True, False]),
     'tol' : hp.uniform('tol', 0.00001, 0.0001),
     'C' : hp.uniform('C', 0.05, 3),
     'solver' : hp.choice('solver', ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']),
-    'max_iter' : hp.choice('max_iter', range(5,1000))
 }
 ```
 
-We are now ready to run the optimization :
+Notice that we won't be able to compute the number of combinations tested here since we use uniform distributions for continuous variables such as `C` and the tolerance `tol`. We will limit the number of trials to 50 instead, as defined by `MAX_EVALS`. We are now ready to run the optimization :
 
 ```python
-# Algorithm
 tpe_algorithm = tpe.suggest
-
-# Trials object to track progress
 bayes_trials = Trials()
-
-# Optimize
 best = fmin(fn = objective, space = space, algo = tpe.suggest, max_evals = MAX_EVALS, trials = bayes_trials)
 ```
 
 You'll see the progress in a similar way : 
 
-`2%|▏         | 1/50 [00:31<25:57, 31.78s/it, best loss: 0.4574993225009176]`
+`90%|█████████ | 45/50 [05:09<00:31,  6.21s/it, best loss: 0.06831375590721178]`
 
-The variable `best` contains the model with the best parameters. Now, we simply copy those parameters, define a model :
-
-```python
-# Optimal model
-clf = LogisticRegression(
-    C= 2.959250240545696, 
-    fit_intercept= True,
-    max_iter= 245,
-    solver= 'newton-cg',
-    tol= 2.335533830757049e-05,
-    warm_start= True)
-```
-
-And fit-predict this model :
+The variable `best` contains the model with the best parameters. 
 
 ```python
-# Fit-Predict
-clf.fit(X_train, y_train)
-y_pred =clf.predict(X_test)
-f1_score(y_pred, y_test)
+{'C': 1.602432793095192,
+'fit_intercept': 0,
+'solver': 1,
+'tol': 9.914353259315055e-05,
+'warm_start': 1}
 ```
 
-`0.7356321839080459`
+The best solution identified is now different since we explored continuous distributions for several parameters.
 
-> **Conclusion** : This article illustrated
+# Conclusion
+
+The following table summarizes the performance of the different approaches:
+
+| Method | Time | Combinations tested | CV F1-Score |
+| Grid Search | 4m 17s | 96 | 0.837307 |
+| Randomized Search | 53s | 20 | 0.843494 |
+| Bayesian Optimization | 5m58s | 50 | 0,931686 |
+
+We notice that the bayesian optimization outperforms the two other approaches, and can be longer eventually. We tested more combinations of the grid search, but identifying optimal parameters as precise as the onces in bayesian optimization would have required a lot more of combinations for the grid search and the randomized search. 
+
+The randomized search achieved results simiar to grid search, in less than 25% of the time. The identification of the optimal set of hyperparameters is however not guaranteed. It is possible to specify a broader set of parameters to test in grid search and randomized search using `np.arange` function, but the underlying distribution remains discrete.
+
+In conclusion, using the bayesian approach seems to be a good choice, since it can learn complex relations and interactions between the hyperparameters. There is however a risk that such approach focuses only on a local minima, and controlling this with a randomize search at first might be a good idea.
 
 Sources :
 - [A good Quora answer](https://www.quora.com/How-does-Bayesian-optimization-work)
