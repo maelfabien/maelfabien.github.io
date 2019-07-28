@@ -2,7 +2,7 @@
 layout: archive
 permalink: /blog/
 author_profile: false
-title: "Join the newsletter"
+title: "By Topic"
 sidebar:
     nav: sidebar-sample
 header :
@@ -17,8 +17,6 @@ layouts_gallery:
   - url: https://maelfabien.github.io/ent/
     image_path: /assets/images/ent_short.png
 ---
-
-# By topic 
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
