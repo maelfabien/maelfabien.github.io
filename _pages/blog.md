@@ -5,8 +5,6 @@ author_profile: false
 title: "By Topic"
 sidebar:
     nav: sidebar-sample
-header :
-    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 layouts_gallery:
   - url: https://maelfabien.github.io/ml/
     image_path: /assets/images/ml_short.png
