@@ -3,9 +3,6 @@ main:
 
   - title: "Blog"
     url: /blog/
-    
-  - title: "Publications"
-    url: /med/
 
   - title: "Projects"
     url: /projects/
@@ -20,12 +17,10 @@ main:
     url: /search/
 
 sidebar-sample:
-  - title: "Data Science"
-    children:
-      - title: "Machine Learning"
-        url: /ml/
-      - title: "Deep Learning"
-        url: /dl/
+  - title: "Machine Learning"
+    url: /ml/
+  - title: "Deep Learning"
+    url: /dl/
   - title: "Data Engineering"
     url: /bgd/
   - title: "Entrepreneurship"
@@ -34,3 +29,17 @@ sidebar-sample:
     url: /projects/
   - title: "CV"
     url: /cv/
+  - title: "Hire Me"
+    url: /form.html
+
+sidebar-blog:
+  - title: "By Topic"
+    url: /blog#/
+  - title: "Latest Articles"
+    url: /blog#/
+  - title: "Medium Articles"
+    url: /blog#/
+  - title: "For Other Blogs"
+    url: /blog#/
+  - title: "Top Articles"
+    url: /blog#/

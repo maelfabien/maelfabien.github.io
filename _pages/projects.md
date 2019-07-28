@@ -27,6 +27,12 @@ In this research project in partnership with the French Employment Agency, we ex
 
 ![image](https://maelfabien.github.io/assets/images/webapp.jpg)
 
+The working paper can be found here :
+
+<embed src="https://maelfabien.github.io/assets/images/PE.pdf" type="application/pdf" width="600px" height="500px" />
+
+<br>
+
 <div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
@@ -130,6 +136,19 @@ In this project, I have been looking at comments of developers on GitHub pull re
 <br>
 
 <div class="github-card" data-github="maelfabien/Analyze-Github-Pull-Requests" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+<br>
+
+# A Deep Learning Approach to Face Classification
+
+In this challenge, our aim was to develop face classification algorithms using Deep Learning Architectures. I have explored hand-made CNNs, Inception, XCeption, VGG16, DenseNet or ResNet networks for binary classification purposes.
+
+<embed src="https://maelfabien.github.io/assets/images/DataChallenge.pdf" type="application/pdf" width="600px" height="500px" />
+
+<br>
+
+<div class="github-card" data-github="maelfabien/Telecom-MS-Data-Science/tree/master/MDI341/Challenge" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 <br>
