@@ -16,6 +16,8 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
+I have written close to 100 articles so far, so feel free to explore the different topics by clicking on the buttons below.
+
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
 <!--End mc_embed_signup-->
@@ -39,18 +41,19 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
-{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-{% for year in postsByYear %}
-  <section id="{{ year.name }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ year.name }}</h2>
-    <div class="entries-{{ page.entries_layout | default: 'list' }}">
-      {% for post in year.items %}
-        {% include archive-single.html type=page.entries_layout %}
-      {% endfor %}
-    </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-  </section>
-{% endfor %}
+[Automated Graphs with Visual Recommendation Systems](https://maelfabien.github.io/machinelearning/VizReco/) : Visualization is a great way to enrich data exploration and analysis. Visual Recommendation systems aim to suggest automatically visualizations of a dataset.
+
+[Machine Learning Explainability](https://maelfabien.github.io/machinelearning/Explainability/) : In this series, I will summarize the course "Machine Learning Explaibnability" from Kaggle Learn. The full course is available [here](https://www.kaggle.com/learn/machine-learning-explainability). We'll cover permutation importance, partial dependence plots and SHAP Values.
+
+[Who's the painter? - For explorium.ai](https://www.explorium.ai/blog/whos-the-painter/) : An illustration of how data enrichment and feature engineering can improve a model.
+
+[Machine Learning Interpretability and Explainability (1/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-1/) : An introduction to interpretable models with code and examples.
+
+[GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
+
+[Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
+
+[Build a language recognition app from scratch](https://maelfabien.github.io/machinelearning/HMM_3/) : HMMs and Viterbi decoding algorithm can be used to recognize the language of a text. Let's implement this from scratch !
 
 # Medium Articles
 
