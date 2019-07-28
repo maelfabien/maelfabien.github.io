@@ -20,6 +20,8 @@ layouts_gallery:
 
 <!--End mc_embed_signup-->
 
+Want to stay in the loop ? Sign in to my newsletter and receive updates every month on my latest articles, interesting GitHub repositories, cool papers and more !
+
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
 <div id="mc_embed_signup" style="background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;">
@@ -32,6 +34,8 @@ layouts_gallery:
 </div>
 </form>
 </div>
+
+<br>
 
 # Latest Articles
 
@@ -53,6 +57,8 @@ layouts_gallery:
 <div id="medium-widget"></div>
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@mael.fabien","postsPerLine":1,"limit":10,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+
+<br>
 
 # Written for other blogs
 
