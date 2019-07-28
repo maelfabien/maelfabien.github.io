@@ -8,21 +8,21 @@ read_time: true
 categories: [machinelearning]
 excerpt : "Parameters and Model Optimization"
 header :
-    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
-    teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
+overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 search: false
 toc_sticky: true
 sidebar:
-    nav: sidebar-sample
+nav: sidebar-sample
 ---
 
 <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-# What is Hyperparameter optimization ?
+# What is Hyperparameter optimization?
 
 > Hyperparameter optimization (HPO) is the process by which we aim to improve the performance of a model by choosing the right set of hyperparameters.
 
@@ -43,13 +43,13 @@ There are some major challenges in the field of HPO :
 
 To optimize the hyper-parameters, we tend to use a **validation set** (if available) to limit the overfitting on the train set.
 
-Let's illustrate a simple HPO over a simple decision tree. What are the hyperparameter we can impact ? You might think of :
+Let's illustrate a simple HPO over a simple decision tree. What are the hyperparameters we can impact? You might think of :
 - `criterion`
 - `max_depth`
 - `min_samples_split`
 - ...
 
-How many models should we fit in order to test all possible combinations of hyperparameters ? Well, we can represent the problem graphically :
+How many models should we fit in order to test all possible combinations of hyperparameters? Well, we can represent the problem graphically :
 
 ![image](https://maelfabien.github.io/assets/images/expl4_0.png)
 
@@ -61,13 +61,13 @@ There are two ways to reduce the search space :
 - Specify a space manually, and explore the space using transparent techniques such as Grid Search or Randomized Search
 - Use model-based techniques such as Bayesian Hyperparameter Optimization
 
-Grid search and Randomized search are the two most popular methods for hyper-parameter optimization of any model. In both cases, the aim is to test a set of parameters whose range has been specified by the users, and observe the outcome in terms of performance of the model. However, the way the parameters are tested is quite different between Grid Search and Randomized Search.
+Grid search and Randomized search are the two most popular methods for hyper-parameter optimization of any model. In both cases, the aim is to test a set of parameters whose range has been specified by the users and observe the outcome in terms of performance of the model. However, the way the parameters are tested is quite different between Grid Search and Randomized Search.
 
 To illustrate the concepts presented below, we will use a Kaggle Credit Card Fraud Detection dataset. The main idea will be to compare the time, the number of combinations tested, the guarantees and the performance of each approach. 
 
-The dataset can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud). It contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+The dataset can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud). It contains transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
 
-It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 ```python
 import pandas as pd
@@ -83,7 +83,7 @@ df.head()
 
 ![image](https://maelfabien.github.io/assets/images/auto3.jpg)
 
-We will use the F1-Score metric, a harmonic mean between the precision and the recall. We will suppose that a previous work on the model selection was made on the training set, and conducted to the choice of a Logistic Regression. Therefore, we need to use a validation set to select the right parameters of the logistic regression. 
+We will use the F1-Score metric, a harmonic mean between the precision and the recall. We will suppose that previous work on the model selection was made on the training set, and conducted to the choice of a Logistic Regression. Therefore, we need to use a validation set to select the right parameters of the logistic regression. 
 
 ```python
 X_train, X_val, y_test, y_val = train_test_split(df.drop(['Class'], axis=1), df['Class'], test_size=0.2)
@@ -93,7 +93,7 @@ X_train, X_val, y_test, y_val = train_test_split(df.drop(['Class'], axis=1), df[
 
 # Grid Search
 
-In grid search, we try every combination of the set of hyperparameters that the user specified. This means that we will test the following combinations for example :
+In grid search, we try every combination of the set of hyperparameters that the user-specified. This means that we will test the following combinations for example :
 
 | Criterion | Max Depth | Min Samples Split |
 | Gini | 5 | 2 |
@@ -125,19 +125,19 @@ The user needs a good understanding of the underlying problem to select the righ
 
 ![image](https://maelfabien.github.io/assets/images/expl4_3.png)
 
-This approach can however be long to run and shoul be used if the model you are tuning does not have too much parameters, or if you don't have too much training data.
+This approach can, however, be long to run and should be used if the model you are tuning does not have too many parameters, or if you don't have too much training data.
 
-Grid search is implemented in scikit-learn under the name of `GridSearchCV` (for cross validation):
+Grid search is implemented in scikit-learn under the name of `GridSearchCV` (for cross-validation):
 
 ```python
 from sklearn.model_selection import GridSearchCV
 
 param_grid = {
-    'penalty': ['l1', 'l2'],
-    'C': [0.8, 1, 1.2], 
-    'tol': [0.00005, 0.0001, 0.00015, 0.0002], 
-    'fit_intercept' : [True, False], 
-    'warm_start' : [True, False]
+'penalty': ['l1', 'l2'],
+'C': [0.8, 1, 1.2], 
+'tol': [0.00005, 0.0001, 0.00015, 0.0002], 
+'fit_intercept' : [True, False], 
+'warm_start' : [True, False]
 }
 
 lr = LogisticRegression()
@@ -154,13 +154,13 @@ n_jobs=None, penalty='l2', random_state=None, solver='warn',
 tol=0.0001, verbose=0, warm_start=False)
 ```
 
-To access the results and the details of the GridSearch Cross Validation, simply use:
+To access the results and the details of the GridSearch Cross-Validation, simply use:
 
 ```python
 grid_search.cv_results_ 
 ```
 
-This gives access to the fitting time, the prediction time, the training score, the test score.... The average F1-Score on the test set of the Cross Validations can be computed by taking the mean of the test scores array:
+This gives access to the fitting time, the prediction time, the training score, the test score... The average F1-Score on the test set of the Cross Validations can be computed by taking the mean of the test scores array:
 
 ```python
 np.mean(grid_search.cv_results_['mean_test_score'])
@@ -170,11 +170,11 @@ We achieve an average F1-Score of approximately `0.837` in 4 minutes and 17 seco
 
 # Randomized Search
 
-Randomized search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try **random combinations** among the range of values specified for the hyper-parameters. We initally specify the number of random configurations we want to test in the parameter space.
+Randomized search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try **random combinations** among the range of values specified for the hyper-parameters. We initially specify the number of random configurations we want to test in the parameter space.
 
 ![image](https://maelfabien.github.io/assets/images/expl4_4.png)
 
-The main advantage is that we can try a broader range of values or hyperparameters within the same computation time as grid search, or test the same ones in much less time. We are however not guaranteed to identify the best combination, since not all combinations will be tested. 
+The main advantage is that we can try a broader range of values or hyperparameters within the same computation time as grid search, or test the same ones in much less time. We are however not guaranteed to identify the best combination since not all combinations will be tested. 
 
 To get back to our previous example in which we used 2 successive hyperparameter techniques in a row, randomized Search can also be used as the first layer, to either speed up the process on the same set of hyperparameters, or explore a broader range of feature values.
 
@@ -215,11 +215,11 @@ The average F1-Score is quite similar, although there is a slight difference due
 
 There is a tradeoff to make between the guarantee to identify the best combination of parameters and the computation time. As mentioned, a simple trick could be to start with a randomized search to reduce the parameters space, and then launch a grid search to select the optimal features within this space.
 
-The main limit of Grid Search or Randomized Search is that the point we just explored does not influence which point to evaluate next, since these two approaches do not depend on an underlying model. To overcome this limitation, we will introduce Bayesian Hyperparameter Optimization 
+The main limit of Grid Search or Randomized Search is that the point we just explored does not influence which point to evaluate next since these two approaches do not depend on an underlying model. To overcome this limitation, we will introduce Bayesian Hyperparameter Optimization 
 
 # Bayesian Hyperparameter Optimization
 
-Bayesian Hyperpameter Optimization is a model-based hyperparameter optimization, in the sense that our aim is to build a distribution of the loss function in terms of the value of each parameter. What are the main advantages and limitations of model-based techniques ? How can we implement it in Python ?
+Bayesian Hyperparameter Optimization is a model-based hyperparameter optimization, in the sense that our aim is to build a distribution of the loss function in terms of the value of each parameter. What are the main advantages and limitations of model-based techniques? How can we implement it in Python?
 
 Recall that in an optimization problem regarding a model's hyperparameters, the aim is to identify :
 
@@ -257,15 +257,15 @@ We use that set of predictions and pick new points where we should evaluate next
 
 Even though the true distribution is unknown (the red line), we can infer its value using Gaussian Process (confidence interval lines in green).
 
-Once we identify a new point using the acquisition function, we add it to the samples, and re-build the Gaussian Process with that new information... We keep doing this until we reach the maximal number of iterations, or the limit time for example. This is an iterative process.
+Once we identify a new point using the acquisition function, we add it to the samples and re-build the Gaussian Process with that new information... We keep doing this until we reach the maximal number of iterations or the limit time for example. This is an iterative process.
 
 ## Acquisition function
 
-How do we know which point we should evaluate next ? There are two guidelines :
+How do we know which point we should evaluate next? There are two guidelines :
 - Pick points that yield, on the approximated curve, a low value. 
 - Pick points in areas we have less explored.
 
-There is an exploration / exploitation trade-off to make. This tradeoff is taken into account in an *acquisition function*.
+There is an exploration/exploitation trade-off to make. This tradeoff is taken into account in an *acquisition function*.
 
 The acquisition function is defined as :
 
@@ -277,7 +277,7 @@ where :
 - $$ f(x^c) $$ the current guessed arg min, $$ \mu(x) $$ the guessed value of the function at `x`, and $$ \sigma(x) $$ the standard deviation of output at `x`.
 - $$ \Phi(x) $$ and $$ N(x) $$ are the CDF and the PDF of a standard normal
 
-This acquisition function is the most common, and is called the *expected improvement*. We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
+This acquisition function is the most common and is called the *expected improvement*. We then compute the acquisition score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
 
 ![image](https://maelfabien.github.io/assets/images/expl4_7.png)
 
@@ -287,7 +287,7 @@ The gaussian hyperparameter optimization process can be illustrated the followin
 
 ![image](https://maelfabien.github.io/assets/images/bo.gif)
 
-This is the essence of bayesian hyperparameter optimization !
+This is the essence of bayesian hyperparameter optimization!
 
 ## Advantages and limits of Bayesian Hyperparameter Optimization
 
@@ -299,11 +299,11 @@ If the algorithm finds a local minimum of the objective function, it might conce
 
 ## Implementation in Python
 
-Several softwares and libraries implement Gaussian Hyperparameter Optimization and rely on different theoretical aspects of this HPO method.
+Several libraries implement Gaussian Hyperparameter Optimization and rely on different theoretical aspects of this HPO method.
 
 ![image](https://maelfabien.github.io/assets/images/ho5.jpg)
 
-We will be using HyperOpt in this example, since it's one of the most famous HPO library in Python, that can also be used for Deep Learning.
+We will be using HyperOpt in this example since it's one of the most famous HPO libraries in Python, that can also be used for Deep Learning.
 
 ## HyperOpt
 
@@ -324,35 +324,35 @@ N_FOLDS = 10
 MAX_EVALS = 50
 ```
 
-We start off by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross validation F1 Score, and therefore minimize `1 - CV(F1-Score)` :
+We start off by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross-validation F1 Score, and therefore minimize `1 - CV(F1-Score)` :
 
 ```python
 def objective(params, n_folds = N_FOLDS):
-    """Objective function for Logistic Regression Hyperparameter Tuning"""
+"""Objective function for Logistic Regression Hyperparameter Tuning"""
 
-    # Perform n_fold cross validation with hyperparameters
-    clf = LogisticRegression(**params,random_state=0,verbose =0)
-    scores = cross_val_score(clf, X_val, y_val, cv=5, scoring='f1_macro')
+# Perform n_fold cross validation with hyperparameters
+clf = LogisticRegression(**params,random_state=0,verbose =0)
+scores = cross_val_score(clf, X_val, y_val, cv=5, scoring='f1_macro')
 
-    # Extract the best score
-    best_score = max(scores)
+# Extract the best score
+best_score = max(scores)
 
-    # Loss must be minimized
-    loss = 1 - best_score
+# Loss must be minimized
+loss = 1 - best_score
 
-    # Return all relevant information
-    return {'loss': loss, 'params': params, 'status': STATUS_OK}
+# Return all relevant information
+return {'loss': loss, 'params': params, 'status': STATUS_OK}
 ```
 
 Then, we define the space, i.e the range of all parameters we want to tune :
 
 ```python
 space = {
-    'warm_start' : hp.choice('warm_start', [True, False]),
-    'fit_intercept' : hp.choice('fit_intercept', [True, False]),
-    'tol' : hp.uniform('tol', 0.00001, 0.0001),
-    'C' : hp.uniform('C', 0.05, 3),
-    'solver' : hp.choice('solver', ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']),
+'warm_start' : hp.choice('warm_start', [True, False]),
+'fit_intercept' : hp.choice('fit_intercept', [True, False]),
+'tol' : hp.uniform('tol', 0.00001, 0.0001),
+'C' : hp.uniform('C', 0.05, 3),
+'solver' : hp.choice('solver', ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']),
 }
 ```
 
@@ -389,11 +389,11 @@ The following table summarizes the performance of the different approaches:
 | Randomized Search | 53s | 20 | 0.843494 |
 | Bayesian Optimization | 5m58s | 50 | 0,931686 |
 
-We notice that the bayesian optimization outperforms the two other approaches, and can be longer eventually. We tested more combinations of the grid search, but identifying optimal parameters as precise as the onces in bayesian optimization would have required a lot more of combinations for the grid search and the randomized search. 
+We notice that the bayesian optimization outperforms the two other approaches, and can be longer eventually. We tested more combinations of the grid search, but identifying optimal parameters as precise as the ones in bayesian optimization would have required a lot more of combinations for the grid search and the randomized search. 
 
-The randomized search achieved results simiar to grid search, in less than 25% of the time. The identification of the optimal set of hyperparameters is however not guaranteed. It is possible to specify a broader set of parameters to test in grid search and randomized search using `np.arange` function, but the underlying distribution remains discrete.
+The randomized search achieved results similar to grid search, in less than 25% of the time. The identification of the optimal set of hyperparameters is however not guaranteed. It is possible to specify a broader set of parameters to test in grid search and randomized search using `np.arange` function, but the underlying distribution remains discrete.
 
-In conclusion, using the bayesian approach seems to be a good choice, since it can learn complex relations and interactions between the hyperparameters. There is however a risk that such approach focuses only on a local minima, and controlling this with a randomize search at first might be a good idea.
+In conclusion, using the Bayesian approach seems to be a good choice, since it can learn complex relations and interactions between the hyperparameters. There is however a risk that such approach focuses only on local minima, and controlling this with a randomize search at first might be a good idea.
 
 Sources :
 - [A good Quora answer](https://www.quora.com/How-does-Bayesian-optimization-work)
@@ -401,4 +401,3 @@ Sources :
 - [SigOpt](https://static.sigopt.com/773979031a2d61595b9bda23bb81a192341f11a4/pdf/SigOpt_Bayesian_Optimization_Primer.pdf)
 - [https://arxiv.org/pdf/1012.2599.pdf](https://arxiv.org/pdf/1012.2599.pdf)
 - [AutoML](https://www.automl.org/wp-content/uploads/2018/09/chapter1-hpo.pdf)
-
