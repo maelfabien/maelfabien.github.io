@@ -49,6 +49,8 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 [Machine Learning Interpretability and Explainability (1/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-1/) : An introduction to interpretable models with code and examples.
 
+[Machine Learning Interpretability and Explainability (2/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-2/) : An introduction to explainability of black-box ML models.
+
 [GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
 
 [Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
@@ -70,6 +72,8 @@ I also write articles for companies (if you think we could work together, feel f
 [Who's the painter? - For explorium.ai](https://www.explorium.ai/blog/whos-the-painter/) : An illustration of how data enrichment and feature engineering can improve a model.
 
 [Machine Learning Interpretability and Explainability (1/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-1/) : An introduction to interpretable models with code and examples.
+
+[Machine Learning Interpretability and Explainability (2/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-2/) : An introduction to explainability of black-box ML models.
 
 [A guide to Face Detection - For digitalminds.io](https://www.digitalminds.io/blog/a_guide_to_face_detection_in_python) : An overview of the different techniques face Face Detection in Python (with code).
 
