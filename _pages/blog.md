@@ -57,6 +57,10 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 [Build a language recognition app from scratch](https://maelfabien.github.io/machinelearning/HMM_3/) : HMMs and Viterbi decoding algorithm can be used to recognize the language of a text. Let's implement this from scratch !
 
+<center><a href="https://maelfabien.github.io/year-archive/#"></a></center>
+
+<br>
+
 # Medium Articles
 
 <div id="medium-widget"></div>
