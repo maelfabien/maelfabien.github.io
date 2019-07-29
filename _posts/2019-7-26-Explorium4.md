@@ -8,14 +8,14 @@ read_time: true
 categories: [machinelearning]
 excerpt : "Parameters and Model Optimization"
 header :
-    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
-    teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
+overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 search: false
 toc_sticky: true
 sidebar:
-    nav: sidebar-sample
+nav: sidebar-sample
 ---
 
 <script type="text/javascript" async
@@ -37,8 +37,8 @@ In HPO, we generally :
 
 There are some major challenges in the field of HPO :
 - The computation time of a single model with a given set of hyperparameters might be long. Therefore, iterating over many hyperparameter values might be extremely long
-- The mix of parameters to optimize can be really complex, with many parameters, and varying nature (continuous or categorical for example)
-- There is a risk to overfit on the training set if our aim is to ultimately reach the highest performance in the training part
+- The mix of parameters to optimize can be complex, with many parameters, and varying nature (continuous or categorical for example)
+- There is a risk to overfit on the training set if we aim to ultimately reach the highest performance in the training part
 - The problem gets even more complex in the field of deep learning
 
 To optimize the hyper-parameters, we tend to use a **validation set** (if available) to limit the overfitting on the train set.
@@ -49,7 +49,7 @@ Let's illustrate a simple HPO over a simple decision tree. What are the hyperpar
 - `min_samples_split`
 - ...
 
-How many models should we fit in order to test all possible combinations of hyperparameters? Well, we can represent the problem graphically :
+How many models should we fit to test all possible combinations of hyperparameters? Well, we can represent the problem graphically :
 
 ![image](https://maelfabien.github.io/assets/images/expl4_0.png)
 
@@ -116,10 +116,10 @@ In this simple example, the space explored can be represented as such:
 ![image](https://maelfabien.github.io/assets/images/expl4_2.png)
 
 The limitations of grid search are pretty straightforward:
-- Grid search does not really scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
+- Grid search does not scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
 - We have no guarantee to explore the right space. 
 
-The user needs a good understanding of the underlying problem to select the right hyperparameters to test. In order to focus on the right regions of the hyperparameter space, the following technique might be useful:
+The user needs a good understanding of the underlying problem to select the right hyperparameters to test. To focus on the right regions of the hyperparameter space, the following technique might be useful:
 
 > Start with a first large-scale Grid Search, identify a region of interest in which the models perform well, and start a second Grid Search in this specific region.
 
@@ -170,7 +170,7 @@ We achieve an average F1-Score of approximately `0.837` in 4 minutes and 17 seco
 
 # Randomized Search
 
-Randomized search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try **random combinations** among the range of values specified for the hyper-parameters. We initially specify the number of random configurations we want to test in the parameter space.
+The randomized search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try **random combinations** among the range of values specified for the hyper-parameters. We initially specify the number of random configurations we want to test in the parameter space.
 
 ![image](https://maelfabien.github.io/assets/images/expl4_4.png)
 
@@ -213,13 +213,13 @@ tol=0.0001, verbose=0, warm_start=False)
 
 The average F1-Score is quite similar, although there is a slight difference due to the Cross Validation split. We managed to successfully explore the combination of parameters in less than 53 seconds. In this example, the randomized search was successful, but it's not always the case.
 
-There is a tradeoff to make between the guarantee to identify the best combination of parameters and the computation time. As mentioned, a simple trick could be to start with a randomized search to reduce the parameters space, and then launch a grid search to select the optimal features within this space.
+There is a tradeoff to make between the guarantee to identify the best combination of parameters and the computation time. As mentioned, a simple trick could be to start with a randomized search to reduce the parameters space and then launch a grid search to select the optimal features within this space.
 
 The main limit of Grid Search or Randomized Search is that the point we just explored does not influence which point to evaluate next since these two approaches do not depend on an underlying model. To overcome this limitation, we will introduce Bayesian Hyperparameter Optimization 
 
 # Bayesian Hyperparameter Optimization
 
-Bayesian Hyperparameter Optimization is a model-based hyperparameter optimization, in the sense that our aim is to build a distribution of the loss function in terms of the value of each parameter. What are the main advantages and limitations of model-based techniques? How can we implement it in Python?
+Bayesian Hyperparameter Optimization is a model-based hyperparameter optimization, in the sense that we aim to build a distribution of the loss function in terms of the value of each parameter. What are the main advantages and limitations of model-based techniques? How can we implement it in Python?
 
 Recall that in an optimization problem regarding a model's hyperparameters, the aim is to identify :
 
@@ -283,7 +283,7 @@ This acquisition function is the most common and is called the *expected improve
 
 In this example, we would stay in the region in which we identified a previous point that gave a small loss. We can also see the loss minimization problem as a maximization problem on the chosen metric.
 
-The gaussian hyperparameter optimization process can be illustrated the following way :
+The gaussian hyperparameter optimization process can be illustrated in the following way :
 
 ![image](https://maelfabien.github.io/assets/images/bo.gif)
 
@@ -324,7 +324,7 @@ N_FOLDS = 10
 MAX_EVALS = 50
 ```
 
-We start off by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross-validation F1 Score, and therefore minimize `1 - CV(F1-Score)` :
+We start by defining an objective function, i.e the function to minimize. Here, we want to maximize the cross-validation F1 Score, and therefore minimize `1 - CV(F1-Score)` :
 
 ```python
 def objective(params, n_folds = N_FOLDS):
@@ -364,7 +364,7 @@ bayes_trials = Trials()
 best = fmin(fn = objective, space = space, algo = tpe.suggest, max_evals = MAX_EVALS, trials = bayes_trials)
 ```
 
-You'll see the progress in a similar way : 
+You'll see the progress similarly: 
 
 `90%|█████████ | 45/50 [05:09<00:31,  6.21s/it, best loss: 0.06831375590721178]`
 
@@ -393,7 +393,7 @@ We notice that the bayesian optimization outperforms the two other approaches, a
 
 The randomized search achieved results similar to grid search, in less than 25% of the computation time. The identification of the optimal set of hyperparameters is however not guaranteed. It is possible to specify a broader set of parameters to test in grid search and randomized search using `np.arange` function, but the underlying distribution remains discrete.
 
-In conclusion, using the Bayesian approach seems to be a good choice, since it can learn complex relations and interactions between the hyperparameters. There is however a risk that such approach focuses only on local minima, and controlling this with a randomize search at first might be a good idea.
+In conclusion, using the Bayesian approach seems to be a good choice, since it can learn complex relations and interactions between the hyperparameters. There is however a risk that such an approach focuses only on local minima, and controlling this with a randomize search at first might be a good idea.
 
 Sources :
 - [A good Quora answer](https://www.quora.com/How-does-Bayesian-optimization-work)

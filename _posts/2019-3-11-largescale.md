@@ -73,7 +73,7 @@ $$ {\epsilon_i} ≥ 0, i = 1 ... n $$
 
 We can rewrite this as a dual problem using a Lagrange formulation :
 
-$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j {X_i}^T X_j $$
+$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j {X_i}^T X_j $$
 
 subject to :
 
@@ -81,7 +81,7 @@ $$ 0 ≤ {\alpha}_i ≤ C, i = 1 ... n $$
 
 $$ {\epsilon}_i , i = 1 ... n $$
 
-The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i {X_i}^T X_i ) $$
+The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i {X_i}^T X_i ) $$
 
 ## The kernel trick
 
@@ -89,13 +89,13 @@ A symmetric function $$ K : χ \times χ → R $$ is a kernel if there exists a 
 
 $$ K(X, X') = < \phi(X), \phi(X') > $$
 
-The Kernel trick can be visualized as a projection of an initial problem with a complex desision frontier into a feature space in which the decision frontier is way easier and faster to build.
+The Kernel trick can be visualized as a projection of an initial problem with a complex decision frontier into feature space in which the decision frontier is way easier and faster to build.
 
 ![image](https://maelfabien.github.io/assets/images/kernel_trick.jpg)
 
 The Kernel SVM can be expressed as :
 
-$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j K ({X_i}^T X_j) $$
+$$ max_{\alpha ∈ R^n} {\sum}_i {\alpha}_i - \frac {1} {2} {\alpha}_i {\alpha}_j y_i y_j K ({X_i}^T X_j) $$
 
 subject to :
 
@@ -103,11 +103,11 @@ $$ 0 ≤ {\alpha}_i ≤ C, i = 1 ... n $$
 
 $$ \sum_i {\alpha}_i  y_i = 0, i = 1 ... n $$
 
-The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i K({X_i}^T X_i )) $$
+The binary classifier is : $$ f(x) = sign( \sum_i {\alpha}_i y_i K({X_i}^T X_i )) $$
 
 ## Types of kernels
 
-What types of kernels can be used ?
+What types of kernels can be used?
 
 - Linear kernel : $$ K(X,X') = X^T X' $$
 - Polynomial kernel : $$ K(X,X') = (X^T X' + c)^d $$
@@ -130,7 +130,7 @@ X, y = make_classification(n_samples=100000)
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
 ```
 
-We now have 75'000 training data, and 25'000 test data. Scale the data to make sur e
+We now have 75'000 training data and 25'000 test data. We first scale the data.
 
 ```python
 scaler = StandardScaler()
@@ -214,8 +214,8 @@ The complexity of the kernel evaluation in the training is $$ O(n^2) $$.
 The complexity of the prediction is $$ O(n) $$. Overall, this becomes infeasible for large $$ n $$.
 
 We'll now cover the two most common ways to overcome this problem :
-- Random Kernel features : approximate the kernel function
-- Nyström approximation : approximate the Gram matrix
+- Random Kernel features: approximate the kernel function
+- Nyström approximation: approximate the Gram matrix
 
 # III. Random Kernel features
 
@@ -223,7 +223,7 @@ We'll now cover the two most common ways to overcome this problem :
 
 If we don't apply the Kernel SVM, the problem can be expressed the following way :
 
-$$ min_{w,b} \frac {1} {2} { { \mid \mid w \mid \mid }_2 }^2 + C \sum_i [ y_i (W^T \phi(X) + b)]_+ $$
+$$ min_{w,b} \frac {1} {2} { { \mid \mid w \mid \mid }_2 }^2 + C \sum_i [ y_i (W^T \phi(X) + b)]_+ $$
 
 where $$ [a]_+ = max(0, 1-a) $$ is the hingle loss function.
 
@@ -235,7 +235,7 @@ $$ K(X, X') ≈ < \hat{\phi}(X), \hat{\phi}(X') > $$
 
 We should be able to solve the primal form to get $$ w $$ and $$ b $$, and use the approximated kernel in a binary classification : $$ f(x) = sign (w^T \hat{ \phi } (X) + b) $$ .
 
-## Botchner's Thoerem
+## Botchner's Theorem
 
 A kernel is said to be shift-invariant if and only if for any $$ a ∈ R^p $$ and any $$ (x,x') ∈ R^p \times R^p $$ :
 
@@ -249,28 +249,28 @@ It can be shown (the demonstration is skipped for this article) that :
 
 $$ K (x, x') = E_{w \sim P, b \sim U[0, 2 \pi]} [ \sqrt{2} cos (w^T x + b) \sqrt{2} cos (w^T x' + b)] $$
 
-The kernel is an infinite sum since we consider all values of $$ w $$ and $$ b $$. The kernel has therefore an infinite dimension. 
+The kernel is an infinite sum since we consider all values of $$ w $$ and $$ b $$. The kernel has, therefore, an infinite dimension. 
 
 ## Kernel approximation
 
-A usual technique to approximate such problem is the random sampling ! If we know the distributions of $$ w $$ and $$ b $$, by Monte-Carlo principle, we'll approach the result of the RBF Kernel !
+A usual technique to approximate such problem is random sampling! If we know the distributions of $$ w $$ and $$ b $$, by Monte-Carlo principle, we'll approach the result of the RBF Kernel!
 
 The distributions are the following :
 - $$ b $$ follows a uniform distribution : $$ b \sim U[0, 2 \pi] $$
 - $$ w $$ follows $$ P (w) $$ the scaled fourier transform of  $$ K(\Delta) $$
 
-If the Kernel is Gaussian, $$ P $$ is Gaussian itself : $$ P \sim N(0, 2 \gamma) $$, where the default value of $$ \gamma $$ is $$ \frac {1} {p} $$ , $$ p $$ being the number of features . If the Kernel is Laplacian, $$ P $$ is a Cauchy distribution.
+If the Kernel is Gaussian, $$ P $$ is Gaussian itself : $$ P \sim N(0, 2 \gamma) $$, where the default value of $$ \gamma $$ is $$ \frac {1} {p} $$ , $$ p $$ being the number of features . If the Kernel is Laplacian, $$ P $$ is a Cauchy distribution.
 
 ## Pseudo-Code
 
 1. Set the number of random kernel features to $$ c $$
 2. Draw $$ w_1, ..., w_c \sim P(w) $$ and $$ b_1, ..., b_c \sim U [0, 2 \pi] $$
-3. Map training points $$ x_1, ..., x_n ∈ R^p $$ to their random kernel features $$ \hat{\phi} (X_1), ...,  \hat{\phi} (X_n) ∈ R^c $$ where $$ \hat{\phi} (X_i) = \sqrt{ \frac {2} {c} } cos ( {w_i}^T X + b_j), j ∈ [1, ... , c] $$. $$ c $$ is present in the fraction to create a mean.
+3. Map training points $$ x_1, ..., x_n ∈ R^p $$ to their random kernel features $$ \hat{\phi} (X_1), ...,  \hat{\phi} (X_n) ∈ R^c $$ where $$ \hat{\phi} (X_i) = \sqrt{ \frac {2} {c} } cos ( {w_i}^T X + b_j), j ∈ [1, ... , c] $$. $$ c $$ is present in the fraction to create a mean.
 4. Train a linear model (such as Linear SVM) on transformed data $$ \hat{\phi} (X_1), ...,  \hat{\phi} (X_n) ∈ R^c $$
 
-In other words, to speed up the whole training process and get results that tend to be similar to RBF kernel, we pre-process the data and apply a linear SVM on top. It can be show that this approximation will converge to the RBF Kernel. 
+In other words, to speed up the whole training process and get results that tend to be similar to RBF kernel, we pre-process the data and apply a linear SVM on top. It can be shown that this approximation will converge to the RBF Kernel. 
 
-Moreover, the kernel approximation error uniformly decreases in $$ O( \sqrt { \frac {1} {c} } ) $$.
+Moreover, the kernel approximation error uniformly decreases in $$ O( \sqrt { \frac {1} {c} } ) $$.
 
 ## In Python 
 
@@ -290,7 +290,7 @@ def random_features(X_train, X_test, gamma, c=300, seed=42):
     return X_new_train, X_new_test
 ```
 
-As defined above, the default value of $$ \gamma $$ is $$ \frac {1} {p} $$ :
+As defined above, the default value of $$ \gamma $$ is $$ \frac {1} {p} $$ :
 
 ```python
 n_samples, n_features = X_train.shape
@@ -357,7 +357,7 @@ $$ \hat{G_k} = C W^+ C^T $$ where :
 
 ![image](https://maelfabien.github.io/assets/images/schema_nystrom.jpg)
 
-This decomposition might seem a bit weird, since we sample the columns and the rows of the Gram matrix. First of all, it can only be applied to Gram matrices, not to any kind of matrix. Suppose that we take a look at a matrix of distances between different cities. Would you need all the distances between all the cities to provide a pretty accurate estimate of the distance between 2 cities ? Well, there's definitely some pieces of information that have a little importance and bring few additional precision. This is exactly what we're doing here on the Gram matrix.
+This decomposition might seem a bit weird since we sample the columns and the rows of the Gram matrix. First of all, it can only be applied to Gram matrices, not to any kind of matrix. Suppose that we take a look at a matrix of distances between different cities. Would you need all the distances between all the cities to provide a pretty accurate estimate of the distance between 2 cities? Well, there's definitely some pieces of information that have a little importance and bring few additional precision. This is exactly what we're doing here on the Gram matrix.
 
 ## Pseudo-code
 
@@ -511,7 +511,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/perf_kernel.jpg)
 
-We observe clearly the convergence in terms of accuracy of random kernel features and Nyström methods. The computation time is also smaller up to a certain number of fertures.
+We observe the convergence in terms of the accuracy of random kernel features and Nyström methods. The computation time is also smaller up to a certain number of features.
 
 The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 

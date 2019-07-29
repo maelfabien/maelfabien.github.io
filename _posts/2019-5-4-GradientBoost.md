@@ -27,10 +27,10 @@ In the previous article, I presented AdaBoost, a powerful boosting algorithm whi
 
 Gradient Boosting can be compared to AdaBoost, but has a few differences :
 
-- Instead of growing a forest of stumps, we initally predict the average (since it's regression here) of the  yy  column, and build a decision trees based on that value.
+- Instead of growing a forest of stumps, we initially predict the average (since it's regression here) of the y-column and build a decision tree based on that value.
 - Like in AdaBoost, the next tree depends on the error of the previous one.
-- But unlike AdaBoost, the tree we grow is not only a stump, but a real decision tree.
-- As in AdaBoost, there is a weight associated to the trees, but the scale factor is applied to all the trees.
+- But unlike AdaBoost, the tree we grow is not only a stump but a real decision tree.
+- As in AdaBoost, there is a weight associated with the trees, but the scale factor is applied to all the trees.
 
 # Gradient Boosting steps
 
@@ -38,7 +38,7 @@ Let's consider a simple scenario in which we have several features, $$ x_1, x_2,
 
 ![image](https://maelfabien.github.io/assets/images/tab_1.jpg)
 
-**Step 1** : Make a first guess
+**Step 1** : Make the first guess
 
 The initial guess of the Gradient Boosting algorithm is to *predict the average value of the target $$ y $$*. For example, if our features are the age $$ x_1 $$ and the height $$ x_2 $$ of a person... and we want to predict the weight of the person.
 
@@ -50,7 +50,7 @@ For the variable $$ x_1 $$, we compute the difference between the observations a
 
 ![image](https://maelfabien.github.io/assets/images/tab_3.jpg)
 
-We compute the pseudo-residuals with respect to the first feature  $$ x_1 $$.
+We compute the pseudo-residuals for the first feature  $$ x_1 $$.
 
 **Step 3** : Predict the pseudo-residuals
 
@@ -64,13 +64,13 @@ We can now predict the pseudo-residuals using a tree, that typically has 8 to 32
 
 **Step 4** : Make a prediction and compute the residuals
 
-In order to make a prediction, we say that the average is 13.39. Then, we take our observation, run in through the tree, get the value of the leaf, and add it to 13.39. 
+To make a prediction, we say that the average is 13.39. Then, we take our observation, run in through the tree, get the value of the leaf, and add it to 13.39. 
 
 If we stop here, we will most probably overfit. Gradient Boost applies a learning rate $$ lr $$ to scale the contribution from a new tree, by applying a factor between 0 and 1.
 
 $$ y_{pred} = \bar{y_{train}} + lr \times res_{pred} $$
 
-The idea behind the learning rate is to make a small step towards the right direction. This allows an overall lower variance.
+The idea behind the learning rate is to make a small step in the right direction. This allows an overall lower variance.
 
 ![image](https://maelfabien.github.io/assets/images/tab_7.jpg)
 
@@ -82,7 +82,7 @@ Now, we :
 - build a second tree
 - compute the prediction using this second tree
 - compute the residuals according to the prediction
-- build a third tree
+- build the third tree
 - ...
 
 Let's just cover how to compute the prediction. We are still using the features $$ x_1, x_2, x_3, x_4 $$ to predict the new residuals Pseudo_Res_2. 
@@ -96,7 +96,7 @@ The prediction is equal to :
 - plus LR * the predicted residuals at step 1
 - plus LR * the predicted residuals at step 2
 
-Notice how we always apply the same Learning Rate. We are now ready to compute the new residuals, fit a 3rd tree on it, compute the 4th residuals... and so on, until :
+Notice how we always apply the same Learning Rate. We are now ready to compute the new residuals, fit the 3rd tree on it, compute the 4th residuals... and so on, until :
 - we reach the maximum number of trees specified
 - or we don't learn significantly anymore
 
@@ -104,15 +104,15 @@ Notice how we always apply the same Learning Rate. We are now ready to compute t
 
 The algorithm can be then described as the following, on a dataset $$ (x,y) $$ with $$ x $$ the features and $$ y $$ the targets, with a differentiable loss function $$ \cal{L} $$:
 
-$$ \cal{L} = \frac {1} {2} (Obs - Pred)^2 $$, called the Squared Residuals. Notice that since the function is differentiable, we have :
+$$ \cal{L} = \frac {1} {2} (Obs - Pred)^2 $$, called the Squared Residuals. Notice that since the function is differentiable, we have :
 
-$$ \frac { \delta } {\delta Pred} \cal{L} = - 1 \times (Obs - Pred) $$
+$$ \frac { \delta } {\delta Pred} \cal{L} = - 1 \times (Obs - Pred) $$
 
 **Step 1** : Initialize the model with a constant value : $$ F_0(x) = argmin_{\gamma} \sum_i \cal{L}(y_i, \gamma) $$. We simply want to minimize the sum of the squared residuals (SSR) by choosing the best prediction $$ \gamma $$.
 
 If we derive the optimal value for  $$ \gamma $$ :
 
-$$ \frac { \delta } {\delta \gamma } \sum_i \cal{L}(y_i, \gamma) = -(y_1 - \gamma) + -(y_2 - \gamma) + -(y_3 - \gamma) + ... = 0 $$
+$$ \frac { \delta } {\delta \gamma } \sum_i \cal{L}(y_i, \gamma) = -(y_1 - \gamma) + -(y_2 - \gamma) + -(y_3 - \gamma) + ... = 0 $$
 
 $$ \sum_i y_i - n * \gamma = 0 $$
 
@@ -124,7 +124,7 @@ This is simply the average of the observations. This justifies our previous cons
 
 - a) Compute the pseudo-residuals for every sample :
 
-$$ r_{im} = - \frac {\delta \cal{L} (y_i, F(x_i)) } {\delta F(x_i)} = - ( - 1 \times (Obs - F_{m-1}(x)) ) = (Obs - F_{m-1}(x)) = (Obs - Pred) $$
+$$ r_{im} = - \frac {\delta \cal{L} (y_i, F(x_i)) } {\delta F(x_i)} = - ( - 1 \times (Obs - F_{m-1}(x)) ) = (Obs - F_{m-1}(x)) = (Obs - Pred) $$
 
 This derivative is called the Gradient. The Gradient Boost is named after this.
 
@@ -137,7 +137,7 @@ $$ F_m(x) = F_{m-1}(x) + lr \times \sum_j \gamma_{jm} I(x \in R_{jm} ) $$. We co
 
 # Implement a high-level Gradient Boosting in Python
 
-Since the pseudo-code detailed above might be a bit tricky to understand, I've tried to summarize a high level idea of Gradient Boosting, and we'll be implementing it in Python.
+Since the pseudo-code detailed above might be a bit tricky to understand, I've tried to summarize a high-level idea of Gradient Boosting, and we'll be implementing it in Python.
 
 **Step 1** : Initialize the model with a constant value : $$ \gamma = \frac{ \sum_i y_i }{n} = \bar{y} $$
 
@@ -185,7 +185,7 @@ plt.show()
 
 ## Fit a simple decision tree
 
-To illustrate the limits of decision trees, we can try to fit a simple decision tree with maximal depth of 1, called a stump.
+To illustrate the limits of decision trees, we can try to fit a simple decision tree with a maximal depth of 1, called a stump.
 
 ```python
 from sklearn import tree
@@ -255,4 +255,4 @@ for i in range(101):
 
 By increasing the learning rate, we tend to overfit. However, if the learning rate is too low, it takes a large number of iterations to even approach the underlying structure of the data.
 
-> **Conclusion** : I hope this introduction to Gradient Boosting was helpful. The topic can get much more complex over time, and the implementation is Scikit-learn is much more complex than this. In a next article, we'll cover the topic of classification.
+> **Conclusion** : I hope this introduction to Gradient Boosting was helpful. The topic can get much more complex over time, and the implementation is Scikit-learn is much more complex than this. In the next article, we'll cover the topic of classification.
