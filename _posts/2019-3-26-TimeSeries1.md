@@ -24,9 +24,9 @@ sidebar:
 {% highlight matlab %}
 {% endhighlight %}
 
-# I. What is a time series ?
+# I. What is a time series?
 
-Time series are series of data collected with the same unit over several successive periods. 
+Time series is a series of data collected with the same unit over several successive periods. 
 
 Examples of time series include :
 - daily exchange rate
@@ -63,7 +63,7 @@ The data set includes daily electricity consumption, wind power production, and 
 
 The data can be downloaded [here](https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv)
 
-Start off by importing the following packages :
+Start by importing the following packages :
 
 ```python
 ### General import
@@ -105,7 +105,7 @@ Then, make sure to transform the dates into `datetime` format in pandas :
 df.index = pd.to_datetime(df.index)
 ```
 
-Using the `df.describe()` function, we observe that there are almost half of the solar data points that are missing. This is because the series do not start at the same time. 
+Using the `df.describe()` function, we observe that there are almost half of the solar data points that are missing. This is because the series does not start at the same time. 
 
 ## 2. Distributions
 
@@ -146,7 +146,7 @@ plt.show()
 
 ## 3. Time Series
 
-First of all, how does the overall production compare with the overall consumption ?
+First of all, how does the overall production compare with the overall consumption?
 
 ```python
 plt.figure(figsize=(12,8))
@@ -197,8 +197,8 @@ plt.show()
 
 We observe large seasonal trends over time. 
 - The solar production is much smaller during winter times. 
-- The wind production is however larger during winter times, and the consumption as well.
-- There is an increasing trend in production of both solar and wind power over time.
+- The wind production is, however, larger during winter times, and the consumption as well.
+- There is an increasing trend in the production of both solar and wind power over time.
 - There is a large number of points in consumption located in the highest part of the time series, and some points lying under this curve.
 
 ## 4. Change scale
@@ -252,9 +252,9 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/ts_13.jpg)
 
-There seems to be a larger consumption and Tuesday, Wednesday and Thrusday. The consumption is much lower on weekends.
+There seems to be a larger consumption and Tuesday, Wednesday and Thursday. The consumption is much lower on weekends.
 
-There is no point is analyzing trends of production weekly since there is no correlation between the day of the week and the sun/wind. We do not have access to hourly consumption data, so we can't dive deeper into this analysis.
+There is no point in analyzing trends of production weekly since there is no correlation between the day of the week and the sun/wind. We do not have access to hourly consumption data, so we can't dive deeper into this analysis.
 
 ## 5. Box plots
 
@@ -296,7 +296,7 @@ There is a significant effect of the day of the week over the consumption. The m
 
 ## 6. Handling missing values
 
-There are several ways to handle missing values. A pretty common ways to do this is to use Forward Filling. This simply means that when there is a missing value, you take the previous known value and duplicate it. This is pretty much the best approximation we can make without any further information.
+There are several ways to handle missing values. A pretty common way to do this is to use Forward Filling. This simply means that when there is a missing value, you take the previously known value and duplicate it. This is pretty much the best approximation we can make without any further information.
 
 ```python
 df = df.fillna(method='ffill')
@@ -306,7 +306,7 @@ We can also fill backward starting from the next value, using `bfill`.
 
 ### Rolling Mean
 
-The rolling mean of a time series produces a smoother version than the original series. How is this achieved ?
+The rolling mean of a time series produces a smoother version than the original series. How is this achieved?
 
 Over a given window, for example here, a window of 7 days, we take the average of all the days within the window.
 
@@ -332,7 +332,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/ts_21.jpg)
 
-Instead of defining an average over given number of observations within a window, we can take the mean of all the observations up to the given point. This is called expaning !
+Instead of defining an average over a given number of observations within a window, we can take the mean of all the observations up to the given point. This is called expanding!
 
 ```python
 plt.figure(figsize=(12,8))
@@ -344,4 +344,4 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/ts_22.jpg)
 
-> **Conclusion** : We have now covered the basics of time series exploration. In the next articles, we'll cover trends, seasonality, stationarity, ergodicity and many other concepts.
+> **Conclusion **: We have now covered the basics of time series exploration. In the next articles, we'll cover trends, seasonality, stationarity, ergodicity and many other concepts.

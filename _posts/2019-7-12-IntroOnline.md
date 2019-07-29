@@ -23,7 +23,7 @@ sidebar:
 
 This article summarizes the talk given by `cnvrg.io` during their Webinar on Continual Learning.
 
-> **Continual learning** (CL) is the ability of a model to learn continually from a stream of data, updating the model in production to maintain performance and relevancy. It's in some way an autopilot mode for ML algoithms.
+> **Continual learning** (CL) is the ability of a model to learn continually from a stream of data, updating the model in production to maintain performance and relevancy. It's in some way an autopilot mode for ML algorithms.
 
 The typical CL pipeline is the following :
 - Input Data
@@ -49,7 +49,7 @@ The idea here is to define a set of algorithms and hyperparameters among which w
 
 This AutoML part also requires that we have clusters available at all time and that our infrastructure is also automated (GCP, AWS + Kubernetes).
 
-The deployment should be progressive, and we should run tests before, during and after deployment, and define our benchmarks. Usually, for ML models, the deployment is done using the Canary Release technique, a technique to reuce the risk of introducing a new software version in production by slowly rolling out the change to a small subset of users, before making it gradually available to everybody.
+The deployment should be progressive, and we should run tests before, during and after deployment, and define our benchmarks. Usually, for ML models, the deployment is done using the Canary Release technique, a technique to reduce the risk of introducing a new software version in production by slowly rolling out the change to a small subset of users, before making it gradually available to everybody.
 
 [Martin Fowler](https://martinfowler.com/bliki/CanaryRelease.html) provides a good illustration of this concept :
 
@@ -64,7 +64,7 @@ We should monitor :
 - our predictions
 
 For the input data, we should look for :
-- unexpecte values
+- unexpected values
 - correlation between production and training data
 - new tests to add in production
 
@@ -75,11 +75,9 @@ For the prediction monitoring, we need to watch the model confidence, the bias..
 The ML pipeline should be triggered based on :
 - periodically (once a day, once a week...)
 - new training data coming in
-- model decay / alterts in production
+- model decay/alerts in production
 
 Since the retraining typically occurs automatically, it is essential to track and validate the triggers.
-
-
 
 
 > **Conclusion** : That's it ! I hope this introduction to Online Learning was clear. Don't hesitate to drop a comment if you have any question.

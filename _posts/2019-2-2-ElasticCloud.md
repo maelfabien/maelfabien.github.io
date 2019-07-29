@@ -21,7 +21,7 @@ sidebar:
 
 # I. Cloud solution
 
-The ElasticCloud is a fully managed service for both Kibana and Elasticsearch. It allows one-click install and easy upgrades. It also gives a nice UI for Elasticsearch clusters. The solution is free for a 14 days trial. Some customers of Elastic Cloud include Sprint, Verizon, Ebay or Dell.
+The ElasticCloud is a fully managed service for both Kibana and Elasticsearch. It allows one-click install and easy upgrades. It also gives a nice UI for Elasticsearch clusters. The solution is free for a 14 days trial. Some customers of Elastic Cloud include Sprint, Verizon, eBay or Dell.
 
 ## 1. Elasticsearch
 
@@ -29,7 +29,7 @@ First of all, create an account <span style="color:blue">[here](https://cloud.el
 
 ![image](https://maelfabien.github.io/assets/images/ela_1.jpg)
 
-We'll now create a cluster with Elastic Cloud in under 3 minutes.You can get started without a credit card during the first 14 days. The trial version comes with :
+We'll now create a cluster with Elastic Cloud in under 3 minutes. You can get started without a credit card during the first 14 days. The trial version comes with :
 - 8GB RAM
 - 240GB storage
 - High availability over 2 zones
@@ -47,7 +47,7 @@ Among the proposed templates, some are optimized for aggregations in RAM, others
 
 ![image](https://maelfabien.github.io/assets/images/ela_3.jpg)
 
-Once on the customization menu, navigate trough the page to see which options you have access to. Everything is pretty intuitive, and adding capacity or enabling services is quite simple. Most menus are however locked since you currently have a trail account.
+Once on the customization menu, navigate through the page to see which options you have access to. Everything is pretty intuitive, and adding capacity or enabling services is quite simple. Most menus are however locked since you currently have a trial account.
 
 Then, click on "Create Deployment".
 
@@ -80,7 +80,7 @@ I'm on macOS, so I'll just follow the small tutorial for macOS :
 Copy the code snipet :
 ![image](https://maelfabien.github.io/assets/images/ela_9.jpg)
 
-Paste this code in you default directory in your terminal.
+Paste this code in your default directory in your terminal.
 
 ![image](https://maelfabien.github.io/assets/images/ela_10.jpg)
 
@@ -91,7 +91,7 @@ Modify `metricbeat.yml` to set the connection information for Elastic Cloud. In 
 vim metricbeat.yml
 ```
 
-The metricbeat.yml will open. To start editing the file, type the letter `i` (for insert). Copy-paste the code snipet in the Elastic Cloud section :
+The metricbeat.yml will open. To start editing the file, type the letter `i` (for insert). Copy-paste the code snippet in the Elastic Cloud section :
 
 ![image](https://maelfabien.github.io/assets/images/ela_11.jpg)
 
@@ -138,7 +138,7 @@ Make sure that the data is received using the "Check Data" button :
 
 ![image](https://maelfabien.github.io/assets/images/ela_12.jpg)
 
-You're now ready ! Move on to the next step.
+You're now ready! Move on to the next step.
 
 You now have metrics data from your local machine flowing into Kibana. 
 
@@ -149,7 +149,7 @@ We'll now go over the different sections of Kibana while our data keeps flowing 
 
 ### a. Discover
 
-If you're familiar with Tableau software, you'll notice how easy to use this section is. The graph presents the count of data coming in every 30 seconds. 90 to 100 new data are added every 30 seconds, so that around 180 to 200 data point per minute. 
+If you're familiar with Tableau software, you'll notice how easy to use this section is. The graph presents the count of data coming in every 30 seconds. 90 to 100 new data are added every 30 seconds so that around 180 to 200 data point per minute. 
 
 ![image](https://maelfabien.github.io/assets/images/ela_15.jpg)
 
@@ -162,7 +162,7 @@ You can add or remove fields to explore on the side menu, using the "Add" or "Re
 The "Visualize" menu displays some pre-built views to explore your data depending on the most common use cases, including for example :
 - command rates
 - average response time
-- average time in queue
+- average time in the queue
 - ...
 
 For example, type "System" in the research menu and select `CPU Usage [Metricbeat System]`. You'll have access to a pre-built dashboard that displays a time series of your CPU usage.
@@ -181,9 +181,9 @@ You can use the "Host overview" tab to visualize some more data. The dashboard i
 
 ### d. Timelion
 
-"Timelion is the clawing, gnashing, zebra killing, pluggable time series interface for everything. If your datastore can produce a time series, then you have all of the awesome power of Timelion at your disposal. Timelion lets you compare, combine, and combobulate datasets across multiple datasources with one easy-to-master expression syntax. This tutorial focuses on Elasticsearch, but you'll quickly discover that what you learn here applies to any datasource Timelion supports."
+"Timelion is the clawing, gnashing, zebra killing, pluggable time series interface for everything. If your datastore can produce a time series, then you have all of the awesome power of Timelion at your disposal. Timeline lets you compare and combine datasets across multiple data sources with one easy-to-master expression syntax. This tutorial focuses on Elasticsearch, but you'll quickly discover that what you learn here applies to any data source Timelion supports."
 
-We'll try to see how to use Timelion for the number of data points recieved every minute for example.
+We'll try to see how to use Timelion for the number of data points received every minute for example.
 
 ![image](https://maelfabien.github.io/assets/images/ela_18.jpg)
 
@@ -191,17 +191,17 @@ Explore the function reference to see which functions are available. For example
 
 ![image](https://maelfabien.github.io/assets/images/ela_19.jpg)
 
-The drop in the number of points is due to the fact that the minute of collecting data is not over yet.
+The drop in the number of points is because the minute of collecting data is not over yet.
 
 ### e. Canvas
 
-The canvas is an amazing way to build nice-looking dashboard intuitively. It's basically a Drag&Drop for data visualization.
+The canvas is an amazing way to build nice-looking dashboard intuitively. It's a Drag&Drop for data visualization.
 
 ![image](https://maelfabien.github.io/assets/images/ela_20.jpg)
 
 Here, I'm using the sample data Kibana provides. You can connect several data sources on the same dashboard, add pictures, several types of graphs, metrics...
 
-This is still a Beta functionality while I'm writing this, but the service will definitely become a standard in the near future.
+This is still a Beta functionality while I'm writing this, but the service will become a standard shortly.
 
 ### f. Machine Learning
 
@@ -209,7 +209,7 @@ I won't go into the details of the section, I'll make a dedicated article on thi
 
 ### g. Infrastructure
 
-This section is really useful to monitor your infrastructure and identify problems in real time. You can explore logs, containers and services. Since we have only one machine connected, I'll display a dashboard of a real infrastructure that allows to detect anomalies.
+This section is really useful to monitor your infrastructure and identify problems in real-time. You can explore logs, containers, and services. Since we have only one machine connected, I'll display a dashboard of a real infrastructure that allows detecting anomalies.
 
 ![image](https://maelfabien.github.io/assets/images/ela_21.jpg)
 
@@ -264,11 +264,11 @@ If the installation process worked successfully, you should see something like t
 
 ![image](https://maelfabien.github.io/assets/images/ela_23.jpg)
 
-Your should now be able to see all the logs from your Log section on Kibana !
+You should now be able to see all the logs from your Log section on Kibana!
 
 ### i. APM
 
-Application Performance Monitoring (APM) collects in-depth performance metrics and errors from inside your application. It allows you to monitor the performance of thousands of applications in real time. Since we don't have any app yet, we won't cover this part.
+Application Performance Monitoring (APM) collects in-depth performance metrics and errors from inside your application. It allows you to monitor the performance of thousands of applications in real-time. Since we don't have any app yet, we won't cover this part.
 
 ### j. Graph
 
@@ -286,7 +286,7 @@ The monitoring can be used to check that your services are up and running :
 
 ### m. Management
 
-Now, suppose we want to create another user. Go the the management section, and click on "Users".
+Now, suppose we want to create another user. Go to the management section, and click on "Users".
 
 ![image](https://maelfabien.github.io/assets/images/ela_25.jpg)
 
@@ -294,7 +294,7 @@ Then, click on "Create New User" :
 
 ![image](https://maelfabien.github.io/assets/images/ela_26.jpg)
 
-Fill-in the form, and give the user the specific access you'd like him to have :
+Fill in the form, and give the user the specific access you'd like him to have :
 
 ![image](https://maelfabien.github.io/assets/images/ela_27.jpg)
 
@@ -302,9 +302,9 @@ The password you set will be your new user password.
 
 # II. Stop the services
 
-Once you explored your data, you might want to stop the data flow that goes from your machine to Kibana. From the terminal, in the tabs concerned, simply type Ctrl + C.
+Once you have explored your data, you might want to stop the data flow that goes from your machine to Kibana. From the terminal, in the tabs concerned, simply type Ctrl + C.
 
-To stop being charged for Elasticsearch, you'll have to delete your deployment. All your data will be lost ! Keep this in mind.
+To stop being charged for Elasticsearch, you'll have to delete your deployment. All your data will be lost! Keep this in mind.
 
 On your Elastic Cloud interface, click on your deployment :
 
@@ -314,7 +314,7 @@ And click on "Delete deployment".
 
 ![image](https://maelfabien.github.io/assets/images/ela_29.jpg)
 
-> *Conclusion* : I hope this introduction to Elastic Cloud managed solution was helpful. Don't hesitate to drop a comment if you have a question or remark.
+> *Conclusion *: I hope this introduction to Elastic Cloud managed solution was helpful. Don't hesitate to drop a comment if you have a question or remark.
 
 Sources :
 - [Infrastructure](https://www.elastic.co/guide/en/kibana/master/xpack-infra.html)

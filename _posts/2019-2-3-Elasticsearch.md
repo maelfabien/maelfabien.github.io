@@ -19,7 +19,7 @@ sidebar:
 
 ![image](https://maelfabien.github.io/assets/images/els.jpg)
 
-Previously, we covered the Elastic Cloud. This is a fully managed solution that may not fit all the needs. How can you run Elasticsearch locally ? How can you launch Kibana ? And how do you use Dev Tools ? We'll answer those questions here.
+Previously, we covered the Elastic Cloud. This is a fully managed solution that may not fit all the needs. How can you run Elasticsearch locally? How can you launch Kibana? And how do you use Dev Tools? We'll answer those questions here.
 
 # I. Install Elasticsearch
 
@@ -29,9 +29,9 @@ Download the version that matches your OS. I'm running on macOS, so the article 
 
 *Step 1* : Download and unzip Elasticsearch
 
-Find the file in your downloads, move it to the folder in which you want to store it. On mac, double-click on the file to unzip it.
+Find the file in your downloads, move it to the folder in which you want to store it. On a mac, double-click on the file to unzip it.
 
-*Step 2* : In your terminal, go to the folder in question
+*Step 2 *: In your terminal, go to the folder in question
 
 ```bash
 cd elasticsearch-6.6.1/
@@ -39,18 +39,18 @@ cd elasticsearch-6.6.1/
 
 (Depending on your version, this link might change)
 
-*Step 3* : Fire up the engines ! 
+*Step 3 *: Fire up the engines! 
 
-We'll now start the elasticsearch server.
+We'll now start the elastic search server.
 
 ```bash
 bin/elasticsearch
 ```
 The `bin` directory will also be used to start Elasticsearch SQL CLI to interact with Elasticsearch using SQL statements for example. 
 
-Antoher important directory is the `config` one in which we can for example modify the default port for Elasticsearch (9200) in the `elasticsearch.yaml` file.
+Another important directory is the `config` one in which we can, for example, modify the default port for Elasticsearch (9200) in the `elasticsearch.yaml` file.
 
-Elasticsearch is now up and running. Let's download Kibana now !
+Elasticsearch is now up and running. Let's download Kibana now!
 
 # II. Install Kibana
 
@@ -60,9 +60,9 @@ Download the file that matches your OS.
 
 *Step 1* : Download and unzip Kibana
 
-Find the file in your downloads, move it to the folder in which you want to store it. On mac, double-click on the file to unzip it.
+Find the file in your downloads, move it to the folder in which you want to store it. On a mac, double-click on the file to unzip it.
 
-*Step 2* : Fire up Kibana
+*Step 2 *: Fire up Kibana
 
 In your terminal, go to the folder that contains Kibana, and run this command. 
 
@@ -75,10 +75,10 @@ If you have not modified the default port of Kibana, everything should now work.
 log   [17:49:10.844] [info][listening] Server running at http://localhost:5601
 ```
 
-*Step 3* : Open your browser
+*Step 3 *: Open your browser
 
 Now, head to the following link in your browser : <span style="color:blue">[http://localhost:5601](http://localhost:5601)</span>.
 
 ![image](https://maelfabien.github.io/assets/images/el_1.jpg)
 
-We now have both Kibana and Elasticsearch running !
+We now have both Kibana and Elasticsearch running!

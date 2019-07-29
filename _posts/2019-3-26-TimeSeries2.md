@@ -26,9 +26,9 @@ In this article, we'll introduce the key concepts related to time series.
 {% highlight matlab %}
 {% endhighlight %}
 
-We'll be using the same data set as in the previous article : Open Power System Data ([OPSD](https://open-power-system-data.org/)) for Germany. The data can be downloaded [here](https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv)
+We'll be using the same data set as in the previous article: Open Power System Data ([OPSD](https://open-power-system-data.org/)) for Germany. The data can be downloaded [here](https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv)
 
-Start off by importing the following packages :
+Start by importing the following packages :
 
 ```python
 ### General import
@@ -83,9 +83,9 @@ The auto-correlation $$ \rho $$ is defined as the correlation of the series over
 
 Empirically, the auto-correlation can be estimated by the sample auto-correlation :
 
-$$ r_j = \frac {Cov^e (y_t, y_{t-j})} {Var^e(y_t)} $$ 
+$$ r_j = \frac {Cov^e (y_t, y_{t-j})} {Var^e(y_t)} $$ 
 
-Where : $$ Cov^e = \frac {1} {T} \sum_{t-j+1} (y_t - \bar{y_{j+1,T}} )  (y_{t-j} - \bar{y_{1,T-j}}) $$
+Where : $$ Cov^e = \frac {1} {T} \sum_{t-j+1} (y_t - \bar{y_{j+1,T}} )  (y_{t-j} - \bar{y_{1,T-j}}) $$
 
 To plot the auto-correlation and the partial auto-correlation, we can use `statsmodel` package :
 
@@ -102,7 +102,7 @@ We observe a clear trend. The value od consumption at time $$ t $$ is negatively
 
 ## 2. Partial Auto-correlation
 
-The partial auto-correlation function (PACF) gives the partial correlation of a stationary time series with its own lagged values, regressed the values of the time series at all shorter lags. It is a regression of the series against its past lags. 
+The partial autocorrelation function (PACF) gives the partial correlation of a stationary time series with its own lagged values, regressed the values of the time series at all shorter lags. It is a regression of the series against its past lags. 
 
 How can we correct auto-correlation ? Take for example : 
 
@@ -118,7 +118,7 @@ Therefore, if we want to make a regression without auto-correlation :
 
 $$ \hat{y_{t}} =  (1-\rho) \beta_0 + \beta_1 \hat{X_t} + e_t $$
 
-Why would we want to remove the auto-correlation ?
+Why would we want to remove the auto-correlation?
 - to derive the OLS estimator of the parameters $$ \beta_1 $$ for example
 - because there is a bias otherwise since $$ u_t $$ would depend on $$ u_{t-1} $$
 
@@ -128,20 +128,20 @@ Why would we want to remove the auto-correlation ?
 
 ![image](https://maelfabien.github.io/assets/images/ts_19.jpg)
 
-What kind of events makes a series non-stationary ?
+What kind of events makes a series non-stationary?
 - a trend, i.e increasing sales over time
-- a seasonality, i.e more sales during summer time than winter time
+- a seasonality, i.e more sales during the summertime than wintertime
 
-> We usually want our series to be stationary even before applying any predictive model ! 
+> We usually want our series to be stationary even before applying any predictive model! 
 
-How can we test if a time series is stationary ?
+How can we test if a time series is stationary?
 - look at the plots (as above)
 - look at summary statistics and box plots as in the previous article. A simple trick is to cut the data set in 2, look at mean and variance for each split, and plot the distribution of values for both splits.
 - perform statistical tests, using the (Augmented) Dickey-Fuller test
 
 ### Unit roots
 
-Let's cover into more details the Dickey Fuller test. To do si, we need to introduce the notion of *unit root*. A unit root is a stochastic trend in a time series, sometimes called a random walk with drift. If a series has a unit root, it makes it unpredictable due to a systematic pattern.
+Let's cover into more details the Dickey-Fuller test. To do so, we need to introduce the notion of *unit root*. A unit root is a stochastic trend in a time series, sometimes called a random walk with drift. If a series has a unit root, it makes it unpredictable due to a systematic pattern.
 
 Let's consider an autoregressive (we'll dive deeper later in to this) :
 
@@ -193,7 +193,7 @@ And the null hypothesis : $$ H_0 : \theta = 0 $$.
 
 **Ergodicity** is the process by which we forget the initial conditions. This is reached when auto-correlation of order $$ k $$ tends to $$ 0 $$ as $$ k $$ tends to $$ \infty $$.
 
-According to the ergodicity theorem, when a time series is strictly stationary and erdogic, and $$ E(Y_T) < \infty $$ when $$ T → \infty $$, then $$ \frac {1} {n} \sum_i y_t → E(Y_T) $$ 
+According to the ergodicity theorem, when a time series is strictly stationary and erdogic, and $$ E(Y_T) < \infty $$ when $$ T → \infty $$, then $$ \frac {1} {n} \sum_i y_t → E(Y_T) $$ 
 
 ## 5. Exogeneity
 

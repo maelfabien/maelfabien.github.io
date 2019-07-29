@@ -24,9 +24,9 @@ sidebar:
 Grid Search and Randomized Search are the two most popular methods for hyper-parameter optimization of any model. In both cases, the aim is to test a set of parameters whose range has been specified by the users, and observe the outcome in terms of the metric used (accuracy, precision...). 
 
 For a Decision Tree, we would typically set the range of parameters to look for to :
-- `criterion : gini or entropy`
-- `max_depth : between 5 and 50`
-- `min_samples_split : between 2 and 5`
+- `criterion`: Gini or entropy
+- `max_depth`: between 5 and 50
+- `min_samples_split`: between 2 and 5
 - ...
 
 However, the way the parameters are tested is quite different between Grid Search and Randomized Search.
@@ -51,7 +51,7 @@ We can visually represent the grid search on 2 features as a sequential way to t
 
 ![image](https://maelfabien.github.io/assets/images/grid_1.png)
 
-As you might guess, grid search does not really scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
+As you might guess, grid search does not scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
 
 Grid search is implemented in scikit-learn under the name of GridSearchCV (for cross validation) :
 
@@ -75,9 +75,9 @@ To optimize the hyper-parameters, we tend to use a validation set (if available)
 
 # Randomized Search
 
-Randomized Search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try random combinations among the range of values specified for the hyper-parameters. We initally specify the number of random configurations we want to test in the parameter space.
+Randomized Search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try random combinations among the range of values specified for the hyper-parameters. We initially specify the number of random configurations we want to test in the parameter space.
 
-The main advantage is that we can try a broader range of values or hyperparameters within the same computation time  as grid search, or test the same ones in much less time. We are however not guaranteed to identify the best combination, since not all combinations will be tested.
+The main advantage is that we can try a broader range of values or hyperparameters within the same computation time as grid search, or test the same ones in much less time. We are however not guaranteed to identify the best combination since not all combinations will be tested.
 
 ![image](https://maelfabien.github.io/assets/images/grid_2.png)
 
@@ -99,4 +99,4 @@ rnd_search = RandomizedSearchCV(rf, param_grid, cv=5, scoring='mean_squared_erro
 rnd_search.fit(X_val, y_val)
 ````
 
-> **Conclusion** : There is a tradeoff to make between the guarantee to identify the best combination of parameters and the computation time. A simple trick could be to start with a randomized search to reduce the parameters space, and then launch a grid search to select the optimal features within this space.
+> **Conclusion** : There is a tradeoff to make between the guarantee to identify the best combination of parameters and the computation time. A simple trick could be to start with a randomized search to reduce the parameters space and then launch a grid search to select the optimal features within this space.

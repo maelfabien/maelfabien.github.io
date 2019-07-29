@@ -17,22 +17,22 @@ sidebar:
     nav: sidebar-sample
 ---
 
-In this series of articles, I'll present to you the main concepts of Cloud Computing as presented by AWS on their online certification : "Cloud Practitioner".
+In this series of articles, I'll present to you the main concepts of Cloud Computing as presented by AWS on their online certification: "Cloud Practitioner".
 
-> **Cloud computing**  refers to the on-demand delivery of IT resources and applications via Internet with Pay-As-You-Go pricing. 
+> **Cloud computing**  refers to the on-demand delivery of IT resources and applications via the Internet with Pay-As-You-Go pricing. 
 
-It allows companies to avoid buying their own infrastructures, in which case the would be subject to under or overuse. 
+It allows companies to avoid buying their infrastructures, in which case the would be subject to under or overuse. 
 
 AWS can be :
 - Initiated within seconds
 - Treat these a temporary and disposable 
-- Free form the inflexibility and constraints
+- Freeform the inflexibility and constraints
 - More Agile and efficient
 
 3 main factors influence agility :
 - **Speed**
     -  Global reach within a moment’s notice
-    - New ressources a click away
+    - New resources a click away
 - **Experimentation**
     - Experiment more often
     - Operations as code
@@ -47,12 +47,12 @@ AWS can be :
 
 The AWS Infrastructure :
 - Allows **elasticity, scalability and reliability** of computing resources
-- Is distributed over regions : physical locations, containing multiple availability zones
-- Availability zones (AZs) : one or more discrete data centers, which offer power, networking and connectivity in separate facilities
+- Is distributed over regions: physical locations, containing multiple availability zones
+- Availability zones (AZs): one or more discrete data centers, which offer power, networking, and connectivity in separate facilities
 
 The AWS is highly available :
-- Fault tolerance : Application operational during component failure, built-in redundancy of components
-- Highly available : Systems always functioning and accessible. Downtime is minimized as much as possible, without human intervention. 
+- Fault tolerance: Application operational during component failure, built-in redundancy of components
+- Highly available: Systems always functioning and accessible. Downtime is minimized as much as possible, without human intervention. 
 
 **Elasticity** is the power to scale computing resources up or down easily, while only paying for the actual resources used.
 
@@ -69,33 +69,33 @@ The overall infrastructure allows to :
 - Accommodate new strategic directions
 - Run a wide range of applications
 - Auto-scaling and elastic load balancing for scale up or down based on demand
-- Deploy system in multiple regions with a lower latency and better experience
+- Deploy the system in multiple regions with lower latency and a better experience
 - Innovative services and cutting-edge technology
 - Virtually, support any workload
 
 **Security** and compliance :
-- Customer retain control over regions where data is located
+- Customer retains control over regions where data is located
 - Security auditing often periodic and manual
 - AWS cloud provides governance capabilities
-- Industry leading capabilities that meet the strictest security requirements
+- Industry-leading capabilities that meet the strictest security requirements
 
 Data centers :
 - Offer state of the art electronic surveillance
 - Multi-factor access control systems
 - Staffed 24x7
-- Access is strictly least-privileged basis 
+- Access is a strictly least-privileged basis 
 - Environmental systems minimize the impact of disruptions
 - Multiple regions and availability zones enable resiliency
 
 **Reliability** is the ability of a system to recover from system failures. Also focused on the ability to dynamically acquire resources to meet demand and mitigate disruptions. 
 
-A reliable system must have a well planned foundation that can :
+A reliable system must have a well-planned foundation that can :
 - Handle changes in demand
 - Detect failure and automatically heal itself
 
 **Pay as you go** pricing :
 - Avoids dedicating resources to infrastructure
-- Redirects focus to innovation and invention
+- Redirects focus on innovation and invention
 - Reduces procurement complexity
 - Enables elasticity
 - Adapts to changes in business needs

@@ -29,20 +29,20 @@ In this series of articles, I am going to focus on the basis of Deep Learning, a
 ![image](https://maelfabien.github.io/assets/images/ros_1.png)
 
 Among the most important events on this timeline, I would highlight :
-- 1958 : the Rosenbaltt's Perceptron
-- 1974 : Backpropagation
-- 1985 : Boltzmann Machines
-- 1986 : MLP, RNN
-- 2012 : Dropout
-- 2014 : GANs
+- 1958: the Rosenblatt's Perceptron
+- 1974: Backpropagation
+- 1985: Boltzmann Machines
+- 1986: MLP, RNN
+- 2012: Dropout
+- 2014: GANs
 
-# Why neurons ?
+# Why neurons?
 
-Neuronal networks have been at the core of the development of Deep Learning these past years. But what is the link between a neuron biologically speaking and a deep learning algorithm ?
+Neuronal networks have been at the core of the development of Deep Learning these past years. But what is the link between a neuron biologically speaking and a deep learning algorithm?
 
-Neural networks are a set of algorithms that have been developped immitate the humain brain in the way we identify patterns. In neurology, researchers study the way we process information. We have outstanding abilities to process information quickly and extract patterns. 
+Neural networks are a set of algorithms that have been developed imitate the human brain in the way we identify patterns. In neurology, researchers study the way we process information. We have outstanding abilities to process information quickly and extract patterns. 
 
-Take a quick example : we are able to process information pre-attentively. Indeed, in less time than a eye blink (200ms), we can identify elements that pop out from an image. On the other hand, if the element does not pop out enough, we need to make a sequential search, which is much longer.
+Take a quick example: we can process information pre-attentively. Indeed, in less time than an eye blink (200ms), we can identify elements that pop out from an image. On the other hand, if the element does not pop out enough, we need to make a sequential search, which is much longer.
 
 ![image](https://maelfabien.github.io/assets/images/preattentive.png)
 
@@ -60,15 +60,15 @@ A neuron takes an input signal (dendrite), processes the information (soma) and 
 
 Now, this might be biologically inaccurate as there is a lot more going on out there but on a higher level, this is what is going on with a neuron in our brain — takes an input, processes it, throws out an output.
 
-Suppose that you are walking on a crosswalk and want to determine whether there is a danger situation or not. The information to process might be : 
-- visual, e.g. a car is really close
+Suppose that you are walking on a crosswalk and want to determine whether there is a dangerous situation or not. The information to process might be : 
+- visual, e.g. a car is close
 - audio, e.g. the sound of the car, a klaxon...
 
 A series of neurons will process the information. Intrinsically, using both channels, you will :
 - determine how close the car is
 - and how fast the car is going
 
-The neurons are activated depending on a given criteria. This will eventually lead to some sort of binary classification : Is there a danger or not ? During the information processing, a large number of neurons will activate sequentially, and eventually lead to a single output.
+The neurons are activated depending on the given criteria. This will eventually lead to some sort of binary classification: Is there a danger or not? During the information processing, a large number of neurons will activate sequentially, and eventually lead to a single output.
 
 ![image](https://maelfabien.github.io/assets/images/neuron_2.png)
 
@@ -76,20 +76,20 @@ This is an overly simplified representation, and I don't have sufficient knowled
 
 # The McCulloch-Pitts Neuron (1943)
 
-The first computational model of a neuron was proposed by Warren MuCulloch and Walter Pitts in 1943. We'll cover this first simple model as an introduction to the Rosenblatt's Perceptron. 
+The first computational model of a neuron was proposed by Warren McCulloch and Walter Pitts in 1943. We'll cover this first simple model as an introduction to the Rosenblatt's Perceptron. 
 
-How does the McCulloch-Pitts neuron work ?
+How does the McCulloch-Pitts neuron work?
 
 ![image](https://maelfabien.github.io/assets/images/neuron_3.png)
 
-The first part is to process a series of **boolean** inputs (just like dendrites). If an input takes the value 1, we say the that neuron **fires**.
+The first part is to process a series of **boolean** inputs (just like dendrites). If an input takes the value 1, we say that neuron **fires**.
 
 We then process the information into an aggregative function `g` (can be compared to Soma) that performs a simple aggregation of the values of each input. Then, the function `f` compares the output of `g` to a threshold or a condition.
 
 We can make several algorithms with this :
-- OR : the `f` function checks if the sum `g` is equal to 1
-- AND : the `f` function checks if the sum `g` is equal to the number of inputs
-- GREATER THAN : the `f` function checks if the sum `g` is equal to a threshold $$ \theta $$
+- OR: the `f` function checks if the sum `g` is equal to 1
+- AND: the `f` function checks if the sum `g` is equal to the number of inputs
+- GREATER THAN: the `f` function checks if the sum `g` is equal to a threshold $$ \theta $$
 
 The simplest binary classification can be achieved the following way :
 
@@ -118,35 +118,35 @@ The perceptron was first introduced in 1957 by Franck Rosenblatt. Since then, it
 
 ![image](https://maelfabien.github.io/assets/images/neuron_4.png)
 
-We attach to each input a weight ( $$w_i$$) and notice how we add an input of value 1 with a weight of $$ - \theta $$. This is called the bias. What we are doing is instead of having only the inputs and the weight and compare them to a threshold, we also learn the threshold as a weight for a standard input of value 1.
+We attach to each input a weight ( $$w_i$$) and notice how we add an input of value 1 with a weight of $$ - \theta $$. This is called bias. What we are doing is instead of having only the inputs and the weight and compare them to a threshold, we also learn the threshold as a weight for a standard input of value 1.
 
-The inputs can be seen as neurons, and will be called the **input layer**. All together, these neurons and the function (which we'll cover in a minute) form a **perceptron**.
+The inputs can be seen as neurons and will be called the **input layer**. Altogether, these neurons and the function (which we'll cover in a minute) form a **perceptron**.
 
-How do we make classification using a perceptron then ?
+How do we make classification using a perceptron then?
 
 $$ y = 1 $$ if $$ \sum_i w_i x_i ≥ 0 $$, else $$ y = 0 $$
 
-One limitation remains : the inputs need to be linearly separable, since we split the input space in two halves. 
+One limitation remains: the inputs need to be linearly separable since we split the input space into two halves. 
 
 ## Minsky and Papert (1969)
 
-The version of Perceptron we use nowadays was introduced by Minsky and Papert in 1969. They bring a major improvement to the classic model : they introduced an activation function. The **activation function** might take several forms and should "send" the weighted sum into a smaller set of possible values that allows us to classify the output. It's basically a smoother version than the thresholding applied before.
+The version of Perceptron we use nowadays was introduced by Minsky and Papert in 1969. They bring a major improvement to the classic model: they introduced an activation function. The **activation function** might take several forms and should "send" the weighted sum into a smaller set of possible values that allows us to classify the output. It's a smoother version than the thresholding applied before.
 
 ![image](https://maelfabien.github.io/assets/images/neuron_5.png)
 
-In the classical Rosenblatt's perceptron, we split the space in two halves using a HeavySide function (sign function) where the vertical split occurs at the threshold $$ \theta $$ :
+In the classical Rosenblatt's perceptron, we split the space into two halves using a HeavySide function (sign function) where the vertical split occurs at the threshold $$ \theta $$ :
 
 ![image](https://maelfabien.github.io/assets/images/Signum_function.svg.jpg)
 
-This is harsh (since an outcome of 0.49 and 0.51 lead to different values), and we cannot apply gradient descent on this function. For this reason, for binary classification for example, we'll tend to use a sigmoid activation function. Using a sigmoid activation will assign the value of a neuron to either 0 if the output is smaller than 0.5, or 1 if the neuron is larger than 0.5. The sigmoid function is defined by : $$ f(x) = \frac {1} {1 + e^{-u}} $$
+This is harsh (since an outcome of 0.49 and 0.51 lead to different values), and we cannot apply gradient descent on this function. For this reason, for binary classification, for example, we'll tend to use a sigmoid activation function. Using a sigmoid activation will assign the value of a neuron to either 0 if the output is smaller than 0.5, or 1 if the neuron is larger than 0.5. The sigmoid function is defined by : $$ f(x) = \frac {1} {1 + e^{-u}} $$
 
 ![image](https://maelfabien.github.io/assets/images/sigmoid.png)
 
-This activation function is smooth, differentiable (allows back-propagation) and continuous. We don't have to output a 0 or a 1, but we can output probabilities to belong to a class instead. If you're familiar with it, this version of the perceptron is a logistic regression with 0 hidden layer.
+This activation function is smooth, differentiable (allows back-propagation) and continuous. We don't have to output a 0 or a 1, but we can output probabilities to belong to a class instead. If you're familiar with it, this version of the perceptron is a logistic regression with 0 hidden layers.
 
 ## Some details
 
-A given observation can be either well classified, or in the wrong class. As in most optimization problems, we want to minimize the cost, i.e the sum of the individual losses on each training observation. A pseudo code corresponding to our problem is :
+A given observation can be either well classified, or in the wrong class. As in most optimization problems, we want to minimize the cost, i.e the sum of the individual losses on each training observation. A pseudo-code corresponding to our problem is :
 
 ![image](https://maelfabien.github.io/assets/images/pseudo.jpg)
 
@@ -159,9 +159,9 @@ where :
 - the weights on each neuron is $$ {\beta} $$
 - the activation function is sigmoid, denoted as $$ sig $$.
 
-We need to apply a stochastic gradient descent. The perceptron "learns" how to adapt the weights using back propagation. The weights and bias are firstly set randomly, and we compute an error rate. Then, we proceed to a back propagation to adjust the parameters that we did not correctly identify, and we start all over again for a given number of epoch.
+We need to apply a stochastic gradient descent. The perceptron "learns" how to adapt the weights using backpropagation. The weights and bias are firstly set randomly, and we compute an error rate. Then, we proceed to backpropagation to adjust the parameters that we did not correctly identify, and we start all over again for a given number of epochs.
 
-We will further detail the concepts of stochastic gradient descent and back propagation in the context of Multilayer Perceptron.
+We will further detail the concepts of stochastic gradient descent and backpropagation in the context of Multilayer Perceptron.
 
 Even the Minsky and Papert perceptron has a major drawback. If the categories are linearly separable for example, it identifies a single separating hyper-plane without taking into account the notion of margin we would like to maximize. This problem is solved by the Support Vector Machine (SVM) algorithm.
 
@@ -180,7 +180,7 @@ model.fit(X_train, y_train, epochs=20,batch_size=128)
 
 # Implementation in Tensorflow
 
-Using the famous MNIST data base as an example, a perceptron can be built the following way in Tensorflow. This simple application heads an accuracy of around 80 percents. This example is taken from the book : "Deep Learning for Computer Vision" by Dr. Stephen Moore, which I recommand. The following code is in Tensorflow 1 :
+Using the famous MNIST database as an example, a perceptron can be built the following way in Tensorflow. This simple application heads an accuracy of around 80 percents. This example is taken from the book: "Deep Learning for Computer Vision" by Dr. Stephen Moore, which I recommend. The following code is in Tensorflow 1 :
 
 ```python
 # Imports
@@ -238,7 +238,7 @@ session.close()
 
 This heads an accuracy of around `80%` which can be largely improved by the next techniques we are going to cover.
 
-> **Conclusion** : Next step, we are going to explore the Multilayer Perceptron !
+> **Conclusion** : Next step, we are going to explore the Multilayer Perceptron!
 
 Sources :
 - Télécom Paris, IP Paris Lecture on Perceptron

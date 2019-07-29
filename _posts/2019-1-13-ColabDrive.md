@@ -37,7 +37,7 @@ Once you run the cell, a link is provided, similar to :
 
 ![image](https://maelfabien.github.io/assets/images/gd_connect.jpg)
 
-Open the URL. You should now see a page asking for an access to the content of your Drive. Allow access.
+Open the URL. You should now see a page asking for access to the content of your Drive. Allow access.
 
 ![image](https://maelfabien.github.io/assets/images/gd_allow.jpg)
 
@@ -51,7 +51,7 @@ Paste it in your notebook :
 
 ## Check the content of your drive
 
-Your personal drive is accessible through the folder  `drive/My Drive`. To check the content of this folder, run the following cell in your notebook :
+Your drive is accessible through the folder  `drive/My Drive`. To check the content of this folder, run the following cell in your notebook :
 
 ```
 !ls "drive/My Drive"
@@ -67,4 +67,4 @@ X_train = np.load('drive/My Drive/X_train.npy')
 
 Similarly, you can save your files as you would do locally.
 
-> **Conclusion** : I hope this quick tip on Google Drive on Colab was helpful. I you have any question, don't hesitate to drop a comment !
+> **Conclusion **: I hope this quick tip on Google Drive on Colab was helpful. If you have any question, don't hesitate to drop a comment!

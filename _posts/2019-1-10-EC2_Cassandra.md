@@ -28,7 +28,7 @@ The Apache Cassandra database is the right choice when you need scalability and 
 
 In the architecture we considered, we essentially focused on deploying Cassandra on slave nodes. The steps detailed below can also be used for deploying Cassandra on your Masters. 
 
-The first step is to establish a SSH connection with your Slave nodes. Recall :
+The first step is to establish an SSH connection with your Slave nodes. Recall :
 ``` bash
 ssh -i "<path to your keyPair directory>/Cluster_test_Key_Pair.pem" ubuntu@<copy the public DNS> 
 ```
@@ -44,12 +44,12 @@ Run the following command :
 sudo apt install openjdk-8-jre-headless
 ```
 
-Once done, we need to define some exports that will allow us to lauch Cassandra easily. Open VI to edit the ``` bashrc ``` file  :
+Once done, we need to define some exports that will allow us to launch Cassandra easily. Open VI to edit the ``` bashrc ``` file  :
 ``` bash
 vi ~/.bashrc
 ```
 
-The, add the following lines to the file (you might have to type the letter "i" to insert new lines) :
+Then, add the following lines to the file (you might have to type the letter "i" to insert newlines) :
 
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -58,7 +58,7 @@ export PATH=$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin
 ````
 To quit and save changes, press ‘ESC’ and then write ``` :wq ``` and press ‘ENTER’.
 
-Once you're back on the terminal, execute the following line :  ``` source ~/.bashrc ```
+Once you're back on the terminal, execute the following line: ``` source ~/.bashrc ```
 
 ## Install Cassandra
 
@@ -112,7 +112,7 @@ Open the file :
 Change the following fields :
 - ``` cluster_name ``` :  give the name you want (e.g Cluster1)
 - ``` listen_address``` : Give it a private IP address specific to this node
-- ``` rpc_address ``` : Give it again a this private IP address specific to this node
+- ``` rpc_address ``` : Give it again this private IP address specific to this node
 - ``` seed_provider ``` : A private IP address common to all instances
 - ```endpoint_snitch``` :  Set it to ```Ec2Snitch```
 
@@ -124,11 +124,11 @@ Repeat those steps on the 5 Slave nodes.
 
 b. Modify the ``` cassandra-rackdc.properties ``` file :
 
-We will consider the simplest framework here : we won't specify any rack name or data center name. Just comment the two lines that are not commented :
+We will consider the simplest framework here: we won't specify any rack name or data center name. Just comment on the two lines that are not commented :
 
 ![image](https://maelfabien.github.io/assets/images/Cassandra_rack.jpg)
 
-The configuration is now ready !
+The configuration is now ready!
 
 ## Try the connection between every Cassandra node
 
@@ -142,7 +142,7 @@ For each node, execute the following command :
 ./cassandra 
 ```
 
-Some lines contain the keywork “Handshaking” which means that the nodes actually communicate.
+Some lines contain the keyword “Handshaking” which means that the nodes communicate.
 
 There is a command to directly describe the connections of your cluster :
 ```
@@ -151,6 +151,6 @@ There is a command to directly describe the connections of your cluster :
 
 ![image](https://maelfabien.github.io/assets/images/Cassandra_Final.jpg)
 
-Your Slave nodes with Apache-Cassandra are now configured ! 
+Your Slave nodes with Apache-Cassandra are now configured! 
 
-> *Conclusion* : The next step is to install and configure Zookeeper for the resilience of Spark !
+> *Conclusion *: The next step is to install and configure Zookeeper for the resilience of Spark!

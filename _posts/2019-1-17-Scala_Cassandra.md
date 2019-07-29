@@ -19,7 +19,7 @@ sidebar:
 
 ![image](https://maelfabien.github.io/assets/images/scala_cassandra.jpg)
 
-In order to store the data we downloaded previously, it is now essential to prepare them and split them into different sub-tables. This will allow us to create smaller data sets, and move those sets to Cassandra.
+To store the data we downloaded previously, it is now essential to prepare them and split them into different sub-tables. This will allow us to create smaller data sets, and move those sets to Cassandra.
 
 # Split the data sets
 
@@ -33,7 +33,7 @@ val mentions_1 = mentionsDF.withColumn("_tmp", $"value").select(
     )
 ```
 
-The country of the event as well as the day of the event are in the Export table. Instead of selecting all columns (more than 50), we'll focus on some specific ones :
+The country of the event, as well as the day of the event, are in the Export table. Instead of selecting all columns (more than 50), we'll focus on some specific ones :
 
 ```scala
 val events_1 = exportDF.withColumn("_tmp", $"value").select(
@@ -82,7 +82,7 @@ numarticles int,
 PRIMARY KEY (day, language, actioncountry));
 ```
 
-Make sure to have the name name for the fields, and no capital letters. It happenned to cause some troubles in our project.
+Make sure to have the name for the fields, and no capital letters. It happened to cause some troubles in our project.
 
 # Write the data in Cassandra
 
@@ -94,15 +94,15 @@ val df_1_1 = spark.read.cassandraFormat("q1_1", "gdelt_datas").load()
 df_1_1.createOrReplaceTempView("q1_1")
 ```
 
-It might take some time (several minutes). Once done, all you data for this specific query are in Cassandra !
+It might take some time (several minutes). Once done, all your data for this specific query are in Cassandra!
 
 # Query Cassandra Tables
 
-Since we prepared the data in order to fit the queries, our queries are really simple to make in Zeppelin :
+Since we prepared the data to fit the queries, our queries are really simple to make in Zeppelin :
 ```z.show(spark.sql(""" SELECT * FROM q1_1 ORDER BY NumArticles DESC LIMIT 10 """))```
 
 The results will be displayed directly in Zeppelin :
 
 ![image](https://maelfabien.github.io/assets/images/q1_2.jpg)
 
-> **Conclusion** : This project is now over ! We have loaded several GB of zipped files in S3, built a resilient architecture using AWS, Cassandra and ZooKeeper, and finally manipulated and transfered the data to make fast, simple queries on large data sets.
+> **Conclusion **: This project is now over! We have loaded several GB of zipped files in S3, built a resilient architecture using AWS, Cassandra and ZooKeeper, and finally manipulated and transferred the data to make fast, simple queries on large data sets.

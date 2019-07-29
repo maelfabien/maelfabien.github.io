@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-Inception is a deep convolutional neural network architecture that was introduced for the first time in 2014. It won the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC14). It was mostly developped by Google researchers. Inception's name was given after the eponym movie.
+Inception is a deep convolutional neural network architecture that was introduced in 2014. It won the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC14). It was mostly developed by Google researchers. Inception's name was given after the eponym movie.
 
 The original paper can be found [here](https://arxiv.org/pdf/1409.4842.pdf).
 
@@ -26,15 +26,15 @@ The original paper can be found [here](https://arxiv.org/pdf/1409.4842.pdf).
 
 Inception architecture can be used in computer vision tasks that imply convolutional filters.
 
-## What is an inception module ?
+## What is an inception module?
 
-In Convolutional Neural Networks (CNNs), a large part of the work is to choose the right layer to apply, among the most common options (1x1 filter, 3x3 filter, 5x5 filter or maxpooling). All we need is to find the optimal local construction and to repeat it spatially. 
+In Convolutional Neural Networks (CNNs), a large part of the work is to choose the right layer to apply, among the most common options (1x1 filter, 3x3 filter, 5x5 filter or max-pooling). All we need is to find the optimal local construction and to repeat it spatially. 
 
 ![image](https://maelfabien.github.io/assets/images/inception.jpg)
 
 As these “Inception modules” are stacked on top of each other, their output correlation statistics are bound to vary: as features of higher abstraction are captured by higher layers, their spatial concentration is expected to decrease suggesting that the ratio of 3×3 and 5×5 convolutions should increase as we move to higher layers.
 
-However, the computational cost of such solution highly increases. For this reason, in the figure `b`, dimension reduction through 1X1 convolutions are used as dimension reduction techniques.
+However, the computational cost of such a solution highly increases. For this reason, in the figure `b`, dimension reduction through 1X1 convolutions are used as dimension reduction techniques.
 
 ## GoogLeNet
 
@@ -83,7 +83,7 @@ classes = np.unique(y_train)
 nClasses = len(classes)
 ```
 
-Now, let's build our first inception layer !
+Now, let's build our first inception layer!
 
 ```python
 input_img = Input(shape=(shape_x, shape_y, 1))
@@ -112,7 +112,7 @@ dense_3 = Dense(150, activation='relu')(dense_2)
 output = Dense(nClasses, activation='softmax')(dense_3)
 ```
 
-This quite simple architecture leads to 83'760'487 trainable parameters ! Of course, one can even go deeper by addition layers connected to the `mid_1` layer.
+This quite simple architecture leads to 83'760'487 trainable parameters! Of course, one can even go deeper by addition layers connected to the `mid_1` layer.
 
 We can build the model :
 
@@ -137,7 +137,7 @@ batch_size = 128
 epochs = 150
 ```
 
-And run it !
+And run it!
 
 ```python
 history = model.fit(X_train, y_train, epochs=150, batch_size=64, validation_data=(X_test, y_test))

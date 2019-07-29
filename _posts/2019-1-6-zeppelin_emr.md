@@ -1,6 +1,6 @@
 ---
 published: true
-title: How to run a Zeppelin notebook on AWS EMR ?
+title: How to run a Zeppelin notebook on AWS EMR?
 collection: bgd
 layout: single
 author_profile: false
@@ -24,13 +24,13 @@ We have already seen how to run a Zeppelin notebook locally. Most of the time, y
 {% highlight python %}
 {% endhighlight %}
 
-Important notice : EMR instance are fully managed and configured. Once launched, EMR instances cannot be terminated without losing all data atteched to it. EMR can typically be used to build an ETL (extract, transform, load) in order to download and transform data from a given source, and later on load the data in a data base.
+Important notice: EMR instances are fully managed and configured. Once launched, EMR instances cannot be terminated without losing all data attached to it. EMR can typically be used to build an ETL (extract, transform, load) to download and transform data from a given source, and later on load the data in a database.
 
 ## Launching an EMR instance
 
 ### 1. Key Pair
 
-The first step is to create a key pair. "Amazon uses public–key cryptography to encrypt and decrypt login information. Public–key cryptography uses a public key to encrypt a piece of data, such as a password, then the recipient uses the private key to decrypt the data. The public and private keys are known as a key pair". 
+The first step is to create a key pair. "Amazon uses public-key cryptography to encrypt and decrypt login information. Public–key cryptography uses a public key to encrypt a piece of data, such as a password, then the recipient uses the private key to decrypt the data. The public and private keys are known as a key pair". 
 
 Log into your AWS Console and click on EC2 (or click here) : <span style="color:blue">[https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:sort=keyName](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:sort=keyName)</span>
 
@@ -44,7 +44,7 @@ Then, create a key pair and give it a name :
 
 ![image](https://maelfabien.github.io/assets/images/key2.jpg){:height="45%" width="45%"}
 
-The keypair .pem file will automatically be dowloaded. Make sure to save the file !
+The keypair .pem file will automatically be downloaded. Make sure to save the file!
 
 ![image](https://maelfabien.github.io/assets/images/key3.jpg){:height="30%" width="30%"}
 
@@ -133,7 +133,7 @@ In your terminal :
 ssh -L 8891:127.0.0.1:8890 -i Test.pem hadoop@ec2-XXX.compute-1.amazonaws.com 
 ```
 
-The command ``` -L ``` redirects the port  ``` 127.0.0.1:8890 ```  of your EMR instance to your local port 8891. Make sure that your are in the folder that contains your keypair  ``` Test.pem ``` or that you indicate the complete path to the key pair.
+The command ``` -L ``` redirects the port  ``` 127.0.0.1:8890 ```  of your EMR instance to your local port 8891. Make sure that you are in the folder that contains your keypair  ``` Test.pem ``` or that you indicate the complete path to the key pair.
 
 If your connection is successful, you should see something like this :
 ```bash
@@ -167,6 +167,6 @@ EEEEEEEEEEEEEEEEEEEE MMMMMMM             MMMMMMM RRRRRRR      RRRRRR
 
 Thanks to the redirection we previously established, you should be able to simply connect to Zeppelin from your local host : <span style="color:blue">[http://localhost:8891/#/](http://localhost:8891/#/)</span> )
 
-The port 8891 was chosen quite randomly, since 8890 was already used by Jupyter Notebook on my computer.
+The port 8891 was chosen quite randomly since 8890 was already used by Jupyter Notebook on my computer.
 
 ![image](https://maelfabien.github.io/assets/images/zeppelin.jpg){:height="70%" width="70%"}

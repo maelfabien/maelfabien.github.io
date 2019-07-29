@@ -17,38 +17,38 @@ sidebar:
     nav: sidebar-sample
 ---
 
-Autoencoder is a type a neural network widely used for unsupervised dimension reduction. So, how does it work ? What can it be used for ? And how do we implement it in Python ?
+Autoencoder is a type a neural network widely used for unsupervised dimension reduction. So, how does it work? What can it be used for? And how do we implement it in Python?
 
-The originis of autoencoders have been discussed, but one of the most likely origin of autoencoder is a paper written in 1987 by Ballard, "Modular Learning in Neural Networks" which can be found [here](https://www.aaai.org/Papers/AAAI/1987/AAAI87-050.pdf).
+The origins of autoencoders have been discussed, but one of the most likely origins of the autoencoder is a paper written in 1987 by Ballard, "Modular Learning in Neural Networks" which can be found [here](https://www.aaai.org/Papers/AAAI/1987/AAAI87-050.pdf).
 
 {% highlight python %}
 {% endhighlight %}
 
-## What is an autoencoder ?
+## What is an autoencoder?
 
-An autoencoder is a special type of neural network architecture that can be used efficiently reduce the dimension of an input in an efficient manner. It is widely used for images datasets for example.
+An autoencoder is a special type of neural network architecture that can be used efficiently reduce the dimension of the input. It is widely used for images datasets for example.
 
-Let's consider an input image. The input will be sent into several hidden layers of a neural network. Those layers be used to compress the image into a smaller dimension, by reducing the dimensions of the layers as we move on. At some point, the input image will be encoded into a short code. 
+Let's consider an input image. The input will be sent into several hidden layers of a neural network. Those layers are used to compress the image into a smaller dimension, by reducing the dimensions of the layers as we move on. At some point, the input image will be encoded into a short code. 
 
-On the other hand, we build new layers that will learn to decode the short code, in order to rebuild the initial image. We are now teaching a network to take an input image, reduce its dimension (encoding), and rebuild it on the other side (decoding).
+On the other hand, we build new layers that will learn to decode the short code, to rebuild the initial image. We are now teaching a network to take an input image, reduce its dimension (encoding), and rebuild it on the other side (decoding).
 
 The network will learn by itself to gather the most important information in the short code.
 
-Therefore, all we need to do is to keep the encoding part of the model, and we have a great way to reduce the input dimension in an unsupervised way !
+Therefore, all we need to do is to keep the encoding part of the model, and we have a great way to reduce the input dimension in an unsupervised way!
 
 We can summarize the network architecture as follows :
 
 ![image](https://maelfabien.github.io/assets/images/autoencoder_structure.jpg)
 
-With an image dataaet, the layers that are usually used are the following :
+With an image dataset, the layers that are usually used are the following :
 - convolution layers
 - activation layers
-- maxpooling layers
+- max-pooling layers
 - upsampling layers
 
 Otherwise, with numerical problems, dense layers are simple to use. 
 
-"If linear activations are used, or only a single sigmoid hidden layer, then the optimal solution to an autoencoder is strongly related to principal component analysis (PCA). The weights of an autoencoder with a single hidden layer of size `p` (where `p` is less than the size of the input) span the same vector subspace as the one spanned by the first `p` principal components, and the output of the autoencoder is an orthogonal projection onto this subspace. The autoencoder weights are not equal to the principal components, and are generally not orthogonal, yet the principal components may be recovered from them using the singular value decomposition" (Wikipedia)
+"If linear activations are used, or only a single sigmoid hidden layer, then the optimal solution to an autoencoder is strongly related to principal component analysis (PCA). The weights of an autoencoder with a single hidden layer of size `p` (where `p` is less than the size of the input) span the same vector subspace as the one spanned by the first `p` principal components, and the output of the autoencoder is an orthogonal projection onto this subspace. The autoencoder weights are not equal to the principal components and are generally not orthogonal, yet the principal components may be recovered from them using the singular value decomposition" (Wikipedia)
 
 ## Variations 
 
@@ -73,7 +73,7 @@ Variational autoencoders (VAEs) don't learn to morph the data in and out of a co
 
 ## Create an autoencoder in Python
 
-For this example, we'll use the MNIST dataset. Start by importing the followin packages :
+For this example, we'll use the MNIST dataset. Start by importing the following packages :
 
 ```python
 ### General Imports ###
@@ -107,7 +107,7 @@ X_train = X_train.reshape(-1,shape_x,shape_y,1)
 X_test = X_test.reshape(-1,shape_x,shape_y,1)
 ```
 
-Now, let's build the model !
+Now, let's build the model!
 
 ```
 input_img = Input(shape=(shape_x, shape_y, 1))
@@ -146,7 +146,7 @@ Instead of :
 
 ` 28*28*1 = 784 `
 
-Now, let's train the model ! We don't need any `y_train` here, both the input and the output will be the train images.
+Now, let's train the model! We don't need any `y_train` here, both the input and the output will be the train images.
 
 ```python
 autoencoder.fit(X_train, X_train, nb_epoch = 15, batch_size = 64, validation_split = 0.1)
@@ -216,11 +216,11 @@ plt.show()
 
 The first row is the input image. The middle row is the encoded image. The output row is the decoded image.
 
-Our model remains quite simple, and we should definitely add some epochs in order to reduce the noise of the reconsitituted image. 
+Our model remains quite simple, and we should add some epochs to reduce the noise of the reconstituted image. 
 
 ## Dense version
 
-Ww have just made a deep convolutional autoencoder. Another version one could think of is to treat the input images as flat images, and build the autoencoder using Dense layers.
+We have just made a deep convolutional autoencoder. Another version one could think of is to treat the input images as flat images and build the autoencoder using Dense layers.
 
 ```python
 input_img = Input(shape=(`shape_x * shape_y,))
@@ -235,4 +235,4 @@ decoded = Dense(shape_x * shape_y, activation='sigmoid')(decoded)
 
 The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 
-> **Conclusion** : I hope this quick introduction to autoencoder was clear. Don't hesitate to drop a comment if you have any question.
+> **Conclusion **: I hope this quick introduction to autoencoder was clear. Don't hesitate to drop a comment if you have any question.

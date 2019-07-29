@@ -24,10 +24,10 @@ sidebar:
 In this series, I will summarize the course "Machine Learning Explaibnability" from Kaggle Learn. The full course is available [here](https://www.kaggle.com/learn/machine-learning-explainability).
 
 First of all, it is important to define the difference between machine learning explainability and interpretability. According to [KDnuggets](https://www.kdnuggets.com/2018/12/machine-learning-explainability-interpretability-ai.html) :
-- Interpretability is about the extent to which a cause and effect can be observed within a system. Or, to put it another way, it is the extent to which you are able to predict what is going to happen, given a change in input or algorithmic parameters.
+- Interpretability is about the extent to which a cause and effect can be observed within a system. Or, to put it another way, it is the extent to which you can predict what is going to happen, given a change in input or algorithmic parameters.
 - Explainability, meanwhile, is the extent to which the internal mechanics of a machine or deep learning system can be explained in human terms. 
 
-Explainability and interpretability are key elements today if we want to deploy ML algorithms in healthcare, banking and other domains.
+Explainability and interpretability are key elements today if we want to deploy ML algorithms in healthcare, banking, and other domains.
 
 # I. Use cases for model insights
 
@@ -54,7 +54,7 @@ Many businesses can expand the types of data they collect. Model-based insights 
 
 ## Informing human decision-making
 
-For many human decisions that cannot (yet?) be made automatically by an algorithm, insights on the model prediction can bring explanability to support a decision.
+For many human decisions that cannot (yet?) be made automatically by an algorithm, insights on the model prediction can bring explainability to support a decision.
 
 ## Building trust
 
@@ -76,7 +76,7 @@ For example, say we want to predict the height of a person at age 20 based on a 
 
 ![image](https://maelfabien.github.io/assets/images/perm.jpg)
 
-Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. From the impact on the accuracy, we can determine the importance of a feature.
+Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. From the impact on accuracy, we can determine the importance of a feature.
 
 ## Example
 
@@ -112,17 +112,17 @@ eli5.show_weights(perm, feature_names = val_X.columns.tolist())
 
 In our example, the most important feature was Goals scored. The first number in each row shows how much model performance decreased with a random shuffling (in this case, using "accuracy" as the performance metric). We measure the randomness by repeating the process with multiple shuffles.
 
-Negative value for importance occurs when the feature is not important at all.
+A negative value for importance occurs when the feature is not important at all.
 
 # III. Partial dependence plots
 
 While feature importance shows what variables most affect predictions, partial dependence plots show how a feature affects predictions.
 
-Partial dependence plots can be interpreted similarly to coefficients in linear or logistic regression models, but can capture more complex patterns than simple coefficients.
+Partial dependence plots can be interpreted similarly to coefficients in linear or logistic regression models but can capture more complex patterns than simple coefficients.
 
 We can use partial dependence plots to answer questions like :
 - Controlling for all other house features, what impact do longitude and latitude have on home prices? To restate this, how would similarly sized houses be priced in different areas?
-- Are predicted health differences between two groups due to differences in their diets, or due to some other factor?
+- Are predicted health differences between the two groups due to differences in their diets, or due to some other factor?
 
 ## How does it work?
 
@@ -140,7 +140,7 @@ We don't use only a single row, but many rows to do that. Therefore, we can repr
 
 ![image](https://maelfabien.github.io/assets/images/perm3.jpg)
 
-The blue shaded area indicates the level of condifence.
+The blue shaded area indicates the level of confidence.
 
 ## Example
 
@@ -163,7 +163,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
 tree_model = DecisionTreeClassifier(random_state=0, max_depth=5, min_samples_split=5).fit(X_train, y_train)
 ```
 
-Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. The PDP fot the number of goals scored is the following :
+Then, we can plot the Partial Dependence Plot using [PDPbox](https://pdpbox.readthedocs.io/en/latest/). The goal of this library is to visualize the impact of certain features towards model prediction for any supervised learning algorithm using partial dependence plots. The PDP for the number of goals scored is the following :
 
 ```python
 from matplotlib import pyplot as plt
@@ -212,7 +212,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/perm6.jpg)
 
-In this example, each feature can only take a limited number of values. What happens if we have continuous variables ? The level frontiers bring value on the interaction between the 2 variables.
+In this example, each feature can only take a limited number of values. What happens if we have continuous variables? The level frontiers bring value on the interaction between the 2 variables.
 
 ![image](https://maelfabien.github.io/assets/images/perm7.jpg)
 
@@ -223,12 +223,12 @@ We have seen so far techniques to extract general insights from a machine learni
 SHAP Values (an acronym from SHapley Additive exPlanations) break down a prediction to show the impact of each feature.
 
 This could be used for :
-- banking automatic decisiom making 
+- banking automatic decision making 
 - healthcare risk factor assessment for a single person
 
 In summary, we use SHAP values to explain individual predictions.
 
-## How does it work ?
+## How does it work?
 
 SHAP values interpret the impact of having a certain value for a given feature in comparison to the prediction we'd make if that feature took some baseline value.
 
@@ -302,15 +302,15 @@ SHAP summary plots give us a birds-eye view of feature importance and what is dr
 
 Each dot has 3 characteristics :
 - Vertical location shows what feature it is depicting
-- Color shows whether the feature was high or low for that row of the dataset
+- The color shows whether the feature was high or low for that row of the dataset
 - Horizontal location shows whether the effect of that value caused a higher or lower prediction
 
-In this specific example, the model ignored `Red` and `Yellow & Red` features.High values of goal scored caused higher predictions, and low values caused low predictions.
+In this specific example, the model ignored `Red` and `Yellow & Red` features. High values of goal scored caused higher predictions, and low values caused low predictions.
 
 Summary plots can be built the following way :
 
 ```python
-# Create object that can calculate shap values
+# Create an object that can calculate shap values
 explainer = shap.TreeExplainer(my_model)
 
 # Calculate shap_values for all of X_test rather than a single row, to have more data for plot.
@@ -338,13 +338,13 @@ We can also notice outliers that stand out spatially as being far away from the 
 
 ![image](https://maelfabien.github.io/assets/images/shap_6.png)
 
-We can find an interpretation for this : In general, having the ball increases a team's chance of having their player win the award. But if they only score one goal, that trend reverses and the award judges may penalize them for having the ball so much if they score that little.
+We can find an interpretation for this: In general, having the ball increases a team's chance of having their player win the award. But if they only score one goal, that trend reverses and the award judges may penalize them for having the ball so much if they score that little.
 
-To implement Dependence Contribution plors, we can use the following code :
+To implement Dependence Contribution plots, we can use the following code :
 
 
 ```python
-# Create object that can calculate shap values
+# Create an object that can calculate shap values
 explainer = shap.TreeExplainer(my_model)
 
 # calculate shap values. This is what we will plot.
@@ -366,7 +366,7 @@ shap.summary_plot(shap_values, X, plot_type="bar")
 
 ### Interaction plots
 
-We can represent the interaction effect for two features and the effect on the SHAP Value they have. This can be done by plotting a dependence plot between of the interaction values. Let's take another random example in which we consider the interaction between the age and the white blood cells, and the effect this has on the SHAP interaction values :
+We can represent the interaction effect for two features and the effect on the SHAP Value they have. This can be done by plotting a dependence plot between the interaction values. Let's take another random example in which we consider the interaction between the age and the white blood cells, and the effect this has on the SHAP interaction values :
 
 ```
 shap.dependence_plot(
@@ -378,4 +378,4 @@ display_features=X_display.iloc[:2000,:]
 
 ![image](https://maelfabien.github.io/assets/images/shap_9.png)
 
-> **Conclusion** : That's it for this introduction to Machine Learning Explainability ! Don't hesitate to drop a comment if you have any question.
+> **Conclusion **: That's it for this introduction to Machine Learning Explainability! Don't hesitate to drop a comment if you have any question.

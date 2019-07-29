@@ -26,9 +26,9 @@ In this article, we'll introduce the main types of time series.
 {% highlight matlab %}
 {% endhighlight %}
 
-We'll be using the same data set as in the previous article : Open Power System Data ([OPSD](https://open-power-system-data.org/)) for Germany. The data can be downloaded [here](https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv)
+We'll be using the same data set as in the previous article: Open Power System Data ([OPSD](https://open-power-system-data.org/)) for Germany. The data can be downloaded [here](https://raw.githubusercontent.com/jenfly/opsd/master/opsd_germany_daily.csv)
 
-Start off by importing the following packages :
+Start by importing the following packages :
 
 ```python
 ### General import
@@ -111,4 +111,4 @@ $$ \rho_1 = \frac {\theta_1} {\theta_0} = \frac {\theta} {1 + \theta^2} $$
 # VI...
 
 
-> **Conclusion** : I hope you found this article useful. Don't hesitate to drop a comment if you have a question.
+> **Conclusion **: I hope you found this article useful. Don't hesitate to drop a comment if you have a question.

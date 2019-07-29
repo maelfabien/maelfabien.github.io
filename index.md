@@ -8,13 +8,13 @@ redirect_from:
     - /about.html
 ---
 
-My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a data sciensist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI bootcamp in Paris. 
+My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a data scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris. 
 
 I started a freelance activity, and if you're looking for a freelance data scientist on a project, [send me a quick message](https://maelfabien.github.io/form.html).
 
-Please [contact me](mailto:mael.fabien@gmail.com) if you think we could work together some way, or if you have any question or remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf). I'm uploading on this blog some content that I'm writing on my free time. I'm trying to upload one article per week. 
+Please [contact me](mailto:mael.fabien@gmail.com) if you think we could work together, or if you have any question or remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf). I'm uploading on this blog some content that I'm writing in my free time. I'm trying to upload one article per week. 
 
-I started this blog in September 2018. Since then, I have published many articles. You will find here content related to my fields of interest :
+I started this blog on September 2018. Since then, I have published many articles. You will find here content related to my fields of interest :
 - [Statistics and Machine Learning](https://maelfabien.github.io/ml/)
 - [Deep Learning](https://maelfabien.github.io/dl/)
 - [Data Engineering](https://maelfabien.github.io/bgd/)
@@ -30,9 +30,9 @@ All codes and exercises of this website are hosted on GitHub in a dedicated repo
 
 You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles I have written. 
 
-I'd like to start a PhD in Machine learning related topics (continual learning, private AI, semi-supervised learning...) in 2020. 
+I'd like to start a Ph.D. in Machine learning related topics (continual learning, private AI, semi-supervised learning...) in 2020. 
 
-I recently started a newsletter in which I gather some cool articles I wrote on a topic, interesting Github repositories, projects, papers and more ! If you want to stay in the loop, I'll try to send 1 to 2 emails per month :)
+I recently started a newsletter in which I gather some cool articles I wrote on a topic, interesting Github repositories, projects, papers and more! If you want to stay in the loop, I'll try to send 1 to 2 emails per month :)
 
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
@@ -49,6 +49,6 @@ I recently started a newsletter in which I gather some cool articles I wrote on 
 
 <br>
 
-*NB: The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside it truly stunning out there.*
+*NB: The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.*
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>

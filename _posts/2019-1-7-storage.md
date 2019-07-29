@@ -38,7 +38,7 @@ You can keep the other default parameters, and confirm the creation of the bucke
 
 ## Download AWS CLI
 
-For some operations like checking the volume of an S3 bucket, using AWS CLI is really useful. In your terminal, run the following command :
+For some operations like checking the volume of an S3 bucket, using AWS CLI is useful. In your terminal, run the following command :
 ``` bash
 $ pip install awscli --upgrade
 ```
@@ -48,7 +48,7 @@ Then, type :
 $ aws configure
 ```
 
-Aswer the different questions. Make sure to have the ``` credentials.csv ```  file you downloaded when you created a user group. If you don't have one, I invite you to check my article on how to run a Zeppelin notebook on EMR.
+Answer the different questions. Make sure to have the ``` credentials.csv ```  file you downloaded when you created a user group. If you don't have one, I invite you to check my article on how to run a Zeppelin notebook on EMR.
 
 ``` bash
 AWS Access Key ID [None]: XXX

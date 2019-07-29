@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-Here's a quick recap of useful Bash commands to interact with your terminal :
+Here's a quick recap of useful Bash commands to interact with your terminal:
 
 ```
 > cd  some/path/you/want/to/go  : change directory

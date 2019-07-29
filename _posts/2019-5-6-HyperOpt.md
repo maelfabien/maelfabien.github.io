@@ -17,9 +17,9 @@ sidebar:
     nav: sidebar-sample
 ---
 
-Bayesian Hyperpameter Optimization is a model-based hyperparameter optimization. On the other hand, GridSearch or RandomizedSearch do not depend on any underlying model. 
+Bayesian Hyperparameter Optimization is a model-based hyperparameter optimization. On the other hand, GridSearch or RandomizedSearch do not depend on any underlying model. 
 
-What are the main advantages and limitations of model-based techniques ? How can we implement it in Python ?
+What are the main advantages and limitations of model-based techniques? How can we implement it in Python?
 
 <script type="text/javascript" async
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -66,7 +66,7 @@ We use that set of predictions and pick new points where we should evaluate next
 
 The green areas represent confidence intervals.
 
-From that new point, we add it to the samples, and re-build the Gaussian Process with that new information... We keep doing this until we reach the maximal number of iterations, or the limit time for example. 
+From that new point, we add it to the samples and re-build the Gaussian Process with that new information... We keep doing this until we reach the maximal number of iterations or the limit time for example. 
 
 ### Random Forests
 
@@ -76,9 +76,9 @@ We still suppose that $$ N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $$ is Gaussian.
 
 We choose the parameters $$ hat{\mu}, \hat{\sigma} $$ as the empirical mean and variance of the regression values.
 
-$$ \hat{\mu} = \frac {1} { \mid B \mid } \sum_{r \in B} r(x) $$
+$$ \hat{\mu} = \frac {1} { \mid B \mid } \sum_{r \in B} r(x) $$
 
-$$ {\hat{\sigma}}^2 = \frac {1} { \mid B \mid - 1 } \sum_{r \in B} ( r(x) - \hat{\mu} )^2 $$
+$$ {\hat{\sigma}}^2 = \frac {1} { \mid B \mid - 1 } \sum_{r \in B} ( r(x) - \hat{\mu} )^2 $$
 
 By their structure, Random Forests allow the use of conditional variables, which is a nice feature.
 
@@ -90,17 +90,17 @@ $$ p(x \mid y, D) = l(x) $$ if $$ y < y^* $$, else $$ g(x) $$
 
 Gaussian processes and random forests, in contrast, model the objective function as dependent on the entire joint variable configuration.
 
-Parzen estimators are organized in a tree structure, preserving any specified conditional dependence and resulting in a fit per variable for each process $$ l(x), g(x) $$. With these two distributions, one can optimize a closed form term proportional to expected improvement
+Parzen estimators are organized in a tree structure, preserving any specified conditional dependence and resulting in a fit per variable for each process $$ l(x), g(x) $$. With these two distributions, one can optimize a closed-form term proportional to the expected improvement
 
 TPE naturally supports domains with specified conditional variables. 
 
 ## Acquisition function
 
-How do we pick point to know where we should evaluate next ?
+How do we pick the point to know where we should evaluate next?
 - Pick points that yield, on the approximated curve, a low value. 
 - Pick points in areas we have less explored.
 
-There is an exploration / exploitation trade-off to make. This tradeoff is taken into account in an *acquisition function*.
+There is an exploration/exploitation trade-off to make. This tradeoff is taken into account in an *acquisition function*.
 
 The acquisition function is defined as :
 
@@ -112,17 +112,17 @@ where :
 - $$ f(x^c) $$ the current guessed arg min, $$ \mu(x) $$ the guessed value of the function at `x`, and $$ \sigma(x) $$ the standard deviation of output at `x`.
 - $$ \Phi(x) $$ and $$ N(x) $$ are the CDF and the PDF of a standard normal
 
-We then compute the acquisiton score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
+We then compute the acquisition score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
 
 ![image](https://maelfabien.github.io/assets/images/ho4.jpg)
 
 In this example, we would move to the extreme value on the right, at $$ x = 1 $$.
 
-The process can be illustrated the following way :
+The process can be illustrated in the following way :
 
 ![image](https://maelfabien.github.io/assets/images/bo.gif)
 
-This is the essence of bayesian hyperparameter optimization !
+This is the essence of bayesian hyperparameter optimization!
 
 # Advantages of Bayesian Hyperparameter Optimization
 
@@ -144,9 +144,9 @@ We'll be using HyperOpt in this example.
 
 We'll use the Credit Card Fraud detection, a famous Kaggle dataset that can be found [here](https://www.kaggle.com/mlg-ulb/creditcardfraud).
 
-The datasets contains transactions made by credit cards in September 2013 by european cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+The datasets contain transactions made by credit cards in September 2013 by European cardholders. This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
 
-It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
+It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, the original features are not provided. Features V1, V2, ... V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-sensitive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
 ```python
 ### General
@@ -162,7 +162,7 @@ df.head()
 
 ![image](https://maelfabien.github.io/assets/images/auto3.jpg)
 
-If you explore the data, you'll notice that only 0.17% of the transactions are fraudulant. We'll use the F1-Score metric, a harmonic mean between the precision and the recall.
+If you explore the data, you'll notice that only 0.17% of the transactions are fraudulent. We'll use the F1-Score metric, a harmonic mean between the precision and the recall.
 
 To understand the nature of the fraudulant transactions, simply plot the following graph :
 
@@ -177,7 +177,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/auto4.jpg)
 
-Fraudulant transactions have a limited amount. We can guess that these transactions must remain "unseen" and not attracting too much attention.
+Fraudulent transactions have a limited amount. We can guess that these transactions must remain "unseen" and not attracting too much attention.
 
 ## HyperOpt
 
@@ -206,7 +206,7 @@ def objective(params, n_folds = N_FOLDS):
     """Objective function for Logistic Regression Hyperparameter Tuning"""
 
     # Perform n_fold cross validation with hyperparameters
-    # Use early stopping and evalute based on ROC AUC
+    # Use early stopping and evaluate based on ROC AUC
 
     clf = LogisticRegression(**params,random_state=0,verbose =0)
     scores = cross_val_score(clf, X, y, cv=5, scoring='f1_macro')
