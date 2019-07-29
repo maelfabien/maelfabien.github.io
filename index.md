@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a data scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris. 
+My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a Data Scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris. 
 
 I started a freelance activity, and if you're looking for a freelance data scientist on a project, [send me a quick message](https://maelfabien.github.io/form.html).
 
