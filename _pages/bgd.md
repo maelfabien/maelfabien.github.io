@@ -69,6 +69,10 @@ I'll start by introducing really general articles :
 
 [Using Google Drive to save and load files in Colab](https://maelfabien.github.io/bigdata/ColabDrive/) : Google Colab offers CPUs, GPUs and TPUs for free. It's a great tool for any project, but you need to have your files uploaded on Google Drive. We'll see how to interact with Google Drive from Colab.
 
+[GCP Certification : Introduction to GCP (Week 1)](https://maelfabien.github.io/bigdata/gcp_01/) : Introduction to Google Cloud Platform and its services.
+
+[GCP Certification : Lab on Compute Engine (Week 1)](https://maelfabien.github.io/bigdata/gcp_02/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/elk_head.jpg)
