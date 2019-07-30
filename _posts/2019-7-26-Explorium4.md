@@ -8,14 +8,14 @@ read_time: true
 categories: [machinelearning]
 excerpt : "Parameters and Model Optimization"
 header :
-overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
-teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
 comments : true
 toc: true
 search: false
 toc_sticky: true
 sidebar:
-nav: sidebar-sample
+    nav: sidebar-sample
 ---
 
 <script type="text/javascript" async
