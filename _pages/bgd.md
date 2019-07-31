@@ -77,7 +77,7 @@ I'll start by introducing really general articles :
 
 [GCP Certification : Introduction to Recommendation Systems (Week 1)](https://maelfabien.github.io/bigdata/gcps_4/) : E-commerce is probably the most common recommendation systems that we encounter. Models learn what we may like based on our preferences.
 
-[GCP Certification : Run Spark jobs on Cloud DataProc (Week 1)](https://maelfabien.github.io/bigdata/gcps_5/) :
+[GCP Certification : Run Spark jobs on Cloud DataProc (Week 1)](https://maelfabien.github.io/bigdata/gcps_5/) : Running a Pi-estimate Spark job using Cloud DataProc.
 
 
 <br>
