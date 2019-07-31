@@ -73,6 +73,10 @@ I'll start by introducing really general articles :
 
 [GCP Certification : Lab on Compute Engine (Week 1)](https://maelfabien.github.io/bigdata/gcp_02/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
 
+[GCP Certification : Lab on BigQuery (Week 1)](https://maelfabien.github.io/bigdata/gcp_02/) : Explore a Public Dataset with BigQuery.
+
+[GCP Certification : Which ML solution should you choose? (Week 1)](https://maelfabien.github.io/bigdata/gcp_02/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/elk_head.jpg)
