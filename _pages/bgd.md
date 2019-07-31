@@ -69,15 +69,15 @@ I'll start by introducing really general articles :
 
 [Using Google Drive to save and load files in Colab](https://maelfabien.github.io/bigdata/ColabDrive/) : Google Colab offers CPUs, GPUs and TPUs for free. It's a great tool for any project, but you need to have your files uploaded on Google Drive. We'll see how to interact with Google Drive from Colab.
 
-[GCP Certification : Introduction to GCP (Week 1)](https://maelfabien.github.io/bigdata/gcps_1/) : Introduction to Google Cloud Platform and its services.
+[Certif. - Introduction to GCP (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_1/) : Introduction to Google Cloud Platform and its services.
 
-[GCP Certification : Lab on Compute Engine (Week 1)](https://maelfabien.github.io/bigdata/gcps_2/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
+[Certif. - Lab on Compute Engine (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_2/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
 
-[GCP Certification : Lab on BigQuery (Week 1)](https://maelfabien.github.io/bigdata/gcps_3/) : Explore a Public Dataset with BigQuery, and import our own data.
+[Certif. - Lab on BigQuery (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_3/) : Explore a Public Dataset with BigQuery, and import our own data.
 
-[GCP Certification : Introduction to Recommendation Systems (Week 1)](https://maelfabien.github.io/bigdata/gcps_4/) : E-commerce is probably the most common recommendation systems that we encounter. Models learn what we may like based on our preferences.
+[Certif. - Introduction to Recommendation Systems (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_4/) : E-commerce is probably the most common recommendation systems that we encounter. Models learn what we may like based on our preferences.
 
-[GCP Certification : Run Spark jobs on Cloud DataProc (Week 1)](https://maelfabien.github.io/bigdata/gcps_5/) : Running a Pi-estimate Spark job using Cloud DataProc.
+[Certif. - Run Spark jobs on Cloud DataProc (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_5/) : Running a Pi-estimate Spark job using Cloud DataProc.
 
 
 <br>
