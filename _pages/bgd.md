@@ -79,7 +79,16 @@ I'll start by introducing really general articles :
 
 [Certif. - Run Spark jobs on Cloud DataProc (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_5/) : Running a Pi-estimate Spark job using Cloud DataProc.
 
+[ Lab - Recommend products using Cloud SQL and SparkML](https://maelfabien.github.io/bigdata/gcps_6/) : Execute SparkML jobs and recommend products using CloudSQL.
 
+[Certif. - Run ML models in SQL with BigQuery ML (Week 1 Module 3)](https://maelfabien.github.io/bigdata/gcps_7/) : BigQuery ML is a cool feature to run linear or logistic regressions in SQL. 
+
+[Certif. - Create Streaming Data Pipelines (Week 2 Module 1)](https://maelfabien.github.io/bigdata/gcps_8/) : Discover Cloud DataFlow, Apache Beam, Cloud Pub/Sub...
+
+
+
+
+ 
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/elk_head.jpg)
