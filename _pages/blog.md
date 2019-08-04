@@ -16,7 +16,7 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
-I have written close to 100 articles so far, so feel free to explore the different topics by clicking on the buttons below.
+I have written more than 100 articles so far, so feel free to explore the different topics by clicking on the buttons below.
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 

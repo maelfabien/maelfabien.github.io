@@ -96,8 +96,11 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
 [Lab - Classify Images with Pre-Built ML models using Cloud Vision and AutoML](https://maelfabien.github.io/bigdata/gcps_10/) : Compare Cloud Vision and AutoML Vision for cloud images classification.
 
 *Course 2: Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform*
+
 *Course 3: Serverless Data Analysis with Google BigQuery and Cloud Dataflow*
+
 *Course 4: Serverless Machine Learning with Tensorflow on Google Cloud Platform*
+
 *Course 5: Building Resilient Streaming Systems on Google Cloud Platform*
  
 <br>
@@ -126,13 +129,13 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
 
 [Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4J/) : Neo4J is a graph oriented database that is widely used for anomaly detection or real time recommendation. We'll cover the basics of Neo4J here.
 
-[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/) : I had the pleasure to attend the Neo4J Graph Tour 2019. 
+[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/) : I had the opportunity to attend the Neo4J Graph Tour 2019. 
 
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/nosql_head.jpg)
 
-[Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/) : How to easily install Zeppelin on your local computer ? 
+[Install Zeppelin Locally](https://maelfabien.github.io/bigdata/zeppelin_local/) : How to easily install Zeppelin on your local machine ? 
 
 [Run a Zeppelin Notebook in AWS EMR](https://maelfabien.github.io/bigdata/zeppelin_emr/) : Running Zeppelin locally is good. But at the time of Big Data analytics, how can you launch Zeppelin on AWS EMR ?
 
