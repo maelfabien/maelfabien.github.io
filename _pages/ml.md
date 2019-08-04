@@ -35,8 +35,13 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Key Concepts in Time Series](https://maelfabien.github.io/statistics/TimeSeries2/) : Stationarity, ergodicity... We'll cover the key concepts of time series.
 
-[Types of Time Series](https://maelfabien.github.io/statistics/TimeSeries3/) : Diving into Moving Average, Auto Regressive Processes, ARMA, ARIMA, SARIMA...
+[Basics of Time Series Forecasting](https://maelfabien.github.io/statistics/TimeSeries3/) : Diving into Moving Average, Auto Regressive Processes, ARMA, ARIMA, SARIMA...
 
+[Basics of Time Series Forecasting](https://maelfabien.github.io/statistics/TimeSeries3/) : How do we make a series stationary ? How do we forecast ?
+
+[Time Series Forecasting with Facebook Prophet](https://maelfabien.github.io/statistics/TimeSeries4/) : Explore time series forecasting using the Prophet open-source package.
+
+[Handdle missing values in time series](https://maelfabien.github.io/statistics/TimeSeries5/) : A quick illustration of backward filling and forward filling.
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/dv_head.jpg)

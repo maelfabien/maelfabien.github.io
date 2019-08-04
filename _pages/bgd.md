@@ -69,25 +69,36 @@ I'll start by introducing really general articles :
 
 [Using Google Drive to save and load files in Colab](https://maelfabien.github.io/bigdata/ColabDrive/) : Google Colab offers CPUs, GPUs and TPUs for free. It's a great tool for any project, but you need to have your files uploaded on Google Drive. We'll see how to interact with Google Drive from Colab.
 
-[Certif. - Introduction to GCP (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_1/) : Introduction to Google Cloud Platform and its services.
+The articles below are part of the **Google Cloud Platform Data Engineering Specialization** on Coursera :
 
-[Certif. - Lab on Compute Engine (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_2/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
+*Course 1:  Google Cloud Platform Big Data and Machine Learning Fundamentals*
 
-[Certif. - Lab on BigQuery (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_3/) : Explore a Public Dataset with BigQuery, and import our own data.
+[Introduction to GCP (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_1/) : Introduction to Google Cloud Platform and its services.
 
-[Certif. - Introduction to Recommendation Systems (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_4/) : E-commerce is probably the most common recommendation systems that we encounter. Models learn what we may like based on our preferences.
+[Lab on Compute Engine (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_2/) : Create a small webapp to display earthquake data publicly using Compute Engine and Storage Buckets.
 
-[Certif. - Run Spark jobs on Cloud DataProc (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_5/) : Running a Pi-estimate Spark job using Cloud DataProc.
+[Lab on BigQuery (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_3/) : Explore a Public Dataset with BigQuery, and import our own data.
 
-[ Lab - Recommend products using Cloud SQL and SparkML](https://maelfabien.github.io/bigdata/gcps_6/) : Execute SparkML jobs and recommend products using CloudSQL.
+[Introduction to Recommendation Systems (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_4/) : E-commerce is probably the most common recommendation systems that we encounter. Models learn what we may like based on our preferences.
 
-[Certif. - Run ML models in SQL with BigQuery ML (Week 1 Module 3)](https://maelfabien.github.io/bigdata/gcps_7/) : BigQuery ML is a cool feature to run linear or logistic regressions in SQL. 
+[Run Spark jobs on Cloud DataProc (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_5/) : Running a Pi-estimate Spark job using Cloud DataProc.
 
-[Certif. - Create Streaming Data Pipelines (Week 2 Module 1)](https://maelfabien.github.io/bigdata/gcps_8/) : Discover Cloud DataFlow, Apache Beam, Cloud Pub/Sub...
+[Lab - Recommend products using Cloud SQL and SparkML](https://maelfabien.github.io/bigdata/gcps_6/) : Execute SparkML jobs and recommend products using CloudSQL.
 
+[Run ML models in SQL with BigQuery ML (Week 1 Module 3)](https://maelfabien.github.io/bigdata/gcps_7/) : BigQuery ML is a cool feature to run linear or logistic regressions in SQL. 
 
+[Create Streaming Data Pipelines (Week 2 Module 1)](https://maelfabien.github.io/bigdata/gcps_8/) : Discover Cloud DataFlow, Apache Beam, Cloud Pub/Sub...
 
+[Lab - Create a streaming data pipeline with Cloud DataFlow](https://maelfabien.github.io/bigdata/gcps_9/) : Ingest real-time data with Cloud Dataflow, analyze it in BigQuery, explore it in DataStudio.
 
+[Classify Images using Vision API and Cloud AutoML (Week 2 Module 2)](https://maelfabien.github.io/bigdata/gcps_10/) : An introduction to ML solutions for unstructured data in GCP.
+
+[Lab - Classify Images with Pre-Built ML models using Cloud Vision and AutoML](https://maelfabien.github.io/bigdata/gcps_10/) : Compare Cloud Vision and AutoML Vision for cloud images classification.
+
+*Course 2: Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform*
+*Course 3: Serverless Data Analysis with Google BigQuery and Cloud Dataflow*
+*Course 4: Serverless Machine Learning with Tensorflow on Google Cloud Platform*
+*Course 5: Building Resilient Streaming Systems on Google Cloud Platform*
  
 <br>
 
