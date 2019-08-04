@@ -70,7 +70,7 @@ The first question you should ask is : Is the series stationary ? There are seve
 
 We can first plot the time series  :
 
-```
+```python
 plt.figure(figsize=(12,8))
 plt.plot(df['value'], label="value")
 plt.title("Monthly anti-diabetic sales index on the Australian market between 1991 and 2008")
@@ -180,11 +180,11 @@ To rebuild the final series, you would need :
 
 Let's define our new series :
 
-```
+```python
 series = np.log(df['value'])-pred_lin
 ```
 
-```
+```python
 plt.figure(figsize=(12,8))
 plt.plot(series)
 plt.show()
@@ -247,7 +247,7 @@ In this article, I won't cover the details and the different models of time seri
 
 We first built the train and test sets :
 
-```
+```python
 # ARIMA
 from statsmodels.tsa.arima_model import ARIMA
 size = int(len(series_stationary.dropna()) * 0.75)
@@ -371,4 +371,4 @@ plt.show()
 
 I hope this quick example convinced you of the impact of making your time series stationary.
 
-> **Conclusion **: I hope you found this article useful. Don't hesitate to drop a comment if you have a question.
+> **Conclusion**: I hope you found this article useful. Don't hesitate to drop a comment if you have a question.
