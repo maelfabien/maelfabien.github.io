@@ -93,9 +93,9 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
 
 [Classify Images using Vision API and Cloud AutoML (Week 2 Module 2)](https://maelfabien.github.io/bigdata/gcps_10/) : An introduction to ML solutions for unstructured data in GCP.
 
-[Lab - Classify Images with Pre-Built ML models using Cloud Vision and AutoML](https://maelfabien.github.io/bigdata/gcps_10/) : Compare Cloud Vision and AutoML Vision for cloud images classification.
-
 *Course 2: Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform*
+
+[Introduction to Cloud Dataproc (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_12/) : Running Hadoop Clusters and submitting jobs has never been easier.
 
 *Course 3: Serverless Data Analysis with Google BigQuery and Cloud Dataflow*
 
