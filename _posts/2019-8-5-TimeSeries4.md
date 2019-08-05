@@ -70,7 +70,7 @@ plt.show()
 
 ![images](https://maelfabien.github.io/assets/images/ts2_9.png)
 
-The forecast dataframe contains all the predictions. 
+The forecast data frame contains all the predictions. 
 
 Prophet even shows the decomposition of the series :
 
@@ -80,4 +80,4 @@ model.plot_components(forecast);
 
 ![images](https://maelfabien.github.io/assets/images/ts2_10.png)
 
-I don't know if I would use such tool in production, but it's definitely something interesting that you should consider in your Time Series analysis !
+I don't know if I would use such a tool in production, but it's definitely something interesting that you should consider in your Time Series analysis!

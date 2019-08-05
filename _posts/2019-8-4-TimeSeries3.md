@@ -55,16 +55,16 @@ The key steps behind time series forecasting are the following :
 
 ![images](https://maelfabien.github.io/assets/images/ts2_2.png)
 
-- Step 1 : Make the Time Series Stationary (we'll cover that in this article)
-- Step 2 : Split the Time Series into a train and a test to fit future models and compare model performance. If we are in prediction, we take the whole data as train and apply no test.
-- Step 3 : Rolling window forecasting. We fit the chosen model on all data available, and forecast the next value.
-- Step 4 : We attach the prediction of the previous step to the observations, and re-fit the model on all available data to make a prediction
-- Step 5 : Once we finished our rolling window and have an array of predictions, we just need to apply the inverse transformation that we applied for the stationarity transformations.
-- Step 6 : We can assess the performance of a model by applying simple metrics such as MSE.
+- Step 1: Make the Time Series Stationary (we'll cover that in this article)
+- Step 2: Split the Time Series into a train and a test to fit future models and compare model performance. If we are in prediction, we take the whole data as train and apply no test.
+- Step 3: Rolling window forecasting. We fit the chosen model on all data available and forecast the next value.
+- Step 4: We attach the prediction of the previous step to the observations, and re-fit the model on all available data to make a prediction
+- Step 5: Once we finished our rolling window and have an array of predictions, we just need to apply the inverse transformation that we applied for the stationarity transformations.
+- Step 6: We can assess the performance of a model by applying simple metrics such as MSE.
 
-# II. Is the series stationary ?
+# II. Is the series stationary?
 
-The first question you should ask is : Is the series stationary ? There are several ways to check this :
+The first question you should ask is: Is the series stationary? There are several ways to check this :
 - by looking at the plots
 - by running an ADFuller test
 
@@ -80,7 +80,7 @@ plt.show()
 
 ![images](https://maelfabien.github.io/assets/images/ts2_0.png)
 
-As we mentioned in the article "Key Concepts in Time Series", it is really important that your series is stationary before applying any model on it. The time series does not look stationary at that point. But is it really the case ? We can run an ADFuller test to confirm this statement. 
+As we mentioned in the article "Key Concepts in Time Series", it is really important that your series is stationary before applying any model on it. The time series does not look stationary at that point. But is it really the case? We can run an ADFuller test to confirm this statement. 
 
 ```python
 from statsmodels.tsa.stattools import adfuller
@@ -114,7 +114,7 @@ Let's start our journey towards a stationary time series :)
 
 # III.  Remove Heteroskedasticity
 
-The first thing you'll notice when looking at the time series above it the fact that the series has an increasing variance. It might be a real issue, since time series are not good at predicting increasing variance over time.
+The first thing you'll notice when looking at the time series above it the fact that the series has an increasing variance. It might be a real issue since time series are not good at predicting increasing variance over time.
 
 To make the time series stationary, we need to apply transformations to it. Usual transformations to remove heteroskedasticity (or increasing variance over time) include :
 - log
@@ -131,15 +131,15 @@ plt.show()
 
 ![images](https://maelfabien.github.io/assets/images/ts2_1.png)
 
-Applying a log transform is definitly a good idea here (but it's by far not always the case). Moreover, the log transform comes along with some advantages in terms of interpretation :
+Applying a log transform is definitely a good idea here (but it's by far not always the case). Moreover, the log transform comes along with some advantages in terms of interpretation :
 - Trend measured in natural-log units ≈ percentage growth
 - Errors measured in natural-log units ≈ percentage errors
 
 # IV.  Remove the trend 
 
-The next step is to remove the trend from the series. Do you see any kind of trend that could fit ? 
+The next step is to remove the trend from the series. Do you see any kind of trend that could fit? 
 
-Well, linear trend is pretty much what we're looking for ! Other popular trends including exponential or logarithmic trends for example.
+Well, the linear trend is pretty much what we're looking for! Other popular trends including exponential or logarithmic trends for example.
 
 ```python
 from sklearn.linear_model import LinearRegression
@@ -194,7 +194,7 @@ plt.show()
 
 # V.  Remove Seasonality 
 
-Seasonality in time series denotes a recurrent pattern over time. When a series is seasonal, it means that a value at a given point in the past is really close to the value we observe today. 
+Seasonality in time series denotes a recurrent pattern over time. When a series is seasonal, it means that value at a given point in the past is really close to the value we observe today. 
 
 In the graph above, it seems to be the case. There seems to be a yearly pattern in the way this time series evolves.
 
@@ -204,7 +204,7 @@ There are mainly two ways to model seasonality in time series :
 - identify patterns that look sinusoidal for example, and fit the right parameters
 - the easiest option to remove the trend is to compute the first difference. For example, if there is a yearly seasonality, we can take $ y_t $ - $ y_{t-12} $ (since the measures are made monthly)
 
-The most common way is the difference transformation. We substract the value 12 months ago to the value of today.
+The most common way is the difference transformation. We subtract the value 12 months ago to the value of today.
 
 ```python
 plt.figure(figsize=(12,8))
@@ -216,7 +216,7 @@ This way, all we have left to forecast is how different we will be from the same
 
 ![images](https://maelfabien.github.io/assets/images/ts2_5.png)
 
-We have removed most of the trend here, and remain with a stationary series. To make sure that our series is stationary, we can look at the plot : There seems to be no recurrent pattern in the data, a constant variance and mean, no trend... And we can compute the ADFuller test again !
+We have removed most of the trend here, and remain with a stationary series. To make sure that our series is stationary, we can look at the plot: There seems to be no recurrent pattern in the data, constant variance and mean, no trend... And we can compute the ADFuller test again!
 
 ```python
 series_stationary = series - series.shift(12)
@@ -239,7 +239,7 @@ Critical Values:
     10%: -2.575
 ```
 
-The p-value is close to 0, and the ADF Statistic is below the 1% critical value. We reject the null hypothesis that the series has a unit root and is not stationary. The series is therefore stationary !
+The p-value is close to 0, and the ADF Statistic is below the 1% critical value. We reject the null hypothesis that the series has a unit root and is not stationary. The series is therefore stationary!
 
 # VI.  Model the time series
 
@@ -337,7 +337,7 @@ plt.show()
 
 ![images](https://maelfabien.github.io/assets/images/ts2_7.png)
 
-You might now wonder what would have happened if we applied the model on non-stationary data. Well, let's try it out !
+You might now wonder what would have happened if we applied the model on non-stationary data. Well, let's try it out!
 
 ```python
 # SARIMA example

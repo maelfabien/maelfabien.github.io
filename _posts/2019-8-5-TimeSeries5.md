@@ -20,14 +20,14 @@ sidebar:
 In this quick article, we will review the two basic techniques to handle missing values in Time Series. 
 
 The two techniques are the following :
-- take the last know value and make a "forward fill", i.e to fill the values with the last known value until a new value is met
+- take the last known value and make a "forward fill", i.e to fill the values with the last known value until a new value is met
 - take the first known value after the missing values, and full the values backward
 
 Both techniques can be illustrated this way :
 
 ![images](https://maelfabien.github.io/assets/images/ts2_11.png)
 
-To perform a forward fill, run the following command on your dataframe :
+To perform a forward fill, run the following command on your data frame :
 
 ```python
 df.ffill(axis = 0)
@@ -38,7 +38,7 @@ df.ffill(axis = 0)
 | 1991-08-01 | 3.180891 |
 | 1991-09-01 | 3.252221 |
 
-To perform a backward fill, run the following command on your dataframe :
+To perform a backward fill, run the following command on your data frame :
 
 ```python
 df.bfill(axis = 0)
