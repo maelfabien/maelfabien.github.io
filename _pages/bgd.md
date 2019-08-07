@@ -97,6 +97,10 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
 
 [Introduction to Cloud Dataproc (Week 1 Module 1)](https://maelfabien.github.io/bigdata/gcps_12/) : Running Hadoop Clusters and submitting jobs has never been easier.
 
+[Lab - Create a Cloud DataProc Cluster](https://maelfabien.github.io/bigdata/gcps_13/) : A full guide to creating a cluster on Cloud Dataproc.
+
+[Run jobs on Dataproc (Week 1 Module 2)](https://maelfabien.github.io/bigdata/gcps_14/) : How to run jobs on Dataproc using Pig, Hive or Spark?
+
 *Course 3: Serverless Data Analysis with Google BigQuery and Cloud Dataflow*
 
 *Course 4: Serverless Machine Learning with Tensorflow on Google Cloud Platform*
