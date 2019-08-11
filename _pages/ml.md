@@ -82,6 +82,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Unsupervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/unsupervised/) : A cheat sheet that recaps the main unsupervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
+[Anomaly Detection](https://maelfabien.github.io/machinelearning/anomaly/) : An overview of both supervised and unsupervised anomaly detection algorithms such as Isolation Forest.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/mc_head.jpg)

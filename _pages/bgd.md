@@ -20,6 +20,8 @@ I'll start by introducing really general articles :
 
 [Useful Bash commands](https://maelfabien.github.io/bigdata/Terminal) : A quick recap of useful Bash commands to interact with your Terminal.
 
+[Making your code production-ready](https://maelfabien.github.io/bigdata/code) : A quick overview of nice tools to improve the quality of your code before production !
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/hadoop_head.jpg)
