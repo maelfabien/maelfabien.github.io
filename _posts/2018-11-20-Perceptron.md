@@ -165,6 +165,33 @@ We will further detail the concepts of stochastic gradient descent and backpropa
 
 Even the Minsky and Papert perceptron has a major drawback. If the categories are linearly separable for example, it identifies a single separating hyper-plane without taking into account the notion of margin we would like to maximize. This problem is solved by the Support Vector Machine (SVM) algorithm.
 
+## Logical operators
+
+Perceptron can be used to represent logical operators. For example, one can represent the perceptron as an "AND" operator.
+
+![image](https://maelfabien.github.io/assets/images/nn_1.png)
+
+A simple "AND" perceptron can be built in the following way :
+
+```
+weight1 = 1.0
+weight2 = 1
+bias = -1.2
+
+linear_combination = weight1 * input_0 + weight2 * input_1 + bias
+output = int(linear_combination >= 0)
+```
+
+Where `input_0` and `input_1` represent the two feature inputs. We are shifting the bias by 1.2 to isolate the positive case where both inputs are 1.
+
+![image](https://maelfabien.github.io/assets/images/nn_2.png)
+
+However, solving the XOR problem is impossible :
+
+![image](https://maelfabien.github.io/assets/images/nn_3.png)
+
+This is why Multi-layer perceptrons were introduced.
+
 # Implementation in Keras
 
 In Keras, it is extremely easy to build a Perceptron :
