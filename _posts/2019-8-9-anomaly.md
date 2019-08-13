@@ -53,11 +53,11 @@ We usually estimate the region where the data is the most concentrated as the mi
 
 We can define the MV Set as :
 
-$$ Q(\alpha) = \argmin_{C \in \C} \{ \lamba(C), P(X \in C) ≥ \alpha} $$
+$$ Q( \alpha ) = argmin_{c \in C} \{ \lambda(C), P(X \in C) ≥ \alpha} $$
 
 Where :
 - $$ \alpha $$ is a factor close to 1 that reflects the percentage of values in the MV Set.
-- $$ \C $$ classes of measurable sets
+- $$ C $$ classes of measurable sets
 - $$ \lambda $$ a Lebesgue measure
 - $$ \mu(dx) $$ the unknown probability measure of the observations
 
@@ -77,21 +77,21 @@ Let's now make the assumption that $$ \mu $$ has a density $$ h(X) $$ that :
 
 This technique consists in seeing MV sets as density level sets :
 
-$$ G_{\alpha}^* = \{x \in R^d : h(x) ≥ t_{\alpha}/} $$
+$$ G_{\alpha}* = \{ x \in R^d : h(x) ≥ t_{\alpha} \} $$
 
 Using a naive approach (the 2-split trick), we can :
 - compute a density estimator using parametric models or local averaging $$ \hat{h}(x) $$ based on $$ X_1, \cdots, X_n $$
-- based on a second sample $$ X_1^', \cdots, X_n^' $$, compute the empirical quantile corresponding to the $$ \alpha $$ percentile
+- based on a second sample $$ X_1*, \cdots, X_n* $$, compute the empirical quantile corresponding to the $$ \alpha $$ percentile
 
 The output is : 
 
-$$ \hat{G_{\alpha}^*} = \{ x: \hat{h_n(x)} ≥ \hat{h_n}(X_{n \alpha}^')} $$
+$$ \hat{G_{\alpha}*} = \{ x: \hat{h_n(x)} ≥ \hat{h_n}(X_{n \alpha}^') \} $$
 
 ### Unsupervised as binary classification
 
 We can turn the unsupervised anomaly detection problem as a binary classification. 
-- Suppose that our data lie into $$ \[0,1\]^d $$, or that we scaled the data before. We have $$ n $$ points.
-- We then generate a new sample from the uniform distribution $$ U(\[0,1\]^d) $$. We generate $$ m $$ points.
+- Suppose that our data lie into $$ [0,1]^d $$, or that we scaled the data before. We have $$ n $$ points.
+- We then generate a new sample from the uniform distribution $$ U([0,1]^d) $$. We generate $$ m $$ points.
 - We assign a negative label to the generated sample.
 - We assign a positive label to the true sample.
 
@@ -101,7 +101,7 @@ $$ \frac{n}{n+m} = p $$ approximately.
 
 ![image](https://maelfabien.github.io/assets/images/anomaly_2.png)
 
-The solution of this binary classification mimics the Bayes Classifier where we predict $$ 1 $$ on the set $$ \{ x \in \[0,1\]^d : h(x) ≥ \frac{1-p}{p} \} $$, and $$ -1 $$ otherwise.
+The solution of this binary classification mimics the Bayes Classifier where we predict $$ 1 $$ on the set $$ \{ x \in [0,1]^d : h(x) ≥ \frac{1-p}{p} \} $$, and $$ -1 $$ otherwise.
 
 This solution provides a MV set at level $$ \alpha = P(h(X) ≥ \frac{1}{p-1}) $$. We select $$ \alpha $$ manually, and we tune $$ p $$ using a grid search.
 
@@ -118,8 +118,8 @@ $$ \min_{G \in P : \hat{\mu_n}(G) ≥ \alpha - \phi} \lambda(G) $$
 There is a simple and fast procedure to do this :
 - For each class $$ k = 1 \cdots K $$, we compute $$ \hat{\mu_n}(C_k) $$, i.e the proportion of data in each class 
 - Sort the cells by decresing order of $$ \hat{\mu_n}(C_k) $$
-- Find the minimal value of k such that : $$ \hat{k} = \argmin \{ k : \sum_i \hat{\mu_n}(C_i) ≥ \alpha - \phi } $$. In other words, we exclude $$ \alpha $$ percent of the values based on this histogram.
-- The output is $$ \hat{G_{\alpha}^* = U_i^{\hat{k}} C_{(i)} $$
+- Find the minimal value of k such that : $$ \hat{k} = \argmin \{ k : \sum_i \hat{\mu_n}(C_i) ≥ \alpha - \phi \} $$. In other words, we exclude $$ \alpha $$ percent of the values based on this histogram.
+- The output is $$ \hat{G_{\alpha}* = U_i^{\hat{k}} C_{(i)} $$
 
 Where $$ \phi $$ is a tolerance level. However, such technique is usually not flexible enough.
 
@@ -164,7 +164,7 @@ $$ U(s) = P \{ (s(X) -s(X'))(Y-Y')>0\} $$
 
 is the U-Statistic :
 
-$$ Û_n(s) = \frac{2}{n(n-1)} \sum_{1≤i<j≤n}1\{(s(X_i) - s(X_j))(Y_i - Y_j) > 0} $$
+$$ \hat{U}_n(s) = \frac{2}{n(n-1)} \sum_{1≤i<j≤n}1\{(s(X_i) - s(X_j))(Y_i - Y_j) > 0} $$
 
 This measure is also called the **rate of concording pairs**, or **Kendall's association coefficient**. One of the issues is that the computation of the gradients typically require to average over $$ O(n^2) $$ pairs. 
 
