@@ -85,7 +85,7 @@ Using a naive approach (the 2-split trick), we can :
 
 The output is : 
 
-$$ \hat{G_{\alpha}*} = \{ x: \hat{h_n(x)} ≥ \hat{h_n}(X_{n \alpha}^') \} $$
+$$ \hat{G_{\alpha}} * = \{ x: \hat{h_n(x)} ≥ \hat{h_n} ( X_{n \alpha}' ) \} $$
 
 ### Unsupervised as binary classification
 
@@ -118,8 +118,8 @@ $$ \min_{G \in P : \hat{\mu_n}(G) ≥ \alpha - \phi} \lambda(G) $$
 There is a simple and fast procedure to do this :
 - For each class $$ k = 1 \cdots K $$, we compute $$ \hat{\mu_n}(C_k) $$, i.e the proportion of data in each class 
 - Sort the cells by decresing order of $$ \hat{\mu_n}(C_k) $$
-- Find the minimal value of k such that : $$ \hat{k} = \argmin \{ k : \sum_i \hat{\mu_n}(C_i) ≥ \alpha - \phi \} $$. In other words, we exclude $$ \alpha $$ percent of the values based on this histogram.
-- The output is $$ \hat{G_{\alpha}* = U_i^{\hat{k}} C_{(i)} $$
+- Find the minimal value of k such that : $$ \hat{k} = argmin \{ k : \sum_i \hat{\mu_n}(C_i) ≥ \alpha - \phi \} $$. In other words, we exclude $$ \alpha $$ percent of the values based on this histogram.
+- The output is $$ \hat{G_{\alpha}}* = U_i^{\hat{k}} C_{(i)} $$
 
 Where $$ \phi $$ is a tolerance level. However, such technique is usually not flexible enough.
 
