@@ -265,4 +265,4 @@ history = xception.fit(X_train, y_train, epochs=150, batch_size=64, validation_d
 
 The Github repository of this article can be found [here](https://github.com/maelfabien/Machine_Learning_Tutorials).
 
-> **Conclusion **: Xception models remain expensive to train, but are pretty good improvements compared to Inception. Transfer learning brings part of the solution when it comes to adapting such algorithms to your specific task. 
+> **Conclusion** : Xception models remain expensive to train, but are pretty good improvements compared to Inception. Transfer learning brings part of the solution when it comes to adapting such algorithms to your specific task. 
