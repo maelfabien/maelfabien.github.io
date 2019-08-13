@@ -53,7 +53,7 @@ We usually estimate the region where the data is the most concentrated as the mi
 
 We can define the MV Set as :
 
-$$ Q( \alpha ) = argmin_{c \in C} \{ \lambda(C), P(X \in C) ≥ \alpha} $$
+$$ Q( \alpha ) = argmin_{c \in C} \{ \lambda(C), P(X \in C) ≥ \alpha \} $$
 
 Where :
 - $$ \alpha $$ is a factor close to 1 that reflects the percentage of values in the MV Set.
@@ -164,7 +164,7 @@ $$ U(s) = P \{ (s(X) -s(X'))(Y-Y')>0\} $$
 
 is the U-Statistic :
 
-$$ \hat{U}_n(s) = \frac{2}{n(n-1)} \sum_{1≤i<j≤n}1\{(s(X_i) - s(X_j))(Y_i - Y_j) > 0} $$
+$$ \hat{U}_n(s) = \frac{2}{n(n-1)} \sum_{1≤i<j≤n}1 \{ (s(X_i) - s(X_j))(Y_i - Y_j) > 0 \} $$
 
 This measure is also called the **rate of concording pairs**, or **Kendall's association coefficient**. One of the issues is that the computation of the gradients typically require to average over $$ O(n^2) $$ pairs. 
 
