@@ -24,7 +24,7 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 [How do Neural Networks learn?](https://maelfabien.github.io/deeplearning/feed/) : Dive into feedforward process and back-propagation.
 
-[Activations functions in DL](https://maelfabien.github.io/deeplearning/act/) : An overview of the different activation functions in Deep Learning, how to implement them in Python, their advantages and disadvantages.
+[Activation functions in DL](https://maelfabien.github.io/deeplearning/act/) : An overview of the different activation functions in Deep Learning, how to implement them in Python, their advantages and disadvantages.
 
 [Prevent Overfitting of Neural Netorks](https://maelfabien.github.io/deeplearning/regu/) : Your  model overfits ? One of these techniques should help ! We'll cover class imbalance, data augmentation, regularization, early stopping, reducing learning rate...
 
