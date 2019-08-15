@@ -63,7 +63,7 @@ Where :
 
 The goal is to learn a minimum volume set $$ Q(\alpha) $$ for $$ X_1, \cdots, X_n $$
 
-![image](https://maelfabien.github.io/assets/images/anomaly_1.png)
+![image](https://maelfabien.github.io/assets/images/anomaly_1.jpg)
 
 There are theoretical guarantees that there exists a unique MV set at level $$ \alpha $$.
 
@@ -99,7 +99,7 @@ We have :
 
 $$ \frac{n}{n+m} = p $$ approximately.
 
-![image](https://maelfabien.github.io/assets/images/anomaly_2.png)
+![image](https://maelfabien.github.io/assets/images/anomaly_2.jpg)
 
 The solution of this binary classification mimics the Bayes Classifier where we predict $$ 1 $$ on the set $$ \{ x \in [0,1]^d : h(x) ≥ \frac{1-p}{p} \} $$, and $$ -1 $$ otherwise.
 
@@ -127,7 +127,7 @@ Where $$ \phi $$ is a tolerance level. However, such technique is usually not fl
 
 The partition should be determined based on the **data**. We adopt a top-down strategy, and start from the root node $$ C_{0,0} $$. The volume of any cell $$ C_{j,k} $$ can be computed in a recursive manner.
 
-![image](https://maelfabien.github.io/assets/images/anomaly_3.png)
+![image](https://maelfabien.github.io/assets/images/anomaly_3.jpg)
 
 Hyperrectangless with the label 1 are subsets of the MV set estimate. At each node $$ C_{j,k} $$, the split leading to siblings $$ C_{j+1,2k} $$ and $$ C_{j+1,2k+1} $$ minimizes recursively the volume of the current ddecision set G under the following constraint :
 
@@ -146,7 +146,7 @@ The main idea behind an **isolation tree** is to recursively (top-down) build a 
 
 This process stops when a depth limit is reached usually :
 
-![image](https://maelfabien.github.io/assets/images/anomaly_4.png)
+![image](https://maelfabien.github.io/assets/images/anomaly_4.jpg)
 
 # Supervised Anomaly Detection
 

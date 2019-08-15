@@ -47,7 +47,7 @@ The output of a good visual recommendation system should be to suggest a subset 
 
 The overall pipeline looks like this :
 
-![image](https://maelfabien.github.io/assets/images/pip_viz.png)
+![image](https://maelfabien.github.io/assets/images/pip_viz.jpg)
 
 # How does VizML work?
 
@@ -55,7 +55,7 @@ The overall pipeline looks like this :
 
 The data was collected using the Community Feed of Plotly. The data come as JSON files. `data` contains the source data, `specification` contains the traces, and` layout` defines display configuration.
 
-![image](https://maelfabien.github.io/assets/images/source_viz.png)
+![image](https://maelfabien.github.io/assets/images/source_viz.jpg)
 
 The training data is roughly made of 2 million unique visualizations. 95% of the datasets are made of less than 25 columns. 
 
@@ -85,7 +85,7 @@ The last data pre-processing step is to extract the design type from the JSON fi
 
 Some additional cleaning is then done to remove duplicates of datasets and identify a final corpus of 199'000 datasets and 287'000 columns.
 
-![image](https://maelfabien.github.io/assets/images/pip_viz_2.png)
+![image](https://maelfabien.github.io/assets/images/pip_viz_2.jpg)
 
 ## Prediction tasks
 
@@ -97,7 +97,7 @@ The accuracy was the chosen metric. The neural network almost systematically out
 
 To interpret the model and justify the feature extraction, we can compute the feature importances :
 
-![image](https://maelfabien.github.io/assets/images/feat_viz.png)
+![image](https://maelfabien.github.io/assets/images/feat_viz.jpg)
 
 Key messages :
 - Dimensionality (grey): the length of a column is the second most important feature for predicting whether that column is visualized in a line or a bar trace.
@@ -110,6 +110,6 @@ Key messages :
 
 To measure the performance of the model, participants were recruited through Amazon Mechanical Turk. The outcomes are encouraging since VizML performs as well as Plotly's users on the chosen metric.
 
-![image](https://maelfabien.github.io/assets/images/res_viz.png)
+![image](https://maelfabien.github.io/assets/images/res_viz.jpg)
 
 > *Conclusion *: This recent paper offers great perspectives in the field of Visual Recommendation. In the original paper, the authors also suggest a series of future research directions.

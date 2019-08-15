@@ -240,7 +240,7 @@ We can decompose a prediction with the following equation:
 
 The SHAP Value can be represented visually as follows :
 
-![image](https://maelfabien.github.io/assets/images/shap.png)
+![image](https://maelfabien.github.io/assets/images/shap.jpg)
 
 The output value is 0.70. This is the prediction for the selected team. The base value is 0.4979. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from Goal Scored being 2. Though the ball possession value has a meaningful effect decreasing the prediction.
 
@@ -271,7 +271,7 @@ shap.initjs()
 shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction)
 ```
 
-![image](https://maelfabien.github.io/assets/images/shap_2.png)
+![image](https://maelfabien.github.io/assets/images/shap_2.jpg)
 
 The output prediction is 0.7, which means that the team is 70% likely to have a player win the award.
 
@@ -282,7 +282,7 @@ If we take many explanations such as the one shown above, rotate them 90 degrees
 shap.force_plot(explainer.expected_value, shap_values, X)
 ```
 
-![image](https://maelfabien.github.io/assets/images/shap_7.png)
+![image](https://maelfabien.github.io/assets/images/shap_7.jpg)
 
 So far, we have used `shap.TreeExplainer(my_model)`. The package has other explainers for every type of model :
 - `shap.DeepExplainer` works with Deep Learning models.
@@ -298,7 +298,7 @@ Permutation importance creates simple numeric measures to see which features mat
 
 SHAP summary plots give us a birds-eye view of feature importance and what is driving it. 
 
-![image](https://maelfabien.github.io/assets/images/shap_3.png)
+![image](https://maelfabien.github.io/assets/images/shap_3.jpg)
 
 Each dot has 3 characteristics :
 - Vertical location shows what feature it is depicting
@@ -326,17 +326,17 @@ Computing SHAP values can be slow on large datasets.
 
 Partial Dependence Plots to show how a single feature impacts predictions. But they don't show the distribution of the effects for example. 
 
-![image](https://maelfabien.github.io/assets/images/shap_4.png)
+![image](https://maelfabien.github.io/assets/images/shap_4.jpg)
 
 Each dot represents a row of data. The horizontal location is the actual value from the dataset, and the vertical location shows what having that value did to the prediction. The fact this slopes upward says that the more you possess the ball, the higher the model's prediction is for winning the Man of the Match award.
 
 The spread suggests that other features must interact with Ball Possession %. For the same ball possession, we encounter SHAP values that range from -0.05 to 0.07.
 
-![image](https://maelfabien.github.io/assets/images/shap_5.png)
+![image](https://maelfabien.github.io/assets/images/shap_5.jpg)
 
 We can also notice outliers that stand out spatially as being far away from the upward trend.
 
-![image](https://maelfabien.github.io/assets/images/shap_6.png)
+![image](https://maelfabien.github.io/assets/images/shap_6.jpg)
 
 We can find an interpretation for this: In general, having the ball increases a team's chance of having their player win the award. But if they only score one goal, that trend reverses and the award judges may penalize them for having the ball so much if they score that little.
 
@@ -362,7 +362,7 @@ We can also just take the mean absolute value of the SHAP values for each featur
 shap.summary_plot(shap_values, X, plot_type="bar")
 ```
 
-![image](https://maelfabien.github.io/assets/images/shap_8.png)
+![image](https://maelfabien.github.io/assets/images/shap_8.jpg)
 
 ### Interaction plots
 
@@ -376,6 +376,6 @@ display_features=X_display.iloc[:2000,:]
 )
 ```
 
-![image](https://maelfabien.github.io/assets/images/shap_9.png)
+![image](https://maelfabien.github.io/assets/images/shap_9.jpg)
 
 > **Conclusion **: That's it for this introduction to Machine Learning Explainability! Don't hesitate to drop a comment if you have any question.

@@ -69,7 +69,7 @@ df['diagnosis'] = df['diagnosis'].apply(lambda x : to_category(x))
 df.head()
 ```
 
-![image](https://maelfabien.github.io/assets/images/df_head.png)
+![image](https://maelfabien.github.io/assets/images/df_head.jpg)
 
 ```python
 X = df.drop(['diagnosis'], axis=1)
@@ -107,7 +107,7 @@ model = sm.OLS(y_train, X_train).fit()
 model.summary()
 ```
 
-![image](https://maelfabien.github.io/assets/images/stats.png)
+![image](https://maelfabien.github.io/assets/images/stats.jpg)
 
 The `statsmodel` summary gives direct access to the coefficients, the standard errors, the t-statistics and the p-values for each feature.
 
@@ -154,7 +154,7 @@ plt.title("Coefficient and Standard error")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/coef_lin.png)
+![image](https://maelfabien.github.io/assets/images/coef_lin.jpg)
 
 This graph displays for each feature, the coefficient value as well as the standard error around this coefficient. The `smoothness_se` seems to be one of the most important feature in this linear regression framework.
 
@@ -163,7 +163,7 @@ This graph displays for each feature, the coefficient value as well as the stand
 - Linear regression is a basic model. It is rare to observe linear relationships in the data, and the linear regression is rarely performing well.
 - Moreover, when it comes to classification tasks, the linear regression is risky to apply, since a line or an hyperplane cannot constraint the output between 0 and 1. We prefer to apply the Logistic Regression in such case.
 
-![image](https://maelfabien.github.io/assets/images/log_1.png)
+![image](https://maelfabien.github.io/assets/images/log_1.jpg)
 
 We can also illustrate the second limitation by plotting the predictions sorted by value :
 
@@ -175,7 +175,7 @@ plt.title("Predictions")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred.png)
+![image](https://maelfabien.github.io/assets/images/pred.jpg)
 
 the output is not mapped between 0 and 1 systematically. Setting the threshold to 0.5 seems indeed to be an arbitrary choice.
 
@@ -199,7 +199,7 @@ plt.title("Acccuracy depending on threshold")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_2.png)
+![image](https://maelfabien.github.io/assets/images/pred_2.jpg)
 
 The maximum accuracy is reached for a threshold of 40.4% : 
 
@@ -215,7 +215,7 @@ $$ Sig(z) = \frac {1} {1 + e^{-z}} $$
 
 In this plot, we represent both a sigmoid function and the inputs we feed it :
 
-![image](https://maelfabien.github.io/assets/images//log_2.png)
+![image](https://maelfabien.github.io/assets/images//log_2.jpg)
 
 In the logistic regression model, instead of a linear relation between the input and the output, the relation is the following :
 
@@ -258,7 +258,7 @@ plt.title("Coefficient values")
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_3.png)
+![image](https://maelfabien.github.io/assets/images/pred_3.jpg)
 
 An increase in the `concavity_worst` is more likely to lead to a malignant tumor, whereas an increase in te `radius_mean` is more likely to lead to a benign tumor. It is a model meant for binary classification, so the prediction probabilities are sent between 0 and 1.
 
@@ -269,7 +269,7 @@ plt.axhline(0.5, c='r')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_4.png)
+![image](https://maelfabien.github.io/assets/images/pred_4.jpg)
 
 ### Limitations of Logistic Regression
 
@@ -311,7 +311,7 @@ dot_graph = f.read()
 graphviz.Source(dot_graph)
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_5.png)
+![image](https://maelfabien.github.io/assets/images/pred_5.jpg)
 
 ### Limitations of CART algorithm
 

@@ -53,7 +53,7 @@ df.head()
 
 The key steps behind time series forecasting are the following :
 
-![images](https://maelfabien.github.io/assets/images/ts2_2.png)
+![images](https://maelfabien.github.io/assets/images/ts2_2.jpg)
 
 - Step 1: Make the Time Series Stationary (we'll cover that in this article)
 - Step 2: Split the Time Series into a train and a test to fit future models and compare model performance. If we are in prediction, we take the whole data as train and apply no test.
@@ -78,7 +78,7 @@ plt.legend()
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_0.png)
+![images](https://maelfabien.github.io/assets/images/ts2_0.jpg)
 
 As we mentioned in the article "Key Concepts in Time Series", it is really important that your series is stationary before applying any model on it. The time series does not look stationary at that point. But is it really the case? We can run an ADFuller test to confirm this statement. 
 
@@ -129,7 +129,7 @@ plt.plot(np.log(df['value']))
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_1.png)
+![images](https://maelfabien.github.io/assets/images/ts2_1.jpg)
 
 Applying a log transform is definitely a good idea here (but it's by far not always the case). Moreover, the log transform comes along with some advantages in terms of interpretation :
 - Trend measured in natural-log units ≈ percentage growth
@@ -168,7 +168,7 @@ plt.legend()
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_3.png)
+![images](https://maelfabien.github.io/assets/images/ts2_3.jpg)
 
 The linear trend is the best fit in this case. Our new series now becomes :
 
@@ -190,7 +190,7 @@ plt.plot(series)
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_4.png)
+![images](https://maelfabien.github.io/assets/images/ts2_4.jpg)
 
 # V.  Remove Seasonality 
 
@@ -214,7 +214,7 @@ plt.show()
 
 This way, all we have left to forecast is how different we will be from the same point in time 12 months ago. It makes our whole computations easier.
 
-![images](https://maelfabien.github.io/assets/images/ts2_5.png)
+![images](https://maelfabien.github.io/assets/images/ts2_5.jpg)
 
 We have removed most of the trend here, and remain with a stationary series. To make sure that our series is stationary, we can look at the plot: There seems to be no recurrent pattern in the data, constant variance and mean, no trend... And we can compute the ADFuller test again!
 
@@ -281,7 +281,7 @@ plt.legend()
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_6.png)
+![images](https://maelfabien.github.io/assets/images/ts2_6.jpg)
 
 To assess the performance of the model, simply use :
 
@@ -335,7 +335,7 @@ plt.legend()
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_7.png)
+![images](https://maelfabien.github.io/assets/images/ts2_7.jpg)
 
 You might now wonder what would have happened if we applied the model on non-stationary data. Well, let's try it out!
 
@@ -367,7 +367,7 @@ plt.legend()
 plt.show()
 ```
 
-![images](https://maelfabien.github.io/assets/images/ts2_8.png)
+![images](https://maelfabien.github.io/assets/images/ts2_8.jpg)
 
 I hope this quick example convinced you of the impact of making your time series stationary.
 

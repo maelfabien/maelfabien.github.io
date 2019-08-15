@@ -51,7 +51,7 @@ Let's illustrate a simple HPO over a simple decision tree. What are the hyperpar
 
 How many models should we fit to test all possible combinations of hyperparameters? Well, we can represent the problem graphically :
 
-![image](https://maelfabien.github.io/assets/images/expl4_0.png)
+![image](https://maelfabien.github.io/assets/images/expl4_0.jpg)
 
 Say that for every hyperparameter $$ i $$, we have $$ V_i $$ possible values to test. In that case, over 3 hyperparameters, we face $$ V_1 \times V_2 \times V_3 $$ combinations to test. Over a set of $$ P $$ hyperparameters, we should test $$ \prod_{i=1}^{p} V_i = V_1 \times V_2 \times ... \times V_p $$ models.
 
@@ -109,11 +109,11 @@ In grid search, we try every combination of the set of hyperparameters that the 
 
 We can visually represent the grid search on 2 features as a sequential way to test, in order, all the combinations:
 
-![image](https://maelfabien.github.io/assets/images/expl4_1.png)
+![image](https://maelfabien.github.io/assets/images/expl4_1.jpg)
 
 In this simple example, the space explored can be represented as such:
 
-![image](https://maelfabien.github.io/assets/images/expl4_2.png)
+![image](https://maelfabien.github.io/assets/images/expl4_2.jpg)
 
 The limitations of grid search are pretty straightforward:
 - Grid search does not scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
@@ -123,7 +123,7 @@ The user needs a good understanding of the underlying problem to select the righ
 
 > Start with a first large-scale Grid Search, identify a region of interest in which the models perform well, and start a second Grid Search in this specific region.
 
-![image](https://maelfabien.github.io/assets/images/expl4_3.png)
+![image](https://maelfabien.github.io/assets/images/expl4_3.jpg)
 
 This approach can, however, be long to run and should be used if the model you are tuning does not have too many parameters, or if you don't have too much training data.
 
@@ -172,13 +172,13 @@ We achieve an average F1-Score of approximately `0.837` in 4 minutes and 17 seco
 
 The randomized search follows the same goal. However, we won't test sequentially all the combinations. Instead, we try **random combinations** among the range of values specified for the hyper-parameters. We initially specify the number of random configurations we want to test in the parameter space.
 
-![image](https://maelfabien.github.io/assets/images/expl4_4.png)
+![image](https://maelfabien.github.io/assets/images/expl4_4.jpg)
 
 The main advantage is that we can try a broader range of values or hyperparameters within the same computation time as grid search, or test the same ones in much less time. We are however not guaranteed to identify the best combination since not all combinations will be tested. 
 
 To get back to our previous example in which we used 2 successive hyperparameter techniques in a row, randomized Search can also be used as the first layer, to either speed up the process on the same set of hyperparameters, or explore a broader range of feature values.
 
-![image](https://maelfabien.github.io/assets/images/expl4_5.png)
+![image](https://maelfabien.github.io/assets/images/expl4_5.jpg)
 
 Mathematically, for a given number of iterations (function evaluations), say $$ N $$ in total, on a set of $$ V $$ hyperparameters :
 - A grid search will explore $$ N^{\frac{1}{V}} $$ values for each hyperparameter
@@ -229,11 +229,11 @@ where $$ f $$ is an expensive function.
 
 Depending on the form or the dimension of the initial problem, it might be really expensive to find the optimal value of $$ x $$. Hyperparameter gradients might also not be available. Suppose that we know all the parameters distribution. We can represent for every hyperparameter, a distribution of the loss according to its value.
 
-![image](https://maelfabien.github.io/assets/images/ho1.png)
+![image](https://maelfabien.github.io/assets/images/ho1.jpg)
 
 Since the curve is not known, a naive approach would be the pick a few values of `x` and try to observe the corresponding values `f(x)`. We would then pick the value of `x` that gave the smallest value.
 
-![image](https://maelfabien.github.io/assets/images/ho2.png)
+![image](https://maelfabien.github.io/assets/images/ho2.jpg)
 
 This is where Grid Search and Randomized search lie, and all other similar methods are called Sequential model-based optimization (SMBO).
 
@@ -253,7 +253,7 @@ $$ p(y \mid x, D) = N(y \mid \hat{\mu}, {\hat{\sigma}}^2) $$
 
 We use that set of predictions and pick new points where we should evaluate next. We can plot a Gaussian Process between 4 samples this way :
 
-![image](https://maelfabien.github.io/assets/images/expl4_6.png)
+![image](https://maelfabien.github.io/assets/images/expl4_6.jpg)
 
 Even though the true distribution is unknown (the red line), we can infer its value using Gaussian Process (confidence interval lines in green).
 
@@ -279,7 +279,7 @@ where :
 
 This acquisition function is the most common and is called the *expected improvement*. We then compute the acquisition score of each point, pick the point that has the highest activation, and evaluate $$ f(x) $$ at that point, and so on...
 
-![image](https://maelfabien.github.io/assets/images/expl4_7.png)
+![image](https://maelfabien.github.io/assets/images/expl4_7.jpg)
 
 In this example, we would stay in the region in which we identified a previous point that gave a small loss. We can also see the loss minimization problem as a maximization problem on the chosen metric.
 

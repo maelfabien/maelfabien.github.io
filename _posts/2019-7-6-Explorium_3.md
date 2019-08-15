@@ -65,7 +65,7 @@ df['diagnosis'] = df['diagnosis'].apply(lambda x : to_category(x))
 df.head()
 ```
 
-![image](https://maelfabien.github.io/assets/images/df_head.png)
+![image](https://maelfabien.github.io/assets/images/df_head.jpg)
 
 ```python
 X = df.drop(['diagnosis'], axis=1)
@@ -104,7 +104,7 @@ Permutation importance is computed after a model has been fitted. It shows how r
 
 For example, say that as before, we try to predict if a breast tumor is malignant or benign. We will randomly shuffle, column by column, the rows of the texture, the perimeter, the area, the smoothness...
 
-![image](https://maelfabien.github.io/assets/images/pred_17.png)
+![image](https://maelfabien.github.io/assets/images/pred_17.jpg)
 
 Randomly re-ordering a single column should decrease the accuracy. Depending on how relevant the feature is, it will more or less impact the accuracy. Let's illustrate this concept with a Random Forest Classifier.
 
@@ -129,7 +129,7 @@ perm = PermutationImportance(rf, random_state=1).fit(X_test, y_test)
 eli5.show_weights(perm, feature_names = X_test.columns.tolist())
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_6.png)
+![image](https://maelfabien.github.io/assets/images/pred_6.jpg)
 
 In our example, the most important feature is `concave points_worst`. The first number in each row shows how much model performance decreased with a random shuffling (in this case, using "accuracy" as the performance metric). We measure the randomness by repeating the process with multiple shuffles.
 
@@ -157,7 +157,7 @@ plt.ylabel('Prob. Malignant')
 plt.xlabel('Worst concave points');
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_7.png)
+![image](https://maelfabien.github.io/assets/images/pred_7.jpg)
 
 ```python
 ice_plot(ice_radius, c='dimgray', linewidth=0.3)
@@ -165,7 +165,7 @@ plt.ylabel('Prob. Malignant')
 plt.xlabel('Radius mean');
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_8.png)
+![image](https://maelfabien.github.io/assets/images/pred_8.jpg)
 
 Logically, since our linear model involves a linear relation between the inputs and the output, the ICE plots are linear. However, if we use a Gradient Boosting Regressor to perform the same task, the linear relation does not hold anymore.
 
@@ -175,7 +175,7 @@ gb.fit(X_train, y_train)
 ice_concave = ice(data=X_train, column='concave points_worst', predict=gb.predict)
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_9.png)
+![image](https://maelfabien.github.io/assets/images/pred_9.jpg)
 
 Thanks to ICEs, we understand the impact of a feature on the value of the outcome for each individual instance, and we easily understand trends. However, the ICE curves only display one feature at a time, and we cannot plot the joint importance of 2 features for example. Partial dependence plots overcome this issue.
 
@@ -210,7 +210,7 @@ pdp.pdp_plot(pdp_rad, 'Radius Mean')
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_10.png)
+![image](https://maelfabien.github.io/assets/images/pred_10.jpg)
 
 ### 2D Partial Dependence Plots
 
@@ -225,7 +225,7 @@ pdp.pdp_interact_plot(pdp_interact_out=inter1, feature_names=features_to_plot, p
 plt.show()
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_11.png)
+![image](https://maelfabien.github.io/assets/images/pred_11.jpg)
 
 This plot helps to identify regions in which the tumor is more likely to be benign (darker regions) rather than malignant (lighter regions) based on the interaction between the mean of the radios and the standard error of the smoothness. We can then create similar plots for all pairs of variables.
 
@@ -239,7 +239,7 @@ model=rf, X=X_train, features=features_to_plot, feature_names=features_to_plot
 )
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_12.png)
+![image](https://maelfabien.github.io/assets/images/pred_12.jpg)
 
 ## 4. Shapley Values
 
@@ -281,7 +281,7 @@ shap.initjs()
 shap.force_plot(explainer.expected_value[1], shap_values[1], data_for_prediction)
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_13.png)
+![image](https://maelfabien.github.io/assets/images/pred_13.jpg)
 
 The output prediction is 0, which means the model classifies this observation as benign.
 
@@ -299,7 +299,7 @@ We can also just take the mean absolute value of the SHAP values for each featur
 shap.summary_plot(shap_values, X_train, plot_type="bar")
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_15.png)
+![image](https://maelfabien.github.io/assets/images/pred_15.jpg)
 
 ## 5. Approximation (Surrogate) models
 
@@ -345,7 +345,7 @@ We make the choice to use 5 features here, but we could use more. To display the
 exp.show_in_notebook(show_table = True, show_all= False)
 ```
 
-![image](https://maelfabien.github.io/assets/images/pred_16.png)
+![image](https://maelfabien.github.io/assets/images/pred_16.jpg)
 
 Since we had the `show_all` parameter set to false, only the features used in the explanation are displayed. The Feature - Value table is a summary of the instance we'd like to explain. The value column displays the original value for each feature.
 

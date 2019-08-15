@@ -25,7 +25,7 @@ The two techniques are the following :
 
 Both techniques can be illustrated this way :
 
-![images](https://maelfabien.github.io/assets/images/ts2_11.png)
+![images](https://maelfabien.github.io/assets/images/ts2_11.jpg)
 
 To perform a forward fill, run the following command on your data frame :
 

@@ -49,7 +49,7 @@ In GridSearch, we try every combination of the set of parameters defined above. 
 
 We can visually represent the grid search on 2 features as a sequential way to test, in order, all the combinations :
 
-![image](https://maelfabien.github.io/assets/images/grid_1.png)
+![image](https://maelfabien.github.io/assets/images/grid_1.jpg)
 
 As you might guess, grid search does not scale well. There is a huge number of combinations we end up testing for just a few parameters. For example, if we have 4 parameters, and we want to test 10 values for each parameter, there are : $$ 10 \times 10 \times 10 \times 10 = 10'000 $$ combinations possible.
 
@@ -79,7 +79,7 @@ Randomized Search follows the same goal. However, we won't test sequentially all
 
 The main advantage is that we can try a broader range of values or hyperparameters within the same computation time as grid search, or test the same ones in much less time. We are however not guaranteed to identify the best combination since not all combinations will be tested.
 
-![image](https://maelfabien.github.io/assets/images/grid_2.png)
+![image](https://maelfabien.github.io/assets/images/grid_2.jpg)
 
 The implementation in scikit-learn is also straight forward :
 

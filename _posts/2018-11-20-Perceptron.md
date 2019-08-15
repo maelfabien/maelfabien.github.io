@@ -44,11 +44,11 @@ Neural networks are a set of algorithms that have been developed imitate the hum
 
 Take a quick example: we can process information pre-attentively. Indeed, in less time than an eye blink (200ms), we can identify elements that pop out from an image. On the other hand, if the element does not pop out enough, we need to make a sequential search, which is much longer.
 
-![image](https://maelfabien.github.io/assets/images/preattentive.png)
+![image](https://maelfabien.github.io/assets/images/preattentive.jpg)
 
 The information that we process in this example allows us to make a binary classification (major class vs the outlier we're trying to identify). To understand what's going on, I'll make a brief introduction (to the extent of my limited knowledge in this field) to the architecture of a neuron biologically speaking.
 
-![image](https://maelfabien.github.io/assets/images/neuron.png)
+![image](https://maelfabien.github.io/assets/images/neuron.jpg)
 
 Here's what the different components are made for :
 - Dendrite: Receives signals from other neurons
@@ -70,7 +70,7 @@ A series of neurons will process the information. Intrinsically, using both chan
 
 The neurons are activated depending on the given criteria. This will eventually lead to some sort of binary classification: Is there a danger or not? During the information processing, a large number of neurons will activate sequentially, and eventually lead to a single output.
 
-![image](https://maelfabien.github.io/assets/images/neuron_2.png)
+![image](https://maelfabien.github.io/assets/images/neuron_2.jpg)
 
 This is an overly simplified representation, and I don't have sufficient knowledge to expand this section.
 
@@ -80,7 +80,7 @@ The first computational model of a neuron was proposed by Warren McCulloch and W
 
 How does the McCulloch-Pitts neuron work?
 
-![image](https://maelfabien.github.io/assets/images/neuron_3.png)
+![image](https://maelfabien.github.io/assets/images/neuron_3.jpg)
 
 The first part is to process a series of **boolean** inputs (just like dendrites). If an input takes the value 1, we say that neuron **fires**.
 
@@ -116,7 +116,7 @@ A perceptron is a single layer Neural Network. A perceptron can simply be seen a
 
 The perceptron was first introduced in 1957 by Franck Rosenblatt. Since then, it has been the core of Deep Learning. We can represent schematically a perceptron as :
 
-![image](https://maelfabien.github.io/assets/images/neuron_4.png)
+![image](https://maelfabien.github.io/assets/images/neuron_4.jpg)
 
 We attach to each input a weight ( $$w_i$$) and notice how we add an input of value 1 with a weight of $$ - \theta $$. This is called bias. What we are doing is instead of having only the inputs and the weight and compare them to a threshold, we also learn the threshold as a weight for a standard input of value 1.
 
@@ -132,7 +132,7 @@ One limitation remains: the inputs need to be linearly separable since we split 
 
 The version of Perceptron we use nowadays was introduced by Minsky and Papert in 1969. They bring a major improvement to the classic model: they introduced an activation function. The **activation function** might take several forms and should "send" the weighted sum into a smaller set of possible values that allows us to classify the output. It's a smoother version than the thresholding applied before.
 
-![image](https://maelfabien.github.io/assets/images/neuron_5.png)
+![image](https://maelfabien.github.io/assets/images/neuron_5.jpg)
 
 In the classical Rosenblatt's perceptron, we split the space into two halves using a HeavySide function (sign function) where the vertical split occurs at the threshold $$ \theta $$ :
 
@@ -140,7 +140,7 @@ In the classical Rosenblatt's perceptron, we split the space into two halves usi
 
 This is harsh (since an outcome of 0.49 and 0.51 lead to different values), and we cannot apply gradient descent on this function. For this reason, for binary classification, for example, we'll tend to use a sigmoid activation function. Using a sigmoid activation will assign the value of a neuron to either 0 if the output is smaller than 0.5, or 1 if the neuron is larger than 0.5. The sigmoid function is defined by : $$ f(x) = \frac {1} {1 + e^{-u}} $$
 
-![image](https://maelfabien.github.io/assets/images/sigmoid.png)
+![image](https://maelfabien.github.io/assets/images/sigmoid.jpg)
 
 This activation function is smooth, differentiable (allows back-propagation) and continuous. We don't have to output a 0 or a 1, but we can output probabilities to belong to a class instead. If you're familiar with it, this version of the perceptron is a logistic regression with 0 hidden layers.
 
@@ -169,7 +169,7 @@ Even the Minsky and Papert perceptron has a major drawback. If the categories ar
 
 Perceptron can be used to represent logical operators. For example, one can represent the perceptron as an "AND" operator.
 
-![image](https://maelfabien.github.io/assets/images/nn_1.png)
+![image](https://maelfabien.github.io/assets/images/nn_1.jpg)
 
 A simple "AND" perceptron can be built in the following way :
 
@@ -184,11 +184,11 @@ output = int(linear_combination >= 0)
 
 Where `input_0` and `input_1` represent the two feature inputs. We are shifting the bias by 1.2 to isolate the positive case where both inputs are 1.
 
-![image](https://maelfabien.github.io/assets/images/nn_2.png)
+![image](https://maelfabien.github.io/assets/images/nn_2.jpg)
 
 However, solving the XOR problem is impossible :
 
-![image](https://maelfabien.github.io/assets/images/nn_3.png)
+![image](https://maelfabien.github.io/assets/images/nn_3.jpg)
 
 This is why Multi-layer perceptrons were introduced.
 
