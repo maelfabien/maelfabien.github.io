@@ -26,7 +26,7 @@ In this series of articles, I am going to focus on the basis of Deep Learning, a
 
 [Favio Vázquez](https://medium.com/@faviovazquez) has created a great summary of the deep learning timeline :
 
-![image](https://maelfabien.github.io/assets/images/ros_1.png)
+![image](https://maelfabien.github.io/assets/images/ros_1.jpg)
 
 Among the most important events on this timeline, I would highlight :
 - 1958: the Rosenblatt's Perceptron
