@@ -100,7 +100,6 @@ The table to scrap is of type `table` and has the class : `wikitable sortable jq
 We nee to iterate on all years between 2010 and 2018 :
 
 ```python
-
 artist_array = []
 
 for i in range(2010, 2019):
@@ -310,7 +309,6 @@ The Spotify's API has a "search" feature. Type in the name of an artist or a tra
 This will allow us to collect 17 features overall from the Spotify's API ! 
 
 ```python
-
 def artist_info(lookup) :
 
     try :
@@ -385,7 +383,7 @@ df = df.dropna()
 
 Not all of the features are exploitable as such. Indeed, the release date is under a date format. We initially specified that we wanted our model not to depend on the year. However, the month of release, the day of the month or even the day of the week might be relevant features.
 
-```
+```python
 df['release_date'] = pd.to_datetime(df['release_date'])
 df['month_release'] = df['release_date'].apply(lambda x: x.month)
 df['day_release'] = df['release_date'].apply(lambda x: x.day)
@@ -394,8 +392,8 @@ df['weekday_release'] = df['release_date'].apply(lambda x: x.weekday())
 
 ## Data Exploration
 
-
+We now have many features and can proceed to a further data exploration.
 
 Sources and resources:
-- [Spotify](https://github.com/plamere/spotipy)
+- [SpotiPy](https://github.com/plamere/spotipy)
 - [Billboard Ranking, Wikipedia](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018)
