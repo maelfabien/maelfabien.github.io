@@ -26,43 +26,44 @@ The music industry is a tough one. When you decide to produce an artist, there a
 
 # The Context
 
-
-A good tool should typically answer the following questions :
-- Which country should you focus on?
-- What should your nationality be?
-- What kind of music should you play?
-- What kind of lyrics should you write?
-- How many words should you pronounce in a single song?
-- Should you repeat words?
-- What are the main words you should use?
-- Should you write a positive or a negative song?
-- What kind of mood should you express?
-- Who should you sing with?
-- What are the most important musical features?
-- Is it worth it to make a video clip on YouTube?
-- When should the song be released?
-- ...
-
-This requires a lot of data enrichment, since there is no single source of data that can help with this. We will answer most of these questions using diverse sources :
+Several articles and papers try to explain why a song became a hit, and the features these songs share. We will try to go a bit further, and build a hit song classifier. To build such a classifier, we typically will need a lot of data enrichment, since there is no single source of data that can help with such a vast task. We will use the following sources to help us build the dataset :
 - Google Trends
 - Spotify 
 - Billboard
 - Genius.com
 
-There are two main approaches to this problem :
-- either extract information from top hits, and try to generalize it as recommendations for all songs
-- or build a dataset that contains both hits and least famous songs, in order to create a classifier
-
-In this article, we will select the second approach, and try to build a classifier, and progressively enrich the data. We will consider the following :
+We will consider the following :
 - A song is a hit if it reaches the top 10 of the most trending songs of the moment
 - Otherwise, it's not a hit
 
-This approach has some limits, since we consider that for a given song, it will at least hit the top 100 of the world charts. That being said, let's start by checking the major trends in the music industry using Google Trends.
-
-
 # The Data
 
-We will first scrap data from the Billboard Year End 100 singles of the year. The year end chart is calculated using an inverse point system based on the weekly Billboard charts (100 points for a week at number one, 1 point for a week at number 100, etc), for every year since 1946. 
+## Trends
+
+Let's start by checking the major trends in the music industry using [Google Trends](https://trends.google.com/).
+
+We will compare the major musical genres :
+- Pop
+- Rock
+- Rap
+- Country
+- Jazz
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+Rap is the leading music in the world currently, and has taken over other genres such as Rock or Pop.
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+The year end chart is calculated using an inverse point system based on the weekly Billboard charts (100 points for a week at number one, 1 point for a week at number 100, etc), for every year since 1946. A geographical analysis could also help us understand the mature and emerging markets :
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+
+It seems like US, South Africa and India are strong Rap markets, China and Inddonesia are strong Pop markets, and South America is a great Rock market. 
+
+## Top 100
+
+We will first scrap data from the Billboard Year End 100 singles of the year. This will be our main data source. This approach has some limits, since we consider that for a given song, it will at least hit the top 100 of the world charts. However, it you are trying to sell a ML-base solution to a music label, knowing whether a song will reach the top 10 of the year or remain in the bottom of the ranking has a huge financial impact. 
 
 The 2018 Billboad Year End of 2018 can be found on Wikipedia : [https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018)
 
@@ -390,6 +391,9 @@ df['month_release'] = df['release_date'].apply(lambda x: x.month)
 df['day_release'] = df['release_date'].apply(lambda x: x.day)
 df['weekday_release'] = df['release_date'].apply(lambda x: x.weekday())
 ```
+
+## Data Exploration
+
 
 
 Sources and resources:
