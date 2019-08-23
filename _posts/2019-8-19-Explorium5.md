@@ -390,7 +390,153 @@ df['weekday_release'] = df['release_date'].apply(lambda x: x.weekday())
 
 ## Data Exploration
 
-We now have many features and can proceed to a further data exploration.
+We now have many features and can proceed to a further data exploration. Let's start by analyzing the features we just created related to the release date :
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df['weekday_release'], bins=14)
+plt.title("Weekday release")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_8.png)
+
+More songs seem to be released on Fridays ! That's an interesting insight.
+
+Regarding the release month :
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df['month_release'], bins=24)
+plt.title("Month release")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_9.png)
+
+January seems to be a popular choice, although we should probably be careful. Some missing data might be filled by default to January 1st. During the months of July and August, there are however few songs being released. Most songs are available to most markets :
+
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df['available_markets'], bins=50)
+plt.title("Number of markets")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_10.png)
+
+A strong feature will probably be the popularity of the artist :
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df[df['Hit']==1]['popularity'], bins=50, density=True, alpha=0.5, label="Hit")
+plt.hist(df[df['Hit']==0]['popularity'], bins=50, density=True, alpha=0.5, label="Not Hit")
+plt.title("Artist Popularity")
+plt.legend()
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_11.png)
+
+In both cases, the popularity of the artist as defined by Spotify's API is really high. Finally, let's explore the effect of the duration on the hit songs :
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df[df['Hit']==1]['duration_ms'], bins=50, density=True, alpha=0.5, label="Hit")
+plt.hist(df[df['Hit']==0]['duration_ms'], bins=50, density=True, alpha=0.5, label="Not Hit")
+plt.title("Duration in ms.")
+plt.legend()
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_12.png)
+
+The distribution looks quite similar in both cases. 
+
+## Same model, better data
+
+We can now build a second classifier. However, we still have a quite limited number of data points, and a unbalanced dataset. Can oversampling help ?
+
+We will use the Synthetic Minority Over-sampling Technique (SMOTE). SMOTE is implemente in the package `imblearn` for Python.
+
+```python
+from imblearn.over_sampling import SMOTE
+
+X = df.drop(["Artist_Feat", "Artist", "Artist_Feat_Num", "Title", "Hit", "lookup", "release_date", "genres"], axis=1)
+y = df["Hit"]
+
+sm = SMOTE(random_state=42)
+X_res, y_res = sm.fit_resample(X, y)
+X_train, X_test, y_train, y_test = train_test_split(X_res,y_res, test_size=0.2, random_state=42) 
+```
+
+Lets us apply the same decision tree we used before :
+
+```python
+dt = DecisionTreeClassifier(max_depth=100)
+dt.fit(X_train, y_train)
+y_pred = dt.predict(X_test)
+f1_score(y_pred, y_test)
+```
+
+The F1-score reaches 83.4 %. Since the data is not imbalanced anymore, we can compute the accuracy :
+
+```python
+accuracy_score(y_pred, y_test)
+```
+
+It reaches 84%.
+
+## Better model, better data
+
+Decision tree is good choice for a first model to explore. However, more complex models might improve the overall performance. Let's try this with a Random Forest Classifier :
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+
+rf=RandomForestClassifier(n_estimators=100)
+rf.fit(X_train, y_train)
+y_pred = rf.predict(X_test)
+
+f1_score(y_pred, y_test)
+```
+
+The F1-Score reaches 93.3 % ! The accuracy is 94.5 %. Plotting the confusion matrix helps understand the errors our classifier made :
+
+```python
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+cm = confusion_matrix(y_test, y_pred)
+
+plt.figure(figsize=(10,8))
+sns.heatmap(cm, annot=True)
+plt.title("Confusion Matrix")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_13.png)
+
+We can now try to understan the output of the classifier by looking at the feature importance :
+
+```python
+importances = rf.feature_importances_
+indices = np.argsort(importances)
+
+plt.figure(figsize=(12,8))
+plt.title('Feature Importances')
+plt.barh(range(len(indices)), importances[indices], color='b', align='center')
+plt.yticks(range(len(indices)), [X.columns[i] for i in indices])
+plt.xlabel('Relative Importance')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_14.png)
+
+The most important features is whether there is a featuring or not. Then, the most important features are related to the release date (the famous summer hit), and the popularity of the artist. After that, we find all features related to the song itself.
+
+This analysis highlights a major fact. A song is a hit if it essentially relies on a featuring, it is released at the right moment, and the artists who release it are popular. All of this seems logic, but it's also verified empirically by our model !
 
 Sources and resources:
 - [SpotiPy](https://github.com/plamere/spotipy)
