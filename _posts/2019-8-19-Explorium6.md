@@ -332,7 +332,17 @@ interact(f, artist='Taylor Swift', title='Lover')
 
 According to our algorithm, there are only 22% chances that the song "Lover" by TaylorSwift will make it to the top 10 of the most popular songs of 2019. 
 
-> **Conclusion** : Through this article, we illustrated the importance of external data sources for most data science problems. A good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance. 
+# Conclusion
+
+Through this article, we illustrated the importance of external data sources for most data science problems. A good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance. 
+
+Here is a performance summary of the different steps of our model :
+
+| Description | Model | Performance |
+| -- | -- | -- |
+| Data from billboard | Decision Tree | F1-Score : 6.6% |
+| Enrich with Spotify and oversample | Random Forest | Accuracy : 93% |
+| Enrich with Genius | Random Forest | Accuracy : 98% |
 
 Sources and resources:
 - [Lyricsgenius](https://github.com/johnwmillr/LyricsGenius)
