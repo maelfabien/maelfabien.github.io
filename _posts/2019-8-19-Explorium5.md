@@ -270,7 +270,7 @@ Spotipy is available on [Github](https://github.com/plamere/spotipy). If you fol
 - Configure the URI and token in the util file of the package
 - and that's it!
 
-It's pretty well explained on the setup page of Spotipy, so let's move on to the data enrichment. When using Spotipy for the first time, you are required to validate the redirect URI (I have used '`http://localhost/`)`. 
+It's pretty well explained on the setup page of Spotipy, so let's move on to the data enrichment. When using Spotipy for the first time, you are required to validate the redirect URI (I have used `http://localhost/` ). 
 
 ```python
 import sys
