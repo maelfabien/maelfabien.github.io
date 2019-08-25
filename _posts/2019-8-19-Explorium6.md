@@ -137,6 +137,21 @@ np.mean(df['len_lyrics'])
 np.mean(df['len_unique_lyrics'])
 ```
 
+The ratio of unique words over total words is 35%. We can also plot the distribution of this ratio :
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df['len_unique_lyrics']/df['len_lyrics'], bins=50)
+plt.title("Ratio Unique Words over total words")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_20.png)
+
+To illustrate the diversity of the vocabulary used in the songs, we can also compute the ratio of words that are not stop words over all words :
+
+![image](https://maelfabien.github.io/assets/images/expl5_21.png)
+
 What are the most common words?
 
 ```python
