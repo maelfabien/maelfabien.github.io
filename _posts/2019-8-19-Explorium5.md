@@ -259,7 +259,7 @@ f1_score(y_pred, y_test)
 
 The resulting f1 score is : `0.066`, which is low. The accuracy is close to 86%, since our model tends to predict too often that the song is systematically not a hit. There is room for better data and better models. 
 
-# Data Enrichment
+# Data Enrichment through Spotify
 
 Where could we get data from ? Well, popular music services like Spotify provide cool APIs that gather a lot of information on artists, albums and tracks. Using external APIs can sometimes be cumbersome. Hopefully, there is a great package called [Spotipy](https://spotipy.readthedocs.io/en/latest/#) that does most of the work for us !
 
@@ -538,6 +538,233 @@ The most important features is whether there is a featuring or not. Then, the mo
 
 This analysis highlights a major fact. A song is a hit if it essentially relies on a featuring, it is released at the right moment, and the artists who release it are popular. All of this seems logic, but it's also verified empirically by our model !
 
+So far, we have not used the lyrics. Could we further improve the model by adding the lyrics ?
+
+# Data Enrichment through Genius.com
+
+Genius.com is a great resource if you are looking for song lyrics. It offers a great API, all of which is packaged in a great library called `lyricsgenius`. Start by installing the package (instructions can be found on [GitHub](https://github.com/johnwmillr/LyricsGenius)).
+
+You will have to get a token from [Genius.com developer website](https://docs.genius.com/).
+
+Start by importing the package :
+
+```python
+import lyricsgenius as genius
+api = genius.Genius('YOUR_TOKEN_GOES_HERE')
+```
+
+As before, the API has a powerful search functionality :
+
+```python
+def lookup_lyrics(song):
+    try :
+        return api.search_song(song).lyrics
+    except :
+        return None
+```
+
+And create a column "lyrics" that contains the lyrics of each song. This one might take some time.
+
+```python
+df['lyrics'] = df['lookup'].apply(lambda x: lookup_lyrics(x))
+```
+
+Notice how some of the text is not clean and contains `\n` to denote a new line, or text between brackets to split sections :
+
+```python
+def clean_txt(song):
+    song = ' '.join(song.split("\n"))
+    song = re.sub("[\[].*?[\]]", "", song)
+    return song
+
+df['lyrics'] = df['lyrics'].apply(lambda x: clean_txt(x))
+df = df.dropna() #Drop song if we don't have lyrics
+```
+
+Some features we could add are :
+- the length of the lyrics
+- the number of unique words used
+- the length of the lyrics without stopwords
+- the number of unique words used without stopwords
+
+```python
+from nltk.corpus import stopwords 
+from nltk.tokenize import word_tokenize 
+stop_words = set(stopwords.words('english'))
+
+def len_lyrics(song):
+    return len(song.split())
+
+def len_unique_lyrics(song):
+    return len(list(set(song.split())))
+
+def rmv_stop_words(song):
+    song = [w for w in song.split() if not w in stop_words] 
+    return len(song)
+
+def rmv_set_stop_words(song):
+    song = [w for w in song.split() if not w in stop_words] 
+    return len(list(set(song)))
+```
+
+
+```python
+df['len_lyrics'] = df['lyrics'].apply(lambda x: len_lyrics(x))
+df['len_unique_lyrics'] = df['lyrics'].apply(lambda x: len_unique_lyrics(x))
+df['without_stop_words'] = df['lyrics'].apply(lambda x: rmv_stop_words(x))
+df['unique_without_stop_words'] = df['lyrics'].apply(lambda x: rmv_set_stop_words(x))
+```
+
+## Data exploration
+
+Again, some data exploration might bring us additional insights.
+
+How many words are used in the lyrics ?
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df[df['len_lyrics']<2000]['len_lyrics'], bins=70) #Not plot outliers
+plt.title("Number of words")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_15.png)
+
+On average, there are 467 words in a song, and 166 unique words. 
+
+```python
+np.mean(df['len_lyrics'])
+np.mean(df['len_unique_lyrics'])
+```
+
+What are the most common words ?
+
+```python
+from wordcloud import WordCloud, STOPWORDS
+word_cloud = df['lyrics'].values
+
+str1 = ' '.join(word_cloud)
+stopwords = set(STOPWORDS)
+
+wordcloud = WordCloud(stopwords=stopwords, background_color="white").generate(str(str1))
+
+plt.figure(figsize=(15,8))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_16.png)
+
+## Lyrics Sentiment
+
+Should a song be positive? Negative? Neutral? To assess the positiveness of a song and its intensity, we will use Valence Aware Dictionary and sEntiment Reasoner (VADER), a lexicon and rule-based sentiment analysis tool, available on [Github](https://github.com/cjhutto/vaderSentiment).
+
+```python
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+analyzer = SentimentIntensityAnalyzer()
+
+df['sentimentVaderPos'] = df['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['pos'])
+df['sentimentVaderNeg'] = df['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['neg'])
+df['sentimentVaderComp'] = df['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['compound'])
+df['sentimentVaderNeu'] = df['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['neu'])
+df['Vader'] = df['sentimentVaderPos'] - df['sentimentVaderNeg']
+```
+
+What are the sentiments expressed in the songs ?
+
+```python
+plt.figure(figsize=(12,8))
+plt.hist(df['Vader'], bins=50)
+plt.axvline(0, c='r')
+plt.title("Average sentiment")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_17.png)
+
+## New model
+
+Let us now train a new model and see whether the performance was improved :
+
+```python
+X = df.drop(["Artist_Feat", "Artist", "Artist_Feat_Num", "Title", "Hit", "lookup", "release_date", "genres", "lyrics"], axis=1)
+y = df["Hit"]
+
+sm = SMOTE(random_state=42)
+X_res, y_res = sm.fit_resample(X, y)
+
+X_train, X_test, y_train, y_test = train_test_split(X_res,y_res, test_size=0.2, random_state=42) 
+
+rf=RandomForestClassifier(n_estimators=100)
+rf.fit(X_train, y_train)
+
+y_pred = rf.predict(X_test)
+accuracy_score(y_pred, y_test)
+```
+
+The accuracy score improved by close to 5%, and reached 98.3%.
+
+What are the most important features in this new model ?
+
+```python
+importances = rf.feature_importances_
+indices = np.argsort(importances)
+
+plt.figure(figsize=(12,8))
+plt.title('Feature Importances')
+plt.barh(range(len(indices)), importances[indices], align='center')
+plt.yticks(range(len(indices)), [X.columns[i] for i in indices])
+plt.xlabel('Relative Importance')
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/expl5_18.png)
+
+# Making predictions 
+
+We can now build a predictor that takes as an input the name of the song and the singer, creates the features, and output the probability of being a hit. Since the algorithm has never been trained on 2019 songs, we can feed it with recent songs and observe the outcome. Let's try it with "Lover" by Taylor Swift :
+
+
+```python
+df_pred = pd.DataFrame.from_dict({
+    "Artist":["Taylor Swift"], 
+    "Title":["Lover"]})
+    
+df_pred["Featuring"] = df_pred.apply(lambda row: featuring(row['Artist']), axis=1)
+df_pred["Artist_Feat"] = df_pred.apply(lambda row: featuring_substring(row['Artist']), axis=1)
+df_pred['Title_Length'] = df_pred['Title'].apply(lambda x: num_words(x))
+df_pred['lookup'] = df_pred['Title'] + " " + df_pred["Artist_Feat"]
+df_pred['available_markets'], df_pred['release_date'], df_pred['total_followers'], df_pred['genres'], df_pred['popularity'], df_pred['acousticness'], df_pred['danceability'], df_pred['duration_ms'], df_pred['energy'], df_pred['instrumentalness'], df_pred['key'], df_pred['liveness'], df_pred['loudness'], df_pred['speechiness'], df_pred['tempo'], df_pred['time_signature'], df_pred['valence'] = zip(*df_pred['lookup'].map(artist_info))
+df_pred['release_date'] = pd.to_datetime(df_pred['release_date'])
+df_pred['month_release'] = df_pred['release_date'].apply(lambda x: x.month)
+df_pred['day_release'] = df_pred['release_date'].apply(lambda x: x.day)
+df_pred['weekday_release'] = df_pred['release_date'].apply(lambda x: x.weekday())
+df_pred['lookup'] = df_pred['Title'] + " " + df_pred["Artist"]
+df_pred['lyrics'] = df_pred['lookup'].apply(lambda x: lookup_lyrics(x))
+df_pred['lyrics'] = df_pred['lyrics'].apply(lambda x: clean_txt(x))
+df_pred['len_lyrics'] = df_pred['lyrics'].apply(lambda x: len_lyrics(x))
+df_pred['len_unique_lyrics'] = df_pred['lyrics'].apply(lambda x: len_unique_lyrics(x))
+df_pred['without_stop_words'] = df_pred['lyrics'].apply(lambda x: rmv_stop_words(x))
+df_pred['unique_without_stop_words'] = df_pred['lyrics'].apply(lambda x: rmv_set_stop_words(x))
+df_pred['sentimentVaderPos'] = df_pred['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['pos'])
+df_pred['sentimentVaderNeg'] = df_pred['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['neg'])
+df_pred['sentimentVaderComp'] = df_pred['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['compound'])
+df_pred['sentimentVaderNeu'] = df_pred['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['neu'])
+df_pred['Vader'] = df_pred['sentimentVaderPos'] - df_pred['sentimentVaderNeg']
+
+X = df_pred.drop(["Artist_Feat", "Artist", "Title", "lookup", "release_date", "genres", "lyrics"], axis=1).astype(float)
+
+y_pred = rf.predict_proba(X)
+y_pred
+```
+
+According to our algorithm, there are only 22% chances that the song "Lover" by TaylorSwift will make it to the top 10 of the most popular songs of 2019. You can now try it on your own !
+
+> **Conclusion** : Through this article, we illustrated importance of external data sources for most data science problems. A good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance.
+
 Sources and resources:
 - [SpotiPy](https://github.com/plamere/spotipy)
 - [Billboard Ranking, Wikipedia](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018)
+- [VADER](https://github.com/cjhutto/vaderSentiment)
+- [Lyricsgenius](https://github.com/johnwmillr/LyricsGenius)
