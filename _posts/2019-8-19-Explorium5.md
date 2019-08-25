@@ -33,8 +33,12 @@ Several articles and papers try to explain why a song became a hit, and the feat
 - Genius.com
 
 We will consider the following :
-- A song is a hit if it reaches the top 10 of the most trending songs of the year
+- A song is a hit if it reaches the top 10 of the most popular songs of the year
 - Otherwise, it's not a hit
+
+In this two-parts article, we are going to implement the following pipeline and build our hit song classifier !
+
+![image](https://maelfabien.github.io/assets/images/expl5_22.png)
 
 # Data
 
@@ -51,11 +55,11 @@ We will compare the major musical genres :
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-Rap is the leading music in the world currently, and has taken over other genres such as Rock or Pop. A geographical analysis could also help us understand the mature and emerging markets :
+Rap is the leading music in the world currently, and has taken over other genres such as Rock or Pop. A geographical analysis could also help us understand which countries listen to what music_
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-It seems like the US, South Africa and India are strong Rap markets, China and Indonesia are strong Pop markets, and South America is a great Rock market. 
+It seems like the US, South Africa and India are strong Rap markets, China and Indonesia are strong Pop markets, and South America is overall a great Rock market. 
 
 ## Top 100
 
@@ -183,7 +187,7 @@ df["Artist_Feat"] = df.apply(lambda row: featuring_substring(row['Artist']), axi
 
 We can quickly explore the data to observe the most popular artists, the number of hits or the number of featurings. There is by construction an imbalance in the number of hits vs. non-hits :
 
-```
+```python
 plt.figure(figsize=(10,6))
 plt.hist(df["Hit"], bins=3)
 plt.title("Non-Hits vs. Hits")
@@ -301,7 +305,7 @@ sp.trace_out = True # turn on trace out
 
 The Spotify's API has a "search" feature. Type in the name of an artist or a track (or both combined), and it returns a JSON that contains much of the relevant information needed. We will use information from several levels :
 - the artist: popularity index and the total number of followers. Notice that these values in the API are the values of today, and therefore take into account some information from the future when you compare it to a song published in 2015 for example.
-- the album: how many songs were there on the album overall, the date of the release, the number of markets it is available on
+- the album: how many songs were there on the album overall, the date of the release, the number of markets it is available in
 - the song: Spotify has a number of feature pre-computed such as the speechiness, the loudness, the danceability, the duration...
 
 This will allow us to collect 17 features overall from the Spotify's API ! 
@@ -536,11 +540,11 @@ plt.show()
 
 The most important feature is whether there is a featuring or not. Then, the most important features are related to the release date (the famous summer hit), and the popularity of the artist. After that, we find all features related to the song itself.
 
-This analysis highlights a major fact. A song is a hit if it essentially relies on a featuring, it is released at the right moment, and the artists who release it are popular. All of this seems logical, but it's also verified empirically by our model!
+This analysis highlights a major fact. A song is a hit if it essentially relies on a good featuring, it is released at the right moment, and the artists who release it are popular. All of this seems logical, but it's also verified empirically by our model!
 
 So far, we have not used the lyrics. Could we further improve the model by adding the lyrics? We will explore this in the second part of the article.
 
-> **Conclusion** : Through this article, we illustrated the importance of external data sources for most data science problems. A good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance. We will go a bit further in the next article.
+> **Conclusion** : So far, we have shown how a good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance. We will go a bit further in the next article and analyze the lyrics of each song.
 
 Sources and resources:
 - [SpotiPy](https://github.com/plamere/spotipy)
