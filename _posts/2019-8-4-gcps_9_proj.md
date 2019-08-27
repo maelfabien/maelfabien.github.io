@@ -1,6 +1,6 @@
 ---
 published: true
-title: Lab - Create a streaming data pipeline with Cloud DataFlow 
+title: Create a streaming data pipeline with Cloud DataFlow 
 collection: bgd
 layout: single
 author_profile: false
@@ -9,7 +9,7 @@ categories: [bigdata]
 excerpt : "Road to Google Cloud Platform Certification"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
-    teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    teaser: "https://maelfabien.github.io/assets/images/project_6.png"
 comments : true
 toc: true
 toc_sticky: true
@@ -17,7 +17,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-In this lab, we will analyze data from a taxi business. The aim of the lab is to :
+In this project, we will analyze data from a taxi business. The aim of the lab is to :
 - Connect to a streaming data Topic in Cloud Pub/sub
 - Ingest streaming data with Cloud Dataflow
 - Load streaming data into BigQuery
