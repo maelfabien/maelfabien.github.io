@@ -5,7 +5,7 @@ collection: st
 layout: single
 author_profile: false
 read_time: true
-categories: [Project]
+categories: [machinelearning]
 excerpt : "Supervise and Unsupervised Algorithms"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
