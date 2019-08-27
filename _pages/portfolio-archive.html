@@ -7,11 +7,11 @@ author_profile: true
 
 <div class="grid__wrapper">
     {% for post in site.posts %}
-        {% if post.categories contains 'machinelearning' %}
+        {% if post.categories contains 'project' %}
             {% include archive-single.html type="grid" %}
         {% endif %}
     {% endfor %}
 </div>
 
-<object type="text/html" data="https://www.explorium.ai/blog/whos-the-painter/">
-</object>
+<iframe src="https://www.explorium.ai/blog/whos-the-painter/">
+</iframe>
