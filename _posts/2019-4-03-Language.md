@@ -1,6 +1,6 @@
 ---
 published: true
-title: Build a Language Recognition app from scratch
+title: Build a Language Recognition app
 collection: ml
 layout: single
 author_profile: false
