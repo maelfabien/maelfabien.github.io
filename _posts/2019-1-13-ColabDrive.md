@@ -67,4 +67,4 @@ X_train = np.load('drive/My Drive/X_train.npy')
 
 Similarly, you can save your files as you would do locally.
 
-> **Conclusion **: I hope this quick tip on Google Drive on Colab was helpful. If you have any question, don't hesitate to drop a comment!
+> **Conclusion** : I hope this quick tip on Google Drive on Colab was helpful. If you have any question, don't hesitate to drop a comment!
