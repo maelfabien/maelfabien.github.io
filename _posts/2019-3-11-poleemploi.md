@@ -17,12 +17,14 @@ sidebar:
     nav: sidebar-sample
 ---
 
-Contributors : Raphael Lederman, Anatoli De Bradke, Stéphane Reynal, Maël Fabien
+*Contributors : Raphael Lederman, Anatoli De Bradke, Stéphane Reynal, Maël Fabien*
 
 The Github of the project can be found here :
 
 <div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+<br>
 
 # Real-Time Multimodal Emotion Recognition
 
