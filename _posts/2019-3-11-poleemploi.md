@@ -6,6 +6,7 @@ layout: single
 author_profile: false
 read_time: true
 categories: [project]
+show_excerpts : false
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/webapp-1.jpg"
@@ -16,22 +17,15 @@ sidebar:
     nav: sidebar-sample
 ---
 
-*Contributors : Raphael Lederman, Anatoli De Bradke, Stéphane Reynal, Maël Fabien*
+We developped a multimodal emotion recognition platform to analyze the emotions of job candidates, in partnership with the French Employment Agency.
 
-The Github of the project can be found here :
-
-<div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<br>
+We analyze facial, vocal and textual emotions, using mostly deep learning based approaches.
 
 # Real-Time Multimodal Emotion Recognition
 
 ## In a nutshell
 
-We developped a multimodal emotion recognition platform to analyze the emotions of job candidates, in partnership with the French Employment Agency.
-
-We analye facial, vocal and textual emotions, using mostly deep learning based approaches. We deployed a web app using Flask :
+We deployed a web app using Flask :
 
 ![image](https://maelfabien.github.io/assets/images/PE_Images/webapp2.png)
 
@@ -40,6 +34,15 @@ The tool can be accessed from the WebApp repository, by installing the requireme
 We have also written a [paper on our work](https://www.overleaf.com/read/xvtrrfpvzwhf)
 
 In this project, we are exploring state of the art models in multimodal sentiment analysis. We have chosen to explore text, sound and video inputs and develop an ensemble model that gathers the information from all these sources and displays it in a clear and interpretable way.
+
+*Contributors : Raphael Lederman, Anatoli De Bradke, Stéphane Reynal, Maël Fabien*
+
+The Github of the project can be found here :
+
+<div class="github-card" data-github="maelfabien/Multimodal-Emotion-Recognition" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+<br>
 
 ## 0. Technologies
 

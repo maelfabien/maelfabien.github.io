@@ -16,6 +16,13 @@ sidebar:
     nav: sidebar-sample
 ---
 
+The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world. With new files uploaded every 15 minutes, GDELT data bases contain more than 700 Gb of zipped data for the single year 2018.
+
+In order to be able to work with a large amount of data, we have chosen to work with the following architecture :
+- NoSQL : Cassandra
+- AWS : EMR to transfer the data to Cassandra, and EC2 for the resiliency for the requests
+- Visualization : A Zeppelin Notebook
+
 Contributors : Raphael Lederman, Anatoli De Bradke, Alexandre Bec, Anthony Houdaille, Thomas Binetruy
 
 The Github of the project can be found here :
@@ -23,14 +30,7 @@ The Github of the project can be found here :
 <div class="github-card" data-github="maelfabien/Cassandra-GDELT-Queries" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-# GDELT : A Cassandra resilient architecture
-
-The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world. With new files uploaded every 15 minutes, GDELT data bases contain more than 700 Gb of zipped data for the single year 2018.
-
-In order to be able to work with a large amount of data, we have chosen to work with the following architecture :
-- NoSQL : Cassandra
-- AWS : EMR to transfer the data to Cassandra, and EC2 for the resiliency for the requests
-- Visualization : A Zeppelin Notebook
+<br>
 
 ## 0. Articles
 
