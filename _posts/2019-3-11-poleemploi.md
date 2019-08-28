@@ -1,6 +1,6 @@
 ---
 published: true
-title: A No-SQL Big Data project from scratch
+title: Emotion Recognition WebApp
 collection: dl
 layout: single
 author_profile: false
