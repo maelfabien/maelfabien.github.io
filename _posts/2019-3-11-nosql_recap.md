@@ -52,7 +52,7 @@ I've made a series of articles regarding this work. Here the links in order :
 - [Description of the data Mentions and Events](http://data.gdeltproject.org/documentation/GDELT-Event_Codebook-V2.0.pdf)
 - [Description of the Graph of Events GKG](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf)
 
-![alt text](https://maelfabien.github.io/assets/images/data.png)
+![images](https://maelfabien.github.io/assets/images/data.png)
 
 A event is defined as an action that an actor (Actor1) takes on another actor (Actor2). A mention is an article or any source that talks about an event. The GKG database reflects the events that took place in the world, ordered by theme, type of event and location.
 
