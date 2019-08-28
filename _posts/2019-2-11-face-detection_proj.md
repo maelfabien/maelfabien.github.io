@@ -5,7 +5,7 @@ collection: tuto
 layout: single
 author_profile: false
 read_time: true
-categories: [tutorials]
+categories: [project]
 excerpt : "Tutorials"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
