@@ -1,6 +1,6 @@
 ---
 published: true
-title: Earthquake Analysis on Google Compute Engine
+title: Earthquake Analysis on GCP
 collection: bgd
 layout: single
 author_profile: false
