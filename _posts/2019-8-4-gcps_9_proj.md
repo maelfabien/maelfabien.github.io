@@ -7,7 +7,6 @@ author_profile: false
 read_time: true
 categories: [bigdata]
 header :
-    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/project_6.png"
 comments : true
 toc: true

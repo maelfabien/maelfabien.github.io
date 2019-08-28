@@ -8,7 +8,6 @@ read_time: true
 categories: [project]
 show_excerpts : false
 header :
-    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/webapp-1.jpg"
 comments : true
 toc: true
