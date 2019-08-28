@@ -6,7 +6,6 @@ layout: single
 author_profile: false
 read_time: true
 categories: [project]
-excerpt : "Tutorials"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/project_8.png"
