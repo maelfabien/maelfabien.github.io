@@ -6,9 +6,7 @@ layout: single
 author_profile: false
 read_time: true
 categories: [project]
-show_excerpts : false
 header :
-    overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/project_14.png"
 comments : true
 toc: true
