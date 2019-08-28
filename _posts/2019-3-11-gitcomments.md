@@ -24,6 +24,11 @@ Here is an explanation of the table columns:
 - Merged_at: date at which the pull request was merged (if accepted).
 - Request_changes: each comment is labelled either 1 or 0: if it’s labelled as 1 if the comment is a request for change in the code. If not, it’s labelled as 0.
 
+The GitHub of the project can be found here :
+
+<div class="github-card" data-github="maelfabien/Analyze-Github-Pull-Requests" data-width="100%" data-height="" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
 The goal is to dig deeper into the nature of blockers and analyze the requests for change. If possible, try to answer the following questions:
 - What are the most common problems that appear in these comments?
 - Can we cluster the problems by topic/problem type?
