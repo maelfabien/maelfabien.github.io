@@ -5,7 +5,7 @@ main:
     url: /blog/
 
   - title: "Projects"
-    url: /projects/
+    url: /portfolio/
     
   - title: "CV"
     url: https://maelfabien.github.io/assets/images/CV_MF.pdf
