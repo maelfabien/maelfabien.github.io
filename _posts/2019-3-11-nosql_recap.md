@@ -49,15 +49,15 @@ I've made a series of articles regarding this work. Here the links in order :
 
 ## 1. The data
 
-- Description of the data Mentions and Events : http://data.gdeltproject.org/documentation/GDELT-Event_Codebook-V2.0.pdf
-- Description of the Graph of Events GKG : http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf
+- [Description of the data Mentions and Events](http://data.gdeltproject.org/documentation/GDELT-Event_Codebook-V2.0.pdf)
+- [Description of the Graph of Events GKG](http://data.gdeltproject.org/documentation/GDELT-Global_Knowledge_Graph_Codebook-V2.1.pdf)
 
 ![alt text](https://maelfabien.github.io/assets/images/data.png)
 
 A event is defined as an action that an actor (Actor1) takes on another actor (Actor2). A mention is an article or any source that talks about an event. The GKG database reflects the events that took place in the world, ordered by theme, type of event and location.
 
 The conceptual model of the data is the following :
-![alt text](Images/concept.png)
+![alt text](https://maelfabien.github.io/assets/images/concept.png)
 
 ## 2. Architecture
 
@@ -71,13 +71,14 @@ In our 8 EC2 instances we have :
 - 5 Slaves nodes with apache-Spark-2.3.2 and apache-cassandra-3.11.2, including zookeeper installed on 2 of these nodes.
 - The last one is a node created for the resilience of the Master. We Installed zookeeper in it. 
 
-The Slaves resilience is automatically handled by the master Spark. The Masters resilience is handled by Zookeper. For the Zookeeper, refer to the ReadMe of this folder : https://github.com/maelfabien/gdelt/tree/master/Zookeeper
+The Slaves resilience is automatically handled by the master Spark. The Masters resilience is handled by Zookeper. For the Zookeeper, refer to the [ReadMe of the dedicated Github folder](https://github.com/maelfabien/gdelt/tree/master/Zookeeper)
 
-The cluster EMR is used to transfer data from S3 to our Cassandra nodes on EC2. The reason for this architecture is that our EC2 Spark instaces could not connect to S3 due to issues with package dependencies. For Cassandra, refer to the ReadMe of this folder : https://github.com/maelfabien/gdelt/tree/master/Cassandra
+The cluster EMR is used to transfer data from S3 to our Cassandra nodes on EC2. The reason for this architecture is that our EC2 Spark instaces could not connect to S3 due to issues with package dependencies. For Cassandra, refer to the [ReadMe the dedicated Github folder](https://github.com/maelfabien/gdelt/tree/master/Cassandra)
 
 We do not find any solution :
 [link](https://docs.hortonworks.com/HDPDocuments/HDCloudAWS/HDCloudAWS-1.8.0/bk_hdcloud-aws/content/s3-trouble/index.html)
-![alt text](Images/hortonworks.png)
+
+![alt text](https://maelfabien.github.io/assets/images/hortonworks.png)
 
 When all data are on our Casandra nodes, we shutdown the EMR cluster. We run our Spark-SQL request on Zeppelin.
 
@@ -86,7 +87,8 @@ When all data are on our Casandra nodes, we shutdown the EMR cluster. We run our
 ## 3. Data Preparation
 
 Import the necessary packages :
-``` scala
+
+```scala
 // Imports
 import sys.process._
 import java.net.URL
@@ -111,56 +113,60 @@ import org.apache.spark.sql.types.IntegerType
 The ZIP files are extracted from the GDELT website following this procedure :
 
 1. Define a file downloading function
-``` scala
-def fileDownloader(urlOfFileToDownload: String, fileName: String) = {
-val url = new URL(urlOfFileToDownload)
-val connection = url.openConnection().asInstanceOf[HttpURLConnection]
-connection.setConnectTimeout(5000)
-connection.setReadTimeout(5000)
-connection.connect()
 
-if (connection.getResponseCode >= 400)
-println("error")
-else
-url #> new File(fileName) !!
+```scala
+def fileDownloader(urlOfFileToDownload: String, fileName: String) = {
+    val url = new URL(urlOfFileToDownload)
+    val connection = url.openConnection().asInstanceOf[HttpURLConnection]
+    connection.setConnectTimeout(5000)
+    connection.setReadTimeout(5000)
+    connection.connect()
+
+    if (connection.getResponseCode >= 400)
+        println("error")
+    else
+        url #> new File(fileName) !!
 }
 ```
 
 Grab the list of URLs to download the ZIP files from, from the english and the translated documents.
 
-``` scala
+```scala
 // Download locally the list of URL
 fileDownloader("http://data.gdeltproject.org/gdeltv2/masterfilelist.txt", "/tmp/masterfilelist.txt") // save the list file to the Spark Master
 fileDownloader("http://data.gdeltproject.org/gdeltv2/masterfilelist-translation.txt", "/tmp/masterfilelist_translation.txt") 
 ```
 
 Then, put the file that contains the list of the files to download into the S3 bucket :
-``` scala
+
+```scala
 awsClient.putObject("fabien-mael-telecom-gdelt2018", "masterfilelist.txt", new File("/tmp/masterfilelist.txt") )
 awsClient.putObject("fabien-mael-telecom-gdelt2018", "masterfilelist_translation.txt", new File( "/tmp/masterfilelist_translation.txt") )
 ```
 
 We will focus only on year 2018 :
-``` scala
+
+```scala
 val list_csv = spark.read.format("csv").option("delimiter", " ").
-csv("s3a://fabien-mael-telecom-gdelt2018/masterfilelist.txt").
-withColumnRenamed("_c0","size").
-withColumnRenamed("_c1","hash").
-withColumnRenamed("_c2","url")
+    csv("s3a://fabien-mael-telecom-gdelt2018/masterfilelist.txt").
+    withColumnRenamed("_c0","size").
+    withColumnRenamed("_c1","hash").
+    withColumnRenamed("_c2","url")
 val list_2018_tot = list_csv.where(col("url").like("%/2018%"))
 ```
 
 We download all the data of 2018 for the English URLs :
-``` scala
+
+```scala
 list_2018_tot.select("url").repartition(100).foreach( r=> {
-val URL = r.getAs[String](0)
-val fileName = r.getAs[String](0).split("/").last
-val dir = "/mnt/tmp/"
-val localFileName = dir + fileName
-fileDownloader(URL,  localFileName)
-val localFile = new File(localFileName)
-AwsClient.s3.putObject("fabien-mael-telecom-gdelt2018", fileName, localFile )
-localFile.delete()
+    val URL = r.getAs[String](0)
+    val fileName = r.getAs[String](0).split("/").last
+    val dir = "/mnt/tmp/"
+    val localFileName = dir + fileName
+    fileDownloader(URL,  localFileName)
+    val localFile = new File(localFileName)
+    AwsClient.s3.putObject("fabien-mael-telecom-gdelt2018", fileName, localFile )
+    localFile.delete()
 })
 
 ```
@@ -172,47 +178,50 @@ We duplicate this task for the translation data. Then, we need to create four da
 - Events translated
 
 This is done the following way :
-``` scala
+
+```scala
 val mentionsRDD_trans = sc.binaryFiles("s3a://fabien-mael-telecom-gdelt2018/201801*translation.mentions.CSV.zip"). // charger quelques fichers via une regex
-flatMap {  // decompresser les fichiers
-case (name: String, content: PortableDataStream) =>
-val zis = new ZipInputStream(content.open)
-Stream.continually(zis.getNextEntry).
-takeWhile{ case null => zis.close(); false
-case _ => true }.
-flatMap { _ =>
-val br = new BufferedReader(new InputStreamReader(zis))
-Stream.continually(br.readLine()).takeWhile(_ != null)
-}
-}
+    flatMap {  // decompresser les fichiers
+        case (name: String, content: PortableDataStream) =>
+            val zis = new ZipInputStream(content.open)
+            Stream.continually(zis.getNextEntry).
+            takeWhile{ case null => zis.close(); false
+                case _ => true }.
+            flatMap { _ =>
+                val br = new BufferedReader(new InputStreamReader(zis))
+                Stream.continually(br.readLine()).takeWhile(_ != null)
+            }
+    }
+    
 val mentionsDF_trans = mentionsRDD_trans.map(x => x.split("\t")).map(row => row.mkString(";")).map(x => x.split(";")).toDF()
 ```
 
 In order to reach fast responding queries, we create several smaller data frames for the different queries we later on build. For example :
-``` scala
+
+```scala
 // Mentions
 val mentions_trans_1 = mentionsDF_trans.withColumn("_tmp", $"value").select(
-$"_tmp".getItem(0).as("globaleventid"),
-$"_tmp".getItem(14).as("language")
-)
+    $"_tmp".getItem(0).as("globaleventid"),
+    $"_tmp".getItem(14).as("language")
+    )
 val mentions_1 = mentionsDF.withColumn("_tmp", $"value").select(
-$"_tmp".getItem(0).as("globaleventid"),
-$"_tmp".getItem(14).as("language")
-)
+    $"_tmp".getItem(0).as("globaleventid"),
+    $"_tmp".getItem(14).as("language")
+    )
 
 // Events 
 val events_trans_1 = exportDF_trans.withColumn("_tmp", $"value").select(
-$"_tmp".getItem(0).as("globaleventid"),
-$"_tmp".getItem(1).as("day"),
-$"_tmp".getItem(33).as("numarticles"),
-$"_tmp".getItem(53).as("actioncountry")
-)
+    $"_tmp".getItem(0).as("globaleventid"),
+    $"_tmp".getItem(1).as("day"),
+    $"_tmp".getItem(33).as("numarticles"),
+    $"_tmp".getItem(53).as("actioncountry")
+    )
 val events_1 = exportDF.withColumn("_tmp", $"value").select(
-$"_tmp".getItem(0).as("globaleventid"),
-$"_tmp".getItem(1).as("day"),
-$"_tmp".getItem(33).as("numarticles"),
-$"_tmp".getItem(53).as("actioncountry")
-)
+    $"_tmp".getItem(0).as("globaleventid"),
+    $"_tmp".getItem(1).as("day"),
+    $"_tmp".getItem(33).as("numarticles"),
+    $"_tmp".getItem(53).as("actioncountry")
+    )
 
 // Join english and translated data
 val df_events_1 = events_1.union(events_trans_1)
@@ -223,7 +232,8 @@ val df_1 = df_mentions_1.join(df_events_1,"GlobalEventID")
 ```
 
 We can later on build the Cassandra tables that will allow us transfer the spark dataframes :
-``` scala
+
+```scala
 %cassandra
 CREATE TABLE q1_1(
 day int,
@@ -234,14 +244,16 @@ PRIMARY KEY (day, language, actioncountry));
 ```
 
 Finally, we can write the dataframe to Cassandra. Therefore, the lazy evaluation will take place before we add requests to the data base.
-``` scala
+
+```scala
 df_1.write.cassandraFormat("q1_1", "gdelt_datas").save()
 val df_1_1 = spark.read.cassandraFormat("q1_1", "gdelt_datas").load()
 df_1_1.createOrReplaceTempView("q1_1")
 ```
 
 The requests are then simple to make :
-``` scala 
+
+```scala 
 z.show(spark.sql(""" SELECT * FROM q1_1 ORDER BY NumArticles DESC LIMIT 10 """))
 ```
 
