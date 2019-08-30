@@ -30,6 +30,16 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 <br>
 
+![image](https://maelfabien.github.io/assets/images/arc_head.jpg)
+
+[A guide to Inception Architectures in Keras](https://maelfabien.github.io/deeplearning/inception/) : Inception is a deep convolutional neural network architecture that was introduced for the first time in 2014. It won the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC14). 
+
+[Xception and the Depthwise Separable Convolutions](https://maelfabien.github.io/deeplearning/xception/) : Xception is a deep convolutional neural network architecture that involves Depthwise Separable Convolutions. It was developped by Google researchers. 
+
+[Create an Auto-Encoder using Keras functional API](https://maelfabien.github.io/deeplearning/autoencoder/) : Autoencoder is a type a neural network widely used for unsupervised dimension reduction. So, how does it work ? What can it be used for ? And how do we implement it in Python ?
+
+<br>
+
 ![image](https://maelfabien.github.io/assets/images/nlp_head.jpg)
 
 [Introduction to Natural Language Processing](https://maelfabien.github.io/machinelearning/NLP_0/) : What is NLP ? What is it used for ?
@@ -60,14 +70,7 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 [How to use OpenPose on macOS ?](https://maelfabien.github.io/tutorials/open-pose/) : OpenPose is a C++ / Python library for Pose Estimation. Let's see how to use it in macOS !
 
-<br>
+[Emotion Analysis WebApp](https://maelfabien.github.io/project/poleemploi/) : We built a Web App using Flask to analyze job seeking candidates emotions.
 
-![image](https://maelfabien.github.io/assets/images/arc_head.jpg)
-
-[A guide to Inception Architectures in Keras](https://maelfabien.github.io/deeplearning/inception/) : Inception is a deep convolutional neural network architecture that was introduced for the first time in 2014. It won the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC14). 
-
-[Xception and the Depthwise Separable Convolutions](https://maelfabien.github.io/deeplearning/xception/) : Xception is a deep convolutional neural network architecture that involves Depthwise Separable Convolutions. It was developped by Google researchers. 
-
-[Create an Auto-Encoder using Keras functional API](https://maelfabien.github.io/deeplearning/autoencoder/) : Autoencoder is a type a neural network widely used for unsupervised dimension reduction. So, how does it work ? What can it be used for ? And how do we implement it in Python ?
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
