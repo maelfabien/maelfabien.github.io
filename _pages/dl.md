@@ -50,6 +50,8 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 [Text Embedding with Word2Vec](https://maelfabien.github.io/machinelearning/NLP_3/) : A deeper dive into the state of the art embedding technique : Word2Vec.
 
+[I trained a Network to Speak Like Me (and it's funny)](https://maelfabien.github.io/machinelearning/NLP_4/) : Over the course of the past months, I wrote over 100 articles on my blog. That's quite a large amount of content. An idea then came to my mind : train a language generation model to **speak like me**. Or more specifically, to write like me.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/cv_head.jpg)
