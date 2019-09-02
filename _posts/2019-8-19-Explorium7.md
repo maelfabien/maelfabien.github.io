@@ -72,13 +72,13 @@ The notion of Open Data gathers all sources of data that are publically availabl
 
 The French government has, for example, decided to publish most of its data as [open data](https://www.data.gouv.fr/fr/) (Geospatial data, population, car accidents...) with the hope of seeing some startups rise from this. We also trained our [painter classifier](https://www.explorium.ai/blog/whos-the-painter/) using open data published by an online art collection.
 
-Although open data sound promising, the quality of the data might not always perfect, and the quantity of information available is often limited.
+Although open data sound promising, the quality of the data might not always perfect, and the quantity of information available is often limited. It is also time-consuming to identify the right dataset to use.
 
 ## Scraping
 
 Scraping, or web crawling, is the process by which we fetch the content of a webpage and copy the relevant information in a database. It remains today a common data acquisition strategy. Some websites are trying to prevent scraping, especially if the website contains valuable information (Craigslist, eBay, Amazon...). 
 
-In the hit song classifier, we scrapped Wikipedia to get the Billboard 100 from the past 9 years.
+In the hit song classifier, we scrapped Wikipedia to get the Billboard 100 from the past 9 years. There are great and powerful tools such as BeautifulSoup that help us do this in Python.
 
 ## APIs
 
@@ -88,9 +88,9 @@ Application Programming Interfaces (APIs) are a great way to access data from ex
 
 ## Mechanical Turk
 
-Services such as [Amazon Mechanical Turk](https://www.mturk.com/) allow you to "conduct simple data validation and research", get answers on surveys, label your data... It remains quite cheap since it relies on lots of external workers making those "micro-tasks". 
+Services such as [Amazon Mechanical Turk](https://www.mturk.com/) or [Prolific](https://www.prolific.co/) allow you to "conduct simple data validation and research", get answers on surveys, label your data... It remains quite cheap since it relies on lots of external workers making those "micro-tasks". 
 
-However, the objectivity of the workers should never be what you aim for.
+However, the objectivity of the workers should never be what you aim for, and "workers" on the platform are mostly motivated by the financial aspect of the task.
 
 ## Buying data
 
