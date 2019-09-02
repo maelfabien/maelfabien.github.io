@@ -18,7 +18,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-In previous articles such as the hit song classifier, or the [painter prediction](https://www.explorium.ai/blog/whos-the-painter/), we observed how the performance of a data science task could improve when we enrich our data. There are many reasons why you could and should think about your data enrichment, and many places you could get data from.
+In previous articles such as the hit song classifier, or the [painter prediction](https://www.explorium.ai/blog/whos-the-painter/), we observed how the performance of a data science task could be improved when we enrich our data. There are many reasons why you could and should think about your data enrichment, and many places you could get data from.
 
 Collecting new data to enrich your current one might be expensive or time-consuming. But it does not always have to be this way. In this article, we will review the most common data acquisition sources and how they can help you solve your problems.
 
