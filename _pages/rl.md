@@ -4,7 +4,7 @@ layout: single
 permalink: /rl/
 author_profile: false
 header :
-    image: "https://maelfabien.github.io/assets/images/dl_head.png"
+    image: "https://maelfabien.github.io/assets/images/rl_head.jpg"
 sidebar:
     nav: sidebar-sample
 ---
@@ -14,7 +14,7 @@ A series of articles dedicated to reinforcement learning. All codes and exercise
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-![image](https://maelfabien.github.io/assets/images/tdl_head.jpg)
+![image](https://maelfabien.github.io/assets/images/trl_head.jpg)
 
 [Introduction to Reinforcement Learning](https://maelfabien.github.io/rl/RL_1/) : An introduction to the basic building blocks of reinforcement learning.
 

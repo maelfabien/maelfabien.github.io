@@ -16,6 +16,8 @@ sidebar-sample:
     url: /ml/
   - title: "Deep Learning"
     url: /dl/
+  - title: "Reinforcement Learning"
+    url: /rl/
   - title: "Data Engineering"
     url: /bgd/
   - title: "Entrepreneurship"
