@@ -1,18 +1,13 @@
 # main links links
 main:
-
   - title: "Blog"
     url: /blog/
-
   - title: "Projects"
     url: /portfolio/
-    
   - title: "CV"
     url: https://maelfabien.github.io/assets/images/CV_MF.pdf
-
   - title: "Hire Me"
     url: https://maelfabien.github.io/form.html
-
   - title: "Search"
     url: /search/
 
