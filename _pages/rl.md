@@ -20,4 +20,6 @@ A series of articles dedicated to reinforcement learning. All codes and exercise
 
 [Markov Decision Process](https://maelfabien.github.io/rl/RL_2/) : Overview of Markov Decision Process and Bellman Equation.
 
+[Planning by Dynamic Programming](https://maelfabien.github.io/rl/RL_3/) : Introduction to Dynamic Programming, including Policy and Value Iteration.
+
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
