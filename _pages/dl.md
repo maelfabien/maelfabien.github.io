@@ -54,6 +54,8 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 [Few-Shot Text Classification with Human in the Loop](https://maelfabien.github.io/machinelearning/NLP_5/) : This article addresses the task of classifying texts when we have few training examples.
 
+[Improved Few Short Text Classification](https://maelfabien.github.io/machinelearning/NLP_6/) : As an extension of the previous article, I propose a method that leverages both Data Augmentation and better classifiers.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/cv_head.jpg)
