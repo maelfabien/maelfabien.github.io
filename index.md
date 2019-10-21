@@ -8,31 +8,31 @@ redirect_from:
     - /about.html
 ---
 
-My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a Data Scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/) and on Medium. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris. 
+My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a Data Scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I currently write articles about AI for [Digital Minds](https://www.digitalminds.io/), for [Explorium](https://www.explorium.ai/), for Stat4Decision[https://www.stat4decision.com/en/] and on Medium[https://medium.com/@mael.fabien]. I'm also a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, for Stat4Decision[https://www.stat4decision.com/en/] and for Dakar Insitute of Technology[https://dit.sn/].
 
-I started a freelance activity, and if you're looking for a freelance data scientist on a project, [send me a quick message](https://maelfabien.github.io/form.html).
+I started a freelance activity, and if you're looking for a freelance data scientist on a project, [send me a quick message](https://maelfabien.github.io/form.html). You can [contact me](mailto:mael.fabien@gmail.com) if you think we could work together, or if you have any question or remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf). I'm uploading on this blog some content that I'm writing in my free time. I'm trying to upload one article per week. 
 
-Please [contact me](mailto:mael.fabien@gmail.com) if you think we could work together, or if you have any question or remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf). I'm uploading on this blog some content that I'm writing in my free time. I'm trying to upload one article per week. 
-
-I started this blog on September 2018. Since then, I have published many articles. You will find here content related to my fields of interest :
+I started this blog on September 2018. You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles (over 110) I have written. You will find here content related to my fields of interest :
 - [Statistics and Machine Learning](https://maelfabien.github.io/ml/)
 - [Deep Learning](https://maelfabien.github.io/dl/)
 - [Data Engineering](https://maelfabien.github.io/bgd/)
 - [Entrepreneurship](https://maelfabien.github.io/ent/)
 - [Several Projects](https://maelfabien.github.io/projects/)
 
-I also enjoy to travel a lot and have planned a 5 months world tour for the end of 2019 (South East Asia, New Zealand, Tahiti, South America).
-
 All codes and exercises of this website are hosted on GitHub in a dedicated repository :
 
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles I have written. 
+I also enjoy to travel a lot and have planned a 4 months world tour for the end of 2019 (South East Asia, New Zealand, Tahiti, South America). Outside of Data Science, my interests are:
+- Hiking
+- Running 
+- Fitness
+- Entrepreneurship
 
-I'd like to start a Ph.D. in Machine learning related topics (continual learning, private AI, semi-supervised learning...) in 2020. 
+I'd like to start a Ph.D. in applied Machine learning related topics in 2020. 
 
-I recently started a newsletter in which I gather some cool articles I wrote on a topic, interesting Github repositories, projects, papers and more! If you want to stay in the loop, I'll try to send 1 to 2 emails per month :)
+I recently started a newsletter in which I gather some cool articles I wrote on a topic, interesting Github repositories, projects, papers and more! If you want to stay in the loop, I'll try to send 1 email per month :)
 
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
