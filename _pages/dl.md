@@ -56,6 +56,8 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 [Improved Few Short Text Classification](https://maelfabien.github.io/machinelearning/NLP_6/) : As an extension of the previous article, I propose a method that leverages both Data Augmentation and better classifiers.
 
+[Character-level LSTMs for Gender Classification from First Name](https://maelfabien.github.io/machinelearning/NLP_7/) : Implementation of the paper "Predicting the gender of Indonesian Names" on names given in France and in the US using bi-directional character-level LSTMs architecture. Achieved 90% accuracy.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/cv_head.jpg)
