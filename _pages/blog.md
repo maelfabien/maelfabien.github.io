@@ -43,23 +43,23 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
+[Character-level LSTMs to predict gender of first names](https://maelfabien.github.io/machinelearning/NLP_7/) : 90% accuracy on predictiong the gender of French and US first names.
 
-[How do Neural Networks learn?](https://maelfabien.github.io/deeplearning/feed/) : Dive into feedforward process and back-propagation.
+[NLP - Few Shot Text Classification](https://maelfabien.github.io/machinelearning/NLP_5) : Implementation of a simple paper that leverages pre-trained models for few shot text classification.
 
-[Activation functions in DL](https://maelfabien.github.io/deeplearning/act/) : An overview of the different activation functions in Deep Learning, how to implement them in Python, their advantages and disadvantages.
+[NLP - Improved Few Shot Text Classification](https://maelfabien.github.io/machinelearning/NLP_6) : Improving previous results with Data Augmentation and more complex models.
 
+[RL - Introduction to Reinforcement Learning](https://maelfabien.github.io/rl/RL_1) : An introduction to the basic building blocks of reinforcement learning.
 
-[Build a language recognition app from scratch](https://maelfabien.github.io/machinelearning/HMM_3/) : HMMs and Viterbi decoding algorithm can be used to recognize the language of a text. Let's implement this from scratch !
+[RL - Markov Decision Process](https://maelfabien.github.io/rl/RL_2/) : Overview of Markov Decision Process and Bellman Equation.
 
-[Basics of Time Series Forecasting](https://maelfabien.github.io/statistics/TimeSeries3/) : An introduction to time series forecasting with visual examples and code.
+[RL - Planning by Dynamic Programming](https://maelfabien.github.io/rl/RL_3/) : Introduction to Dynamic Programming, including Policy and Value Iteration.
 
-[Machine Learning Explainability](https://maelfabien.github.io/machinelearning/Explainability/) : In this series, I will summarize the course "Machine Learning Explaibnability" from Kaggle Learn. The full course is available [here](https://www.kaggle.com/learn/machine-learning-explainability). We'll cover permutation importance, partial dependence plots and SHAP Values.
+[NLP - I trained a Neural Network to speak like me](https://maelfabien.github.io/machinelearning/NLP_4/) : Having written over 100 articles, I trained a NN to write articles just like me.
 
-[Machine Learning Interpretability and Explainability (1/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-1/) : An introduction to interpretable models with code and examples.
+[DL - How do Neural Networks learn?](https://maelfabien.github.io/deeplearning/feed/) : Dive into feedforward process and back-propagation.
 
-[Machine Learning Interpretability and Explainability (2/2) - For explorium.ai](https://www.explorium.ai/blog/interpretability-and-explainability-part-2/) : An introduction to explainability of black-box ML models.
-
-[GridSearch vs. RandomizedSearch](https://maelfabien.github.io/machinelearning/GridRand/) : When it comes to parameter selection, you usually encounter 2 main solutions. GridSearch and RandomizedSearch. What is the main difference between these 2 techniques ? What are the pros and cons of each technique ?
+[DL - Activation functions in DL](https://maelfabien.github.io/deeplearning/act/) : An overview of the different activation functions in Deep Learning, how to implement them in Python, their advantages and disadvantages.
 
 [Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
 
