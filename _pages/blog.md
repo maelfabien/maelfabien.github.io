@@ -43,7 +43,9 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
-[Character-level LSTMs to predict gender of first names](https://maelfabien.github.io/machinelearning/NLP_7/) : 90% accuracy on predictiong the gender of French and US first names.
+[NLP - Data Augmentation in NLP](https://maelfabien.github.io/machinelearning/NLP_8/) : Details of the implementation of "Easy Data Augmentation" paper.
+
+[NLP - Character-level LSTMs to predict gender of first names](https://maelfabien.github.io/machinelearning/NLP_7/) : 90% accuracy on predictiong the gender of French and US first names.
 
 [NLP - Few Shot Text Classification](https://maelfabien.github.io/machinelearning/NLP_5) : Implementation of a simple paper that leverages pre-trained models for few shot text classification.
 
@@ -58,10 +60,6 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 [NLP - I trained a Neural Network to speak like me](https://maelfabien.github.io/machinelearning/NLP_4/) : Having written over 100 articles, I trained a NN to write articles just like me.
 
 [DL - How do Neural Networks learn?](https://maelfabien.github.io/deeplearning/feed/) : Dive into feedforward process and back-propagation.
-
-[DL - Activation functions in DL](https://maelfabien.github.io/deeplearning/act/) : An overview of the different activation functions in Deep Learning, how to implement them in Python, their advantages and disadvantages.
-
-[Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
 
 <center><a href="https://maelfabien.github.io/year-archive/#">See More</a></center>
 
