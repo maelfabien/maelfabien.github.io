@@ -16,9 +16,9 @@ I have visited some places and countries so far, and I have a 4 months travel pl
 
 I will be sharing here pictures that I take during the trip, and pictures of previous travels.
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VWuZwynxjcC3zpH3tX6cceM2D3367RfL" width="640" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VWuZwynxjcC3zpH3tX6cceM2D3367RfL" width="640" height="480" frameBorder="0"></iframe>
 
-# Greeland - 09.2016
+## Greenland - 09.2016
 
 <!-- jQuery 1.8 or later, 33 KB -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -28,6 +28,6 @@ I will be sharing here pictures that I take during the trip, and pictures of pre
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 <div class="fotorama">
-  <img src="https://s.fotorama.io/1.jpg">
-  <img src="https://s.fotorama.io/2.jpg">
+  <img src="https://drive.google.com/uc?id=1Kom1kBKj3dAI0DWKfsJqo1FqrZnH6LkR">
+  <img src="https://drive.google.com/uc?id=1qzCpEE4nAOk_prjPRq7P-NaFsmJVWwOE">
 </div>
