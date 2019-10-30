@@ -8,6 +8,8 @@ redirect_from:
     - /about.html
 ---
 
+<p style="font-size:0.5em">Current status: Data Scientist intern in Paris until November 2019.</p>
+
 My name is Maël. Welcome to my data science blog. I currently live in Paris, France, but most of my family is in Switzerland (Geneva, Lausanne, Zurich). Needless to say, I spend my life on the train between those places.
 
 I enjoy to travel a lot and have planned a 4 months world tour at the end of 2019 (South East Asia, New Zealand, Tahiti, South America) with my girlfriend. I’ll post some pictures on this blog later on. Outside of Data Science, my interests are:
