@@ -63,7 +63,7 @@ I recently launched a newsletter in which I gather some articles I wrote on a to
 
 *The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.*
 
-<br>
+<hr>
 
 This website gathered a little more than 22'000 unique visitors (Oct. 2019) since its creation. Where do other visitors come from?
 
