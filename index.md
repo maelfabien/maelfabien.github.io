@@ -1,5 +1,5 @@
 ---
-title: "Who am I?"
+title: "Welcome"
 excerpt: ""
 author_profile: true
 layout : single_index
@@ -8,9 +8,32 @@ redirect_from:
     - /about.html
 ---
 
-My name is Maël Fabien. I currently live in Paris. I have a Master in Actuarial Science (HEC Lausanne) and a Specialized Master in Data Science (Telecom Paris). I am working as a Data Scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I'm a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, for [Stat4Decision](https://www.stat4decision.com/en/) and for [Dakar Insitute of Technology](https://dit.sn/). I also write articles about AI for [Digital Minds](https://www.digitalminds.io/), [Explorium](https://www.explorium.ai/), [Stat4Decision](https://www.stat4decision.com/en/) and on [Medium](https://medium.com/@mael.fabien).
+*The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.*
 
-I started this blog on September 2018. You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles (over 110) I have written. You will find here content related to my fields of interest :
+My name is Maël. Welcome to my data science blog. I currently live in Paris, France, but most of my family is in Switzerland (Geneva, Lausanne, Zurich). Needless to say, I spend my life in the train between those places.
+
+I enjoy to travel a lot and have planned a 4 months world tour for the end of 2019 (South East Asia, New Zealand, Tahiti, South America) with my girlfriend. I'll post some pictures on this blog later on. Outside of Data Science, my interests are:
+- Sports: Hiking in Switzerland, running on the beach in Britanny, practicing Fitness/Crossfit. I used to play volleyball and have been Swiss national champion in Junior. I also used to (and still do somethimes) practice javelin. I won several times the Javelin Championship in Rhône-Alpes region in Junior (± 50 meters).
+- Animals: I have been vegetarian for close to 4 years, love animals and support some associations.
+- Reading/Learning: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don't always manage to do so.
+- Entrepreneurship: I launched a first startup project during my Master and got some money from an entrepreneurial contest in Lausanne. I was invited at the 2018 final of this contest to share my experience on stage.
+
+I have a B.Sc. in Economics, and an M.Sc. in Actuarial Science both from the University of Lausanne (HEC Faculty). I don't expect much people to know what actuarial science is, but to keep it short, it's mostly applied mathematics and statistics for the insurance sector. I worked for 6 months in an insurance company, developped a large interest for Machine Learning and programming, and joined Telecom Paris (Institut Polytechnique de Paris, France) for a Specialized Master in Data Science. I finished this degree in 2019. I'd like to start a Ph.D. in applied Machine learning related topics in March 2020. 
+
+I am working as a Data Scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I previously interned at [Veamly](https://veamly.com/) in NLP. Outside of that, I'm a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, for [Stat4Decision](https://www.stat4decision.com/en/) and for [Dakar Insitute of Technology](https://dit.sn/). I also write articles about AI for [Digital Minds](https://www.digitalminds.io/), [Explorium](https://www.explorium.ai/), [Stat4Decision](https://www.stat4decision.com/en/) and on [Medium](https://medium.com/@mael.fabien). My technical interests are:
+- Applied Machine Learning and Deep Learning
+- Statistics in general
+- Natural Language Processing
+- A bit of data engineering
+
+I started this blog on September 2018 for several reasons:
+- Writing helps me understand. Pictures and schemas too. I am trying to combine both in my articles.
+- I did most of my studies in English, although it's not my native language. This blog is a way to keep writing.
+- Data Science is moving fast. Reading about AI-related news could be a full time job. I learn best by doing projects. So I post most of them here.
+- I forget stuffs, so it's always good to have them written down in a single place.
+- If this blog can help someone else, this makes my day.
+
+You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles I have written. You will find content related to my fields of interest :
 - [Statistics and Machine Learning](https://maelfabien.github.io/ml/)
 - [Deep Learning](https://maelfabien.github.io/dl/)
 - [Reinforcement Learning](https://maelfabien.github.io/rl/)
@@ -18,22 +41,14 @@ I started this blog on September 2018. You can find [here](https://maelfabien.gi
 - [Entrepreneurship](https://maelfabien.github.io/ent/)
 - [Several Projects](https://maelfabien.github.io/projects/)
 
-All codes and exercises of this website are hosted on GitHub in a dedicated repository :
+All codes and exercises of this website are hosted on GitHub in a dedicated repository:
 
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-I also enjoy to travel a lot and have planned a 4 months world tour for the end of 2019 (South East Asia, New Zealand, Tahiti, South America). Outside of Data Science, my interests are:
-- Hiking
-- Running 
-- Fitness
-- Entrepreneurship
+You can [contact me](mailto:mael.fabien@gmail.com) if you think we could work together on an article or a project, or if you have any question / remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf). I'm uploading on this blog some content that I'm writing in my free time. I'm trying to upload one article per week. 
 
-I'd like to start a Ph.D. in applied Machine learning related topics in March 2020. 
-
-I started a freelance activity, and if you're looking for a freelance data scientist on a project, [send me a quick message](https://maelfabien.github.io/form.html). You can [contact me](mailto:mael.fabien@gmail.com) if you think we could work together, or if you have any question or remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_2019_MF.pdf). I'm uploading on this blog some content that I'm writing in my free time. I'm trying to upload one article per week. 
-
-I recently launched a newsletter in which I gather some cool articles I wrote on a topic, interesting Github repositories, projects, papers and more! If you want to stay in the loop, I'll try to send 1 email per month :)
+I recently launched a newsletter in which I gather some articles I wrote on a topic, interesting Github repositories, projects, papers and more! If you want to stay in the loop, I'll try to send 1 email per month :)
 
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
@@ -50,7 +65,9 @@ I recently launched a newsletter in which I gather some cool articles I wrote on
 
 <br>
 
-*NB: The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.*
+[LinkedIn](https://www.linkedin.com/in/mael-fabien/)
+
+This website gathered a little more than 22'000 unique visitors (Oct. 2019) since its creation. Where do other visitors come from?
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 
