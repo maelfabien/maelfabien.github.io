@@ -1,10 +1,8 @@
 ---
 layout: archive
 permalink: /blog/
-author_profile: false
+author_profile: true
 title: "By Topic"
-sidebar:
-    nav: sidebar-blog
 layouts_gallery:
   - url: https://maelfabien.github.io/ml/
     image_path: /assets/images/ml_short.png
