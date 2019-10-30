@@ -8,8 +8,6 @@ redirect_from:
     - /about.html
 ---
 
-*The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.*
-
 My name is Maël. Welcome to my data science blog. I currently live in Paris, France, but most of my family is in Switzerland (Geneva, Lausanne, Zurich). Needless to say, I spend my life in the train between those places.
 
 I enjoy to travel a lot and have planned a 4 months world tour for the end of 2019 (South East Asia, New Zealand, Tahiti, South America) with my girlfriend. I'll post some pictures on this blog later on. Outside of Data Science, my interests are:
@@ -63,9 +61,9 @@ I recently launched a newsletter in which I gather some articles I wrote on a to
 </form>
 </div>
 
-<br>
+*The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.*
 
-[LinkedIn](https://www.linkedin.com/in/mael-fabien/)
+<br>
 
 This website gathered a little more than 22'000 unique visitors (Oct. 2019) since its creation. Where do other visitors come from?
 
