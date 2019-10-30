@@ -17,7 +17,7 @@ I have visited some places and countries so far, and I have a 4 months travel pl
 
 I will be sharing here pictures that I take during the trip, and pictures of previous travels.
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VWuZwynxjcC3zpH3tX6cceM2D3367RfL" frameBorder="0"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VWuZwynxjcC3zpH3tX6cceM2D3367RfL" width="100%" height="600" frameBorder="0"></iframe>
 
 ## Greenland - 09.2016
 
