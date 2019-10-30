@@ -3,6 +3,7 @@ layout: archive
 permalink: /travel/
 author_profile: true
 title: "Travel"
+classes: wide
 ---
 
 I have visited some places and countries so far, and I have a 4 months travel planned with my girlfriend. We will leave in December 2019 and come back in March 2020. We will go to:
