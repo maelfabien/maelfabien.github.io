@@ -6,6 +6,8 @@ main:
     url: /blog/
   - title: "Projects"
     url: /portfolio/
+  - title: "Travel"
+    url: /travel/
   - title: "CV"
     url: https://maelfabien.github.io/assets/images/CV_MF.pdf
   - title: "Freelance"
