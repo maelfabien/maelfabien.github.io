@@ -62,10 +62,11 @@ layout: default
   }
 }
 
-.bottom-right {
+.centered {
   position: absolute;
-  bottom: 30px;
+  top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container {
@@ -79,10 +80,12 @@ layout: default
 <div class="container">
   <video width="100%" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline"><source src="https://maelfabien.github.io/assets/images/header.mp4" type="video/mp4"></video>
 
-  <div id="arrow-wrapper" class="bottom-right">
-    <div class="arrow-border">
-      <div class="arrow down"></div>
-      <div class='pulse'></div>
+  <div class="centered">
+    <div id="arrow-wrapper">
+      <div class="arrow-border">
+        <div class="arrow down"></div>
+        <div class='pulse'></div>
+      </div>
     </div>
   </div>
 </div>
