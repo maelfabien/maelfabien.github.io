@@ -68,12 +68,18 @@ layout: default
   left: 50%;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 </style>
 
-<div>
+<div id="container">
   <video width="100%" loop="loop" muted="" autoplay="autoplay" playsinline="playsinline"><source src="https://maelfabien.github.io/assets/images/header.mp4" type="video/mp4"></video>
 
-  <div id="arrow-wrapper">
+  <div id="arrow-wrapper" class="bottom-right">
     <div class="arrow-border">
       <div class="arrow down"></div>
       <div class='pulse'></div>
