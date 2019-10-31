@@ -111,7 +111,7 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
  
 <br>
 
-![image](https://maelfabien.github.io/assets/images/docker_head.jpg)
+![image](https://maelfabien.github.io/assets/images/docker_head.png)
 
 [Deploy a Streamlit WebApp with Docker](https://maelfabien.github.io/project/Streamlit/) : Build and run a container from a simple Named Entity Recognition web application.
 
