@@ -111,6 +111,12 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
  
 <br>
 
+![image](https://maelfabien.github.io/assets/images/docker_head.jpg)
+
+[Deploy a Streamlit WebApp with Docker](https://maelfabien.github.io/project/Streamlit/) : Build and run a container from a simple Named Entity Recognition web application.
+
+[Deploy a container on GCP](https://maelfabien.github.io/project/Streamlit2/) : Deploy the container to DockerHub and run it on GCP !
+
 ![image](https://maelfabien.github.io/assets/images/elk_head.jpg)
 
 [Introduction to the Elastic Stack](https://maelfabien.github.io/bigdata/ElasticStack/) : What is the Elastic Stack ? What are the main products and features of ELK ?
