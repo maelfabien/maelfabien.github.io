@@ -22,21 +22,21 @@ sidebar:
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-The music industry is a tough one. When you decide to produce an artist or invest in a marketing campaign for a song, there are many factors to take into account. But what if data science could help with this task? What if it could help predict whether a song is going to be a hit or not? 
+It comes as no surprise that the music industry is tough. When you decide to produce an artist or invest in a marketing campaign for a song, there are many factors to take into account. What if data science could help with this task? What if it could help predict whether a song is going to be a hit or not? 
 
-# The Context
+# Setting the stage
 
-Several articles and papers try to explain why a song became a hit, and the features these songs share. We will try to go a bit further, and build a hit song classifier. To build such a classifier, we typically will need a lot of data enrichment, since there is no single source of data that can help with such a vast task. We will use the following sources to help us build the dataset :
+There's no shortage of articles and papers trying to explain why a song became a hit, and the features hit songs share. Here, we will try to go a bit further and build a hit song classifier. To build such a classifier, we'll typically need a lot of data enrichment because there is no single source of data that can help with such a large task. 
+
+We will use the following sources to help us build the dataset:
 - Google Trends
 - Spotify 
 - Billboard
 - Genius.com
 
-We will consider the following :
-- A song is a hit if it reaches the top 10 of the most popular songs of the year
-- Otherwise, it's not a hit
+We will consider a song a hit if it reaches the top 10 of the most popular songs of the year. Otherwise, it does not count as a hit.
 
-In this two-parts article, we are going to implement the following pipeline and build our hit song classifier !
+In this two-part article, we will implement the following pipeline and build our hit song classifier!
 
 ![image](https://maelfabien.github.io/assets/images/expl5_22.png)
 
@@ -46,7 +46,7 @@ In this two-parts article, we are going to implement the following pipeline and 
 
 Let's start by checking the major trends in the music industry using [Google Trends](https://trends.google.com/).
 
-We will compare the major musical genres :
+We will compare the following musical genres:
 - Pop
 - Rock
 - Rap
@@ -55,15 +55,15 @@ We will compare the major musical genres :
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-Rap is the leading music in the world currently, and has taken over other genres such as Rock or Pop. A geographical analysis could also help us understand which countries listen to what music_
+Currently, rap is the leading music genre in the world, having taken over other genres such as rock or pop. A geographical analysis can help us understand which countries listen to what music.
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("GEO_MAP", {"comparisonItem":[{"keyword":"/m/064t9","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06by7","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/01lyv","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/03_d0","geo":"","time":"2004-01-01 2019-08-22"},{"keyword":"/m/06bxc","geo":"","time":"2004-01-01 2019-08-22"}],"category":0,"property":""}, {"exploreQuery":"date=all&q=%2Fm%2F064t9,%2Fm%2F06by7,%2Fm%2F01lyv,%2Fm%2F03_d0,%2Fm%2F06bxc","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-It seems like the US, South Africa and India are strong Rap markets, China and Indonesia are strong Pop markets, and South America is overall a great Rock market. 
+It seems like the US, South Africa and India are strong rap markets, China and Indonesia are strong pop markets, and South America is overall a great rock market. 
 
 ## Top 100
 
-We will first scrap data from the Billboard Year-End 100 singles of the year. This will be our main data source. This approach has some limits since we consider that for a given song, it will at least hit the top 100 of the world charts. However, if you are trying to sell an ML-based solution to a music label, knowing whether a song will reach the top 10 of the year or remain in the bottom of the ranking has a huge financial impact. 
+First, we will scrape data from the Billboard Year-End 100 Singles Chart. This will be our main data source. This approach has some limitations since we consider that, for any given song, it will at least hit the top 100 of the world charts. However, if you are trying to sell an ML-based solution to a music label, knowing whether a song will reach the top 10 of the year or remain at the bottom of the ranking has a huge financial impact. 
 
 The year-end chart is calculated using an inverse point system based on the weekly Billboard charts (100 points for a week at number one, 1 point for a week at number 100, etc), for every year since 1946. 
 
@@ -71,7 +71,7 @@ The 2018 Billboard Year-End of 2018 can be found on Wikipedia : [https://en.wiki
 
 ![image](https://maelfabien.github.io/assets/images/expl5_0.png)
 
-Training a classifier using data from 1946 would however make no sense since we need the data to be relevant for the prediction task. We will focus on data between 2010 and 2018, and make the assumption that the year is not a relevant feature for predicting future hits. 
+Training a classifier using data from 1946 would however make no sense since we need the data to be relevant for the prediction task. Instead, we will focus on data between 2010 and 2018, and make the assumption that the year is not a relevant feature for predicting future hits. 
 
 ## Build the dataset
 
@@ -95,7 +95,7 @@ def _handle_request(request_result):
         return soup
 ```
 
-The table to scrap is of type `table` and has the class: `wikitable sortable jquery-tablesorter`. It can be observed directly from the developer's console :
+The table to scrape is of type `table` and has the class: `wikitable sortable jquery-tablesorter`. It can be observed directly from the developer's console :
 
 ![image](https://maelfabien.github.io/assets/images/expl5_1.png)
 
@@ -155,14 +155,14 @@ df.head(n=10)
 
 ![image](https://maelfabien.github.io/assets/images/expl5_2.png)
 
-We now have many points. Some songs might be in the charts in two different years. We want to keep only the first occurrence of a song to avoid having duplicates in the table :
+We now have a good amount of data points. Some songs might be on the charts in two different years so next, we want to keep only the first occurrence of a song to avoid having duplicates in the table:
 
 ```python
 df = df.drop_duplicates(subset=["Title", "Artist"], keep="first")
 df.shape
 ```
 
-The shape of the data frame is now: `(816, 3)`. Notice that in some cases, the "Artist" column contains the featuring. We will first create a simple feature where we split the name of the artist column if the word "featuring" is present, and add a feature "featuring" that is equal to 1 if there is a featuring, and 0 elsewhere. 
+The shape of the data frame is now: `(816, 3)`. Notice that in some cases, the "Artist" column contains "featuring". We will first create a simple feature where we split the name of the artist column if the word "featuring" is present, and add a feature "featuring" that is equal to "1" if there is a featured artist, and "0" elsewhere. 
 
 ```python
 def featuring(artist):
@@ -185,7 +185,7 @@ df["Artist_Feat"] = df.apply(lambda row: featuring_substring(row['Artist']), axi
 
 ## Explore the data
 
-We can quickly explore the data to observe the most popular artists, the number of hits or the number of featurings. There is by construction an imbalance in the number of hits vs. non-hits :
+We can quickly explore the data to observe the most popular artists, the number of hits or the number of features. There is, by construction, an imbalance in the number of hits vs. non-hits :
 
 ```python
 plt.figure(figsize=(10,6))
@@ -196,9 +196,9 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_4.png)
 
-To assess the performance of a model, we will use the F1-Score, which handles imbalanced datasets by providing a harmonic average between the precision and the recall.
+To assess the performance of a model, we will use the F1-score, which handles unbalanced datasets by providing a harmonic average between the precision and the recall.
 
-Are featurings common?
+Is it common for hit songs to feature other artists?
 
 ```python
 plt.figure(figsize=(10,6))
@@ -222,11 +222,11 @@ plt.show()
 
 Drake seems to be performing well!
 
-## A first model
+## The first model
 
-Let's now build a first "benchmark" model that uses as features :
-- the fact that there is a featuring or not
-- the name of the main artist
+Now, let's build a first "benchmark" model that uses the following features :
+- If there is a featured artist or not
+- The name of the main artist
 
 This model is a naive benchmark and will rely on a simple decision tree.
 
@@ -244,7 +244,7 @@ le = LabelEncoder()
 df["Artist_Feat_Num"] = le.fit_transform(df["Artist_Feat"])
 ```
 
-Then, we split the `X` and the `y`, and create train and test sets :
+Next, we split the `X` and the `y`, and create the train and test sets:
 
 ```python
 X = df[["Artist_Feat_Num", "Featuring"]]
@@ -261,20 +261,19 @@ y_pred = dt.predict(X_test)
 f1_score(y_pred, y_test)
 ```
 
-The resulting f1 score is: `0.066`, which is low. The accuracy is close to 86% since our model tends to predict too often that the song is systematically not a hit. There is room for better data and better models. 
+The resulting F1-score is: `0.066`, which is low. The accuracy is close to 86% since our model tends to predict that the song is systematically not a hit. There is room for better data and better models. 
 
-# Data Enrichment through Spotify
+# Data enrichment through Spotify
 
-Where could we get data from? Well, popular music services like Spotify provide cool APIs that gather a lot of information on artists, albums and tracks. Using external APIs can sometimes be cumbersome. Hopefully, there is a great package called [Spotipy](https://spotipy.readthedocs.io/en/latest/#) that does most of the work for us!
+Where could we get data from? Well, popular music services like Spotify provide cool APIs that gather a lot of information on artists, albums and tracks. Using external APIs can sometimes be cumbersome. Luckily, there is a great package called [Spotipy](https://spotipy.readthedocs.io/en/latest/#) that does most of the work for us!
 
 Spotipy is available on [Github](https://github.com/plamere/spotipy). If you follow the instructions, you will simply have to :
 - Install the package via PyPI
 - Create a project from the developer's console of Spotify
 - Write down your redirect URI and TokenID
 - Configure the URI and token in the util file of the package
-- and that's it!
 
-It's pretty well explained on the setup page of Spotipy, so let's move on to the data enrichment. When using Spotipy for the first time, you are required to validate the redirect URI (I have used `http://localhost/` ). 
+Let's move on to the data enrichment. When using Spotipy for the first time, you are required to validate the redirect URI (I have used `http://localhost/` ). 
 
 ```python
 import sys
@@ -303,10 +302,10 @@ sp.trace = True # turn on tracing
 sp.trace_out = True # turn on trace out
 ```
 
-The Spotify's API has a "search" feature. Type in the name of an artist or a track (or both combined), and it returns a JSON that contains much of the relevant information needed. We will use information from several levels :
-- the artist: popularity index and the total number of followers. Notice that these values in the API are the values of today, and therefore take into account some information from the future when you compare it to a song published in 2015 for example.
-- the album: how many songs were there on the album overall, the date of the release, the number of markets it is available in
-- the song: Spotify has a number of feature pre-computed such as the speechiness, the loudness, the danceability, the duration...
+Spotify's API has a "search" feature. Type in the name of an artist or a song (or both combined), and it returns a JSON that contains much of the relevant information needed. We will use information from several levels:
+- The artist: popularity index and the total number of followers. Notice that these values in the API are the values of today, and therefore take into account some information from the future when you compare it to a song published in 2015 for example.
+- The album: how many songs were there on the album overall, the date of the release, the number of markets it is available in
+- The song: Spotify has a number of pre-computed features such as speechiness, loudness, danceability and duration.
 
 This will allow us to collect 17 features overall from the Spotify's API ! 
 
@@ -377,13 +376,13 @@ df.dropna(how='any').shape
 
 `(814,25)`
 
-For 2 of the input songs, we were not able to retrieve the information from the API. We will simply drop those observations :
+For two of the input songs, we were not able to retrieve the information from the API. We will simply drop those songs :
 
 ```python
 df = df.dropna()
 ```
 
-Not all of the features are exploitable as such. Indeed, the release date is under a date format. We initially specified that we wanted our model not to depend on the year. However, the month of release, the day of the month or even the day of the week might be relevant features.
+Not all of the features are exploitable as such. Indeed, the release date is under a date format, which cannot be used as a direct input for a predictive model. We initially specified that we wanted our model not to depend on the year. However, the month of release, the day of the month or even the day of the week might be relevant features.
 
 ```python
 df['release_date'] = pd.to_datetime(df['release_date'])
@@ -394,7 +393,7 @@ df['weekday_release'] = df['release_date'].apply(lambda x: x.weekday())
 
 ## Data Exploration
 
-We now have many features and can proceed to a further data exploration. Let's start by analyzing the features we just created related to the release date :
+We now have many features and can proceed to a further data exploration. Let's start by analyzing the features we just created in relation to the release date:
 
 ```python
 plt.figure(figsize=(12,8))
@@ -418,7 +417,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_9.png)
 
-January seems to be a popular choice, although we should probably be careful. Some missing data might be filled by default to January 1st. During the months of July and August, there are however few songs being released. Most songs are available to most markets :
+January seems to be a popular choice, although we should probably be careful. Some missing data might be filled by default to January 1st. During the months of July and August, however, there are few songs being released. Most songs are available to most markets:
 
 
 ```python
@@ -443,7 +442,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_11.png)
 
-In both cases, the popularity of the artist as defined by Spotify's API is really high. Finally, let's explore the effect of the duration on the hit songs :
+In both cases, the popularity of the artist as defined by Spotify's API is really high. Finally, let's explore the effect of duration on the hit songs:
 
 ```python
 plt.figure(figsize=(12,8))
@@ -460,9 +459,9 @@ The distribution looks quite similar in both cases.
 
 ## Same model, better data
 
-We can now build a second classifier. However, we still have a quite limited number of data points and an imbalanced dataset. Can oversampling help?
+We can now build a second classifier. However, we still have quite a limited number of data points and an unbalanced dataset. Can oversampling help?
 
-We will use the Synthetic Minority Over-sampling Technique (SMOTE). SMOTE is implemented in the package `imblearn` for Python.
+We will use the Synthetic Minority Over-Sampling Technique (SMOTE). SMOTE is implemented in the package `imblearn` for Python.
 
 ```python
 from imblearn.over_sampling import SMOTE
@@ -475,7 +474,7 @@ X_res, y_res = sm.fit_resample(X, y)
 X_train, X_test, y_train, y_test = train_test_split(X_res,y_res, test_size=0.2, random_state=42) 
 ```
 
-Lets us apply the same decision tree we used before :
+Let's apply the same decision tree we used before :
 
 ```python
 dt = DecisionTreeClassifier(max_depth=100)
@@ -484,7 +483,7 @@ y_pred = dt.predict(X_test)
 f1_score(y_pred, y_test)
 ```
 
-The F1-score reaches 83.4 %. Since the data is not imbalanced anymore, we can compute the accuracy :
+The F1-score reaches 83.4%. Since the data is not unbalanced anymore, we can compute the accuracy:
 
 ```python
 accuracy_score(y_pred, y_test)
@@ -494,7 +493,7 @@ It reaches 84%.
 
 ## Better model, better data
 
-The decision tree is a good choice for a first model to explore. However, more complex models might improve overall performance. Let's try this with a Random Forest Classifier :
+The decision tree is a good choice for a first model. However, more complex models might improve overall performance. Let's try this with a Random Forest Classifier :
 
 ```python
 from sklearn.ensemble import RandomForestClassifier
@@ -506,7 +505,7 @@ y_pred = rf.predict(X_test)
 f1_score(y_pred, y_test)
 ```
 
-The F1-Score reaches 93.3 %! The accuracy is 94.5 %. Plotting the confusion matrix helps understand the errors our classifier made :
+The F1-score reaches 93.3% and the accuracy is 94.5%. Plotting the confusion matrix helps us understand the errors our classifier made :
 
 ```python
 from sklearn.metrics import confusion_matrix
@@ -538,13 +537,11 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_14.png)
 
-The most important feature is whether there is a featuring or not. Then, the most important features are related to the release date (the famous summer hit), and the popularity of the artist. After that, we find all features related to the song itself.
+The most important feature is whether there is a featuring artist or not. Then, the most important features are related to the release date, and the popularity of the artist. After that, we find all features related to the song itself.
 
-This analysis highlights a major fact. A song is a hit if it essentially relies on a good featuring, it is released at the right moment, and the artists who release it are popular. All of this seems logical, but it's also verified empirically by our model!
+This analysis highlights something major. Essentially, a song is a hit if it has a good featured artist, is released at the right moment, and the artists who release it are popular. All of this seems logical, but it's also verified empirically by our model!
 
-So far, we have not used the lyrics. Could we further improve the model by adding the lyrics? We will explore this in the second part of the article.
-
-> **Conclusion** : So far, we have shown how a good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance. We will go a bit further in the next article and analyze the lyrics of each song.
+Next steps: could we further improve the model by adding the lyrics? We will explore this in the second part of the article.
 
 Sources and resources:
 - [SpotiPy](https://github.com/plamere/spotipy)
