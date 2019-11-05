@@ -10,8 +10,6 @@ main:
     url: /travel/
   - title: "CV"
     url: https://maelfabien.github.io/assets/images/CV_MF.pdf
-  - title: "Freelance"
-    url: https://maelfabien.github.io/form.html
   - title: "Search"
     url: /search/
 
@@ -30,8 +28,6 @@ sidebar-sample:
     url: /projects/
   - title: "CV"
     url: /cv/
-  - title: "Hire Me"
-    url: /form.html
 
 sidebar-blog:
   - title: "By Topic"
