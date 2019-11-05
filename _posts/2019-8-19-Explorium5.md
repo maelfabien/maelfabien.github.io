@@ -63,11 +63,9 @@ It seems like the US, South Africa and India are strong rap markets, China and I
 
 ## Top 100
 
-First, we will scrape data from the Billboard Year-End 100 Singles Chart. This will be our main data source. This approach has some limitations since we consider that, for any given song, it will at least hit the top 100 of the world charts. However, if you are trying to sell an ML-based solution to a music label, knowing whether a song will reach the top 10 of the year or remain at the bottom of the ranking has a huge financial impact. 
+First, we will scrape data from the [Billboard Year-End 100 Singles Chart](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018). This will be our main data source. This approach has some limitations since we consider that, for any given song in the training data, it will at least hit the top 100 of the world charts. However, if you are trying to sell an ML-based solution to a music label, knowing whether a song will reach the top 10 of the year or remain at the bottom of the ranking has a huge financial impact. 
 
 The year-end chart is calculated using an inverse point system based on the weekly Billboard charts (100 points for a week at number one, 1 point for a week at number 100, etc), for every year since 1946. 
-
-The 2018 Billboard Year-End of 2018 can be found on Wikipedia : [https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018)
 
 ![image](https://maelfabien.github.io/assets/images/expl5_0.png)
 
@@ -209,6 +207,8 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_5.png)
 
+Most hit songs feature other artists! This is an interesting point since in most albums, artists typically have 1 to 3 featurings on a total of 10 to 15 songs.
+
 Who are the most popular artists over the years?
 
 ```python
@@ -220,7 +220,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_6.png)
 
-Drake seems to be performing well!
+Some artists, like Drake or Ed Sheeran have recorded more hit songs in the time frame considered than any other artist. A song typically has more chances to become a hit if the name of one of those artists is present.
 
 ## The first model
 
@@ -417,7 +417,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_9.png)
 
-January seems to be a popular choice, although we should probably be careful. Some missing data might be filled by default to January 1st. During the months of July and August, however, there are few songs being released. Most songs are available to most markets:
+January seems to be a popular choice, although we should probably be careful. Some missing data might be filled by default to January 1st. During the months of July and August, however, there are few songs being released. On the following graph, we see that most songs are available on most markets:
 
 
 ```python
@@ -428,6 +428,8 @@ plt.show()
 ```
 
 ![image](https://maelfabien.github.io/assets/images/expl5_10.png)
+
+This seems intuitive since a song targeting a large audience has more chances to succeed. 
 
 A strong feature will probably be the popularity of the artist :
 
@@ -442,7 +444,9 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_11.png)
 
-In both cases, the popularity of the artist as defined by Spotify's API is really high. Finally, let's explore the effect of duration on the hit songs:
+In both cases, the popularity of the artist as defined by Spotify's API is really high. We however notice that the distribution of the popularity of the artist of hit songs is slightly shifted to the right. On the other hand, several songs that did not become a hit were released by artists with a popularity of less than 70. A really high popularity might be a key feature.
+
+Finally, let's explore the effect of duration on the hit songs:
 
 ```python
 plt.figure(figsize=(12,8))
@@ -455,7 +459,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_12.png)
 
-The distribution looks quite similar in both cases. 
+The distribution looks quite similar in both cases. We do not expect the duration of the song to be an important feature.
 
 ## Same model, better data
 
@@ -521,6 +525,8 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_13.png)
 
+The most common mistake is to have classified a song as a hit whereas it was not (14 cases). 
+
 We can now try to understand the output of the classifier by looking at the feature importance :
 
 ```python
@@ -542,8 +548,3 @@ The most important feature is whether there is a featuring artist or not. Then, 
 This analysis highlights something major. Essentially, a song is a hit if it has a good featured artist, is released at the right moment, and the artists who release it are popular. All of this seems logical, but it's also verified empirically by our model!
 
 Next steps: could we further improve the model by adding the lyrics? We will explore this in the second part of the article.
-
-Sources and resources:
-- [SpotiPy](https://github.com/plamere/spotipy)
-- [Billboard Ranking, Wikipedia](https://en.wikipedia.org/wiki/Billboard_Year-End_Hot_100_singles_of_2018)
-- [VADER](https://github.com/cjhutto/vaderSentiment)
