@@ -22,27 +22,27 @@ sidebar:
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-In the previous article, we explored basic models and data enrichments for our hit song classifier. In this article, we will try to push our model a little more, and improve the model performance through better data enrichment and feature engineering. First of all, let's recall the context. 
+In the first part of this two-part series, we explored basic models and data enrichments for our hit song classifier. In this article, we will try to push our model a little more by attempting to improve its performance through better data enrichment and feature engineering. 
+Before we get started, let’s recall the context.
 
-# The Context
+# The context
 
-When you decide to produce an artist or invest in a marketing campaign for a song, there are many factors to take into account. But what if data science could help with this task? What if it could help predict whether a song is going to be a hit or not? 
+There’s no shortage of articles and papers trying to explain why a song became a hit, and the features hit songs share. Here, we will try to go a bit further and build a hit song classifier. To build such a classifier, we’ll typically need a lot of data enrichment because there is no single source of data that can help with such a large task. 
 
-Several articles and papers try to explain why a song became a hit, and the features these songs share. We will try to go a bit further, and build a hit song classifier. To build such a classifier, we typically will need a lot of data enrichment, since there is no single source of data that can help with such a vast task. We will use the following sources to help us build the dataset :
+We will use the following sources to help us build the dataset:
 - Google Trends
-- Spotify 
+- Spotify
 - Billboard
 - Genius.com
 
-We will consider the following :
-- A song is a hit if it reaches the top 10 of the most trending songs of the year
-- Otherwise, it's not a hit
+We will consider a song a hit only if it reached the top 10 of the most popular songs of the year. Otherwise, it does not count as a hit.
 
-Up to now, we have been using data from the Billboard 100 most popular songs between 2010 and 2018 included. We then enriched the data using the Spotify's API. Our model achieved an accuracy of 93% on the test set.
+In part one we used data from the Billboard Year-End Hot100 Singles Chart between 2010 and 2018. We then enriched the data using Spotify’s API. Our model achieved an accuracy of 93% on the test set.
+
 
 # Data Enrichment through Genius.com
 
-Genius.com is a great resource if you are looking for song lyrics. It offers a great API, all of which is packaged in a great library called `lyricsgenius`. Start by installing the package (instructions can be found on [GitHub](https://github.com/johnwmillr/LyricsGenius)).
+[Genius.com](http://genius.com/) is a great resource if you are looking for song lyrics. It offers a great API, all of which is packaged in a great library called lyricsgenius. Start by installing the package (instructions can be found on [GitHub](https://github.com/johnwmillr/LyricsGenius)).
 
 You will have to get a token from [Genius.com developer's website](https://docs.genius.com/).
 
@@ -63,13 +63,13 @@ def lookup_lyrics(song):
         return None
 ```
 
-And create a column "lyrics" that contains the lyrics of each song. This one might take some time.
+You’ll need to create a column “lyrics” that contains the lyrics of each song. This one might take some time.
 
 ```python
 df['lyrics'] = df['lookup'].apply(lambda x: lookup_lyrics(x))
 ```
 
-Notice how some of the text is not clean and contains `\n` to denote a new line, or text between brackets to split sections :
+Notice how some of the text is not clean and contains `\n` to denote a new line or has text between brackets to split sections:
 
 ```python
 def clean_txt(song):
@@ -81,13 +81,13 @@ df['lyrics'] = df['lyrics'].apply(lambda x: clean_txt(x))
 df = df.dropna() #Drop song if we don't have lyrics
 ```
 
-Some features we could add are :
-- the length of the lyrics
-- the number of unique words used
-- the length of the lyrics without stopwords
-- the number of unique words used without stopwords
+Some features we could add are:
+- The length of the lyrics
+- The number of unique words used
+- The length of the lyrics without stopwords
+- The number of unique words used without stopwords
 
-We will use NLTK stop words list in english, but we should also consider that some of the songs of the Billboard Top 100 Year-End are not english songs.
+We will use NLTK stop words list in English. However, we should also consider that some of the songs of the Billboard Year-End Hot100 Singles Chart are not English songs.
 
 ```python
 from nltk.corpus import stopwords 
@@ -109,7 +109,7 @@ def rmv_set_stop_words(song):
     return len(list(set(song)))
 ```
 
-Then, apply this to the dataset :
+Next, apply this to the dataset :
 
 ```python
 df['len_lyrics'] = df['lyrics'].apply(lambda x: len_lyrics(x))
@@ -133,14 +133,14 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_15.png)
 
-The histogram above does not represent outliers, but a few songs count over 2000 words. On average, there are 467 words in a song and 166 unique words. This can be verified by :
+The histogram above does not represent outliers, but a few songs count over 2000 words. On average, there are 467 words in a song and 166 unique words. This can be verified by:
 
 ```python
 np.mean(df['len_lyrics'])
 np.mean(df['len_unique_lyrics'])
 ```
 
-The ratio of unique words over total words is 35%. We can also plot the distribution of this ratio :
+The ratio of unique words over total words is 35%. We can also plot the distribution of this ratio:
 
 ```python
 plt.figure(figsize=(12,8))
@@ -151,11 +151,11 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_20.png)
 
-To illustrate the diversity of the vocabulary used in the songs, we can compute the ratio of words that are not stop words over all words :
+The vast majority of the songs do not exceed 40% of unique words, which reflects the balance that hit songs reach between repetitive lyrics and a diversified vocabulary. The vast majority of To illustrate the diversity of the vocabulary used in the songs, we can compute the ratio of words that are not stop words over all words:
 
 ![image](https://maelfabien.github.io/assets/images/expl5_21.png)
 
-This is it for the count of words. Now, what are the most common words that singers use in their texts?
+When we remove the stop words, the average ratio is now much higher. A large part of the vocabulary used in those songs seems to be made of stop words.  This is it for the count of words. Now, wWhat are the most common words that singers use in their songs?
 
 ```python
 from wordcloud import WordCloud, STOPWORDS
@@ -174,11 +174,12 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_16.png)
 
-We won't spend too much time commenting that, but Yeah, Oh and Baby should definitely be on your hit-song to-do list.
+We won’t spend too much time commenting this, but “yeah,” “oh,” and “baby” should definitely be on your hit-song to-do list.
 
-## Lyrics Sentiment
+## Lyrics sentiment
 
 Should a song be positive? Negative? Neutral? To assess the positiveness of a song and its intensity, we will use Valence Aware Dictionary and sEntiment Reasoner (VADER), a lexicon and rule-based sentiment analysis tool, available on [Github](https://github.com/cjhutto/vaderSentiment). This method relies on lexicons, and has over 7500 words annotated by linguists. This kind of algorithm was used before the rise of Natural Language Processing, but can still be useful in cases like this one where we do not have labeled data or trained models for song sentiment classification.
+
 
 ```python
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -190,7 +191,7 @@ df['sentimentVaderComp'] = df['lyrics'].apply(lambda x: analyzer.polarity_scores
 df['sentimentVaderNeu'] = df['lyrics'].apply(lambda x: analyzer.polarity_scores(x)['neu'])
 ```
 
-We can also create a feature that is the difference between the positive and the negative score :
+We can also create a feature that is the difference between the positive and the negative score:
 
 ```python
 df['Vader'] = df['sentimentVaderPos'] - df['sentimentVaderNeg']
@@ -208,11 +209,11 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/expl5_17.png)
 
-On average, the sentiment is slightly positive.
+On average, the sentiment is slightly positive. Some songs have strong sentiments attached to them (i.e more than 0.5 in absolute value), but most songs have sentiments that are more controlled. This approach is however limited since it derives the average sentiment of a song by averaging the word sentiments, but does not understand the content and the context.
 
 ## New model
 
-Let us now train a new model and see whether the performance was improved. First, we create the train and test sets and apply oversampling :
+Now, let’s train a new model and see whether the performance was improved. First, we create the train and test sets and apply oversampling:
 
 ```python
 X = df.drop(["Artist_Feat", "Artist", "Artist_Feat_Num", "Title", "Hit", "lookup", "release_date", "genres", "lyrics"], axis=1)
@@ -223,7 +224,7 @@ X_res, y_res = sm.fit_resample(X, y)
 X_train, X_test, y_train, y_test = train_test_split(X_res,y_res, test_size=0.2, random_state=42) 
 ```
 
-Then, we ddefine the random forest classifier and train the model :
+Then, we define the random forest classifier and train the model:
 
 ```python
 rf=RandomForestClassifier(n_estimators=100)
@@ -257,14 +258,13 @@ The order of the important features remains the same, but the compound sentiment
 
 ## Prediction function
 
-We can build a predictor that takes as an input the name of the song and the singer, creates the features, and output the probability of being a hit. Since the algorithm has never been trained on 2019 songs, we can feed it with recent songs and observe the outcome. 
+We can build a predictor that takes the name of the song and the singer as an input, creates the features, and outputs the probability of a song being a hit. Since the algorithm has never been trained on songs from 2019, we can feed it with recent songs and observe the outcome.
 
-We can recall the whole pipeline first :
+Let’s recall the whole pipeline first:
 
 ![image](https://maelfabien.github.io/assets/images/expl5_22.png)
 
-Let's build this pipeline and try it with "Lover" by Taylor Swift, a song that was recently published when we wrote the article:
-
+Let’s build this pipeline and try it with “Lover” by Taylor Swift, a song that was recently released when we wrote this article:
 
 ```python
 def model_prediction(artist, title):
@@ -308,7 +308,7 @@ def model_prediction(artist, title):
     return y_pred
 ```
 
-We can create an interactive form in the Notebook to ask the user for the name of the artist and title of the song, and output the prediction.
+We can create an interactive form the Notebook to ask the user for the name of the artist, title of the song, and output the prediction.
 
 ```python
 from ipywidgets import widgets, interact
@@ -330,13 +330,13 @@ interact(f, artist='Taylor Swift', title='Lover')
 
 ![image](https://maelfabien.github.io/assets/images/expl5_19.png)
 
-According to our algorithm, there are only 22% chances that the song "Lover" by TaylorSwift will make it to the top 10 of the most popular songs of 2019. 
+According to our algorithm, there is only a 22% chance that the song “Lover” by Taylor Swift will make it to the top 10 of the most popular songs of 2019. And this is probably the case, since the song "only" [peaked at number 10 on Billboard Hot 100 for a few days.](https://en.wikipedia.org/wiki/Lover_(Taylor_Swift_song))
 
 # Conclusion
 
-Through this article, we illustrated the importance of external data sources for most data science problems. A good enrichment can boost the performance of your model, and relevant feature engineering can help gain additional performance. 
+Through this article, we illustrated the importance of external data sources for most data science problems. A good enrichment dataset can boost the performance of your model.  Relevant feature engineering can help gain additional performance.
 
-Here is a performance summary of the different steps of our model :
+Here is a performance summary of the different steps of our model:
 
 | Description | Model | Performance |
 | -- | -- | -- |
