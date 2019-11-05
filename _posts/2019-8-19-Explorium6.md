@@ -46,14 +46,14 @@ In part one we used data from the Billboard Year-End Hot100 Singles Chart betwee
 
 You will have to get a token from [Genius.com developer's website](https://docs.genius.com/).
 
-Start by importing the package :
+Start by importing the package:
 
 ```python
 import lyricsgenius as genius
 api = genius.Genius('YOUR_TOKEN_GOES_HERE')
 ```
 
-As before, the API has a powerful search functionality :
+As before, the API has a powerful search functionality:
 
 ```python
 def lookup_lyrics(song):
