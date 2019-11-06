@@ -9,7 +9,7 @@ main:
   - title: "Travel"
     url: /travel/
   - title: "CV"
-    url: https://maelfabien.github.io/assets/images/CV_MF.pdf
+    url: /cv/
   - title: "Search"
     url: /search/
 
