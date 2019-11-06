@@ -4,22 +4,25 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+classes: wide
 ---
 
-<span style="color:blue">[Download my resume](https://maelfabien.github.io/assets/images/CV_MF.pdf)</span>
+<span style="color:blue">[Short PDF version](https://maelfabien.github.io/assets/images/CV_MF.pdf)</span>
 
-Education
-======
-* B.S. in Economics, HEC Lausanne, 2016
-* M.Sc. in Actuarial Science, HEC Lausanne, 2018
-* M.S. in Big Data, Telecom ParisTech, 2019 (expected)
+# Education
 
-Work experience
-======
+| Degree | University | Start date | End date | GPA |
+| --- | --- | --- | --- | --- |
+| Bachelor of Science in Economics | HEC Faculty, University of Lausanne | 09.2013 | 07.2016 | 5.0/6 |
+| Master of Science in Actuarial Science | HEC Faculty, University of Lausanne | 09.2016 | 07.2018 | 5.2/6 |
+| Specialized Master in Big Data and Data Science | Telecom Paris, Institut Polytechnique de Paris | 09.2018 | 04.2020 | 17.02/20 |
 
-* 02.2019 - Present : Machine Learning Instructor
-    * VIVADATA AI Bootcamp (Paris)
-    * Duties included: Machine Learning Instructor. Gave lessons on several ML concepts, created course supports, contributed to bootcamp’s blog.
+# Experience
+
+
+- 02.2019 - Present : Machine Learning Instructor
+  - VIVADATA AI Bootcamp (Paris)
+  - Duties included: Machine Learning Instructor. Gave lessons on several ML concepts, created course supports, contributed to bootcamp’s blog.
 
 * 09.2018 - 05.2019: Deep Learning Research Project
     * Telecom ParisTech for the french employment center (Paris)
