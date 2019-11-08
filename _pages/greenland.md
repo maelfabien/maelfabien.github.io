@@ -45,11 +45,15 @@ Narsarsuaq is the only city with a valid runway in South Greenland. The airport 
 
 ![image](https://drive.google.com/uc?id=1jpSnH1EqteieemqVeLLQ7jpZNKiemKNP)
 
+We then headed to Qassiarsuk, a village of 35 inhabitants.
+
+![image](https://drive.google.com/uc?id=1QHp9_64mWK3DmWclEyk5eeNzyHjgR8O1)
+
 The only way to get to our hotel in Qassiarsuk was to take a boat. We arrived in a small hostel, the Leif Eriksson Hostel, which was by the way the only moment of the trip where we had Internet access and hot showers.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.1116313257905!2d-45.51814798380207!3d61.150793082332775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eabe01769830e49%3A0x841b7aa3e329a269!2sLeif%20Eriksson%20Hostel!5e0!3m2!1sen!2sfr!4v1573237583783!5m2!1sen!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-The landscape around the hotel is incredible.
+The landscape around the hotel is incredible. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1RGOuq2QhU5zPTnDW4ggVwsTWdGLnkm1t">
