@@ -14,9 +14,12 @@ classes: wide
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 *Dates:* 05.09.2016 - 14.09.2016
+
 *Place:* Narsarsuaq, Extreme South Greenland
 
 I had the chance to visit South Greenland during a 2 weeks treck with my grand-mother (who was aged 71 at that time!) back in 2016. In Greenlandic, the country is called "Kalaallit Nunaat" which means "land of the Kalaallit". The Kalaallit is the name of the western Intuits.
+
+We travelled with Tasermiut, an agency specialized for this kind of trip. It is mandatory to have a guide when visiting Greenland, since there is not car/boat rental and the distances are huge.
 
 Funny facts:
 - It is the largest island in the world
@@ -53,12 +56,20 @@ The only way to get to our hotel in Qassiarsuk was to take a boat. We arrived in
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1925.1116313257905!2d-45.51814798380207!3d61.150793082332775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4eabe01769830e49%3A0x841b7aa3e329a269!2sLeif%20Eriksson%20Hostel!5e0!3m2!1sen!2sfr!4v1573237583783!5m2!1sen!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-The landscape around the hotel is incredible. 
+The landscape around the hostel is incredible. 
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1RGOuq2QhU5zPTnDW4ggVwsTWdGLnkm1t">
-  <img src="https://drive.google.com/uc?id=1Ir2m7nUpz9yW31WGovUbrpBbGmwHXsS3">
+  <img src="https://drive.google.com/uc?id=1X0IxVdqhY3D_cur8DPfrPpHfZPtEkiyq">
+  <img src="https://drive.google.com/uc?id=1tbP7doz6vsp3bFCOg44-AV5HIOKM9NZ6">
+  <img src="https://drive.google.com/uc?id=1ChSblVAQk1_uiuX1WUu6r49VTDEqbb7i">
+  <img src="https://drive.google.com/uc?id=1n_G-HSmqIvSnlV7PMie1Q4Ri9u1YuzLi">
+  <img src="https://drive.google.com/uc?id=1jrlXQENw1ZmO91OAgsQXHVQslAODkD4G">
 </div>
+
+After a few walks in the neighborhood, we were off to our first boat ride!
+
+
+
 
 # Landscapes
 
