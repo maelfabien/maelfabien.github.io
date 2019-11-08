@@ -27,5 +27,3 @@ I also have a 3 months travel planned with my girlfriend. We will leave in Decem
 The itinerary we'll follow during these 3 months is more or less this one:
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xgOuMgrwGmh0KlcfbD51X1ApWNhfSV7e" width="100%" height="500" frameBorder="0"></iframe>
-
-In the sections below, I will be sharing pictures that I take during the trip, and pictures of previous travels. 
