@@ -17,7 +17,7 @@ classes: wide
 
 *Place:* Narsarsuaq, Extreme South Greenland
 
-I had the chance to visit South Greenland during a 2 weeks treck with my grand-mother (who was aged 71 at that time!) back in 2016. In Greenlandic, the country is called "Kalaallit Nunaat" which means "land of the Kalaallit". The Kalaallit is the name of the western Intuits.
+I had the chance to visit South Greenland during a 10 days treck with my grand-mother (who was aged 71 at that time!) back in 2016. In Greenlandic, the country is called "Kalaallit Nunaat" which means "land of the Kalaallit". The Kalaallit is the name of the western Intuits.
 
 We travelled with Tasermiut, an agency specialized for this kind of trip. It is mandatory to have a guide when visiting Greenland, since there is not car/boat rental and the distances are huge.
 
@@ -66,10 +66,21 @@ The landscape around the hostel is incredible.
   <img src="https://drive.google.com/uc?id=1jrlXQENw1ZmO91OAgsQXHVQslAODkD4G">
 </div>
 
-After a few walks in the neighborhood, we were off to our first boat ride!
+After a few walks in the neighborhood, we were off to a boat ride!
 
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1H1Q8aqiytZ5cYhE2FA9svhtaNUrLkWXN">
+  <img src="https://drive.google.com/uc?id=1iQQwbK_xiTAMyt76DXcrEnJ1JSbCrUeR">
+</div>
 
+Taking the boat in Greenland is often the only way to reach another village. There are really few roads, no driving licence, few cars and a very mountainous landscape. The boat offers amazing landscapes and it's really fun. However, it remains rather slow, so each ride could easily take one hour. Since the air was around 5°C on average on water, the wind made it feel like -10°C for a whole hour. We wore 2 to 3 ski jackets, 2 pair of gloves, a hat and still were cold. The guides easily handled those temperatures (and were in T-shirts most of the time).
 
+Taking the boat can also be dangerous, since there are lots of icebergs in the Fjord near Qassiarsuk. Here's a small compilation of the most impressive icebergs we saw during the 2-3 boat rides we did in the first days.
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1H1Q8aqiytZ5cYhE2FA9svhtaNUrLkWXN">
+  <img src="https://drive.google.com/uc?id=1iQQwbK_xiTAMyt76DXcrEnJ1JSbCrUeR">
+</div>
 
 # Landscapes
 
