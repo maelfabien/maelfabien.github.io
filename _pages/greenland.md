@@ -4,6 +4,9 @@ permalink: /greenland/
 author_profile: false
 title: "Greenland"
 classes: wide
+header :
+    image: "https://drive.google.com/uc?id=1vZmNCOWL10jSZikRvRejBRbQweULYz3w"
+comments : true
 ---
 
 <!-- jQuery 1.8 or later, 33 KB -->
