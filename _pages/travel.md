@@ -3,7 +3,6 @@ layout: archive
 permalink: /travel/
 author_profile: false
 title: "Travel"
-classes: wide
 layouts_gallery:
   - url: https://maelfabien.github.io/greenland/
     image_path: https://drive.google.com/uc?id=1Kom1kBKj3dAI0DWKfsJqo1FqrZnH6LkR
