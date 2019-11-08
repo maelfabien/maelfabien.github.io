@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /travel/
-author_profile: true
+author_profile: false
 title: "Travel"
 classes: wide
 layouts_gallery:
