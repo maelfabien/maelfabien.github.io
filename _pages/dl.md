@@ -40,6 +40,15 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 <br>
 
+![image](https://maelfabien.github.io/assets/images/speech_head.png)
+
+[Speaker Verification using Gaussian Mixture Model (GMM-UBM)](https://maelfabien.github.io/machinelearning/Speech1/) : Speaker biometrics is a field of Speech processing which focuses on identifying a unique speaker from several audio recorings. This can be useful for access control or suspect identification for example.
+
+[Speaker Verification using SVM-based methods](https://maelfabien.github.io/machinelearning/Speech2/#) : Another method relying on Support Vector Machines for Speaker Verification.
+
+
+<br>
+
 ![image](https://maelfabien.github.io/assets/images/nlp_head.jpg)
 
 [Introduction to Natural Language Processing](https://maelfabien.github.io/machinelearning/NLP_0/) : What is NLP ? What is it used for ?
