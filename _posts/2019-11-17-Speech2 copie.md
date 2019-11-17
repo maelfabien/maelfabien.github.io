@@ -1,0 +1,32 @@
+---
+published: true
+title: Speaker Verification using I-vector features
+collection: ml
+layout: single
+author_profile: false
+read_time: true
+categories: [machinelearning]
+excerpt : "Speech Processing"
+header :
+    overlay_image: "https://maelfabien.github.io/assets/images/lgen_head.png"
+    teaser : "https://maelfabien.github.io/assets/images/wolf.jpg"
+comments : true
+toc: true
+toc_sticky: true
+sidebar:
+    nav: sidebar-sample
+---
+
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+The motivation behind the i-vector is to provide an intermediate representation between :
+- high-dimensional GMM super-vector
+- low-dimensional MFCC features
+
+It models the total variability of both the speaker and the channel.
+
+# I-vector feature extraction
+
+I-vectors represent the GMM super-vector using a single total-variability subspace.

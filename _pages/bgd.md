@@ -34,15 +34,15 @@ I'll start by introducing really general articles :
 
 [VM's in Virtual Box](https://maelfabien.github.io/bigdata/VM) : Hadoop runs only on GNU/Linux platforms. Therefore, if you have another OS, you need to install Virtual Box. Virtual Box is a software that lets you create and run Virtual Machines.
 
-[Hadoop with the HortonWorks Sandbox (1/4)](https://maelfabien.github.io/bigdata/HortonWorks) : The Sandbox by Hortonworks is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP).
+[Hadoop with the HortonWorks Sandbox](https://maelfabien.github.io/bigdata/HortonWorks) : The Sandbox by Hortonworks is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP).
 
-[Load and move files to HDFS (2/4)](https://maelfabien.github.io/bigdata/HDFS_2) : In this article, we'll see how to download the input text file for our WordCount job, and put the file into HDFS. 
+[Load and move files to HDFS](https://maelfabien.github.io/bigdata/HDFS_2) : In this article, we'll see how to download the input text file for our WordCount job, and put the file into HDFS. 
 
-[Launch a Map Reduce Job (3/4)](https://maelfabien.github.io/bigdata/MRJob) : In this article, we'll get to the core of the exercise : launch a MapReduce WordCount job.
+[Launch a Map Reduce Job](https://maelfabien.github.io/bigdata/MRJob) : In this article, we'll get to the core of the exercise : launch a MapReduce WordCount job.
 
-[MapReduce Jobs in Python (4/4)](https://maelfabien.github.io/bigdata/MRJobP) : Using Hadoop Streaming, we can submit MapReduce Jobs in Python.
+[MapReduce Jobs in Python](https://maelfabien.github.io/bigdata/MRJobP) : Using Hadoop Streaming, we can submit MapReduce Jobs in Python.
 
-[ Execute MapReduce Job in Python locally](https://maelfabien.github.io/bigdata/MRH) : In this short article, we'll see how to execute MapReduce Jobs using Hadoop streaming locally.
+[Execute MapReduce Job in Python locally](https://maelfabien.github.io/bigdata/MRH) : In this short article, we'll see how to execute MapReduce Jobs using Hadoop streaming locally.
 
 <br>
 
@@ -52,7 +52,7 @@ I'll start by introducing really general articles :
 
 [Install Spark-Scala and PySpark](https://maelfabien.github.io/bigdata/spark2) : In this quick tutorial, we'll cover installation techniques for the 2 most popular APIs of Spark.
 
-[Discover Spark-Scala](https://maelfabien.github.io/bigdata/spark3) : A deep dive into Spark-Scala, with an introduction to Scala programming, and an illustration of the main concepts.
+[Using Spark-Scala for Machine Learning](https://maelfabien.github.io/bigdata/spark3) : A dive into Spark-Scala for Machine Learning through examples.
 
 
 <br>
@@ -70,6 +70,9 @@ I'll start by introducing really general articles :
 [TPU survival guide on Google Colaboratory](https://maelfabien.github.io/bigdata/ColabTPU/) : TPUs are changing the way we are training Neural Networks. Developped by Google, TPUs have a different way to perform matrix operations and are optimized for certain tasks. We'll cover the basics of TPU computation, and how to use them in Colab.
 
 [Using Google Drive to save and load files in Colab](https://maelfabien.github.io/bigdata/ColabDrive/) : Google Colab offers CPUs, GPUs and TPUs for free. It's a great tool for any project, but you need to have your files uploaded on Google Drive. We'll see how to interact with Google Drive from Colab.
+
+
+[Deploy a container on GCP](https://maelfabien.github.io/project/Streamlit2/) : A simple step by step tutorial on how to deploy a container on Google Cloud Platform.
 
 The articles below are part of the **Google Cloud Platform Data Engineering Specialization** on Coursera :
 
@@ -141,7 +144,7 @@ The articles below are part of the **Google Cloud Platform Data Engineering Spec
 
 [Introduction to Neo4J and Graph Databases](https://maelfabien.github.io/bigdata/Neo4J/) : Neo4J is a graph oriented database that is widely used for anomaly detection or real time recommendation. We'll cover the basics of Neo4J here.
 
-[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/) : I had the opportunity to attend the Neo4J Graph Tour 2019. 
+[A day at the Neo4J Graph Tour](https://maelfabien.github.io/bigdata/Neo4J_gt/) : I had the opportunity to attend the Neo4J Graph Tour 2019. Here's what I learned.
 
 <br>
 
