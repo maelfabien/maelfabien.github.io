@@ -63,6 +63,10 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 <br>
 
+# Twitter
+
+<a class="twitter-timeline" href="https://twitter.com/fabien_mael?ref_src=twsrc%5Etfw">Tweets by fabien_mael</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 # Medium Articles
 
 <div id="medium-widget"></div>
