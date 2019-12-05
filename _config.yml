@@ -83,7 +83,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : fabien_mael
 facebook:
   username               :
   app_id                 :
@@ -127,7 +127,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: https://twitter.com/fabien_mael
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:

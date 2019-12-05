@@ -20,7 +20,14 @@ classes: wide
 
 # Experience
 
-- 07.2019 - Present: Data Scientist Intern, [Anasen](https://www.anasen.com/)
+- 11.2019 - 12.2019: Natural Language Processing Consulting, [Orange Senegal](https://www.orange.sn/)
+  - Implemented a customer support Chatbot for Orange Senegal (Sonatel)
+  - Match user queries with a question/answer database
+  - Trained a POS-weighted Word2Vec, an LSTM-based intent classifier and deployed it on Streamlit
+  - Gave a 3 hours lecture on Advanced Natural Language Processing in front of data sience teams
+  - *Python, Natural Language Processing, Tensorflow*
+
+- 07.2019 - 11.209: Data Scientist Intern, [Anasen](https://www.anasen.com/)
   - Anasen is a Y-Combinator data platform
   - Created innovative algorithms for automated String Transformations Understanding from examples using tree-based structures and genetic algorithms. Worked with back-end and front-end engineers, R&D, end-users. 
   - *Python, Algorithm optimisation, Natural Language Processing*
@@ -109,12 +116,13 @@ detection, product pricing (MLE, robustness tests, profit testing, simulations)
   - Deep Learning frameworks (TensorFlow, Keras, PyTorch)
   - UNIX environment
 - Frequent user:
+  - Spark (PySpark, Scala)
   - SQL
   - AWS / GCP
   - Flask, HTML, CSS
   - Matlab, R
 - Used in several projects:
-  - Spark (PySpark, Scala), Hadoop
+  - Hadoop
   - Cassandra, MongoDB, Neo4J
   - Hive
   - ElasticSearch, Kibana
@@ -150,11 +158,11 @@ Articles related to Wanago :
 # Sport
 
 - Since 2015 : Fitness, Running, Hiking
-- 2013 - 2015 : Swiss National League B, Volleyball, [SSO Genève](http://www.ssovbc.ch/photos/)
-- 2012 - 2013 : Under 19 Swiss Finals, Volleyball, [Lausanne University Club](http://www.lucvolleyball.ch/page.php?id=fr3&ide=9)
+- 2013 - 2015 : Swiss National League B player, Volleyball, [SSO Genève](http://www.ssovbc.ch/photos/)
+- 2012 - 2013 : Under 19 Swiss Champion, Volleyball, [Lausanne University Club](http://www.lucvolleyball.ch/page.php?id=fr3&ide=9)
 - 2010 : Rhône-Alpes Champion (44m), [Javelin throw](http://www.prevessin-moens.fr/uploads/Journal/JP_59.pdf)
 - 2009 : Rhône-Alpes Champion (34m), [Javelin Throw](http://ainest.athle.com/asp.net/espaces.news/news.aspx?id=56871)
-- 2008 - 2010 : Handball Sport section
+- 2008 - 2010 : Handball Sport section at school
 
 # Associations
 

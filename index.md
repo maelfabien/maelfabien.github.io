@@ -8,11 +8,11 @@ redirect_from:
     - /about.html
 ---
 
-<p style="font-size:0.5em">Current status: Data Scientist intern in Paris until November 2019.</p>
+<p style="font-size:0.5em">Current status: Freelance Data Scientist in Senegal.</p>
 
 My name is Maël. Welcome to my data science blog. I currently live in Paris, France, but most of my family is in Switzerland (Geneva, Lausanne, Zurich). Needless to say, I spend my life on the train between those places.
 
-I enjoy to travel a lot and have planned a 4 months world tour at the end of 2019 (South East Asia, New Zealand, Tahiti, South America) with my girlfriend. I’ll post some pictures on this blog later on. Outside of Data Science, my interests are:
+I enjoy to travel a lot and have planned a 3 months travel at the end of 2019 (South East Asia, New Zealand, Tahiti, Chile) with my girlfriend. I’ll post some pictures on this blog later on. Outside of Data Science, my interests are:
 - Sports: Hiking in Switzerland, running on the beach in Britanny, practicing Fitness/Crossfit. I used to play volleyball and have been Swiss national champion in Junior. I also used to (and still do sometimes) practice javelin. I won several times the Javelin Championship in Rhône-Alpes region in Junior (± 50 meters).
 - Animals: I have been vegetarian for close to 4 years, love animals and support some associations.
 - Reading/Learning: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don't always manage to do so.
@@ -20,7 +20,7 @@ I enjoy to travel a lot and have planned a 4 months world tour at the end of 201
 
 I have a B.Sc. in Economics and an M.Sc. in Actuarial Science both from the University of Lausanne (HEC Faculty). I don’t expect many people to know what actuarial science is, but to keep it short, it’s mostly applied mathematics and statistics for the insurance sector. I worked for 6 months in an insurance company, developed a large interest in Machine Learning and programming, and joined Telecom Paris (Institut Polytechnique de Paris, France) for a Specialized Master in Data Science. I finished this degree in 2019. I’d like to start a Ph.D. in applied Machine learning in March 2020.
 
-I am working as a Data Scientist intern at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I previously interned at [Veamly](https://veamly.com/) in NLP. Outside of that, I'm a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, [Stat4Decision](https://www.stat4decision.com/en/) and [Dakar Insitute of Technology](https://dit.sn/). I also write articles about AI for [Digital Minds](https://www.digitalminds.io/), [Explorium](https://www.explorium.ai/), [Stat4Decision](https://www.stat4decision.com/en/) and on [Medium](https://medium.com/@mael.fabien). My technical interests are:
+I just finished an internship as a Data Scientist at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I previously interned at [Veamly](https://veamly.com/) in NLP. Outside of that, I'm a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, [Stat4Decision](https://www.stat4decision.com/en/) and [Dakar Insitute of Technology](https://dit.sn/). I also write articles about AI for [Digital Minds](https://www.digitalminds.io/), [Explorium](https://www.explorium.ai/), [Stat4Decision](https://www.stat4decision.com/en/) and on [Medium](https://medium.com/@mael.fabien). My technical interests are:
 - Applied Machine Learning and Deep Learning
 - Statistics in general
 - Natural Language Processing

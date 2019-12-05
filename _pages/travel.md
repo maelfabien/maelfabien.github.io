@@ -5,8 +5,8 @@ author_profile: false
 title: "Travel"
 layouts_gallery:
   - url: https://maelfabien.github.io/greenland/
-    image_path: https://drive.google.com/uc?id=1Kom1kBKj3dAI0DWKfsJqo1FqrZnH6LkR
-  - url: https://maelfabien.github.io/greenland/
+    image_path: https://drive.google.com/uc?id=1BJNpDooI1rQ-M_xGg2o26bR8v-aPZkzY
+  - url: https://maelfabien.github.io/senegal/
     image_path: https://drive.google.com/uc?id=1qzCpEE4nAOk_prjPRq7P-NaFsmJVWwOE
 ---
 
@@ -23,7 +23,3 @@ I also have a 3 months travel planned with my girlfriend. We will leave in Decem
 - French Polynesia
 - Easter Island
 - Santiago, Chile
-
-The itinerary we'll follow during these 3 months is more or less this one:
-
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xgOuMgrwGmh0KlcfbD51X1ApWNhfSV7e" width="100%" height="500" frameBorder="0"></iframe>
