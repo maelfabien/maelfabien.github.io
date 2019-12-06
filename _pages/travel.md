@@ -7,8 +7,9 @@ layouts_gallery:
   - url: https://maelfabien.github.io/greenland/
     image_path: https://drive.google.com/uc?id=1BJNpDooI1rQ-M_xGg2o26bR8v-aPZkzY
   - url: https://maelfabien.github.io/senegal/
-    image_path: https://drive.google.com/uc?id=18WkwD_dx96hF5G_Zj6G6tfqZSrNNV3Cwg
+    image_path: https://drive.google.com/uc?id=18WkwD_dx96hF5G_Zj6G6tfqZSrNNV3Cw
 ---
+
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
