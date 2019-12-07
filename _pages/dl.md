@@ -69,6 +69,8 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 
 [Character-level LSTMs for Gender Classification from First Name](https://maelfabien.github.io/machinelearning/NLP_7/) : Implementation of the paper "Predicting the gender of Indonesian Names" on names given in France and in the US using bi-directional character-level LSTMs architecture. Achieved 90% accuracy.
 
+[Easy Question Answering with AllenNLP](https://maelfabien.github.io/machinelearning/NLP_9/) : Understand the core concepts and create a simple example of Question Answering.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/cv_head.jpg)
@@ -86,6 +88,8 @@ A series of articles dedicated to deep learning. All codes and exercises of this
 [Convolutional Neural Networks (CNN)](https://maelfabien.github.io/deeplearning/cnn/) : CNNs changed the field of Computer Vision. How do CNNs work ? What can they be used for ?
 
 [A full guide to face detection](https://maelfabien.github.io/tutorials/face-detection/) : Face Detection using Cascade Classifier, Histogram of Oriented Gradients and Convolutional Neural Networks.
+
+[Implementing YoloV3 for Object DDetection](https://maelfabien.github.io/computervision/yolo/) : Learn how to implement YoloV3 and detect objects on your images and videos.
 
 [How to use OpenPose on macOS ?](https://maelfabien.github.io/tutorials/open-pose/) : OpenPose is a C++ / Python library for Pose Estimation. Let's see how to use it in macOS !
 
