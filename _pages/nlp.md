@@ -1,7 +1,7 @@
 ---
 title: Natural Language Processing
 layout: single
-permalink: /dl/
+permalink: /nlp/
 author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/lgen_head.png"

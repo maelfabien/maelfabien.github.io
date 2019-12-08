@@ -1,7 +1,7 @@
 ---
 title: Computer Vision
 layout: single
-permalink: /dl/
+permalink: /cv/
 author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/dl_head.png"
