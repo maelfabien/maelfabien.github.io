@@ -9,7 +9,7 @@ main:
   - title: "Travel"
     url: /travel/
   - title: "CV"
-    url: /cv/
+    url: /resume/
   - title: "Search"
     url: /search/
 

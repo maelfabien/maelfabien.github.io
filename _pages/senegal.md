@@ -1,8 +1,8 @@
 ---
 layout: archive
-permalink: /greenland/
+permalink: /senegal/
 author_profile: false
-title: "Greenland"
+title: "Senegal"
 classes: wide
 header :
     image: "https://drive.google.com/uc?id=1vZmNCOWL10jSZikRvRejBRbQweULYz3w"
@@ -22,22 +22,9 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-i_9FwCF2fju8RSWPY7H4JTQE__OZupE" width="100%" height="500" frameBorder="0"></iframe>
 
-I had the chance to visit South Greenland during a 10 days treck with my grand-mother (who was aged 71 at that time!) back in 2016. In Greenlandic, the country is called "Kalaallit Nunaat" which means "land of the Kalaallit". The Kalaallit is the name of the western Intuits.
+I had the extraordinary opportunity to spend 3 weeks in Senegal between November and December 2019. I went there to give lectures on Machine Learning for VIVADATA, an french AI bootcamp which had just opened in Dakar. I won't be talking much about work here, but mostly about what I had the chance to see.
 
-We travelled with Tasermiut, an agency specialized for this kind of trip. It is mandatory to have a guide when visiting Greenland, since there is not car/boat rental and the distances are huge.
-
-Funny facts:
-- It is the largest island in the world
-- It is part of the North American continent
-- It is politically attached to Denmark
-- It is the least densely populated region in the world (under 60'000 inhabitants)
-- Inhabitants recieve a pension from the Danish government
-- You cannot move to Greenland without marrying an Inuit
-
-Less Funny fact:
-The temperature reached over 23°C when I was then. In the night, we could expect on average between -5°C and 0°C. Due to those heat waves, the landscape was changing daily. The ice melted at a record speed. The local guide told us that some ice walls lost ground over 100 meters since the started working there, 5 years ago.
-
-We left from Reykjavic, Iceland. We only had time to explore the city before taking off. There's a funny atmosphere, it gets dark early at that time, and a good part of the economy of the city seems to be concentrated in the harbour.
+I landed around 2AM on a Friday night at the international airport of Dakar, which is about 45 minutes drive from the city center. There are no hotels near the airport, so taking a taxi is almost mandatory. Taxis will apply a general tourist fare of around 25'000 CFA, around 40€.
 
 ![image](https://drive.google.com/uc?id=19billXk6lzAI0pQMJmox-xhpJzpxG8lZ)
 
