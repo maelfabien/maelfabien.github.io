@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-<p style="font-size:0.5em">Current status: Freelance Data Scientist in Senegal.</p>
+<p style="font-size:0.5em">Current status: Traveling in South East Asia, writing articles, doing projects.</p>
 
 My name is Maël. Welcome to my data science blog. I currently live in Paris, France, but most of my family is in Switzerland (Geneva, Lausanne, Zurich). Needless to say, I spend my life on the train between those places.
 
@@ -42,6 +42,10 @@ You can find [here](https://maelfabien.github.io/year-archive/#) a list of all t
 - [Computer Vision](https://maelfabien.github.io/cv/)
 - [Entrepreneurship](https://maelfabien.github.io/ent/)
 - [Several Projects](https://maelfabien.github.io/projects/)
+
+If you have some time ahead of you, I was recently interviewed an shared my background, my experience as a young graduate, thoughts and projects...
+
+<iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
 
 All codes and exercises of this website are hosted on GitHub in a dedicated repository:
 

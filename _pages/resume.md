@@ -144,6 +144,11 @@ detection, product pricing (MLE, robustness tests, profit testing, simulations)
 
 # Press
 
+Data Science Interview:
+
+<iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
+
+
 Articles related to Wanago :
 - [Ouest France](https://www.ouest-france.fr/bretagne/chateaulin-29150/financer-son-camping-car-avec-des-jours-de-location-5261817)
 - [Campingcar Le Site](https://www.campingcarlesite.com/achat-camping-car/2378-wanago-l-ingenieux-financement-solidaire/)
