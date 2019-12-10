@@ -24,6 +24,10 @@ I have written more than 100 articles so far, so feel free to explore the differ
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
+I recently gave an interview to the excellent data science podcast: DataCast.
+
+<iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
+
 <!--End mc_embed_signup-->
 
 Want to stay in the loop ? Sign in to my newsletter and receive updates every month on my latest articles, interesting GitHub repositories, cool papers and more !

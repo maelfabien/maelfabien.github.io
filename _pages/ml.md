@@ -15,6 +15,11 @@ A series of articles dedicated to machine learning and statistics. All codes and
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 
+![image](https://maelfabien.github.io/assets/images/th_head.png)
+
+[DataCast Interview](https://maelfabien.github.io/thoughts/interview) : I recently gave an interview to DataCast, an excellent Data Science podcast. With James Le, we talked about Actuarial Science, being a young graduate, the Data industry, the Paris tech ecosystem...
+
+
 ![image](/assets/images/s_head.jpg)
 
 [Key Resources](https://maelfabien.github.io/statistics/resources/) : Some important resources to to understand the basics of statistics.
@@ -133,10 +138,5 @@ A series of articles dedicated to machine learning and statistics. All codes and
 [Introduction to Online learning](https://maelfabien.github.io/machinelearning/Online/) : Online learning is a way to process data by streaming rather than by batch. This allows much faster and simpler implementations.
 
 [Linear Classification](https://maelfabien.github.io/machinelearning/Online2/) : The perceptron has been initially developped as an Online algorithm rather than a batch algorithm. Let's dive into this first simple algorithm.
-
-
-![image](https://maelfabien.github.io/assets/images/th_head.png)
-
-Articles to come ...
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
