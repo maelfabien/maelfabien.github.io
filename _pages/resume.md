@@ -144,7 +144,7 @@ detection, product pricing (MLE, robustness tests, profit testing, simulations)
 
 # Press
 
-Data Science Interview:g
+Data Science Interview for DataCast:
 
 <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
 
