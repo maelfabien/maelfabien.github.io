@@ -45,7 +45,7 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
-[CV - Implementing YoloV3 for Object DDetection](https://maelfabien.github.io/computervision/yolo/) : Learn how to implement YoloV3 and detect objects on your images and videos.
+[CV - Implementing YoloV3 for Object Detection](https://maelfabien.github.io/computervision/yolo/) : Learn how to implement YoloV3 and detect objects on your images and videos.
 
 [NLP - Easy Question Answering with AllenNLP](https://maelfabien.github.io/machinelearning/NLP_9/) : Understand the core concepts and create a simple example of Question Answering.
 

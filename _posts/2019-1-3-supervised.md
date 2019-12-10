@@ -1,12 +1,12 @@
 ---
 published: true
-title: Supervised Learning Cheat Sheet
+title: Interview for DataCast
 collection: st
 layout: single
 author_profile: false
 read_time: true
-categories: [machinelearning]
-excerpt : "Machine Learning Basics"
+categories: [thoughts]
+excerpt : "Thoughts"
 header :
     overlay_image: "https://maelfabien.github.io/assets/images/wolf.jpg"
     teaser: "https://maelfabien.github.io/assets/images/wolf.jpg"
