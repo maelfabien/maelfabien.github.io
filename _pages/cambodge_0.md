@@ -14,17 +14,7 @@ comments : true
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-*Dernière mise à jour: 15.12.2019*
-
-**Dates:** 16.12.2019 - 26.12.2019
-
-**Lieux:** Phnom Pehn, Siem Reap, Sihanoukville, Koh Ta Kiev, Kampot
-
-<iframe src="https://www.google.com/maps/d/embed?mid=1ZMvTHjzBqcFvWcVU5IMo1c86jjo-qSs7" width="100%" height="500" frameBorder="0"></iframe>
-
 <br>
-
-# Avant le départ
 
 Cela fait maintenant des mois que nous en parlons et que nous préparons ce voyage. Deux mois et demi à l'autre bout du monde, en passant par le Cambodge, le Vietnam, Sydney, la Nouvelle-Zélande, la Polynésie française, l'Île de Paques et Santiago. Près de 50'000 kilomètres, et entre chaque étape, des déplacements en avion, en train, en bus... 
 
