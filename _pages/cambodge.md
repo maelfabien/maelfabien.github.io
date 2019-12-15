@@ -22,13 +22,21 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1ZMvTHjzBqcFvWcVU5IMo1c86jjo-qSs7" width="100%" height="500" frameBorder="0"></iframe>
 
+<br>
+
 # Avant le départ
 
-Cela fait maintenant des mois que nous en parlons et que nous préparons ce voyage. Deux mois et demi à l'autre bout du monde, en passant par le Cambodge, le Vietnam, Sydney, la Nouvelle-Zélande, la Polynésie française, l'Île de Paques et Santiago. Près de 50'000 kiléomètres, et entre chaque étape, des déplacements en avion, en train, en bus... 
+Cela fait maintenant des mois que nous en parlons et que nous préparons ce voyage. Deux mois et demi à l'autre bout du monde, en passant par le Cambodge, le Vietnam, Sydney, la Nouvelle-Zélande, la Polynésie française, l'Île de Paques et Santiago. Près de 50'000 kilomètres, et entre chaque étape, des déplacements en avion, en train, en bus... 
 
-Avant de tout lâcher pendant deux mois, il nous a fallu finir nos Masters respectifs, nos stages et autres examens. Nous avons eu la chance de trouver tous les deux des doctorats pour le 1er Mars 2020.  Après de nombreux achats de chassures de randonnées, casquettes anti-moustique, panta-shorts et autres vêtements exotiques, nous partons finalement avec 9.5 kilos chacun, bien loin de nos standards habituels... 
+Avant de tout lâcher pendant deux mois, il nous a fallu finir nos Masters respectifs, nos stages et autres examens. Nous avons eu la chance de trouver tous les deux des doctorats pour le 1er Mars 2020.  Après de nombreux achats de chassures de randonnées, casquettes anti-moustique, panta-shorts et autres vêtements à la pointe de la mode, nous partons finalement avec 9.5 kilos chacun, un record pour nous.
 
-Le Dimanche 15 Décembre 2019, jour d'anniversaire d'Eva, nous décollons pour Paris. Nous passons une nuit à Roissy avant de nous envoler pour Phnom Pehn le lendemain à 11 heures. Un vol de 13 heures nous attend entre Paris et Taipei (Taiwan, 10'000 km), une escale de 2 heures et un vol de 3 heures 40 entre Taipei et Phnom Pehn (3'500 km). Départ le dimanche à 11 heures, et arrivée mardi à midi. Un sacré périple. 
+Le Dimanche 15 Décembre 2019, jour d'anniversaire d'Eva, nous décollons pour Paris. 
 
-![image](https://drive.google.com/uc?id=1Y6IAa_GFL5Q-m6Mi8B7GIyDLexBJEQVE)
+<iframe src="https://drive.google.com/uc?id=1Y6IAa_GFL5Q-m6Mi8B7GIyDLexBJEQVE" width="100%" height="500" frameBorder="0"></iframe>
+
+Nous passons une nuit à Roissy avant de nous envoler pour Phnom Pehn le lendemain à 11 heures. Un vol de 13 heures nous attend entre Paris et Taipei (Taiwan, 10'000 km), une escale de 2 heures et un vol de 3 heures 40 entre Taipei et Phnom Pehn (3'500 km). Départ le dimanche à 11 heures, et arrivée mardi à midi. Un sacré périple. 
+
+Avant de récupérer les clés de notre Airbnb, un petit café s'impose à l'aéroport:
+
+<iframe src="https://drive.google.com/file/d/1HgT_MCVRuuXWqtHtTQ20r4tfCxcCfbof/view?usp=sharing" width="100%" height="500" frameBorder="0"></iframe>
 
