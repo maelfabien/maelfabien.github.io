@@ -1,5 +1,6 @@
 ---
 layout: archive
+permalink: /cambodge_0/
 author_profile: false
 title: "Avant le départ"
 classes: wide

@@ -1,5 +1,6 @@
 ---
 layout: archive
+permalink: /cambodge/
 author_profile: false
 title: "Cambodge"
 classes: wide
