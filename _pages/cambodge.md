@@ -30,13 +30,15 @@ Cela fait maintenant des mois que nous en parlons et que nous préparons ce voya
 
 Avant de tout lâcher pendant deux mois, il nous a fallu finir nos Masters respectifs, nos stages et autres examens. Nous avons eu la chance de trouver tous les deux des doctorats pour le 1er Mars 2020.  Après de nombreux achats de chassures de randonnées, casquettes anti-moustique, panta-shorts et autres vêtements à la pointe de la mode, nous partons finalement avec 9.5 kilos chacun, un record pour nous.
 
-Le Dimanche 15 Décembre 2019, jour d'anniversaire d'Eva, nous décollons pour Paris. 
+Le Dimanche 15 Décembre 2019, jour d'anniversaire d'Eva, nous décollons pour Paris. Nous y passerons une nuit avant le grand départ le lendemain.
 
-<iframe src="https://drive.google.com/uc?id=1Y6IAa_GFL5Q-m6Mi8B7GIyDLexBJEQVE"></iframe>
+![image](https://drive.google.com/uc?id=1Y6IAa_GFL5Q-m6Mi8B7GIyDLexBJEQVE)
 
-Nous passons une nuit à Roissy avant de nous envoler pour Phnom Pehn le lendemain à 11 heures. Un vol de 13 heures nous attend entre Paris et Taipei (Taiwan, 10'000 km), une escale de 2 heures et un vol de 3 heures 40 entre Taipei et Phnom Pehn (3'500 km). Départ le dimanche à 11 heures, et arrivée mardi à midi. Un sacré périple. 
+<!--<iframe src="https://drive.google.com/uc?id=1Y6IAa_GFL5Q-m6Mi8B7GIyDLexBJEQVE"></iframe>-->
 
-Avant de récupérer les clés de notre Airbnb, un petit café s'impose à l'aéroport:
+Avant de récupérer les clés de notre Airbnb pour la nuit, un petit café s'impose à l'aéroport:
 
-<iframe src="https://drive.google.com/uc?id=1HgT_MCVRuuXWqtHtTQ20r4tfCxcCfbof"></iframe>
+![image](https://drive.google.com/uc?id=1HgT_MCVRuuXWqtHtTQ20r4tfCxcCfbof)
+<!--<iframe src="https://drive.google.com/uc?id=1HgT_MCVRuuXWqtHtTQ20r4tfCxcCfbof"></iframe>-->
 
+Nous nous envolons pour Phnom Pehn le lendemain à 11 heures. Un vol de 13 heures nous attend entre Paris et Taipei (Taiwan, 10'000 km), une escale de 2 heures et un vol de 3 heures 40 entre Taipei et Phnom Pehn (3'500 km). Départ le dimanche à 11 heures, et arrivée mardi à midi. Un sacré périple. 
