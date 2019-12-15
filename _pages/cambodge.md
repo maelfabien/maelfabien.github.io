@@ -19,4 +19,4 @@ comments : true
 
 # Articles
 
-[Avant le départ](https://maelfabien.github.io/cambodge_0/)
+[Avant le départ](https://maelfabien.github.io/cambodge_0/): Derniers préparatifs avant le grand départ !
