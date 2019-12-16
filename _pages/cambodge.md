@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 15.12.2019*
+*Dernière mise à jour: 16.12.2019*
 
 **Dates:** 16.12.2019 - 26.12.2019
 
@@ -20,3 +20,5 @@ comments : true
 # Articles
 
 [Avant le départ](https://maelfabien.github.io/cambodge_0/): Derniers préparatifs avant le grand départ !
+
+[Le grand jour](https://maelfabien.github.io/cambodge_1/): 24 heures de vol et 25 degrés de plus. Bienvenue au Cambodge !

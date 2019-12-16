@@ -18,6 +18,8 @@ Cela fait maintenant des mois que nous en parlons et que nous préparons ce voya
 
 Avant de tout lâcher pendant deux mois, il nous a fallu finir nos Masters respectifs, nos stages et autres examens. Nous avons eu la chance de trouver tous les deux des doctorats pour le 1er Mars 2020.  Après de nombreux achats dont des chaussures de randonnées, casquettes anti-moustique, panta-shorts et autres vêtements à la pointe de la mode, nous partons finalement avec 9.5 kilos chacun, un record pour nous.
 
+![image](https://drive.google.com/uc?id=1S-ZO9IlrtR5ZBVeHMhGWw5Z1lwyxuCCQ)
+
 Le Dimanche 15 Décembre 2019, jour d'anniversaire d'Eva, nous décollons pour Paris. Nous y passerons une nuit avant le grand départ le lendemain.
 
 ![image](https://drive.google.com/uc?id=1Y6IAa_GFL5Q-m6Mi8B7GIyDLexBJEQVE)
