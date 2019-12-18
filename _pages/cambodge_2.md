@@ -32,7 +32,7 @@ Nous nous dirigons à pied à Tuol Sleng et nous faufilons au milieu du trafic.
 
 Les photos sont interdites à l'intérieur de la prison. S21, ou Tuol Sleng, était une école en centre-ville qui a par la suite abrité la terreur qu'exerçaient les Khmers Rouges envers les Khmers lors de la révolution communiste du Cambodge entre 1975 et 1979. Cette école a été utilisée comme camp de torture afin de pousser aux aveux des citoyens cambodgiens (les Khmers) qui n'étaient pas en accord avec les valeurs du parti de Pol Pot (Kampuchea démocratique), ou qui exerçaient un rôle "intellectuel" dans la société. Entre 12'000 et 20'000 citoyens furent torturés ici dans une guerre qui causa la mort de près de 3 millions de personnes. 
 
-Temoin de cette histoire si récente, deux rescapés vendent leurs ouvrages à la sortie de la prison. C'est une visite poignante d'environ 1 heure qui lève en partie le voile sur une guerre que nous ne connaissions à peine.
+Temoins de cette histoire si récente, deux rescapés vendent leurs ouvrages à la sortie de la prison. C'est une visite poignante d'environ 1 heure qui lève en partie le voile sur une guerre que nous ne connaissions à peine.
 
 # A midi
 
@@ -57,6 +57,6 @@ Le champ est encore marqué par des fosses dans lesquelles on retrouve des vête
 Afin de parfaire notre look d'aventurier, nous nous sommes rendus au Night Market pour y trouver des Sarwells. 
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1XNC6FTE0BElVShmOgD2beLQv-4UPtbYp">
   <img src="https://drive.google.com/uc?id=1iVd188a8FYVODVtSMDvL_vs5aCX76SoN">
+  <img src="https://drive.google.com/uc?id=1XNC6FTE0BElVShmOgD2beLQv-4UPtbYp">
 </div>
