@@ -22,15 +22,15 @@ Ce matin, direction l'aéroport. Chacun ses préocupations, Mael s'inquiète de 
 
 ![image](https://drive.google.com/uc?id=1U99uRmSIKfrNRtB-jwDBh_I6qt2oi0p0)
 
-Le premier vol vers Taipei (Taiwan) a duré un peu plus de 12 heures. 2 heures d'escale, et nous voilà repartis pour Phnom Penh avec un vol d'environ 4 heures. 
+Le premier vol vers Taipei (Taiwan) a duré un peu plus de 12 heures. 2 heures d'escale, et nous repartons pour Phnom Penh avec un vol d'environ 4 heures. 
 
 ![image](https://drive.google.com/uc?id=1f5a--fjP55NF25_O1jP1pbp5I4aP_XpY)
 
-Voilà maintenant plus de 24 heures que nous sommes en route. Nous nous empressons de prendre un tuk tuk pour avaler au plus vite les 40 minutes de route qui séparent l'aéroport du centre-ville où se situe notre lit douillet et la bonne douche dont on rêve. 
+Voilà maintenant plus de 24 heures que nous sommes en route. Nous nous empressons de prendre un tuk tuk pour avaler au plus vite les 40 minutes de route qui séparent l'aéroport du centre-ville où se situent notre lit douillet et la bonne douche dont nous rêvons. 
 
 ![image](https://drive.google.com/uc?id=1yNb8u4lU4FGtYwWD6WDNeeZ9glX5TjaU)
 
-Le fond de l'air est chaud, presque 35 degrés à cette heure de la journée, et bien plus humide que ce à quoi nous sommes habitués. En arrivant à la "guest house", la douche est... froide. La chambre est particulièrement petite (< 9 mètres carrés), et il n'y a qu'une fenêtre qui donne sur un couloir commun, et que nous devons donc fermer en permamnence. Pas vraiment ce que nous imaginions...
+Le fond de l'air est chaud, presque 35 degrés à cette heure de la journée, et bien plus humide que ce à quoi nous sommes habitués. En arrivant à la "guest house", la douche est... froide. La chambre est particulièrement petite (< 9 mètres carrés), et il n'y a qu'une fenêtre qui donne sur un couloir commun, et que nous devons donc fermer en permanence. Pas vraiment ce que nous imaginions...
 
 ![image](https://drive.google.com/uc?id=1bELnddMdRlPdp800Lq6zN-OmGA9J3OwY)
 
@@ -38,8 +38,54 @@ Après un rapide tour du quartier, nous finissons par se décider à changer pou
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15635.210397115354!2d104.9206548!3d11.5660045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f476a3d5c292d98!2sThe%20Billabong%20Hostel!5e0!3m2!1sen!2skh!4v1576665874117!5m2!1sen!2skh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-L'ambiance est très sympa, l'hôtel dispose même d'une piscine ! De quoi ravir Eva :)
+L'ambiance est très sympa, l'hôtel dispose même d'une piscine ! Et pour courroner le tout, il y a un choix énorme de nourriture végétarienne. Et des tartines pour Eva :)
 
 ![image](https://drive.google.com/uc?id=11mC6vNKyXGwLjmHCluy4wcSVyCd8de91)
 
-Les valises sont posées.
+Les valises sont posées et nous partons explorer la ville.
+
+# Marché central
+
+Le marché central de Phnom Penh se situe à quelques mètres à peine de notre hébergement. Il abrite diverses étales proposant notamment des montres et des bijoux garantis Made In China ( :) ), du textile ou de la nourriture. Le marché est abrité sous un immense dôme, où la chaleur y est étouffante.
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=10j37D9wWHpL_6Bo09JtG8MBXYl_cCy2V">
+  <img src="https://drive.google.com/uc?id=1LJGynx6NCzwsNmkAoVj4uLM0n9RBabWU">
+</div>
+
+# Wat Phnom
+
+Non-loin de là, Wat Phnom est un temple boudhiste au coeur de la ville. Construit au 14ème siècle, il s'agit du plus haut édifice religieux de Phnom Penh (27 mètres), très haut... en couleurs !
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1x9YDcHssQQZPRM1_dlRPYSNKo1RD2yHz">
+  <img src="https://drive.google.com/uc?id=1-uWZ_9_niLov791-kyaT17J3BCrpNm1b">
+  <img src="https://drive.google.com/uc?id=17FFB1vCl-mBuhJdqdUhJv3PISzsQ75Nt">
+</div>
+
+# Ounnalom Padoga
+
+Un des plus grands temps, au coeur de la ville, à deux pas du palais royal. Ce temple est composé de 44 édifices.
+
+![image](https://drive.google.com/uc?id=1KocfLH4SloNKdbS0BCdG8vM2qD4jVePw)
+
+# Palais royal
+
+Nous n'avons pas eu beaucoup de chance lors de notre visite du palais royal. La porte principale était en cours de rénovation. On pouvait cependant aperçevoir les batiments à l'intérieur. C'est une place tout en contraste, où les vendeurs de rue côtoient les moines, et la culture populaire se mélange au faste du luxe.
+
+![image](https://drive.google.com/uc?id=1l3ODLIKssvLfFFM_TO-J6zPflkKwrTDO)
+
+# Croisière sur le Mékong
+
+Le palais royal est situé sur les bords du Mékong. L'occasion idéale pour embarquer dans une croisière et admirer le soleil qui se couche sur la ville illuminée. De très nombreux bateaux sont attendent les touristes, et tous effectuent le même tour: 1 heure pour 5$. Rafraichis par le vent, et nous laissant berçer par les vagues, nous en prenons plein les yeux:
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=138mr5jcPEufxY5ONe1A2FF-CLdwXYWaN">
+  <img src="https://drive.google.com/uc?id=1MRgkQbXDHkfyJLP4qrgwaDNQD6q5vEKE">
+  <img src="https://drive.google.com/uc?id=1JNZzUC0-EeDpe2yU2eaBtH0LZB-wDr0q">
+  <img src="https://drive.google.com/uc?id=1pCfk1NAq96t6s96SMBtOXTtFP4q9JSG1">
+  <img src="https://drive.google.com/uc?id=1KGq_jUDedBTxPqpMLXrAF-zAPW5ccZWE">
+  <img src="https://drive.google.com/uc?id=1Ra6-Snq6mncgdYyZHd4h2ElYEyVmQnN6">
+</div>
+
+Le repos est bien mérité, retour au bercail. La suite des aventures demain !
