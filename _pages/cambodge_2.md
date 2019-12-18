@@ -2,7 +2,7 @@
 layout: archive
 permalink: /cambodge_2/
 author_profile: false
-title: ""
+title: "Sur les traces des Khmers Rouges"
 classes: wide
 comments : true
 ---
@@ -17,6 +17,8 @@ comments : true
 ***Kilomètres parcourus***: *29*
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=193HcsHjY94qwbBV9QaLH_0Uz1ASo-z-M" width="100%" height="500" frameBorder="0"></iframe>
+
+Pour cette deuxième journée à Phnom Penh, nous avons choisi de mieux comprendre le passé récent des cambodgiens et de visiter le camp de torture S21 (Tuol Sleng) et les champs qui ont servi à l'exécution des Khmers (Killing Fields).
 
 # Titre
 
