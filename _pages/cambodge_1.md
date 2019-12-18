@@ -48,7 +48,7 @@ Les valises sont posées et nous partons explorer la ville à pieds (il faut bie
 
 La première chose qui nous saute aux yeux, c'est l'absence de pietons. Tout le monde se déplace en scooter, en tuk tuk ou en voiture (qui sont d'ailleurs bien plus grosses que les modèles européens). Le trafic est dense, et nous serions bien incapables de conduire dans ces conditions.
 
-<iframe width="100%" height="315" src="https://drive.google.com/uc?id=1Ocn8n1CtEi2OnM_oJ8ybL32bwZhZVZsp" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/yOFAuTVYee8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Marché central
 
