@@ -18,9 +18,14 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=193HcsHjY94qwbBV9QaLH_0Uz1ASo-z-M" width="100%" height="500" frameBorder="0"></iframe>
 
-Pour cette deuxième journée à Phnom Penh, nous avons choisi de mieux comprendre le passé récent des cambodgiens et de visiter le camp de torture S21 (Tuol Sleng) et les champs qui ont servi à l'exécution des Khmers (Killing Fields).
+Pour cette deuxième journée à Phnom Penh, deuxième défilé de mode:
 
-# Titre
+![image](https://drive.google.com/uc?id=1GoI7fF0eeqEvVRNUQTBWeqrYxTRzKNtw)
+
+Nous avons choisi de mieux comprendre le passé récent des cambodgiens et de visiter le camp de torture S21 (Tuol Sleng) et les champs qui ont servi à l'exécution des Khmers (Killing Fields).
+
+# S21
+
 
 ![image](https://drive.google.com/uc?id=1U99uRmSIKfrNRtB-jwDBh_I6qt2oi0p0)
 

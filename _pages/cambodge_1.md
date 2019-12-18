@@ -71,7 +71,7 @@ Non-loin de là, Wat Phnom est un temple boudhiste au coeur de la ville. Constru
 
 # Ounnalom Pagoda
 
-Un des plus grands temps, au coeur de la ville, à deux pas du palais royal. Ce temple est composé de 44 édifices.
+Un des plus grands temples, au coeur de la ville, à deux pas du palais royal. Ce temple est composé de 44 édifices.
 
 ![image](https://drive.google.com/uc?id=1KocfLH4SloNKdbS0BCdG8vM2qD4jVePw)
 
