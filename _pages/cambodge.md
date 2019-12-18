@@ -7,11 +7,11 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 16.12.2019*
+*Dernière mise à jour: 18.12.2019*
 
 **Dates:** 16.12.2019 - 26.12.2019
 
-**Lieux:** Phnom Pehn, Siem Reap, Sihanoukville, Koh Ta Kiev, Kampot
+**Lieux:** Phnom Penh, Siem Reap, Sihanoukville, Koh Ta Kiev, Kampot
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1ZMvTHjzBqcFvWcVU5IMo1c86jjo-qSs7" width="100%" height="500" frameBorder="0"></iframe>
 
@@ -21,4 +21,4 @@ comments : true
 
 [Avant le départ](https://maelfabien.github.io/cambodge_0/): Derniers préparatifs avant le grand départ !
 
-[Le grand jour](https://maelfabien.github.io/cambodge_1/): 24 heures de vol et 25 degrés de plus. Bienvenue au Cambodge !
+[Le grand jour](https://maelfabien.github.io/cambodge_1/): 24 heures de vol et 25 degrés de plus. Direction Phnom Penh !
