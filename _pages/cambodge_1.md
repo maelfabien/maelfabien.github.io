@@ -42,7 +42,13 @@ L'ambiance est très sympa, l'hôtel dispose même d'une piscine ! Et pour courr
 
 ![image](https://drive.google.com/uc?id=11mC6vNKyXGwLjmHCluy4wcSVyCd8de91)
 
-Les valises sont posées et nous partons explorer la ville.
+Les valises sont posées et nous partons explorer la ville à pieds (il faut bien atteindre nos 8'000 pas quotidiens fixés par le docteur Gerbier). 
+
+![image](https://drive.google.com/uc?id=1ZGFR3eoYUL7bAlP1irdWcUKj8t1Yp0SQ)
+
+La première chose qui nous saute aux yeux, c'est l'absence de pietons. Tout le monde se déplace en scooter, en tuk tuk ou en voiture (qui sont d'ailleurs bien plus grosses que les modèles européens). Le trafic est dense, et nous serions bien incapables de conduire dans ces conditions.
+
+![image](https://drive.google.com/uc?id=1fzgUHD-0Fz1Bvi0sHnBqHbY-LTKI49Ut)
 
 # Marché central
 
@@ -77,7 +83,11 @@ Nous n'avons pas eu beaucoup de chance lors de notre visite du palais royal. La 
 
 # Croisière sur le Mékong
 
-Le palais royal est situé sur les bords du Mékong. L'occasion idéale pour embarquer dans une croisière et admirer le soleil qui se couche sur la ville illuminée. De très nombreux bateaux sont attendent les touristes, et tous effectuent le même tour: 1 heure pour 5$. Rafraichis par le vent, et nous laissant berçer par les vagues, nous en prenons plein les yeux:
+Le palais royal est situé sur les bords du Mékong. L'occasion idéale pour embarquer dans une croisière et admirer le soleil qui se couche sur la ville illuminée. De très nombreux bateaux sont attendent les touristes, et tous effectuent le même tour: 1 heure pour 5$. A ce prix là, nous nous offrons même un petit verre:
+
+![image](https://drive.google.com/uc?id=1kNTykUfSpT1WvtA7xkBF9nuIxk455w13)
+
+Rafraichis par le vent, et nous laissant berçer par les vagues, nous en prenons plein les yeux:
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=138mr5jcPEufxY5ONe1A2FF-CLdwXYWaN">
