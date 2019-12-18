@@ -48,11 +48,11 @@ Les valises sont posées et nous partons explorer la ville à pieds (il faut bie
 
 La première chose qui nous saute aux yeux, c'est l'absence de pietons. Tout le monde se déplace en scooter, en tuk tuk ou en voiture (qui sont d'ailleurs bien plus grosses que les modèles européens). Le trafic est dense, et nous serions bien incapables de conduire dans ces conditions.
 
-![image](https://drive.google.com/uc?id=1fzgUHD-0Fz1Bvi0sHnBqHbY-LTKI49Ut)
+<iframe width="560" height="315" src="https://drive.google.com/uc?id=1fzgUHD-0Fz1Bvi0sHnBqHbY-LTKI49Ut" frameborder="0" allowfullscreen></iframe>
 
 # Marché central
 
-Le marché central de Phnom Penh se situe à quelques mètres à peine de notre hébergement. Il abrite diverses étales proposant notamment des montres et des bijoux garantis Made In China ( :) ), du textile ou de la nourriture. Le marché est abrité sous un immense dôme, où la chaleur y est étouffante.
+Le marché central de Phnom Penh se situe à quelques mètres à peine de notre hébergement. On y trouve diverses étales proposant notamment des montres et des bijoux garantis Made In China ( :) ), du textile ou de la nourriture. Le marché est abrité sous un immense dôme, où la chaleur y est étouffante.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=10j37D9wWHpL_6Bo09JtG8MBXYl_cCy2V">
@@ -69,7 +69,7 @@ Non-loin de là, Wat Phnom est un temple boudhiste au coeur de la ville. Constru
   <img src="https://drive.google.com/uc?id=17FFB1vCl-mBuhJdqdUhJv3PISzsQ75Nt">
 </div>
 
-# Ounnalom Padoga
+# Ounnalom Pagoda
 
 Un des plus grands temps, au coeur de la ville, à deux pas du palais royal. Ce temple est composé de 44 édifices.
 
