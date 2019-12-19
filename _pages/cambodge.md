@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 18.12.2019*
+*Dernière mise à jour: 19.12.2019*
 
 **Dates:** 16.12.2019 - 26.12.2019
 
@@ -24,3 +24,5 @@ comments : true
 [Le grand jour](https://maelfabien.github.io/cambodge_1/): 24 heures de vol et 25 degrés de plus. Direction Phnom Penh !
 
 [Sur les traces des Khmers Rouges](https://maelfabien.github.io/cambodge_2/): S21 et Killing Fields, comprendre le passé du Cambodge.
+
+[Visite de Oudong et du Palais Royal](https://maelfabien.github.io/cambodge_3/): Découverte des temples de l'ancienne capitale et première petite arnaque.
