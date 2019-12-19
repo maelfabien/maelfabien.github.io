@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 permalink: /cambodge_3/
 author_profile: false
 title: "Visite des temples d'Oudong"
@@ -29,7 +29,7 @@ Pour ce dernier jour à Phnom Penh, nous réservons une excursion accompagnés d
 Notre guide, "Katchi" (en phonétique), nous récupère à 9h tapante pour notre "Full Day Tour" et nous embarque dans son beau 4x4 équipé de ceintures, un luxe comparé au tuk tuk. 
 1h10 plus tard (et 40km seulement), nous effectuons notre premier arrêt au centre de méditation du village de Oudong, situé en contre-bas de la montagne du même nom. Notre guide ne comprend peut-être pas toutes nos questions mais il apporte cependant toujours une réponse.
 
-Le centre de méditation regroupe plusieurs bâtiments abriant les activités quotidiennes des moines et des nonnes. Nous entendons d'ailleurs leurs prières en se baladant : 
+Le centre de méditation regroupe plusieurs bâtiments abritant les activités quotidiennes des moines et des nonnes. Nous entendons d'ailleurs leurs prières en se baladant : 
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/SWYLVcdhIms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
