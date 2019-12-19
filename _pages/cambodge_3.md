@@ -77,3 +77,37 @@ Fatigués:
   <img src="https://drive.google.com/uc?id=10Kc4VWwaxjZf0P2ms_Q26TdfpPRe5U0q">
   <img src="https://drive.google.com/uc?id=1DrLA3RKMaWqx3pPGRyXqCAEjHtjTux-v">
 </div>
+
+Eva pieds nus:
+
+![image](https://drive.google.com/uc?id=1TPBc02AIEn5nqdkSLNwj6izitwgMcfd6)
+
+# Midi
+
+Repas:
+
+![image](https://drive.google.com/uc?id=10IzHAAF_jxz9-4Y-7U26zzaxv6YrQWc2)
+
+Dessert:
+
+![image](https://drive.google.com/uc?id=1KtJV101hWYYKecic8PzJ2Uj9qC-teqOg)
+
+# Palais royal
+
+Palais principal:
+
+![image](https://drive.google.com/uc?id=1qhSs6ACeZWOTWvwMZO-6n0RNtDIwulSU)
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1qhSs6ACeZWOTWvwMZO-6n0RNtDIwulSU">
+  <img src="https://drive.google.com/uc?id=18zsBbuYyaaretbu-jim8ba5k2b630lXn">
+</div>
+
+Musée du gars:
+
+![image](https://drive.google.com/uc?id=1wbXfV5QxFY0f_-N2NSuX8Ey1Bmfy3a3i)
+
+Fresque:
+
+![image](https://drive.google.com/uc?id=16PD79iNddOjbylftp-WtMzVPMFFTEvq_)
+
