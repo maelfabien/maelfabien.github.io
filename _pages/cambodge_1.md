@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: travel
 permalink: /cambodge_1/
 author_profile: false
 title: "Le grand jour"

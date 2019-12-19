@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: travel
 permalink: /cambodge_3/
 author_profile: false
 title: "Visite des temples d'Oudong"

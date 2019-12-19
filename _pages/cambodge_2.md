@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: travel
 permalink: /cambodge_2/
 author_profile: false
 title: "Sur les traces des Khmers Rouges"

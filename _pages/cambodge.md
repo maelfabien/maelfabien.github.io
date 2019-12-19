@@ -21,7 +21,7 @@ comments : true
 
 [Avant le départ](https://maelfabien.github.io/cambodge_0/): Derniers préparatifs avant le grand départ.
 
-[Le grand jour](https://maelfabien.github.io/cambodge_1/): 24 heures de vol et 25 degrés de plus. Direction Phnom Penh !
+[Grand départ et visite de Phnom Penh](https://maelfabien.github.io/cambodge_1/): 24 heures de vol et 25 degrés de plus. Direction Phnom Penh !
 
 [Sur les traces des Khmers Rouges](https://maelfabien.github.io/cambodge_2/): S21 et Killing Fields, comprendre le passé du Cambodge.
 

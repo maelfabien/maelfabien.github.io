@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: travel
 permalink: /cambodge_0/
 author_profile: false
 title: "Avant le départ"
