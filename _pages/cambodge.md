@@ -26,3 +26,5 @@ comments : true
 [Sur les traces des Khmers Rouges](https://maelfabien.github.io/cambodge_2/): S21 et Killing Fields, comprendre le passé du Cambodge.
 
 [Visite de Oudong et du Palais Royal](https://maelfabien.github.io/cambodge_3/): Découverte des temples de l'ancienne capitale et première petite arnaque.
+
+[De Phnom Penh à Siem Reap](https://maelfabien.github.io/cambodge_4/): Première visite du centre de Siem Reap !

@@ -109,4 +109,5 @@ Nous quittons demain Phnom Penh pour Siem Reap. Nous retenons de Phnom Penh :
 - 3 jours suffisent pour visiter la ville et ses alentours 
 - beaucoup de déchets dans certaines rues 
 - un dépaysement total 
+- la ville connaît une expansion folle, de nombreux quartiers luxueux font leur apparition, et il y a fort à parier que la ville soit méconnaissable dans 10 ans
 
