@@ -18,11 +18,9 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TJrnxIl-9p3u_m2IUcI96RNvylqXUPZJ" width="100%" height="500" frameBorder="0"></iframe>
 
-Jour 4, look 3, rien ne change de ce côté.
-
 # De Phnom Penh à Siem Reap
 
-Aujourd'hui, nous quittons la capitale à 8h30 et nous dirigeons vers Siem Reap qui abrite les fameux temples d'Angkor. Ces 6 heures de bus nous permettent de découvrir une partie de la campagne cambodgienne. Les maisons sont montées sur pilotis, à plusieurs mètres de haut, afin de protéger des innonadations et des animaux sauvages. Des rizières occupent une grande partie du chemin.
+Aujourd'hui, nous quittons la capitale à 8h30 et nous dirigeons vers Siem Reap qui abrite les fameux temples d'Angkor. Ces 6 heures de bus nous permettent de découvrir une partie de la campagne cambodgienne. Les maisons sont montées sur pilotis, à plusieurs mètres de haut, afin de protéger des innondations et des animaux sauvages. Des rizières occupent une grande partie du chemin.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=18EOA1p_KcoT-0cRDtW3BwlP-xiZStMEf">
@@ -31,14 +29,14 @@ Aujourd'hui, nous quittons la capitale à 8h30 et nous dirigeons vers Siem Reap 
 
 # Première visite de Siem Reap
 
-Nous posons nos sacs dans notre nouveau palace, le Sleep Pod Hostel, situé dans le sud de Siem Reap. Les chambres sont spacieuses et l'hôtel dispose d'une pisicine (encore :) ). L'inspection d'Eva est effectuée, on reste là ce soir !
+Nous posons nos sacs dans notre nouveau palace, le Sleep Pod Hostel, situé dans le sud de Siem Reap. Les chambres sont spacieuses et l'hôtel dispose d'une pisicine (encore :) ). L'inspection d'Eva est effectuée, nous restons ici ce soir !
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1dRR0RT5JsyefdHW8pimQ7ZN1HReJnJDt">
   <img src="https://drive.google.com/uc?id=1wFsUAcJJA6NawqZing2FEFYc0pbJ4_5V">
 </div>
 
-Nous mangeons rapidement au restaurant végétarien du coin de la rue, le Zhu Lin Xuan House, pour 1.50$ le plat. L'après-midi devant nous, nous partons explorer le centre-ville de Siem Reap. La ville est beaucoup plus calme et plus propre que Phnom Penh. Nous nous promenons le long de la Seam Reap River, bordée d'hôtels de luxe, de petits cafés, de restaurants et de spas. Les constructions au style colonial se mêlent aux bâtiments modernes en béton, verre et bois. La ville est verte, les façades sont souvent végétalisées, le trafic est bien moins dense, on se sent respirer. Voici quelques photos en vrac du centre-ville: 
+Nous mangeons rapidement au restaurant végétarien du coin de la rue, le Zhu Lin Xuan House, pour 1.50$ le plat. Nous partons ensuite explorer le centre-ville de Siem Reap, beaucoup plus calme et plus propre que Phnom Penh. Nous nous promenons le long de la Siem Reap River, bordée d'hôtels de luxe, de petits cafés, de restaurants et de spas. Les constructions au style colonial se mêlent aux bâtiments modernes en béton, verre et bois. La ville est verte, les façades sont souvent végétalisées, le trafic est bien moins dense, on se sent respirer. Voici quelques photos en vrac du centre-ville: 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1k-E_DZtQ5aMcth63LWwlNbTCPJ0jSzWk">
@@ -73,13 +71,13 @@ Il est l'heure de rentrer prendre une bonne douche avant d'aller au restaurant. 
 
 # Banlle Vegetarian Restaurant
 
-Comment finir cette journée sans parler de nourriture? Situé au milieu d'un jardin, le Banlle Vegetarian Restaurant a su nous régaler avec du tofu croustillant, un curry traditionnel khmer et un lok lak de champignons. On mangerait n'importe quoi ici.
+Comment finir cette journée sans parler de nourriture? Situé au milieu d'un jardin, le Banlle Vegetarian Restaurant a su nous régaler avec du tofu croustillant, un curry traditionnel khmer et un lok lak de champignons.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1iHu8RBDJURrAr01WeXKmKCaYJh9-Px-W">
+  <img src="https://drive.google.com/uc?id=1RFkDFQ6vj5sItdHfApoC5NRaOdCtGwzV">
   <img src="https://drive.google.com/uc?id=17AoDUY3bMxHrJvZYCQgPbmH02bIHCLF_">
   <img src="https://drive.google.com/uc?id=12gYqQT-chQ07cajqG-YAn6sFmns9IwD7">
-  <img src="https://drive.google.com/uc?id=1RFkDFQ6vj5sItdHfApoC5NRaOdCtGwzV">
 </div>
 
 Au programme de demain, visite des temples d'Angkor :)
