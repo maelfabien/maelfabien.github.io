@@ -29,4 +29,4 @@ comments : true
 
 [De Phnom Penh à Siem Reap](https://maelfabien.github.io/cambodge_4/): Première visite du centre de Siem Reap !
 
-[Les temples d'Angkor](https://maelfabien.github.io/cambodge_5/): Visite des temples principaux d'Angkor et spectacle au cirque Phar.
+[Les temples d'Angkor](https://maelfabien.github.io/cambodge_5/): Visite des temples principaux d'Angkor et spectacle au cirque Phare.
