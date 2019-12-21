@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 20.12.2019*
+*Dernière mise à jour: 21.12.2019*
 
 **Dates:** 16.12.2019 - 26.12.2019
 
@@ -28,3 +28,5 @@ comments : true
 [Visite de Oudong et du Palais Royal](https://maelfabien.github.io/cambodge_3/): Découverte des temples de l'ancienne capitale et première petite arnaque.
 
 [De Phnom Penh à Siem Reap](https://maelfabien.github.io/cambodge_4/): Première visite du centre de Siem Reap !
+
+[Les temples d'Angkor](https://maelfabien.github.io/cambodge_5/): Visite des temples principaux d'Angkor et spectacle au cirque Phar.
