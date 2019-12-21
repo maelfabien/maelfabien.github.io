@@ -76,7 +76,7 @@ Les marches sont particulièrement raides, car c'était un moyen de se rapproche
 
 # Ta Prohm
 
-Le temple de Ta Prohm est sûrement le temple qui nous a le plus marqué. Situé au beau milieu de la jungle, les arbres environnants sont immenses et leurs racines pénètrent les fondations du temple, se fonddant ainsi dans le décor.
+Le temple de Ta Prohm est sûrement le temple qui nous a le plus marqué. Situé au beau milieu de la jungle, les arbres environnants sont immenses et leurs racines pénètrent les fondations du temple, se fondant ainsi dans le décor.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1L1g55cyCh3_p0LBNJi_U0nSe-onC7ijz">
@@ -87,6 +87,8 @@ Le temple de Ta Prohm est sûrement le temple qui nous a le plus marqué. Situé
 Il est moins fréquenté ce qui nous permet d'entendre le chant des oiseaux et de nous sentir plongés dans la forêt.
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/g7xffP0zX6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 La nature semble avoir repris ses droits.
 
