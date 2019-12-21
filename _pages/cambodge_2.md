@@ -17,6 +17,7 @@ comments : true
 ***Kilomètres parcourus***: *32*
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=193HcsHjY94qwbBV9QaLH_0Uz1ASo-z-M" width="100%" height="500" frameBorder="0"></iframe>
+<br>
 
 Pour cette deuxième journée à Phnom Penh, deuxième défilé de mode:
 

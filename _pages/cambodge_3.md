@@ -17,6 +17,7 @@ comments : true
 ***Kilomètres parcourus***: *95*
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1C6v9O-w8b1pARJ5-GE-tru_xFpVQzNVc" width="100%" height="500" frameBorder="0"></iframe>
+<br>
 
 Jour 3, look 3:
 
@@ -32,6 +33,7 @@ Notre guide, "Katchi" (en phonétique), nous récupère à 9h tapante pour notre
 Le centre de méditation regroupe plusieurs bâtiments abritant les activités quotidiennes des moines et des nonnes. Nous entendons d'ailleurs leurs prières en se baladant : 
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/SWYLVcdhIms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 Nous ne croisons aucun autre touriste lors de cette visite, aucun guide non plus car le nôtre préfère piquer un somme, tant l'atmosphère est apaisante. Grâce à nos Sarewells, nous nous fondons dans le décor :)
 

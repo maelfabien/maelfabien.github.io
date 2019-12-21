@@ -18,6 +18,8 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1TJrnxIl-9p3u_m2IUcI96RNvylqXUPZJ" width="100%" height="500" frameBorder="0"></iframe>
 
+<br>
+
 # De Phnom Penh à Siem Reap
 
 Aujourd'hui, nous quittons la capitale à 8h30 et nous dirigeons vers Siem Reap qui abrite les fameux temples d'Angkor. Ces 6 heures de bus nous permettent de découvrir une partie de la campagne cambodgienne. Les maisons sont montées sur pilotis, à plusieurs mètres de haut, afin de protéger des innondations et des animaux sauvages. Des rizières occupent une grande partie du chemin.
@@ -53,6 +55,7 @@ Nous mangeons rapidement au restaurant végétarien du coin de la rue, le Zhu Li
 La nuit tombant, nous nous dirigeons vers le Night Market et la fameuse Pub Street. Le quartier est très animé et en bonne partie pieton. 
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/zaYrZVYQEJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 On y retrouve sensiblement les mêmes étales qu'à Phnom Penh, mais également des arcades, des combats de kick-boxing...
 

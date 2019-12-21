@@ -18,16 +18,20 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=11EmoT3vG8HMVtzV-9UDV6fPcCu6giZY2" width="100%" height="500" frameBorder="0"></iframe>
 
-Nous visitons aujourd'hui les temples d'Angkor. Nous passons la journée en compagnie d'un chauffeur de tuk tuk pour 15$. Nous avons opté pour le petit tour et visiterons les temples de:
+<br>
+
+Nous visitons aujourd'hui les temples d'Angkor. Nous passons la journée en compagnie d'un chauffeur de tuk tuk pour 15 dollars. Nous avons opté pour le petit tour et visiterons les temples de:
 - Angkor Wat
 - Bayon
 - Takeo
 - Ta Prohm
 - Banteay Kdei
 
+Il est estimé que ces temples abritaient autour d'une centaine de milliers d'habitants au 12ème siècle (alors que Londres n'en comptait vraisemblablement qu'une trentaine de milliers).
+
 # Angkor Wat
 
-Notre tour commence par une visite d'Angkor Wat. Ce temple, qui est dans les faits plus une cité qu'un temple, est le plus grand monument religieux au monde. Construit au 12ème siècle, de nombreux projets de rénovation internationaux sont en cours. Nous sommes accompagnés d'un guide pendant la visite.
+Notre tour commence par une visite d'Angkor Wat, le plus fameux temple de la cité. Un guide nous permet de découvrir ce lieu qui est par ailleurs le plus grand monument religieux au monde. Construit au 12ème siècle, de nombreux projets de rénovation internationaux sont actuellement à l'oeuvre. 
 
 ![image](https://drive.google.com/uc?id=1p62A7J2arJII9dIyNNq7-In65KVPiLUa)
 
@@ -45,7 +49,7 @@ Les murs du temple sont quasiment tous ornés de gravures, témoins de la mythol
   <img src="https://drive.google.com/uc?id=18QYHolkAjga5-NooRADsdG04GGEbNImc">
 </div>
 
-Le temple aurait été construit en 37 années par environ 50'000 hommes sous le roi Suryavarman II. Le temple n'a jamais été fini, certaines gravures manquent, et on peut encore en observer les croquis sur certains murs. Les couleurs étaient bien plus vives à l'époque. Le temple était plus proche d'une couleur sable, et l'intérieur en grande partie doré. De petits trous dans le sol accueillaient de très nombreuses pières précieuses. 
+Le temple aurait été construit en 37 années par environ 50'000 hommes sous les ordres du roi Suryavarman II. Celle ci n'a jamais été aboutie, certaines gravures manquent, et nous pouvons encore en observer les croquis sur certains murs. Les couleurs étaient bien plus vives à l'époque, l'extérieur était proche d'une couleur sable et l'intérieur était partiellement doré. De petits orifices dans le sol aujourd'hui vides accueillaient autrefois des pières précieuses. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1--Y_3ik-NLh7XxQUU2Gl51oK7AxDp8UM">
@@ -56,7 +60,7 @@ Le temple aurait été construit en 37 années par environ 50'000 hommes sous le
 
 # Autres temples
 
-Les autres temples sont presque aussi impressionnants. Certains temples ont mis près de 30 ans à être découverts alors qu'ils étaient situés à quelques minutes de route à peine d'Angkor Wat.
+Les autres temples, bien que plus petits, sont tout aussi exceptionnels. Certains temples, recouverts par la végétation, ont mis près de 30 ans à être découverts alors qu'ils étaient situés à quelques minutes de route à peine d'Angkor Wat.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1Chddzi5f8VgMA_td1XtD-3GCVx-vvxET">
@@ -68,22 +72,23 @@ Les marches sont particulièrement raides, car c'était un moyen de se rapproche
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/eGQ49VriFvc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
+
 # Ta Prohm
 
-Le temple de Ta Prohm est peut être le temple qui nous a le plus marqué. Situé en plein milieu de la jungle, les arbres environnants sont absolument immenses et se mêlent aux pierres du temple. 
+Le temple de Ta Prohm est sûrement le temple qui nous a le plus marqué. Situé au beau milieu de la jungle, les arbres environnants sont immenses et leurs racines pénètrent les fondations du temple, se fonddant ainsi dans le décor.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1L1g55cyCh3_p0LBNJi_U0nSe-onC7ijz">
   <img src="https://drive.google.com/uc?id=1HtJeoAQzNmi_ARiWn5B0bASu80sJ6BK_">
-  <img src="https://drive.google.com/uc?id=1ionlzYoaCC_c42xujb8y4ayTGDHlz8eZ">
   <img src="https://drive.google.com/uc?id=1QnBO_eOcXU7B-W2Pg0ZAr_4lzcCsRf1R">
 </div>
 
-Il y a moins de touristes, et de nombreux bruits d'animaux autour:
+Il est moins fréquenté ce qui nous permet d'entendre le chant des oiseaux et de nous sentir plongés dans la forêt.
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/g7xffP0zX6k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Les arbres se fondent au décor et "absorbent" le temple:
+La nature semble avoir repris ses droits.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1FtnPZrQAyteiQ0QxDkzSB5AX4CQMTnI1">
@@ -96,7 +101,7 @@ Nous finissons notre visite avec un superbe point de vue à Srah Srang, près du
 
 # Cirque cambodgien
 
-Le soir, nous avons eu la chance d'assister au "Cambodian Circus Show". L'association qui organise ce spectacle forme près de 150 artistes et permet à 1200 enfants défavorisés d'accéder gratuitement à une éducation de qualité. Le spectacle mêle humour, cirque et gymnastique.
+Le soir, nous avons la chance d'assister au "Cambodian Circus Show". L'association qui organise ce spectacle forme près de 150 artistes et permet à 1200 enfants défavorisés d'accéder gratuitement à une éducation de qualité. Le spectacle mêle humour, cirque et performance physique.
 
 ![image](https://drive.google.com/uc?id=1cciZObGZyqdDPgorWlXoAV-8fhXNAkpJ)
 

@@ -18,6 +18,8 @@ comments : true
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_dQ4Ff_47XutKAZizcldPXbyGWkZzqp3"  width="100%" height="500" frameBorder="0"></iframe>
 
+<br>
+
 Ce matin, direction l'aéroport. Chacun ses préocupations, Mael s'inquiète de l'existence réelle des billets tandis qu'Eva ne pense qu'à soulager son ventre qui gronde. Bonne nouvelle, nous avons une place dans l'avion et nous filons jusqu'à la porte d'embarquement. Petit bémol, il n'y a malheureusement pas de tartines et Eva doit donc se contenter d'un misérable granola sur lit de fromage blanc 0% ... Bonjour l'ambiance !
 
 ![image](https://drive.google.com/uc?id=1U99uRmSIKfrNRtB-jwDBh_I6qt2oi0p0)
@@ -38,6 +40,8 @@ Après un rapide tour du quartier, nous finissons par se décider à changer pou
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15635.210397115354!2d104.9206548!3d11.5660045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f476a3d5c292d98!2sThe%20Billabong%20Hostel!5e0!3m2!1sen!2skh!4v1576665874117!5m2!1sen!2skh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
+<br>
+
 L'ambiance est très sympa, l'hôtel dispose même d'une piscine ! Et pour courroner le tout, il y a un choix énorme de nourriture végétarienne. Et des tartines pour Eva :)
 
 ![image](https://drive.google.com/uc?id=11mC6vNKyXGwLjmHCluy4wcSVyCd8de91)
@@ -49,6 +53,8 @@ Les valises sont posées et nous partons explorer la ville à pieds (il faut bie
 La première chose qui nous saute aux yeux, c'est l'absence de pietons. Tout le monde se déplace en scooter, en tuk tuk ou en voiture (qui sont d'ailleurs bien plus grosses que les modèles européens). Le trafic est dense, et nous serions bien incapables de conduire dans ces conditions.
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/yOFAuTVYee8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 # Marché central
 
