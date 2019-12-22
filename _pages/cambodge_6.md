@@ -69,7 +69,9 @@ Il est difficile d'imaginer une vie sur l'eau mais il est également difficile d
 
 # Départ pour Sihanoukville
 
-De retour sur terre, nous nous rendons à l'aéroport de Siem Reap pour notre prochaine destination. Après un court vol de 45 minutes, nous passons la nuit à Sihanoukville afin de rejoindre l'île de Koh Ta Kiev demain matin. Sihanoukville est une ville qui sert de point d'accès à de nombreux touristes pour les île du sud du cambodge. La plupart des bâtiments, hotels et casinos de Sihanoukville appartiennent à des investisseurs chinois. La ville connaît une expansion démesurée et critiquée par la presse cambodgienne, en raison notamment de la pollution générée et des constructions illégales.
+De retour sur terre, nous nous rendons à l'aéroport de Siem Reap pour notre prochaine destination. Après un court vol de 45 minutes, nous passons la nuit à Sihanoukville afin de rejoindre l'île de Koh Ta Kiev demain matin. Nous n'aurons pas d'accès internet pour les 2 prochains jours, mais nous publierons les articles lors de notre retour à la civilisation. 
+
+Nous dormons au Naia Resort, un hôtel sur le front de mer. Sihanoukville est une ville qui sert de point d'accès à de nombreux touristes pour les île du sud du cambodge. La plupart des bâtiments, hôtels et casinos de Sihanoukville appartiennent à des investisseurs chinois. La ville connaît une expansion démesurée et critiquée par la presse cambodgienne, en raison notamment de la pollution générée et des constructions illégales.
 
 Nous retenons de Siem Reap : 
 - une ville relativement propre en son centre et très calme 
