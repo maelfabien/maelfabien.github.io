@@ -22,7 +22,7 @@ comments : true
 
 # Floating Village
 
-Pour cette dernière journée à Siem Reap, nous nous rendons en tuk tuk au village flottant, un village constitue de plateformes flottantes qui se situe à l'embouchure du lac de Tonlé Sap. Près de 3'000 personnes habitent dans le village, soit environ 800 familles. 
+Pour cette dernière journée à Siem Reap, nous nous rendons en tuk tuk au village flottant, un village constitué de plateformes flottantes qui se situe à l'embouchure du lac de Tonlé Sap. Près de 3'000 personnes habitent dans le village, soit environ 800 familles. 
 
 ![image](https://drive.google.com/uc?id=15XsaIefCiVS8-z0S2oKgcgJ3e4l9M8EI)
 
@@ -38,7 +38,7 @@ On y trouve une école, une église, un temple, un mini-marché, un restaurant, 
 
 N'ayant pas pensé que la visite du village serait payante, nous n'avions qu'une trentaine de dollars en poche sans possibilité de payer en carte ou de retirer de l'argent sur place. Heureusement nous avons pu dépouiller notre chauffeur de ses derniers dollars mais il nous en manquait toujours une dizaine. En offrant toute notre fortune amassée au guichetier, celui-ci nous a fait bénéficier d'un "special discount" et nous avons pu monter à bord. 
 
-Nous nous sommes retrouvés seuls avec notre conducteur qui ne parlait pas anglais. Après avoir longé le bras de rivière sur lequel on peut aperçevoir de nombreux pêcheurs nous avons atteint le village. C'est effectivement un endroit unique et il paraît incroayble de penser que tous ses habitants ne touchent presque jamais la terre ferme.
+Nous nous sommes retrouvés seuls avec notre conducteur qui ne parlait pas anglais. Après avoir longé le bras de rivière sur lequel on peut aperçevoir de nombreux pêcheurs nous avons atteint le village. C'est effectivement un endroit unique et il paraît incroyable de penser que tous ses habitants ne touchent presque jamais la terre ferme.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1zsFwFPl18p92Dx8NgEWB4FZAVyzfDibR">
