@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 21.12.2019*
+*Dernière mise à jour: 22.12.2019*
 
 **Dates:** 16.12.2019 - 26.12.2019
 
@@ -30,3 +30,5 @@ comments : true
 [De Phnom Penh à Siem Reap](https://maelfabien.github.io/cambodge_4/): Première visite du centre de Siem Reap !
 
 [Les temples d'Angkor](https://maelfabien.github.io/cambodge_5/): Visite des temples principaux d'Angkor et spectacle au cirque Phare.
+
+[Village flottant et route vers Koh Ta Kiev](https://maelfabien.github.io/cambodge_6/): Dernière journée à Koh Ta Kiev, visite du village flottant et une nuit à Sihanoukville.
