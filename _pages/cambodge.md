@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 22.12.2019*
+*Dernière mise à jour: 25.12.2019*
 
 **Dates:** 16.12.2019 - 26.12.2019
 
@@ -32,3 +32,5 @@ comments : true
 [Les temples d'Angkor](https://maelfabien.github.io/cambodge_5/): Visite des temples principaux d'Angkor et spectacle au cirque Phare.
 
 [Village flottant et route vers Koh Ta Kiev](https://maelfabien.github.io/cambodge_6/): Dernière journée à Koh Ta Kiev, visite du village flottant et une nuit à Sihanoukville.
+
+[Un Noël (presque) romantique](https://maelfabien.github.io/cambodge_7/): Deux jours sur une île paradisiaque, et quelques aventures.
