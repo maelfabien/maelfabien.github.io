@@ -14,9 +14,9 @@ comments : true
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-***Kilomètres parcourus***: *20*
+***Kilomètres parcourus***: *24*
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iPF9xFV7E_cuj4nt6z2JuDfwCq-qrUqB" width="100%" height="500" frameBorder="0"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=15hpo68lFOyIsoDDEtfNpy_sv2Qd50gS2" width="100%" height="500" frameBorder="0"></iframe>
 
 <br>
 
@@ -57,11 +57,15 @@ Arrivés sur l'île, nous découvrons notre petit bungallow de 9 mètres carrés
 
 Equipés de nos masques et tubas, nous explorons la richesse du fond marin, et observons des poissons de toutes les couleurs, des coraux, des oursins et bien d'autres entités inconnues. L'après-midi se poursuit avec une partie de beach-volley (France vs. Suède - Pays Bas - Allemagne). Les personnes que nous rencontrons sur place voyagent depuis plusieurs semaines, mois voire années. Beaucoup d'entre eux travaillent dans le milieu de la restauration ou de l'hôtellerie.
 
-Le soleil se couche et nous dînons au restaurant de l'hôtel. Jusque-là, le cadre est idyllique et annonce un Noël innoubliable. Ce Noël l'est, innoubliable. L'intoxication alimentaire qui nous a accompagnés durant cette première nuit y est probablement pour beaucoup. Nous vous passons les détails, mais une île quasi-déserte avec une toilette pour tout l'hôtel n'est pas le meilleur endroit pour tomber malade...
+<iframe width="700" height="500" src="https://www.youtube.com/embed/DiTEET23k68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+Le soleil se couche et nous dînons au restaurant de l'hôtel. Jusque-là, le cadre est idyllique et annonce un Noël inoubliable. Ce Noël l'est, inoubliable. L'intoxication alimentaire qui nous a accompagnés durant cette première nuit y est probablement pour beaucoup. Nous vous passons les détails, mais une île quasi-déserte avec une toilette pour tout l'hôtel n'est pas le meilleur endroit pour tomber malade...
 
 Au lieu de faire du kayak et d'explorer l'île à pieds, la deuxième journée est passée à récupérer de la veille. Nous passons presque 2 heures dans l'eau, les coups de soleil d'Eva en témoignent, et parcourons Long Beach, qui est la plus grande plage de l'île. 
 
-Nous profitons tout de même d'un coucher de soleil exceptionnel le 24 au soir, et retrouvons l'appétit pour un repas de Noël léger. Même si ce n'est probablement pas ce que nous avions imaginé en arrivant. Ce Noël restera mémorable à sa façon. 
+Nous profitons tout de même d'un coucher de soleil exceptionnel le 24 au soir, et retrouvons l'appétit pour un repas de Noël léger. Même si ce n'est probablement pas ce que nous avions imaginé en arrivant, ce Noël restera mémorable à sa façon. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=14giBmTjPe9M5kzMej7Np0dnwliLhWbQ7">
@@ -70,7 +74,7 @@ Nous profitons tout de même d'un coucher de soleil exceptionnel le 24 au soir, 
   <img src="https://drive.google.com/uc?id=141e8yVYPhJE4kQUY-Uo6esL2CC59Y1F6">
 </div>
 
-Le 25 au matin, nous retrouvons Peter, un anglais d'une soixantaine d'années, aux dreadlocks improbables, déguisé en Père-Noël et train du fumer un joint sur au bar. Une image qui nous restera longtemps en tête.
+Le 25 au matin, nous retrouvons Peter, un anglais d'une soixantaine d'années, aux dreadlocks improbables, déguisé en Père-Noël et train du fumer un joint au bar. Une image qui nous restera longtemps en tête.
 
 # Retour sur le continent
 
