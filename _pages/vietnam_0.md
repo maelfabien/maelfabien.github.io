@@ -44,7 +44,7 @@ Les gratte-ciel sont nombreux dans la ville, surtout dans le district financier.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.669120469753!2d106.6964963!3d10.7601053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fb355c9da2c7158!2sHotel%20le%20Jardin%20Secret!5e0!3m2!1sen!2s!4v1577372228743!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-Frustrés de ne pas avoir eu de repas de Noël traditionnel, nous nous mettons en quête de nourriture occidentale pour ce soir. Nous tombons sur le Filthy Vegan, un restaurant tenu par un anglais qui revisite certains classiques européens et américains à la sauce vegan. Eva se laisse tenter par un burrito, et Maël par le mexican dog, un hot dog mexicain.
+Frustrés de ne pas avoir eu de repas de Noël traditionnel, et pour rattraper les kilos perdus suite à nos mésaventures, nous nous mettons en quête de nourriture occidentale pour ce soir. Nous tombons sur le Filthy Vegan, un restaurant tenu par un anglais qui revisite certains classiques européens et américains à la sauce vegan. Eva se laisse tenter par un burrito, et Maël par le mexican dog, un hot dog avec une saucisse vegan, du "Chili Non Carne" et du "Fauxmage".
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1TX0gUR15qup7YXOI72jSv7SKFMRn_Ruy">
