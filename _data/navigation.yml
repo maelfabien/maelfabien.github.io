@@ -22,6 +22,10 @@ sidebar-sample:
     url: /rl/
   - title: "Data Engineering"
     url: /bgd/
+  - title: "NLP"
+    url: /nlp/
+  - title: "Computer Vision"
+    url: /cv/
   - title: "Entrepreneurship"
     url: /ent/
   - title: "Projects"

@@ -8,6 +8,8 @@ layouts_gallery:
     image_path: https://drive.google.com/uc?id=1BJNpDooI1rQ-M_xGg2o26bR8v-aPZkzY
   - url: https://maelfabien.github.io/cambodge/
     image_path: https://drive.google.com/uc?id=1z9kJqqGGythbSpYq9Db1Xc-5Mw7s6AA_
+  - url: https://maelfabien.github.io/vietnam/
+    image_path: https://drive.google.com/uc?id=1JLbIFlfCo0QKdw9v99Gl8UCpmrd7AbCk
 ---
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}

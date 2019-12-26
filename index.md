@@ -10,9 +10,9 @@ redirect_from:
 
 <p style="font-size:0.5em">Current status: Traveling in South East Asia, writing articles, doing projects.</p>
 
-My name is Maël. Welcome to my data science blog. I currently live in Paris, France, but most of my family is in Switzerland (Geneva, Lausanne, Zurich). Needless to say, I spend my life on the train between those places.
+Welcome to my blog. My name is Maël and I'm a data scientist. I am currently traveling South East Asia, New Zealand, Tahiti and Chile with my girlfriend. I’m posting some pictures of my travel in the Travel section. 
 
-I enjoy to travel a lot and have planned a 3 months travel at the end of 2019 (South East Asia, New Zealand, Tahiti, Chile) with my girlfriend. I’ll post some pictures on this blog later on. Outside of Data Science, my interests are:
+Outside of Data Science, my interests are:
 - Sports: Hiking in Switzerland, running on the beach in Britanny, practicing Fitness/Crossfit. I used to play volleyball and have been Swiss national champion in Junior. I also used to (and still do sometimes) practice javelin. I won several times the Javelin Championship in Rhône-Alpes region in Junior (± 50 meters).
 - Animals: I have been vegetarian for close to 4 years, love animals and support some associations.
 - Reading/Learning: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don't always manage to do so.
@@ -24,6 +24,7 @@ I just finished an internship as a Data Scientist at [Anasen](https://anasen.com
 - Applied Machine Learning and Deep Learning
 - Statistics in general
 - Natural Language Processing
+- Speech Processing
 - A bit of data engineering
 
 I started this blog in September 2018 for several reasons:
@@ -77,6 +78,6 @@ This website gathered a little more than 22'000 unique visitors (Oct. 2019) sinc
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 
-This website is adapted from [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme for Jekyll. I have essentially modified some layout elements, the video layer, the pulsing arrow in the home page (I know, the second circle is not aligned, it also drives me crazy) and some widgets.
+This website is adapted from [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme for Jekyll. I have essentially modified some layout elements, the video layer, the pulsing arrow in the home page and some widgets. If you would like to use it for your own blog, feel free to fork the repository.
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
