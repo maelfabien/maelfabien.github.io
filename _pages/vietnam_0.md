@@ -1,6 +1,6 @@
 ---
 layout: travel
-permalink: /vietnam__0/
+permalink: /vietnam_0/
 author_profile: false
 title: "Arrivée à Ho Chi Minh City (Saigon)"
 classes: wide
