@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 26.12.2019*
+*Dernière mise à jour: 27.12.2019*
 
 **Dates:** 26.12.2019 - 11.01.2022
 
@@ -20,3 +20,5 @@ comments : true
 # Articles
 
 [Arrivée à Ho Chi Minh](https://maelfabien.github.io/vietnam_0/): Arrivée au Vietnam depuis le Cambodge et premières impressions.
+
+[Visite du District 1](https://maelfabien.github.io/vietnam_1/): Visite à pieds du quartier central de Ho Chi Minh City.
