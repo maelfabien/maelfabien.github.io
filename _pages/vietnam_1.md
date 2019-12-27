@@ -1,6 +1,6 @@
 ---
 layout: travel
-permalink: /vietnam_0/
+permalink: /vietnam_1/
 author_profile: false
 title: "Visite du District 1"
 classes: wide
