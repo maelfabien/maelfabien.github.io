@@ -25,33 +25,38 @@ comments : true
 Nous avons eu le temps de prendre quelques photos de notre hôtel avant de partir ce matin.
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1QdKh6AFn9cwAk1CigLbKkjkG-Ul_qmps">
   <img src="https://drive.google.com/uc?id=174UglTO2Okp3FEeYh44-GS3SkYmgE9Rt">
+  <img src="https://drive.google.com/uc?id=1QdKh6AFn9cwAk1CigLbKkjkG-Ul_qmps">
   <img src="https://drive.google.com/uc?id=1oUQEIm97anBJQbfitv680x90ERqyTZ6i">
   <img src="https://drive.google.com/uc?id=1GoxhBq6wftu6_kUSEp4d_YUXgFQW2Hk0">
   <img src="https://drive.google.com/uc?id=1-yCYySzxmPMFF3xGdjRoQA0GXKQL4RX4">
 </div>
 
-Aujourd'hui, nous visitons le District 1 de Ho Chi Minh City. Notre hotel est situé à la porte du District, ce qui nous permet de tout visiter à pieds.
+Aujourd'hui, nous visitons le District 1, considéré comme l'ultra centre de Ho Chi Minh City. Notre hôtel est situé à la porte du District, ce qui nous permet de tout visiter à pieds, si tant est que nous arrivons à traverser les intersections sains et saufs. 
 
 ## Ben Tanh Market
 
-Le marché de Ben Tanh est similaire aux marchés que nous avons pu visiter au Cambodge. On y retrouve sensiblement les mêmes étales.
+Le marché de Ben Tanh est similaire aux marchés que nous avons pu visiter au Cambodge. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=19dPE1P58bEvOtpSFDdG0Y2pR6K5y_6FL">
   <img src="https://drive.google.com/uc?id=1amybUZNpTNsP4KdkPxsK-WtuLbSUoRZM">
 </div>
 
+Nous nous promenons dans le quartier et nous relions les différents points d'intérêt qui sont la mairie, la poste centrale, le palais de la réunification ... Un programme chargé sur le papier mais qui est finalement vite accompli (surtout quand on tombe en dehors des heures de visite). 
+
 ## Mairie
 
-La mairie de Ho Chi Minh City a été construite entre 1902 et 1908 dans un style colonial.
+La mairie de Ho Chi Minh City a été construite entre 1902 et 1908 dans un style colonial. Sur la place de la mairie, Ho Chi Minh nous salue du haut de ses 7 mètres de bronze. 
 
-![image](https://drive.google.com/uc?id=1w8RrfjIArKmJrhuFN5LWarJ8Wgbqo2NR)
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1w8RrfjIArKmJrhuFN5LWarJ8Wgbqo2NR">
+  <img src="https://drive.google.com/uc?id=1XaCQWOZk8mzDwc2D0P9x8rvWeOFpeF38">
+</div>
 
 ## Poste Centrale
 
-La poste centrale a été construite à la fin du 19ème siècle lorsque le Vietnam faisait parti de l'Indochine française. A l'intérieur, on trouve des fresques murales et des cartes écrites en français.
+La poste centrale a été construite à la fin du 19ème siècle lorsque le Vietnam faisait partie de l'Indochine française. A l'intérieur, on trouve des fresques murales et des cartes montrant les frontières de l'époque écrites en français.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1QHr_-OpxT0ffMwZNo_EW_a1z-pMPFBwF">
@@ -60,7 +65,7 @@ La poste centrale a été construite à la fin du 19ème siècle lorsque le Viet
 
 ## War remnants museum
 
-Ce musée nous plonge dans la guerre du Vietnam.
+Ce musée nous permet d'en apprendre davantage sur la guerre du Vietnam, les faits historiques, le point de vue vietnamien mais également celui des anti-guerre américains de l'époque, aussi bien GIs que civils. Une exposition dédiée à l'agent orange (arme chimique utilisée par les américains) témoigne des conséquences humaines et sanitaires, encore aujourd'hui.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=13OrVHaV8xYW5rPi3ixu42KPg3mGS5DOp">
@@ -68,11 +73,9 @@ Ce musée nous plonge dans la guerre du Vietnam.
   <img src="https://drive.google.com/uc?id=1WEVjr5Sq__WS-IlDmQkHO0P7dK-nCZeN">
 </div>
 
-## Balade dans les rues
-
-![image](https://drive.google.com/uc?id=1lCuSQkaxbuFAxfdP1cAyumWHYap9_LiQ)
-
 ## Repas de Midi - Organik House
+
+L'organik House est un petit restaurant vegan et éco-responsable situé à deux pas du jardin botanique où nous avons prévu de nous rendre. Nous y essayons pour la première fois un "kombucha", thé fermenté aux nombreuses vertues et bienfaits notamment pour nos estomacs toujours remués. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1hLdKLCkBm92rIkbahXoSbJdRk7Tv7iWI">
@@ -83,6 +86,8 @@ Ce musée nous plonge dans la guerre du Vietnam.
 
 ## Jardin botanique
 
+Nous optons pour ce que nous pensons être une agréable balade au jardin botanique mais sommes déçus d'y découvrir un zoo exotique d'un autre temps, où les conditions de détention des animaux sauvages y sont médiocres (bien qu'il n'existe pas à notre sens de bonnes conditions pour les priver de leur liberté). Le jardin reste plaisant mais il n'est pas séparé du zoo dont on ne peut pas faire abstraction.  
+
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1p2nYVHRdjzhcrpKTT08THK0Vrau9IFRu">
   <img src="https://drive.google.com/uc?id=1qUtoJmQnLqxpn8L1A2kdpubJq6rHvCEj">
@@ -90,7 +95,10 @@ Ce musée nous plonge dans la guerre du Vietnam.
   <img src="https://drive.google.com/uc?id=1hPDF4xYUqtCmfgKvxR9gQJCny-fNM5bA">
 </div>
 
+
 ## Ngọc Hoàng Pagoda
+
+Cette pagode rose est située en plein centre-ville. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1x8LGru4QWcQ_ptCbA-eJjsApBuOg8KiQ">
@@ -100,4 +108,11 @@ Ce musée nous plonge dans la guerre du Vietnam.
 
 ## Eglise du Sacré-Coeur
 
-![image](https://drive.google.com/uc?id=1nuqKej5xe5ewm4JSQFQv-9XhC1WcMEGC)
+Nous continuons à voir la vie en rose avec cette église construite durant l'époque de l'Indochine française. Elle était particulièrement chargée en décorations de Noël. Nous en profitons pour goûter le café traditionnel vietnamien. 
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1nuqKej5xe5ewm4JSQFQv-9XhC1WcMEGC">
+  <img src="https://drive.google.com/uc?id=1GAWZW8M6vwL1aLYQTMZs6fr47npMNJ8u">
+</div>
+
+Il semble que nous ayons déjà couvert une grande partie des points d'intérêt du centre-ville. Nous passerons les prochains jours à découvrir d'autres districts, visiter d'autres musées et nous renderons aux tunnels de Cu Chi.  
