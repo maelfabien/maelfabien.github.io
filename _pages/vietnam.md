@@ -22,3 +22,5 @@ comments : true
 [Arrivée à Ho Chi Minh](https://maelfabien.github.io/vietnam_0/): Arrivée au Vietnam depuis le Cambodge et premières impressions.
 
 [Visite du District 1](https://maelfabien.github.io/vietnam_1/): Visite à pieds du quartier central de Ho Chi Minh City.
+
+[Visite du District 2](https://maelfabien.github.io/vietnam_2/): Visite du quartier des expatriés, musée des beaux arts et vie nocturne.
