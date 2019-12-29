@@ -20,11 +20,11 @@ comments : true
 
 <br>
 
-La ville de Ho Chi Minh est tentaculaire, s'étend sur des dizaines de kilomètres et compte près de 8.5 millions d'habitants. Nous profitons de l'application Grab pour nous rendre dans d'autres districts et les visiter à pieds.
+La ville de Ho Chi Minh est tentaculaire, s'étend sur des dizaines de kilomètres et compte près de 8.5 millions d'habitants. Nous profitons de l'application Grab, Uber local, pour nous rendre dans d'autres districts et les visiter à pieds.
 
 # Visite du District 2
 
-Le district 2 est connu pour être un district d'expatriés avec des belles maisons. Nous trouvons un endroit sympa pour bruncher : L'Herbanyste. Il y a quelques restaurants dans ces quartiers, qui semblent être des petits havres de paix, aménagés dans le jardin de villas. Nous y mangeons très bien, et profitons du beau cadre offert.
+Le district 2 est connu pour être un district d'expatriés avec de belles maisons. Nous trouvons un endroit sympa pour bruncher : L'Herbanyste. Il y a quelques restaurants dans ces quartiers, qui semblent être de petits havres de paix aménagés dans le jardin de villas. Nous y mangeons très bien, et profitons du cadre relaxant offert.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1mwjIxs8iM6POBpZ6b5RDkD7aNP-YahQI">
@@ -32,7 +32,7 @@ Le district 2 est connu pour être un district d'expatriés avec des belles mais
   <img src="https://drive.google.com/uc?id=13rKDp3rknQ4MNGLhQ5rfFuszkqs865qG">
 </div>
 
-Par la suite, nous nous promenons dans le quartier. Les routes sont larges et en bon état, les villas semblent immenses, plus de 1'000 mètres carrés pour nombre d'entre elles, il y a de nombreuses écoles, pas de déchêts. Nous nous sentons presque dans les banlieues résidentielles de Californie. 
+Par la suite, nous nous promenons dans le quartier. Les routes sont larges et en bon état, les villas semblent immenses, plus de 1'000 mètres carrés pour nombre d'entre elles, il y a de nombreuses écoles internationales, pas de déchêts. Nous nous sentons presque dans les banlieues résidentielles de Californie. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1q9VJ0UkivZl-alp63GtNjdAlfBF6pyRa">
@@ -58,7 +58,7 @@ Les bords de la rivière Sông Sài Gòn qui traverse Ho Chi Minh City restent c
   <img src="https://drive.google.com/uc?id=17OTlQYU-gB2Gmre6Jw8kKsIEADKx6X3X">
 </div>
 
-Nous entendons de nombreuses personnes parler français, et tombons même sur une épicerie/restaurant totalement française, qui importe de nombreux produits français et dont la clientèle est quasiment exclusivement française.
+Nous entendons de nombreuses personnes parler français, et tombons même sur une épicerie/restaurant totalement française, qui importe des produits français et dont la clientèle est quasiment exclusivement française.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1-JvvIqM2n9N9laY9Tgmr8CzxCzcRdyId">
@@ -67,7 +67,7 @@ Nous entendons de nombreuses personnes parler français, et tombons même sur un
 
 # Musée des beaux-arts
 
-L'après-midi, nous visitons le musée des beaux-arts de Saigon qui regroupe de nombreuses oeuvres réalisées entre 1930 et nos jours. Le musée retrace une partie de l'histoire vietnamienne à travers les yeux des artistes.
+L'après-midi, nous visitons le musée des beaux-arts de Saigon qui regroupe des oeuvres réalisées entre 1930 et nos jours. Le musée retrace une partie de l'histoire vietnamienne à travers les yeux des artistes.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1jX60YQucZvWYjWEoJ-zJbpibuv4990up">
