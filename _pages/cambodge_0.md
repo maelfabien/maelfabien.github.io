@@ -16,6 +16,8 @@ comments : true
 
 Cela fait maintenant des mois que nous en parlons et que nous préparons ce voyage. Deux mois et demi à l'autre bout du monde, en passant par le Cambodge, le Vietnam, Sydney, la Nouvelle-Zélande, la Polynésie française, l'Île de Paques et Santiago. Près de 50'000 kilomètres, et entre chaque étape, des déplacements en avion, en train, en bus... 
 
+![image](https://drive.google.com/uc?id=1nDcUvR8M4hSpjB4TQ6RvURrSI19YYFhy)
+
 Avant de tout lâcher pendant deux mois, il nous a fallu finir nos Masters respectifs, nos stages et autres examens. Nous avons eu la chance de trouver tous les deux des doctorats pour le 1er Mars 2020.  Après de nombreux achats dont des chaussures de randonnées, casquettes anti-moustique, panta-shorts et autres vêtements à la pointe de la mode, nous partons finalement avec 9.5 kilos chacun, un record pour nous.
 
 ![image](https://drive.google.com/uc?id=1S-ZO9IlrtR5ZBVeHMhGWw5Z1lwyxuCCQ)

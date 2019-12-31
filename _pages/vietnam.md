@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 27.12.2019*
+*Dernière mise à jour: 31.12.2019*
 
 **Dates:** 26.12.2019 - 11.01.2022
 
@@ -24,3 +24,9 @@ comments : true
 [Visite du District 1](https://maelfabien.github.io/vietnam_1/): Visite à pieds du quartier central de Ho Chi Minh City.
 
 [Visite du District 2](https://maelfabien.github.io/vietnam_2/): Visite du quartier des expatriés, musée des beaux arts et vie nocturne.
+
+[Visite du District 7](https://maelfabien.github.io/vietnam_3/): Quartier flambant neuf et Crescent Lake.
+
+[Tunnels de Cu Chi](https://maelfabien.github.io/vietnam_4/): Explorer les dessous de la guerre du Vietnam.
+
+[En route pour Da Nang](https://maelfabien.github.io/vietnam_5/): 16 heures de train et une nuit difficile.
