@@ -28,5 +28,3 @@ comments : true
 [Visite du District 7](https://maelfabien.github.io/vietnam_3/): Quartier flambant neuf et Crescent Lake.
 
 [Tunnels de Cu Chi](https://maelfabien.github.io/vietnam_4/): Explorer les dessous de la guerre du Vietnam.
-
-[En route pour Da Nang](https://maelfabien.github.io/vietnam_5/): 16 heures de train et une nuit difficile.
