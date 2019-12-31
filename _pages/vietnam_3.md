@@ -20,8 +20,6 @@ comments : true
 
 <br>
 
-# Visite du District 7
-
 Aujourd'hui, nous jettons notre dévolu sur le district 7, connu pour ses constructions modernes, ses larges allées, sa propreté et surtout, le "Crescent Lake" avec son pont illuminé. Nous parcourons les 6km qui nous en séparent à pieds. Le chemin est cependant sans grand intérêt, mais nous permet de découvrir quelques bras de rivière, malheureusement souvent pollués. 
 
 <div class="fotorama">
@@ -32,12 +30,13 @@ Aujourd'hui, nous jettons notre dévolu sur le district 7, connu pour ses constr
 Nous percevons facilement que nous avons rejoint le quartier à mesure que les trottoirs s'élargissent et se vident de leurs étales marchandes, la circulation y est moins dense, les immeubles plus hauts, les bords du lac sont exclusivement piéton. On y retrouve essentiellement des centres commerciaux, des entreprises et des universités.
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1GDdoTANVRgGSCh7wcEKBtk02N4VYAfBZ">
   <img src="https://drive.google.com/uc?id=14ft2C9u8PIpIqIQ7X5dJbT-oYmdrtjlR">
   <img src="https://drive.google.com/uc?id=1jzOn3RTIRM3I0eiPnd9GmX6alDrDZiUU">
 </div>
 
-Nous traversons le pont "" et rejoignons l'autre rive du lac, où se trouve un parc comme nous n'avons pas eu la chance d'en voir jusqu'alors. 
+![image](https://drive.google.com/uc?id=1GDdoTANVRgGSCh7wcEKBtk02N4VYAfBZ)
+
+Nous traversons le pont et rejoignons l'autre rive du lac, où se trouve un parc comme nous n'avons pas eu la chance d'en voir jusqu'alors. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1cEe4qFbBkdniEx8bsnwxjrPKaDj1kKfq">
@@ -45,7 +44,10 @@ Nous traversons le pont "" et rejoignons l'autre rive du lac, où se trouve un p
 </div>
 
 La pause s'impose. Nous rejoignons une "caniche party" improvisée, un rassemblement d'une trentaine de caniches multicolores, habillés et pomponnés.
-Vidéo
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/PTnNr4frOH8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 Nous terminons notre tour en nous promenant dans les quartiers résidentiels alentours. 
 
