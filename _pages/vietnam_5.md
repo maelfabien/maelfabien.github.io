@@ -105,6 +105,12 @@ Eva a visiblement besoin d'une cure de shopping puisqu'elle est retrouvée à ch
 
 ![image](https://drive.google.com/uc?id=1JlS0jPbbNWij09Wzw03N7t3qRGDoG-Fk)
 
+Nous nous baladons dans Da Nang et traversons notamment quelques-uns des célèbres ponts de la  ville (dont un en forme de dragon).
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/U9jweOASRF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 Nous avions mentionné plus haut que les journées à Da Nang étaient marquées par de nombreuses averses. Sans surprise, une grosse averse s'est abattue lors de notre retour. Puisque nos casques n'ont pas de visière, il suffit de baisser la tête pour voir la route :)
 
 <div class="fotorama">
