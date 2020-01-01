@@ -46,7 +46,8 @@ A training to discover Python for data analysis. No background is needed, but if
 - How to build your own dashboard
 - Key concepts of machine learning
 
-<button class="button"><span><a href="https://maelfabien.github.io/python_data/#">Start the training</a></span></button>
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/python_data/'" type="button">
+         Start the training</button></center>
 
 
 # Machine Learning with Python
