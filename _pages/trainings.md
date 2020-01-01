@@ -8,46 +8,29 @@ title: "Online Trainings"
 <style>
 .button {
   display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
   text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+.button:hover {background-color: #3e8e41}
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 </style>
 
-***Disclaimer***: *Over time, I wrote a lot of independent articles and decided to combine them in Online Trainings. I also added a lot of exclusive content for those trainings. The trainings are lists of specific articles in a specific order, with images, explanations and code meant to be both theoretical and practical, that should allow you to gain expertise in Data Analysis, Machine Learning, Deep Learning, Natural Language Processing... I want those trainings to be completely free, but in exchange, I would be really grateful if you could leave comments under the articles when each time you finish reading one. This will allow me to collect feedback on the content and improve the quality of my content over time. Thank you in advance :)*
+***Disclaimer***: *Over time, I wrote a lot of independent articles and decided to combine them in Online Trainings. I also added a lot of exclusive content for those trainings. I want those trainings to be completely free, but in exchange, I would be really grateful if you could leave comments under the articles when each time you finish reading one. This will allow me to collect feedback on the content and improve the quality of my content over time. Thank you in advance :)*
 
 # Discover Python for Data Analysis
 
@@ -63,7 +46,7 @@ A training to discover Python for data analysis. No background is needed, but if
 - How to build your own dashboard
 - Key concepts of machine learning
 
-<button class="button" style="vertical-align:middle"><span><a href="https://maelfabien.github.io/python_data/#">Start the training</a></span></button>
+<button class="button"><span><a href="https://maelfabien.github.io/python_data/#">Start the training</a></span></button>
 
 
 # Machine Learning with Python
@@ -99,9 +82,3 @@ Ever heard of Natural Language Processing (NLP)? This training requires to have 
 - Introduction to chatbots
 - Sequence Models
 - Transformers
-
-
-
-<center><a href="https://maelfabien.github.io/year-archive/#">See More</a></center>
-
-<br>
