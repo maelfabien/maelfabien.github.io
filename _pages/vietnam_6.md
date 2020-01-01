@@ -39,7 +39,7 @@ Sur la route, sûrement impressionné par notre style, un local semble vouloir f
 
 <br>
 
-Une fois le scooter garé, nous continuons notre périple à pieds. Il y a énormément de boutiques de souvenirs, petits cafés et restaurants dans la vielle ville. La ville s'organise autour de nombreux bras de rivière, traversés par des ponts. O
+Une fois le scooter garé, nous continuons notre périple à pieds. Il y a énormément de boutiques de souvenirs, petits cafés et restaurants dans la vielle ville. La ville s'organise autour de nombreux bras de rivière, traversés par des ponts. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1WPjHVopui-Sxt6m_rCa9b3bdfApVw18w">
@@ -71,7 +71,7 @@ Le restaurant Fisherman Vegan est situé en front de mer. Le cadre est génial.
   <img src="https://drive.google.com/uc?id=1WmadbHCGlfO7OK0RulVRbggOA9vCxDy8">
 </div>
 
-Sur le retour nous faisons un détour par les Marble Mountains, cinq petites montagnes situées en plein centre ville de Da Nang et nommées d’après les cinq éléments. Elles étaient connues pour l’extraction de roche aujourd’hui interdite. 
+Sur le retour nous nous arrêtons aux Marble Mountains, cinq petites montagnes situées en plein centre ville de Da Nang et nommées d’après les cinq éléments. Elles étaient connues pour l’extraction de roches aujourd’hui interdite. 
 
 ![image](https://drive.google.com/uc?id=1J0ZI3khVRdH7_kZzeNCM1bjQl6RiKy-K)
 
