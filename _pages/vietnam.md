@@ -30,3 +30,5 @@ comments : true
 [Tunnels de Cu Chi](https://maelfabien.github.io/vietnam_4/): Explorer les dessous de la guerre du Vietnam.
 
 [En route pour Da Nang](https://maelfabien.github.io/vietnam_5/): 16 heures de train, une nuit difficile et le réconfort.
+
+[Virée en scooter à Hoi An](https://maelfabien.github.io/vietnam_6/): Hoi An, Marble Mountains, Dragon Bridge... une journée bien chargée en scooter.
