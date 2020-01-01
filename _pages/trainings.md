@@ -5,7 +5,49 @@ author_profile: true
 title: "Online Trainings"
 ---
 
-**Disclaimer**: Over time, I wrote a lot of independent articles and decided to combine them in Online Trainings. I also added a lot of exclusive content for those trainings. The trainings are lists of specific articles in a specific order, with images, explanations and code meant to be both theoretical and practical, that should allow you to gain expertise in Data Analysis, Machine Learning, Deep Learning, Natural Language Processing... I want those trainings to be completely free, but in exchange, I would be really grateful if you could leave comments under the articles when each time you finish reading one. This will allow me to collect feedback on the content and improve the quality of my content over time. Thank you in advance :)
+<style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+***Disclaimer***: *Over time, I wrote a lot of independent articles and decided to combine them in Online Trainings. I also added a lot of exclusive content for those trainings. The trainings are lists of specific articles in a specific order, with images, explanations and code meant to be both theoretical and practical, that should allow you to gain expertise in Data Analysis, Machine Learning, Deep Learning, Natural Language Processing... I want those trainings to be completely free, but in exchange, I would be really grateful if you could leave comments under the articles when each time you finish reading one. This will allow me to collect feedback on the content and improve the quality of my content over time. Thank you in advance :)*
 
 # Discover Python for Data Analysis
 
@@ -20,6 +62,9 @@ A training to discover Python for data analysis. No background is needed, but if
 - How to visualize data in Python
 - How to build your own dashboard
 - Key concepts of machine learning
+
+<button class="button" style="vertical-align:middle"><span><a href="https://maelfabien.github.io/python_data/#">Start the training</a></span></button>
+
 
 # Machine Learning with Python
 
