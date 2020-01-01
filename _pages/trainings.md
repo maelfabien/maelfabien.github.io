@@ -46,9 +46,9 @@ A training to discover Python for data analysis. No background is needed, but if
 - How to build your own dashboard
 - Key concepts of machine learning
 
-<center><button class="button" onclick="location.href='https://maelfabien.github.io/python_data/'" type="button">
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/da_training/'" type="button">
          Start the training</button></center>
-
+<br>
 
 # Machine Learning with Python
 
@@ -58,6 +58,10 @@ A more advanced program targeted for those with a previous Python and data analy
 - The core libraries for Machine Learning in Python
 - Supervised Machine Learning algorithms and their implementation
 - Unsupervised Machine Learning algorithms and their implementation
+
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/ml_training/'" type="button">
+         Start the training</button></center>
+<br>
 
 # Deep Learning with Python
 
@@ -72,6 +76,10 @@ Deep Learning is overperforming almost every approach developed so far in domain
 - Recurrent Neural Networks
 - Generative Adversarial Networks
 
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/dl_training/'" type="button">
+         Start the training</button></center>
+<br>
+
 # Natural Language Processing
 
 Ever heard of Natural Language Processing (NLP)? This training requires to have finished the "Deep Learning with Python" training. We will cover the following concepts: 
@@ -83,3 +91,7 @@ Ever heard of Natural Language Processing (NLP)? This training requires to have 
 - Introduction to chatbots
 - Sequence Models
 - Transformers
+
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/nlp_training/'" type="button">
+         Start the training</button></center>
+<br>
