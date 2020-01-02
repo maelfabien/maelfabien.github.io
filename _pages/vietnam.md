@@ -33,7 +33,7 @@ comments : true
 
 [Virée en scooter à Hoi An](https://maelfabien.github.io/vietnam_6/): Hoi An, Marble Mountains, Dragon Bridge... une journée bien chargée en scooter.
 
-[Hue, une journée pluvieuse](https://maelfabien.github.io/vietnam_7/): Bus vers Hue, visite en scooter et visite de la citadelle.
+[Hue, une journée pluvieuse](https://maelfabien.github.io/vietnam_7/): Bus vers Hue, scooter et visite de la citadelle.
 
 
 
