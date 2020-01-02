@@ -32,3 +32,8 @@ comments : true
 [En route pour Da Nang](https://maelfabien.github.io/vietnam_5/): 16 heures de train, une nuit difficile et le réconfort.
 
 [Virée en scooter à Hoi An](https://maelfabien.github.io/vietnam_6/): Hoi An, Marble Mountains, Dragon Bridge... une journée bien chargée en scooter.
+
+[Hue, une journée pluvieuse](https://maelfabien.github.io/vietnam_7/): Bus vers Hue, visite en scooter et visite de la citadelle.
+
+
+
