@@ -59,8 +59,8 @@ A more advanced program targeted for those with a previous Python and data analy
 - Supervised Machine Learning algorithms and their implementation
 - Unsupervised Machine Learning algorithms and their implementation
 
-<center><button class="button" type="button">
-         Coming soon</button></center>
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/ml_training/'" type="button">
+         Start the training</button></center>
 <br>
 
 # Deep Learning with Python

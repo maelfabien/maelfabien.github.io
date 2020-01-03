@@ -7,8 +7,6 @@ header :
     image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 ---
 
-Start the program:
-
 ## Course 1: Introduction to Python
 
 [Understanding computer components](https://maelfabien.github.io/bigdata/comp_components/) : Starting from the lowest level.

@@ -19,6 +19,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [DataCast Interview](https://maelfabien.github.io/thoughts/interview) : I recently gave an interview to DataCast, an excellent Data Science podcast. With James Le, we talked about Actuarial Science, being a young graduate, the Data industry, the Paris tech ecosystem...
 
+<br>
 
 ![image](/assets/images/s_head.jpg)
 
@@ -45,6 +46,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 [Time Series Forecasting with Facebook Prophet](https://maelfabien.github.io/statistics/TimeSeries4/) : Explore time series forecasting using the Prophet open-source package.
 
 [Handle missing values in Time Series](https://maelfabien.github.io/statistics/TimeSeries5/) : A quick illustration of backward filling and forward filling.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/dv_head.jpg)
