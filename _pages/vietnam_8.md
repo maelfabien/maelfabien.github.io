@@ -64,8 +64,6 @@ Nous continuous notre matinée avec une visite de quartiers peu touristiques pro
 
 Le centre-ville est partiellement piéton en ce samedi 4 janvier. Tôt le matin, les rues sont quasi-désertes, ce qui nous permet de voir l'hôtel de ville et le lac de Hoàn Kiếm. 
 
-https://drive.google.com/file/d/1Dbhs4eC-jadKz8aBBQupdxCax0bgEjvb/view?usp=sharing
-
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1Dbhs4eC-jadKz8aBBQupdxCax0bgEjvb">
   <img src="https://drive.google.com/uc?id=1q0NFFJIq912qFcdx4CNPBohmzzHkKIoh">
@@ -84,11 +82,11 @@ Direction ensuite le quartier "Le Dai Hanh", qui abrite un grand lac et un joli 
   <img src="https://drive.google.com/uc?id=124XvtRJQA4F7o9csxvbyAh5XyaGVRIZF">
 </div>
 
-A ce stade là, malgré nos imperméables, nous étions trempés. Une pause d'impose, direction le Hanoi Social Club.
+A ce stade là, malgré nos imperméables, nous étions trempés. La pause s'impose, direction le Hanoi Social Club.
 
 ![image](https://drive.google.com/uc?id=1t4abp2H-1JraI1fGQ16-u7_UJQ5JTgCr)
 
-Nous prenons possession de notre chambre pour les 3 prochains jours au Dragon Pearl Hotel. La chambre est plutôt spacieuse, mais il n'y a pas de fenêtre... 
+Nous prenons ensuite possession de notre chambre pour les 3 prochains jours au Dragon Pearl Hotel. La chambre est plutôt spacieuse, mais il n'y a pas de fenêtre... 
 
 Une séance de sport plus tard, nous quittons l'hôtel et nous rendons au Hoàn Kiếm Lake. Le beau temps est désormais de la partie. Le quartier est très animé le soir, les rues sont pietonnes et de nombreux petits spectacles ont lieu un peu partout.
 
@@ -97,4 +95,4 @@ Une séance de sport plus tard, nous quittons l'hôtel et nous rendons au Hoàn 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/XD7QL9UaCGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
-18 kilomètres de marche aujourd'hui, une séance de sport et moins de 5 heures de sommeil la veille, une bonne nuit s'impose. La suite des aventures demain.
+18 kilomètres de marche aujourd'hui, une séance de sport et moins de 5 heures de sommeil la veille, la nuit devrait être bonne. La suite des aventures demain.
