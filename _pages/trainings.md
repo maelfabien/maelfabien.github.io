@@ -76,8 +76,8 @@ Deep Learning is overperforming almost every approach developed so far in domain
 - Recurrent Neural Networks
 - Generative Adversarial Networks
 
-<center><button class="button" type="button">
-         Coming soon</button></center>
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/dl_training/'" type="button">
+         Start the training</button></center>
 <br>
 
 # Natural Language Processing
@@ -92,6 +92,6 @@ Ever heard of Natural Language Processing (NLP)? This training requires to have 
 - Sequence Models
 - Transformers
 
-<center><button class="button" type="button">
-         Coming soon</button></center>
+<center><button class="button" onclick="location.href='https://maelfabien.github.io/nlp_training/'" type="button">
+         Start the training</button></center>
 <br>

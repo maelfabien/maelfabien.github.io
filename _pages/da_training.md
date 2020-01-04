@@ -9,19 +9,19 @@ header :
 
 ## Course 1: Introduction to Python
 
-[Understanding computer components](https://maelfabien.github.io/bigdata/comp_components/) : Starting from the lowest level.
+[Understanding computer components](https://maelfabien.github.io/bigdata/comp_components/) : Starting from the lowest level by understanding computer components.
 
-[Introduction to Bash Scripting for Terminal](https://maelfabien.github.io/bigdata/Terminal/#) : Learn how to interact with your terminal, launch commands and install packages.
+[Introduction to Bash Scripting for Terminal](https://maelfabien.github.io/bigdata/Terminal/#) : Learn how to interact with your terminal.
 
-[Introduction to Git and Python Packages]() : Todo
+[Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?
 
-[Introduction to Python's environment]() : Todo
-
-[Basics of Python's programming]() : Todo
+[Basics of Python programming](https://maelfabien.github.io/da_tuto/python) : An in-depth introduction to Python programming essentials.
 
 [Functions and classes in Python]() : Todo
 
-[How to load ex]() : Todo
+[Introduction to Git](https://maelfabien.github.io/da_tuto/git) : 7 simple commands to master version control and code sharing.
+
+[Package installation for Python](https://maelfabien.github.io/da_tuto/git2) : Install external packages and libraries.
 
 ## Course 2: Data Wrangling
 
