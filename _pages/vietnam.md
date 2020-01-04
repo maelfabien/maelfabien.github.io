@@ -35,5 +35,6 @@ comments : true
 
 [Hue, une journée pluvieuse](https://maelfabien.github.io/vietnam_7/): Bus vers Hue, scooter et visite de la citadelle.
 
+[Trajet et découverte de Hanoi](https://maelfabien.github.io/vietnam_8/): 14 heures de train et 18 kilomètres à pieds, premières impressions de Hanoi.
 
 
