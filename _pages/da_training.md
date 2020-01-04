@@ -15,7 +15,7 @@ header :
 
 [Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?
 
-[Basics of Python programming](https://maelfabien.github.io/da_tuto/python) : An in-depth introduction to Python programming essentials.
+[Basics of Python programming](https://maelfabien.github.io/da_tuto/python2) : An in-depth introduction to Python programming essentials.
 
 [Functions and classes in Python]() : Todo
 
