@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Nous entammons notre journée par une séance de sport. À midi nous retrouvons notre café bien aimé de da nang “roots plant based” qui possède également un emplacement dans le vieux Hanoï. 
+Nous entammons notre journée par une séance de sport. À midi, nous retrouvons notre café bien aimé de Da Nang, “Roots Plant Based” qui possède également un emplacement dans le vieux Hanoï. 
 
 Nous nous promenons dans les rues de ce quartier qui sont pleines de charme puis nous nous dirigeons ensuite vers le lac ouest (West Lake) situé un peu plus au Nord de la ville.
 
@@ -75,7 +75,7 @@ On devine même à l'intérieur de certains bateaux des tables encore à moitié
 
 <br>
 
-Comme à notre habitude, nous  faisons  pas une mais deux pauses durant note tour endroits  nous requinquer, dont notamment dans un très joli salon de thé “Pema”.  
+Comme à notre habitude, nous ne faisons pas une mais deux pauses durant notre tour pour nous requinquer.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=125AbMaqtWSt9hS9KrSDNPClQTCB0LFHF">
