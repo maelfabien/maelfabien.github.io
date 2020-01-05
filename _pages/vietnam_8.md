@@ -46,14 +46,14 @@ En son centre, la ville semble arborée, les rues plus larges, il y a de nombreu
   <img src="https://drive.google.com/uc?id=1eTnnh9DT0e_Dfd3k5PMOzl_lbm04h3la">
 </div>
 
-L'occasion est parfaite pour prendre un café dans un des rares restaurants ouverts à cette heure là, le Note Café. Les visiteurs laissent un message sur des post-its. Certains sont pleins de lessons de vie:
+L'occasion est parfaite pour prendre un café dans un des rares restaurants ouverts à cette heure là, le Note Café. Les visiteurs laissent un message sur des post-its. Certains sont pleins de leçons de vie:
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1FeZ9esWj3-v7tMeIpegBaJY5t3_mRrhf">
   <img src="https://drive.google.com/uc?id=1hxydM4f-sJpv3BaAbtI3d_U33A0jhASb">
 </div>
 
-Nous continuous notre matinée avec une visite de quartiers peu touristiques proches de la Red River. Rien de particulièrement beau, mais nous pénétrons dans des petites rues très étroites et plutôt glauque, et observons au plus près la vie des locaux.
+Nous continuous notre matinée avec une visite de quartiers peu touristiques proches de la Red River. Rien de particulièrement beau, mais nous pénétrons dans des petites rues très étroites et plutôt glauques, et observons au plus près la vie des locaux.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1YsCu7yIXn-nTsr2JH9Kp3nlSPnn1o77B">
@@ -71,7 +71,7 @@ Le centre-ville est partiellement piéton en ce samedi 4 janvier. Tôt le matin,
   <img src="https://drive.google.com/uc?id=1rU9078yjhtq6Vi1fzaTMgWUzzQ3r8lkW">
 </div>
 
-Notre visite de la ville se poursuit dans la "Train Street", une rue célèbre de la capitale particulièrement étroite dans laquelle passe le train. A l'entrée de la rue, des policiers nous interdissent d'aller plus loin, sauf si nous achètons un café dans la rue. Cela semble bizarre, et pourtant c'est la nouvelle règlementation depuis le 12 Octobre. Les autorités ont fermé la rue en raison du nombre excessif de selfies pris par les touristes sur les rails, ce qui représente un danger évident.
+Notre visite de la ville se poursuit dans la "Train Street", une rue célèbre de la capitale particulièrement étroite dans laquelle passe le train. A l'entrée de la rue, des policiers nous interdisent d'aller plus loin, sauf si nous achetons un café dans la rue. Cela semble bizarre, et pourtant c'est la nouvelle règlementation depuis le 12 Octobre. Les autorités ont fermé la rue en raison du nombre excessif de selfies pris par les touristes sur les rails, ce qui représente un danger évident.
 
 ![image](https://drive.google.com/uc?id=1HbRxhePkyN_s-6TPBtGbl1J5Sr2gnBxf)
 
