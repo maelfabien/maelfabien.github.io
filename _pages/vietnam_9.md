@@ -58,7 +58,7 @@ Voici quelques images en vrac du tour du lac:
   <img src="https://drive.google.com/uc?id=1j4QHWUolGDfzUY6BEX_Wg86Q5gk9ev_m">
 </div>
 
-À mesure que nous poursuivons notre tour nous parvenons dans une zone qui semble laissée à l’abandon et où les bateaux, autrefois restaurants, sont vides et rouillés. Nous apprenons plus tard qu’ils ont du cesser leur activité par ordre du gouvernement afin de protéger l’environnement du lac. La mortalité des poissons était en effet anormalement élevée. Les images sont troublantes tant le contraste est saisissant entre la vie animée dans le quartier et les épaves qui coulent.
+À mesure que nous poursuivons notre tour nous parvenons dans une zone qui semble laissée à l’abandon et où les bateaux, autrefois restaurants, sont vides et rouillés. Nous apprenons plus tard qu’ils ont du cesser leur activité par ordre du gouvernement afin de protéger l’environnement du lac. La mortalité des poissons était en effet anormalement élevée. Les images sont troublantes, le contraste est saisissant entre la vie animée dans le quartier et les épaves qui coulent. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1YBOF8dX21npc5Gf_PoNysSj3H6D1uKcd">
@@ -69,7 +69,13 @@ Voici quelques images en vrac du tour du lac:
   <img src="https://drive.google.com/uc?id=1Ab98CN5s-bat-RVunXsZ18wnaV3LVp0E">
 </div>
 
-Comme a notre habitude, nous  faisons  pas une mais deux pauses durant note tour endroits  nous requinquer, dont notamment dans un très joli salon de thé “Pema”.  
+On devine même à l'intérieur de certains bateaux des tables encore à moitié dressées et plein de matériel de cuisine.
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/pOvvUbSLo_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+Comme à notre habitude, nous  faisons  pas une mais deux pauses durant note tour endroits  nous requinquer, dont notamment dans un très joli salon de thé “Pema”.  
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=125AbMaqtWSt9hS9KrSDNPClQTCB0LFHF">
