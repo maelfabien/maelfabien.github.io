@@ -2,7 +2,7 @@
 layout: travel
 permalink: /vietnam_9/
 author_profile: false
-title: "Départ vers Ha Noi et première visite de la ville"
+title: "Tour du West Lake à pieds"
 classes: wide
 comments : true
 ---
@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Nous entammons notre journée par une séance de sport. À midi, nous retrouvons notre café bien aimé de Da Nang, “Roots Plant Based” qui possède également un emplacement dans le vieux Hanoï. 
+Nous entammons notre journée par une séance de sport. À midi, nous retrouvons notre café bien aimé de Da Nang, “Roots Plant Based” qui possède également un emplacement dans le vieux Hanoi. Il existe 36 rues dans le vieux Hanoi, chaque rue était auparavant dédiée à un type de commerce (bamboo, sel, argent...). 
 
 Nous nous promenons dans les rues de ce quartier qui sont pleines de charme puis nous nous dirigeons ensuite vers le lac ouest (West Lake) situé un peu plus au Nord de la ville.
 
