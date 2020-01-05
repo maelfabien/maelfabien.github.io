@@ -65,10 +65,16 @@ Before starting, read the introduction to this training:
 
 [Basics of Machine Learning and Motivation](https://maelfabien.github.io/machinelearning/ml_base/) : A first approach to machine learning. We’ll go over the main motivations, the main kind of algorithms, what they can be used for…
 
+
+## Final Steps
+
+[Final project to submit]() : Submit your project and get your certificate.
+
+[A final step](https://maelfabien.github.io/da_tuto/daend) : A final step before you end this training.
+
 All codes and exercises are accessible on this repo. Don't hesitate to show your suppot and star the repo:
 
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
