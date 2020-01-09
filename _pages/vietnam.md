@@ -42,3 +42,5 @@ comments : true
 [Palais royal, Mausolée et Cinéma](https://maelfabien.github.io/vietnam_10/): Dernier jour à Hanoi avant le départ pour la baie de Lan Ha.
 
 [Baies d'Ha Long et de Lan Ha](https://maelfabien.github.io/vietnam_11/): Arrivée dans la baie, découverte du bateau et première excursion en kayak.
+
+[Visite de Cat Ba et kayak dans la baie de Lan Ha](https://maelfabien.github.io/vietnam_12/): Une journée inoubliable, entre vélo, kayak et nage
