@@ -49,7 +49,6 @@ Au Sud du lac se situent les jardins royaux. On y retrouve le palais présidenti
 
 A peine le dos tourné que Maël se transforme en porteur de rue et tente de vendre des fruits aux passants.
 
-
 ![image](https://drive.google.com/uc?id=1rjilq0NtiCGyTN0eaEfloY9LftZ98MIY)
 
 Nous préparons nos affaires pour la croisière, et après une bonne séance de sport, nous nous rendons au cinéma pour une projection du dernier Star Wars. La salle ne comporte que 18 sièges grand luxe, de quoi bien pofiter du film. Bon, Maël n'a vu aucun des 8 films précédents, donc une petite séance de rattrapage a eu lieu juste avant.
