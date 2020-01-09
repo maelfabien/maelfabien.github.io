@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 05.01.2020*
+*Dernière mise à jour: 09.01.2020*
 
 **Dates:** 26.12.2019 - 11.01.2020
 
@@ -38,3 +38,6 @@ comments : true
 [Trajet et découverte de Hanoi](https://maelfabien.github.io/vietnam_8/): 14 heures de train et 18 kilomètres à pieds, premières impressions de Hanoi.
 
 [Visite du West Lake à pieds](https://maelfabien.github.io/vietnam_9/): 15 kilomètres autour du lac du Nord de la ville.
+
+[Palais royal, Mausolée et Cinéma](https://maelfabien.github.io/vietnam_10/): Dernier jour à Hanoi avant le départ pour la baie de Lan Ha.
+
