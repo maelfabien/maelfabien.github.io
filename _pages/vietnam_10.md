@@ -42,7 +42,6 @@ Au Sud du lac se situent les jardins royaux. On y retrouve le palais présidenti
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1S2aXaNKqbYALaA1qKoXJQRubOvAnZRmo">
   <img src="https://drive.google.com/uc?id=1w3QQRjnHn7YWSJuew2ZOw2NJeFsMblno">
-  <img src="https://drive.google.com/uc?id=1CwAb-y5lAZxddRIpel3VHyjNqeYtozY6">
   <img src="https://drive.google.com/uc?id=1Yt3u3dJrcBaZs_ujvsCrE5z8k3uX5iRW">
   <img src="https://drive.google.com/uc?id=1hHtJg_oggK3-WumjPSeo1L1MeVf70g8L">
 </div>

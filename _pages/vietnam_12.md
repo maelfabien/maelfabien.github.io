@@ -20,7 +20,18 @@ comments : true
 
 <br>
 
-Cette deuxième journée à bord du bateau commence par un ramassage des toursites des différents bateaux de nuit en direction de Cat Ba. Sur le bateau, pendant les 40 minutes qui nous séparent du port, nous rencontrons un couple de bretons à la retraite ayant exercé le metier de magiciens. Ils nous partagent de belles anecdotes !
+Cette deuxième journée à bord du bateau commence par un magnifique lever de soleil. Le ciel est bien dégagé, ce qui est plutôt rare à cette période de l'année.
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1kzLp-9owYqMIIxmdBlPyfk-4sMRJs6lq">
+  <img src="https://drive.google.com/uc?id=1p7yK5pbTYUY3F2-fr1BX1hfHBDgKXljx">
+</div>
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/CjhVSZQPdLA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+S'en suit un ramassage des toursites des différents bateaux de nuit en direction de Cat Ba. Sur le bateau, pendant les 40 minutes qui nous séparent du port, nous rencontrons un couple de bretons à la retraite ayant exercé le metier de magiciens. Ils nous partagent de belles anecdotes !
 
 PHOTO
 
