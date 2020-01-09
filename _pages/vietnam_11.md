@@ -45,7 +45,7 @@ Après 2h de minibus :
   <img src="https://drive.google.com/uc?id=1aB0WcTMK-9PXFJellg7NvbUnBXVDs8yB">
 </div>
 
-Nous avons choisi de visiter la baie de Lan Ha, moins touristique que la baie de Ha Long, près de 400 bateaux sillonnent ces deux baies respectivement constituées de 400 et 2000 îles. Les baies ne se distinguent que par leurs noms, car dans les faits, il ne s'agit que d'une seule baie, celle de l'île de Cat Ba. Cat Ba, l'île des femmes en vietnamien, est l'île principale de cette région et abrite 9000 habitants. Nous observons la nuit une vingtaine de bateaux autour de nous et la journée nous sommes rejoints par les bateaux de jour qui font office de navette pour les nombreux touristes visitant la baie en une journée et pour ceux ayant dormi sur place. 
+Nous avons choisi de visiter la baie de Lan Ha, moins touristique que la baie de Ha Long. Près de 400 bateaux sillonnent ces deux baies respectivement constituées de 400 et 2000 îles. Les baies ne se distinguent que par leurs noms, car dans les faits, il ne s'agit que d'une seule baie, celle de l'île de Cat Ba. Cat Ba, l'île des femmes en vietnamien, est l'île principale de cette région et abrite 9000 habitants. Nous observons la nuit une vingtaine de bateaux autour de nous et la journée nous sommes rejoints par les bateaux de jour qui font office de navette pour les nombreux touristes visitant la baie en une journée et pour ceux ayant dormi sur place. 
 
 ![image](https://drive.google.com/uc?id=1_qeT-gF3iUbYqW8WanXOYCNGX7ScCG9m)
 
@@ -61,11 +61,11 @@ En revenant, nous profitons d'une baignade autour du bateau (Tout va bien maman)
 
 Un cours de cuisine était ensuite proposé pour apprendre à faire des nems. C'est une belle ascension pour Maël qui passe du stade de commis à cuisinier ! 
 
-![image](https://drive.google.com/uc?id=1gir8ihrx_xAUR4bF0EM1OBP-wp4WLaUf)
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1gir8ihrx_xAUR4bF0EM1OBP-wp4WLaUf">
+  <img src="https://drive.google.com/uc?id=1Xvi6TlSz1GoBwW_HgJZJeksWKfSOWsKb">
+</div>
 
 La soirée s'achève avec un moment convivial entre tous les voyageurs. On en apprend davantage sur la politique australienne, la vie à Munich... Notre bateau était le plus petit, ce qui a rapproché tout le monde et nous a offert une superbe soirée. La nuit tombe et laisse apparaître les lumières des autres bateaux.
 
-<div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1lj2NjBBLRYU9b_k9GhynTOATNMjZPGcp">
-  <img src="https://drive.google.com/uc?id=1Xvi6TlSz1GoBwW_HgJZJeksWKfSOWsKb">
-</div>
+![image](https://drive.google.com/uc?id=1lj2NjBBLRYU9b_k9GhynTOATNMjZPGcp)
