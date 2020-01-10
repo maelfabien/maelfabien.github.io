@@ -81,6 +81,6 @@ Nous profitons de l'après-midi sur le bateau pour nager et sauter du bateau. (T
 
 En retourant sur notre bateau de nuit, nous découvrons de nouveaux co-locataires pour la nuit. Cette croisière sera définitivement marquée par les rencontres que nous y avons fait.
 
-La journée s'achève par une coucher de soleil sur la baie, un nouvel atelier cuisine et un dernier repas convivial.
+La journée s'achève par un coucher de soleil sur la baie, un nouvel atelier cuisine et un dernier repas convivial.
 
 ![image](https://drive.google.com/uc?id=1PIz-lIaBaK5eGNg0qUm8w89mZdgNbSH5)

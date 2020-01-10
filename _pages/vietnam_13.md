@@ -81,7 +81,6 @@ Des dizaines de bus, des centaines d'hôtels, plus de 400 bâteaux, des milliers
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1k8fyu8vvo65ZIU1kUIZYDr6Hz5EhI8v0">
-  <img src="https://drive.google.com/uc?id=1rH6xSXQ1W83y3R_X3DjwfeB_IetCPPmD">
   <img src="https://drive.google.com/uc?id=1W9jkyfpW2Nizx4AhcHIKCHkkwawga8RU">
 </div>
 

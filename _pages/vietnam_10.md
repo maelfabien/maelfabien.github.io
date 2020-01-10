@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Nous entammons notre dernière journée à Hanoi avant le départ pour notre croisière dans la baie de Lan Ha. Nous commençons par prendre le petit déjeuner chez "La Studio", à quelques mètres de là où le taxi nous avait récupéré la veille. C'est l'occasion parfaite pour finir notre tour du lac à pieds.
+Nous entammons notre dernière journée à Hanoi avant le départ pour notre croisière dans la baie de Lan Ha. Nous commençons par prendre le petit déjeuner chez "Là Studio", à quelques mètres de là où le taxi nous avait récupéré la veille. C'est l'occasion parfaite pour finir notre tour du lac à pieds.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1BOkn2ry0pwdwidMlrSlW24zVQJqRjvRs">

@@ -36,7 +36,7 @@ Après 2h de minibus :
   <img src="https://drive.google.com/uc?id=1-oSVTPDhTxLuobWcSGbgn1xLNJp2bRzs">
 </div>
 
-... nous rejoignons notre bateau, le "ugly boat" selon notre guide. C'est en effet le plus petit bateau et le plus vetuste de la baie. Il héberge également 11 autres personnes dont 5 allemands et 6 australiens. 
+... nous rejoignons notre bateau, le "ugly boat" comme l'appelle notre guide. C'est en effet le plus petit bateau et le plus vetuste de la baie. Il héberge également 11 autres personnes dont 5 allemands et 6 australiens. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1K5K3BAEN5m5vZdwWZkgIB_Cxiz6_XEPY">
