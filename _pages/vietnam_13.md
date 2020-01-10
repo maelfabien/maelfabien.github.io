@@ -14,9 +14,9 @@ comments : true
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-***Kilomètres parcourus***: *15*
+***Kilomètres parcourus***: *165*
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=11PtNyd1pYtsnx1rX4UirpZr0OX4wetK6" width="100%" height="500" frameBorder="0"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=16lVf75A6IZo23G1tl4rUMjBOCB5859id" width="100%" height="500" frameBorder="0"></iframe>
 
 <br>
 
@@ -101,3 +101,5 @@ Nous repartons de cette baie avec le sentiment que:
 - il faut absolument repartir avec ses propres déchêts et ne pas faire confiance à l'équipage de son bateau
 
 Nous avons cependant l'impression que tout est encore réversible. Le gouvernement a pris certaines mesures de protection de l'environnement à Hanoi par exemple. Il n'est peut-être pas trop tard pour ces baies. 
+
+Ce soir, nous sommes de retour à Hanoi. Nous quitterons le Veitnam demain soir.
