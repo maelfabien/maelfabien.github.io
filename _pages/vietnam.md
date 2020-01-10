@@ -43,4 +43,6 @@ comments : true
 
 [Baies d'Ha Long et de Lan Ha](https://maelfabien.github.io/vietnam_11/): Arrivée dans la baie, découverte du bateau et première excursion en kayak.
 
-[Visite de Cat Ba et kayak dans la baie de Lan Ha](https://maelfabien.github.io/vietnam_12/): Une journée inoubliable, entre vélo, kayak et nage
+[Visite de Cat Ba et kayak dans la baie de Lan Ha](https://maelfabien.github.io/vietnam_12/): Une journée inoubliable, entre vélo, kayak et nage.
+
+[La triste réalité des croisières autour de Ha Long et Lan Ha](https://maelfabien.github.io/vietnam_13/): Pollution, sur-pêche, constructions betonnées...

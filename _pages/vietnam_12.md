@@ -64,6 +64,7 @@ Nous revenons au bateau pour une randonnée en kayak d'une heure et demie. Frust
   <img src="https://drive.google.com/uc?id=1EvJV0zzKTZ6n4U47xTNUVaTEsYpS5Ane">
   <img src="https://drive.google.com/uc?id=1T6w6-Iznr8EjUoSvRplQ-MsTg_fiE1lF">
   <img src="https://drive.google.com/uc?id=1jezecxwIHjbu7JGrh1B1XFh3RR8-YFxt">
+  <img src="https://drive.google.com/uc?id=1dAprSiYQ8MD9hCkWOuJW2x5pxzi8E_Va">
 </div>
 
 La couleur de certains coquillages semble irréaliste. Des coraux dans le fond de l'eau affichent un bleu pétant et un vert que l'on pourrait décrire de fluorescent.
