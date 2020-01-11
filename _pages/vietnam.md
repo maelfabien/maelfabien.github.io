@@ -7,9 +7,9 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 09.01.2020*
+*Dernière mise à jour: 11.01.2020*
 
-**Dates:** 26.12.2019 - 11.01.2020
+**Dates:** 26.12.2019 - 10.01.2020
 
 **Lieux:** Ho Chi Minh, Da Nang, Hue, Hanoi
 
