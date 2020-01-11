@@ -10,6 +10,8 @@ layouts_gallery:
     image_path: https://drive.google.com/uc?id=1z9kJqqGGythbSpYq9Db1Xc-5Mw7s6AA_
   - url: https://maelfabien.github.io/vietnam/
     image_path: https://drive.google.com/uc?id=1JLbIFlfCo0QKdw9v99Gl8UCpmrd7AbCk
+  - url: https://maelfabien.github.io/australie/
+    image_path: https://drive.google.com/uc?id=1Ald6nZk_JHUgnSkDQDULKCdN_6co7sAW
 ---
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}

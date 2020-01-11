@@ -46,3 +46,5 @@ comments : true
 [Visite de Cat Ba et kayak dans la baie de Lan Ha](https://maelfabien.github.io/vietnam_12/): Une journée inoubliable, entre vélo, kayak et nage.
 
 [La triste réalité des croisières autour de Ha Long et Lan Ha](https://maelfabien.github.io/vietnam_13/): Pollution, sur-pêche, constructions betonnées...
+
+[Dernier jour à Hanoi, direction Sydney](https://maelfabien.github.io/vietnam_14/): Temple de la littérature, massage et stress à l'aéroport.
