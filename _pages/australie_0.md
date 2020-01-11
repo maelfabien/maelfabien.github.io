@@ -55,9 +55,9 @@ Après une bonne douche, nous partons regagner des forces et explorer la ville. 
 Nous retrouvons la fameuse place de l'Opéra, le pont (Sydney Harbour Bridge) et le port.
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1aAPgTPoag0kke_6S5cpY1hRUgen0WFjT">
-  <img src="https://drive.google.com/uc?id=1pTBjjdwdlSDzvAAxeLCc7OXPrQfeFcCU">
   <img src="https://drive.google.com/uc?id=1teMH26heoJrDUhlROJs-L07rMOwzXz_9">
+  <img src="https://drive.google.com/uc?id=1POyPmRqf1og3KqdjiC8HD0aeTCsqn364">
+  <img src="https://drive.google.com/uc?id=1pTBjjdwdlSDzvAAxeLCc7OXPrQfeFcCU">
   <img src="https://drive.google.com/uc?id=1nfgf5Lty83179aaNj0jZLkEf36FdDfXo">
   <img src="https://drive.google.com/uc?id=1TvP1pZKEX9Av8RS3HoATy8VflqpLB5P_">
 </div>
