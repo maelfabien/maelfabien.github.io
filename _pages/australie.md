@@ -21,5 +21,5 @@ comments : true
 
 [De Hanoi à Sydney](https://maelfabien.github.io/australie_0/): 9 heures d'avion et une ville sous les nuages des feux de fôrets. Arrivée à Sydney.
 
-[(Re)visite de Sydney à pieds](https://maelfabien.github.io/australie_0/): 9 heures d'avion et une ville sous les nuages des feux de fôrets. Arrivée à Sydney.
+[(Re)visite de Sydney à pieds](https://maelfabien.github.io/australie_1/): 9 heures d'avion et une ville sous les nuages des feux de fôrets. Arrivée à Sydney.
 
