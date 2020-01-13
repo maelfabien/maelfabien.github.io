@@ -68,7 +68,7 @@ Depuis Bronte Beach nous rejoignons le "Coastal Walk", un chemin qui longe le bo
 
 <br>
 
-En parvenant à Bondi Beach, le panorama est magnifique et peut notamment être apprécié depuis les piscines communes surplombant l'océan. Quelle extraordinaire endroit pour nager ! 
+En parvenant à Bondi Beach, le panorama est magnifique et peut notamment être apprécié depuis les piscines communes surplombant l'océan. Quel extraordinaire endroit pour nager ! 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1Ym-LnSsXLGDpDJWnv2D6Q8ktWCkayDeQ">
@@ -76,7 +76,7 @@ En parvenant à Bondi Beach, le panorama est magnifique et peut notamment être 
   <img src="https://drive.google.com/uc?id=1iKMURngVmx6MBxshb2u7aSqH_QpJObpS">
 </div>
 
-Après cette épopée dans la ville, Mael s'arrête pour savourer un fameux "Beyond Burger" (steak vegan). Nous nous baladons ensuite dans les petites rues commerçantes du quartier de Bondi, essentiellement des boutiques de surf et de vêtements de sport. 
+Après cette épopée dans la ville, Maël s'arrête pour savourer un fameux "Beyond Burger" (steak vegan). Nous nous baladons ensuite dans les petites rues commerçantes du quartier de Bondi, essentiellement des boutiques de surf et de vêtements de sport. 
 
 Nous terminons notre journée par une dégustation de plats végétaliens à partager chez Bodhi, restaurant fusion asiatique, situé vers Hyde Park. L'occasion de goûter leurs dumplings au thé vert, leur crêpes de faux canard et les perles de tapioca.
 
