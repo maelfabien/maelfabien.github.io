@@ -20,12 +20,21 @@ comments : true
 
 <br>
 
+Prendre avion:
 
-![image](https://drive.google.com/uc?id=1QmIroFYgGh5ssr1udRyUDlNmz9BNcnGW)
+![image](https://drive.google.com/uc?id=1kk4g2zl8B1VuiOxONVtCwAB4S3Uwggf_)
+
+Vue avion arrivée:
+
+![image](https://drive.google.com/uc?id=1IgLOhBcfqkk9OSoIRYipMZLXkqEk12eK)
+
+Nuages sur l'Australie:
+
+![image](https://drive.google.com/uc?id=1-hPkuiWxsniJ6ebQKqHwdtrXesCQprGE)
+
+Premières images de la ville:
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1IWcdQgnh9SUka5uH6MPX9j59JsGXMLKP">
-  <img src="https://drive.google.com/uc?id=1JRk_I3Ws4tR6wGKDt03ZS_1B3sMPa0Hm">
-  <img src="https://drive.google.com/uc?id=17weUi9oNg3WsuK6bOSXzEBGO6aVkoXc4">
-  <img src="https://drive.google.com/uc?id=16HH7dNlTBXvhKFvgsK8byd_dCZAeE0O4">
+  <img src="https://drive.google.com/uc?id=1xpy3vDKhCyNml023_5zMs0E0hMvh-j33">
+  <img src="https://drive.google.com/uc?id=1z1Jw5-AH2rlTlgbXU3nBtSMZKrdVgBEW">
 </div>
