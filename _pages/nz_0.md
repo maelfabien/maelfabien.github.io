@@ -14,9 +14,9 @@ comments : true
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-***Kilomètres parcourus***: *7802*
+***Kilomètres parcourus***: *2225*
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XP6WqjKJ6ZTdB9mv1fEQlskI8bsl3X_C" width="100%" height="500" frameBorder="0"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1GoQknvhxXfCiI-Xc6cKB_Bv5-_mRsaxH" width="100%" height="500" frameBorder="0"></iframe>
 
 <br>
 
@@ -38,3 +38,15 @@ Premières images de la ville:
   <img src="https://drive.google.com/uc?id=1xpy3vDKhCyNml023_5zMs0E0hMvh-j33">
   <img src="https://drive.google.com/uc?id=1z1Jw5-AH2rlTlgbXU3nBtSMZKrdVgBEW">
 </div>
+
+Rues de jour:
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1HMYsm9VYy2K4X1fAQbw6APuqgoO_o6gv">
+  <img src="https://drive.google.com/uc?id=1z1Jw5-AH2rlTlgbXU3nBtSMZKrdVgBEW">
+</div>
+
+Petit déjeuner:
+
+![image](https://drive.google.com/uc?id=1HMYsm9VYy2K4X1fAQbw6APuqgoO_o6gv)
+
