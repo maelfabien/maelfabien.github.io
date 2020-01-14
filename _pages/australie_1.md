@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Comme un sentiment de déjà-vu au réveil ce matin. 3 ans plus tôt, nous visitions Sydney, marchions dans les rues et nous baignions à Bondi Beach. Nous sommes excités de (re)visiter cette ville qui nous avait tant plue.
+Comme un sentiment de déjà-vu au réveil ce matin. 3 ans plus tôt, nous visitions Sydney, marchions dans les rues et nous baignions à Bondi Beach. Nous sommes excités de (re)visiter cette ville qui nous avait tant plue. Enfin, le temps est un tout petit peu différent. Aujourd'hui, il pleut, et il fait moins de 20 degrés. Inhabituel pour un été à Sydney.
 
 Nous commencons la journée par un petit déjeuner tardif chez Orwell's dans ce qui semble être la rue des petits cafés. Ambiance détendue, les gens se promènent en tenue de sport avec leur chien, petit café à la main, s'arrêtent pour se parler ...
 

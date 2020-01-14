@@ -12,6 +12,8 @@ layouts_gallery:
     image_path: https://drive.google.com/uc?id=1JLbIFlfCo0QKdw9v99Gl8UCpmrd7AbCk
   - url: https://maelfabien.github.io/australie/
     image_path: https://drive.google.com/uc?id=1Ald6nZk_JHUgnSkDQDULKCdN_6co7sAW
+  - url: https://maelfabien.github.io/nouvellezelande
+    image_path: https://drive.google.com/uc?id=1ej0Rkbi4kiXp58n2Y-_xNFpVFtoRs0GS
 ---
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
