@@ -45,7 +45,7 @@ Le lendemain, nous décidons qu’il est désormais tant d’économiser car la 
 
 ![image](https://drive.google.com/uc?id=10lMn-4c9U3xfBLTUGGfpSO3UV0Qj6F5p)
 
-Nous explorons ensuite la ville à pieds, nous traversons le quartier des affaires, cette fois-ci de jour, c'est mieux. Les quartiers sont paisibles, il y a de nombreuses ruelles, des bons restaurants, des cafés... C'est également l'occasion de découvrir la Sky Tower, une tour de télécommunication, tour la plus haute de l'émisphère sud, connue pour les sauts en chute libre organisés depuis le haut de la tour.
+Nous explorons ensuite la ville à pieds, nous traversons le quartier des affaires, cette fois-ci de jour, c'est mieux. Les quartiers sont paisibles, il y a de nombreuses ruelles, des bons restaurants, des cafés... C'est également l'occasion de découvrir la Sky Tower, une tour de télécommunication, tour la plus haute de l'hémisphère sud, connue pour les sauts en chute libre organisés depuis son sommet.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1HMYsm9VYy2K4X1fAQbw6APuqgoO_o6gv">
@@ -69,21 +69,20 @@ Nous nous mettons en route vers le Domain Parc.
 
 <br>
 
-Ce parc est connu car il abrite deux sites touristiques. Le premier site est le Auckland War Memorial Museum. Ce musée retrace notamment les guerres maories opposant les colons britanniques aux tribus maories dans la seconde moitié du 19e siècle, ainsi que l’implication des neo zélandais, dont 100'000 périrent en combattant pour la couronne britannique. Le musée héberge également une exposition sur les volcans de Nouvelle Zélande, de quoi en apprendre davantage sur le caractère volcanique de cette région.
+Ce parc est connu car il abrite deux sites touristiques. Le premier site est le Auckland War Memorial Museum. Ce musée retrace notamment les guerres maories opposant les colons britanniques aux tribus maories dans la seconde moitié du 19e siècle, ainsi que l’implication des neo zélandais lors de la première guerre mondiale, dont 100'000 périrent en combattant pour la couronne britannique. Le musée héberge également une exposition sur les volcans de Nouvelle Zélande, de quoi en apprendre davantage sur le caractère volcanique de cette région.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=11yOXGo4f7yhoPgpqvrrjC9qmPRMb2Q7E">
   <img src="https://drive.google.com/uc?id=13ewIa3ciuVwiv53-ow8RUl6HdEuufwU4">
 </div>
 
-Le deuxième site touristique est le jardin botanique, qui, bien que petit, est extrêmement beau.
+Le deuxième site touristique est le jardin botanique, qui, bien que petit, est très beau et offre une grande diversité d'espèces. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1FSrgoSEimv8eeBGsUGuPTDIpSLcQPuqF">
   <img src="https://drive.google.com/uc?id=12skHtAQ9to3vZN0A07qp5KRJfwl5VSHu">
   <img src="https://drive.google.com/uc?id=1g_rHSN4Gt3UUg2L4hfj_mXbcNMkcyIrs">
   <img src="https://drive.google.com/uc?id=1YqZPD_dqPvDN8jXeeq6281lP38eI3eQk">
-  <img src="https://drive.google.com/uc?id=1Dv9FaNNnP96AzwV-jYzMKvkNAUuvvriF">
   <img src="https://drive.google.com/uc?id=1Dv9FaNNnP96AzwV-jYzMKvkNAUuvvriF">
 </div>
 
