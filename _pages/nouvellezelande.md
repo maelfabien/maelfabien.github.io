@@ -20,3 +20,6 @@ comments : true
 # Articles
 
 [Arrivée à Auckland et première journée de visite](https://maelfabien.github.io/nz_0/): Après un séjour express à Sydney et 3h d'avion, arrivée à Auckland.
+
+[Location de voiture et marche à Te Hanga](https://maelfabien.github.io/nz_1/): Première découverte des côtes de Te Henga à l'Ouest d'Auckland.
+

@@ -22,7 +22,7 @@ comments : true
 
 Il ne nous reste plus beaucoup de temps pour profiter de Sydney, notre vol est à 15h et nous quittons la ville vers 13h. Nous en profitons donc pour faire une petite séance de sport dans la gym du quartier qui offre une vue panoramique sur le port et le pont de sydney. Mael saisit également l’occasion de se faire couper les cheveux (enfin les pattes essentiellement) par le coiffeur cool du coin. Nous rendons la chambre, avalons un déjeuner mexicain et direction l’aéroport. 
 
-Durant le vol, nous observons l'étendue sans fin des nuages sur l'Australie. 
+Durant le vol, nous observons l'étendue sans fin des nuages sur l'Australie. C'est notamment une conséquence des feux de forêts qui frappent l'Australie depuis la fin 2019.
 
 ![image](https://drive.google.com/uc?id=1-hPkuiWxsniJ6ebQKqHwdtrXesCQprGE)
 
@@ -30,7 +30,7 @@ En arrivant vers la Nouvelle Zélande, rien que la vue offerte par le hublot vau
 
 ![image](https://drive.google.com/uc?id=1IgLOhBcfqkk9OSoIRYipMZLXkqEk12eK)
 
-Haere mai ! Ou bienvenue en maori !
+Haere mai ! Ou bienvenue en maori ! C'est un peu un rêve qui se réalise. Nous sommes littéralement à l'autre bout du monde, dans une des plus belles régions de la planète.
 
 Nous atterrissons à Auckland à 20h50 après 3h de vol et rajoutons 2h de décalage horaire (nous sommes maintenant à 12h de décalage avec Genève). Nous gagnons notre hostel, le Nomads Backpackers, situé en plein quartier des affaires, dans une rue animée comparée au reste de la ville qui semble très calme à l’heure à laquelle nous arrivons. Il est 22h et cela s’avère difficile de trouver un restaurant ouvert à cette heure ci. Nous réussissons tout de même à nous nourrir avec un kebab falafel (salade, tomates, oignons chef) et récupérons notre chambre qui est sommaire et relativement propre, cela fera l’affaire.
 
