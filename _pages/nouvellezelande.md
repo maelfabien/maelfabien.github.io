@@ -23,3 +23,4 @@ comments : true
 
 [Location de voiture et marche à Te Hanga](https://maelfabien.github.io/nz_1/): Première découverte des côtes de Te Henga à l'Ouest d'Auckland.
 
+[Départ pour Christchurch et visite du centre](https://maelfabien.github.io/nz_2/): Une ville très agréable, en re-construction à la suite de tremblements de terre en 2010 et 2011.

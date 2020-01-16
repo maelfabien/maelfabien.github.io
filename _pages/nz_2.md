@@ -24,7 +24,7 @@ Nous partons tôt pour l'aéroport d'Auckland, en direction de Chistchurch. Cett
 
 Dans l'avion, nous rencontrons Ina, une allemande qui vient de finir ses études de médecine et qui s'installe ici pour 6 mois. Coup de chance, elle va au même hôtel que nous, le Jailhouse Accomodation.
 
-Le Jailhouse Accomodation est situé proche du centre-ville, dans une ancienne prison. Tout à l'intérieur fait référence au milieu carcéral, même le mot de passe du Wifi (Prisonbreak). Certaines chambres ont été laissées à l'identique, de quoi se rendre compte des conditions de vie de l'époque. 
+Le Jailhouse Accomodation est situé proche du centre-ville, dans une ancienne prison. Tout à l'intérieur fait référence au milieu carcéral, même le mot de passe du Wifi (Prisonbreak). Certaines chambres ont été laissées à l'identique, de quoi se rendre compte des conditions de vie des prisoniers de l'époque. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1IEBMb86MdssPByrnvCiAMbLzk9V5OQEc">
@@ -33,7 +33,7 @@ Le Jailhouse Accomodation est situé proche du centre-ville, dans une ancienne p
   <img src="https://drive.google.com/uc?id=17UrjQV1kDQ0-KI6tz-Cs3KgX5ye2Y_ht">
 </div>
 
-Nous partons visiter le parc principal et le jardin botanique, situés en plein centre-ville. La ville semble très etendue, peu de tours, surtout des habitations individuelles. 
+Nous partons visiter le parc principal et le jardin botanique, situés en plein centre-ville. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1LuOauyAtGd1VMQVizkqefegPPsobQLOE">
@@ -41,7 +41,7 @@ Nous partons visiter le parc principal et le jardin botanique, situés en plein 
   <img src="https://drive.google.com/uc?id=1gxChw52ZeCecQD6v-yYize0-E0AuW1jk">
 </div>
 
-Et pour cause, deux tremblements de terre en 2010 et 2011, de mangitudes respectives de 6.2 et 7.1, ont en partie détruit la ville. De nombreux bâtiments emblématiques ont été détruits, des immeubles essentiellement, mais également la cathédrale.
+La ville semble très etendue, peu d'immeubles, surtout des habitations individuelles. Et pour cause, deux tremblements de terre en 2010 et 2011, de magnitudes respectives de 6.2 et 7.1, ont en partie détruit la ville. De nombreux bâtiments emblématiques ont été détruits, des immeubles essentiellement, mais également la cathédrale. Sur le chemin depuis l'aéroport, le taxi nous a même montré certaines maisons, valant plusieurs millions de dollars, abandonnées à la suite du tremblement de terre.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1uwkGqPKQ8_X0clOZwfdgl23YQZJOwEwE">
@@ -90,3 +90,5 @@ Nous visitons également un des marchés de la ville qui regroupe de nombreux pe
 Cette journée s'achève avec une séance de cinéma chez "Alice", un cinéma indépendant et loueur de DVD.
 
 ![image](https://drive.google.com/uc?id=18TpsoshKeqCh-31lKw3ZNZQACs3RhgE7)
+
+La ville de Christchurch semble très calme et très agréable à vivre. Les traces du tremblement de terre sont toujours très présentes. Demain, nous prenons le vélo et nous rendons sur la côte de Christchurch, vers Sumner Beach et le village de Lyttelton.
