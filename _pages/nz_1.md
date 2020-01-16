@@ -26,6 +26,10 @@ Maël conduit à gauche pour la première fois, Eva n’a pas encore les 3 ans d
 
 ![image](https://drive.google.com/uc?id=1wFBBRXVjjpegYeH8Ob4sAC_6kbV7NIRa)
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/3HyMSsV5blk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 La route “scenic drive”, c’est son nom, nous amène jusqu’à Bethells Beach. Notre premier arrêt se fait donc sur la plage de Bethells. Le sable est noir en raison du profil volcanique de la région, les vagues bien formées. Quelques surfers téméraires attendent la vague parfaite. 
 
 ![image](https://drive.google.com/uc?id=1V9jDL9yXZtgxiWYLvlM8QOK1XjzbPFya)
@@ -36,6 +40,10 @@ Nous nous dirigeons ensuite vers le départ de notre marche “Te Henga Walkway�
   <img src="https://drive.google.com/uc?id=1j5W8K8AnXpwrTHtUMly9Wjw3ckA9KLsj">
   <img src="https://drive.google.com/uc?id=1q0-aXShYahZr6-H6ed-6zi6mUySKx2I2">
 </div>
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/N_GOzmxYZEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 Nous prenons rapidement de la hauteur, ce qui nous offre une vue fantastique sur le front pacifique. 
 
