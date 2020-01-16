@@ -22,7 +22,7 @@ comments : true
 
 Pour notre deuxième journée à Auckland, nous louons une voiture pour nous rendre à Te Henga, un des sentiers sur la côte Ouest. Il fait relativement gris et environ 18 degrés. 
 
-Maël conduit à gauche pour la première fois, Eva n’a pas encore les 3 ans de permis nécessaire à la conduite. Nous empruntons des routes sinueuses, longeons des montagnes et des lacs, passons par des villages d’un calme religieux.
+Maël conduit à gauche pour la première fois, Eva n’a pas encore les 3 ans de permis nécessaires à la conduite. Nous empruntons des routes sinueuses, longeons des montagnes et des lacs, passons par des villages d’un calme religieux.
 
 ![image](https://drive.google.com/uc?id=1PsqtwqgUNvndUURp5TGEE8o0XoGzxdz5)
 
@@ -41,10 +41,6 @@ Nous nous dirigeons ensuite vers le départ de notre marche “Te Henga Walkway�
   <img src="https://drive.google.com/uc?id=1q0-aXShYahZr6-H6ed-6zi6mUySKx2I2">
 </div>
 
-<iframe width="700" height="500" src="https://www.youtube.com/embed/N_GOzmxYZEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
 Nous prenons rapidement de la hauteur, ce qui nous offre une vue fantastique sur le front pacifique. 
 
 <div class="fotorama">
@@ -54,7 +50,11 @@ Nous prenons rapidement de la hauteur, ce qui nous offre une vue fantastique sur
   <img src="https://drive.google.com/uc?id=1xqQau8R889oEPbd6WAYb02iVfoDaQfy6">
 </div>
 
-La végétation est totalement différente de ce que l’on peut observer en Bretagne par exemple. (Mais Eva tient à préciser que la Bretagne est tout aussi belle). Ici, la végétation semble presque tropicale. Des palmiers, des fougères, et plein d’autres plantes dont nous ne connaissons même pas le nom. Les arbres nous rappellent ceux croisés en Tasmanie il y a 3 ans de cela. Nous observons beaucoup d’oiseaux aux couleurs incroyables. Certains ressemblent à des moineaux à têtes jaunes, d’autres à des perroquets rouge et vert fluo. 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/N_GOzmxYZEI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+La végétation est totalement différente de ce que l’on peut observer en Bretagne par exemple. (Mais Eva tient à préciser que la Bretagne est toute aussi belle). Ici, la végétation semble presque tropicale. Des palmiers, des fougères, et plein d’autres plantes dont nous ne connaissons même pas le nom. Les arbres nous rappellent ceux aperçus en Tasmanie il y a 3 ans de cela. Nous observons beaucoup d’oiseaux aux couleurs incroyables. Certains ressemblent à des moineaux à têtes jaunes, d’autres à des perroquets rouges et verts fluorescents. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1-VEeLldR2VTBI9hQuLJrv_oWkNT-pgMG">
@@ -66,8 +66,8 @@ Nous marchons pendant 2 heures dans un sens, le soleil fait son apparition. Depu
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1TlvSFm3bKZKgcVxaqV7FBKumlKKORNHE">
-  <img src="https://drive.google.com/uc?id=1z1Jw5-AH2rlTlgbXU3nBtSMZKrdVgBEW">
   <img src="https://drive.google.com/uc?id=1KIlKH9BjpFm-giwa0Z0FOB7gbgWo4tuJ">
+  <img src="https://drive.google.com/uc?id=1iS0hNkSfIWIAXSCK32nloV1oUBUynNol">
 </div>
 
 ![image](https://drive.google.com/uc?id=1wlfT75CZQWKEOuW9G8odiU0eqBo7f32D)
@@ -76,5 +76,5 @@ Vient ensuite le moment de faire demi-tour. Le soleil commence à taper. Eva imp
 
 Manque de chance, cette balade donnera lieu à des coups de soleil pour le moins originaux pour Eva (une bande rouge entre le haut du short et le bas de la brassière), et à un bronzage marcel pour Maël. 
 
-Nous nous mettons sur le retour, mangeons au Revive Vegan Café et allons au sport. C’est déjà l’heure de plier valise. Demain à 9h, nous décollons pour l’île du Sud, direction Christchurch où nous restons près de 3 semaines. 
+Nous nous mettons sur le retour, mangeons au Revive Vegan Café et allons au sport. C’est déjà l’heure de plier valise. Demain à 9h, nous décollons pour l’île du Sud où nous resterons près de 3 semaines. 
 
