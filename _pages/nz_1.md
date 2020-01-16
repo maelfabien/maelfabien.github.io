@@ -24,7 +24,7 @@ Pour notre deuxième journée à Auckland, nous louons une voiture pour nous ren
 
 Maël conduit à gauche pour la première fois, Eva n’a pas encore les 3 ans de permis nécessaire à la conduite. Nous empruntons des routes sinueuses, longeons des montagnes et des lacs, passons par des villages d’un calme religieux.
 
-![image](https://drive.google.com/uc?id=1wFBBRXVjjpegYeH8Ob4sAC_6kbV7NIRa)
+![image](https://drive.google.com/uc?id=1PsqtwqgUNvndUURp5TGEE8o0XoGzxdz5)
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/3HyMSsV5blk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -59,13 +59,10 @@ La végétation est totalement différente de ce que l’on peut observer en Bre
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1-VEeLldR2VTBI9hQuLJrv_oWkNT-pgMG">
   <img src="https://drive.google.com/uc?id=1uhnxGYfNB1F2j5EVFaiz5EJ2PrUDVJWC">
+  <img src="https://drive.google.com/uc?id=1fv9OtPM0Z7xPre4Kj44bJwPLK7d53APQ">
 </div>
 
-Nous marchons pendant 2 heures dans un sens, le soleil fait son apparition. 
-
-![image](https://drive.google.com/uc?id=1fv9OtPM0Z7xPre4Kj44bJwPLK7d53APQ)
-
-Depuis le début de la marche, nous avons pris un peu de hauteur. Nous avons désormais une vue particulièrement dégagée.
+Nous marchons pendant 2 heures dans un sens, le soleil fait son apparition. Depuis le début de la marche, nous avons pris un peu de hauteur (500 mètres de dénivelé positif en tout). Nous avons désormais une vue particulièrement dégagée.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1TlvSFm3bKZKgcVxaqV7FBKumlKKORNHE">
