@@ -27,7 +27,6 @@ Nous traversons Christchurch et roulons 13km en direction de «Sumner Beach» o�
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1PH5Zv_oKRHXqBe3h8iE7A8vLALalfDm2">
   <img src="https://drive.google.com/uc?id=1KRF7UmdEym5vc28M8mHnk2kLxBZyvmKl">
-
 </div>
 
 Arrivés à Sumner Beach, nous pique-niquons sur la plage et tentons de repousser les mouettes qui quémandent de la nourriture. Le village de Sumner ne doit comporter tout au plus que deux trois cafés et boutiques. La route y menant depuis Christchurch est par contre bordée de nombreuses villas luxueuses et semble un endroit privilégié pour vivre, loin de l’excitation (modeste tout de même) du centre-ville.
