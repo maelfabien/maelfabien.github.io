@@ -24,3 +24,8 @@ comments : true
 [Location de voiture et marche à Te Hanga](https://maelfabien.github.io/nz_1/): Première découverte des côtes de Te Henga à l'Ouest d'Auckland.
 
 [Départ pour Christchurch et visite du centre](https://maelfabien.github.io/nz_2/): Une ville très agréable, en re-construction à la suite de tremblements de terre en 2010 et 2011.
+
+[Une balade à vélo qui dégénère](https://maelfabien.github.io/nz_3/): Ce n'était à la base qu'une simple balade vers Lyttelton...
+
+[Sur la route de l'Ouest, à Punakaiki](https://maelfabien.github.io/nz_4/): Une route mythique et une destination paradisiaque. Le début de notre roadtrip.
+
