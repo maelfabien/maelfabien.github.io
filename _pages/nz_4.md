@@ -22,6 +22,11 @@ comments : true
 
 Ce matin, après avoir laissé chacun une trace de notre passage sous forme de photo portrait nous quittons discrètement la prison. 
 
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1vtBs18UqJDnGcYDdYSXJM3kPy0kfXpDB">
+  <img src="https://drive.google.com/uc?id=1YRwDLSJ0QD8Tzjf3XrIC11YPCw_vv1Vy">
+</div>
+
 Nous louons une voiture et nous lançons sur la route de l’Ouest. C’est simple, il n’y en à qu’une, il suffit d’aller toujours tout droit. Nous prenons environ 5h30 pour rejoindre notre destination au lieu des 3h30 initialement prévues. En effet, la route est magnifique et le paysage change continuellement, nous marquons donc plusieurs points d’arrêts pour l’admirer. Nous traversons d’abord des plaines plutôt sèches bordées de montagnes arides de chaque côté puis progressivement la végétation change et devient plus dense, avec notamment des lacs et des rivières. 
 
 <div class="fotorama">
