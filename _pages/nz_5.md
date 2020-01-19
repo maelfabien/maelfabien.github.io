@@ -49,4 +49,4 @@ Cette balade se termine par la traversée d'une ferme, puis nous rentrons à l'h
 
 ![image](https://drive.google.com/uc?id=1LCtJAyrMb2ZtwLMNW6HiVlovCleZciZW)
 
-Une séance de sport nous attend sur la plage. Demain, nous reprenons la route vers le Sud et quittons notre petit paradis.
+Une séance de sport nous attend sur la plage. La soirée est très conviviale, nous discutons avec des voyageurs français, belges et australiens. Demain, nous reprenons la route vers le Sud et quittons notre petit paradis. 
