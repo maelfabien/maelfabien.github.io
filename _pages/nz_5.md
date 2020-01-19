@@ -41,7 +41,7 @@ Pour la deuxième partie de la balade, nous nous enfonçons dans la forêt et pa
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1ayUkMUgzHm7cs4tscfAaSiw35_6M3W9G">
-  <img src="https://drive.google.com/uc?id=1ayUkMUgzHm7cs4tscfAaSiw35_6M3W9G">
+  <img src="https://drive.google.com/uc?id=1nnteWeX3xe40zlZc_pnuo3xTWwGTMN5g">
   <img src="https://drive.google.com/uc?id=1KjYqYeQxO1iQFsyh7nIxMGis_bAhJ0NF">
 </div>
 
