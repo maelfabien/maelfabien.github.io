@@ -29,3 +29,4 @@ comments : true
 
 [Sur la route de l'Ouest, à Punakaiki](https://maelfabien.github.io/nz_4/): Une route mythique et une destination paradisiaque. Le début de notre roadtrip.
 
+[Une balade fantastique dans le parc de Pororari](https://maelfabien.github.io/nz_5/): De belles rencontres, une balade mémorable.
