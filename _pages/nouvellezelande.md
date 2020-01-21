@@ -30,3 +30,7 @@ comments : true
 [Sur la route de l'Ouest, à Punakaiki](https://maelfabien.github.io/nz_4/): Une route mythique et une destination paradisiaque. Le début de notre roadtrip.
 
 [Une balade fantastique dans le parc de Pororari](https://maelfabien.github.io/nz_5/): De belles rencontres, une balade mémorable.
+
+[Découverte d'Hokitika et séjour à la ferme](https://maelfabien.github.io/nz_6/): Un joli village, des gorges bleues et un hôtel original... Bienvenue à Hokitika.
+
+[Vers le glaciers de Franz Josef](https://maelfabien.github.io/nz_7/): Toujours plus au sud, arrivée aux glaciers de Franz Josef.
