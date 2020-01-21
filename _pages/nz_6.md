@@ -20,9 +20,9 @@ comments : true
 
 <br>
 
-Toutes les bonnes choses ont une fin, c'est maintenant l'heure de quitter Punakaiki. Bon, nous enchaînons avec des choses tout aussi agrébles et partons pour Hokitika, un petit village le long de la côte, en direction du sud et des glaciers de Franz Josef.
+Toutes les bonnes choses ont une fin, c'est maintenant l'heure de quitter Punakaiki. Bon, nous enchaînons avec des choses toutes aussi agréables et partons pour Hokitika, un petit village le long de la côte, en direction du sud et des glaciers de Franz Josef.
 
-Notre logement est pour le moins original, puis nous dormons dans une ferme, au Hokitika Farm Stay. Les propriétaires sont des exploitants agricoles qui louent deux chambres de leur maison. La maison est totalement autonome sur le plan énergétique, et située à 15 minutes du centre-ville.
+Notre logement est pour le moins original, puisque nous dormons dans une ferme, la Hokitika Farm Stay. Les propriétaires sont des exploitants agricoles qui louent deux chambres de leur maison. La maison est totalement autonome sur le plan énergétique, et située à 15 minutes du centre-ville.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1i44CEgAwI6wOH56JOE5Ne-imHuJgwfR_">

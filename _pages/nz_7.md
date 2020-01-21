@@ -38,7 +38,7 @@ Le site est relativement touristique. Le temps est couvert, ce qui devrait nous 
 
 ![image](https://drive.google.com/uc?id=1SryXcyftOP3vnvppSeGeCY-QJxxXWDK9)
 
-Nous marchons sur les roches qui où se trouvaient auparavant la glace et longeons la rivière alimentée par les nombreuses cascades. Toutes les cascades se déversent dans la rivière centrale.
+Nous marchons sur les roches où se trouvaient auparavant la glace et longeons la rivière principale alimentée par les nombreuses cascades. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=192sFLf923dsEI0N9bNEeUiioNGW-at4j">
