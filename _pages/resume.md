@@ -18,12 +18,6 @@ classes: wide
 | [Master of Science in Actuarial Science](https://www.unil.ch/hec/en/home/menuinst/etudes/masters/sciences-actuarielles.html) | HEC Faculty, University of Lausanne | 09.2016 | 07.2018 | 5.2/6 |
 | [Specialized Master in Big Data and Data Science](https://www.telecom-paris.fr/fr/masteres-specialises/tous-les-ms/big-data) | Telecom Paris, Institut Polytechnique de Paris | 09.2018 | 04.2020 | 17.02/20 |
 
-# Entrepreneurship
-
-- 02.2019 - Present: Freelance Data Scientist
-  - Created my freelance activity (writing, teaching, building models...)
-
-
 # Experience
 
 - 11.2019 - 12.2019: Natural Language Processing Consulting, [Orange Senegal](https://www.orange.sn/)
@@ -55,6 +49,16 @@ classes: wide
   - Redesign of a private Accident Insurance product. Statistical analysis, anomaly
 detection, product pricing (MLE, robustness tests, profit testing, simulations)
   - *R, VBA, Tableau*
+
+# MOOCs
+
+-[Google Cloud Platform Big Data and Machine
+Learning Fundamentals, Coursera](https://www.coursera.org/account/accomplishments/certificate/NVHT6SJTQ3P5)
+- [Java Programming, Udemy](https://www.udemy.com/certificate/UC-KRLWQTSI/)
+- [SQL for Data Science, Udemy](https://www.udemy.com/certificate/UC-B0RSBG2I/)
+- [Python for Data Science, Udemy](https://www.udemy.com/certificate/UC-DRSJYEBW/)
+- [Fundamentals for Big Data, IMT](https://www.udemy.com/certificate/UC-DRSJYEBW/)
+- Machine Learning Explainability, Kaggle
 
 # Entrepreneurship
 
