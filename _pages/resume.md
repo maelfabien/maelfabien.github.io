@@ -18,6 +18,12 @@ classes: wide
 | [Master of Science in Actuarial Science](https://www.unil.ch/hec/en/home/menuinst/etudes/masters/sciences-actuarielles.html) | HEC Faculty, University of Lausanne | 09.2016 | 07.2018 | 5.2/6 |
 | [Specialized Master in Big Data and Data Science](https://www.telecom-paris.fr/fr/masteres-specialises/tous-les-ms/big-data) | Telecom Paris, Institut Polytechnique de Paris | 09.2018 | 04.2020 | 17.02/20 |
 
+# Entrepreneurship
+
+- 02.2019 - Present: Freelance Data Scientist
+  - Created my freelance activity (writing, teaching, building models...)
+
+
 # Experience
 
 - 11.2019 - 12.2019: Natural Language Processing Consulting, [Orange Senegal](https://www.orange.sn/)

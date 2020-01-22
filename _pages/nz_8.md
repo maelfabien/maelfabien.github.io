@@ -28,7 +28,7 @@ La temps est plus clément que la veille, ce qui nous offre une vue dégagée d�
 
 ![image](https://drive.google.com/uc?id=18AyLGRWNZUGb1HIzMg8m2KujxZef5uWj)
 
-Les paysages varient beaucoup pendant cette randonnée, le long de la rivière, à flanc de montagne, en pleine forêt... Nous empruntons beaucoup de ponts suspendus pour relier deux flans de la montagne. 
+Les paysages varient beaucoup pendant cette randonnée, le long de la rivière, à flanc de montagne, en pleine forêt... La forêt semble presque tropicale, ce qui contraste avec les glaciers environnants. Nous empruntons beaucoup de ponts suspendus pour relier deux flans de la montagne. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1vdL-MQDAdIFmR9PJ7-bIFtXSTnwLNiH4">

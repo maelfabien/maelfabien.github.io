@@ -34,3 +34,5 @@ comments : true
 [Découverte d'Hokitika et séjour à la ferme](https://maelfabien.github.io/nz_6/): Un joli village, des gorges bleues et un hôtel original... Bienvenue à Hokitika.
 
 [Vers le glaciers de Franz Josef](https://maelfabien.github.io/nz_7/): Toujours plus au sud, arrivée aux glaciers de Franz Josef.
+
+[Robert's Point Track](https://maelfabien.github.io/nz_8/): Plusieurs heures de montée, des paysages incroyables et enfin une vue dégagée sur le glacier. 
