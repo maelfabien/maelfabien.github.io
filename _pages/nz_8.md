@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Nous partons pour la randonnée du Robert's Point, une randonnée de 5h20 et 11.2 kilomètres (ce qui veut dire que ça va bien monter...), sensée offrir un beau point de vue sur le glacier à 605 mètres d'altitude.
+Ce matin, nous partons pour la randonnée du Robert's Point, une randonnée de 5h20 et 11.2 kilomètres (ce qui veut dire que ça va bien monter...), sensée offrir un beau point de vue sur le glacier à 605 mètres d'altitude.
 
 La temps est plus clément que la veille, ce qui nous offre une vue dégagée dès le départ. 
 
@@ -28,9 +28,7 @@ La temps est plus clément que la veille, ce qui nous offre une vue dégagée d�
 
 ![image](https://drive.google.com/uc?id=18AyLGRWNZUGb1HIzMg8m2KujxZef5uWj)
 
-Les paysages varient beaucoup pendant cette randonnée, le long de la rivière, à flanc de montagne, en pleine forêt...
-
-Nous empruntons beaucoup de ponts suspendus pour relier deux flans de la montagne. 
+Les paysages varient beaucoup pendant cette randonnée, le long de la rivière, à flanc de montagne, en pleine forêt... Nous empruntons beaucoup de ponts suspendus pour relier deux flans de la montagne. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1vdL-MQDAdIFmR9PJ7-bIFtXSTnwLNiH4">
@@ -39,7 +37,7 @@ Nous empruntons beaucoup de ponts suspendus pour relier deux flans de la montagn
   <img src="https://drive.google.com/uc?id=1AT_izXMTWkPrwgjmw_Bmo-cGVAH8hlIu">
 </div>
 
-Nous l'avions prévu, ça commence à monter sévèrement. Heureusement, nous sommes en forêt et les températures restent fraiches.
+Nous l'avions prévu, il y a de la montée... Heureusement, nous sommes en forêt et les températures restent fraiches.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1hhpGWNnpdLHW_6VdvMPsuCXnRwfH6K-p">
@@ -71,6 +69,6 @@ Après deux heures d'effort, nous l'apercevons enfin. Le glacier de Franz Josef 
 
 ![image](https://drive.google.com/uc?id=1K1xRglsSTAGcgQVaM6U7trpg9XWz0T9f)
 
-Après 25 minutes de pause, nous entammons notre descente. 1h30 plus tard, nous arrivons au parking. Ce tour nous aura pris 4 heures en tout.
+Après 25 minutes de pause, nous entammons notre descente. 1h30 plus tard, nous arrivons au parking. Ce tour était plutôt rapide et nous aura pris 4 heures en tout.
 
-La douche à l'hôtel est très appréciée, et nous passons la soirée à nous relaxer à l'hôtel, et à cuisiner.
+La douche à l'hôtel est très appréciée, et nous passons la soirée à nous relaxer à l'hôtel, à jouer au billard et à cuisiner.
