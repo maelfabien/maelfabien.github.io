@@ -52,7 +52,7 @@ detection, product pricing (MLE, robustness tests, profit testing, simulations)
 
 # MOOCs
 
--[Google Cloud Platform Big Data and Machine
+- [Google Cloud Platform Big Data and Machine
 Learning Fundamentals, Coursera](https://www.coursera.org/account/accomplishments/certificate/NVHT6SJTQ3P5)
 - [Java Programming, Udemy](https://www.udemy.com/certificate/UC-KRLWQTSI/)
 - [SQL for Data Science, Udemy](https://www.udemy.com/certificate/UC-B0RSBG2I/)
