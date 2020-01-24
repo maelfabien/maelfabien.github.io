@@ -19,7 +19,13 @@ Before starting, read the introduction to this training:
 
 [Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?
 
-[Basics of Python programming](https://maelfabien.github.io/da_tuto/python2) : An in-depth introduction to Python programming essentials.
+[Advice for your journey](https://maelfabien.github.io/da_tuto/python_before) : Some important pieces of advice for your journey towards programming and data analysis.
+
+[Basics of Python programming](https://maelfabien.github.io/da_tuto/python2) : An introduction to Python programming essentials.
+
+[Data structures](https://maelfabien.github.io/da_tuto/python3) : Learn what lists, tuples, set and dictionaries are.
+
+[Manipulating strings](https://maelfabien.github.io/da_tuto/python4) : Handling textual data requires to know some basic functions.
 
 [Functions and classes in Python]() : Todo
 
@@ -64,7 +70,6 @@ Before starting, read the introduction to this training:
 ## Course 5: Introduction to Machine Learning
 
 [Basics of Machine Learning and Motivation](https://maelfabien.github.io/machinelearning/ml_base/) : A first approach to machine learning. We’ll go over the main motivations, the main kind of algorithms, what they can be used for…
-
 
 ## Final Steps
 

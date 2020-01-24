@@ -35,4 +35,6 @@ comments : true
 
 [Vers le glaciers de Franz Josef](https://maelfabien.github.io/nz_7/): Toujours plus au sud, arrivée aux glaciers de Franz Josef.
 
-[Robert's Point Track](https://maelfabien.github.io/nz_8/): Plusieurs heures de montée, des paysages incroyables et enfin une vue dégagée sur le glacier. 
+[Robert's Point Track](https://maelfabien.github.io/nz_8/): Plusieurs heures de montée, des paysages incroyables et enfin une vue dégagée sur le glacier.
+
+[Une pisicine naturelle exceptionnelle](https://maelfabien.github.io/nz_9/): Une journée inoublable sur la route de Makarora, des falaises, des cascades et une piscine naturelle irréaliste.
