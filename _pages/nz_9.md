@@ -62,6 +62,7 @@ La route ne doit durer que 2h50 mais voilà plus de 3h45 que nous voyageons. Nou
 Nous atteignons enfin Makarora, notre destination. Makarora n'est qu'un petit village qui se compose de deux commerces, d'une école et de quelques maisons. La plupart des "habitants" sont des touristes sur la route.
 
 <div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1QcZGn-tI828Shk6fuq1ZwQebp7jfNkD8">
   <img src="https://drive.google.com/uc?id=12rCv7fENDv-bwF3HBH0U8ahNKLUesytW">
   <img src="https://drive.google.com/uc?id=1LmKFHgZ3if8OqsEdtWaQQI17doQbrLdg">
 </div>
