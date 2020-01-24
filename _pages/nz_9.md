@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Si nous devions décrire cette journée, le premier mot qui nous vient à l'esprit est sûrement: WOW. Rouler n'a jamais été aussi plaisant qu'en Nouvelle Zélande, les paysages défilent et ne se ressemblent pas, la nature est partout, et nous en profitons pour marquer de nombreux arrêts. 
+Si nous devions décrire cette journée, le premier mot qui nous viendrait à l'esprit serait sûrement: WOW. Rouler n'a jamais été aussi plaisant qu'en Nouvelle Zélande, les paysages défilent et ne se ressemblent pas, la nature est partout, et nous en profitons pour marquer de nombreux arrêts. 
 
 Nous quittons Franz Josef vers 10h en direction de Makarora, un petit village sur la route de Wanaka. Heureux coup de chance lorsqu'en voulant s'arrêter aux toilettes publiques de Bruce Bay nous aperçevons des dauphins en train de jouer dans les vagues. 
 
@@ -48,7 +48,7 @@ Il est 13 heures, les ventres gargouillent, nous nous arrêtons donc aux Roaring
 
 <br>
 
-La route ne doit durer que 2h50 mais voilà plus de 3h45 que nous voyageons. C'est finalement aux Thunder Creek Falls que nous effectuons notre dernier arrêt. Une cascade de 28 mètres de haut, accessible après une marche en forêt de seulement 10 minutes depuis la route. 
+La route ne doit durer que 2h50 mais voilà plus de 3h45 que nous voyageons. Nous effectuons notre dernier arrêt aux Thunder Creek Falls, une cascade de 28 mètres de haut, accessible après une marche en forêt de seulement 10 minutes depuis la route. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=162pyXXVR9bzfn6tXI3R6gQ3ATi3ijmTJ">
@@ -59,7 +59,7 @@ La route ne doit durer que 2h50 mais voilà plus de 3h45 que nous voyageons. C'e
 
 <br>
 
-Nous atteignons enfin notre destination, à Makarora. Makarora n'est qu'un petit village qui se compose de deux commerces, d'une école et de quelques maisons. La plupart des "habitants" sont des touristes sur la route.
+Nous atteignons enfin Makarora, notre destination. Makarora n'est qu'un petit village qui se compose de deux commerces, d'une école et de quelques maisons. La plupart des "habitants" sont des touristes sur la route.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=12rCv7fENDv-bwF3HBH0U8ahNKLUesytW">
