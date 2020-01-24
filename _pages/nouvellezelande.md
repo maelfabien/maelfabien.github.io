@@ -38,3 +38,5 @@ comments : true
 [Robert's Point Track](https://maelfabien.github.io/nz_8/): Plusieurs heures de montée, des paysages incroyables et enfin une vue dégagée sur le glacier.
 
 [Une pisicine naturelle exceptionnelle](https://maelfabien.github.io/nz_9/): Une journée inoublable sur la route de Makarora, des falaises, des cascades et une piscine naturelle irréaliste.
+
+[En route vers Wanaka](https://maelfabien.github.io/nz_10/): Des lacs incroyables, une ascension sans fin et un hôtel chaleureux.
