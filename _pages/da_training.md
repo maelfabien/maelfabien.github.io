@@ -7,21 +7,21 @@ header :
     image: "https://maelfabien.github.io/assets/images/wolf.jpg"
 ---
 
-Before starting, read the introduction to this training:
+## Course 1: Before we start
 
 [What to expect from this training?](https://maelfabien.github.io/da_tuto/daexpect) : What will you understand? What will you achieve? How does the training work?
 
-[What is Data Analysis?](https://maelfabien.github.io/da_tuto/daexpect/data_vs) : What are the key roles of a Data Analyst? And how is it different from Business Analysts or Data Scientists? 
+[What is Data Analysis?](https://maelfabien.github.io/da_tuto/data_vs) : What are the key roles of a Data Analyst? And how is it different from Business Analysts or Data Scientists? 
 
-## Course 1: Introduction to Python
+[Advice for your journey](https://maelfabien.github.io/da_tuto/python_before) : Some important pieces of advice for your journey towards programming and data analysis.
 
 [Understanding computer components](https://maelfabien.github.io/bigdata/comp_components/) : Starting from the lowest level by understanding computer components.
 
 [Introduction to Bash Scripting for Terminal](https://maelfabien.github.io/bigdata/Terminal/#) : Learn how to interact with your terminal.
 
-[Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?
+## Course 2: Introduction to Python
 
-[Advice for your journey](https://maelfabien.github.io/da_tuto/python_before) : Some important pieces of advice for your journey towards programming and data analysis.
+[Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?
 
 [Basics of Python programming](https://maelfabien.github.io/da_tuto/python2) : An introduction to Python programming essentials.
 
@@ -35,7 +35,7 @@ Before starting, read the introduction to this training:
 
 [Package installation for Python](https://maelfabien.github.io/da_tuto/git2) : Install external packages and libraries.
 
-## Course 2: Data Wrangling
+## Course 3: Data Wrangling
 
 [Reading different file formats]() : Todo
 
@@ -45,7 +45,7 @@ Before starting, read the introduction to this training:
 
 [The SQL data scientists should know]() : Todo
 
-## Course 3: Statistical Analysis
+## Course 4: Statistical Analysis
 
 [Descriptive Statistics]() : Todo
 
@@ -57,7 +57,7 @@ Before starting, read the introduction to this training:
 
 [Basics of Statistical Hypothesis testing](https://maelfabien.github.io/statistics/Tests/) : How do we assess if a parameter is significant or not ? We’ll cover statistical tests, hypothesis and joint tests.
 
-## Course 4: Data Visualization
+## Course 5: Data Visualization
 
 [Key Concepts of Data Visualization](https://maelfabien.github.io/machinelearning/Dataviz/) : What is data viz ? Why use it ? What are the most famous tools ?
 
@@ -69,11 +69,11 @@ Before starting, read the introduction to this training:
 
 [Create an interactive web application for data exploration]() : Todo
 
-## Course 5: Introduction to Machine Learning
+## Course 6: Introduction to Machine Learning
 
 [Basics of Machine Learning and Motivation](https://maelfabien.github.io/machinelearning/ml_base/) : A first approach to machine learning. We’ll go over the main motivations, the main kind of algorithms, what they can be used for…
 
-## Final Steps
+## Course 7: Final Steps
 
 [Final project to submit]() : Submit your project and get your certificate.
 
