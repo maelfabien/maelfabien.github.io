@@ -11,6 +11,8 @@ Before starting, read the introduction to this training:
 
 [What to expect from this training?](https://maelfabien.github.io/da_tuto/daexpect) : What will you understand? What will you achieve? How does the training work?
 
+[What is Data Analysis?](https://maelfabien.github.io/da_tuto/daexpect/data_vs) : What are the key roles of a Data Analyst? And how is it different from Business Analysts or Data Scientists? 
+
 ## Course 1: Introduction to Python
 
 [Understanding computer components](https://maelfabien.github.io/bigdata/comp_components/) : Starting from the lowest level by understanding computer components.
