@@ -40,3 +40,5 @@ comments : true
 [Une pisicine naturelle exceptionnelle](https://maelfabien.github.io/nz_9/): Une journée inoublable sur la route de Makarora, des falaises, des cascades et une piscine naturelle irréaliste.
 
 [En route vers Wanaka](https://maelfabien.github.io/nz_10/): Des lacs incroyables, une ascension sans fin et un hôtel chaleureux.
+
+[Ne rien faire, ça épuise](https://maelfabien.github.io/nz_11/): Une journée complète de repos, mais nous nous reprenons en main le lendemain.
