@@ -25,11 +25,15 @@ header :
 
 [Basics of Python programming](https://maelfabien.github.io/da_tuto/python2) : An introduction to Python programming essentials.
 
-[Data structures](https://maelfabien.github.io/da_tuto/python3) : Learn what lists, tuples, set and dictionaries are.
+[Conditions](https://maelfabien.github.io/da_tuto/python3) : Learn what lists, tuples, set and dictionaries are.
 
-[Manipulating strings](https://maelfabien.github.io/da_tuto/python4) : Handling textual data requires to know some basic functions.
+[Data structures](https://maelfabien.github.io/da_tuto/python4) : Learn what lists, tuples, set and dictionaries are.
 
-[Functions and classes in Python]() : Todo
+[Manipulating strings](https://maelfabien.github.io/da_tuto/python5) : Handling textual data requires to know some basic functions.
+
+[Loops](https://maelfabien.github.io/da_tuto/python6) : For and while loops in Python, and list comprehension.
+
+[Functions](https://maelfabien.github.io/da_tuto/python7) : Learn how to wrap your code in functions and make it easier to re-use.
 
 [Introduction to Git](https://maelfabien.github.io/da_tuto/git) : 7 simple commands to master version control and code sharing.
 
