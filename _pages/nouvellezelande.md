@@ -44,3 +44,5 @@ comments : true
 [Ne rien faire, ça épuise](https://maelfabien.github.io/nz_11/): Une journée complète de repos, mais nous nous reprenons en main le lendemain.
 
 [Arrivée à Twizel et balade au lac Pukaki](https://maelfabien.github.io/nz_12/): Une vue exceptionnelle sur Mount Cook et un bleu atypique sur le lac Pukaki.
+
+[Ascension jusqu'à Mueller Hut](https://maelfabien.github.io/nz_13/): 1050 mètres de dénivelé, de la neige, et une vue fantastique sur la plus grande montagne de Nouvelle-Zélande, Mount Cook.
