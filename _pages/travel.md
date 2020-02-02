@@ -5,15 +5,15 @@ author_profile: false
 title: "Travel"
 layouts_gallery:
   - url: https://maelfabien.github.io/greenland/
-    image_path: https://drive.google.com/uc?id=1BJNpDooI1rQ-M_xGg2o26bR8v-aPZkzY
+    image_path: https://drive.google.com/uc?id=1_0E-Wj-BQbl3HVRjAFKnShzyprZ562IN
   - url: https://maelfabien.github.io/cambodge/
-    image_path: https://drive.google.com/uc?id=1z9kJqqGGythbSpYq9Db1Xc-5Mw7s6AA_
+    image_path: https://drive.google.com/uc?id=1D9LgG_icNS2yI81q4Qp85gPKhfWacBc0
   - url: https://maelfabien.github.io/vietnam/
-    image_path: https://drive.google.com/uc?id=1JLbIFlfCo0QKdw9v99Gl8UCpmrd7AbCk
+    image_path: https://drive.google.com/uc?id=1DYqlmG8QAdPInPO7-m6RCskPdd1D6fT8
   - url: https://maelfabien.github.io/australie/
-    image_path: https://drive.google.com/uc?id=1Ald6nZk_JHUgnSkDQDULKCdN_6co7sAW
+    image_path: https://drive.google.com/uc?id=11w72m_ID1lTXCx24RkQaY5lVws3YOhl0
   - url: https://maelfabien.github.io/nouvellezelande
-    image_path: https://drive.google.com/uc?id=1ej0Rkbi4kiXp58n2Y-_xNFpVFtoRs0GS
+    image_path: https://drive.google.com/uc?id=1IdPd1tHmArGUF-L0FfHZwkv4buvF2sWN
 ---
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
