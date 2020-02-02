@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 14.01.2020*
+*Dernière mise à jour: 02.02.2020*
 
 **Dates:** 13.01.2020 - 11.02.2020
 
