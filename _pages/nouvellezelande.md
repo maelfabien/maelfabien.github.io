@@ -50,3 +50,6 @@ comments : true
 [Co-voiturage jusqu'à Queenstown](https://maelfabien.github.io/nz_14/): Un trajet de 4 heures, et découverte de la ville de Queenstown.
 
 [Sauter de 134 mètres...](https://maelfabien.github.io/nz_15/): Une expérience folle de saut à l'élastique à Nevis, 8 secondes de chute libre à 190 km/h.
+
+[Te Anau et Kepler Track](https://maelfabien.github.io/nz_16/): Direction Te Anau pour 12km sur la Kepler Track, une des "Great Walks" de Nouvelle-Zélande.
+
