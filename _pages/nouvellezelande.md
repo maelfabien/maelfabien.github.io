@@ -53,3 +53,4 @@ comments : true
 
 [Te Anau et Kepler Track](https://maelfabien.github.io/nz_16/): Direction Te Anau pour 12km sur la Kepler Track, une des "Great Walks" de Nouvelle-Zélande.
 
+[Une croisière folle à Milford Sound](https://maelfabien.github.io/nz_17/): 2 jours incroyables à Milford Sound et une tempète.
