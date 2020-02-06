@@ -58,3 +58,5 @@ comments : true
 [La route vers l'Est](https://maelfabien.github.io/nz_18/): Slope Point, Curio Bay et Cathedral Caves. Direction l'Est.
 
 [Pluies torrentielles, passage à Dunedin](https://maelfabien.github.io/nz_19/): Traversée d'une route innondée avec notre petite Toyota...
+
+[Enfin du beau temps](https://maelfabien.github.io/nz_20/): Cascades, lions de mer, plages... Une belle journée en remontant vers Kaka point.
