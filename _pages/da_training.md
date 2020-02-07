@@ -19,13 +19,15 @@ header :
 
 [Introduction to Bash Scripting for Terminal](https://maelfabien.github.io/bigdata/Terminal/#) : Learn how to interact with your terminal.
 
+[Setup your computer](https://maelfabien.github.io/bigdata/setup/) : Setup your computer for data science.
+
 ## Course 2: Introduction to Python
 
 [Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?
 
 [Basics of Python programming](https://maelfabien.github.io/da_tuto/python2) : An introduction to Python programming essentials.
 
-[Conditions](https://maelfabien.github.io/da_tuto/python3) : Learn what lists, tuples, set and dictionaries are.
+[Conditions](https://maelfabien.github.io/da_tuto/python3) : Conditions in Python are major elements used frequently in your code.
 
 [Data structures](https://maelfabien.github.io/da_tuto/python4) : Learn what lists, tuples, set and dictionaries are.
 
@@ -87,5 +89,3 @@ All codes and exercises are accessible on this repo. Don't hesitate to show your
 
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
