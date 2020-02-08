@@ -60,3 +60,5 @@ comments : true
 [Pluies torrentielles, passage à Dunedin](https://maelfabien.github.io/nz_19/): Traversée d'une route innondée avec notre petite Toyota...
 
 [Enfin du beau temps](https://maelfabien.github.io/nz_20/): Cascades, lions de mer, plages... Une belle journée en remontant vers Kaka point.
+
+[Les plus petits pingouins du monde](https://maelfabien.github.io/nz_21/): Une rencontre unique avec 70 des plus petits pingouins du monde.
