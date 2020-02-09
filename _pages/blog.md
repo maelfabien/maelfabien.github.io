@@ -51,6 +51,10 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
+[SP - Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
+
+[SP - Building a Voice Activity Detection web application](https://maelfabien.github.io/machinelearning/Speech4/#) : Voice detection can be used to start a voice assistant or in emergency cases for example. Here's how to implement it using simple methods.
+
 [CV - Implementing YoloV3 for Object Detection](https://maelfabien.github.io/computervision/yolo/) : Learn how to implement YoloV3 and detect objects on your images and videos.
 
 [NLP - Easy Question Answering with AllenNLP](https://maelfabien.github.io/machinelearning/NLP_9/) : Understand the core concepts and create a simple example of Question Answering.
