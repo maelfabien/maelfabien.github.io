@@ -36,19 +36,4 @@ A series of articles dedicated to natural language processing. All codes and exe
 
 [Easy Question Answering with AllenNLP](https://maelfabien.github.io/machinelearning/NLP_9/) : Understand the core concepts and create a simple example of Question Answering.
 
-<br>
-
-![image](https://maelfabien.github.io/assets/images/speech_head.png)
-
-[Speaker Verification using Gaussian Mixture Model (GMM-UBM)](https://maelfabien.github.io/machinelearning/Speech1/) : Speaker biometrics is a field of Speech processing which focuses on identifying a unique speaker from several audio recorings. This can be useful for access control or suspect identification for example.
-
-[Speaker Verification using SVM-based methods](https://maelfabien.github.io/machinelearning/Speech2/#) : Another method relying on Support Vector Machines for Speaker Verification.
-
-[Building a Voice Activity Detection web application](https://maelfabien.github.io/machinelearning/Speech4/#) : Voice detection can be used to start a voice assistant or in emergency cases for example. Here's how to implement it using simple methods.
-
-[Introduction to Continuous Signal Processing](https://maelfabien.github.io/machinelearning/Signal1/#): An overview of continuous signal processing with examples.
-
-[Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
-
-
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>

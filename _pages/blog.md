@@ -14,6 +14,8 @@ layouts_gallery:
     image_path: /assets/images/nlp_short.png
   - url: https://maelfabien.github.io/cv/
     image_path: /assets/images/cv_short.png
+  - url: https://maelfabien.github.io/signal/
+    image_path: /assets/images/signal_short.png
   - url: https://maelfabien.github.io/rl/
     image_path: /assets/images/rl_short.png
   - url: https://maelfabien.github.io/ent/
