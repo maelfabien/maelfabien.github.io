@@ -62,3 +62,7 @@ comments : true
 [Enfin du beau temps](https://maelfabien.github.io/nz_20/): Cascades, lions de mer, plages... Une belle journée en remontant vers Kaka point.
 
 [Les plus petits pingouins du monde](https://maelfabien.github.io/nz_21/): Une rencontre unique avec 70 des plus petits pingouins du monde.
+
+[Back to Auckland](https://maelfabien.github.io/nz_22/): Séjour express à Christchurch, et retour à Auckland sous un grand soleil.
+
+[Ile de Waiheke à vélo](https://maelfabien.github.io/nz_23/): Une journée sur l'île de Waiheke, vélo, baignade et grand soleil.
