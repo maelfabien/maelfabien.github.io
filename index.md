@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-<p style="font-size:0.5em">Current status: Traveling in New Zealand, writing articles, doing projects.</p>
+<p style="font-size:0.5em">Current status: Traveling in French Polynesia, writing articles, doing projects.</p>
 
 Welcome to my blog. My name is Maël and I'm a data scientist. I am currently traveling South East Asia, New Zealand, Tahiti and Chile with my girlfriend. I’m posting some pictures of my travel in the Travel section. 
 
