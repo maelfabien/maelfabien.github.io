@@ -70,7 +70,11 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
-[SP - Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
+[SP - Sound Visualization (3/3)](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
+
+[SP - Sound Feature Extraction (2/3)](https://maelfabien.github.io/machinelearning/Speech9/#): An overview with a Python implementation of the different sound features to extract.
+
+[SP - Introduction to Voice Processing in Python (1/3)](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
 
 [SP - Building a Voice Activity Detection web application](https://maelfabien.github.io/machinelearning/Speech4/#) : Voice detection can be used to start a voice assistant or in emergency cases for example. Here's how to implement it using simple methods.
 
