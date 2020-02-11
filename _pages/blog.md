@@ -28,6 +28,12 @@ I have written more than 150 articles so far, so feel free to explore the differ
 
 # Search
 
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
 <div id="main" role="main">
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
