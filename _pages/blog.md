@@ -22,28 +22,30 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
-I have written more than 100 articles so far, so feel free to explore the different topics by clicking on the buttons below.
+I have written more than 150 articles so far, so feel free to explore the different topics by clicking on the buttons below.
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
 # Search
 
-{%- assign search_provider = site.search_provider | default: "lunr" -%}
-{%- case search_provider -%}
-  {%- when "lunr" -%}
-  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
-  <div id="results" class="results"></div>
-  {%- when "google" -%}
-  <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
-  <input type="text" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
-  </form>
-  <div id="results" class="results">
-  <gcse:searchresults-only></gcse:searchresults-only>
-  </div>
-  {%- when "algolia" -%}
-  <div class="search-searchbar"></div>
-  <div class="search-hits"></div>
-{%- endcase -%}
+<div id="main" role="main">
+  {%- assign search_provider = site.search_provider | default: "lunr" -%}
+  {%- case search_provider -%}
+    {%- when "lunr" -%}
+    <input type="text" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    <div id="results" class="results"></div>
+    {%- when "google" -%}
+    <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <input type="text" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    </form>
+    <div id="results" class="results">
+    <gcse:searchresults-only></gcse:searchresults-only>
+    </div>
+    {%- when "algolia" -%}
+    <div class="search-searchbar"></div>
+    <div class="search-hits"></div>
+  {%- endcase -%}
+</div>
 
 I recently gave an interview to the excellent data science podcast: DataCast.
 
