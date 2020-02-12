@@ -14,6 +14,8 @@ layouts_gallery:
     image_path: https://drive.google.com/uc?id=11w72m_ID1lTXCx24RkQaY5lVws3YOhl0
   - url: https://maelfabien.github.io/nouvellezelande
     image_path: https://drive.google.com/uc?id=1IdPd1tHmArGUF-L0FfHZwkv4buvF2sWN
+  - url: https://maelfabien.github.io/tahiti
+    image_path: https://drive.google.com/uc?id=1wHaEIQ5bQrTh700hVGUPSMt5_p_6p03s
 ---
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
