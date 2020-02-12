@@ -24,9 +24,8 @@ comments : true
 
 Aujourd’hui nous revivons la journée du mardi 11 février. En effet nous sommes partis hier, mardi 11, d'Auckland à 16h55 et arrivés après un vol de 4h à 22h50, le lundi 10 à Tahiti. Pour la faire simple, on a remonté le temps ! 
 
-![image](https://drive.google.com/uc?id=11BH_8ShHrAhw56rP4tmj8jmXyX5a0uFL)
-
 <div class="fotorama">
+  <img src="https://drive.google.com/uc?id=11BH_8ShHrAhw56rP4tmj8jmXyX5a0uFL">
   <img src="https://drive.google.com/uc?id=1xKPqzBVoVnu3i-RbsmWQmw3JwWpS6NGV">
   <img src="https://drive.google.com/uc?id=1Ziq2VyiNhvu8uE8k2SPlZtk1bBXUcYhz">
 </div>
@@ -35,13 +34,17 @@ Accueillis par les chants tahitiens et les contrôles anti coronavirus, nous sor
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/GDpno4MfpT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
+
 Dommage qu’il fasse nuit à l’arrivée, nous aurions aimé profiter de la vue offerte par la fenêtre de la chambre ! 
 
 ![image](https://drive.google.com/uc?id=1Nr05TqfjM_SqvnBL70ZVtZ98bpPntrxh)
 
 Bon allez, pour se mettre dans le bain, lisez le reste de l'article avec ce fond sonore ;)
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108456959&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/108456959&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+<br>
 
 Ce matin nous prenons le petit déjeuner dehors (après s’être faits suspendre nos flocons d’avoine et note miel par la bio-sécurité de l’aéroport) et visitons la ville de Papeete. 
 
