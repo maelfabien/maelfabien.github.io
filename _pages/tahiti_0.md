@@ -20,11 +20,17 @@ comments : true
 
 <br>
 
+Aéroport Auckland:
+
+![image](https://drive.google.com/uc?id=11BH_8ShHrAhw56rP4tmj8jmXyX5a0uFL)
+
+Arrivée Tahiti:
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=19Oihyyh0UFJDorLq_kclh9oMRoZhhz2W">
-  <img src="https://drive.google.com/uc?id=1nKO4AD4zNkXOVTAN3qh6Ou6kzOGRBm8g">
-  <img src="https://drive.google.com/uc?id=136jO8Tr9_45S8k1Tu73UUX2tLc64ZMeU">
+  <img src="https://drive.google.com/uc?id=1xKPqzBVoVnu3i-RbsmWQmw3JwWpS6NGV">
+  <img src="https://drive.google.com/uc?id=1Ziq2VyiNhvu8uE8k2SPlZtk1bBXUcYhz">
 </div>
 
-![image](https://drive.google.com/uc?id=18-DX8JZH6NjCFagJLEqTQhajWeIogwFF)
+Chambre hôtel:
+
+![image](https://drive.google.com/uc?id=1Nr05TqfjM_SqvnBL70ZVtZ98bpPntrxh)
