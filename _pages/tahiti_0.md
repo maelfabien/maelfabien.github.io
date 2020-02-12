@@ -93,4 +93,6 @@ Nous restons peut être une heure dans l’eau à nous émerveiller et à nous l
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/Lv4uXqk1gGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Nous reprenons nos vélos et rentrons à Papeete par le même trajet. Nous partions demain matin pour Moorea avec le ferry.
+<br>
+
+Nous reprenons nos vélos et rentrons à Papeete par la même route. Nous partions demain matin pour Moorea avec le ferry.
