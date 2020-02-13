@@ -87,7 +87,7 @@ Certains d'entre eux semblent même vouloir poser pour la caméra...
 
 ![image](https://drive.google.com/uc?id=1i43BC2BPc0uwE8WBtI36l-_rwFp687MA)
 
-Vers 16h, nous partons prendre un café un peu plus loin, dans la baie Cook. Les montagnes en face sont quasiment verticales, et nous profitons de la terrace exceptionnelle du restaurant.
+Vers 16h, nous partons prendre un café un peu plus loin, dans la baie Cook. Les montagnes en face sont quasiment verticales, et nous profitons de la terrasse exceptionnelle du restaurant.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1VHl2vKxc5UtmjC6LLmtMZK-GaL2M4ctt">
