@@ -19,4 +19,9 @@ comments : true
 
 # Articles
 
-[Arrivée depuis Auckland](https://maelfabien.github.io/tahiti_0/): Première nuit à Tahiti et une journée à vélo pour explorer la côte Ouest.
+[Arrivée depuis Auckland à Papeete](https://maelfabien.github.io/tahiti_0/): Première nuit à Tahiti et une journée à vélo pour explorer la côte Ouest.
+
+[Plein les yeux à Moorea](https://maelfabien.github.io/tahiti_1/): Une journée incroyable, des couleurs irréelles, des plages de sable blanc... Bienvenue à Moorea.
+
+
+
