@@ -76,8 +76,17 @@ Un kayak à quelques dizaines de mètres et personne d’autre a l’horizon. No
 
 <br>
 
-Après quelques questions (taille des requins, nourriture favorite, heure de chasse, nombre d’accidents sur la dernière décennie ....) à notre skipper, vite éludées au goût d’Eva, Maël se jette à l’eau au milieu de cette faune marine. Il est vite rappelé à l’ordre afin de se rapprocher du bateau pour qu’Eva puisse y descendre en toute sécurité (il vaut mieux avoir un plus gros appât que soit à côté, n’est ce pas?). La vaillante Eva rejoint donc Maël, et s’immerge immédiatement la tête afin de guetter ses prédateurs de tous les côtés. Bon, finalement ils ne semblent pas si méchants et restent éloignés nous pouvons donc tranquillement explorer les lieux. Les raies armées sont elles plus curieuses et passent parfois à un mètre à peine de nous, leur mouvement est très élégant, presque aérien, elles semblent voler dans l’eau. 
+Après quelques questions (taille des requins, nourriture favorite, heure de chasse, nombre d’accidents sur la dernière décennie ....) à notre skipper, vite éludées au goût d’Eva, Maël se jette à l’eau au milieu de cette faune marine. Il est vite rappelé à l’ordre afin de se rapprocher du bateau pour qu’Eva puisse y descendre en toute sécurité (il vaut mieux avoir un plus gros appât que soit à côté, n’est ce pas?). La vaillante Eva rejoint donc Maël, et s’immerge immédiatement la tête afin de guetter ses prédateurs de tous les côtés. 
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/yMno0RleX2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+Bon, finalement ils ne semblent pas si méchants et restent éloignés nous pouvons donc tranquillement explorer les lieux. Les raies armées sont elles plus curieuses et passent parfois à un mètre à peine de nous, leur mouvement est très élégant, presque aérien, elles semblent voler dans l’eau. 
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/_wMGshvAEno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 Quelques poissons traînent par ci par là mais il n’y a pas beaucoup de coraux à cet endroit, seulement une étendue d’eau transparente dont on ne perçoit pas les limites. 
 
@@ -96,6 +105,10 @@ Nous remontons exaltés par cette incroyable rencontre et nous reposons quelques
 
 Apparemment nous sommes chanceux (fallait-il encore le préciser?) car l’eau est très calme et les conditions sont idylliques pour plonger, surtout à cette période de l'année. Nous remettons donc nos lunettes glamours et c’est reparti! Lucas se joint même à nous et nous renseigne sur les différents poissons. Cette fois ci, il n’y a plus de requins, quelques raies qui sont nourries par un groupe de scaphandriers à côté, et surtout une profusion de poissons. Les photos et vidéos leur rendront meilleure justice que nos mots : 
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/a_pdTXEU_KA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 De retour sur le bateau, Lucas nous a préparé un délicieux plateau de fruits.
 
 <div class="fotorama">
@@ -112,8 +125,27 @@ Nous nous détendons sur les transats à l’avant du bateau et repartons pour n
 
 Les tiki sont des répliques de statues polynésiennes que les tahitiens avaient tenté de protéger lors de l’invasion des colons il y a deux cent ans environ et les avaient pour cela immergées dans l’eau. Lucas en profite d’ailleurs pour les nettoyer en les brossant. 
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/RiNPbS2jh5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 Nous regagnons béatement le port après cette dernière baignade vers 16h. En arrivant au ponton du Hilton, nous avons du mal à réaliser à quel point cette journée était incroyable...
 
 Nous partons ensuite récupérer notre nouveau logement pour les 4 prochaines nuits, le Green Lodge, situé idéalement sur la plage, avec en supplément une magnifique piscine.
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1tp64tf4hRfvVU7cZrMWRlOE-p3OR0D6N">
+  <img src="https://drive.google.com/uc?id=14QEAfLiG1p_hVu-Tzik0CNwm0amkMUDr">
+  <img src="https://drive.google.com/uc?id=1rPBT-uB8ZYHHLJS8oE2CYar2nO8zbkzu">
+  <img src="https://drive.google.com/uc?id=10M2GIlgofGaasSsIveoyrdEVSm0-0L4h">
+  <img src="https://drive.google.com/uc?id=1ht6UjdO1-wRiZ3ZFvLwPbxSgdEkG73ER">
+</div>
+
+![image](https://drive.google.com/uc?id=1dRljTK30K_a699iwFrVL340R05KBt_PD)
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=15bSI8KUVg8sBc6IgIEx7fRjMpardPH6h">
+  <img src="https://drive.google.com/uc?id=1XDm5fs6fXOXVLNyXOQyMTKYuhQdleG7Z">
+</div>
 
 Le soir, nous parvenons même à trouver un restaurant offrant un plat végétarien au menu, le Lézard Jaune. La soirée se termine parfaitement et c'est sûr, cette journée restera à jamais dans nos esprits.
