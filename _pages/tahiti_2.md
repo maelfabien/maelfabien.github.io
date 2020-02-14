@@ -40,9 +40,12 @@ Nous embarquons donc à bord du "Taboo", un très joli catamaran rouge et blanc 
 Devant nos yeux défilent les pics vertigineux, les cabanes luxueuses posées sur le lagon, les vagues qui se brisent sur la barrière de corail et l'eau transparente...
 
 <div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1GMDc5xQxDiTNu2pvGlhu007UKTFVNpHj">
   <img src="https://drive.google.com/uc?id=1SpYnsSXGqPS-zqu7R-bxijjUjcOB7RPL">
   <img src="https://drive.google.com/uc?id=1lP1gWNtf8DNPw9LRm953BSM75xwVkj1b">
   <img src="https://drive.google.com/uc?id=1IeukjZdXnjPDNZZjalwR5hu4bid15ImH">
+  <img src="https://drive.google.com/uc?id=15Nbb1o7IB59O8whmzZP8mswn0lOGyDEh">
+  <img src="https://drive.google.com/uc?id=1CEjvUK02vkwufEPt3B-EckaF2dnlb39n">
 </div>
 
 Nous voilà arrivés dans la baie de Papetoai où nous accrochons notre bateau à une bouée. La couleur de l'eau est incroyable, la transparence est parfaite, un petit îlot privé à l'horizon...
@@ -64,6 +67,10 @@ Un kayak à quelques dizaines de mètres et personne d’autre a l’horizon. No
 
 Quelques poissons traînent par ci par là mais il n’y a pas beaucoup de coraux à cet endroit, seulement une étendue d’eau transparente dont on ne perçoit pas les limites. 
 
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1mqmo-1UAOwnY-GVS7UiOBmNIqZC0UnAc">
+  <img src="https://drive.google.com/uc?id=1CDqBSeo1UC2GLumWXb7YEcH_DfzkqlEe">
+</div>
 
 Nous remontons exaltés par cette incroyable rencontre et nous reposons quelques instants pour nous remettre. Lucas détache la bouée et nous naviguons désormais vers le jardin de corail situé entre deux motoo (des îlots), Fareone et Tiahura, où les coraux et les poissons foisonnent. 
 
@@ -82,7 +89,14 @@ De retour sur le bateau, Lucas nous a préparé un délicieux plateau de fruits.
   <img src="https://drive.google.com/uc?id=1ijPBVb-MhOvE0WxVzRylZk0cPXetxzRC">
 </div>
 
-Nous nous détendons sur les transats à l’avant du bateau et repartons pour notre dernier arrêt, les statues tiki. Ce sont des répliques de statues polynésiennes que les tahitiens avaient tenté de protéger lors de l’invasion des colons il y a deux cent ans environ et les avaient pour cela immergées dans l’eau. Lucas en profite d’ailleurs pour les nettoyer en les brossant. 
+Nous nous détendons sur les transats à l’avant du bateau et repartons pour notre dernier arrêt, les statues tiki. 
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1oRtkQbNyUISRr7IfA6PYQuYcyAduma33">
+  <img src="https://drive.google.com/uc?id=1482uTbxUQo8Z40gMhGtBwLV42GVejaZl">
+</div>
+
+Les tiki sont des répliques de statues polynésiennes que les tahitiens avaient tenté de protéger lors de l’invasion des colons il y a deux cent ans environ et les avaient pour cela immergées dans l’eau. Lucas en profite d’ailleurs pour les nettoyer en les brossant. 
 
 Nous regagnons béatement le port après cette dernière baignade vers 16h. En arrivant au ponton du Hilton, nous avons du mal à réaliser à quel point cette journée était incroyable...
 
