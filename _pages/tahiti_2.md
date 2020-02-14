@@ -48,6 +48,10 @@ Devant nos yeux défilent les pics vertigineux, les cabanes luxueuses posées su
   <img src="https://drive.google.com/uc?id=1CEjvUK02vkwufEPt3B-EckaF2dnlb39n">
 </div>
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/gpKPtS45UEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 Nous voilà arrivés dans la baie de Papetoai où nous accrochons notre bateau à une bouée. La couleur de l'eau est incroyable, la transparence est parfaite, un petit îlot privé à l'horizon...
 
 <div class="fotorama">
@@ -62,7 +66,13 @@ Nous voilà arrivés dans la baie de Papetoai où nous accrochons notre bateau �
   <img src="https://drive.google.com/uc?id=1XPpbMNhKkIsHEi0uU_5es23mlwU_iQQH">
 </div>
 
-Un kayak à quelques dizaines de mètres et personne d’autre a l’horizon. Nous sommes les seules proies pour les requins qui rodent sous le bateau. Après quelques questions (taille des requins, nourriture favorite, heure de chasse, nombre d’accidents sur la dernière décennie ....) à notre skipper, vite éludées au goût d’Eva, Maël se jette à l’eau au milieu de cette faune marine. Il est vite rappelé à l’ordre afin de se rapprocher du bateau pour qu’Eva puisse y descendre en toute sécurité (il vaut mieux avoir un plus gros appât que soit à côté, n’est ce pas?). La vaillante Eva rejoint donc Maël, et s’immerge immédiatement la tête afin de guetter ses prédateurs de tous les côtés. Bon, finalement ils ne semblent pas si méchants et restent éloignés nous pouvons donc tranquillement explorer les lieux. Les raies armées sont elles plus curieuses et passent parfois à un mètre à peine de nous, leur mouvement est très élégant, presque aérien, elles semblent voler dans l’eau. 
+Un kayak à quelques dizaines de mètres et personne d’autre a l’horizon. Nous sommes les seules proies pour les requins qui rodent sous le bateau. 
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/qjx6CAtpjdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+Après quelques questions (taille des requins, nourriture favorite, heure de chasse, nombre d’accidents sur la dernière décennie ....) à notre skipper, vite éludées au goût d’Eva, Maël se jette à l’eau au milieu de cette faune marine. Il est vite rappelé à l’ordre afin de se rapprocher du bateau pour qu’Eva puisse y descendre en toute sécurité (il vaut mieux avoir un plus gros appât que soit à côté, n’est ce pas?). La vaillante Eva rejoint donc Maël, et s’immerge immédiatement la tête afin de guetter ses prédateurs de tous les côtés. Bon, finalement ils ne semblent pas si méchants et restent éloignés nous pouvons donc tranquillement explorer les lieux. Les raies armées sont elles plus curieuses et passent parfois à un mètre à peine de nous, leur mouvement est très élégant, presque aérien, elles semblent voler dans l’eau. 
 
 
 Quelques poissons traînent par ci par là mais il n’y a pas beaucoup de coraux à cet endroit, seulement une étendue d’eau transparente dont on ne perçoit pas les limites. 
