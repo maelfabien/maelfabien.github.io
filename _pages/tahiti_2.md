@@ -54,6 +54,10 @@ Devant nos yeux défilent les pics vertigineux, les cabanes luxueuses posées su
 
 Nous voilà arrivés dans la baie de Papetoai où nous accrochons notre bateau à une bouée. La couleur de l'eau est incroyable, la transparence est parfaite, un petit îlot privé à l'horizon...
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/3aY23sKOhmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1U30vkFvevEwM6ZfoTOCIczU49_iVzTpW">
   <img src="https://drive.google.com/uc?id=1aowIzHXSpNxq3VRkpvQAvzsQTt6lg50m">
@@ -87,6 +91,7 @@ Nous remontons exaltés par cette incroyable rencontre et nous reposons quelques
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1YDUooSWwZW-Wdwl6pgHuXdtgcXu1whuM">
   <img src="https://drive.google.com/uc?id=1Afk6J8vr0Z4ZMZhVt82qL_1F9tJrs_iT">
+  <img src="https://drive.google.com/uc?id=1ijPBVb-MhOvE0WxVzRylZk0cPXetxzRC">
 </div>
 
 Apparemment nous sommes chanceux (fallait-il encore le préciser?) car l’eau est très calme et les conditions sont idylliques pour plonger, surtout à cette période de l'année. Nous remettons donc nos lunettes glamours et c’est reparti! Lucas se joint même à nous et nous renseigne sur les différents poissons. Cette fois ci, il n’y a plus de requins, quelques raies qui sont nourries par un groupe de scaphandriers à côté, et surtout une profusion de poissons. Les photos et vidéos leur rendront meilleure justice que nos mots : 
@@ -96,7 +101,6 @@ De retour sur le bateau, Lucas nous a préparé un délicieux plateau de fruits.
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1htE4Fcn1q9kSbv1WIZsDMzbAzlAwcOby">
   <img src="https://drive.google.com/uc?id=189OjJVqGadaFXRRFmzwCKpykbxB9H3jb">
-  <img src="https://drive.google.com/uc?id=1ijPBVb-MhOvE0WxVzRylZk0cPXetxzRC">
 </div>
 
 Nous nous détendons sur les transats à l’avant du bateau et repartons pour notre dernier arrêt, les statues tiki. 
