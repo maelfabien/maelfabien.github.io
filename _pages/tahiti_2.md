@@ -2,7 +2,7 @@
 layout: travel
 permalink: /tahiti_2/
 author_profile: false
-title: "Plein les yeux à Moorea"
+title: "Un cadeau inoubliable"
 classes: wide
 comments : true
 ---

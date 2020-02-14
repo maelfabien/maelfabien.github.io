@@ -23,5 +23,8 @@ comments : true
 
 [Plein les yeux à Moorea](https://maelfabien.github.io/tahiti_1/): Une journée incroyable, des couleurs irréelles, des plages de sable blanc... Bienvenue à Moorea.
 
+[Un cadeau inoubliable](https://maelfabien.github.io/tahiti_2/): Tour de catamaran dans le lagon de Moorea, nage avec les raies et les dauphins.
+
+
 
 
