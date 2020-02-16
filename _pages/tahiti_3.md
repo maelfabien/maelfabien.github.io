@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-Nous décidons aujourd'hui de faire le tour de l'île en voiture. La route est vite parcourue, puisque la côte Nord - Nord Est est celle qui compte le plus de plages, commerces et activités. Le reste de l'île est moins peuplé, plus sauvage encore peut-être, et il pleut intensément de manière très localisée.
+Nous décidons aujourd'hui de faire le tour de Moorea en voiture. La route est vite parcourue, puisque la côte Nord - Nord Est est celle qui compte le plus de plages, commerces et activités. Le reste de l'île est moins peuplé, plus sauvage encore peut-être. Sur la route, il pleut intensément de manière très localisée.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1_CEONGUMK1Q7FV5iCqk8I5Rx4hA8Vf3r">
@@ -28,7 +28,7 @@ Nous décidons aujourd'hui de faire le tour de l'île en voiture. La route est v
   <img src="https://drive.google.com/uc?id=1GeFN3CM78TBto_-7OhHOOAS4c0V7XpxC">
 </div>
 
-Nous nous arrêtons sur une plage publique pour nager un peu avant de nous rendre au Sofitel pour un repas de Saint-Valentin sur la terrasse face au lagon.
+Nous nous arrêtons sur une plage publique pour nager un peu avant de nous rendre au Sofitel pour un repas de Saint-Valentin sur la terrasse, face au lagon.
 
 ![image](https://drive.google.com/uc?id=15qj3J-oRth4EtZMV5mvaGuYhPaD03M-H)
 

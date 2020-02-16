@@ -25,6 +25,8 @@ comments : true
 
 [Un cadeau inoubliable](https://maelfabien.github.io/tahiti_2/): Tour de catamaran dans le lagon de Moorea, nage avec les raies et les dauphins.
 
+[Tour de l'île, plage, spa](https://maelfabien.github.io/tahiti_3/): Saint-Valentin au restaurant, spa, plage... Un programme chargé.
+
 
 
 
