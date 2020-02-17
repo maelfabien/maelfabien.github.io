@@ -7,7 +7,7 @@ author_profile: false
 read_time: true
 categories: [project]
 header :
-    teaser : "https://maelfabien.github.io/assets/images/proj_22.png"
+    teaser : "https://maelfabien.github.io/assets/images/project_22.png"
 comments : true
 toc: true
 toc_sticky: true
