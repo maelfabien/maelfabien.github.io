@@ -19,7 +19,7 @@ sidebar:
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-> Voice activity detection is a field which consists in identifying whether someone is speaking or not at a given moment. It can be useful to launch a vocal assistant or detect emergency situations.
+Voice activity detection is a field which consists in identifying whether someone is speaking or not at a given moment. It can be useful to launch a vocal assistant or detect emergency situations.
 
 In this article, we will cover the main concepts behind classical approaches to voice activity detection, and implement them in Python is a small web application using Streamlit. This article is inspired by the [following repository](https://github.com/marsbroshok/VAD-python).
 

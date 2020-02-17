@@ -20,6 +20,8 @@ sidebar-sample:
     url: /rl/
   - title: "Data Engineering"
     url: /bgd/
+  - title: "Signal Processing"
+    url: /signal/
   - title: "NLP"
     url: /nlp/
   - title: "Computer Vision"
