@@ -51,6 +51,8 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
+[SP - Voice Gender Detection web application](https://maelfabien.github.io/machinelearning/Speech11/#): How to extract relevant features and build a voice gender detection application using MFCC, GMMs and a provided dataset.
+
 [SP - Sound Visualization (3/3)](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
 
 [SP - Sound Feature Extraction (2/3)](https://maelfabien.github.io/machinelearning/Speech9/#): An overview with a Python implementation of the different sound features to extract.
