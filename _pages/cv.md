@@ -4,7 +4,7 @@ layout: single
 permalink: /cv/
 author_profile: false
 header :
-    image: "https://maelfabien.github.io/assets/images/dl_head.png"
+    image: "https://maelfabien.github.io/assets/images/cv_head.png"
 sidebar:
     nav: sidebar-sample
 ---

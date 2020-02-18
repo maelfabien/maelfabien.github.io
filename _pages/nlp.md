@@ -4,7 +4,7 @@ layout: single
 permalink: /nlp/
 author_profile: false
 header :
-    image: "https://maelfabien.github.io/assets/images/lgen_head.png"
+    image: "https://maelfabien.github.io/assets/images/nlp_head.png"
 sidebar:
     nav: sidebar-sample
 ---

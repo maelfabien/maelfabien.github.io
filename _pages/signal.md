@@ -4,7 +4,7 @@ layout: single
 permalink: /signal/
 author_profile: false
 header :
-    image: "https://maelfabien.github.io/assets/images/wolf.jpg"
+    image: "https://maelfabien.github.io/assets/images/sig_head.png"
 sidebar:
     nav: sidebar-sample
 ---
