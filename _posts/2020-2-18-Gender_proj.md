@@ -65,7 +65,7 @@ If you have not yet understood or seen the concept of Mel Frequency Cepstral Coe
 
 ## Feature Extraction
 
-The concept behind this approach to gender detection is really simple. We first create a feature matrix from the training audio recordings. MFCC are extracted on really small time windows (±20ms), and when you run a MFCC feature extraction using `python_speech_features` or Librosa, it automatically creates a matrix for the whole recording.
+The concept behind this approach to gender detection is really simple. We first create a feature matrix from the training audio recordings. MFCCs are extracted on really small time windows (±20ms), and when you run an MFCC feature extraction using `python_speech_features` or Librosa, it automatically creates a matrix for the whole recording.
 
 Knowing that, extracting the MFCC of a audio file is really easy:
 
@@ -78,9 +78,7 @@ def get_MFCC(sr,audio):
     return features
 ```
 
-## 
-
-I placed the training data in a folder called AudioSet, in which I have two sub-folders: male_clips and female_clips. We can extract the features of the training set simply by running the function above on all files in the training folder. The problem is however that for the moment, both the train and the test set are in the folder. We must therefore split these files in two, and run `get_MFCC` iteratively.
+I placed the training data in a folder called AudioSet, in which I have two sub-folders: male_clips and female_clips. We can extract the features of the training set simply by running the function above on all files in the training folder. The problem is however that for the moment, both the train and the test set are in the folder. We must, therefore, split these files in two, and run `get_MFCC` iteratively.
 
 ```python
 def get_features(source):
@@ -115,6 +113,10 @@ def get_features(source):
 ```
 
 ## GMM model training
+
+> "A Gaussian Mixture Model (GMM) is a parametric probability density function represented as a weighted sum of Gaussian component densities. ([source](https://github.com/SuperKogito/Voice-based-gender-recognition))
+
+GMMs are commonly used as a parametric model of the probability distribution of continuous measurements or features in a biometric system, such as vocal-tract related spectral features in a speaker recognition system. GMM parameters are estimated from training data using the iterative Expectation-Maximization (EM) algorithm or Maximum A Posteriori(MAP) estimation from a well-trained prior model."
 
 To apply it to the folder containing the Male recordings, simply use this function, extract the train features and train the Gaussian Mixture Model.
 
@@ -153,7 +155,7 @@ plt.show()
 
 ![image](https://maelfabien.github.io/assets/images/mfcc_gender.png)
 
-There seems to be slight differences in the features extracted, but the rest of the analysis will tell us more about the separability of these distributions.
+There seem to be slight differences in the features extracted, but the rest of the analysis will tell us more about the separability of these distributions.
 
 ## Model Evaluation
 
@@ -184,7 +186,7 @@ accuracy_male
 
 Similarly, the accuracy for the females reaches 0.63808. 
 
-Overall, the accuracy is not that high for such task, and we might need to improve the approach in a next article.
+Overall, the accuracy is not that high for such a task, and we might need to improve the approach in the next article.
 
 ## Save models
 
@@ -225,7 +227,7 @@ pickle.dump(gmm_female, open("female.gmm", "wb" ))
 
 ## Live Prediction
 
-The next step of course is to build a live predictor that records 3-5 seconds of audio sample and classifies it. We use sounddevice for this task, and particularly the rec option.
+The next step, of course, is to build a live predictor that records 3-5 seconds of an audio sample and classifies it. We use sounddevice for this task, and particularly the rec option.
 
 ```python
 def record_and_predict(sr=16000, channels=1, duration=3, filename='pred_record.wav'):
@@ -251,9 +253,9 @@ To test it in your notebook, simply run :
 record_and_predict()
 ```
 
-Leave a comment and tell me how good it works ! :)
+Leave a comment and tell me how good it works! :)
 
-Here's what I noticed while using it. The accuracy in test remains to improve (63%). When a user plays with his or her voice and tries to immitate the other gender, the GMM gets fooled and predicts the wrong gender. This is also due to the training data that it has seen so far which were extracted from AudioSet and Youtube.
+Here's what I noticed while using it. The accuracy on the test remains to improve (63%). When a user plays with his or her voice and tries to imitate the other gender, the GMM gets fooled and predicts the wrong gender. This is also due to the training data that it has seen so far which were extracted from AudioSet and Youtube.
 
 # Web application
 
