@@ -6,9 +6,6 @@ author_profile: false
 classes: wide
 header :
     image: "https://maelfabien.github.io/assets/images/wanago_head.jpg"
-sidebar:
-    nav: sidebar-sample
-comments : true
 ---
 
 I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at the University of Lausanne at the time. I've always wanted to create something from scratch. I decided to apply to the entrepreneurial contest Start Lausanne with a friend, and present the following idea:
@@ -124,7 +121,7 @@ Within the first few hours, we had 5 or 6 projects that were started, but none o
 
 # First event, first customer
 
-Right after the launch, we attended the biggest event in France for Volkswagen Combi fans. It's an institution for van lovers, and definitely a great customer basis.
+Right after the launch, we attended the biggest event in France for Volkswagen Combi fans, near the Chateaux de la Loire. It's an institution for van lovers, and definitely a great customer basis.
 
 ![image](https://maelfabien.github.io/assets/images/combi_2.jpg)
 
