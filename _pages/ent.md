@@ -3,7 +3,8 @@ layout: archive
 permalink: /ent/
 title: Entrepreneurship
 author_profile: false
-classes: wide
+header :
+    image: "https://maelfabien.github.io/assets/images/ent_head.png"
 layouts_gallery:
   - url: https://maelfabien.github.io/wanago/
     image_path: https://maelfabien.github.io/assets/images/wanago_ent.png
@@ -11,11 +12,6 @@ layouts_gallery:
     image_path: https://maelfabien.github.io/assets/images/medik_ent.png
   - url: https://maelfabien.github.io/freelance/
     image_path: https://maelfabien.github.io/assets/images/freelance_ent.png
-header :
-    image: "https://maelfabien.github.io/assets/images/ent_head.png"
-sidebar:
-    nav: sidebar-sample
-comments : true
 ---
 
 I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at the University of Lausanne at that time. I've always wanted to create something fom scratch. Here, you'll find projects I have worked on, some have been launched, others not.
