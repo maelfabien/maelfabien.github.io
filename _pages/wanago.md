@@ -89,6 +89,10 @@ The JE was unable to find other students, and the director of the JE himself sta
 
 On the side of that, Kyle and I were preparing all the communication of the company, the contracts, with a law firm, the partner dealerships or getting press coverage. I learned how to use Adobe Illustrator, make logos, work with social medias, build a blog, contact influencers...
 
+Here's the kind of posts we did on the different social medias:
+
+![image](https://maelfabien.github.io/assets/images/comm_wanago.jpg)
+
 9 months in, we finally had to hire 2 more developers to finish the website who turned out to be great and made it in 2 months. 
 
 It might seem crazy, but we lost a whole year on that. As described above, many mistakes were made, on the definition of the MVP and the partners we hired. We spent a little more than 8'000 € on the website.
@@ -212,9 +216,9 @@ It's hard to make a difference between early adopters and random people adopting
 
 The truth is that it did not. Over the next 2 months we gathered more than 110 projects on the platform. 90% of them could just not be published, because they were not finished, even when we called them. For the 10-12 projects that could go online, people were asking for too much money or renting it for too much without compromise. 
 
-We ran out of projects to publish for a while, because we knew that publishing a project we did not believe in would be a failure.
+We ran out of projects to publish for a while, because we knew that publishing a project we did not believe in would be a failure. A last project seemed interesting enough to publish, but did not exceed 35% once published.
 
-We know it, the motorhome market has a quite old target audience. Our dream was to bring a younger population to this industry. Our first 2 projects were launched by young couples in their 30's. However, we were starting to feel that the majority of the market is over 60 years old and does not feel comfortable with Internet, and there are only rare young people interested in owning a van or a motorhome.
+We knew it, the motorhome market has a quite old target audience. Our dream was to bring a younger population to this industry. Our first 2 projects were launched by young couples in their 30's. However, we were starting to feel that the majority of the market is over 60 years old and does not feel comfortable with Internet, and there are only rare young people interested in owning a van or a motorhome.
 
 # Making (hard) choices
 
