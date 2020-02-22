@@ -7,16 +7,42 @@ redirect_from:
 classes: wide
 ---
 
-<span style="color:blue">[Short PDF version](https://maelfabien.github.io/assets/images/CV_MF.pdf)</span>
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+<button class="button" onclick="location.href='https://maelfabien.github.io/assets/images/CV_MF.pdf'" type="button">Download the PDF version</button>
 
 # Education
 
 | Degree | University | Start date | End date | GPA |
 | --- | --- | --- | --- | --- |
-| Scientific Baccalaureate, Option Mathematics and Bilingual | Lycée International de Ferney-Voltaire | 09.2010 | 07.2013 |  |
-| [Bachelor of Science in Economics](https://www.unil.ch/formations/en/home/menuinst/bachelors/economie-politique.html) | HEC Faculty, University of Lausanne | 09.2013 | 07.2016 | 5.0/6 |
-| [Master of Science in Actuarial Science](https://www.unil.ch/hec/en/home/menuinst/etudes/masters/sciences-actuarielles.html) | HEC Faculty, University of Lausanne | 09.2016 | 07.2018 | 5.2/6 |
+| Ph.D. in ML and Speech Processing | EPFL & Idiap Research Institute | 03.2020 | --- | --- |
 | [Specialized Master in Big Data and Data Science](https://www.telecom-paris.fr/fr/masteres-specialises/tous-les-ms/big-data) | Telecom Paris, Institut Polytechnique de Paris | 09.2018 | 04.2020 | 17.02/20 |
+| [Master of Science in Actuarial Science](https://www.unil.ch/hec/en/home/menuinst/etudes/masters/sciences-actuarielles.html) | HEC Faculty, University of Lausanne | 09.2016 | 07.2018 | 5.2/6 |
+| [Bachelor of Science in Economics](https://www.unil.ch/formations/en/home/menuinst/bachelors/economie-politique.html) | HEC Faculty, University of Lausanne | 09.2013 | 07.2016 | 5.0/6 |
+| Scientific Baccalaureate, Option Mathematics and Bilingual | Lycée International de Ferney-Voltaire | 09.2010 | 07.2013 |  |
 
 # Experience
 
@@ -157,7 +183,6 @@ Learning Fundamentals, Coursera](https://www.coursera.org/account/accomplishment
 Data Science Interview for DataCast:
 
 <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
-
 
 Articles related to Wanago :
 - [Ouest France](https://www.ouest-france.fr/bretagne/chateaulin-29150/financer-son-camping-car-avec-des-jours-de-location-5261817)

@@ -7,7 +7,7 @@ classes: wide
 comments : true
 ---
 
-*Dernière mise à jour: 11.02.2020*
+*Dernière mise à jour: 18.02.2020*
 
 **Dates:** 10.02.2020 - 18.02.2020
 
@@ -27,6 +27,5 @@ comments : true
 
 [Tour de l'île, plage, spa](https://maelfabien.github.io/tahiti_3/): Saint-Valentin au restaurant, spa, plage... Un programme chargé.
 
-
-
+[Le col des 3 cocotiers, et départ de Tahiti](https://maelfabien.github.io/tahiti_4/): Marche dans la jungle, plage, repas chez Lucie et ferry pour Tahiti...
 

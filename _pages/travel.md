@@ -3,9 +3,9 @@ layout: archive
 permalink: /travel/
 author_profile: false
 title: "Travel"
+header :
+    image: "https://maelfabien.github.io/assets/images/travel_head.jpg"
 layouts_gallery:
-  - url: https://maelfabien.github.io/greenland/
-    image_path: https://drive.google.com/uc?id=1_0E-Wj-BQbl3HVRjAFKnShzyprZ562IN
   - url: https://maelfabien.github.io/cambodge/
     image_path: https://drive.google.com/uc?id=1D9LgG_icNS2yI81q4Qp85gPKhfWacBc0
   - url: https://maelfabien.github.io/vietnam/
@@ -16,24 +16,16 @@ layouts_gallery:
     image_path: https://drive.google.com/uc?id=1IdPd1tHmArGUF-L0FfHZwkv4buvF2sWN
   - url: https://maelfabien.github.io/tahiti
     image_path: https://drive.google.com/uc?id=1fm40uddoG3vBbCU_-9HHjMvL1ZLh8gUn
+  - url: https://maelfabien.github.io/chili
+    image_path: https://drive.google.com/uc?id=1iU5pFWE_p7qLQI7XBn_lieVClXPfJTr6
 ---
 
+You'll find here a list of article I have written with my girlfriend (in French) during a 3 months trip we did between December 2019 and February 2020.
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
-I am currently on a 3 months trip with my girlfriend. We left in December 2019 and come back in March 2020. We will go to:
-- Cambodia
-- Vietnam
-- Sydney
-- New Zealand
-- French Polynesia
-- Easter Island
-- Santiago, Chile
+These articles were mostly made for our families, and were written on a close-to-daily basis, but feel free to leave comments on them if you'd like to share your experience regarding some of these places. I also think they make a decent toilet break read if you speak french.
 
 Here's the map of our trip:
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1jiekrGvX0g2xRRYb3TwwyROuIvUaX018" width="100%" height="500" frameBorder="0"></iframe>
-
-I am trying to keep and up-to-date list of all places I have visited in this map:
-
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VWuZwynxjcC3zpH3tX6cceM2D3367RfL" width="100%" height="500" frameBorder="0"></iframe>

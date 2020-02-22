@@ -10,22 +10,23 @@ redirect_from:
 
 <p style="font-size:0.5em">Current status: Traveling in French Polynesia, writing articles, doing projects.</p>
 
-Welcome to my blog. My name is Maël and I'm a data scientist. I am currently traveling South East Asia, New Zealand, Tahiti and Chile with my girlfriend. I’m posting some pictures of my travel in the Travel section. 
+Welcome to my blog. My name is Maël and I'm a Data Scientist and  Ph.D. student at Idiap research institute (EPFL) in Speech Processing, on ROXANNE European Project.
 
 Outside of Data Science, my interests are:
+- Traveling: I have been traveling to South East Asia, New Zealand, Tahiti and Chile with my girlfriend for the past 4 months. I have posted pictures of the trip in the Travel section. 
 - Sports: Hiking in Switzerland, running on the beach in Britanny, practicing Fitness/Crossfit. I used to play volleyball and have been Swiss national champion in Junior. I also used to (and still do sometimes) practice javelin. I won several times the Javelin Championship in Rhône-Alpes region in Junior (± 50 meters).
-- Animals: I have been vegetarian for close to 4 years, love animals and support some associations.
+- Animals: I have been vegetarian for close to 4 years, love animals and support several associations.
 - Reading/Learning: I spend most of my free time trying to learn stuffs. I try to do 1 online course per month, although I don't always manage to do so.
-- Entrepreneurship: I launched a first startup project during my Master and got some money from an entrepreneurial contest in Lausanne. I was invited at the 2018 final of this contest to share my experience on stage.
+- Entrepreneurship: I launched a first startup project during my Master and got some money from an entrepreneurial contest in Lausanne. I was invited at the 2018 final of this contest to share my experience on stage. I won a hackathon in 2019, but did not convert it to a proper project.
 
-I have a B.Sc. in Economics and an M.Sc. in Actuarial Science both from the University of Lausanne (HEC Faculty). I don’t expect many people to know what actuarial science is, but to keep it short, it’s mostly applied mathematics and statistics for the insurance sector. I worked for 6 months in an insurance company, developed a large interest in Machine Learning and programming, and joined Telecom Paris (Institut Polytechnique de Paris, France) for a Specialized Master in Data Science. I finished this degree in 2019. I will start a PhD in Speech Processing at EPFL's Idiap Lab in March 2020.
+I have a B.Sc. in Economics and an M.Sc. in Actuarial Science both from the University of Lausanne (HEC Faculty). I don’t expect many people to know what actuarial science is, but to keep it short, it’s mostly applied mathematics and statistics for the insurance sector. I worked for 6 months in an insurance company, developed a large interest in Machine Learning and programming, and joined Telecom Paris (Institut Polytechnique de Paris, France) for a Specialized Master in Data Science. I finished this degree in 2019. I am now a Ph.D. student in Speech Processing at EPFL's Idiap Lab (start March 2020).
 
-I just finished an internship as a Data Scientist at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I previously interned at [Veamly](https://veamly.com/) in NLP. Outside of that, I'm a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, [Stat4Decision](https://www.stat4decision.com/en/) and [Dakar Insitute of Technology](https://dit.sn/). I also write articles about AI for [Digital Minds](https://www.digitalminds.io/), [Explorium](https://www.explorium.ai/), [Stat4Decision](https://www.stat4decision.com/en/) and on [Medium](https://medium.com/@mael.fabien). My technical interests are:
+I did an internship as a Data Scientist at [Anasen](https://anasen.com/), a Y-Combinator startup in Paris. I previously interned at [Veamly](https://veamly.com/) in NLP. Outside of that, I'm a Machine Learning instructor at [VivaData](https://vivadata.org/), an AI Bootcamp in Paris, [Stat4Decision](https://www.stat4decision.com/en/) and [Dakar Insitute of Technology](https://dit.sn/). I also write articles about AI for [Digital Minds](https://www.digitalminds.io/), [Explorium](https://www.explorium.ai/), [Stat4Decision](https://www.stat4decision.com/en/) and on [Medium](https://medium.com/@mael.fabien). My technical interests are:
 - Applied Machine Learning and Deep Learning
 - Statistics in general
 - Natural Language Processing
 - Speech Processing
-- A bit of data engineering
+- A bit of data engineering, since I'd like my next professional experience to be as a Machine Learning Engineering
 
 I started this blog in September 2018 for several reasons:
 - Writing helps me understand. Pictures and schemas too. I am trying to combine both in my articles.
@@ -39,6 +40,7 @@ You can find [here](https://maelfabien.github.io/year-archive/#) a list of all t
 - [Deep Learning](https://maelfabien.github.io/dl/)
 - [Reinforcement Learning](https://maelfabien.github.io/rl/)
 - [Data Engineering](https://maelfabien.github.io/bgd/)
+- [Signal Processing](https://maelfabien.github.io/signal/)
 - [Natural Language Processing](https://maelfabien.github.io/nlp/)
 - [Computer Vision](https://maelfabien.github.io/cv/)
 - [Entrepreneurship](https://maelfabien.github.io/ent/)
@@ -53,7 +55,7 @@ All codes and exercises of this website are hosted on GitHub in a dedicated repo
 <div class="github-card" data-github="maelfabien/Machine_Learning_Tutorials" data-width="100%" data-height="" data-theme="default"></div>
 <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-You can [contact me](mailto:mael.fabien@gmail.com) if you think we could work together on an article or a project, or if you have any question/remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_MF.pdf). I'm uploading on this blog articles that I'm writing in my free time. I'm trying to upload one article per week. 
+You can [contact me](mailto:mael.fabien@gmail.com) if you think we could work together on an article or a project, or if you have any question/remark. If you would like to get to know more about me and my projects, feel free to check out my [resume](https://maelfabien.github.io/assets/files/CV_MF.pdf). I'm uploading articles that I'm writing in my free time. I'm trying to upload one article per week on average.
 
 I recently launched a newsletter in which I gather some articles I wrote on a topic, interesting Github repositories, projects, papers and more! If you want to stay in the loop, I'll try to send 1 email per month :)
 
@@ -74,7 +76,7 @@ I recently launched a newsletter in which I gather some articles I wrote on a to
 
 <hr>
 
-This website gathered a little more than 40'000 unique visitors (Oct. 2019) since its creation. Where do other visitors come from?
+This website gathered a little more than 60'000 unique visitors (Jan. 2020) since its creation. Where do other visitors come from?
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 

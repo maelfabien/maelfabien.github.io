@@ -1,9 +1,16 @@
 ---
 layout: archive
 permalink: /ent/
-title: The beginning
+title: Entrepreneurship
 author_profile: false
 classes: wide
+layouts_gallery:
+  - url: https://maelfabien.github.io/wanago/
+    image_path: https://maelfabien.github.io/assets/images/wanago_ent.png
+  - url: https://maelfabien.github.io/medikhub/
+    image_path: https://maelfabien.github.io/assets/images/medik_ent.png
+  - url: https://maelfabien.github.io/freelance/
+    image_path: https://maelfabien.github.io/assets/images/freelance_ent.png
 header :
     image: "https://maelfabien.github.io/assets/images/ent_head.png"
 sidebar:
@@ -11,85 +18,10 @@ sidebar:
 comments : true
 ---
 
-I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at HEC Lausanne at that time. I've always wanted to create something fom scratch. I decided to apply to the entrepreneurial contest Start Lausanne with a friend, and present the following idea :
+I started my entrepreneurial journey in 2016. I was finishing my Bachelor in Economics at the University of Lausanne at that time. I've always wanted to create something fom scratch. Here, you'll find projects I have worked on, some have been launched, others not.
 
-![image](https://maelfabien.github.io/assets/images/wanago.png)
+{% include gallery id="layouts_gallery" class="full" layout="half"%}
 
-" **A specialized kickstarter to fund vans and motorhomes.**  Wanago is the first van acquisition and conversion crowdfunding platform. Should someone wish to buy a van, but does not have enough money to acquire his dream model, he can simply create a project on www.wanago.fr.
-
-He indicates his desired model, the amount he lacks to buy it and the dates at which he won’t be using it the first year after his potential purchase. On the other side of the platform, many different contributors select this project. They get to choose one of the available dates and commit to paying the corresponding amount.
-
-Thanks to the money pledged by all contributors, the project holder can acquire his vehicle. On the other hand, the contributor gets to enjoy low tariffs and a vehicle in good condition. We offer an insurance contract proposed by our partner MAIF for every reservation made. If the target amount is not reached, no contributor will be debited."
-
-We made partnerships with several companies, including PSA (Peugeot-Citroen), MAIF Insurance, Westfalia or StyleVan, a large dealership network in France.
-
-![image](https://maelfabien.github.io/assets/images/partners.png)
-
-# The contest
-
-The outcome of the contest was rather positive. We earned the Jury Prize as well as 5'000 Swiss Francs to start our business. If you'd like to download our old brochure, just click [here](https://maelfabien.github.io/assets/images/press.pdf). 
-
-![image](https://maelfabien.github.io/assets/images/wanago.jpg)
-
-The project has been stopped after 2 years, once we reached the end of our studies (and I decided to move on to data science). Although the interest in the solution was rising, the revenue stream would not have allowed us to be dedicated full time to the project.
-
-The contest has been a good accelerator for us, and taught us the fundamentals of entrepreneurship (pitch, business model, business plan, important legal notions...). The money raised was also a good way to kick the development of our solution. If also allowed us to have 
-
-# The press
-
-We managed to get some press coverage in french magazines and newspaper. I've tried to summarize all the articles related to Wanago :
-- [Ouest France](https://www.ouest-france.fr/bretagne/chateaulin-29150/financer-son-camping-car-avec-des-jours-de-location-5261817)
-- [Campingcar Le Site](https://www.campingcarlesite.com/achat-camping-car/2378-wanago-l-ingenieux-financement-solidaire/)
-- [Esprit Campingcar](https://www.espritcampingcar.com/10211-wanago-nouvelle-plateforme-collaborative-unique/)
-- [Quimper Ma Ville](https://quimper.maville.com/actu/actudet_-financer-son-camping-car-avec-des-jours-de-location_6-3285043_actu.Htm)
-- [Camp US](http://camp-us.fr/economie-collaborative-tourisme/)
-- [HEConomist](https://heconomist.ch/2017/10/12/wanago-rever-cest-collaborer/)
-- [Innovation Time](https://innovation-time.com/fr/wanago-on-louait-on-achetait-van-cet-ete/)
-- [Planet Ride](https://www.planet-ride.com/en/travel-camper-van-rv/france-en/articles/aidez-estelle-thomas-a-partir-road-trip-2/)
-- [Interview](https://vimeo.com/238899507)
-
-# The events
-
-We had the opportunity to attend the Salon du Bourget which is one of the biggest event in Europe dedicated to motorhomes. We established partnerships Peugeot-Citroen and had the chance to have our own booth.
-
-![image](https://maelfabien.github.io/assets/images/salon.jpg)
-
-We also attended in Düsseldorf the largest european event and met partners here :
-
-![image](https://maelfabien.github.io/assets/images/kyle.jpg)
-
-# The customers
-
-We financed several vehicles during this adventure, and received pictures of owners who were more than happy of their new acquisition : 
-
-![image](https://maelfabien.github.io/assets/images/acq.jpg)
-
-But also pictures of customers who rented the van and made incredible road trips at half the price of a normal rental :
-
-![image](https://maelfabien.github.io/assets/images/cust.png)
-
-# The platform
-
-The platform looked like this :
-
-![image](https://maelfabien.github.io/assets/images/platform.png)
-
-A web developer joined the team to develop the website. I also became quite interested in web development at that time at took the opportunity to learn basic HTML, CSS and JS, and directly apply it to the website.
-
-The website is not online anymore, but if by any chance you are interested in a platform (2 sides, rent and buy), with dashboards for the users, progress of the funding of each project... just contact me on my [email](mailto:mael.fabien@gmail.com).
- 
-# The experience
- 
- This first entrepreneurial experience was an incredible life accelerator. I went from the status of student to entrepreneur at the age of 19 while finishing my Bachelor. It came with a huge number of responsibilities, and I had to overcome many issues, some of them regarding my age or the credibility of a 19 years old student-entrepreneur.
- 
-I took this opportunity to do web development, marketing, design, to write NDAs or understand the legal details of such or such structure, to meet customers on expositions, make partnerships with large companies... and to manage a team of up to 5 collaborators.
-
-In April 2019, I came back to Lausanne to talk about my entrepreneurial experience at the 2019 Start Lausanne contest.
-
-![image](https://maelfabien.github.io/assets/images/speak.jpg)
-
-# Next ?
- 
-After this first exeprience, I have kept thinking about potential solutions, or developing some projects, but not as a main activity. I think at some point, I'll get back to entrepreneurship in order to mix my passions for entrepreneurship and data science. 
+I am constantly looking for new ideas, trying to build projects, and widely interested in entrepreneurship. If you have an interesting project (tech or not) and are looking for a co-founder, data expertise or anything, just [contact me](mailto:mael.fabien@gmail.com), I'm always interested.
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
