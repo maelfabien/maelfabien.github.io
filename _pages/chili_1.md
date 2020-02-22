@@ -20,7 +20,7 @@ comments : true
 
 <br>
 
-La nuit nous permet de récupérer des quelques rares heures de sommeil dans l'avion la veille. Après un petit déjeuner dans la cuisine de la cabane, nous sommes fins prêts à partir. Au détail près, qu'une énorme averse, d'une rare intensité, portée par une nuage menaçants, frappe le centre-ville. Absolument tout est trempé en l'espace de quelques secondes. C'est à ce moment que l'on se dit que le quad n'était peut être pas le meilleur choix. Mais bon, confiants qu'il s'agissait de la seule averse de la journée, et en ignorant totalement le fait que nous sommes au beau milieu du Pacifique, nous prenons la route, et Maël conseille même à Eva de ne pas prendre son imperméable car elle risquerait d'avoir chaud...
+La nuit nous permet de récupérer des quelques rares heures de sommeil dans l'avion la veille. Après un petit déjeuner dans la cuisine de la cabane, nous sommes fins prêts à partir. Au détail près, qu'une énorme averse, d'une rare intensité, portée par un nuage menaçant, frappe le centre-ville. Absolument tout est trempé en l'espace de quelques secondes. C'est à ce moment que l'on se dit que le quad n'était peut être pas le meilleur choix. Mais bon, confiants qu'il s'agissait de la seule averse de la journée, et en ignorant totalement le fait que nous sommes au beau milieu du Pacifique, nous prenons la route, et Maël conseille même à Eva de ne pas prendre son imperméable car elle risquerait d'avoir chaud...
 
 Nous voilà partis pour visiter les différents sites des Moai. Nous achetons des billets en centre-ville et prenons la route du Sud pour refaire le même chemin que la veille.
 

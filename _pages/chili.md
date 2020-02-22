@@ -13,7 +13,7 @@ comments : true
 
 **Lieux:** Île de Pâques, Santiago
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ltRXr4jyZQAt40CBPe6fOnfAycXEPX3H" width="100%" height="500" frameBorder="0"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1R0eNWBy5SPIa_Gfw-LaNXi3mP73n_0Pj" width="100%" height="500" frameBorder="0"></iframe>
 
 <br>
 
