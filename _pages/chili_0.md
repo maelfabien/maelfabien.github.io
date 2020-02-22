@@ -53,7 +53,11 @@ Pour mieux se repérer, voici une carte de l'île et des principales activités:
 
 ![image](https://drive.google.com/uc?id=1ON_IvwSPLxNF645Yixy8QRlLTGEQ4wzP)
 
-Nous partons vers 17h visiter l'île et suivons la route principale qui en fait le tour. La plupart des sites où se situent les fameuses têtes, les Moai, sont payants et il faut acheter un ticket d'entrée valable 10 jours. Nous attendrons le lendemain pour visiter les sites, mais profitons en attendant des beaux paysages offerts sur l'île. La roche volcanique et le fait de savoir qu'il n'y a pas de vie humaine à moins de 3500 kilomètres confèrent à cet endroit une dimension presque mystique. 
+Nous partons vers 17h visiter l'île et suivons la route principale qui en fait le tour. Le "centre-ville" est concentré autour d'une seule rue.
+
+![image](https://drive.google.com/uc?id=1mqTzSO1xuL0HbLqOnj1PYJfBzQa54Esc)
+
+La plupart des sites où se situent les fameuses têtes, les Moai, sont payants et il faut acheter un ticket d'entrée valable 10 jours. Nous attendrons le lendemain pour visiter les sites, mais profitons en attendant des beaux paysages offerts sur l'île. La roche volcanique et le fait de savoir qu'il n'y a pas de vie humaine à moins de 3500 kilomètres confèrent à cet endroit une dimension presque mystique. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1nOKw9xdQdA_XpOvJhPC5Mtk_hZxBRxQ-">

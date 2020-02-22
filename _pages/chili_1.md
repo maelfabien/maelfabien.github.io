@@ -63,7 +63,11 @@ Nous arrivons ensuite au site d'Akahanga, où 8 immenses statutes sont tombées.
 
 Nous poursuivons notre route en direction de Tongariki, le site le plus connu, avec son alignement de 15 statues, encore dressées.
 
-Sur le chemin, le temps semble de gâter au loin. Un rideau de pluie traverse l'île, en commençant par Tongariki. Après avoir tenté d'avancer sous la pluie, nous comprenons rapidement que nous ne sommes pas prêts à affronter les averses du Pacifique. La pluie fait presque mal au contact de la peau, les lunettes sont pleines de buée, impossible d'avancer. Trempés, nous faisons demi-tour. Une course contre la montre s'installe alors pour essayer d'échapper à cette averse. Notre course folle s'arrête pour laisser passer ces demoiselles:
+Sur le chemin, le temps semble se gâter au loin. Un rideau de pluie traverse l'île, en commençant par Tongariki. 
+
+![image](https://drive.google.com/uc?id=1QLes8nEX9bGW8rjOzcKXnPy-yoI40uEM)
+
+Après avoir tenté d'avancer sous la pluie, nous comprenons rapidement que nous ne sommes pas prêts à affronter les averses du Pacifique. La pluie fait presque mal au contact de la peau, les lunettes sont pleines de buée, impossible d'avancer. Trempés, nous faisons demi-tour. Une course contre la montre s'installe alors pour essayer d'échapper à cette averse. Notre course folle s'arrête pour laisser passer ces demoiselles:
 
 <iframe width="700" height="500" src="https://www.youtube.com/embed/R_j8KU5gBUk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -95,7 +99,7 @@ Notre escapade nous emmène rapidement dans les terres et les champs du centre d
 
 <br>
 
-Sur le chemin, nous nous arrêtons sur le magnifique site d'Anakena. 6 statues encore debout, sur le front de mer, devant une plage de sable blanc. L'atmosphère estivale mélangée à la dimension historique du site lui confère un sentiment tout particulier.
+Sur le chemin, nous nous arrêtons sur le magnifique site d'Anakena. 6 statues encore debout, sur le front de mer, devant une plage de sable blanc. L'atmosphère estivale mélangée à la dimension historique du site lui confèrent un sentiment tout particulier.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1altj-1-JfT8lkWU7N84UH2Y3yaA5LwEt">

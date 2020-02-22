@@ -22,7 +22,7 @@ comments : true
 
 Ce matin, le décallage horaire de 5 heures entre Tahiti et l'île de Pâques se fait sentir et provoque même un réveil tardif (9h, soit 1h20 plus tard que l'heure à laquelle Maël sort habituellement Eva du lit).
 
-Malgré une couche de nuages assez épaisse et des couleurs plutôt menaçantes, nous profitons de quelques éclaircies pour partir à la plage Anakena, répérée la veille.
+Malgré une couche de nuages assez épaisse et des couleurs plutôt menaçantes, nous profitons de quelques éclaircies pour partir à la plage Anakena, répérée la veille. La photo est bien évidemment prise la veille, il faut imaginer cette plage sous un ciel gris/noir.
 
 ![image](https://drive.google.com/uc?id=1-lRbT_hnxwisVd47eTzw5F1E2gVLnhT4)
 

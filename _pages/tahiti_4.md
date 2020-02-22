@@ -24,7 +24,7 @@ Nous décidons aujourd'hui de faire l'une des balades les plus connues du coin, 
 
 ![image](https://drive.google.com/uc?id=1WDJKU8uPlMsXwonoji4LujKo9F6VXprS)
 
-Le chemin est très boueux étant donné les pluies récentes. Il est difficile d'avancer dans la forêt tant les racines qui recouvrent les chemins réservent de nombreux pièges. Il fait chaud et très humide, nous sommes trempés au bout de 15mn de marche. Dans la fôret, le climat tropical est également propice au développement de bambous.
+Le chemin est très boueux étant donné les pluies récentes. Il est difficile d'avancer dans la forêt tant les racines qui recouvrent les chemins réservent de nombreux pièges. Il fait chaud et très humide, nous sommes trempés au bout de 15mn de marche. Dans la fôret, le climat tropical est également propice au développement de bamboos.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1TZLwZsA_0FCCW6Qhga0jUflvwnKZldTp">
