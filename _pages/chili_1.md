@@ -43,7 +43,7 @@ De nombreux chevaux et vaches vivent en liberté sur l'île, et il n'est pas rar
 
 ![image](https://drive.google.com/uc?id=10J8At8LydiK737Pgjbno1tUXMH2JecTb)
 
-Le paris que nous avions pris sur le beau temps semble être gagnant, pas de pluie et un beau soleil. La route en quad est particulièrement agréable.
+Le pari que nous avions pris sur le beau temps semble être gagnant, pas de pluie et un beau soleil. La route en quad est particulièrement agréable.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1AXARcUVW5QoswB_3RhTEnbOc6opJxJ7H">

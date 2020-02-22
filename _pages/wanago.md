@@ -146,6 +146,12 @@ And there we had it, our first customer. A couple we met during the event, who a
 - [Planet Ride](https://www.planet-ride.com/en/travel-camper-van-rv/france-en/articles/aidez-estelle-thomas-a-partir-road-trip-2/)
 - [Interview](https://vimeo.com/238899507)
 
+Kyle speaks really well and is at ease when it comes to cameras.
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/238899507" width="700" height="500" frameborder="0" allowfullscreen></iframe>
+
+<br>
+
 The idea was to finance 3'000€ for a VW Combi Van, in exchange of rentals starting at 65€ per day. That was a really good deal for VW vans.
 
 However, we were late September, and these vehicles cannot really be used in Winter. Few people were interested in booking a rental for next spring. We did not anticipate such seasonality in this business, and probably should have launched later in the year (or earlier...).
