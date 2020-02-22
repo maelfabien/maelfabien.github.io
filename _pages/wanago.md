@@ -200,7 +200,7 @@ An unexpected big partnership with Peugeot Citroen (PSA) got us some attention. 
 
 PSA invited us to the largest motorhome event in France, called the VDL Show. We had our own booth inside their's.
 
-![image](https://maelfabien.github.io/assets/images/salon.jpg)
+![image](https://maelfabien.github.io/assets/images/salon.png)
 
 We could introduce our solution to customers wanting to purchase a PSA van, and in exchange, we became "Product Genius" and were answering questions of the customers.
 
@@ -232,7 +232,7 @@ In April 2019, I came back to Start Lausanne to talk about my entrepreneurial ex
 
 ![image](https://maelfabien.github.io/assets/images/speak.jpg)
 
-> It was an awesome experience overall. I think that we did all the mistakes that we read about in entrepreneurship books, and rather than discouraging me from building a next projects, it just unlocked my entrepreneurial spirit. I feel more of an entrepreneur now, as a PhD student in data science than I ever felt. I started freelancing, I read lots of new on entrepreneurship, and I'm sure that I'll move on to building a large impact project soon. The contest was a cool experience and gave us some funds. One piece of advice would be not to listen too much to jury experts. They have their vision, their experience, they are biased, you are too. Just be aware of that, and start your project. Building a startup during my studies was probably one of the best choices I ever made. It's a life accelerator, but it comes with the downside that you never stop thinking about your next project afterwards.
+> It was an awesome experience overall. I think that we did all the mistakes that we read about in entrepreneurship books, and rather than discouraging me from building a next projects, it just unlocked my entrepreneurial spirit. I feel more of an entrepreneur now, as a PhD student in data science than I ever felt. I started freelancing, I read lots of new on entrepreneurship, and I'm sure that I'll move on to building a large impact project soon. It's also a great human adventure, and you get to know your co-founder so well. Kyle is now a sincere friend of mine, and I'm thankful for that. The contest was a fun experience and gave us some funds. One piece of advice would be not to listen too much to jury experts. They have their vision, their experience, they are biased, you are too. Just be aware of that, and start your project. Building a startup during my studies was probably one of the best choices I ever made. It's a life accelerator, but it comes with the downside that you never stop thinking about your next project afterwards.
 
 PS: If by any chance you are interested in a platform (2 sides, rent and buy), with dashboards for the users... just contact me by [email](mailto:mael.fabien@gmail.com) ;)
 
