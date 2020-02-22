@@ -26,7 +26,11 @@ The idea came from a discussion with a friend. He needed to change his car. At t
 
 Thinking about it for a few days I figured what lacked was simply a right counterpart for the money pledged. How about letting the contributors try the car?
 
-Then, after diverse discussions and meetings, I realised the van and motorhome market, which I did not know anything about, was best suited for this idea. Indeed, van owners spend huge amount of money on those vehicles (60K ++), but can only enjoy it few weeks a year. Helping them finance it through 1 to 2 months rental following the purchase seemed like a good deal! We also felt it was best to launch the project in France, since Switzerland is too small and motorhome is not very popular there.
+Then, after diverse discussions and meetings, Kyle, my co-founder I'll introduce right after, and I, realised the van and motorhome market, which I did not know anything about, was best suited for this idea. Indeed, van owners spend huge amount of money on those vehicles (60K ++), but can only enjoy it few weeks a year. Helping them finance it through 1 to 2 months rental following the purchase seemed like a good deal! We also felt it was best to launch the project in France, since Switzerland is too small and motorhome is not very popular there.
+
+The first mockups of the platform also included financing boats on the same concept:
+
+![image](https://maelfabien.github.io/assets/images/mockup.jpg)
 
 # Building a team
 
