@@ -5,7 +5,7 @@ title: Wanago
 author_profile: false
 classes: wide
 header :
-    image: "https://maelfabien.github.io/assets/images/wanago_head.png"
+    image: "https://maelfabien.github.io/assets/images/wanago_head.jpg"
 sidebar:
     nav: sidebar-sample
 comments : true
@@ -39,7 +39,13 @@ I was going to the gym of few times a week and always had great pleasure to talk
 
 While discussing the project with him (between two biceps sets), I could feel that he was very interested and had an unexpected entrepreneurial mindset.
 
-A few discussions later, Kyle joined me! We were both students, meaning that it was hard to spare some working time on the project. Still, we managed to work remotely, he was in Geneva and Neuchatel, I was in Lausanne. We met in my house in the weekends and had a room dedicated to the project, full of stickers...
+A few discussions later, Kyle joined me! 
+
+![image](https://maelfabien.github.io/assets/images/kyle.jpg)
+
+We were both students, meaning that it was hard to spare some working time on the project. Still, we managed to work remotely, he was in Geneva and Neuchatel, I was in Lausanne. We met in my house in the weekends and had a room dedicated to the project, full of stickers...
+
+![image](https://maelfabien.github.io/assets/images/work_room.jpg)
 
 A few months in, Natascha joined us, and had a profile much similar to Kyle's. Therefore, it was rather delicate to distinguish each one's task in this situation, but all the help was much appreciated.
 
@@ -60,7 +66,7 @@ The whole process takes 5 months, and some lectures on entrepreneurship are give
 
 The outcome of the contest was rather positive. We earned the Jury Prize as well as 5'000 € to start our business. If you'd like to download our old brochure, just click [here](https://maelfabien.github.io/assets/images/press.pdf). 
 
-![image](https://maelfabien.github.io/assets/images/wanago.jpg)
+![image](https://maelfabien.github.io/assets/images/start_16.jpg)
 
 # After the contest, first mistakes
 
@@ -108,6 +114,10 @@ I also created a mailing list with over 5'000 van and motorhomes fans, for free.
 
 We also shot a video, realized by a friend of mine and a stuntman (also a friend). All the people involved in the video came on their free-time, and it was exceptionnal to witness how good friends are willing to help you succeed on your project. We even met, while shooting the video, a retired couple traveling in a motorhome, who participated in it !
 
+<iframe width="700" height="500" src="https://www.youtube.com/embed/jFP59OMKHrE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 The launch day, we needed a project online. We uploaded a fake project, as an example, and waited for the first real project to come.
 
 Within the first few hours, we had 5 or 6 projects that were started, but none of them were submitted to us. People were stuck on the page where they had to describe the vehicle they wanted to buy and why people should help them. Anyways, these were real leads that we could eventually convert at some point. 
@@ -116,11 +126,19 @@ Within the first few hours, we had 5 or 6 projects that were started, but none o
 
 Right after the launch, we attended the biggest event in France for Volkswagen Combi fans. It's an institution for van lovers, and definitely a great customer basis.
 
+![image](https://maelfabien.github.io/assets/images/combi_2.jpg)
+
 More than 1'000 people camped there at night, attend demos, shows and talk to each other about their vehicle. We went there with my mother's car, a large 7 seats car that we pretended was a van, and put Wanago stickers all over it. 
 
-We printed hundreds of flyers, talked to every single individual we met, and made one great move. At the end of the weekend, we stood by the exit, parked our car, put our Wanago t-shirts and distributed flyers to everyone, thanking them for their visit at the event. Everyone thought we were officials, hundreds of flyers were gone, and the visits on our website just peaked afterwards.
+![image](https://maelfabien.github.io/assets/images/combi.jpg)
 
-And there we had it, our first customer. A couple who already owned a van and wanted to buy a second one. We then started to get in contact with them, did our best to get visits on the website and then get some press coverage in french magazines and newspaper :
+We printed hundreds of flyers, talked to every single individual we met, organized a volley-ball tournament...
+
+![image](https://maelfabien.github.io/assets/images/volleyball.jpg)
+
+And eventually made one great move. At the end of the weekend, we stood by the exit, parked our car, put our Wanago t-shirts and distributed flyers to everyone, thanking them for their visit at the event. Everyone thought we were officials, hundreds of flyers were gone, and the visits on our website just peaked afterwards.
+
+And there we had it, our first customer. A couple we met during the event, who already owned a van and wanted to buy a second one. We then started to get in contact with them, did our best to get visits on the website and then get some press coverage in french magazines and newspaper :
 - [Ouest France](https://www.ouest-france.fr/bretagne/chateaulin-29150/financer-son-camping-car-avec-des-jours-de-location-5261817)
 - [Campingcar Le Site](https://www.campingcarlesite.com/achat-camping-car/2378-wanago-l-ingenieux-financement-solidaire/)
 - [Esprit Campingcar](https://www.espritcampingcar.com/10211-wanago-nouvelle-plateforme-collaborative-unique/)
@@ -141,7 +159,11 @@ The project remained online for 1 month, and we did not manage to raise more tha
 
 We acquired our second customer through one of the articles that we had in the press. They completed the project perfectly, and had a great story to share since they wanted to buy a van and travel around Europe with Iris, their 9 months baby.
 
-They even made a video to present the project and their family. All we could dream of. It's the perfect kind of early adopter you're looking for at this step of a project.
+They even made a video to present the project and their family. All we could dream of. It's the perfect kind of early adopter you're looking for at this step of a project. They even made a background sound playing yukulele in their living room.
+
+<iframe width="700" height="500" src="https://www.youtube.com/embed/wknvyBkzfLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
 
 We could not fail it, not a second time. They wanted 2'000 €, which was easier to finance. The van they wanted could be used in winter, it was bigger, more comfortable and customers could rent it only 2 months from now. 
 
@@ -177,9 +199,7 @@ We could introduce our solution to customers wanting to purchase a PSA van, and 
 
 Kyle and I were still studying at that time. I had to go back to class between Tuesday and Friday, and Kyle's mother did a great job by helping us. It's also in those cases that you realize how much a co-founder's choice matters.
 
-A few weeks later, we also attended in Düsseldorf the largest european event and met partners here :
-
-![image](https://maelfabien.github.io/assets/images/kyle.jpg)
+A few weeks later, we also attended in Düsseldorf the largest european event and met partners there.
 
 These events are good for the image and to understand the industry, but when it comes to actually getting leads, the VW Combi event was way better.
 
