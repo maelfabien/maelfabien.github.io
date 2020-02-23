@@ -54,7 +54,7 @@ If for whatever reason, you don't want or cannot setup your computer, there are 
 
 The interpreter that I embedded on my site is simple and hosted by Tricket.io. When you read the articles, simply open the page on the side.
 
-<button class="button" onclick="location.href='https://maelfabien.github.io/python_compil/' type="button">Open Interpreter</button>
+<button class="button" onclick="location.href='https://maelfabien.github.io/python_compil/'" type="button">Open Interpreter</button>
 
 # Google Colab
 
