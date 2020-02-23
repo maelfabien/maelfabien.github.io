@@ -3,8 +3,6 @@ published: true
 title: Python Interpreter
 layout: single
 author_profile: false
-categories: [da_tuto]
-comments : true
 classes: wide
 ---
 
