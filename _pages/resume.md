@@ -23,10 +23,10 @@ classes: wide
   box-shadow: 0 9px #999;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #7187bd}
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #7187bd;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
