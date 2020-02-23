@@ -38,7 +38,7 @@ header :
    }
   }
 
-  .column {
+.column {
   align-content:center;
   float: left;
   width: 50%;

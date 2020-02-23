@@ -15,7 +15,7 @@ title: "Online Trainings"
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #7187bd;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
