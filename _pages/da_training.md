@@ -21,6 +21,8 @@ header :
 
 [Setup your computer](https://maelfabien.github.io/bigdata/setup/) : Setup your computer for data science.
 
+[Start without setup](https://maelfabien.github.io/da_tuto/no_setup/) : Getting started without setup if needed.
+
 ## Course 2: Introduction to Python
 
 [Introduction to Python's environment](https://maelfabien.github.io/da_tuto/python) : Why is Python popular? How to install it? How to start programming?

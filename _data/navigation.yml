@@ -8,6 +8,8 @@ main:
     url: /travel/
   - title: "CV"
     url: /resume/
+  - title: "Search"
+    url: /search/
 
 sidebar-sample:
   - title: "Machine Learning"
