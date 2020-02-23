@@ -130,6 +130,7 @@ I'll try to cover papers linked to Statistics, Machine Learning, Deep Learning w
     <div style="text-align:justify; align-content:left; display:inline-block;">
       <p> Hello </p>
       <code>print("Hello")</code>
+      <iframe src="https://trinket.io/embed/python/a537edfe04" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
     </div>
   </div>
 
