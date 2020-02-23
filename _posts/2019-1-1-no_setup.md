@@ -17,13 +17,44 @@ sidebar:
     nav: sidebar-sample
 ---
 
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #7187bd;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #7187bd}
+
+.button:active {
+  background-color: #7187bd;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
 <script type="text/javascript" async
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
+If for whatever reason, you don't want or cannot setup your computer, there are 2 options:
+- use the interpreter page I provide
+- use Google Colab 
+
 # Interperter on my site
 
-Python was developped by Guido van Rossum in the Netherlands at the end of the 80s. It lead to the creation of the Python Software fundation in 2001. In 2008, Python 3.x was introduced. It is now since 2020 the only supported version.
+The interpreter that I embedded on my site is simple and hosted by Tricket.io. When you read the articles, simply open the page on the side.
+
+<button class="button" onclick="location.href='https://maelfabien.github.io/assets/images/CV_MF.pdf'" type="button">Open Interpreter</button>
 
 # What is Python?
 
