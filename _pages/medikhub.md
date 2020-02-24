@@ -8,6 +8,8 @@ header :
     image: "https://maelfabien.github.io/assets/images/medik_head.jpg"
 ---
 
+<input action="action" onclick="window.history.go(-1); return false;" type="submit" value="Cancel" />
+
 In September 2019, my girlfriend and I took part in a hackathon organized by the Grand Paris (GPSEO) region.  It was our first hackathon, and we wanted to do something out of a long weekend in Paris. 
 
 The idea of this hackathon is to create new services to integrate to what GPSEO calls hubs. Hubs are just parking spots, near train and subway stations, with mobility services (parking, bike rental, EV station, car sharing). The aim of the hubs, that are outside of Paris, is to reduce the traffic in Paris and get faster to the city center by polluting less.
