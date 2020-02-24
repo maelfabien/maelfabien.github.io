@@ -2,7 +2,7 @@
 .button {
   display: inline-block;
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 18px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -23,10 +23,9 @@
 }
 </style>
 
-<input action="action" class="button" type="button" value="Back" onclick="window.history.go(-1); return false;" />
-
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
+    <input action="action" class="button" type="button" value="Back" onclick="window.history.go(-1); return false;" />
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
