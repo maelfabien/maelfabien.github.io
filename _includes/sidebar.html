@@ -25,9 +25,9 @@
 
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
-    <input action="action" class="button" type="button" value="Back" onclick="window.history.go(-1); return false;" />
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
+    <input action="action" class="button" type="button" value="Back" onclick="window.history.go(-1); return false;" />
     {% for s in page.sidebar %}
       {% if s.image %}
         <img src=
