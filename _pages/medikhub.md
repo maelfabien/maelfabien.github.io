@@ -40,21 +40,21 @@ The next day, we finished our pitch and the presentation, and were ready for the
 
 The presentation went really well, Sheba is an amazing speaker. The jury did not have any question, and one of them even highlighted some advantages of our solution.
 
-![image](https://maelfabien.github.io/assets/images/presentation.png)
+![image](https://maelfabien.github.io/assets/images/presentation.jpg)
 
 Most competitors built a concept of fresh fruits and vegetables pickup on the parking of the hubs when people come back from work. The concept is interesting, quite common but definitely useful ! 
 
 It was now time for the prize. The jury took 30 minutes to deliberate.
 
-![image](https://maelfabien.github.io/assets/images/deliberation.png)
+![image](https://maelfabien.github.io/assets/images/deliberation.jpg)
 
 And.... we won ! The jury really liked our solution and offered us a 4 months incubation at the Liberté Living Lab as well as 5’000€. We were both surprised and really excited.
 
-![image](https://maelfabien.github.io/assets/images/gagnant.png)
+![image](https://maelfabien.github.io/assets/images/gagnant.jpg)
 
 A few days later, we were invited to talk in front of citizens and representatives of target cities wheeler hubs were being built. Once again, our solution received a warm welcome and most people seemed really interested in the proposition value. 
 
-![image](https://maelfabien.github.io/assets/images/presentation_2.png)
+![image](https://maelfabien.github.io/assets/images/presentation_2.jpg)
 
 This is where we left the project. Eva and I started to travel and are now working on our PhDs, Sheba has a full time job and Celine is invested in another project. It’s however really interesting to see that you do not have to convince customers when the value you bring them solves a fundamental problem. We would need a lot of time to develop this project, as well as some funds, and the best status for the kind of project would rather be associative. 
 
