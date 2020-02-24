@@ -6,7 +6,6 @@ author_profile: false
 classes: wide
 header :
     image: "https://maelfabien.github.io/assets/images/medik_head.jpg"
-
 ---
 
 In September 2019, my girlfriend and I took part in a hackathon organized by the Grand Paris (GPSEO) region.  It was our first hackathon, and we wanted to do something out of a long weekend in Paris. 
@@ -36,7 +35,7 @@ We left quite early on Saturday night actually, around 8PM. Most teams were buil
 The next day, we finished our pitch and the presentation, and were ready for the show ! Here's the presentation we have built:
 
 <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
-<embed src="https://maelfabien.github.io/assets/files/medik.pdf" type="application/pdf" width="100%" height="300px" />
+<embed src="https://maelfabien.github.io/assets/files/medik.pdf" type="application/pdf" width="100%" height="90px" />
 </div>
 
 The presentation went really well, Sheba is an amazing speaker. The jury did not have any question, and one of them even highlighted some advantages of our solution.
