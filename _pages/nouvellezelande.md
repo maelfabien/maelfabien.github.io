@@ -5,6 +5,8 @@ author_profile: false
 title: "Nouvelle Zélande"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 *Dernière mise à jour: 10.02.2020*

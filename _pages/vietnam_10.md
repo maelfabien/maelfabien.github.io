@@ -5,6 +5,8 @@ author_profile: false
 title: "Palais royal, Mausolée et Cinéma"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 <!-- jQuery 1.8 or later, 33 KB -->

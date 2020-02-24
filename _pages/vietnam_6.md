@@ -5,6 +5,8 @@ author_profile: false
 title: "Virée en scooter vers Hoi An"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 <!-- jQuery 1.8 or later, 33 KB -->

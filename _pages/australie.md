@@ -5,6 +5,8 @@ author_profile: false
 title: "Australie"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 *Dernière mise à jour: 14.01.2020*

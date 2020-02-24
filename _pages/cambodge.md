@@ -5,6 +5,8 @@ author_profile: false
 title: "Cambodge"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 *Dernière mise à jour: 25.12.2019*

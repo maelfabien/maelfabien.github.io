@@ -5,6 +5,8 @@ author_profile: false
 title: "Départ pour l'Ouest et arrivée au paradis"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 <!-- jQuery 1.8 or later, 33 KB -->

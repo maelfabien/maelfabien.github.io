@@ -5,6 +5,8 @@ author_profile: false
 title: "Temples d'Angkor, tuk tuk et cirque"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 <!-- jQuery 1.8 or later, 33 KB -->

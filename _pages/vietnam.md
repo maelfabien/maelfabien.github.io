@@ -5,6 +5,8 @@ author_profile: false
 title: "Vietnam"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 *Dernière mise à jour: 11.01.2020*

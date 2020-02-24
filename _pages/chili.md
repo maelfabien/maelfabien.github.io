@@ -5,6 +5,8 @@ author_profile: false
 title: "Chili"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 *Dernière mise à jour: 20.02.2020*

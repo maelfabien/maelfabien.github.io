@@ -5,6 +5,8 @@ author_profile: false
 title: "Le col des 3 cocotiers, et départ de Tahiti"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 <!-- jQuery 1.8 or later, 33 KB -->

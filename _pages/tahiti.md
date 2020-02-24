@@ -5,6 +5,8 @@ author_profile: false
 title: "Tahiti"
 classes: wide
 comments : true
+sidebar:
+    nav: sidebar-travel
 ---
 
 *Dernière mise à jour: 18.02.2020*
