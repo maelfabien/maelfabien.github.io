@@ -107,4 +107,4 @@ Nous repartons le soir manger chez le "Vegan dealer" sur la Plaza Brasil, proche
 
 ![image](https://drive.google.com/uc?id=1bQHHq1t_n0cAFuOA2wN19nn9qaAsB4Y0)
 
-Vous l'aurez compris, le thème principal de la journée était la nourriture.
+Vous l'aurez compris, le thème principal de la journée était la nourriture. La fin de notre voyage approche à très très grand pas. Demain marquera la dernière journée complète avant le grand départ après-demain.
