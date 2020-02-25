@@ -25,7 +25,13 @@ sidebar:
 
 [Visite des Moai](https://maelfabien.github.io/chili_1/): Visite des parcs nationaux des Moai, les fameuses têtes de l'Île de Pâques.
 
-[Une journée dans l'eau](https://maelfabien.github.io/chili_2/): Baignade (volontaire et non), Eva au volant et Empanaaaaaaadas.
+[Une journée aquatique, et direction Santiago](https://maelfabien.github.io/chili_2/): Baignade (volontaire et non), Eva au volant et Empanaaaaaaadas, nous partons pour Santiago.
+
+[Visite de Santiago](https://maelfabien.github.io/chili_3/): Entre quartiers design et signes des manifestations récentes, un Chili tout en contraste.
+
+
+
+
 
 
 
