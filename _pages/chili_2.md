@@ -2,7 +2,7 @@
 layout: travel
 permalink: /chili_2/
 author_profile: false
-title: "Une journée dans l'eau"
+title: "Une journée aquatique, et direction Santiago"
 classes: wide
 comments : true
 sidebar:
