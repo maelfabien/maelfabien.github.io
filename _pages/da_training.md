@@ -19,7 +19,7 @@ header :
 
 [Introduction to Bash Scripting for Terminal](https://maelfabien.github.io/bigdata/Terminal/#) : Learn how to interact with your terminal.
 
-[Setup your computer](https://maelfabien.github.io/bigdata/setup/) : Setup your computer for data science.
+[Setup your computer](https://maelfabien.github.io/da_tuto/setup/) : Setup your computer for data science.
 
 [Start without setup](https://maelfabien.github.io/da_tuto/no_setup/) : Getting started without setup if needed.
 

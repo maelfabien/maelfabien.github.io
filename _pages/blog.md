@@ -18,6 +18,8 @@ layouts_gallery:
     image_path: /assets/images/signal_short.png
   - url: https://maelfabien.github.io/rl/
     image_path: /assets/images/rl_short.png
+  - url: https://maelfabien.github.io/phd/
+    image_path: /assets/images/phd_short.png
   - url: https://maelfabien.github.io/ent/
     image_path: /assets/images/ent_short.png
 ---
