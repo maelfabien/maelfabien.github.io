@@ -33,7 +33,7 @@ I started this blog in September 2018 for several reasons:
 - I did most of my studies in English, although it's not my native language. This blog is a way to keep writing.
 - Data Science is moving fast. Reading about AI-related news could be a full-time job. I learn best by doing projects. So I post most of them here.
 - I forget stuff, so it's always good to have them written down in a single place.
-- If this blog can help someone else, this makes my day.
+- If this blog can help someone else, this really makes my day.
 
 You can find [here](https://maelfabien.github.io/year-archive/#) a list of all the articles I have written. You will find content related to my fields of interest :
 - [Statistics and Machine Learning](https://maelfabien.github.io/ml/)
