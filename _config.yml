@@ -23,7 +23,7 @@ description              : "Data Science Blog"
 url                      : https://maelfabien.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # Default teaser image "assets/images/contents/main-cover.jpg"
+teaser                   : https://maelfabien.github.io/assets/images/mf_logo_short.jpg # teaser image "assets/images/contents/main-cover.jpg"
 logo                     : https://maelfabien.github.io/assets/images/mf_logo_short.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Maël Fabien"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "Learning to teach machines to learn"
+  bio              : "Ph.D. student, Data Scientist"
   location         : "Switzerland"
   email            : 
   links:
@@ -121,13 +121,16 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/maelfabien/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/fabien_mael"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: https://twitter.com/fabien_mael
+      url: "https://twitter.com/fabien_mael"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
