@@ -21,7 +21,7 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 # Papers
 
-[Fundamental papers in Speaker Verification](https://maelfabien.github.io/machinelearning/papers_speech) : A list of fundamentals papers in Speaker Verification.
+[Fundamental papers in Speaker Verification](https://maelfabien.github.io/signal/papers_speech) : A list of fundamentals papers in Speaker Verification.
 
 # Maths and stats
 
