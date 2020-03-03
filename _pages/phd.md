@@ -19,17 +19,33 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 ![image](https://maelfabien.github.io/assets/images/phd_tech.png)
 
+# Papers
+
+[Fundamental papers in Speaker Verification](https://maelfabien.github.io/machinelearning/papers_speech) : A list of fundamentals papers in Speaker Verification.
+
+# Maths and stats
+
 [Linear Discriminant Analysis (LDA) and QDA](https://maelfabien.github.io/machinelearning/LDA/) : In this article, we'll cover the intuition behind LDA, when it should be used, and the maths behind it. We'll also quick cover the Quadratic version of LDA.
 
-[Introduction to Voice Processing in Python (1/3)](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
+[Probabilistic Linear Discriminant Analysis (PLDA)](https://maelfabien.github.io/machinelearning/PLDA/) : Coming soon.
 
-[Sound Feature Extraction (2/3)](https://maelfabien.github.io/machinelearning/Speech9/#): An overview with a Python implementation of the different sound features to extract.
+# Voice Processing Fundamentals
 
-[Sound Visualization (3/3)](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
+[Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
+
+[Sound Feature Extraction](https://maelfabien.github.io/machinelearning/Speech9/#): An overview with a Python implementation of the different sound features to extract.
+
+[Sound Visualization](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
+
+# Speaker Verification fundamentals
+
+# Text-independent Speaker Verification
 
 [Speaker Verification using Gaussian Mixture Model (GMM-UBM)](https://maelfabien.github.io/machinelearning/Speech1/): Speaker biometrics is a field of Speech processing which focuses on identifying a unique speaker from several audio recorings. This can be useful for access control or suspect identification for example.
 
 [Speaker Verification using SVM-based methods](https://maelfabien.github.io/machinelearning/Speech2/#): Another method relying on Support Vector Machines for Speaker Verification.
+
+# Text-dependent Speaker Verification
 
 ![image](https://maelfabien.github.io/assets/images/phd_process.png)
 
