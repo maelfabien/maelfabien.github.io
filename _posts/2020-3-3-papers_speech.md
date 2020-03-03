@@ -1,6 +1,6 @@
 ---
 published: true
-title: Fundamentals Speech Processing Papers
+title: Fundamental Speech Processing Papers
 layout: single
 author_profile: false
 read_time: true
@@ -44,19 +44,13 @@ Other famous databases include NIST Speaker Recognition Evaluation Challenge or 
 
 [DNN for small footprint text-dependent speaker verification](https://maelfabien.github.io/assets/litterature/representation/d-vector.pdf): A NN approach to feature extraction called the d-vector.
 
-[DNN for small footprint text-dependent speaker verification](https://maelfabien.github.io/assets/litterature/representation/d-vector.pdf): A NN approach to feature extraction called the d-vector.
-
-
 # Text-independent Speaker Recognition
 
 [Deep Neural Network Embeddings for Text-Independent Speaker Verification](https://maelfabien.github.io/assets/litterature/representation/xvector.pdf): Learning speaker embeddings with DNN with a PDLA background. Building block of the x-vector.
 
-
 # Evaluation Metrics
 
 [Application-Independent Evaluation of Speaker Recognition Systems](https://maelfabien.github.io/assets/litterature/databases/metrics.pdf): A summary of the different speaker recognition systems used including false alarms, misses, DET-plot, EER and Detection Cost Function.
-
-
 
 
 <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
