@@ -36,4 +36,10 @@ A series of articles dedicated to signal and voice processing. All codes and exe
 
 [Speaker Verification using SVM-based methods](https://maelfabien.github.io/machinelearning/Speech2/#): Another method relying on Support Vector Machines for Speaker Verification.
 
+
+![image](https://maelfabien.github.io/assets/images/kaldi_head.png)
+
+[Introduction to Kaldi](https://maelfabien.github.io/signal/kaldi/): An introduction to install, understand the key features, the organization, and get you started with Kaldi.
+
+
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>

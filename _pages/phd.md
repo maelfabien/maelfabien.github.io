@@ -29,6 +29,10 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Probabilistic Linear Discriminant Analysis (PLDA)](https://maelfabien.github.io/machinelearning/PLDA/) : Coming soon.
 
+# Kaldi
+
+[Introduction to Kaldi](https://maelfabien.github.io/signal/kaldi/): An introduction to install, understand the key features, the organization, and get you started with Kaldi.
+
 # Voice Processing Fundamentals
 
 [Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
@@ -38,6 +42,8 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 [Sound Visualization](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
 
 # Speaker Verification fundamentals
+
+Coming soon
 
 # Text-independent Speaker Verification
 
