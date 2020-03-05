@@ -16,7 +16,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-I am gathering in this article fundamental Speech Processing papers, and specifically Speaker Verification, and will provide summary of most of them over time. I am 
+I am gathering in this article fundamental Speech Processing papers, and specifically Speaker Verification, and will provide summary of most of them over time.
 
 # Databases
 
