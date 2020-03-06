@@ -41,5 +41,7 @@ A series of articles dedicated to signal and voice processing. All codes and exe
 
 [Introduction to Kaldi](https://maelfabien.github.io/signal/kaldi/): An introduction to install, understand the key features, the organization, and get you started with Kaldi.
 
+[Kaldi for speaker verification](https://maelfabien.github.io/signal/kaldi2/): An example on how to run Kaldi for speaker verification.
+
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
