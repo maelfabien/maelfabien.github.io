@@ -33,6 +33,9 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Introduction to Kaldi](https://maelfabien.github.io/signal/kaldi/): An introduction to install, understand the key features, the organization, and get you started with Kaldi.
 
+[Kaldi for speaker verification](https://maelfabien.github.io/signal/kaldi2/): An example on how to run Kaldi for speaker verification.
+
+
 # Voice Processing Fundamentals
 
 [Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
