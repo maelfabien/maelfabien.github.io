@@ -8,7 +8,7 @@ redirect_from:
     - /about.html
 ---
 
-<p style="font-size:0.5em">Current status: Traveling in French Polynesia, writing articles, doing projects.</p>
+<p style="font-size:0.5em">Current status: Ph.D. Student at Idiap, Switzerland. Freelance on the side.</p>
 
 Welcome to my blog. My name is Maël and I'm a Data Scientist and  Ph.D. student at Idiap research institute (EPFL) in Speech Processing, on ROXANNE European Project.
 
