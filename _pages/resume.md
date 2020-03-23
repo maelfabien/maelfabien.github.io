@@ -184,6 +184,8 @@ Data Science Interview for DataCast:
 
 <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
 
+An interview I gave for a web journal in Senegal, in French: [here](https://www.socialnetlink.org/2019/12/pour-la-survie-des-entreprises-le-senegal-ne-doit-pas-ignorer-le-virage-de-lintelligence-artificielle-mael-fabien/)
+
 Articles related to Wanago :
 - [Ouest France](https://www.ouest-france.fr/bretagne/chateaulin-29150/financer-son-camping-car-avec-des-jours-de-location-5261817)
 - [Campingcar Le Site](https://www.campingcarlesite.com/achat-camping-car/2378-wanago-l-ingenieux-financement-solidaire/)
