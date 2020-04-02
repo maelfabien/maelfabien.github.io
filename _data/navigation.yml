@@ -2,6 +2,8 @@
 main:
   - title: "Blog"
     url: /blog/
+  - title: "Ph.D. @ Roxanne"
+    url: /phd/
   - title: "Projects"
     url: /portfolio/
   - title: "Travel"

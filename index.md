@@ -8,9 +8,9 @@ redirect_from:
     - /about.html
 ---
 
-<p style="font-size:0.5em">Current status: Ph.D. Student at Idiap, Switzerland. Freelance on the side.</p>
+<p style="font-size:0.5em">Current status: Ph.D. Student at Idiap/EPFL, Switzerland on Roxanne Project. Freelance on the side.</p>
 
-Welcome to my blog. My name is Maël and I'm a Data Scientist and  Ph.D. student at Idiap research institute (EPFL) in Speech Processing, on ROXANNE European Project.
+Welcome to my blog. My name is Maël and I'm a Data Scientist and  Ph.D. student at Idiap research institute (EPFL) in Speech Processing, on [ROXANNE European Project](https://roxanne-euproject.org/).
 
 Outside of Data Science, my interests are:
 - Traveling: I have been traveling to South East Asia, New Zealand, Tahiti and Chile with my girlfriend for the past 4 months. I have posted pictures of the trip in the Travel section. 
@@ -76,7 +76,7 @@ I recently launched a newsletter in which I gather some articles I wrote on a to
 
 <hr>
 
-This website gathered a little more than 60'000 unique visitors (Jan. 2020) since its creation. Where do other visitors come from?
+This website gathered a little more than 66'000 unique visitors (March 2020) since its creation. Where do other visitors come from?
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 

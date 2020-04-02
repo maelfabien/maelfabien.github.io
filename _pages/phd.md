@@ -11,7 +11,7 @@ sidebar:
 
 In March 2020, I started my Ph.D. in Speech Processing at Idiap Research Institute, affiliated to EPFL. I tried to document the process, whether by describing technical concepts, or simply by writing about some projects, describing a typical day...
 
-I'm working on [Roxanne European Project](https://roxanne-euproject.org/). The aim of the project is to build graphs to detect criminal activities through voice. I'm focusing on the speaker verification task.
+I'm working on [Roxanne European Project](https://roxanne-euproject.org/). ROXANNE (Real time network, text, and speaker analytics for combating organized crime) is an EU funded collaborative research and innovation project, aiming to unmask criminal networks and their members as well as to reveal the true identity of perpetrators by combining the capabilities of speech/language technologies and visual analysis with network analysis.
 
 ![image](https://maelfabien.github.io/assets/images/graph.png)
 
@@ -54,9 +54,9 @@ Coming soon
 
 [Speaker Verification using SVM-based methods](https://maelfabien.github.io/machinelearning/Speech2/#): Another method relying on Support Vector Machines for Speaker Verification.
 
-# Text-dependent Speaker Verification
+<!--# Text-dependent Speaker Verification-->
 
-![image](https://maelfabien.github.io/assets/images/phd_process.png)
+<!--![image](https://maelfabien.github.io/assets/images/phd_process.png)--
 
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
