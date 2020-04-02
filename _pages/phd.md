@@ -15,11 +15,9 @@ I'm working on [Roxanne European Project](https://roxanne-euproject.org/). ROXAN
 
 ![image](https://maelfabien.github.io/assets/images/roxanne-framework.png)
 
-You'll find below articles that I wrote on topics related to my Ph.D.
-
-![image](https://maelfabien.github.io/assets/images/phd_tech.png)
-
 # Consortium
+
+The consortium is made of 24 partners:
 
 <section id="content-core">
             
@@ -188,6 +186,10 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 
 </section>
+
+You'll find below articles that I wrote on topics related to my Ph.D.
+
+![image](https://maelfabien.github.io/assets/images/phd_tech.png)
 
 # Papers
 
