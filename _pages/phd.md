@@ -47,7 +47,6 @@ The consortium is made of 24 partners:
 <p>&nbsp;</p>
 <p><a title="SAIL LABS - speech and language technologies, source intelligence information technology" href="//www.sail-labs.com/about_us/" target="_blank" data-linktype="external" data-val="//www.sail-labs.com/about_us/">SAIL LABS Technology GmbH - speech and language technologies, source intelligence information technology</a></p>
 <p><img src="https://roxanne-euproject.org/consortium/images/flag_at.png/@@images/c088d833-6150-46a8-9e16-fd871af1c772.png" data-linktype="image" title="AT flag" data-scale="icon" alt="flag_at.png" data-val="a189f801971a4b3e8e14c0f039e7d59e" class="image-inline"></p>
-</div>
 </td>
 </tr>
 <tr>
