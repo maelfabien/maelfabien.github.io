@@ -13,36 +13,4 @@ main:
   - title: "Search"
     url: /search/
 
-sidebar-sample:
-  - title: "Machine Learning"
-    url: /ml/
-  - title: "Deep Learning"
-    url: /dl/
-  - title: "Reinforcement Learning"
-    url: /rl/
-  - title: "Data Engineering"
-    url: /bgd/
-  - title: "Signal Processing"
-    url: /signal/
-  - title: "NLP"
-    url: /nlp/
-  - title: "Computer Vision"
-    url: /cv/
-  - title: "Entrepreneurship"
-    url: /ent/
-  - title: "Projects"
-    url: /projects/
-  - title: "CV"
-    url: /cv/
-
-sidebar-blog:
-  - title: "By Topic"
-    url: /blog#/
-  - title: "Latest Articles"
-    url: /blog#/
-  - title: "Medium Articles"
-    url: /blog#/
-  - title: "For Other Blogs"
-    url: /blog#/
-
 sidebar-travel:
