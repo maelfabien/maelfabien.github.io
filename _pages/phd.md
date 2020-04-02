@@ -217,9 +217,9 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 # Speaker Verification fundamentals
 
-Coming soon
+[The basics of Speaker Verification](https://maelfabien.github.io/machinelearning/basics_speech/): Speaker bio
 
-# Text-independent Speaker Verification
+## Text-independent Speaker Verification
 
 [Speaker Verification using Gaussian Mixture Model (GMM-UBM)](https://maelfabien.github.io/machinelearning/Speech1/): Speaker biometrics is a field of Speech processing which focuses on identifying a unique speaker from several audio recorings. This can be useful for access control or suspect identification for example.
 
