@@ -2,7 +2,7 @@
 main:
   - title: "Blog"
     url: /blog/
-  - title: "Ph.D. @ Roxanne"
+  - title: "Ph.D. @ Idiap"
     url: /phd/
   - title: "Projects"
     url: /portfolio/
