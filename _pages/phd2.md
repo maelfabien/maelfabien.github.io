@@ -1,7 +1,7 @@
 ---
 title: ROXANNE European Project
 layout: single
-permalink: /phd/
+permalink: /phd2/
 author_profile: false
 header :
     image: "https://maelfabien.github.io/assets/images/phd_head.jpg"
