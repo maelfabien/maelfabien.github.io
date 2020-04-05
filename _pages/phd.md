@@ -15,7 +15,10 @@ I'm working on [Roxanne European Project](https://roxanne-euproject.org/). ROXAN
 
 ![image](https://maelfabien.github.io/assets/images/roxanne-framework.png)
 
-You can learn more about the ROXANNE Project in the article I wrote on it [here](https://maelfabien.github.io/phd2).
+You can learn more about the ROXANNE Project in the article I wrote on it [here](https://maelfabie
+n.github.io/phd2).
+
+<input action="action" class="button" type="button" value="Learn more about ROXANNE" onclick="/phd2" />
 
 You'll find below articles that I wrote on topics related to my Ph.D.
 
