@@ -19,7 +19,7 @@ You can learn more about the ROXANNE Project in the article I wrote on it [here]
 n.github.io/phd2).
 
 
-<input action="action" class="button" type="button" value="Learn more about ROXANNE" onclick="window.location.href=/phd2" />
+<input action="action" class="button" type="button" value="Learn more about ROXANNE" onclick="window.location.href='https://maelfabien.github.io/phd2/'" />
 
 You'll find below articles that I wrote on topics related to my Ph.D.
 
