@@ -86,10 +86,6 @@ chart = nxa.draw_networkx(
 chart
 ```
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
-
 <div id="vis"></div>
 <script>
   (function(vegaEmbed) {
@@ -195,5 +191,10 @@ It is much closer to a Barabasi-Albert model distribution, meaning that the netw
 The two datasets have 47 nodes in common, so we can plot them together:
 
 
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
 
 
