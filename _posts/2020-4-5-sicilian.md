@@ -16,7 +16,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-In this article, I am reviewing the paper: ["DISRUPTING RESILIENT CRIMINAL NETWORKS THROUGH DATA ANALYSIS: THE CASE OF SICILIAN MAFIA"](https://arxiv.org/pdf/2003.05303.pdf) by Lucia Cavallaro and Annamaria Ficara and Pasquale De Meo and Giacomo Fiumara and Salvatore Catanese and Ovidiu Bagdasar and Antonio Liotta.
+In this article, I am reviewing the paper: ["Disrupting resilient criminal networks through data analysis: the case of Sicilian Mafia"](https://arxiv.org/pdf/2003.05303.pdf) by Lucia Cavallaro and Annamaria Ficara and Pasquale De Meo and Giacomo Fiumara and Salvatore Catanese and Ovidiu Bagdasar and Antonio Liotta.
 
 They published real world data, and I will also explore it on my side. The Github of the project with the code and data can be found [here](https://github.com/lcucav/networkdistruption). 
 
@@ -58,19 +58,27 @@ We will first focus on the physical meeting dataset and build the corresponding 
 
 ```bash
 file = open('Datasets/Montagna_meetings_edgelist.csv', 'r')
-#lines = fin.readlines()
 
 G = nx.Graph()
 for row in file:
     r = row.split()
     n1, n2, w = int(r[0]), int(r[1]), int(r[2])
+    G.add_node(n1)
+    G.add_node(n2)
+    G.nodes[n1]['id'] = n1
+    G.nodes[n2]['id'] = n2
     G.add_edge(n1, n2)
     G.edges[(n1,n2)]['weight']=w
+    G.edges[(n1,n2)]['method']='meetings'
 ```
 
 We attributed a weight to each edge based on how frequently two nodes met.
 
 Now, let's make a first plot of the network and the meetings between the nodes.
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
 
 ```python
 pos = nx.spring_layout(G)
@@ -167,7 +175,7 @@ hist
 
 <div id="vis2"></div>
 <script>
-  (function(vegaEmbed) {
+  (function(vegaEmbed2) {
     var spec2 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-c127aeaedd28c891faa99b0a0c5d0f14"}, "mark": "bar", "encoding": {"x": {"type": "quantitative", "bin": {"maxbins": 25}, "field": "Degrees"}, "y": {"type": "quantitative", "aggregate": "count"}}, "height": 300, "title": "Degree Distribution", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-c127aeaedd28c891faa99b0a0c5d0f14": [{"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 8}, {"Degrees": 6}, {"Degrees": 10}, {"Degrees": 10}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 5}, {"Degrees": 12}, {"Degrees": 16}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 24}, {"Degrees": 9}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 14}, {"Degrees": 8}, {"Degrees": 1}, {"Degrees": 13}, {"Degrees": 2}, {"Degrees": 16}, {"Degrees": 5}, {"Degrees": 13}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 3}, {"Degrees": 6}, {"Degrees": 5}, {"Degrees": 8}, {"Degrees": 2}, {"Degrees": 3}, {"Degrees": 7}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 9}, {"Degrees": 3}, {"Degrees": 12}, {"Degrees": 4}, {"Degrees": 19}, {"Degrees": 12}, {"Degrees": 4}, {"Degrees": 8}, {"Degrees": 11}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 6}, {"Degrees": 2}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 4}, {"Degrees": 1}, {"Degrees": 4}, {"Degrees": 6}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 15}, {"Degrees": 1}, {"Degrees": 6}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 4}, {"Degrees": 7}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 5}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 4}, {"Degrees": 8}, {"Degrees": 4}, {"Degrees": 4}, {"Degrees": 2}, {"Degrees": 12}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 6}, {"Degrees": 2}, {"Degrees": 3}, {"Degrees": 1}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 1}, {"Degrees": 4}]}};
     var embedOpt2 = {"mode": "vega-lite"};
 
@@ -180,9 +188,9 @@ hist
         throw error;
     }
     const el2 = document.getElementById('vis2');
-    vegaEmbed("#vis", spec2, embedOpt2)
+    vegaEmbed2("#vis2", spec2, embedOpt2)
       .catch(error => showError(el2, error));
-  })(vegaEmbed);
+  })(vegaEmbed2);
 
 </script>
 
@@ -192,9 +200,5 @@ The two datasets have 47 nodes in common, so we can plot them together:
 
 
 
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
 
 
