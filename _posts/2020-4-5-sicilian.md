@@ -89,6 +89,7 @@ chart
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.0.2"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+
 <div id="vis"></div>
 <script>
   (function(vegaEmbed) {
@@ -172,7 +173,7 @@ hist
 <script>
   (function(vegaEmbed) {
     var spec2 = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-c127aeaedd28c891faa99b0a0c5d0f14"}, "mark": "bar", "encoding": {"x": {"type": "quantitative", "bin": {"maxbins": 25}, "field": "Degrees"}, "y": {"type": "quantitative", "aggregate": "count"}}, "height": 300, "title": "Degree Distribution", "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-c127aeaedd28c891faa99b0a0c5d0f14": [{"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 8}, {"Degrees": 6}, {"Degrees": 10}, {"Degrees": 10}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 5}, {"Degrees": 12}, {"Degrees": 16}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 6}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 24}, {"Degrees": 9}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 14}, {"Degrees": 8}, {"Degrees": 1}, {"Degrees": 13}, {"Degrees": 2}, {"Degrees": 16}, {"Degrees": 5}, {"Degrees": 13}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 3}, {"Degrees": 6}, {"Degrees": 5}, {"Degrees": 8}, {"Degrees": 2}, {"Degrees": 3}, {"Degrees": 7}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 9}, {"Degrees": 3}, {"Degrees": 12}, {"Degrees": 4}, {"Degrees": 19}, {"Degrees": 12}, {"Degrees": 4}, {"Degrees": 8}, {"Degrees": 11}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 6}, {"Degrees": 2}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 4}, {"Degrees": 1}, {"Degrees": 4}, {"Degrees": 6}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 15}, {"Degrees": 1}, {"Degrees": 6}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 1}, {"Degrees": 1}, {"Degrees": 4}, {"Degrees": 7}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 5}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 4}, {"Degrees": 8}, {"Degrees": 4}, {"Degrees": 4}, {"Degrees": 2}, {"Degrees": 12}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 2}, {"Degrees": 6}, {"Degrees": 2}, {"Degrees": 3}, {"Degrees": 1}, {"Degrees": 3}, {"Degrees": 2}, {"Degrees": 1}, {"Degrees": 4}]}};
-    var embedOpt = {"mode": "vega-lite"};
+    var embedOpt2 = {"mode": "vega-lite"};
 
     function showError(el2, error){
         el2.innerHTML = ('<div class="error" style="color:red;">'
@@ -183,7 +184,7 @@ hist
         throw error;
     }
     const el2 = document.getElementById('vis2');
-    vegaEmbed("#vis", spec2, embedOpt)
+    vegaEmbed("#vis", spec2, embedOpt2)
       .catch(error => showError(el2, error));
   })(vegaEmbed);
 
@@ -191,6 +192,7 @@ hist
 
 It is much closer to a Barabasi-Albert model distribution, meaning that the network has strong signs of preferential attachment.
 
+The two datasets have 47 nodes in common, so we can plot them together:
 
 
 
