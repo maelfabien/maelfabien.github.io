@@ -20,6 +20,10 @@ In this article, I am reviewing the paper: ["Disrupting resilient criminal netwo
 
 They published real world data, and I will also explore it on my side. The Github of the project with the code and data can be found [here](https://github.com/lcucav/networkdistruption). 
 
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Background
 
 This study focuses on the structure of the Sicilian Mafia as a criminal network. The whole network is made of sub-groups referred as families.
@@ -367,10 +371,201 @@ community
 
 # Network Disruption
 
-As we have seen, there are some key players, and communities that are larger than others. When disruption a criminal network,it is therefore important to arrest the right persons and avoid the network persistence.
+As we have seen, there are some key players, and communities that are larger than others. When disruption a criminal network,it is therefore important to arrest the right persons and avoid the network resilience.
 
+The authors use a metric to measure the network resilience:
 
+$$ \rho = 1 - \mid \frac{LCC_{i}(G_i) - LCC_{0}(G_0)} {LCC_{0}(G_0)} $$
 
+Where $$ LCC $$ is the Largest Connected Component, a measure of the total number of nodes of the largest connected component. A connected component of an undirected graph is a subgraph in which any two vertices are connected to each other by paths, and which is connected to no additional vertices outside of this component. *In brief, this metric tracks by how much we damaged the LCC of the network by removing one or few nodes.*
 
+In the whole graph, the connected components can be computed as such:
 
+```python
+for x in nx.connected_components(G):
+    print(x)
+```
 
+```
+{0, 1, 2}
+{3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153}
+{16, 17}
+{73, 74}
+{106, 107}
+```
+
+Just like we can visually observe, there is one major connected component. We can see the number of nodes of each sub-graph using:
+
+```python
+for x in nx.connected_components(G):
+    print(nx.number_of_nodes(G.subgraph(x)))
+```
+
+```
+3
+145
+2
+2
+2
+```
+
+The LCC is therefore the max of those, which is 145.
+
+We can therefore define a function to look for the LCC size: 
+
+```python
+def lcc_size(graph):
+
+    compsize = []
+    for c in nx.connected_components(graph):
+        compsize.append(nx.number_of_nodes(graph.subgraph(c)))
+    return max(compsize)
+```
+
+The idea behind the metric is to iteratively remove:
+- either the node with the highest collective influence, in a sequential manner
+- or the top 5 nodes with the highest collective influence, in a "block" manner
+
+And see how the metric evolves. If you want to learn more about collective influence, make sure to check [this article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5080555/).
+
+To gradually remove the nodes (in a sequential manner), the authors propose a function:
+
+```python
+import array
+import copy
+
+toremove = array.array('i', [])
+nrem = 5
+names = ['id', 'data']
+formats = ['int32', 'int32']
+dtype = dict(names=names, formats=formats)
+
+def disruption_sequence(Graph, weight=None):
+
+    Gor = copy.deepcopy(Graph)
+    lccinit = lcc_size(Graph) 
+    dflcc = pd.DataFrame()
+    dflccvar = pd.DataFrame()
+
+    dictx = dict()
+    dicty = dict()
+    kiter = 0
+    toremove = array.array('i', [])
+    
+    while Gor.number_of_nodes() > nrem:
+
+        i = 0
+
+        while i < nrem:
+            if Gor.number_of_nodes() <= nrem:
+                break
+
+            toremove = array.array('i', [])
+            dictx[kiter] = lcc_size(Gor)
+            dicty[kiter] = 1 - (abs((lcc_size(Gor) - lccinit) / lccinit))
+            toremove = collective_influence_centality(Gor, toremove, weight=weight)
+            
+            Gor.remove_node(toremove[0])
+            toremove.pop(0)
+            kiter += 1
+            i += 1
+            
+    dflcc['No'] = list(dictx.keys())
+    dflccvar['No'] = dflcc['No']
+    dflcc['centrality'] = list(dictx.values())
+    dflccvar['centrality'] = list(dicty.values())
+    
+    return dflcc, dflccvar
+
+dflcc, dflccvar = disruption_sequence(G)
+```
+
+We store the LCC and the score of the network given the sequential disruption. We can then plot the result:
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(dflcc['No'], dflcc['centrality'])
+plt.title("LCC Size with sequential disruption")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/LCC.png)
+
+We can also plot the score described above:
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(dflccvar['No'], dflccvar['centrality'])
+plt.title("Centrality score with sequential disruption")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/var.png)
+
+For the block-removal, one can simply remove 5 nodes before re-computing the collective influence candidates to remove:
+
+```python
+def disruption_block(Graph, weight=None):
+
+    Gor = copy.deepcopy(Graph)
+    lccinit = lcc_size(Graph) 
+    dflcc = pd.DataFrame()
+    dflccvar = pd.DataFrame()
+
+    dictx = dict()
+    dicty = dict()
+    kiter = 0
+    toremove = array.array('i', [])
+
+    while Gor.number_of_nodes() > nrem:
+        i = 0
+
+        toremove = array.array('i', [])
+        dictx[kiter] = lcc_size(Gor)
+        dicty[kiter] = 1 - (abs((lcc_size(Gor) - lccinit) / lccinit))
+        toremove = collective_influence_centality(Gor, toremove, weight=weight)
+        
+        while i < nrem:
+            if Gor.number_of_nodes() <= nrem:
+                break
+            Gor.remove_node(toremove[0])
+            toremove.pop(0)
+            kiter += 1
+            i += 1
+    
+    dflcc['No'] = list(dictx.keys())
+    dflccvar['No'] = dflcc['No']
+    dflcc['centrality'] = list(dictx.values())
+    dflccvar['centrality'] = list(dicty.values())
+    
+    return dflcc, dflccvar
+```
+
+And as before, we can compute the LCC and the score with the number of iterations:
+
+```python
+dflcc, dflccvar = disruption_block(G)
+plt.figure(figsize=(12,8))
+plt.plot(dflcc['centrality'])
+plt.title("LCC Size with block disruption")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/LCC2.png)
+
+```python
+plt.figure(figsize=(12,8))
+plt.plot(dflccvar['centrality'])
+plt.title("Centrality score with block disruption")
+plt.show()
+```
+
+![image](https://maelfabien.github.io/assets/images/var2.png)
+
+Note, the results are quite similar in terms when you compare the number of persons who had to be arrested. 
+
+# Discussion
+
+The authors discuss that betweenness centrality is the best metric to apply (better than collective influence), given the focus it has on information bottleneck. 5% of the network is often responsible for more than 70% of the information (and this is real-world data !).
+
+The dataset provided is static (meaning that we do not know how the network will react to a disruption). Overall, the metric provided is interesting, and this kind of approach could be explored in criminal network investigations.
