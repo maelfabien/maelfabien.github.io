@@ -29,7 +29,7 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Fundamental papers in Speaker Verification](https://maelfabien.github.io/signal/papers_speech) : A list of fundamentals papers in Speaker Verification.
 
-# Maths and stats
+# I. Maths and stats
 
 [Linear Discriminant Analysis (LDA) and QDA](https://maelfabien.github.io/machinelearning/LDA/) : In this article, we'll cover the intuition behind LDA, when it should be used, and the maths behind it. We'll also quick cover the Quadratic version of LDA.
 
@@ -39,13 +39,15 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Joint Factor Analysis (JFA)](https://maelfabien.github.io/machinelearning/JFA/) : Introduction to joint factor analysis in speaker verification.
 
-# Kaldi
+# II. Speech Processing
+
+## Kaldi
 
 [Introduction to Kaldi](https://maelfabien.github.io/signal/kaldi/): An introduction to install, understand the key features, the organization, and get you started with Kaldi.
 
 [Kaldi for speaker verification](https://maelfabien.github.io/signal/kaldi2/): An example on how to run Kaldi for speaker verification.
 
-# Voice Processing Fundamentals
+## Voice Processing Fundamentals
 
 [Introduction to Voice Processing in Python](https://maelfabien.github.io/machinelearning/Speech8/#): Summary of the book "Voice Computing with Python" with concepts, code and examples.
 
@@ -53,7 +55,7 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Sound Visualization](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
 
-# Speaker Verification fundamentals
+## Speaker Verification fundamentals
 
 [The basics of Speaker Verification](https://maelfabien.github.io/machinelearning/basics_speech/): High-level overview of the speaker verification process.
 
@@ -64,6 +66,27 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 [Speaker Verification and i-vectors](https://maelfabien.github.io/machinelearning/Speech3/#): Overview of the i-vector method for Speaker Verification. 
 
 [Deep Learning approach to speaker verification with X-vectors](https://maelfabien.github.io/machinelearning/Speech4/#): How X-vectors improve the speaker verification process.
+
+# III. Network analysis
+
+## Graph theory
+
+[Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
+
+[Graph Analysis, Erdos-Rényi, Barabasi-Albert](https://maelfabien.github.io/machinelearning/graph_2/) : In this article, we cover the two main types of graphs, and describe a first approach to graph analysis. 
+
+[Graph Algorithms](https://maelfabien.github.io/machinelearning/graph_3/) : We'll now explore the main graph algorithms and several use cases in a visual way with direct examples in Python. 
+
+[Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
+
+[Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
+
+## Criminal networks
+
+["Disrupting Resilient criminal networks through data analysis" paper review](https://maelfabien.github.io/machinelearning/sicilian/): A summary and data exploration of an interesting paper on criminal networks in the Sicilian MAFIA.
+
+
+
 
 
 <!-- [image](https://maelfabien.github.io/assets/images/phd_process.png) -->
