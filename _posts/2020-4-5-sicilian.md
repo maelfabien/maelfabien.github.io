@@ -40,7 +40,7 @@ Strategies to disrupt networks rely on:
 
 In social capital, the removal of the actors with the largest betweenness centrality tends to be the best technique. After disruption, the network might still be exist. We talk about network resilience. This is what this paper focuses on.
 
-# The data
+# Data
 
 For this part, I won't cover too much what the authors did and I will explore this dataset using my approach/visualization. I will rely on networkx (quite common), but also on Nx_altair, a library (which I think isn't maintained anymore) that mixes Altair and Networkx.
 

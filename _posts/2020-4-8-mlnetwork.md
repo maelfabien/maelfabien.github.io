@@ -26,7 +26,7 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 
 As in most criminal network projects, data is key. However, data is not always available, and if so, only in limited amount. Therefore, link prediction can make sense from that perspective. In this paper, authors gathered large amount of data and turned link prediction in graphs (which is a hard task) into binary classification problems (which is much easier).
 
-# The data
+# Data
 
 The authors gathered a dataset of 1.5 millions nodes worldwide with 4 millions undirected edges from the Office of Foreign Asset Control. I think that they refer to a dataset available [here](https://www.treasury.gov/resource-center/sanctions/SDN-List/Pages/sdn_data.aspx).
 

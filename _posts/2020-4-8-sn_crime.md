@@ -1,6 +1,6 @@
 ---
 published: true
-title: Social network analysis as a tool for criminal intelligence:understanding its potential from the perspectivesof intelligence analysts
+title: Social network analysis as a tool for criminal intelligence: Understanding its potential from the perspectivesof intelligence analysts
 layout: single
 author_profile: false
 read_time: true
@@ -26,7 +26,7 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 
 More and more research focuses on social network analysis (SNA) in criminal networks. However, are these methods acutally used by Law Enforcement Agencies (LEAs) and can they leverage it properly? This paper goes some way towards addressing these issues by drawing on qualitative interviews with criminal intelligence analysts from two Australian state law enforcement agencies.
 
-Some past studies have shown that there is sometimes a missalignment between the suspects identified/followed by LEAs and the actual vital characters as identified by SNA. It is hard for researchers to access real world data for security reasons, and it is hard for 
+Some past studies have shown that there is sometimes a missalignment between the suspects identified/followed by LEAs and the actual vital characters as identified by SNA. It is hard for researchers to access real world data for security reasons, and it is hard to track how efficient a SNA system actually is in production. 
 
 # The interviews
 
