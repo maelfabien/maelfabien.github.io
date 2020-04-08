@@ -69,6 +69,8 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 # III. Network analysis
 
+Criminal and social networks are at the core of criminal investigation. More and more data is being collected in investigation cases, and identifying who knows who and what is being said is crucial.
+
 ## Graph theory
 
 [Introduction to Graphs](https://maelfabien.github.io/machinelearning/graph_1/) : What is a graph ? Where are graphs being used ? What are the components of a graph ?
@@ -89,11 +91,11 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 ["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspectivesof intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
 
-# IV. Speaker Identification meets graphs
+# IV. When Speaker Identification meets graphs
+
+There are really few papers linking graphs and speaker identification. Phonexia wrote [this web article](https://graphaware.com/analytics/2019/01/28/speaker-identification-meets-graphs.html) on how to leverage community detection for speaker identification. It's a good starting point. Below, I'll summarize papers that I found on this topic and ideas that I have.
 
 ["Leveraging side information for speaker identification with the Enron conversational telephone speech collection" paper summary](https://maelfabien.github.io/machinelearning/graphspeak/): A first approach of how to leverage the structure of a network to enhance speaker identification on an e-mail and call database.
-
-
 
 <!-- [image](https://maelfabien.github.io/assets/images/phd_process.png) -->
 
