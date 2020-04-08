@@ -16,7 +16,7 @@ sidebar:
     nav: sidebar-sample
 ---
 
-In this article, I am reviewing the paper: ["Disrupting resilient criminal networks through data analysis: the case of Sicilian Mafia"](https://arxiv.org/pdf/2003.05303.pdf) by Lucia Cavallaro and Annamaria Ficara and Pasquale De Meo and Giacomo Fiumara and Salvatore Catanese and Ovidiu Bagdasar and Antonio Liotta.
+In this article, I will re-implement and discuss the paper: ["Disrupting resilient criminal networks through data analysis: the case of Sicilian Mafia"](https://arxiv.org/pdf/2003.05303.pdf) by Lucia Cavallaro and Annamaria Ficara and Pasquale De Meo and Giacomo Fiumara and Salvatore Catanese and Ovidiu Bagdasar and Antonio Liotta.
 
 They published real world data, and I will also explore it on my side. The Github of the project with the code and data can be found [here](https://github.com/lcucav/networkdistruption). 
 

@@ -85,6 +85,7 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 ["Disrupting Resilient criminal networks through data analysis" paper review](https://maelfabien.github.io/machinelearning/sicilian/): A summary and data exploration of an interesting paper on criminal networks in the Sicilian MAFIA.
 
+["Structural Analysis of Criminal Network and Predicting Hidden Links using Machine Learning" paper review](https://maelfabien.github.io/machinelearning/mlnetwork/): Summary and discussion of a paper tackling hidden link prediction as a supervised learning problem.
 
 
 
