@@ -4,6 +4,8 @@ main:
     url: /blog/
   - title: "Ph.D. @ Idiap"
     url: /phd/
+  - title: "News"
+    url: /news/
   - title: "Projects"
     url: /portfolio/
   - title: "Travel"

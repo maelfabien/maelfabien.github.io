@@ -34,6 +34,12 @@ classes: wide
 
 <button class="button" onclick="location.href='https://maelfabien.github.io/assets/images/CV_MF.pdf'" type="button">Download the PDF version</button>
 
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="fr_FR" data-type="horizontal" data-theme="light" data-vanity="mael-fabien"><a class="LI-simple-link" href='https://ch.linkedin.com/in/mael-fabien?trk=profile-badge'>Maël Fabien</a></div>
+
+
 # Education
 
 | Degree | University | Start date | End date | GPA |

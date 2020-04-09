@@ -12,6 +12,10 @@ redirect_from:
 
 Welcome to my blog. My name is Maël and I'm a Data Scientist and  Ph.D. student at Idiap research institute (EPFL) in Speech Processing, on [ROXANNE European Project](https://roxanne-euproject.org/).
 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="fr_FR" data-type="horizontal" data-theme="light" data-vanity="mael-fabien"><a class="LI-simple-link" href='https://ch.linkedin.com/in/mael-fabien?trk=profile-badge'>Maël Fabien</a></div>
+
 Outside of Data Science, my interests are:
 - Traveling: I have been traveling to South East Asia, New Zealand, Tahiti and Chile with my girlfriend for the past 4 months. I have posted pictures of the trip in the Travel section. 
 - Sports: Hiking in Switzerland, running on the beach in Britanny, practicing Fitness/Crossfit. I used to play volleyball and have been Swiss national champion in Junior. I also used to (and still do sometimes) practice javelin. I won several times the Javelin Championship in Rhône-Alpes region in Junior (± 50 meters).
