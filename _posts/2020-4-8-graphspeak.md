@@ -2,7 +2,7 @@
 published: true
 title: Leveraging side information for speaker identification with the Enron conversational telephone speech collection
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Criminal Networks"

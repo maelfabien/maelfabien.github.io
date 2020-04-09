@@ -3,7 +3,7 @@ published: true
 title: Create an Auto-Encoder
 collection: dl
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [project]
 header :

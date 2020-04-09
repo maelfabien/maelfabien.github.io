@@ -3,7 +3,7 @@ published: true
 title: How to run a Zeppelin notebook locally?
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Amazon Web Services"

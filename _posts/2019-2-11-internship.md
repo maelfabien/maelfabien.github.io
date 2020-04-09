@@ -3,7 +3,7 @@ published: false
 title: Landing an internship in Data Science
 collection: tuto
 layout: single
-author_profile: false
+author_profile: true
 classes: wide
 read_time: true
 header :

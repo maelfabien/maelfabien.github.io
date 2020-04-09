@@ -3,7 +3,7 @@ published: true
 title: Create a streaming data pipeline with Cloud DataFlow 
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 header :

@@ -3,7 +3,7 @@ published: true
 title: Gradient Boosting Regression
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Supervised Learning Algorithms"

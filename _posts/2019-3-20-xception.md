@@ -3,7 +3,7 @@ published: true
 title: XCeption Model and Depthwise Separable Convolutions
 collection: dl
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [deeplearning]
 excerpt : "Deep Neural Networks"

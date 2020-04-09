@@ -3,7 +3,7 @@ published: true
 title: Using OpenPose on macOS
 collection: tuto
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [project]
 header :

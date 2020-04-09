@@ -2,7 +2,7 @@
 published: true
 title: Structural Analysis of Criminal Network and Predicting Hidden Links using Machine Learning
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Criminal Networks"

@@ -3,7 +3,7 @@ published: true
 title: Emotion Recognition WebApp
 collection: dl
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [project]
 show_excerpts : false

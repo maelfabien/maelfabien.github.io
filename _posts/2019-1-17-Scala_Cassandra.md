@@ -3,7 +3,7 @@ published: true
 title: Move Scala Dataframes to Cassandra
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "GDelt Project"

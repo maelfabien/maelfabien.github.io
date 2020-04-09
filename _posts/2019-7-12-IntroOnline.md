@@ -3,7 +3,7 @@ published: false
 title: Practical introduction to Continual Learning (CL)
 collection: ml
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Advanced Machine Learning"

@@ -3,7 +3,7 @@ published: true
 title: AWS Cloud Practitioner - Cloud Concepts
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Amazon Web Services"

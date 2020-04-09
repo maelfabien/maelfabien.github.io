@@ -39,6 +39,7 @@ classes: wide
 
 <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="fr_FR" data-type="horizontal" data-theme="light" data-vanity="mael-fabien"><a class="LI-simple-link" href='https://ch.linkedin.com/in/mael-fabien?trk=profile-badge'>Maël Fabien</a></div>
 
+<br>
 
 # Education
 

@@ -3,7 +3,7 @@ published: true
 title: Getting started without setup
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [da_tuto]
 excerpt : "Data Analysis Basics"

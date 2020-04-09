@@ -3,7 +3,7 @@ published: true
 title: Install Apache Cassandra on an AWS EC2 Cluster
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Amazon Web Services"

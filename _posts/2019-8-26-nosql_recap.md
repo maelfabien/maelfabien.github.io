@@ -3,7 +3,7 @@ published: true
 title: A No-SQL Big Data project from scratch
 collection: dl
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [project]
 header :

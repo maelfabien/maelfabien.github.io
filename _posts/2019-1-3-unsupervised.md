@@ -3,7 +3,7 @@ published: true
 title: Unsupervised Learning Cheat Sheet
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Machine Learning Basics"

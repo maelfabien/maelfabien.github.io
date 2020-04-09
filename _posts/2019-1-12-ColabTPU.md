@@ -3,7 +3,7 @@ published: true
 title: TPU survival guide on Google Colaboratory 
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Google Cloud Platform"

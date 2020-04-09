@@ -3,7 +3,7 @@ published: true
 title: Interpretability and explainability (2/2)
 collection: explorium
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Better ML"

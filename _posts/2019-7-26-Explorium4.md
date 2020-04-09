@@ -3,7 +3,7 @@ published: true
 title: A Guide to Hyperparameter Optimization (HPO)
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Parameters and Model Optimization"

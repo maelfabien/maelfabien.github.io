@@ -3,7 +3,7 @@ published: true
 title: Using Google Drive to store your data on Colab
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Google Cloud Platform"

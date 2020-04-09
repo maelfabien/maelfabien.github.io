@@ -17,7 +17,7 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 ![image](https://maelfabien.github.io/assets/images/th_head.png)
 
-[DataCast Interview](https://maelfabien.github.io/thoughts/interview) : I recently gave an interview to DataCast, an excellent Data Science podcast. With James Le, we talked about Actuarial Science, being a young graduate, the Data industry, the Paris tech ecosystem...
+[DataCast Interview](https://maelfabien.github.io/thoughts/supervised) : I recently gave an interview to DataCast, an excellent Data Science podcast. With James Le, we talked about Actuarial Science, being a young graduate, the Data industry, the Paris tech ecosystem...
 
 <br>
 
@@ -66,8 +66,6 @@ A series of articles dedicated to machine learning and statistics. All codes and
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/sup_head.jpg)
-
-[Supervised Learning Cheat Sheet](https://maelfabien.github.io/machinelearning/supervised/) : A cheat sheet that recaps the main supervised learning algorithms. It includes an illustration, and the minimization problem for each of them.
 
 [Basics and Motivation](https://maelfabien.github.io/machinelearning/ml_base/) : A first approach to machine learning. We'll go over the main motivations, the main kind of algorithms, what they can be used for...
 

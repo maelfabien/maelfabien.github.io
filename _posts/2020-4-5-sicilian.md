@@ -2,7 +2,7 @@
 published: true
 title: Disrupting Resilient criminal networks through data analysis
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Criminal Networks"

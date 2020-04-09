@@ -3,7 +3,7 @@ published: true
 title: Handle Missing Values in Time Series
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [statistics]
 excerpt : "Time Series"

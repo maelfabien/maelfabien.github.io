@@ -3,7 +3,7 @@ published: true
 title: What to expect from this training?
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [da_tuto]
 excerpt : "Before we start"

@@ -3,7 +3,7 @@ published: true
 title: Key Resources
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [statistics]
 excerpt : "Books, papers and talks"

@@ -3,7 +3,7 @@ published: true
 title: A full guide to face detection
 collection: tuto
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [tutorials]
 excerpt : "Tutorials"

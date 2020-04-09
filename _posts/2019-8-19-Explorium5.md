@@ -3,7 +3,7 @@ published: true
 title: Predicting the next hit song (Part 1)
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Applied Data Science"

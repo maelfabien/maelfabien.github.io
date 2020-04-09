@@ -3,7 +3,7 @@ published: true
 title: Key Computer Components
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Parallel and Distributed Computing"

@@ -2,7 +2,7 @@
 published: true
 title: Fundamental Speech Processing Papers
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [signal]
 excerpt : "Speech Processing"

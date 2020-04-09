@@ -3,7 +3,7 @@ published: true
 title: Install and run Elasticsearch + Kibana locally
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Elastic Search, Logstash, Kibana"

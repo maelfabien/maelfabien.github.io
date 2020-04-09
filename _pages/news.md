@@ -45,6 +45,8 @@ Sharing some news, projects I am working on and social media posts:
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6392960786536415232" height="488" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
 
+<br>
+
 # Twitter
 
 <a class="twitter-timeline" href="https://twitter.com/fabien_mael?ref_src=twsrc%5Etfw">Tweets by fabien_mael</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -3,7 +3,7 @@ published: true
 title: The Rosenblatt's Perceptron
 collection: dl
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [deeplearning]
 excerpt : "Deep Neural Networks"

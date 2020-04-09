@@ -2,7 +2,7 @@
 published: true
 title: Social network analysis as a tool for criminal intelligence: Understanding its potential from the perspectivesof intelligence analysts
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Criminal Networks"

@@ -3,7 +3,7 @@ published: true
 title: Interview by DataCast
 collection: ml
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [thoughts]
 excerpt : "Thoughts"

@@ -3,7 +3,7 @@ published: true
 title: Automated Graphs with Visual Recommendation Systems
 collection: ml
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Data Viz"

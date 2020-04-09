@@ -3,7 +3,7 @@ published: true
 title: Earthquake Analysis on GCP
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [project]
 header :

@@ -3,7 +3,7 @@ published: true
 title: Introduction to Bash Scripting
 collection: bgd
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [bigdata]
 excerpt : "Tips & Tricks"

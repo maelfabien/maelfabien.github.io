@@ -3,7 +3,7 @@ published: true
 title: Deploy a Streamlit WebApp with Docker
 collection: ml
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [project]
 header :

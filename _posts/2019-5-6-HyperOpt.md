@@ -3,7 +3,7 @@ published: true
 title: Bayesian Hyperparameter Optimization
 collection: st
 layout: single
-author_profile: false
+author_profile: true
 read_time: true
 categories: [machinelearning]
 excerpt : "Parameters and Model Optimization"
