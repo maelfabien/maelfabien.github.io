@@ -34,6 +34,8 @@ Other famous databases include NIST Speaker Recognition Evaluation Challenge or 
 
 # Speaker Verification Fundamentals
 
+[SVM GMM-Supervector Speaker Verification](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.87.604&rep=rep1&type=pdf): A method relying on GMM-supervectors and SVM to classify speakers in Speaker Verification tasks.
+
 [Probabilistic Linear Discriminant Analysis](https://maelfabien.github.io/assets/litterature/maths/PLDA.pdf): A key element used for dimension reduction and speaker classification.
 
 [Front-End Factor Analysis For Speaker Verification](https://maelfabien.github.io/assets/litterature/representation/i-vector.pdf): The paper describing the i-vector feature extraction.

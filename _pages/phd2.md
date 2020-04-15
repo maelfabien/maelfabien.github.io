@@ -125,7 +125,7 @@ The consortium is made of 24 partners:
 </tr>
 <tr>
 <td>
-<p><a href="//www.psni.police.uk/" target="_blank"><img src="https://roxanne-euproject.org/consortium/images/psni_logo.png/@@images/28c71fb9-c858-48e8-a97d-ab17e0159746.png" data-linktype="image" title="PSNI logo" data-val="9038bbfed1214638885390079aa44028" data-scale="mini" alt="psni_logo.png" class="image-inline"></a></p>
+<p><a href="//www.psni.police.uk/" target="_blank"><img src="https://roxanne-euproject.org/consortium/images/flag_uk.png/@@images/9774cfee-a149-4406-bf78-2fa9741a395b.png" data-linktype="image" title="PSNI logo" data-val="9038bbfed1214638885390079aa44028" data-scale="mini" alt="psni_logo.png" class="image-inline"></a></p>
 <p>&nbsp;</p>
 <p><a title="Police Service of Northern Ireland, United Kingdom" href="//www.psni.police.uk/" target="_blank" data-linktype="external" data-val="//www.psni.police.uk/">Police Service of Northern Ireland, United Kingdom</a></p>
 <p><img src="https://roxanne-euproject.org/consortium/images/flag_ir.png/@@images/7126bb16-d828-4ca4-acd1-ad59c16f4af9.png" data-linktype="image" title="IR flag" data-scale="icon" alt="flag_ir.png" data-val="371adf9a05884a238853d91085230856" class="image-inline"></p>
@@ -163,7 +163,7 @@ The consortium is made of 24 partners:
 <p><img src="https://roxanne-euproject.org/consortium/images/flag_nl.png/@@images/f0630c9b-e476-4182-bf9c-38e796fe3f57.png" data-linktype="image" title="NL flag" data-scale="icon" alt="flag_nl.png" data-val="439a84ed60a747b987da2684f3e1b33e" class="image-inline"></p>
 </td>
 <td>
-<p><a href="//www.garda.ie/en/" target="_blank"><img src="https://roxanne-euproject.org/consortium/images/ags_logo.jpg/@@images/c5537d19-ea89-490a-9abd-f8383a229ae3.jpeg" data-linktype="image" title="AGS logo" data-val="e83bc1a39a8947de9e761ae6cbbb3c10" data-scale="mini" alt="ags_logo.jpg" class="image-inline"></a></p>
+<p><a href="//www.garda.ie/en/" target="_blank"><img src="https://roxanne-euproject.org/consortium/images/flag_uk.png/@@images/9774cfee-a149-4406-bf78-2fa9741a395b.png" data-linktype="image" title="AGS logo" data-val="e83bc1a39a8947de9e761ae6cbbb3c10" data-scale="mini" alt="ags_logo.jpg" class="image-inline"></a></p>
 <p>&nbsp;</p>
 <p><a title="An Garda Síochána" href="//www.garda.ie/en/" target="_blank" data-linktype="external" data-val="//www.garda.ie/en/">An Garda Síochána</a></p>
 <p><img src="https://roxanne-euproject.org/consortium/images/flag_ir.png/@@images/7126bb16-d828-4ca4-acd1-ad59c16f4af9.png" data-linktype="image" title="IR flag" data-scale="icon" alt="flag_ir.png" data-val="371adf9a05884a238853d91085230856" class="image-inline"></p>
