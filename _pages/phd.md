@@ -89,7 +89,7 @@ Criminal and social networks are at the core of criminal investigation. More and
 
 ["Structural Analysis of Criminal Network and Predicting Hidden Links using Machine Learning" paper summary](https://maelfabien.github.io/machinelearning/mlnetwork/): Summary and discussion of a paper tackling hidden link prediction as a supervised learning problem.
 
-["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspectivesof intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
+["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspective of intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
 
 # IV. When Speaker Identification meets graphs
 

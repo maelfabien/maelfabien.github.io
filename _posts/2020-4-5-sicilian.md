@@ -375,7 +375,7 @@ As we have seen, there are some key players, and communities that are larger tha
 
 The authors use a metric to measure the network resilience:
 
-$$ \rho = 1 - \mid \frac{LCC_{i}(G_i) - LCC_{0}(G_0)} {LCC_{0}(G_0)} $$
+$$ \rho = 1 - \mid \frac{LCC_{i}(G_i) - LCC_{0}(G_0)} {LCC_{0}(G_0)} \mid $$
 
 Where $$ LCC $$ is the Largest Connected Component, a measure of the total number of nodes of the largest connected component. A connected component of an undirected graph is a subgraph in which any two vertices are connected to each other by paths, and which is connected to no additional vertices outside of this component. *In brief, this metric tracks by how much we damaged the LCC of the network by removing one or few nodes.*
 
