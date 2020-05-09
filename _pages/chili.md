@@ -29,9 +29,4 @@ sidebar:
 
 [Visite de Santiago](https://maelfabien.github.io/chili_3/): Entre quartiers design et signes des manifestations récentes, un Chili tout en contraste.
 
-
-
-
-
-
-
+[Visite de Santiago](https://maelfabien.github.io/chili_4/): Dernier jour au Chili, 11'000 kilomètres pour rentrer, 30 degrés de moins et un déménagement. Nous rentrons aujourd'hui!
