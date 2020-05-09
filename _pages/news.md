@@ -7,6 +7,10 @@ title: "News"
 
 Sharing some news, projects I am working on and social media posts:
 
+# Academic
+
+09.05.2020 - First paper submitted: "Speaker Identification Enhancement using Network Knowledge in Criminal Investigations". I'll keep you up to data on next papers/admission :)
+
 # LinkedIn
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6652919786927992833" height="801" width="504" frameborder="0" allowfullscreen="" title="Post intégré"></iframe>
