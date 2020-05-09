@@ -26,6 +26,8 @@ You'll find here a list of article I have written with my girlfriend (in French)
 
 These articles were mostly made for our families, and were written on a close-to-daily basis, but feel free to leave comments on them if you'd like to share your experience regarding some of these places. I also think they make a decent toilet break read if you speak french.
 
+Overall, we have made more than 55'705 kilometers in 70 days, traveled 6 countries by plane, boat, train, bike and car. We were lucky to come back before the quarantine due to COVID-19.
+
 Here's the map of our trip:
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1jiekrGvX0g2xRRYb3TwwyROuIvUaX018" width="100%" height="500" frameBorder="0"></iframe>

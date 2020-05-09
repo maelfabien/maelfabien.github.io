@@ -18,9 +18,7 @@ sidebar:
 
 ***Kilomètres parcourus***: *11742*
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ighEkWF3E86X5xjHwkN6tZGJWBgGts6h" width="640" height="480"></iframe>
-
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kkjAA3H1TlVXZC3gx6Fm9VmA-iAgKF_Q" width="100%" height="500" frameBorder="0"></iframe>
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ighEkWF3E86X5xjHwkN6tZGJWBgGts6h" width="100%" height="500" frameBorder="0"></iframe>
 
 <br>
 
