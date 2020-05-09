@@ -89,6 +89,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 [Anomaly Detection](https://maelfabien.github.io/machinelearning/anomaly/) : An overview of both supervised and unsupervised anomaly detection algorithms such as Isolation Forest.
 
+[EM for Gaussian Mixture Models and Hidden Markov Models](https://maelfabien.github.io/machinelearning/GMM/) : 140 detailed and visual slides on GMMs, HMMs and EM. Introducing GMMs as a clustering technique, comparing it with K-Means, details on how to train GMMs with EM, and overview of HMM training. 
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/mc_head.jpg)
@@ -112,6 +114,12 @@ A series of articles dedicated to machine learning and statistics. All codes and
 [Graph Learning](https://maelfabien.github.io/machinelearning/graph_4/) : How can we handle missing links or missing nodes in graphs ? 
 
 [Graph Embedding](https://maelfabien.github.io/machinelearning/graph_5/) : A practical introduction to Graph Embedding with Node2Vec and Graph2Vec.
+
+["Disrupting Resilient criminal networks through data analysis" paper summary](https://maelfabien.github.io/machinelearning/sicilian/): A summary and data exploration of an interesting paper on criminal networks in the Sicilian MAFIA.
+
+["Structural Analysis of Criminal Network and Predicting Hidden Links using Machine Learning" paper summary](https://maelfabien.github.io/machinelearning/mlnetwork/): Summary and discussion of a paper tackling hidden link prediction as a supervised learning problem.
+
+["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspective of intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
 
 <br>
 

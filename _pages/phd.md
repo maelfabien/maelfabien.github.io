@@ -35,7 +35,7 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Probabilistic Linear Discriminant Analysis (PLDA)](https://maelfabien.github.io/machinelearning/PLDA/) : Coming soon.
 
-[Gaussian Mixture Model (GMM)](https://maelfabien.github.io/machinelearning/GMM/) : A short introduction to Gaussian Mixture Models, and applications to speaker verification.
+[EM for Gaussian Mixture Models and Hidden Markov Models](https://maelfabien.github.io/machinelearning/GMM/) : 140 detailed and visual slides on GMMs, HMMs and EM.
 
 [Joint Factor Analysis (JFA)](https://maelfabien.github.io/machinelearning/JFA/) : Introduction to joint factor analysis in speaker verification.
 
