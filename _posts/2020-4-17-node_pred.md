@@ -33,6 +33,87 @@ The timestamps vary between 2000-08-03 09:10:00 and 2001-01-29 22:21:00. Thus, w
 
 The first thing that we should look at is the evolution of the centrality of the nodes over time.
 
+![image](https://maelfabien.github.io/assets/images/node_evol.png)
+
+There seems to be some changes over time over in the order of the major nodes. There also seems to be some dates at which at lot of events were collected, typically because phone calls were not registered continuously.
+
+# Feature extraction
+
+I turned the node betweenness centrality score prediction into a supervised learning problem. My task will be to predict which node will be central in 1 month from now. This can be useful for police investigations since it does take time to plan when to arrest criminals for example.
+
+To build my dataset, for each node, for each date, I am collecting:
+- the conversation date
+- the betweenness centrality
+- the relative degree centrality
+- the clustering coefficient of the node
+- the eigen vector centrality
+- the katz centrality
+- the load centrality
+- the harmonic centrality
+- if the node is in the max clique of the graph
+- the average clustering of the graph
+- if the node is in the minimum weighted dominating set
+
+In Python, I use NetworkX to implement this feature extraction:
+
+```python
+all_features = []
+
+for conv in df.iterrows():
+    
+    # If a least 2 characters in the conversation
+    if len(conv[1]['characters']) >= 2:
+
+    	# Add the edges
+        for elem in list(itertools.combinations(conv[1]['characters'], 2)):
+
+            G.add_edge(elem[0], elem[1])
+            
+        # Collect node features
+        for node in G.nodes():
+
+            feature = []
+            
+            feature.append(conv[1]['Date'])
+            feature.append(node)
+            feature.append(betweenness_centrality(G)[node])
+            feature.append(G.degree[node]/sum(dict(G.degree).values()))
+            feature.append(nx.clustering(G)[node])
+            feature.append(nx.eigenvector_centrality(G)[node])
+            feature.append(nx.katz_centrality(G)[node])
+            feature.append(nx.closeness_centrality(G)[node])
+            feature.append(nx.load_centrality(G)[node])
+            feature.append(nx.harmonic_centrality(G)[node])
+
+            if node in max_clique(G):
+                feature.append(1)
+            else:
+                feature.append(0)
+            feature.append(average_clustering(G))
+
+            if node in min_weighted_dominating_set(G):
+                feature.append(1)
+            else:
+                feature.append(0)
+                
+            all_features.append(feature)
+```
+
+I then build a column "is top 5" if the node is within the 5 nodes with the highest centrality at the given date. Then, knowing the situation of the network in 1 month from now, I collect the 5 nodes with the highest centrality at that time, and create a column "will be top 5". I must drop the last month of my dataset since it typically would be the period I would neeed to predict on in real life.
+
+# Model Performance
+
+Here is what my dataset looks like:
+
+```
+	Date	Node	Between	Rel_Degree	Clustering	Eigenvector	Katz	Closeness	Load	Harmonic	Maxclique	Avg_clustering	Dominant	will_be_top_5	is_top_5
+53032	2000-12-20 16:25:00	holly	0.000000	0.002994	0.000000	1.511396e-22	0.028975	0.015625	0.000000	1.000000	0	0.625	0	0	0
+12951	2000-11-07 09:18:00	steve	0.014925	0.024390	0.533333	1.546957e-01	0.160833	0.326408	0.015306	19.900000	0	0.654	1	0	0
+26301	2000-11-28 10:20:00	leap	0.000000	0.026923	1.000000	2.060583e-01	0.192614	0.314206	0.000000	19.533333	0	0.706	1	0	0
+33081	2000-12-07 15:05:00	paul	0.000000	0.007246	1.000000	5.385561e-02	0.077845	0.274546	0.000000	17.516667	0	0.627	0	0	0
+```
+
+I use an XGBoost algorithm with a test size of 75%, since I want to test whether 
 
 
 
