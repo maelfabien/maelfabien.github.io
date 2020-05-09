@@ -82,7 +82,7 @@ I recently launched a newsletter in which I gather some articles I wrote on a to
 
 <hr>
 
-This website gathered a little more than 66'000 unique visitors (March 2020) since its creation. Where do other visitors come from?
+This website gathered a little more than 80'000 visitors since its creation (Oct. 2018). Where do other visitors come from?
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 

@@ -53,6 +53,14 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 # Latest Articles
 
+[EM for Gaussian Mixture Models and Hidden Markov Models](https://maelfabien.github.io/machinelearning/GMM/) : 140 detailed and visual slides on GMMs, HMMs and EM. Introducing GMMs as a clustering technique, comparing it with K-Means, details on how to train GMMs with EM, and overview of HMM training. 
+
+["Disrupting Resilient criminal networks through data analysis" paper summary](https://maelfabien.github.io/machinelearning/sicilian/): A summary and data exploration of an interesting paper on criminal networks in the Sicilian MAFIA.
+
+["Structural Analysis of Criminal Network and Predicting Hidden Links using Machine Learning" paper summary](https://maelfabien.github.io/machinelearning/mlnetwork/): Summary and discussion of a paper tackling hidden link prediction as a supervised learning problem.
+
+["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspective of intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
+
 [SP - Voice Gender Detection web application](https://maelfabien.github.io/machinelearning/Speech11/#): How to extract relevant features and build a voice gender detection application using MFCC, GMMs and a provided dataset.
 
 [SP - Sound Visualization (3/3)](https://maelfabien.github.io/machinelearning/Speech10/#): Dive into spectrograms, chromagrams, tempograms, spectral power density and more...
@@ -76,14 +84,6 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 [NLP - Improved Few Shot Text Classification](https://maelfabien.github.io/machinelearning/NLP_6) : Improving previous results with Data Augmentation and more complex models.
 
 [RL - Introduction to Reinforcement Learning](https://maelfabien.github.io/rl/RL_1) : An introduction to the basic building blocks of reinforcement learning.
-
-[RL - Markov Decision Process](https://maelfabien.github.io/rl/RL_2/) : Overview of Markov Decision Process and Bellman Equation.
-
-[RL - Planning by Dynamic Programming](https://maelfabien.github.io/rl/RL_3/) : Introduction to Dynamic Programming, including Policy and Value Iteration.
-
-[NLP - I trained a Neural Network to speak like me](https://maelfabien.github.io/machinelearning/NLP_4/) : Having written over 100 articles, I trained a NN to write articles just like me.
-
-[DL - How do Neural Networks learn?](https://maelfabien.github.io/deeplearning/feed/) : Dive into feedforward process and back-propagation.
 
 <center><a href="https://maelfabien.github.io/year-archive/#">See More</a></center>
 
