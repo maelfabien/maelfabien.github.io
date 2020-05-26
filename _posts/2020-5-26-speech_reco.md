@@ -127,17 +127,17 @@ Finally, we suppose independence and remove the term $ P(X) $. Hence, we can re-
 $$ W^{\star} = argmax_W P(X w\mid W) P(W) $$
 
 Where:
-- $ argmax_W $ is the search space, a function of the vocabulary
-- $ P(X w\mid W) $ is called the acoustic model
-- $ P(W) $ is called the language model
+- $$ argmax_W $$ is the search space, a function of the vocabulary
+- $$ P(X w\mid W) $$ is called the acoustic model
+- $$ P(W) $$ is called the language model
 
 The steps are presented in the following diagram:
 
 ![image](https://maelfabien.github.io/assets/images/asr_5.png)
 
-## Feature extraction $ X $
+## Feature extraction $$ X $$
 
-From the speech analysis, we should extract features $ X $ which are:
+From the speech analysis, we should extract features $$ X $$ which are:
 - robust across speakers
 - robust against noise and channel effects
 - low dimension, at equal accuracy
@@ -150,11 +150,11 @@ Features we typically extract include:
 
 We should then normalize the features extracted to avoid mismatches across samples with mean and variance normalization.
 
-## Acoustic model $ P(X \mid W) $
+## Acoustic model $$ P(X \mid W) $$
 
 The acoustic model is a complex model, usually based on Hidden Markov Models and Artificial Neural Networks, modeling the relationship between the audio signal and the phonetic units in the language.
 
-In isolated word/pattern recognition, the acoustic features (here $Y$) are used as an input to a classifier whose rose is to output the correct word. However, we take input sequence and should output sequences too when it comes to *continuous speech recognition*.
+In isolated word/pattern recognition, the acoustic features (here $$ Y $$) are used as an input to a classifier whose rose is to output the correct word. However, we take input sequence and should output sequences too when it comes to *continuous speech recognition*.
 
 ![image](https://maelfabien.github.io/assets/images/asr_6.png)
 
@@ -162,7 +162,14 @@ The acoustic model goes further than a simple classifier. It outputs a sequence 
 
 ![image](https://maelfabien.github.io/assets/images/asr_7.png)
 
-Hidden Markov Models are natural candidates for Acoustic Models since they are great at modeling sequences. 
+Hidden Markov Models are natural candidates for Acoustic Models since they are great at modeling sequences. If you want to read more on HMMs and HMM-GMM training, you can read [this article](https://maelfabien.github.io/machinelearning/GMM/). The HMM has underlying states $$ q_i $$, and at each state, observations $$ b_i $$ are generated. 
+
+![image](https://maelfabien.github.io/assets/images/asr_8.png)
+
+In HMMs, 1 phoneme is typically represented by a 3 or 5 state linear HMM (generally the beginning, middle and end of the phoneme).
+
+
+
 
 
 
