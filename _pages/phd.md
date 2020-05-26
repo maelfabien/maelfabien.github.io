@@ -67,6 +67,11 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Deep Learning approach to speaker verification with X-vectors](https://maelfabien.github.io/machinelearning/Speech4/#): How X-vectors improve the speaker verification process.
 
+## Automatic Speech Recognition
+
+[Introduction to Automatic Speech Recognition](https://maelfabien.github.io/machinelearning/speech_reco): What is ASR? What is the pipeline? What is acoustic modeling? 
+
+
 # III. Network analysis
 
 Criminal and social networks are at the core of criminal investigation. More and more data is being collected in investigation cases, and identifying who knows who and what is being said is crucial.
