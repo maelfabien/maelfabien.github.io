@@ -323,7 +323,7 @@ We take $$ n $$ as being 1 (unigram), 2 (bigram), 3 (trigram)...
 
 Let us now discuss some practical implementation tricks:
 - we compute the log of the probabilities, rather than the probabilities themselves (to avoid floating point approximation to 0)
-- for the first word of a sequence, we need to define **pseudo-words** as being the first 2 missing words for the trigram: $$ P(I|s s) $$ 
+- for the first word of a sequence, we need to define **pseudo-words** as being the first 2 missing words for the trigram: $$ P(I \mid <s><s>) $$ 
 
 ### **2. Language models evaluation metrics**
 
@@ -340,6 +340,9 @@ We could also use the raw probabilities to evaluate the language model, but the 
 
 $$ PP(W) = \sqrt[^N]{ \prod_{i=1}^{N} \frac{1}{P(w_i \mid w_{i-1})}} $$
 
+### **3. Limits of language models**
+
+Language models are trained on a closed vocabulary. Hence, when a new unknown word is met, it is said to be **Out of Vocabulary** (OOV).
 
 
 
