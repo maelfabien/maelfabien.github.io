@@ -245,13 +245,51 @@ The paper [Deep Speech 2: End-to-End Speech Recognition in English and Mandarin]
 
 This concludes the part on acoustic modeling.
 
-## Pronounciation
+## Pronunciation
 
-In ASR, 
+In small vocabulary sizes, it is quite easy to collect a lot of utterances for each word, and the HMM-GMM or HMM-DNN training is efficient. However, "statistical modeling requires a sufficient
+number of examples to get a good estimate of the relationship between speech input and the parts of words". In large-vocabulary tasks, we might collect 1 or even 0 training examples. t. Thus, it is not feasible to train a model for each word, and we need to share information across words, based on the pronunciation.
 
 $$ W^{\star} = argmax_W P(W \mid X) $$
 
-$$ W^{\star} = argmax_W \frac{P(X \mid W) P(W)}{P(X)} $$
+We consider words are being sequences of states $$ Q $$.
+
+$$ W^{\star} = argmax_W P(X \mid Q, W) P(Q, W) $$
+
+$$ W^{\star} \approx argmax_W P(X \mid Q) \sum_Q P(Q \mid W) P(W) $$
+
+$$ W^{\star} \approx argmax_W max_Q P(X \mid Q) P(Q \mid W) P(W) $$
+
+Where $$ P(Q \mid W) $$ is the **pronunciation model**.
+
+The pronunciation dictionary is written by human experts, and defined in the IPA. The pronunciation of words is typically stored in a lexical tree, a data structure that allows us to share histories between words in the lexicon.
+
+![image](https://maelfabien.github.io/assets/images/asr_15.png)
+
+When decoding a sequence in prediction, we must identify the most likely path in the tree based on the HMM-DNN output.
+
+In ASR, most recent approaches are:
+- either end to end
+- or at the character level
+
+In both approaches, we do not care about the full pronunciation of the words. Grapheme-to-phoneme (G2P) models try to learn automatically the pronunciation of new words.
+
+## Language Modeling
+
+Let's get back to our ASR base equation:
+
+$$ W^{\star} = argmax_W P(W \mid X) $$
+
+$$ W^{\star} = argmax_W P(X \mid W) P(W) $$
+
+The language model is defined as $$ P(W) $$. It assigns a probability estimate to word sequences, and defines:
+- what the speaker may say
+- the vocabulary
+- the probability over possible sequences, by training on some texts
+
+The contraint on $$ P(W) $$ is that $$ \sum_W P(W) = 1 $$.
+
+$$ W^{\star} = argmax_W P(X \mid Q, W) P(Q, W) $$
 
 
 
@@ -261,4 +299,4 @@ References:
 - EPFL Statistical Sequence Processing course
 - [Stanford CS224S](https://www.youtube.com/watch?v=WSBZ0hBJn7E)
 - [Rasmus Robert HMM-DNN](https://mycourses.aalto.fi/pluginfile.php/426574/mod_folder/content/0/Rasmus_Robert_DNN.pdf?forcedownload=0)
-
+- [A Tutorial on Pronunciation Modeling for Large Vocabulary Speech Recognition](https://link.springer.com/chapter/10.1007/978-3-540-45115-0_3)
