@@ -310,8 +310,8 @@ $$ P(w_1, ..., w_N) = \prod_{k=1}^N (w_k \mid w_{k-1}) $$
 This approach seems logic, but the longer the sequence, the most likely it will be that we encounter 0's, hence bringing the probability of the whole sequence at 0.
 
 What solutions can we apply?
-- smoothing: redistribute the probability mass from observed to unobserved events
-- backoff: link unseen events to the most related seen events
+- smoothing: redistribute the probability mass from observed to unobserved events (e.g Laplace smoothing, Add-k smoothing)
+- backoff: explained below
 
 ### **1. N-gram language model**
 
@@ -324,6 +324,12 @@ We take $$ n $$ as being 1 (unigram), 2 (bigram), 3 (trigram)...
 Let us now discuss some practical implementation tricks:
 - we compute the log of the probabilities, rather than the probabilities themselves (to avoid floating point approximation to 0)
 - for the first word of a sequence, we need to define **pseudo-words** as being the first 2 missing words for the trigram: $$ P(I \mid <s><s>) $$ 
+
+With N-grams, it is possible that we encounter unseen N-grams in prediction. There is a technique called **backoff** that states that if we miss the trigram evidence, we use the bigram instead, and if we miss the bigram evidence, we use the unigram instead...
+
+Another approach is **linear interpolate**, where we combine different order n-grams by linearly interpolating all the models:
+
+$$ P(w_n \mid w_{n-2} w_{n-1}) =  \lambda_1 P(w_n \mid w_{n−2} w_{n−1}) + \lambda_2 P(w_n \mid w_{n−1}) + \lambda_3 P(w_n) $$
 
 ### **2. Language models evaluation metrics**
 
@@ -339,6 +345,8 @@ Extrinsic evaluations are often heavy to implement. Hence, when focusing on intr
 We could also use the raw probabilities to evaluate the language model, but the perpeplixity is defined as the inverse probability of the test set, normalized by the number of words. For example, for a bi-gram model, the perpeplexity (noted PP) is defined as:
 
 $$ PP(W) = \sqrt[^N]{ \prod_{i=1}^{N} \frac{1}{P(w_i \mid w_{i-1})}} $$
+
+The lower the perplexity, the better
 
 ### **3. Limits of language models**
 
