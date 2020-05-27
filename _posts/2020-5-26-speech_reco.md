@@ -291,6 +291,45 @@ The contraint on $$ P(W) $$ is that $$ \sum_W P(W) = 1 $$.
 
 $$ W^{\star} = argmax_W P(X \mid Q, W) P(Q, W) $$
 
+In statistical language modeling, we aim to disambiguate sequences such as:
+
+"recognize speech", "wreck a nice beach"
+
+The maximum likelihood estimation of a sequence is given by:
+
+$$ P(w_i \mid w_1, ..., w_{i-1}) = \frac{C(w_1, ..., w_i)}{\sum_v C(w_1, ..., w_{i-1} v)} $$ 
+
+Where $$ C(w_1, ..., w_i) $$ is the observed count in the training data. For example:
+
+$$ P(the \mid its water is so transparent that) = \frac{C(its water is so transparent that the)}{C(its water is so transparent that)} $$
+
+We call this ratio the **relative frequency**. The probability of a whole sequence is given by the **chain rule** of probabilities:
+
+$$ P(w_1, ..., w_N) = \prod_{k=1}^N (w_k \mid w_{k-1}) $$
+
+This approach seems logic, but the longer the sequence, the most likely it will be that we encounter 0's, hence bringing the probability of the whole sequence at 0.
+
+What solutions can we apply?
+- smoothing: redistribute the probability mass from observed to unobserved events
+- backoff: link unseen events to the most related seen events
+
+### **1. N-gram language model**
+
+But one of the most popular solution is the **n-gram model**. The idea behind the n-gram model is to truncate the word history to the last 2, 3, 4 or 5 words, and therefore approximate the history of the word:
+
+$$ P(w_i \mid h) = P(w_i \mid w_{i-n+1}, ..., w_{i-1}) $$
+
+We take $$ n $$ as being 1 (unigram), 2 (bigram), 3 (trigram)...
+
+Let us now discuss some practical implementation tricks:
+- we compute the log of the probabilities, rather than the probabilities themselves (to avoid floating point approximation to 0)
+- for the first word of a sequence, we need to define **pseudo-words** as being the first 2 missing words for the trigram: $$ P(I|<s><s>) $$ 
+
+### **2. Language models evaluation metrics**
+
+There are 2 types of evaluation metrics for language models:
+- *extrinsic evaluation*, 
+
 
 
 
@@ -300,3 +339,4 @@ References:
 - [Stanford CS224S](https://www.youtube.com/watch?v=WSBZ0hBJn7E)
 - [Rasmus Robert HMM-DNN](https://mycourses.aalto.fi/pluginfile.php/426574/mod_folder/content/0/Rasmus_Robert_DNN.pdf?forcedownload=0)
 - [A Tutorial on Pronunciation Modeling for Large Vocabulary Speech Recognition](https://link.springer.com/chapter/10.1007/978-3-540-45115-0_3)
+- [N-gram Language Models, Stanford](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
