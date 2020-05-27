@@ -55,13 +55,13 @@ ASR is not easy since there are lots of variabilities:
 
 ## How is speech produced?
 
-Let us first focus on how speech is produced. An excitation $ e $ is produced through lungs. It takes the form of an initial waveform, describes as an airflow over time.
+Let us first focus on how speech is produced. An excitation $$ e $$ is produced through lungs. It takes the form of an initial waveform, describes as an airflow over time.
 
-Then, vibrations are produced by vocal cords, filters $ f $ are applied through pharynx, tongue...
+Then, vibrations are produced by vocal cords, filters $$ f $$ are applied through pharynx, tongue...
 
 ![image](https://maelfabien.github.io/assets/images/asr_1.png)
 
-The output signal produced can be written as $ s = f * e $, a convolution between the excitation and the filters. Hence, assuming $ f $ is linear and time-independent:
+The output signal produced can be written as $$ s = f * e $$, a convolution between the excitation and the filters. Hence, assuming $$ f $$ is linear and time-independent:
 
 $$ s(t) = \int_{-\infty}^{+\infty} e(t) f(t-\tau)d \tau $$
 
@@ -114,13 +114,13 @@ The perfect WER should be as close to 0 as possible. The number of substitutions
 
 # Statistical historical approach to ASR
 
-Let us denote the optimal word sequence $ W^{\star} $ from the vocabulary. Let the input sequence of acoustic features be $ X $. Stastically, our aim is to identify the optimal sequence such that:
+Let us denote the optimal word sequence $$ W^{\star} $$ from the vocabulary. Let the input sequence of acoustic features be $$ X $$. Stastically, our aim is to identify the optimal sequence such that:
 
 $$ W^{\star} = argmax_W P(W \mid X) $$
 
 Using Bayes Rule, we can rewrite is as :
 
-$$ W^{\star} = argmax_W \frac{P(X w\mid W) P(W)}{P(X)} $$
+$$ W^{\star} = argmax_W \frac{P(X \mid W) P(W)}{P(X)} $$
 
 Finally, we suppose independence and remove the term $$ P(X) $$. Hence, we can re-formulate our problem as:
 
@@ -151,6 +151,8 @@ Features we typically extract include:
 We should then normalize the features extracted to avoid mismatches across samples with mean and variance normalization.
 
 ## Acoustic model $$ P(X \mid W) $$
+
+### HMM-GMM acoustic Model
 
 The acoustic model is a complex model, usually based on Hidden Markov Models and Artificial Neural Networks, modeling the relationship between the audio signal and the phonetic units in the language.
 
@@ -186,6 +188,9 @@ $$ P(o_t = y \mid s_t = q_i) = \sum_{m=1} \mathcal{N}(y, \mu_{jm}, \Sigma_{jm}) 
 
 The training of the HMM-GMM is solved by Expectation Maximization (EM). The full pipeline is presented below:
 
-![image](https://maelfabien.github.io/assets/images/asr_10.png)
+![image](https://maelfabien.github.io/assets/images/asr_11.png)
 
+### HMM-DNN acoustic model
+
+Latest models focus on hybrid HMM-DNN architectures and approach the acoustic model in another way. 
 
