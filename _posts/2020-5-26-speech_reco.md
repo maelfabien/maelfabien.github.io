@@ -301,7 +301,7 @@ $$ P(w_i \mid w_1, ..., w_{i-1}) = \frac{C(w_1, ..., w_i)}{\sum_v C(w_1, ..., w_
 
 Where $$ C(w_1, ..., w_i) $$ is the observed count in the training data. For example:
 
-$$ P(the \mid its water is so transparent that) = \frac{C(its water is so transparent that the)}{C(its water is so transparent that)} $$
+![image](https://maelfabien.github.io/assets/images/asr_16.png)
 
 We call this ratio the **relative frequency**. The probability of a whole sequence is given by the **chain rule** of probabilities:
 
@@ -323,7 +323,7 @@ We take $$ n $$ as being 1 (unigram), 2 (bigram), 3 (trigram)...
 
 Let us now discuss some practical implementation tricks:
 - we compute the log of the probabilities, rather than the probabilities themselves (to avoid floating point approximation to 0)
-- for the first word of a sequence, we need to define **pseudo-words** as being the first 2 missing words for the trigram: $$ P(I|<s><s>) $$ 
+- for the first word of a sequence, we need to define **pseudo-words** as being the first 2 missing words for the trigram: $$ P(I|s s) $$ 
 
 ### **2. Language models evaluation metrics**
 
@@ -338,9 +338,7 @@ Extrinsic evaluations are often heavy to implement. Hence, when focusing on intr
 
 We could also use the raw probabilities to evaluate the language model, but the perpeplixity is defined as the inverse probability of the test set, normalized by the number of words. For example, for a bi-gram model, the perpeplexity (noted PP) is defined as:
 
-$$ PP(W) = \sqrt[^N]{ \prod_{i=1}^{N} \frac{1}{P(w_i \mid w_{i-1})}}
-
-
+$$ PP(W) = \sqrt[^N]{ \prod_{i=1}^{N} \frac{1}{P(w_i \mid w_{i-1})}} $$
 
 
 
