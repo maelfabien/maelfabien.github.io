@@ -150,7 +150,7 @@ Features we typically extract include:
 
 We should then normalize the features extracted to avoid mismatches across samples with mean and variance normalization.
 
-## Acoustic model $$ P(X \mid W) $$
+## Acoustic model
 
 ### **1. HMM-GMM acoustic Model**
 
@@ -225,7 +225,6 @@ The training of HMM-DNN architectures is based:
 
 Here is a brief summary of the pros and cons of HMM/DNN and HMM/GMM:
 
-| HMM/DNN                                                | HMM/
 | HMM/DNN | HMM/GMM |
 |--------------------------------------------------------|--------------------------------------------------------------------------------|
 | Considers short term correlation | Assumes no correlation in inputs |
@@ -234,6 +233,25 @@ Here is a brief summary of the pros and cons of HMM/DNN and HMM/GMM:
 | Discriminative acoustic model at frame level | Poor discrimination (Maximum Likelihood instead of Maximum A Posteriori) |
 | Higher performance | Lower performance |
 
+### **4. End-to-end models**
+
+In End-to-end models, the steps of feature extraction and phoneme prediction are combined:
+
+![image](https://maelfabien.github.io/assets/images/asr_13.png)
+
+The paper [Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://arxiv.org/pdf/1512.02595.pdf) describes the architecture of such end-to-end model using Connectionist Temporal Classification loss function to predict speech transcriptions from audio.
+
+![image](https://maelfabien.github.io/assets/images/asr_14.png)
+
+This concludes the part on acoustic modeling.
+
+## Pronounciation
+
+In ASR, 
+
+$$ W^{\star} = argmax_W P(W \mid X) $$
+
+$$ W^{\star} = argmax_W \frac{P(X \mid W) P(W)}{P(X)} $$
 
 
 
