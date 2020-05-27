@@ -21,7 +21,7 @@ sidebar:
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-This article provides a summary of the course ["Automatic speech recognition" by Gwénolé Lecorvé from the Research in Computer Science (SIF) master](http://people.irisa.fr/Gwenole.Lecorve/lectures/ASR.pdf) as well as some personal notes.
+This article provides a summary of the course ["Automatic speech recognition" by Gwénolé Lecorvé from the Research in Computer Science (SIF) master](http://people.irisa.fr/Gwenole.Lecorve/lectures/ASR.pdf), to which I added notes of the Statistical Sequence Processing course of EPFL, and from some tutorials/personal notes. All references are presented at the end.
 
 # Introduction to ASR
 
@@ -152,7 +152,7 @@ We should then normalize the features extracted to avoid mismatches across sampl
 
 ## Acoustic model $$ P(X \mid W) $$
 
-### **HMM-GMM acoustic Model**
+### **1. HMM-GMM acoustic Model**
 
 The acoustic model is a complex model, usually based on Hidden Markov Models and Artificial Neural Networks, modeling the relationship between the audio signal and the phonetic units in the language.
 
@@ -192,7 +192,7 @@ The full pipeline is presented below:
 
 ![image](https://maelfabien.github.io/assets/images/asr_11.png)
 
-### **HMM-DNN acoustic model**
+### **2. HMM-DNN acoustic model**
 
 Latest models focus on hybrid HMM-DNN architectures and approach the acoustic model in another way. In such approach, we do not care about the acoustic model $$ P(X \mid W) $$, but we directly tackle $$ P(W \mid X) $$ as the probability of observing state sequences given $$ X $$.
 
@@ -221,8 +221,18 @@ The training of HMM-DNN architectures is based:
 	- M-step re-trains the DNN parameters on the new targets from E-step
 - either using REMAP, with a similar architecture, except that the states priors are also given as inputs to the DNN
 
-### **HMM-DNN vs. HMM-GMM**
+### **3. HMM-DNN vs. HMM-GMM**
 
+Here is a brief summary of the pros and cons of HMM/DNN and HMM/GMM:
+
+| HMM/DNN                                                | HMM/
+| HMM/DNN | HMM/GMM |
+|--------------------------------------------------------|--------------------------------------------------------------------------------|
+| Considers short term correlation | Assumes no correlation in inputs |
+| No probability distribution function assumption | Assumes GMMs as PDFs |
+| Discriminative training in the generated distributions | No discriminative training in the generated distributions (can be overlapping) |
+| Discriminative acoustic model at frame level | Poor discrimination (Maximum Likelihood instead of Maximum A Posteriori) |
+| Higher performance | Lower performance |
 
 
 
