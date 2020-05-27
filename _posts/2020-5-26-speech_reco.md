@@ -328,7 +328,20 @@ Let us now discuss some practical implementation tricks:
 ### **2. Language models evaluation metrics**
 
 There are 2 types of evaluation metrics for language models:
-- *extrinsic evaluation*, 
+- *extrinsic evaluation*, for which we embed the language model in an application and see by which factor the performance is improved
+- *intrinsic evaluation* that measures the quality of a model independent of any application
+
+Extrinsic evaluations are often heavy to implement. Hence, when focusing on intrinsic evaluations, we:
+- split the dataset/corpus into train and test (and development set if needed)
+- learn transition probabilities from the trainig set
+- use the **perplexity** metric to evaluate the language model on the test set
+
+We could also use the raw probabilities to evaluate the language model, but the perpeplixity is defined as the inverse probability of the test set, normalized by the number of words. For example, for a bi-gram model, the perpeplexity (noted PP) is defined as:
+
+$$ PP(W) = \sqrt[^N]{ \prod_{i=1}^{N} \frac{1}{P(w_i \mid w_{i-1})}}
+
+
+
 
 
 
