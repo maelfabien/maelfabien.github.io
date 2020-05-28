@@ -368,10 +368,21 @@ $$ W^{\star} = argmax_W P(X \mid W) P(W) I^{\mid W \mid} $$
 
 However, exploring the whole spact, especially since the Language Model $$ P(W) $$ has a really large scale factor, can be incredibly long.
  
-One of the solutions is to explore the **Beam Search**. The Beam Search algorithm is an algorithm that greatly reduces the scale factor within a language model (whether N-gram based or Neural-network-based).
+One of the solutions is to explore the **Beam Search**. The Beam Search algorithm greatly reduces the scale factor within a language model (whether N-gram based or Neural-network-based). In Beam Search, we:
+- identify the probability of each word in the vocabulary for the first position, and keep the top K ones (K is called the Beam width)
+- for each of the K words, we compute the conditional probability of observing each of the second words of the vocabulary
+- among all produced probabilities, we keep only the top K ones
+- and we move on to the third word...
 
+Let us illustrate this process the following way. We want to evaluate the sequence that is the most likely. We first compute the probability of the different words of the vocabulary to be the starting word of the sentence:
 
+![image](https://maelfabien.github.io/assets/images/asr_18.png)
 
+Here, we fix the beam width to 2, meaning that we only select the 2 most likely words to start with. Then, we move on to the next word, and compute the probability of observing it using conditional probability in the language model: $$ P(w_2, w_1 \mid W) = P(w_1 \mid W) P(w_2 \mid w_1, W) $$. We might see that a potential candidate, e.g. "The", when selecting the top 2 candidates second words among all possible words, is not a possible path anymore. In that case, we narrow the search, since we know that the first must must be "a".
+
+![image](https://maelfabien.github.io/assets/images/asr_19.png)
+
+And so on... Another approach to decoding is the Weighted Finite State Transducers (I'll make an article on that).
 
 ## Summary of the ASR pipeline
 
@@ -383,12 +394,23 @@ In their paper ["Word Embeddings for Speech Recognition"](https://static.googleu
 
 ![image](https://maelfabien.github.io/assets/images/asr_17.png)
 
+# End-to-end approach
 
+Alright, this article is already long, but we're almost done. So far, we mostly covered historical statistical approaches. These approaches work very well. However, most recent papers and implementations focus on end-to-end approaches, where:
+- we encode $$ X $$ as a sequence of contexts $$ C $$
+- we decode $$ C $$ into a sequence of words $$ W $$ 
 
+These approaches, also called encoder-decoder, are part of sequence-to-sequence models. Sequence to sequence models learn to map a sequence of inputs to a sequence of outputs, even though their length might differ. This is widely used in Machine Translation for example.
 
+As illustrated below, the Encoder reduces the input sequence to a encoder vector through a stack of RNNs, and the decoder vector uses this vector as an input.
 
+![image](https://maelfabien.github.io/assets/images/asr_20.jpg)
 
+I will write more about End-to-end models in another article.
 
+# Conclusion
+
+This is all for this quite long introduction to automatic speech recognition. After a brief introduction to speech production, we covered historical approaches to speech recognition with HMM-GMM and HMM-DNN approaches. We also mentioned the more recent end-to-end approaches. If you want to improve this article or have a question, feel free to leave a comment below :)
 
 References:
 - ["Automatic speech recognition" by Gwénolé Lecorvé from the Research in Computer Science (SIF) master](http://people.irisa.fr/Gwenole.Lecorve/lectures/ASR.pdf)
@@ -398,3 +420,4 @@ References:
 - [A Tutorial on Pronunciation Modeling for Large Vocabulary Speech Recognition](https://link.springer.com/chapter/10.1007/978-3-540-45115-0_3)
 - [N-gram Language Models, Stanford](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
 - [Andrew Ng's Beam Search explanation](https://www.youtube.com/watch?v=RLWuzLLSIgw)
+- [Encoder Decoder model](https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346)
