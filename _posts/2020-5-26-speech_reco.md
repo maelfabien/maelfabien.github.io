@@ -352,6 +352,41 @@ The lower the perplexity, the better
 
 Language models are trained on a closed vocabulary. Hence, when a new unknown word is met, it is said to be **Out of Vocabulary** (OOV).
 
+### **4. Deep learning language models**
+
+More recently in Natural Language Processing, neural network-based language models have become more and more popular. Word embeddings project words into a continuous space $$ R^d $$, and respect topological properties (semantics and morpho-syntaxic).
+
+Recurrent neural networks and LSTMs are natural candidates when learning such language models.
+
+## Decoding
+
+The training is now done. The final step to cover is the decoding, i.e. the predictions to make when we collect audio features and want to produce transcript.
+
+We need to find:
+
+$$ W^{\star} = argmax_W P(X \mid W) P(W) I^{\mid W \mid} $$
+
+However, exploring the whole spact, especially since the Language Model $$ P(W) $$ has a really large scale factor, can be incredibly long.
+ 
+One of the solutions is to explore the **Beam Search**. The Beam Search algorithm is an algorithm that greatly reduces the scale factor within a language model (whether N-gram based or Neural-network-based).
+
+
+
+
+## Summary of the ASR pipeline
+
+In their paper ["Word Embeddings for Speech Recognition"](https://static.googleusercontent.com/media/research.google.com/fr//pubs/archive/42543.pdf), Samy Bengio and Georg Heigold present a good summary of a modern ASR architecture:
+- Words are represented through lexicons as phonemes
+- Typically, for context, we cluster triphones
+- We then assume that these triphones states were in fact HMM states
+- And the the observations each HMM state generates are produced by DNNs or GMMs
+
+![image](https://maelfabien.github.io/assets/images/asr_17.png)
+
+
+
+
+
 
 
 
@@ -362,3 +397,4 @@ References:
 - [Rasmus Robert HMM-DNN](https://mycourses.aalto.fi/pluginfile.php/426574/mod_folder/content/0/Rasmus_Robert_DNN.pdf?forcedownload=0)
 - [A Tutorial on Pronunciation Modeling for Large Vocabulary Speech Recognition](https://link.springer.com/chapter/10.1007/978-3-540-45115-0_3)
 - [N-gram Language Models, Stanford](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
+- [Andrew Ng's Beam Search explanation](https://www.youtube.com/watch?v=RLWuzLLSIgw)
