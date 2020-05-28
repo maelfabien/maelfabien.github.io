@@ -239,10 +239,6 @@ In End-to-end models, the steps of feature extraction and phoneme prediction are
 
 ![image](https://maelfabien.github.io/assets/images/asr_13.png)
 
-The paper [Deep Speech 2: End-to-End Speech Recognition in English and Mandarin](https://arxiv.org/pdf/1512.02595.pdf) describes the architecture of such end-to-end model using Connectionist Temporal Classification loss function to predict speech transcriptions from audio.
-
-![image](https://maelfabien.github.io/assets/images/asr_14.png)
-
 This concludes the part on acoustic modeling.
 
 ## Pronunciation
