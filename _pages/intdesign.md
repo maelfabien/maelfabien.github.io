@@ -2,7 +2,7 @@
 layout: archive
 permalink: /intdesign/
 author_profile: false
-title: "Interior Design"
+title: "Home Renovation"
 header :
     image: "https://maelfabien.github.io/assets/images/int_0.jpeg"
 ---
@@ -14,6 +14,6 @@ header :
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-Alright, I get it. This is one of the weird hobbies of mine. I'd say that my girldriend was a good contributor to it, but since we bought a house together, I though that publishing some pictures of the design/renovation of these places would be interesting.
+My girlfriend and I recently bought a house together. We have started working on the house, and I though that publishing some pictures of the renovation process of this place would be interesting.
 
 It's an ongoing work, so I'll post pictures later on :)
