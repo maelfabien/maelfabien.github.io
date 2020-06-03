@@ -102,6 +102,13 @@ There are really few papers linking graphs and speaker identification. Phonexia 
 
 ["Leveraging side information for speaker identification with the Enron conversational telephone speech collection" paper summary](https://maelfabien.github.io/machinelearning/graphspeak/): A first approach of how to leverage the structure of a network to enhance speaker identification on an e-mail and call database.
 
+["Speaker Identification Enhancement using Network Knowledge in Criminal Investigations"](https://maelfabien.github.io/assets/files/INTERSPEECH_2020_SID_Graph.pdf): Our contribution to mixing graphs and speaker identification. We introduce new metrics to measure the accuracy of a speaker identification system, a new set of criminal data and improve overall results. *Mael Fabien, Seyyed Saeed Sarfjoo, Petr Motlicek, Srikanth Madikeri*
+
+![image](https://maelfabien.github.io/assets/images/phd_process.png)
+
+[Submitting my first paper to ArXiv](https://maelfabien.github.io/phd/arxiv/)
+
+
 <!-- [image](https://maelfabien.github.io/assets/images/phd_process.png) -->
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
