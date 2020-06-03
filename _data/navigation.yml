@@ -8,8 +8,8 @@ main:
     url: /news/
   - title: "Projects"
     url: /portfolio/
-  - title: "Travel"
-    url: /travel/
+  - title: "Hobbies"
+    url: /other/
   - title: "CV"
     url: /resume/
   - title: "Search"

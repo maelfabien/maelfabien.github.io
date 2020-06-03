@@ -1,0 +1,17 @@
+---
+layout: archive
+permalink: /other/
+author_profile: false
+title: "Hobbies and random things"
+header :
+    image: "https://maelfabien.github.io/assets/images/travel_head.jpg"
+layouts_gallery:
+  - url: https://maelfabien.github.io/travel/
+    image_path: https://maelfabien.github.io/assets/images/travel_head.jpg
+  - url: https://maelfabien.github.io/intdesign/
+    image_path: https://maelfabien.github.io/assets/images/travel_head.jpg
+---
+
+I'm interested in a lot of things, although I would not say that I'm good at any of these things. In this section, you'll find pictures and articles on some of my hobbies.
+
+{% include gallery id="layouts_gallery" class="full" layout="half"%}
