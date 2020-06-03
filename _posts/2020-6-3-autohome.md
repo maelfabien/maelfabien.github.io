@@ -1,6 +1,6 @@
 ---
 published: true
-title: AutoHome, a tool to find your tream house
+title: AutoHome, a tool to find your dream house
 collection: tuto
 layout: single
 author_profile: true
