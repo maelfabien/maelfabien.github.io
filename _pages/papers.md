@@ -21,9 +21,9 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 I am also sharing some informal news on the following social networks:
 
-<input action="action" class="button" type="button" value="Find me on LinkedIn" onclick="www.linkedin.com/in/mael-fabien"/>
+<input action="action" class="button" type="button" value="Find me on LinkedIn" onclick="location.href='https://www.linkedin.com/in/mael-fabien';"/>
 
-<input action="action" class="button" type="button" value="Find me on Twitter" onclick="twitter.com/fabien_mael"/>
+<input action="action" class="button" type="button" value="Find me on Twitter" onclick="location.href='https://twitter.com/fabien_mael';"/>
 
 
 Want to stay in the loop ? Sign in to my newsletter and receive updates every month on my latest articles, interesting GitHub repositories, cool papers and more !
