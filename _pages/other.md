@@ -3,8 +3,6 @@ layout: archive
 permalink: /other/
 author_profile: false
 title: "Hobbies and random things"
-header :
-    image: "https://maelfabien.github.io/assets/images/travel_head.jpg"
 layouts_gallery:
   - url: https://maelfabien.github.io/travel/
     image_path: https://maelfabien.github.io/assets/images/travel_hobby.png
