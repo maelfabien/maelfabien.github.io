@@ -13,7 +13,7 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 ## Publications
 
-05.2020 - Paper submitted to Interspeech: ["Speaker Identification Enhancement using Network Knowledge in Criminal Investigations"](https://maelfabien.github.io/assets/files/INTERSPEECH_2020_SID_Graph.pdf), *Mael Fabien, Seyyed Saeed Sarfjoo, Petr Motlicek, Srikanth Madikeri*
+05.2020 - Paper submitted to Interspeech: ["Speaker Identification Enhancement using Network Knowledge in Criminal Investigations"](https://arxiv.org/abs/2006.02093), *Mael Fabien, Seyyed Saeed Sarfjoo, Petr Motlicek, Srikanth Madikeri*
 
 07.2019 - ["Multimodal Emotion Recognition"](https://maelfabien.github.io/assets/images/PE.pdf), Master Thesis, *Anatoli de Bradke, Mael Fabien, Raphael Lederman, Stephane Reynal*
 
