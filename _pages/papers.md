@@ -5,9 +5,7 @@ author_profile: true
 title: "Papers and submissions"
 ---
 
-Sharing some news, projects I am working on and social media posts:
-
-# Research
+## Research
 
 My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification and speech recognition in the context of criminal activities. I explore the various ways to leverage criminal network topology. I am more broadly interested in applied Machine Learning, and in applications of ML in the Medical Field. My girlfriend is doing a PhD after having obtained her medical degree, so I would expect that at some point we try to publish something together :)
 
@@ -17,7 +15,7 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 07.2019 - ["Multimodal Emotion Recognition"](https://maelfabien.github.io/assets/images/PE.pdf), Master Thesis, *Anatoli de Bradke, Mael Fabien, Raphael Lederman, Stephane Reynal*
 
-# News
+## News
 
 I am also sharing some informal news on the following social networks:
 
