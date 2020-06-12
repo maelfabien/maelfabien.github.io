@@ -20,7 +20,6 @@ I have recently been working on time-varying networks, i.e. networks for which w
 
 However, these networks are time-varying by nature. They evolve, new interactions are being made, new nodes are created... And knowing which nodes are going to be central next month can be a key information in criminal investigations. For this reason, I wanted to spend some time and look at whether one can actually predict the central nodes in the future.
 
-
 <script type="text/javascript" async
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
