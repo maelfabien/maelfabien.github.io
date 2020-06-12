@@ -121,6 +121,8 @@ A series of articles dedicated to machine learning and statistics. All codes and
 
 ["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspective of intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
 
+[A supervised learning approach to predicting nodes betweenness-centrality in time-varying networks](https://maelfabien.github.io/machinelearning/node_pred/#): Can we predict which nodes will be central in the future? An explorative approach applied to Enron dataset with encouraging results.
+
 <br>
 
 ![image](https://maelfabien.github.io/assets/images/opt_head.jpg)

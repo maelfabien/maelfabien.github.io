@@ -96,6 +96,8 @@ Criminal and social networks are at the core of criminal investigation. More and
 
 ["Social network analysis as a tool for criminal intelligence:understanding its potential from the perspective of intelligence analysts" paper summary](https://maelfabien.github.io/machinelearning/sn_crime/): A qualitative review on how Law Enforcement Agencies using Criminal Network Analysis tools, and my personal view on that.
 
+[A supervised learning approach to predicting nodes betweenness-centrality in time-varying networks](https://maelfabien.github.io/machinelearning/node_pred/#): Can we predict which nodes will be central in the future? An explorative approach applied to Enron dataset with encouraging results.
+
 # IV. When Speaker Identification meets graphs
 
 There are really few papers linking graphs and speaker identification. Phonexia wrote [this web article](https://graphaware.com/analytics/2019/01/28/speaker-identification-meets-graphs.html) on how to leverage community detection for speaker identification. It's a good starting point. Below, I'll summarize papers that I found on this topic and ideas that I have.
