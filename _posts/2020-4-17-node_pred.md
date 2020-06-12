@@ -1,6 +1,6 @@
 ---
 published: true
-title: Predicting the centrality of a node in time-varying networks
+title: A supervised learning approach to predicting nodes betweenness-centrality in time-varying networks
 layout: single
 author_profile: true
 read_time: true
@@ -27,11 +27,9 @@ src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 
 # Dataset
 
-I am working on the Enron e-mail dataset, enriched by phone calls that I was able to match. I have overall 1264 events, each event being either an email or a phone call between 2 characters (or more).
+I am working on the Enron e-mail dataset, enriched by phone calls that I was able to match. I have overall 1264 events, each event being either an email or a phone call between 2 characters (or more). For each event, I create a row in the training dataset for each node. Overall, my final dataset is made of more than 50'000 rows.
 
-The timestamps vary between 2000-08-03 09:10:00 and 2001-01-29 22:21:00. Thus, we have a time period of close to 4 months of events. 
-
-The first thing that we should look at is the evolution of the centrality of the nodes over time.
+The timestamps vary between 2000-08-03 09:10:00 and 2001-01-29 22:21:00. Thus, we have a time period of close to 4 months of events. The first thing that we should look at is the evolution of the centrality of the nodes over time.
 
 ![image](https://maelfabien.github.io/assets/images/node_evol.png)
 
@@ -54,7 +52,7 @@ To build my dataset, for each node, for each date, I am collecting:
 - the average clustering of the graph
 - if the node is in the minimum weighted dominating set
 
-In Python, I use NetworkX to implement this feature extraction:
+In Python, I use NetworkX to implement this feature extraction.
 
 ```python
 all_features = []
@@ -99,24 +97,32 @@ for conv in df.iterrows():
             all_features.append(feature)
 ```
 
-I then build a column "is top 5" if the node is within the 5 nodes with the highest centrality at the given date. Then, knowing the situation of the network in 1 month from now, I collect the 5 nodes with the highest centrality at that time, and create a column "will be top 5". I must drop the last month of my dataset since it typically would be the period I would neeed to predict on in real life.
+I then build a column "is top 5" if the node is within the 5 nodes with the highest centrality at the given date. In order to add some additional features, I also append for each node the features at the 5 previous states, and create features that reflect the differences between each state.
+
+Then, knowing the situation of the network in 1 month from now, I collect the 5 nodes with the highest centrality at that time, and create a column "will be top 5". I must drop the last month of my dataset since it typically would be the period I would neeed to predict on in real life.
 
 # Model Performance
 
-Here is what my dataset looks like:
+My dataset is now made of 48744 rows and 125 columns. To create my training and test sets, I must split in time the dataset, in order not to include information from the future. Since there is a class imbalance (is among the five nodes with the highest centrality, and all the other nodes), I chose the F1-score metric. I then compare:
+- the naive approach of predicting the current centrality 
+- and the model output
 
-```
-	Date	Node	Between	Rel_Degree	Clustering	Eigenvector	Katz	Closeness	Load	Harmonic	Maxclique	Avg_clustering	Dominant	will_be_top_5	is_top_5
-53032	2000-12-20 16:25:00	holly	0.000000	0.002994	0.000000	1.511396e-22	0.028975	0.015625	0.000000	1.000000	0	0.625	0	0	0
-12951	2000-11-07 09:18:00	steve	0.014925	0.024390	0.533333	1.546957e-01	0.160833	0.326408	0.015306	19.900000	0	0.654	1	0	0
-26301	2000-11-28 10:20:00	leap	0.000000	0.026923	1.000000	2.060583e-01	0.192614	0.314206	0.000000	19.533333	0	0.706	1	0	0
-33081	2000-12-07 15:05:00	paul	0.000000	0.007246	1.000000	5.385561e-02	0.077845	0.274546	0.000000	17.516667	0	0.627	0	0	0
-```
+Talking about the model, I chose an XGBoost with 250 estimators and a max-depth of 6. Since splitting at a random point in time would not be reliable enough, I chose to split to 50 different points in time (every 1000 rows), and plot the results below:
 
-I use an XGBoost algorithm with a test size of 75%, since I want to test whether 
-
-
-
-![image](https://maelfabien.github.io/assets/images/var.png)
+![image](https://maelfabien.github.io/assets/images/evol_node.png)
 
 # Discussion
+
+As we can see, when the XGBoost model sees few training examples, the naive approach clearly outperforms our model. However, with around 6-7'000 training samples, XGBoost clearly outperforms the naive approach. The F1-Score of our prediction is ± 80%, with an accuracy of around 98%, largely over the average F1-Score of the naive approach of 50.6%. 
+
+We can plot the feature importance of the XGBoost model:
+
+![image](https://maelfabien.github.io/assets/images/feat_imp.png)
+
+We observe that:
+- the current load centrality appears to be most important feature to predict betweenness centrality 1 month ahead
+- other features extracted from the current topology of the network are important
+- clustering coefficient and relative degree from previous steps are also important
+- the evolution between relative degrees from one state to another are not as useful features as expected
+
+> Overall, predicting the node centrality based on extracted features from the network in a supervised fashion seems to be feasible. The results seem ancouraging and may suggest that investigators in a criminal investigation could use such approach to predict the node centrality one month ahead and plan their surveillance programs accordingly.  

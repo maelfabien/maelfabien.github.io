@@ -33,11 +33,11 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Linear Discriminant Analysis (LDA) and QDA](https://maelfabien.github.io/machinelearning/LDA/) : In this article, we'll cover the intuition behind LDA, when it should be used, and the maths behind it. We'll also quick cover the Quadratic version of LDA.
 
-[Probabilistic Linear Discriminant Analysis (PLDA)](https://maelfabien.github.io/machinelearning/PLDA/) : Coming soon.
-
 [EM for Gaussian Mixture Models and Hidden Markov Models](https://maelfabien.github.io/machinelearning/GMM/) : 140 detailed and visual slides on GMMs, HMMs and EM.
 
-[Joint Factor Analysis (JFA)](https://maelfabien.github.io/machinelearning/JFA/) : Introduction to joint factor analysis in speaker verification.
+[Probabilistic Linear Discriminant Analysis (PLDA)](https://maelfabien.github.io/machinelearning/PLDA/) : Coming soon.
+
+[Joint Factor Analysis (JFA)](https://maelfabien.github.io/machinelearning/JFA/) : Coming soon.
 
 # II. Speech Processing
 
