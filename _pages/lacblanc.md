@@ -2,7 +2,7 @@
 layout: travel
 permalink: /lac_blanc/
 author_profile: false
-title: "Lac Blanc - Chamonix (FR)"
+title: "Lac Blanc - Chamonix (France)"
 classes: wide
 comments : true
 sidebar:
