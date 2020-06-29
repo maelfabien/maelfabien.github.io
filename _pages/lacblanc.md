@@ -17,11 +17,13 @@ sidebar:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 Hike data:
+
 | Measure | Metric | Value |
 | --- | --- | --- |
 | Length | km | 12 |
 | Time | Hours | 6.25 |
 | Difficulty | /5 | 3 |
+| Date | --- | 27 June 2020 |
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rezmFUSNLjmi4WA03zWfp8Maa1uYQH15" width="100%" height="500" frameBorder="0"></iframe>
 
