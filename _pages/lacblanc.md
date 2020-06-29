@@ -16,23 +16,63 @@ sidebar:
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-Hike data:
-
 | Measure | Metric | Value |
 | --- | --- | --- |
 | Length | km | 12 |
 | Time | Hours | 6.25 |
 | Difficulty | /5 | 3 |
+| Temperature start | °C | 23 |
+| Temperature arrival | °C | 14 |
+| Elevation gain | m | 1000 |
 | Date | --- | 27 June 2020 |
+
+Hike summary:
+- A 6 hours hike that starts in the village of Argentières, near Chamonix, and goes up to the "Lac Blanc"
+- Diverse and stunning landscapes
+- Way colder at the stop
+- Still a lot of snow at the top, even though end of June
+- Bring a lot of water
+- Steeper in some parts
+- Technical parts with some ladders
+
+Here's the map of the hike:
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1rezmFUSNLjmi4WA03zWfp8Maa1uYQH15" width="100%" height="500" frameBorder="0"></iframe>
 
 <br>
 
+You will start by parking in Argentières, near Chamonix. A few meters futrher, the walk begins and you quickly start to elevate. 
 
 <div class="fotorama">
-  <img src="https://drive.google.com/uc?id=1xpy3vDKhCyNml023_5zMs0E0hMvh-j33">
-  <img src="https://drive.google.com/uc?id=1z1Jw5-AH2rlTlgbXU3nBtSMZKrdVgBEW">
+  <img src="https://drive.google.com/uc?id=1bvXsMzgQZYS980ozn2aLokiuHz5PXOqc">
+  <img src="https://drive.google.com/uc?id=1Pp5j1DIrIUPDDxH0bBjB81BYb4WS45if">
 </div>
 
-![image](https://drive.google.com/uc?id=10lMn-4c9U3xfBLTUGGfpSO3UV0Qj6F5p)
+After 45 minutes of walk, you start to visualize your target of the day, the summit of the mountain:
+
+![image](https://drive.google.com/uc?id=1Nupl0WxzB1lz12AlDM-44R1_YJMUyhFc)
+
+After a rather steep part, you get out of the forest and start a more rocky part of the hike. 
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=10I6rHAubh9xXN_oRputufARSiQOoilEE">
+  <img src="https://drive.google.com/uc?id=1Dc9uEukovSMG-hiK1NguYM9AApQd9Y8b">
+  <img src="https://drive.google.com/uc?id=13rVa7lf9ih0JMCgUAEHnVN5yLnAosstG">
+  <img src="https://drive.google.com/uc?id=1cJdxIBfkX2aOV_sv9fh2Bx3FpuzzCrkd">
+</div>
+
+This part is followed by a fun and more technical part, with ladders, which reminds me of Via Ferrata. Since we hiked on a nice day, several groups were there, so expect some waiting time to go through this section.
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1j566NfcjQ_COaciI0HD29wZuMkxwkt0R">
+  <img src="https://drive.google.com/uc?id=1N_B-Labg6QTm_tIcuUHgotLAmLfQRTkR">
+</div>
+
+The last part of the hike, which lasts around 45 minutes, is completely different. Wind and snow will quickly make you feel cold. You finally reach the Lac Blanc, as well as other surrounding lakes, and the mix between these lakes and the mountains is awesome.
+
+<div class="fotorama">
+  <img src="https://drive.google.com/uc?id=1rY1inipO3SzJqoWy_jPD85tKeFeDR0VP">
+  <img src="https://drive.google.com/uc?id=1rEmJWD7YEXvdFG_QtJyhqV_OWv2kxwTM">
+</div>
+
+Expect 2.5 hours to go down, and make sure to grab a drink in the center of Argentières afterwards ! :)
