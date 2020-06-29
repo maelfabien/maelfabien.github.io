@@ -19,6 +19,12 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 I am also sharing some informal news on the following social networks:
 
+<input action="action" class="button" type="button" value="Find me on Google Scholar" onclick="location.href='https://scholar.google.com/citations?user=r9hJzdwAAAAJ&hl=en';"/>
+
+<input action="action" class="button" type="button" value="Find me on Research Gate" onclick="location.href='https://www.researchgate.net/profile/Mael_Fabien';"/>
+
+<input action="action" class="button" type="button" value="Find me on GitHub" onclick="location.href='https://github.com/maelfabien';"/>
+
 <input action="action" class="button" type="button" value="Find me on LinkedIn" onclick="location.href='https://www.linkedin.com/in/mael-fabien';"/>
 
 <input action="action" class="button" type="button" value="Find me on Twitter" onclick="location.href='https://twitter.com/fabien_mael';"/>
