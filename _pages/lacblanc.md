@@ -16,15 +16,16 @@ sidebar:
 <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
-| Measure | Metric | Value |
-| --- | --- | --- |
-| Length | km | 12 |
-| Time | Hours | 6.25 |
-| Difficulty | /5 | 3 |
-| Temperature start | °C | 23 |
-| Temperature arrival | °C | 14 |
-| Elevation gain | m | 1000 |
-| Date | --- | 27 June 2020 |
+| Measure | Value |
+| --- | --- |
+| Length | 12 km |
+| Time | 6.25 hours |
+| Difficulty | 3/5 |
+| Temperature start | 23°C |
+| Temperature arrival | 14°C |
+| Elevation gain | 1000 m |
+| Number of steps | 17'000 |
+| Date | 27 June 2020 |
 
 Hike summary:
 - A 6 hours hike that starts in the village of Argentières, near Chamonix, and goes up to the "Lac Blanc"
