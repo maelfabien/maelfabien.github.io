@@ -41,7 +41,7 @@ Here's the map of the hike:
 
 <br>
 
-You will start by parking in Argentières, near Chamonix. A few meters futrher, the walk begins and you quickly start to elevate. 
+You will start by parking in Argentières, near Chamonix. A few meters further, the walk begins and you quickly start to elevate. 
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1bvXsMzgQZYS980ozn2aLokiuHz5PXOqc">
@@ -68,7 +68,7 @@ This part is followed by a fun and more technical part, with ladders, which remi
   <img src="https://drive.google.com/uc?id=1N_B-Labg6QTm_tIcuUHgotLAmLfQRTkR">
 </div>
 
-The last part of the hike, which lasts around 45 minutes, is completely different. Wind and snow will quickly make you feel cold. You finally reach the Lac Blanc, as well as other surrounding lakes, and the mix between these lakes and the mountains is awesome.
+The last part of the hike, which lasts around 45 minutes, is completely different. Wind and snow will quickly make you feel cold. We finally reached the Lake of Chéserys and the Lac Blanc, and the effort was worth the view.
 
 <div class="fotorama">
   <img src="https://drive.google.com/uc?id=1rY1inipO3SzJqoWy_jPD85tKeFeDR0VP">
