@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /intdesign/
+permalink: /hiking/
 author_profile: false
 title: "Hiking"
 header :
