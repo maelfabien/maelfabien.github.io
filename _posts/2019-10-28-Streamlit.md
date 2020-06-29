@@ -94,3 +94,5 @@ docker run -p 8501:8501 app:latest
 Your container is now available on `http://localhost:8501/` !
 
 This is how you can build a simple yet state-of-the-art NER web application using Docker, Spacy, and Streamlit. You can now use AWS, GCP or Azure to deploy the container in a few minutes :)
+
+NB: Awesome work in the comments by Zeph Grunschlag to deploy it on AWS Fargate in 1 command line, the repo is [here](https://github.com/tzaffi/streamlit-cdk-fargate).
