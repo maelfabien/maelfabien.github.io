@@ -30,11 +30,10 @@ sidebar:
 Hike summary:
 - A 6 hours hike that starts in the village of Argentières, near Chamonix, and goes up to the "Lac Blanc"
 - Diverse and stunning landscapes
-- Way colder at the stop
-- Still a lot of snow at the top, even though end of June
-- Bring a lot of water
+- Way colder at the top
+- Still a lot of snow end of June
 - Steeper in some parts
-- Technical parts with some ladders
+- Technical parts with ladders
 
 Here's the map of the hike:
 
