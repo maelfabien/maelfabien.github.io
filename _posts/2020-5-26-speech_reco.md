@@ -43,7 +43,7 @@ ASR is not easy since there are lots of variabilities:
 - acoustics:
 	- variability between speakers (inter-speaker)
 	- variability for the same speaker (intra-speaker)
-	- noise, reverberation in the room...
+	- noise, reverberation in the room, environment...
 - phonetics:
 	- articulation
 	- elisions (grouping some words, not pronouncing them)
@@ -52,6 +52,11 @@ ASR is not easy since there are lots of variabilities:
 	- size of vocabulary
 	- word variations
 	- ...
+
+From a Machine Learning perspective, ASR is also really hard:
+- very high dimensional output space, and a complex sequence to sequence problem
+- few annotated training data
+- data is noisy
 
 ## How is speech produced?
 
@@ -73,7 +78,9 @@ From the initial waveform, we generate the glotal spectrum, right out of the voc
 
 In automatic speech recognition, you do not train an Artificial Neural Network to make predictions on a set of 50'000 classes, each of them representing a word. 
 
-In fact, you take an input sequence, and produce an output sequence. And each word is represented as a **phoneme**, a set of elementary sounds in a language based on the International Phonetic Alphabet (IPA). To learn more about linguistics and phonetic, feel free to check [this course](https://scholar.harvard.edu/files/adam/files/phonetics.ppt.pdf) from Harvard.
+In fact, you take an input sequence, and produce an output sequence. And each word is represented as a **phoneme**, a set of elementary sounds in a language based on the International Phonetic Alphabet (IPA). To learn more about linguistics and phonetic, feel free to check [this course](https://scholar.harvard.edu/files/adam/files/phonetics.ppt.pdf) from Harvard. There are around 40 to 50 different phonemes in English.
+
+**Phones** are speech sounds defined by the acoustics, potentially unlimited in number, 
 
 For example, the word "French" is written under IPA as : / f ɹ ɛ n t ʃ /. The phoneme describes the voiceness / unvoiceness as well as the position of articulators.
 
@@ -92,6 +99,13 @@ There are several ways to see a word:
 - as a part-of-speech (POS) in morpho-syntax: grammatical class, e.g noun, verb, ... and flexional information, e.g singular, plural, gender...
 - as a syntax describing the function of the word (subject, object...)
 - as a meaning
+
+Therefore, labeling speech can be done at several levels:
+- word
+- phones
+- ...
+
+And the labels may be **time-algined** if we know when they occur in speech.
 
 The **vocabulary** is defined as the set of words in a specific task, a language or several languages based on the ASR system we want to build. If we have a large vocabulary, we talk about **Large vocabulary continuous speech recognition (LVCSR)**. If some words we encounter in production have never been seen in training, we talk about **Out Of Vocabulary** words (OOV). 
 
@@ -118,7 +132,7 @@ Let us denote the optimal word sequence $$ W^{\star} $$ from the vocabulary. Let
 
 $$ W^{\star} = argmax_W P(W \mid X) $$
 
-Using Bayes Rule, we can rewrite is as :
+This is known as the "Fundamental Equation of Statistical Speech Processing". Using Bayes Rule, we can rewrite is as :
 
 $$ W^{\star} = argmax_W \frac{P(X \mid W) P(W)}{P(X)} $$
 
@@ -417,3 +431,4 @@ References:
 - [N-gram Language Models, Stanford](https://web.stanford.edu/~jurafsky/slp3/3.pdf)
 - [Andrew Ng's Beam Search explanation](https://www.youtube.com/watch?v=RLWuzLLSIgw)
 - [Encoder Decoder model](https://towardsdatascience.com/understanding-encoder-decoder-sequence-to-sequence-model-679e04af4346)
+- [Automatic Speech Recognition Introduction, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr01-intro.pdf)
