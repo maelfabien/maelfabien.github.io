@@ -108,6 +108,8 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 </div>
 
+summary_master
+
 
 ---
 
@@ -123,7 +125,13 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
   <div class="column_home" id="left-col" align="center">
     <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
-    <input action="action" class="button" type="button" value="Report" onclick="location.href='https://maelfabien.github.io/assets/images/PE.pdf';"/>
+    <input action="action" class="button" type="button" value="Report" onclick="location.href='https://maelfabien.github.io/assets/papers/PE.pdf';"/>
+    </div>
+  </div>
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+    <input action="action" class="button" type="button" value="Report Summary" onclick="location.href='https://maelfabien.github.io/assets/papers/summary_master.pdf';"/>
     </div>
   </div>
 
