@@ -113,6 +113,22 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 07.2019 - ["Multimodal Emotion Recognition"](https://maelfabien.github.io/assets/images/PE.pdf), Master Thesis, *Anatoli de Bradke, Mael Fabien, Raphael Lederman, Stephane Reynal*
 
+<div class="row">
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+    <input action="action" class="button" type="button" value="Slides" onclick="location.href='https://maelfabien.github.io/assets/papers/MER.pdf';"/>
+    </div>
+  </div>
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+    <input action="action" class="button" type="button" value="Report" onclick="location.href='https://maelfabien.github.io/assets/images/PE.pdf';"/>
+    </div>
+  </div>
+
+</div>
+
 ---
 
 ## News
