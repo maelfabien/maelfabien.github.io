@@ -5,6 +5,85 @@ author_profile: true
 title: "Papers and submissions"
 ---
 
+<style>
+
+  @import "compass/css3";
+
+  /* Some vars */
+  $background-color: hsl(50, 5, 97);
+  $black: hsl(200, 40, 10);
+  $white: $background-color;
+  $base-font-size: 2.4em;
+  $base-line-height: 1.5em;
+
+  .ludwig {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid lighten($black, 40%);
+  font-family: 'Roboto', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 100;
+  &:before, &:after {
+      content: '\201C';
+      font-family: 'Sanchez';
+      color: lighten($black, 40%);
+   }
+   &:after {
+      content: '\201D';
+   }
+  }
+
+.column {
+  align-content:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.column_home {
+  align-content:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+
+.center_text {
+  align-content:center;
+  width: 50%;
+  vertical-align: middle;
+  text-align:justify;
+  text-align-last: center;
+}
+
+#left-col {
+  align-content:center;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 0.4em;
+}
+
+
+#right-col {
+  align-content:center;
+  text-align: center;
+}
+</style>
+
 ## Research
 
 My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification and speech recognition in the context of criminal activities. I explore the various ways to leverage criminal network topology. I am more broadly interested in applied Machine Learning, and in applications of ML in the Medical Field. My girlfriend is doing a PhD after having obtained her medical degree, so I would expect that at some point we try to publish something together :)
@@ -12,6 +91,23 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 ## Publications
 
 05.2020 - Paper submitted to Interspeech: ["Speaker Identification Enhancement using Network Knowledge in Criminal Investigations"](https://arxiv.org/abs/2006.02093), *Mael Fabien, Seyyed Saeed Sarfjoo, Petr Motlicek, Srikanth Madikeri*
+
+<div class="row">
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+		<input action="action" class="button" type="button" value="Slides" onclick="location.href='https://maelfabien.github.io/assets/papers/INTERSPEECH_2020.pdf';"/>
+    </div>
+  </div>
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+		<input action="action" class="button" type="button" value="ArXiv" onclick="location.href='https://arxiv.org/abs/2006.02093';"/>
+    </div>
+  </div>
+
+</div>
+
 
 07.2019 - ["Multimodal Emotion Recognition"](https://maelfabien.github.io/assets/images/PE.pdf), Master Thesis, *Anatoli de Bradke, Mael Fabien, Raphael Lederman, Stephane Reynal*
 
