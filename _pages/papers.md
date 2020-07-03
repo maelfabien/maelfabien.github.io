@@ -44,7 +44,7 @@ title: "Papers and submissions"
 .column_home {
   align-content:center;
   float: left;
-  width: 50%;
+  width: 20%;
   height: 100%;
 }
 
@@ -109,7 +109,11 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 </div>
 
 
+---
+
 07.2019 - ["Multimodal Emotion Recognition"](https://maelfabien.github.io/assets/images/PE.pdf), Master Thesis, *Anatoli de Bradke, Mael Fabien, Raphael Lederman, Stephane Reynal*
+
+---
 
 ## News
 
