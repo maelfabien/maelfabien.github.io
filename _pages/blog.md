@@ -24,11 +24,95 @@ layouts_gallery:
     image_path: /assets/images/ent_short.png
 ---
 
+
+<style>
+
+  @import "compass/css3";
+
+  /* Some vars */
+  $background-color: hsl(50, 5, 97);
+  $black: hsl(200, 40, 10);
+  $white: $background-color;
+  $base-font-size: 2.4em;
+  $base-line-height: 1.5em;
+
+  .ludwig {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid lighten($black, 40%);
+  font-family: 'Roboto', serif;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 100;
+  &:before, &:after {
+      content: '\201C';
+      font-family: 'Sanchez';
+      color: lighten($black, 40%);
+   }
+   &:after {
+      content: '\201D';
+   }
+  }
+
+.column {
+  align-content:center;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.column_home {
+  align-content:center;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+
+
+.center_text {
+  align-content:center;
+  width: 50%;
+  vertical-align: middle;
+  text-align:justify;
+  text-align-last: center;
+}
+
+#left-col {
+  align-content:center;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 0.4em;
+}
+
+
+#right-col {
+  align-content:center;
+  text-align: center;
+}
+</style>
+
 I have written more than 150 articles so far, so feel free to explore the different topics by clicking on the buttons below.
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
+<input action="action" class="button" type="button" value="See all" onclick="location.href='https://maelfabien.github.io/year-archive/#';"/>
+
 I recently gave an interview to the excellent data science podcast: DataCast.
+
+<br>
 
 <iframe height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/283201b5-12cc-4488-a80c-2dffc1e71e4a?dark=false"></iframe>
 
@@ -85,7 +169,7 @@ Want to stay in the loop ? Sign in to my newsletter and receive updates every mo
 
 [RL - Introduction to Reinforcement Learning](https://maelfabien.github.io/rl/RL_1) : An introduction to the basic building blocks of reinforcement learning.
 
-<center><a href="https://maelfabien.github.io/year-archive/#">See More</a></center>
+<input action="action" class="button" type="button" value="See all" onclick="location.href='https://maelfabien.github.io/year-archive/#';"/>
 
 <br>
 
