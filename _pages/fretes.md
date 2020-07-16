@@ -20,7 +20,7 @@ sidebar:
 | --- | --- |
 | Length | 12 km |
 | Time | 5.5 hours |
-| Difficulty | 3/5 |
+| Difficulty | 3.5/5 |
 | Temperature start | 24°C |
 | Temperature arrival | 20°C |
 | Elevation gain | 1150 m |
