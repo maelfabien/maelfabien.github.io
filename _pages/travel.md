@@ -32,4 +32,6 @@ Here's the map of our trip:
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1jiekrGvX0g2xRRYb3TwwyROuIvUaX018" width="100%" height="500" frameBorder="0"></iframe>
 
-<img src="https://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=600x400&chf=bg,s,336699&chco=d0d0d0,cc0000,undefined&chd=s:9999999999999999999999999999999999999999999999999999&chld=BE|FR|PF|NC|BL|MF|PM|WF|TF|GF|GP|YT|MQ|RE|DE|CH|ES|GB|AI|BM|IO|KY|FK|GI|MS|SH|TC|GG|IM|JE|PN|GS|VG|NL|AW|CW|SX|BQ|LU|SN|US|AS|UM|GU|MP|PR|VI|CL|KH|VN|AU|NZ" width="600" height="400"  alt="How many countries I visited. Create your own travel map"><br/>I visited 15 countries of the United Nations (7.77%) out of 193.<br/>
+<br>
+
+<img src="https://chart.apis.google.com/chart?cht=map:fixed=-70,-180,80,180&chs=600x400&chf=bg,s,336699&chco=d0d0d0,cc0000,undefined&chd=s:999999999999999999999999999999999999999999999999999999999&chld=SN|CL|US|AS|UM|GU|MP|PR|VI|KH|VN|AU|NZ|AT|BE|FR|PF|NC|BL|MF|PM|WF|TF|GF|GP|YT|MQ|RE|DE|IS|LU|NL|AW|CW|SX|BQ|PT|IT|SK|ES|CH|GB|AI|BM|IO|KY|FK|GI|MS|SH|TC|GG|IM|JE|PN|GS|VG" width="600" height="400"  alt="How many countries I visited. Create your own travel map"><br/>I visited 20 countries of the United Nations (10.3%) out of 193.<br/>
