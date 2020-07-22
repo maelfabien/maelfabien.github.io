@@ -135,10 +135,19 @@ But how do we decide which states to cluster together?
 - Bottom-up: create raw triphone models and cluster states. But unable to solve unseen triphone problems.
 - Top-down clustering: start with a parent context independent model and split successively to create context dependent models. The aim is to increase the likelihood by splitting : $$ Gain = L(S_1) + L(S_2) - L(S) $$
 
-But then the question becomes: How to find the best splits? This is done using *phonetic decision trees*.
+But then the question becomes: How to find the best splits? This is done using *phonetic decision trees*. At the root od the tree, all states are shared. Then, using questions, we split the pool of states, and create leves of the tree. The questions might for example be:
+- is left context a nasal?
+- is right context a central stop?
 
+We choose the question that maximizes the likelihood of the data given the state clusters, and stop if the likelihood does not increase more than a threshold, or the amount of data in a split is not sufficient enough (like a normal decision tree).
 
+![image](https://maelfabien.github.io/assets/images/asr_29.png)
 
+In Kaldi, it generates questions automatically using a top down binary clustering. Another question remains: How do you compute the log-likelihood of a state cluster? 
+
+If you consider a cluster $$ S $$ made of $$ K $$ states forming the cluster, all of them sharing a common mean $$ \mu_S $$ and covariance $$ \Sigma_S $$, and training data $$ X $$ generated with probability $$ \gamma_S(X) $$ by state $$ s $$, then the likelihood of the state cluster is given by:
+
+$$ L(S) = \sum_{s \in S} \sum_{x \in X} log P(x \mid \mu_S, \Sigma_S) \gamma_S(x) $$
 
 
 
