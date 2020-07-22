@@ -73,6 +73,11 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [HMM Acoustic Modeling](https://maelfabien.github.io/machinelearning/speech_reco_1): Introduction to HMM Acoustic Modeling, context-dependent phone models, triphones...
 
+[Neural Network Acoustic Modeling](https://maelfabien.github.io/machinelearning/speech_reco_2): Deep Neural Networks for Acoustic modeling, and introduction to hybrid HMM-DNN acoustic models
+
+
+[Incroporating the language model](https://maelfabien.github.io/machinelearning/speech_reco_3): Problems arise in large vocabularies to decode a sequence with Viterbi. How is the language model used then? And how does it improve the search of the best sequence?
+
 
 # III. Network analysis
 

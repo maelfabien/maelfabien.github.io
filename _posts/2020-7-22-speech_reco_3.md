@@ -1,6 +1,6 @@
 ---
 published: true
-title: Large vocabulary ASR 
+title: Large vocabulary ASR and Language model decoding
 collection: ml
 layout: single
 author_profile: true
