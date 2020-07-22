@@ -71,6 +71,8 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Introduction to Automatic Speech Recognition](https://maelfabien.github.io/machinelearning/speech_reco): What is ASR? What is the pipeline? What is acoustic modeling? 
 
+[HMM Acoustic Modeling](https://maelfabien.github.io/machinelearning/speech_reco_1): Introduction to HMM Acoustic Modeling, context-dependent phone models, triphones...
+
 
 # III. Network analysis
 

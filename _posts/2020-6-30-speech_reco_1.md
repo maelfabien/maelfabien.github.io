@@ -39,7 +39,11 @@ From the utterance $$ W $$, we can break it down into words, then into subwords 
 
 Alright, let's jump to the slides:
 
-<iframe width="700" height="500" src="https://www.youtube.com/embed/hxr-UijYbpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+<embed src="https://maelfabien.github.io/assets/files/EM.pdf" type="application/pdf" width="100%" height="138px" />
+</div>
+
+</br>
 
 If you follow the ASR course of the University of Edimburgh, the slides above will correspond to:
 - [ASR 02](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr02-hmmgmm.pdf)
