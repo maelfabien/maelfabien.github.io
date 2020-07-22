@@ -43,7 +43,7 @@ Alright, let's jump to the slides:
 <embed src="https://maelfabien.github.io/assets/files/EM.pdf" type="application/pdf" width="100%" height="138px" />
 </div>
 
-</br>
+<br>
 
 If you follow the ASR course of the University of Edimburgh, the slides above will correspond to:
 - [ASR 02](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr02-hmmgmm.pdf)
@@ -97,8 +97,45 @@ The number of gaussians of 50'000 3-states HMMs with 10 components per gaussian 
 ## Modeling infrequent triphones
 
 There are several ways to handle infrequent triphones rather than expecting large amount of training data:
+- smoothing
+- parameter sharing
+
+### **Smoothing**
+
+In smoothing back-off, the idea is to use less specific models when there's not enough data to train a specific model. If a triphone is not observed enough, we can use a biphones, or even a monophones.
+
+On the other hand, in smoothing interpolation, the idea is to combine less specific models with more specific ones, e.g. :
+
+$$ \hat{\lambda}^{tri} = \alpha_3 \lambda^{tri} + \alpha_2 \lambda^{bi} + \alpha_1 \lambda^{mono} $$
+
+Interpolation allows more triphone models to be estimated, and adds robustness by sharing data from other contexts.
+
+### **Parameter sharing**
+
+One of the most common ones is parameter sharing, where different contexts share models. This can be done in 2 ways:
+- *bottom-up*: start with all possible contexts, and merge them progressively
+- *top-down*: start with a single global context, and split progressively
 
 
+Sharing can take place at different levels:
+
+1. Sharing Gaussians, where all distributions share the same set of Gaussians but have different mixture weights, called **tied mixtures**.
+
+2. Sharing models: merge context-dependent models that are most similar, called **generalised triphones**
+
+Generalised triphones are illustrated below. These type of models are more accurate, since trained on more data.
+
+![image](https://maelfabien.github.io/assets/images/asr_27.png)
+
+3. Sharing states: different models that the same states, called **state clustering**
+
+![image](https://maelfabien.github.io/assets/images/asr_28.png)
+
+But how do we decide which states to cluster together? 
+- Bottom-up: create raw triphone models and cluster states. But unable to solve unseen triphone problems.
+- Top-down clustering: start with a parent context independent model and split successively to create context dependent models. The aim is to increase the likelihood by splitting : $$ Gain = L(S_1) + L(S_2) - L(S) $$
+
+But then the question becomes: How to find the best splits? This is done using *phonetic decision trees*.
 
 
 
