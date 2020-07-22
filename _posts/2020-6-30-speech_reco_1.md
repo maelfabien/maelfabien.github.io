@@ -127,7 +127,7 @@ Generalised triphones are illustrated below. These type of models are more accur
 
 ![image](https://maelfabien.github.io/assets/images/asr_27.png)
 
-3. Sharing states: different models that the same states, called **state clustering**
+3. Sharing states: different models that the same states, called **state clustering**. This is what is implemented in Kaldi.
 
 ![image](https://maelfabien.github.io/assets/images/asr_28.png)
 
@@ -149,7 +149,16 @@ If you consider a cluster $$ S $$ made of $$ K $$ states forming the cluster, al
 
 $$ L(S) = \sum_{s \in S} \sum_{x \in X} log P(x \mid \mu_S, \Sigma_S) \gamma_S(x) $$
 
+And if the output pdfs are Gaussian, it can be shown that:
 
+$$ L(S) = - \frac{1}{2} (log ( (2 \pi)^d \mid \Sigma_S \mid ) + d) \sum_{s \in S} \sum_{x \in X} \gamma_S(x) $$
+
+And hence, $$ L(S) $$ only depends on the pooled state variance $$ \Sigma_S $$ and the state occupation probability (known from the forward-backward iterations).
+
+In summary, the process applied in Kaldi is:
+- share parmeters through state clustering
+- cluster states using phonetic decision tree (with the gaussian assumption)
+- split gaussians and re-train to obtain a GMM state clustered system
 
 
 # Conclusion
