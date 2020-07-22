@@ -110,10 +110,7 @@ The architecture of a HMM-DNN is presented below:
 
 ![image](https://maelfabien.github.io/assets/images/asr_31.png)
 
-NN are more flexible, learn richer representations and handle correlated features. In terms of speech features, experiments indicate that mel-scaled filter bank features (FBANK) work better than MFCCs, and results in better clustering when applying t-SNE on the hidden layers.
-
-
-
+NN are more flexible, learn richer representations and handle correlated features. In terms of speech features, experiments indicate that mel-scaled filter bank features (FBANK) work better than MFCCs, and results in better clustering when applying t-SNE on the hidden layers. Indeed, in FBANK the useful information is distributed over all the features, whereas in MFCC it is concentrated in the first few.
 
 # Conclusion
 
