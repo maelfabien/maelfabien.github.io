@@ -28,3 +28,6 @@ This is a first sketch of the outside of the house:
 
 ![image](https://maelfabien.github.io/assets/images/ext_1.png)
 
+# Cleaning the garden
+
+...
