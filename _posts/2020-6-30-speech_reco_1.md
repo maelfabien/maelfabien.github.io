@@ -44,6 +44,7 @@ Alright, let's jump to the slides:
 If you follow the ASR course of the University of Edimburgh, the slides above will correspond to:
 - [ASR 02](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr02-hmmgmm.pdf)
 - [ASR 03](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr03-hmm-algorithms.pdf)
+- [ASR 06](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr06-cdhmm.pdf)
 
 # Context-dependent phone models
 
