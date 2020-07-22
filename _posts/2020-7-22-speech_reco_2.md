@@ -73,6 +73,45 @@ Using CE, the gradients of the outputs weights simplify to:
 
 $$ \frac{dE^t}{dW_{jd}} = (y_j^t - r_j^t) x_d $$
 
+There are several extensions possible to this very very simple model:
+- use more context by taking multiple frames into account
+- add more hidden layers to obtains DNNs
+- use activation functions such as ReLU
+
+This looks interesting, and overall simpler than the HMM-GMM. But there is a major limitation, since we cannot do speech recognition with this approach. There are several phone recognition tasks:
+- frame classification: classify each frame of data
+- phone classification: classify each segment of data (what Neural Networks can do)
+- phone recongition: segment the data and label the segment
+
+Using only DNN, we lack the notion of data segmentation that HMMs are good at doing. But can't we mix HMMs and DNNs ?
+
+# HMM-DNN acoustic modeling
+
+In an HMM-GMM, replacing the GMM by a DNN to estimate output pdfs build a so-called HMM-DNN architecture. In a HMM-DNN, we consider one-state per phone, and train a NN as a phone-state classifier.
+
+It can be shown that the outputs corresponding to class $$ j $$ given an input $$ x_t $$ are an estimate of the posterior probability $$ P(q_t = j \mid x_t) $$, $$ q_t $$ being a state, because we have softmax outputs and use a CE loss function.
+
+And using Bayes Rule, we can relate the posterior $$ P(q_t = j \mid x_t) $$ to the likelihood $$ P(x_t \mid q_t = j) $$:
+
+$$ P(q_t \mid x_t) = \frac{P(x_t \mid q_t = j) P(q_t = j)}{P(X_t)} $$
+
+If we want HMM-DNNs to output probabilities, we should scale the likelihoods:
+
+$$ \frac{P(q_t = j \mid x_t)}{P(q_t = j)} = \frac{P(x_t \mid q_t = j)}{P(x_t)} $$
+
+This means we can obtain scaled likelihoods by dividing each network output by the prior, i.e. the relative frequency of class $$ j $$ in training data.
+
+There are several approaches to continuous speech recognition with HMM-DNN:
+- 1 state per phone (each NN can output typically 60 classes if 60 phone classes)
+- 3 state context-independent (CI) models, where each phone has 3 states, modeled by 3 NNs
+- State-clustered context-dependent (CD) models, 1 NN output per tied state
+
+The architecture of a HMM-DNN is presented below:
+
+![image](https://maelfabien.github.io/assets/images/asr_31.png)
+
+
+
 
 # Conclusion
 
@@ -80,4 +119,5 @@ If you want to improve this article or have a question, feel free to leave a com
 
 References:
 - [ASR 07, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr07-nnintro.pdf)
+- [ASR 08, University of Edimburgh]http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr08-hybrid_hmm_nn.pdf
 
