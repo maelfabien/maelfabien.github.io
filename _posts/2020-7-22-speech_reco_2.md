@@ -112,11 +112,61 @@ The architecture of a HMM-DNN is presented below:
 
 NN are more flexible, learn richer representations and handle correlated features. In terms of speech features, experiments indicate that mel-scaled filter bank features (FBANK) work better than MFCCs, and results in better clustering when applying t-SNE on the hidden layers. Indeed, in FBANK the useful information is distributed over all the features, whereas in MFCC it is concentrated in the first few.
 
+# Modelling phonetic context with DNNs
+
+Modling the phonetic context with DNNs was considered hard until 2011, but a simple solution emerged: use the state-tying process from a GMM system, and train a HMM-DNN on it.
+
+More precisely, the context-dependent hybrid HMM/DNN approach is:
+- Train a GMM/GMM system on your data
+- Use a phonetic decision tree to determine the HMM tied states for infrequent states
+- Perform Viterbi alignment using the trained HMM/GMM and the training data
+- Train a neural network to map the input speech features to a label representing a context-dependent tied HMM-state, instead of contenxt-independent phones
+- this increases the number of possible labels, and each frame is labelled with Viterbi aligned tied states
+- we then train the NN using gradient descent
+
+Concretely, we model the acoustic context by including neighbour frames in the input layer. 
+
+We use richer Neural Network models for acoustic context:
+- Recurrent Neural Networks (RNNs)
+- Time-delay Neural Networks (TDNNs)
+
+## Time-delay Neural Networks
+
+In TDNNs, higher hidden layers take input from a larger acoustic context, and lower hidden layers from narrower contexts. TDNNs can be seen as a 1D convolutional network. 
+
+![image](https://maelfabien.github.io/assets/images/asr_52.png)
+
+A TDNN with a context (-2, 2) has 5 times more weights than a regular DNN. For this reason, sub-sampled TDNNs are explored. Due to the large overlaps between input contexts at adjacent time steps, which are likely to be correlated, we take a sub-sample window of hidden unit activations. It reduces computation time and model weights.
+
+![image](https://maelfabien.github.io/assets/images/asr_53.png)
+
+## Recurrent Neural Networks
+
+In its unfolded representation, the RNN for a sequence of T inputs is a T-layer network with shared weights. It can keep information through time.
+
+![image](https://maelfabien.github.io/assets/images/asr_54.png)
+
+LSTMs avoid the vanishing gradient problem of RNNs. Bidirectional RNNs consider both the right and the left context, in a forward layer and a backward layer. Deep RNNs have several hidden layers, and deep bidirectional LSTM combine the advantages of all these methods:
+
+![image](https://maelfabien.github.io/assets/images/asr_55.png)
+
+Here is an example of a Bidirectional LSTM Acoustic Model training on the Switchboard dataset:
+
+- LSTM has 4-6 bidirectional layers with 1024 cells/layer (512 each direction)
+- 256 unit linear bottleneck layer
+- 32k context-dependent state outputs
+- Input features:
+	- 40-dimension linearly transformed MFCCs (plus ivector)
+	- 64-dimension log mel filter bank features (plus first and second derivatives)
+	- concatenation of MFCC and FBANK features
+- Training: 14 passes frame-level cross-entropy training, 1 pass sequence training (2 weeks on a K80 GPU)
+
+LSTMs + feature fusion currently reach close to state-of-the-art.
 # Conclusion
 
 If you want to improve this article or have a question, feel free to leave a comment below :)
 
 References:
 - [ASR 07, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr07-nnintro.pdf)
-- [ASR 08, University of Edimburgh]http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr08-hybrid_hmm_nn.pdf
-
+- [ASR 08, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr08-hybrid_hmm_nn.pdf)
+- [ASR 08, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr11-dnn-tdnn-lstm.pdf)
