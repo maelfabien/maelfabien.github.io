@@ -63,9 +63,9 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Speaker Verification using SVM-based methods](https://maelfabien.github.io/machinelearning/Speech2/#): Another method relying on Support Vector Machines for Speaker Verification.
 
-[Speaker Verification and i-vectors](https://maelfabien.github.io/machinelearning/Speech3/#): Overview of the i-vector method for Speaker Verification. 
+[Speaker Verification and i-vectors](https://maelfabien.github.io/machinelearning/Speech3/#): Coming soon
 
-[Deep Learning approach to speaker verification with X-vectors](https://maelfabien.github.io/machinelearning/Speech4/#): How X-vectors improve the speaker verification process.
+[Deep Learning approach to speaker verification with X-vectors](https://maelfabien.github.io/machinelearning/Speech4/#): Coming soon
 
 ## Automatic Speech Recognition
 
@@ -75,7 +75,7 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Neural Network Acoustic Modeling](https://maelfabien.github.io/machinelearning/speech_reco_2): Deep Neural Networks for Acoustic modeling, and introduction to hybrid HMM-DNN acoustic models
 
-[Incorporating the language model](https://maelfabien.github.io/machinelearning/speech_reco_3): Problems arise in large vocabularies to decode a sequence with Viterbi. How is the language model used then? And how does it improve the search of the best sequence?
+[The decoding graph](https://maelfabien.github.io/machinelearning/speech_reco_3): Problems arise in large vocabularies to decode a sequence with Viterbi. How is the language model used then? And how does it improve the search of the best sequence? Learn about the decoding graph and WFSTs.
 
 
 # III. Network analysis

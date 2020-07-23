@@ -1,6 +1,6 @@
 ---
 published: true
-title: Large vocabulary Continuous Speech Recogniton (LVCSR) and Decoding
+title: The decoding graph
 collection: ml
 layout: single
 author_profile: true
@@ -104,7 +104,7 @@ A string is accepted if:
 - there is a path with that sequence of symbols on it
 - the path is successful, starts at the initial state and ends at the final
 
-An additional symbol that has a special meaning in FSAs is $$ \eps $$. It means that no symbol is generated. This is a way to go back to a previous state without generating anything:
+An additional symbol that has a special meaning in FSAs is $$ \epsilon $$. It means that no symbol is generated. This is a way to go back to a previous state without generating anything:
 
 ![image](https://maelfabien.github.io/assets/images/asr_37.png)
 
@@ -154,7 +154,19 @@ WFSTs can be composed by matching up inner symbols. In the example below, we mat
 
 ![image](https://maelfabien.github.io/assets/images/asr_43.png)
 
-## Decoding with WFSTs
+## WFST algorithms
+
+There are several algorithms to remember for WFSTs:
+- composition: Combine transducers T1 and T2 into a single one, where T1 is passed as an input to T2.
+- determinisation: ensure that each state has no more than a single output transition for a given input label.
+- minimisation: transform a transfucer into a new one with fewest possible states and transitions
+- weight pushing: push the weights towards the front of the path
+
+The weight pushing process could be illustrated this way:
+
+![image](https://maelfabien.github.io/assets/images/asr_51.png)
+
+# Decoding with WFSTs
 
 The idea of the decoding network is to represent all components that allow us to find the most likely spoken word sequence using WFSTs:
 
@@ -168,13 +180,27 @@ Where:
 
 All the components are built separately and composed together.
 
-## HMMs as WFSTs
+## H: HMMs as WFSTs
 
 HMMs can be represented natively as WFSTs the following way:
 
 ![image](https://maelfabien.github.io/assets/images/asr_44.png)
 
-## Language model as WFSAs
+To avoid having too many context-dependent models ($$ N^3 $$), we apply what was mentioned in the HMM-GMM acoustic modeling: clustering based on a phonetic decision tree.
+
+## C: Context-dependency transducer
+
+HMMs take into account context through context-dependent phones (i.e triphones). To feed it into the pronunciation lexicon, we need to build from these context-dependent phones a set of context-independent phones. To do that, a FST is built and explicits the transitions between triphones. For example, from a triphone "a/b/c"(i.e. central phone "b" with left context "a" and right context "c"), the arcs represent the individual phones "a", "b", "c".
+
+![image](https://maelfabien.github.io/assets/images/asr_49.png)
+
+## L: Pronunciation model
+
+The Pronunciation lexicon L is a transducer that takes as an input context-independent phones and outputs words. The weights of this WFST are defined by the pronounciation probability.
+
+![image](https://maelfabien.github.io/assets/images/asr_50.png)
+
+## G: Language model as WFSAs
 
 We can represent language models (LMs) as WFSAs easily too, and any type of LM will actually be implemented as a WFSA in Kaldi or other softwares. They do no produce any output, so they remain Automatas and not Transducers, since our aim is just to estimate the "cost" of a path.
 
@@ -188,9 +214,16 @@ In a bigram LM, the probability of a word depends on the previous word too, and 
 
 ![image](https://maelfabien.github.io/assets/images/asr_47.png)
 
+## The decoding process
 
+The different components of the deconding graph have now be explicited, and can be more formally defined as:
 
+$$ HCLG = rds(min(det(H ◦ det(C ◦ det( L ◦ G))))) $$
 
+Where:
+- rds means remove disambiguation symbols
+- min is the minimization (with weight pushing)
+- det is the determinization
 
 # Conclusion
 
@@ -200,5 +233,3 @@ References:
 - [ASR 09, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr09-lvcsr.pdf)
 - [Tutorial on FSA, Idiap](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.3344&rep=rep1&type=pdf)
 - [Weighted Finite State Transducers in Automatic Speech Recognition - ZRE lecture](https://www.cs.brandeis.edu/~cs136a/CS136a_Slides/zre_lecture_asr_wfst.pdf)
-
-
