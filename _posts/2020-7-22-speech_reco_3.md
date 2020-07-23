@@ -1,6 +1,6 @@
 ---
 published: true
-title: Large vocabulary Continuous Speech Recogniton (LVCSR) and Language model decoding
+title: Large vocabulary Continuous Speech Recogniton (LVCSR) and Decoding
 collection: ml
 layout: single
 author_profile: true
@@ -145,6 +145,50 @@ Where:
 Why do we need to produce outputs? For decoding ! We can typically take input phonemes and output words.
 
 ![image](https://maelfabien.github.io/assets/images/asr_42.png)
+
+In this example, the output word is mentioned as the output of the 1st input. In this example, from the phoneme "d", we can build 2 words:
+- data (deytax, daedxax...)
+- dew (duw)
+
+WFSTs can be composed by matching up inner symbols. In the example below, we match A and B in C, denote it C=A◦B, and since in A the inputs a and b and matched with x, and in b x is matched with y, in C, a and b are matched with y:
+
+![image](https://maelfabien.github.io/assets/images/asr_43.png)
+
+## Decoding with WFSTs
+
+The idea of the decoding network is to represent all components that allow us to find the most likely spoken word sequence using WFSTs:
+
+HCLG = H◦C◦L◦G
+
+Where:
+- H is the HMM, that takes inputs HMM states and outputs context-dependent phones
+- C is called context-dependency, takes context dependent phones as an input and outputs phones
+- L is the pronunciation lexicon that takes phones as an input sequence and outputs words
+- G is the language model acceptor, a transducer at the word-level that takes words as an input, and outputs words
+
+All the components are built separately and composed together.
+
+## HMMs as WFSTs
+
+HMMs can be represented natively as WFSTs the following way:
+
+![image](https://maelfabien.github.io/assets/images/asr_44.png)
+
+## Language model as WFSAs
+
+We can represent language models (LMs) as WFSAs easily too, and any type of LM will actually be implemented as a WFSA in Kaldi or other softwares. They do no produce any output, so they remain Automatas and not Transducers, since our aim is just to estimate the "cost" of a path.
+
+![image](https://maelfabien.github.io/assets/images/asr_45.png)
+
+In a unigram LM, the probability of each word only depends on that word's own probability in the document, so we only have one-state finite automata as units. 
+
+![image](https://maelfabien.github.io/assets/images/asr_46.png)
+
+In a bigram LM, the probability of a word depends on the previous word too, and in a trigram LM, on the 2 previous words. You would represents a trigram WFSA this way:
+
+![image](https://maelfabien.github.io/assets/images/asr_47.png)
+
+
 
 
 
