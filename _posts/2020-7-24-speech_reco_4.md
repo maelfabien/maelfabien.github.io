@@ -68,7 +68,7 @@ Finally, we want SA to be:
 
 We can adapt the parameters of acoustic models to better match the observed data, using:
 - Maximum A Posteriori (MAP) adaptation of HMM/GMM
-- Maximum Likelihood Linear Regression (MLLR) of GMMs
+- Maximum Likelihood Linear Regression (MLLR) of GMMs, and cMLLR
 - Learnung Hidden Unit Contributions (LHUC) for NNs
 
 ### **MAP training of GMMs**
@@ -105,6 +105,29 @@ $$ \hat{\mu} = A \mu + b $$
 
 Hence, if the observations have $$ d $$ -dimensions, then A is $$d \times d $$ and b has $$ d $$ dimensions.
 
+It can be re-written as:
+
+$$ \hat{\mu} = W \eta $$
+
+Where:
+- $$ W = [bA] $$
+- $$ \eta = [1 \mu^T]^T $$
+
+We then estimate $$ W $$ to maximize the MLE on the adaptation data. Such transformations can then be applied to all classes, or to a set of Gaussian sharing a transform, called a **regression class**.
+
+We must then determine the number of regression classes. This is usually small (1, 2 (speech / non-speech), one per broad class, one per context-independent phone class...). We can obtain the number of regression classes by building a regression class tree, in a similar manner to a clustering tree.
+
+As usual in MLE, we maximize the log-likelihood (LL), which turns out to be easier to solve. The LL is defined as:
+
+$$ L = \sum_r \sum_n \gamms_r(n) \log (K_r \exp(-\frac{1}{2}(x_n - W \eta_r)^T \Sigma_r^{-1} (x_n - W \eta_r))) $$
+
+Where $$ r $$ defines the different regression classes. Note that there is bi closed form solution if $$ \sigma $$ is a full covariance matrix, and it can be solved if $$ \sigma $$ is diagonal.
+
+We apply the mean-only MLLR, by adapting only the mean, and it usually improves WER by 10-15% (relative). 1 minute of adaptation speech is more or less equal, in terms of model performance, to 30 minutes of speech in speaker dependent models.
+
+In **constrained MLLR (cMLLR)**, we use the 
+
+
 
 ![image](https://maelfabien.github.io/assets/images/asr_32.png)
 
@@ -113,6 +136,5 @@ Hence, if the observations have $$ d $$ -dimensions, then A is $$d \times d $$ a
 If you want to improve this article or have a question, feel free to leave a comment below :)
 
 References:
-- [ASR 09, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr09-lvcsr.pdf)
+- [ASR 12, University of Edimburgh](http://www.inf.ed.ac.uk/teaching/courses/asr/2019-20/asr12-adapt.pdf)
 - [Steve Renals course on Speaker Adaptation](https://www.inf.ed.ac.uk/teaching/courses/asr/2008-9/asr-adapt-1x2.pdf)
-- [Weighted Finite State Transducers in Automatic Speech Recognition - ZRE lecture](https://www.cs.brandeis.edu/~cs136a/CS136a_Slides/zre_lecture_asr_wfst.pdf)

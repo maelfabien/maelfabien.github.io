@@ -77,6 +77,8 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [The decoding graph](https://maelfabien.github.io/machinelearning/speech_reco_3): Problems arise in large vocabularies to decode a sequence with Viterbi. How is the language model used then? And how does it improve the search of the best sequence? Learn about the decoding graph and WFSTs.
 
+[Speaker Adaptation](https://maelfabien.github.io/machinelearning/speech_reco_4): How can we handle the mismatch between training and test data in ASR?
+
 
 # III. Network analysis
 
