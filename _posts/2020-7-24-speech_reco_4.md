@@ -125,7 +125,13 @@ Where $$ r $$ defines the different regression classes. Note that there is bi cl
 
 We apply the mean-only MLLR, by adapting only the mean, and it usually improves WER by 10-15% (relative). 1 minute of adaptation speech is more or less equal, in terms of model performance, to 30 minutes of speech in speaker dependent models.
 
-In **constrained MLLR (cMLLR)**, we use the 
+In **constrained MLLR (cMLLR)**, we use the the same linear transform for both the mean and the covariance. This is also called feature space MLLR (fMLLR), since it's equivalent to applying a linear transform to the data:
+
+$$ \hat{\mu} = A^{'} \mu - b^{'} $$
+
+$$ \hat{\Sigma} = A^{'} \Sigma A^{'}^T $$
+
+There are no closed form solution, this is solved iteratively.
 
 
 

@@ -13,8 +13,8 @@ title: "Papers and submissions"
   $background-color: hsl(50, 5, 97);
   $black: hsl(200, 40, 10);
   $white: $background-color;
-  $base-font-size: 2.4em;
-  $base-line-height: 1.5em;
+  $base-font-size: 2em;
+  $base-line-height: 1.3em;
 
   .ludwig {
   position: relative;
