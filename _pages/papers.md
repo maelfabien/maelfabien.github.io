@@ -92,6 +92,8 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 07.2020 - Paper submitted to CoNLL: News to be shared soon
 
+---
+
 05.2020 - Paper submitted to Interspeech: ["Speaker Identification Enhancement using Network Knowledge in Criminal Investigations"](https://arxiv.org/abs/2006.02093), *Mael Fabien, Seyyed Saeed Sarfjoo, Petr Motlicek, Srikanth Madikeri*
 
 <div class="row">
