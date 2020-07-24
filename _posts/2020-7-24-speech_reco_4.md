@@ -21,7 +21,7 @@ sidebar:
 src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-When training an ASR system, mismatch can occur between training and test data. In 
+When training an ASR system, mismatch can occur between training and test data, due to various sources of variation. Speaker adaptation can help fill this gap.
 
 # Sources of variation
 
@@ -69,9 +69,11 @@ Finally, we want SA to be:
 We can adapt the parameters of acoustic models to better match the observed data, using:
 - Maximum A Posteriori (MAP) adaptation of HMM/GMM
 - Maximum Likelihood Linear Regression (MLLR) of GMMs, and cMLLR
-- Learnung Hidden Unit Contributions (LHUC) for NNs
+- Learning Hidden Unit Contributions (LHUC) for NNs
 
-### **MAP training of GMMs**
+# Adaptation of HMM-GMMs
+
+## MAP training of GMMs
 
 MAP training will balance the estimated parameters of the Speaker Independent data and the new adaptation data.
 
@@ -95,7 +97,7 @@ Where:
 
 As the amount of training data increases, the MAP estimate converges to the ML one.
 
-### **Maximum Likelihood Linear Regression (MLLR)**
+## Maximum Likelihood Linear Regression (MLLR)
 
 One of the issues with MAP is that with few adaptation data, most Gaussians will not be adapted. If instead we share the adaptation across the Gaussians, each adaptation data can affect many of, or all, the Gaussians.
 
@@ -125,6 +127,8 @@ Where $$ r $$ defines the different regression classes. Note that there is bi cl
 
 We apply the mean-only MLLR, by adapting only the mean, and it usually improves WER by 10-15% (relative). 1 minute of adaptation speech is more or less equal, in terms of model performance, to 30 minutes of speech in speaker dependent models.
 
+## Constrained MLLR (cMLLR)
+
 In **constrained MLLR (cMLLR)**, we use the the same linear transform for both the mean and the covariance. This is also called feature space MLLR (fMLLR), since it's equivalent to applying a linear transform to the data:
 
 $$ \hat{\mu} = A^{'} \mu - b^{'} $$
@@ -133,9 +137,43 @@ $$ \hat{\Sigma} = A^{'} \Sigma A^{'}^T $$
 
 There are no closed form solution, this is solved iteratively.
 
+## Speaker-Adaptative Training (SAT)
 
+In SAT, we adapt the base models to the training speaker while training, using MLLR or fMLLR for each training speaker. It results in higher training likelihoods and improved recognition results, but increases the complexity and the storage requirements. SAT can be seen as a type of speaker normalization at training time.
 
-![image](https://maelfabien.github.io/assets/images/asr_32.png)
+# Adaptation of HMM-DNNs
+
+## cMLLR feature transformation
+
+We can use the HMM/GMM system that we train to estimate the tied state, to also estimate a single cMLLR transform for a given speaker. We then use this to transform the input speech of the DNN for the target speaker.
+
+## Linear Input Network (LIN)
+
+In a Linear Input Network (LIN), a single linear input layer is trained to map input speaker-dependent speech to speaker independent network.
+
+![image](https://maelfabien.github.io/assets/images/asr_56.png)
+
+In training, the LIN is fixed and in testing, the main speaker-independent network is fixed. 
+
+## Speaker codes with i-vectors
+
+We can also learn a short speaker code vector for talker, and combine that with the input feature vector, to compute transformed features. This allows an adaptation on speaker specific means. 
+
+![image](https://maelfabien.github.io/assets/images/asr_57.png)
+
+i-vectors are used as speaker codes. i-vectors are fixed-dimensional representations $$ \lambda_s $$ for a speaker $$ s $$. They model the difference between the means trained on all data $$ \mu_0 $$ and the speaker specific means $$ \mu_s $$:
+
+$$ \mu_s = \mu_0 + M \lambda_S $$
+
+i-vectors are derived from a factor analysis, and widely used in speaker identification.
+
+## Learning Hidden Unit Contributions (LHUC)
+
+In LHUC, we add a learnable speaker dependent amplitude to each hidden unit, which allows us to learn amplitudes from data, per speaker, and it "embeds" in a sense the adaptation part.
+
+Below are the results, in terms of WER, of various adaptation methods, and their combinations.
+
+![image](https://maelfabien.github.io/assets/images/asr_58.png)
 
 # Conclusion
 
