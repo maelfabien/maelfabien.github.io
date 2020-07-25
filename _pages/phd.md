@@ -79,6 +79,9 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Speaker Adaptation](https://maelfabien.github.io/machinelearning/speech_reco_4): How can we handle the mismatch between training and test data in ASR?
 
+[Sequence discriminative training](https://maelfabien.github.io/machinelearning/speech_reco_5): State-of-the-art methods rely on discriminative training (MMI). What changes?
+
+[Multilingual and Low-Resource Speech Recognition](https://maelfabien.github.io/machinelearning/speech_reco_6): Diving in some methods to handle low-resource languages.
 
 # III. Network analysis
 
