@@ -121,5 +121,7 @@ There are really few papers linking graphs and speaker identification. Phonexia 
 
 [Submitting a first paper to ArXiv](https://maelfabien.github.io/phd/arxiv/): 1-2 details about what might not work when doing your first submission, and how to troubleshoot it.
 
+[My Ph.D. timeline](https://maelfabien.github.io/phd/process/): A timeline recap of my Ph.D. process at Idiap.
+
 
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"c76a8e2ec2bd989affb9a074f","lid":"4646542adb","uniqueMethods":true}) })</script>
