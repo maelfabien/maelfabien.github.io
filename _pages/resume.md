@@ -95,6 +95,12 @@ Learning Fundamentals, Coursera](https://www.coursera.org/account/accomplishment
 
 # Entrepreneurship
 
+- 08.2020 : Hackathon Winner
+  - Won the 2020 edition of the [International Create Challenge](https://www.createchallenge.org/)
+  - Won both the AI Healthcare award and the 1st price
+  - Made an assistive device for blind and visually impaired people
+  - Learn more [here](http://soundmap.ml/)
+
 - 02.2019 - Present: Freelance Data Scientist
   - Created my freelance activity (writing, teaching, building models...)
 
