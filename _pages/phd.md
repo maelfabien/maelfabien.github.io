@@ -83,6 +83,12 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [Multilingual and Low-Resource Speech Recognition](https://maelfabien.github.io/machinelearning/speech_reco_6): Diving in some methods to handle low-resource languages.
 
+### Wav2Vec series
+
+[Wav2Vec and Wav2Vec 2.0 tutorials](https://maelfabien.github.io/machinelearning/wav2vec): An in-depth tutorial that covers Wav2Vec and Wav2Vec 2.0 research papers and code.
+
+
+
 # III. Network analysis
 
 Criminal and social networks are at the core of criminal investigation. More and more data is being collected in investigation cases, and identifying who knows who and what is being said is crucial.
