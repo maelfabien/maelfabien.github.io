@@ -54,7 +54,3 @@ Other famous databases include NIST Speaker Recognition Evaluation Challenge or 
 
 [Application-Independent Evaluation of Speaker Recognition Systems](https://maelfabien.github.io/assets/litterature/databases/metrics.pdf): A summary of the different speaker recognition systems used including false alarms, misses, DET-plot, EER and Detection Cost Function.
 
-
-<div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
-<embed src="https://maelfabien.github.io/assets/files/medik.pdf" type="application/pdf" width="100%" height="60px" />
-</div>
