@@ -35,8 +35,6 @@ You'll find below articles that I wrote on topics related to my Ph.D.
 
 [EM for Gaussian Mixture Models and Hidden Markov Models](https://maelfabien.github.io/machinelearning/GMM/) : 140 detailed and visual slides on GMMs, HMMs and EM.
 
-[Probabilistic Linear Discriminant Analysis (PLDA)](https://maelfabien.github.io/machinelearning/PLDA/) : Coming soon.
-
 [Joint Factor Analysis (JFA)](https://maelfabien.github.io/machinelearning/JFA/) : Coming soon.
 
 # II. Speech Processing
