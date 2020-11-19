@@ -142,7 +142,7 @@ Let's wrap up in a small pseudo-code what we covered so far.
 *Step 3* : $$ H(x) = sign(\alpha^1 h^1(x) + \alpha^2 h^2(x) + ... + \alpha^T h^T(x)) $$
 
 If you'd like to understand the intuition behind $ w_i^{t+1} $, here's the formula :
-$ w_{t+1}(i) = \frac { w_{t}(i) } { Z } e ^{- \alpha^t h^t(x) y(x)}$
+$$ w_{t+1}(i) = \frac { w_{t}(i) } { Z } e ^{- \alpha^t h^t(x) y(x)} $$
 
 The key elements to remember from it are :
 - $$ Z $$ is a constant whose role is to normalize the weights so that they add up to 1!
@@ -154,7 +154,7 @@ And we're done! This algorithm is called **AdaBoost**. This is the most importan
 
 Boosting algorithms are rather fast to train, which is great. But how come they're fast to train since we consider every stump possible and compute exponentials recursively?
 
-Well, here's where the magic happens. If we choose properly $ \alpha^t $ and $ Z $, the weights that are supposed to change at each step simplify to :
+Well, here's where the magic happens. If we choose properly $$ \alpha^t $$ and $$ Z $$, the weights that are supposed to change at each step simplify to :
 
 $$ \sum_{positive} = \frac {1} {2} $$ and $$ \sum_{negative} = \frac {1} {2} $$
 

@@ -54,6 +54,7 @@ I'll start by introducing really general articles :
 
 [Using Spark-Scala for Machine Learning](https://maelfabien.github.io/bigdata/spark3) : A dive into Spark-Scala for Machine Learning through examples.
 
+[How to install (py)Spark on MacOS (late 2020)](https://maelfabien.github.io/bigdata/SparkInstall) : Installation guide step by step in 3 minutes :)
 
 <br>
 
