@@ -146,7 +146,7 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 I am also sharing some informal news on the following social networks:
 
-<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-5059-0219" href="https://orcid.org/0000-0002-5059-0219" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0002-5059-0219</a></div>
+<div itemscope itemtype="https://schema.org/Person"><a itemprop="sameAs" content="https://orcid.org/0000-0002-5059-0219" href="https://orcid.org/0000-0002-5059-0219" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></div>
 
 <input action="action" class="button" type="button" value="Find me on Google Scholar" onclick="location.href='https://scholar.google.com/citations?user=r9hJzdwAAAAJ&hl=en';"/>
 
