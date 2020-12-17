@@ -92,7 +92,27 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
 ---
 
+11.2020 - Detection of Similar Languages and Dialects Using Deep Supervised Autoencoders, *Shantipriya Parida, Esaú Villatoro-Tello, Sajit Kumar, Mael Fabien, and Petr Motlicek*, accepted at ICON 2020.
+
+---
+
 11.2020 - BertAA: Bert fine-tuning for Authorship Attribution, *Mael Fabien, Esaú Villatoro-Tello, Petr Motlicek, and Shantipriya Parida*, accepted at ICON 2020.
+
+<div class="row">
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+		<input action="action" class="button" type="button" value="Slides" onclick="location.href='https://maelfabien.github.io/assets/files/BertAA.pdf';"/>
+    </div>
+  </div>
+
+  <div class="column_home" id="left-col" align="center">
+    <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
+		<input action="action" class="button" type="button" value="ArXiv" onclick="location.href='https://maelfabien.github.io/assets/files/BertAA_paper.pdf';"/>
+    </div>
+  </div>
+
+</div>
 
 ---
 
@@ -102,7 +122,7 @@ My reaearch focus, regarding ROXANNE EU-funded project, is speaker verification 
 
   <div class="column_home" id="left-col" align="center">
     <div style="width:100%; text-align:justify; align-content:left; display:inline-block;">
-		<input action="action" class="button" type="button" value="Slides" onclick="location.href='https://maelfabien.github.io/assets/papers/INTERSPEECH_2020.pdf';"/>
+		<input action="action" class="button" type="button" value="Slides" onclick="location.href='https://maelfabien.github.io/assets/files/graph2speak.pdf';"/>
     </div>
   </div>
 
