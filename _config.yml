@@ -123,14 +123,14 @@ author:
       url: "https://github.com/maelfabien/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/fabien_mael"
+      url: "https://twitter.com/mael2ml"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/fabien_mael"
+      url: "https://twitter.com/mael2ml"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
