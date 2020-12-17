@@ -11,7 +11,7 @@ layouts_gallery:
   - url: https://maelfabien.github.io/medikhub/
     image_path: https://maelfabien.github.io/assets/images/medik_ent.png
   - url: https://maelfabien.github.io/soundmap/
-    image_path: https://maelfabien.github.io/assets/images/proj_25.jpg
+    image_path: https://maelfabien.github.io/assets/images/soundmap_ent.png
   - url: https://maelfabien.github.io/freelance/
     image_path: https://maelfabien.github.io/assets/images/freelance_ent.png
 ---
