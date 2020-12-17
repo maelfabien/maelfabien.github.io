@@ -2,8 +2,6 @@
 main:
   - title: "Blog"
     url: /blog/
-  - title: "Ph.D. Blog"
-    url: /phd/
   - title: "Publications"
     url: /papers/
   - title: "Projects"
