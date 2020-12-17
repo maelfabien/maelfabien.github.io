@@ -1,11 +1,11 @@
 ---
 layout: archive
 permalink: /soundmap/
-title: Wanago
+title: SoundMap
 author_profile: false
 classes: wide
 header :
-    image: "https://maelfabien.github.io/assets/images/soundmap_head.png"
+    image: "https://maelfabien.github.io/assets/images/soundmap_head.jpg"
     teaser : "https://maelfabien.github.io/assets/images/proj_25.jpg"
 ---
 
