@@ -7,6 +7,10 @@ header :
     image: "https://maelfabien.github.io/assets/images/int_0.jpeg"
 ---
 
+<script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 <!-- jQuery 1.8 or later, 33 KB -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -18,6 +22,9 @@ My girlfriend and I recently bought a house together. We have started working on
 
 It's an ongoing work, so I'm posting pictures as the works are being done :)
 
+# What's inside?
+
+There is a rather large living room that 
 # The plans
 
 My first plan was to draw some plans and sketches of what I wanted the house to look like. It's rather small for the moment (< 100 $$ m^2 $$), and we want to turn it into a 170 $$ m^2 $$ house with a 30 $$ m^2 $$ terrace, by:

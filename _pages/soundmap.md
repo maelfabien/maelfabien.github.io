@@ -4,6 +4,7 @@ permalink: /soundmap/
 title: SoundMap
 author_profile: false
 classes: wide
+published: false
 header :
     image: "https://maelfabien.github.io/assets/images/soundmap_head.jpg"
     teaser : "https://maelfabien.github.io/assets/images/proj_25.jpg"
