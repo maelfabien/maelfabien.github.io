@@ -10,9 +10,9 @@ redirect_from:
 
 <p style="font-size:0.5em">The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.</p>
 
-Welcome to my blog. My name is Maël and I'm a Data Scientist and  Ph.D. student at [Idiap Research Institute](https://www.idiap.ch/en) and [EPFL](https://www.epfl.ch/en/) in Speech Processing, on [ROXANNE European Project](https://roxanne-euproject.org/).
+Welcome to my blog. My name is Maël and I'm a co-founder of [SoundMap](http://soundmap.io/), a smart device that maps the environment of blind and visually impaired people to guide them. I'm a Data Scientist and  Ph.D. student at [Idiap Research Institute](https://www.idiap.ch/en) and [EPFL](https://www.epfl.ch/en/) in Speech Processing, on [ROXANNE European Project](https://roxanne-euproject.org/).
 
-I love traveling, and came back from a world tour right before COVID, early 2020. I'm a plant-based sports fan (hiking, fitness, volleyball, javelin..). I love creating things, especially software-realted, and entrepreneurship is the way I see my future. After several hackathons and a first startup experience, I've been working for the past few months on [SoundMap](http://soundmap.io/).
+I love traveling, and came back from a world tour right before COVID, early 2020. I'm a plant-based sports fan (hiking, fitness, volleyball, javelin..). I love creating things, especially when it implies Machine Learning.
 
 I have a B.Sc. in Economics and an M.Sc. in Actuarial Science both from the HEC Faculty of University of Lausanne (applied mathematics and statistics for the insurance sector). I did not really like working in this field, and did a second Master, this time in Data Science, at Telecom Paris (Institut Polytechnique de Paris, France). I am now a Ph.D. student in Speech Processing at Idiap Research Institute, since  March 2020, and attached to EPFL Electrical Engineering department.
 
