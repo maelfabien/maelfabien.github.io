@@ -2,6 +2,8 @@
 main:
   - title: "Blog"
     url: /blog/
+  - title: "SoundMap"
+    url: https://soundmap.io/
   - title: "Publications"
     url: /papers/
   - title: "Projects"
