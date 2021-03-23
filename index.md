@@ -30,7 +30,7 @@ This website gathered a little more than 100'000 visitors since its creation. Wh
 <script>
     window.EMBED_SO_CONFIG = {
       "id": "8a64f4ae-5150-4899-b75e-fcb3a902297c",
-      "position": "left"
+      "position": "right"
     }
 </script>
 <script src="https://embed.so/js/embed.js"></script>
