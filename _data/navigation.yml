@@ -1,18 +1,18 @@
 # main links links
 main:
-  - title: "Blog"
+  - title: "Tech Blog"
     url: /blog/
-  - title: "SoundMap"
+  - title: "My startup"
     url: https://soundmap.io/
   - title: "Publications"
     url: /papers/
   - title: "Projects"
     url: /portfolio/
-  - title: "Hobbies"
-    url: /other/
   - title: "CV"
     url: /resume/
-  - title: "Search"
-    url: /search/
+  #- title: "Hobbies"
+    #url: /other/
+  #- title: "Search"
+    #url: /search/
 
 sidebar-travel:
