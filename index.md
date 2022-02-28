@@ -27,10 +27,10 @@ This website gathered a little more than 400'000 visitors since its creation. Wh
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 
-<script>
-    window.EMBED_SO_CONFIG = {
-      "id": "8a64f4ae-5150-4899-b75e-fcb3a902297c",
-      "position": "right"
-    }
-</script>
-<script src="https://embed.so/js/embed.js"></script>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+  <iframe src="https://embed.so/video/8a64f4ae-5150-4899-b75e-fcb3a902297c"
+    frameborder="0"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
+</div>
