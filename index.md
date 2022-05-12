@@ -10,7 +10,7 @@ redirect_from:
 
 <p style="font-size:0.5em">The video displayed above was shot in Tasmania, in the Wineglass Bay. The countryside is truly stunning out there.</p>
 
-Welcome to my blog. My name is Maël and I'm a co-founder of [biped](https://biped.ai/), an AI copilot that guides blind and visually impaired people using sounds. I'm a Data Scientist by training and  previously a Ph.D. student at [Idiap Research Institute](https://www.idiap.ch/en) and [EPFL](https://www.epfl.ch/en/) in Speech Processing, on [ROXANNE European Project](https://roxanne-euproject.org/).
+Welcome to my blog. My name is Maël and I'm a co-founder of [biped](https://biped.ai/), a smart harness that guides blind and visually impaired people using sounds. I'm a Data Scientist by training and  previously a Ph.D. student at [Idiap Research Institute](https://www.idiap.ch/en) and [EPFL](https://www.epfl.ch/en/) in Speech Processing, on [ROXANNE European Project](https://roxanne-euproject.org/).
 
 I love traveling, and came back from a world tour right before COVID, early 2020. I'm a plant-based sports fan (hiking, fitness, volleyball, javelin..). I love creating things, especially when it implies Machine Learning.
 
@@ -23,14 +23,6 @@ I worked in several startups, especially in NLP, and I've been working as a free
 
 <hr>
 
-This website gathered a little more than 400'000 visitors since its creation. Where do other visitors come from?
+Where do other visitors come from?
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ewlq11o62v&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
-
-<script>
-    window.EMBED_SO_CONFIG = {
-      "id": "8a64f4ae-5150-4899-b75e-fcb3a902297c",
-      "position": "right"
-    }
-</script>
-<script src="https://embed.so/js/embed.js"></script>
