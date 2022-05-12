@@ -111,7 +111,7 @@ Learning Fundamentals, Coursera](https://www.coursera.org/account/accomplishment
   - Won the 2020 edition of the [International Create Challenge](https://www.createchallenge.org/)
   - Won both the AI Healthcare award and the 1st price
   - Made an assistive device for blind and visually impaired people
-  - Learn more [here](http://soundmap.ml/)
+  - Eventually became [biped.ai](https://biped.ai/)
 
 - 02.2019 - Present: Freelance Data Scientist
   - Created my freelance activity (writing, teaching, building models...)
