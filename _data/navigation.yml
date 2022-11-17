@@ -4,15 +4,5 @@ main:
     url: /blog/
   - title: "My startup"
     url: https://biped.ai/
-  - title: "Publications"
-    url: /papers/
-  - title: "Projects"
-    url: /portfolio/
-  - title: "CV"
-    url: /resume/
-  #- title: "Hobbies"
-    #url: /other/
-  #- title: "Search"
-    #url: /search/
 
 sidebar-travel:
