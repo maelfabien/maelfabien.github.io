@@ -110,11 +110,7 @@ author:
   avatar           : "/assets/images/profile.jpg"
   bio              : "Co-Founder & CEO @ biped.ai"
   location         : "Switzerland"
-  email            : 
   links:
-    - label: "Mail"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:mael.fabien@gmail.com
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mael-fabien/"
