@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Thoughts"
 excerpt: ""
 author_profile: true
 layout : single_index
