@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : ""
 title_separator          : "-"
 name                     : "Maël Fabien"
-description              : "Data Science Blog"
+description              : "Blog"
 url                      : https://maelfabien.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,12 +114,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mael-fabien/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/maelfabien/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter"
-      url: "https://twitter.com/mael2ml"
 
 # Site Footer
 footer:
