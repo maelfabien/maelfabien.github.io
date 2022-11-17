@@ -1,5 +1,7 @@
 # main links links
 main:
+  - title: "Thoughts"
+    url: /
   - title: "Tech Blog"
     url: /blog/
   - title: "My startup"
