@@ -8,5 +8,5 @@ redirect_from:
     - /about.html
 ---
 
-I'm the CEO & Co-founder of [biped](https://biped.ai/), a navigation device that aims to change the lives of blind and visually impaired people. I'm a statistician turned data scientist turned entrepreneur. Sharing here some of my thoughts and learnings of the last few years.
+I'm the Co-Founder & CEO of [biped](https://biped.ai/), an assistive device that aims to change the lives of blind and visually impaired people with robotics. I'm a statistician turned data scientist turned entrepreneur. Sharing here some of my thoughts and learnings of the last few years.
 
