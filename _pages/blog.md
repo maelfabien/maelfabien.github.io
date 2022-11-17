@@ -104,7 +104,7 @@ i {
 }
 </style>
 
-I wrote close to 200 tech articles throughout my studies, between 2018 and 2020. I cannot guarantee they're still updated.
+I wrote close to 200 tech articles throughout my studies, between 2018 and 2020. I cannot guarantee they're still up to date and that the code snippets still work.
 
 {% include gallery id="layouts_gallery" class="full" layout="half"%}
 
