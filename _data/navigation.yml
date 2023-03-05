@@ -4,6 +4,8 @@ main:
     url: /
   - title: "tech blog"
     url: /blog/
+  - title: "travel"
+    url: /travel/
   - title: "startup"
     url: https://biped.ai/
 
