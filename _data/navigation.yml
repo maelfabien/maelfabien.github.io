@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Thoughts"
+  - title: "thoughts"
     url: /
-  - title: "Tech Blog"
+  - title: "tech blog"
     url: /blog/
-  - title: "My startup"
+  - title: "startup"
     url: https://biped.ai/
 
 sidebar-travel:
