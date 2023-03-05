@@ -83,7 +83,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : mael2ml
+  username               : mael4impact
 facebook:
   username               :
   app_id                 :
@@ -108,19 +108,19 @@ analytics:
 author:
   name             : "Maël Fabien"
   avatar           : "/assets/images/profile.jpg"
-  bio              : "Co-Founder & CEO @ biped.ai"
+  bio              : "co-founder & ceo @ biped.ai"
   location         : "Switzerland"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/mael-fabien/"
+      url: "https://www.linkedin.com/in/mael4impact/"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mael2ml"
+      url: "https://twitter.com/mael4impact"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
@@ -132,8 +132,7 @@ footer:
       # url:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/mael-fabien/"
-
+      url: "https://www.linkedin.com/in/mael4impact/"
 
 # Reading Files
 include:
