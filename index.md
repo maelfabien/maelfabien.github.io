@@ -17,5 +17,9 @@ layouts_gallery:
 
 I'm the co-founder & ceo of [biped](https://biped.ai/), an assistive device that aims to change the lives of blind and visually impaired people with robotics. I'm a statistician turned data scientist turned entrepreneur. Sharing here some of my thoughts and learnings of the last few years.
 
+I've recently started to share some of my key learnings in:
+- a [Notion startup template](https://mael4impact.gumroad.com/l/startupnotion)
+- a [30mn call offer](https://calendly.com/mael-fabien/30min)
+- and an e-book on impact startups (coming soon)
 
 {% include gallery id="layouts_gallery" class="full" layout="full"%}
