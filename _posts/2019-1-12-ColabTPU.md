@@ -89,7 +89,7 @@ CPUs are made to run pretty much any calculation. Therefore, CPU store values in
 
 For an MXU, matrix multiplication reuses both inputs many times, as illustrated below :
 
-![image](https://maelfabien.github.io/assets/images/systolic.gif)
+![image](https://maelfabien.github.io/assets/images/systolic.jpg)
 
 Data flows in through the chip in waves. 
 
